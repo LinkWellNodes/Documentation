@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](/docs/_media/LinkwellLogo.png)
+![logo](_media/LinkwellLogo.png)
 
 # Test docs<small>3.5</small>
 
@@ -9,6 +9,7 @@
 - Content 1
 - Content 2
 - Content 3
+- Content 4
 
 [GitHub](https://github.com/LinkWellNodes)
 [Discord](https://discord.gg/AJ66pRz4)
