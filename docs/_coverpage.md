@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](_media/LinkwellLogo.png)
+![logo](/docs/_media/LinkwellLogo.png)
 
 # Test docs<small>3.5</small>
 
