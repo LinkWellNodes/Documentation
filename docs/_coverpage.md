@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](_media/LinkWellLogo.png)
+![logo](media/LinkWellLogo.png)
 
 <!-- # Chainlink Node Operations By Linkwell Nodes<small>3.5</small> -->
 # LinkWell Nodes
@@ -20,6 +20,6 @@
 
 <!-- background image -->
 
-<!-- ![background](_media/LinkWell.png) -->
+<!-- ![background](media/LinkWell.png) -->
 
 <!-- background color -->

@@ -1,14 +1,12 @@
-<!--
-* **Chainlink Network Support**
-  * [ Jobs / Pricing](./README.md "Supported Chainlink networks, jobs, and job costs")
--->
+* **Our data feeds**
+  * [Jobs / Pricing](./docs/Job-Info.md "Supported Chainlink networks, jobs, and job costs")
 * **FAQ**
   * [Chainlink Nodes](./FAQ/Chainlink-Nodes.md "Frequently Asked Chainlink Node Discord Questions")
   * [External Adapters](./FAQ/External-Adapters.md "Frequently Asked External Adapter Discord Questions")
   * [Operator Requests](./FAQ/Operator-Requests.md "Frequently Asked Operator Requests Discord Questions")
-* **LinkWell Nodes**
-  * [About](./guides/About.md "About LinkWell Nodes")
-  * [Contact](https://linkwellnodes.io/contact "Contact LinkWell Nodes")
+* **About**
+  * [About](./docs/About.md "About LinkWell Nodes")
+  * [Contact](./docs/Contact.md "Contact LinkWell Nodes")
 
 
 <!-- * Getting Started
