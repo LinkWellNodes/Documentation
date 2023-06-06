@@ -1,10 +1,10 @@
-# External Adapters
+# Frequently Asked Questions - External Adapters
 
 ### Should I use external adapters, or Functions?
 Functions are better than EAs in many ways - namely, enabling you to maintain your own deployment lifecycle (no contact with node operators), while being able to run your job against a distributed network of many oracles for a low fee. There are however, some use cases where EAs could still make sense (ie, if you're using a network not yet supported on functions, already have an EA developed and don't want to re-write using JS, if you need a mainnet job ASAP, etc.).
 
 ### I have built out an external adapter for my smart contract. Do I need to host my own Chainlink node in order to use it??
-The short answer - no, although you can if you really want to. There are a couple different methods to accomplish this. You can host it yourself via GCP, AWS or as a long living process on docker, if you prefer.  Ideally, however, you can reach out in the ⁠Chainlink Discord ✅︲operator-requests channel for support from a node operator who already has infrastructure/processes in place to host it for you, and can set up the corresponding jobs needed for your application.  The benefits of this are many, but primarily for increasing decentralization, and also saving the time and effort of having to deploy and manage your own infrastructure
+The short answer - no, although you can if you really want to. There are a couple different methods to accomplish this. You can host it yourself via GCP, AWS or as a long living process on docker, if you prefer.  Ideally, however, you can reach out in the Chainlink Discord #operator-requests channel for support from a node operator who already has infrastructure/processes in place to host it for you, and can set up the corresponding jobs needed for your application.  The benefits of this are many, but primarily for increasing decentralization, and also saving the time and effort of having to deploy and manage your own infrastructure
 
 ### Do I have to host the adapter on any server like GCP/AWS? Or do Chainlink node operators do this for me?
 You can host an adapter via serverless functions/methods in GCP/AWS, but its better to run via docker. See the [Github docs](https://github.com/smartcontractkit/external-adapters-js) for more information.

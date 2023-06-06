@@ -1,7 +1,7 @@
 <!-- # Frequently Asked Questions
 Please see below for a list of frequently asked questions and their answers.  This FAQ is broken up into three sections in alignment with the Chainlink Discord channels. -->
 
-# Chainlink Nodes
+# Frequently Asked Questions - Chainlink Nodes
 
 ### Can anyone run a Chainlink node?
 
