@@ -2,25 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Documentation | LinkWell Nodes</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <style>
+    :root {
+      --content-max-width                 : 75em;
+}
+  </style>
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      // logo: '/docs/_media/LinkwellLogo.png',
+      // logo: '/_media/LinkwellLogo.png',
       coverpage: true,
       loadSidebar: true,
-      subMaxLevel: 2
-      // name: 'Linkwell Nodes',
-      // repo: 'https://github.com/LinkWellNodes'
+      subMaxLevel: 3,
+      name: 'LinkWell Nodes',
+      repo: 'https://github.com/LinkWellNodes',
+      search: 'auto',
+      pagination: {
+        crossChapter: true,
+        crossChapterText: true
+  	  },
+  	  tabs: {
+  	    theme: 'classic',
+  	  	tabHeadings: true
+  	  }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- docsify-tabs plugin - (latest v1.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <!-- Copy to Clipboard Plugin - Latest v2.x.x -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script> 
+  <!-- Search Bar Plugin  -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- Pagination Plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>

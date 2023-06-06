@@ -1,24 +1,25 @@
 <!-- _coverpage.md -->
 
-![logo](_media/LinkwellLogo.png)
+![logo](_media/LinkWellLogo.png)
 
-# Test docs<small>3.5</small>
+<!-- # Chainlink Node Operations By Linkwell Nodes<small>3.5</small> -->
+# LinkWell Nodes
 
-> Documentation For Test Docs
+<!-- > Documentation For A Production-ready, Scalable, and Secure Chainlink Deployment Model in AWS -->
+> Documentation for Chainlink node operations and network support.
 
-- Content 1
-- Content 2
-- Content 3
-- Content 4
+<!-- - Simple AWS setup
+- Scalable, safe, and secure
+- Enterprise-grade monitoring, analytics, and alerts -->
 
+<!-- [Get Started](#overview) -->
+[Jobs / Pricing](#Chainlink)
 [GitHub](https://github.com/LinkWellNodes)
 [Discord](https://discord.gg/AJ66pRz4)
-[Twitter](https://twitter.com/LinkWell_Nodes)
-[Website](https://linkwellnodes.io)
-[Get Started](#test-landing-page)
+[Home](https://linkwellnodes.io)
 
 <!-- background image -->
 
-<!-- ![background](_media/Linkwell.png) -->
+<!-- ![background](_media/LinkWell.png) -->
 
 <!-- background color -->
