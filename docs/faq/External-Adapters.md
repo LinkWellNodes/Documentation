@@ -1,3 +1,5 @@
+(to be merged into Chainlink-Operators)
+
 # Frequently Asked Questions - External Adapters
 
 ### Should I use external adapters, or Functions?
