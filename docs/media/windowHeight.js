@@ -1,95 +1,101 @@
-    function publishHeight() {
-    	
-        if (window.location.hash.length == 0) {
-        	return;
-        }
-        
-        var actualHeight = getBodyHeight();
-        var currentHeight = getViewPortHeight();
+function publishHeight() {
 
-        if  (Math.abs(actualHeight - currentHeight) > 15) {
-        	
-            var hostUrl = window.location.href;
-            
-            if (hostUrl.includes("&height=")) {
-            	hostUrl = hostUrl.substring(0, hostUrl.indexOf("&height"));
-            	hostUrl += "&";
-            } else if (hostUrl.includes("?height=")) {
-            	hostUrl = hostUrl.substring(0, hostUrl.indexOf("?height"));
-            	hostUrl += "?";
-            } else if (hostUrl.includes("?")) {
-            	hostUrl += "&";
-            } else {
-            	hostUrl += "?";
-            }
-            
-            hostUrl += 'height=' + actualHeight.toString();
+    if (window.location.hash.length == 0) return;
 
-            window.location.href = hostUrl;
-        }
-        
+    var frameId = getFrameId();
+
+    if (frameId == '') return;
+
+    var actualHeight = getBodyHeight();
+    var currentHeight = getViewPortHeight();
+
+    if  (Math.abs(actualHeight - currentHeight) > 15) {
+        var hostUrl = window.location.hash.substring(1);
+
+        hostUrl += "#";
+        hostUrl += 'frameId=' + frameId;
+        hostUrl += '&';
+        hostUrl += 'height=' + actualHeight.toString();
+
+        window.top.location = hostUrl;
+    }
+}
+
+function getFrameId() {
+
+    var qs = parseQueryString(window.location.href);
+    var frameId = qs["frameId"];
+
+    var hashIndex = frameId.indexOf('#');
+
+    if (hashIndex > -1) {
+        frameId = frameId.substring(0, hashIndex);
     }
 
-    function getBodyHeight() {
+    return frameId;
+    
+}
 
-        var height,
-            scrollHeight,
-            offsetHeight;
+function getBodyHeight() {
 
-        if (document.height) {
+    var height,
+        scrollHeight,
+        offsetHeight;
+
+    if (document.height) {
+    
+        height = document.height;
         
-            height = document.height;
-            
-        } else if (document.body) {
-        
-            if (document.body.scrollHeight) {
-                height = scrollHeight = document.body.scrollHeight;
-            }
-            
-            if (document.body.offsetHeight) {
-                height = offsetHeight = document.body.offsetHeight;
-            }
-            
-            if (scrollHeight && offsetHeight) {
-                height = Math.max(scrollHeight, offsetHeight);
-            }
+    } else if (document.body) {
+    
+        if (document.body.scrollHeight) {
+            height = scrollHeight = document.body.scrollHeight;
         }
-
-        return height;
+        
+        if (document.body.offsetHeight) {
+            height = offsetHeight = document.body.offsetHeight;
+        }
+        
+        if (scrollHeight && offsetHeight) {
+            height = Math.max(scrollHeight, offsetHeight);
+        }
     }
 
-    function getViewPortHeight() {
+    return height;
+}
 
-        var height = 0;
+function getViewPortHeight() {
 
-        if (window.innerHeight) {
-            height = window.innerHeight - 18;
-        } else if ((document.documentElement) && (document.documentElement.clientHeight)) {
-            height = document.documentElement.clientHeight;
-        } else if ((document.body) && (document.body.clientHeight)) {
-            height = document.body.clientHeight;
-        }
+    var height = 0;
 
-        return height;
-        
+    if (window.innerHeight) {
+        height = window.innerHeight - 18;
+    } else if ((document.documentElement) && (document.documentElement.clientHeight)) {
+        height = document.documentElement.clientHeight;
+    } else if ((document.body) && (document.body.clientHeight)) {
+        height = document.body.clientHeight;
     }
 
-    function parseQueryString(url) {
+    return height;
+    
+}
 
-        url = new String(url);
-        
-        var queryStringValues = new Object(),
-            querystring = url.substring((url.indexOf('?') + 1), url.length),
-            querystringSplit = querystring.split('&');
+function parseQueryString(url) {
 
-        for (i = 0; i < querystringSplit.length; i++) {
-            var pair = querystringSplit[i].split('='),
-                name = pair[0],
-                value = pair[1];
+    url = new String(url);
+    
+    var queryStringValues = new Object(),
+        querystring = url.substring((url.indexOf('?') + 1), url.length),
+        querystringSplit = querystring.split('&');
 
-            queryStringValues[name] = value;
-        }
+    for (i = 0; i < querystringSplit.length; i++) {
+        var pair = querystringSplit[i].split('='),
+            name = pair[0],
+            value = pair[1];
 
-        return queryStringValues;
-        
+        queryStringValues[name] = value;
     }
+
+    return queryStringValues;
+    
+}
