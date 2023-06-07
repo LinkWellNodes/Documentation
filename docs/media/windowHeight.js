@@ -25,7 +25,7 @@
             
             hostUrl += 'height=' + actualHeight.toString();
 
-            window.top.location = hostUrl;
+            window.location.href = hostUrl;
         }
         
     }
