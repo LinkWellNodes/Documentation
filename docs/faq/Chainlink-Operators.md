@@ -4,6 +4,8 @@
 
 The following is a list of frequently-asked questions and answers collected from our experience supporting the `#nodes`, `#operator-requests`, and `#external-adapters` channels within the [Chainlink Official Discord server](https://discord.com/invite/chainlink).
 
+The target audience for this FAQ is **Chainlink node operators**.
+
 ### Can anyone run a Chainlink node?
 
 Anyone can run a Chainlink node, as the code is open-source and easily deployable on almost any infrastructure. 
@@ -30,9 +32,9 @@ In order to recoup these costs, you'll need to leverage economies of scale - mea
 
 The answer depends on your specific use case:
 
-* **If you require testnet data**: Generally YES, it could be advisable to run your own Chainlink node - especially if you're interested in learning the ropes from a node operator's perspective, and [Chainlink Functions](/faq/Chainlink-Consumers#should-i-use-chainlink-functions) won't suit your requirements. On testnets, the stakes are low, and you can easily take advantage of trial-and-error without fear of monetary loss. That being said, there are many existing Chainlink node operators who already run jobs on a multitude of testnets, all which you can use for free (ie, without having to spin up your own node infrastructure). The #operator-requests channel of the Chainlink Discord server is the best way to get matched up with one of these node operators. Typically, you'll have a response within the hour.     
+* **If you require testnet data**: Generally YES, it could be advisable to run your own Chainlink node - especially if you're interested in learning the ropes from a node operator's perspective, and [Chainlink Functions](/faq/Chainlink-Consumers#should-i-use-chainlink-functions) won't suit your requirements. On testnets, the stakes are low, and you can easily take advantage of trial-and-error without fear of monetary loss. That being said, there are many existing Chainlink node operators who already run jobs on a multitude of testnets, all which you can use for free (ie, without having to spin up your own node infrastructure). The `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink) is the best way to get matched up with one of these node operators. Typically, you'll have a response within the hour.     
 
-* **If you require mainnet data**: Generally NO, mainnet data consumers should not be running their own Chainlink node - not only from a decentralization standpoint (controlling all parts of the data pipeline is typically frowned upon in the Web3 space), but from a cost perspective as well. See [here](#how-much-does-it-cost-to-run-a-chainlink-node) for information related to the costs of running a reliable mainnet Chainlink node infrastructure.
+* **If you require mainnet data**: Generally NO, mainnet data consumers should not be running their own Chainlink node - not only from a decentralization standpoint (controlling all parts of the data pipeline is typically frowned upon in the trustless Web3 space), but from a cost perspective as well. See [here](#how-much-does-it-cost-to-run-a-chainlink-node) for information related to the costs of running a reliable mainnet Chainlink node infrastructure.
 
 * **If you want to make money running a Chainlink node**: Please see our write-up on this topic [here](#is-running-a-chainlink-node-profitable).
 
@@ -40,7 +42,7 @@ The answer depends on your specific use case:
 
 Chainlink provides official documentation on the hardware / software requirements of running a Chainlink node [here](https://docs.chain.link/chainlink-nodes/resources/requirements). 
 
-### Do I need LINK to run a node?
+### Do I need LINK to run a Chainlink node?
 
 There is currently no minimum LINK requirement to run a node. You must, however, have the corresponding gas token for your target chain (ie, ETH), in order to fulfill job requests.
 
@@ -66,9 +68,9 @@ While you can technically [build a Chainlink node from source](https://github.co
 
 See [this page](https://docs.chain.link/chainlink-nodes/resources/best-security-practices#infrastructure-as-code-iac) for a few publicly-available IAC (Infrastructure as Code) deployment options. Chainlink also provides [AWS QuickStart](https://docs.chain.link/chainlink-nodes/resources/best-practices-aws) templates for deploying a basic Chainlink infrastructure via AWS CloudFormation.
 
-### Can anyone start up an OCR network?
+### Can anyone start up an OCR (Off-Chain-Reporting) network?
 
-The OCR (Off-Chain Reporting) feature is currently unavailable to community node operators. There is currently no plan for releasing the OCR contracts to the general public. 
+The Off-Chain Reporting feature is currently unavailable to community node operators. There is currently no plan for releasing the OCR contracts to the general public. 
 
 For the time being, community node operators can choose to provide their data via Flux Monitor or Direct Request jobs. 
 
@@ -88,7 +90,7 @@ Functions may eventually invalidate the current model that devs have used in the
 
 Learn more about the benefits and limitations of Chainlink Functions [here](/faq/Chainlink-Consumers#should-i-use-chainlink-functions). 
 
-### My job isn't completing and stuck at the final submit_tx task
+### My job is stuck at the final submit_tx task
 
 Typically, when a Chainlink job is stuck at the final submit task, the issue is that you forgot to fund the Chainlink node address with the gas token for the chain you are running on. Please note that the Chainlink node address is different and separate from the oracle/operator contract that the node interacts with. The Chainlink node address can be found in the Chainlink GUI, or listed on the CLI via Chainlink's command-line interface. 
 
@@ -100,20 +102,20 @@ For Chainlink documentation on basic monitoring requirements, please see the sec
 
 Selecting your Chainlink monitoring solution is a matter of preference, as there are many available options. A popular free and open source option is the Prometheus, Loki, and Grafana stack. Other options include AWS CloudWatch and/or Splunk Enterprise.
 
-### Do I need to deploy my own blockchain full nodes to run a Chainlink node?
+### Do I need to deploy my own blockchain full nodes in order to run a Chainlink node?
 
 While there is no technical requirement to connect your Chainlink node(s) to your own blockchain full nodes, this approach is strongly recommended for mainnet environments, in order to maximize the availability, reliability, and security of your blockchain data feed. 
 
 That being said, many node operators have chosen to use an open-source reverse proxy in front of their blockchain full node stack, in order to route blockchain traffic to a 3rd-party endpoint (such as Infura, QuickNodes, or Alchemy) in the event of a deployment failure.
 
-### How do I transfer funds out of a node?
+### How do I transfer funds out of a Chainlink node?
 
 In order to transfer funds out of your Chainlink node:
 1. Log into your Docker container (assuming you are using Docker): `docker exec -it <CONTAINER_NAME> /bin/bash`
 1. Log into the admin console within the Chainlink CLI: `chainlink admin login`
 1. Create the transaction: `chainlink txs evm create <AMOUNT_TO_SEND>`
 
-### What kind of maintenance does a node require?
+### What kind of maintenance does a Chainlink node require?
 
 From time to time, Chainlink Labs will release a new version of Chainlink, and you may be required to upgrade your node. As such, it's recommended to have a well-rehearsed no-downtime playbook in place for upgrading your Chainlink node runtimes. 
 

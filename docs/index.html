@@ -37,7 +37,14 @@
   	    ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
   	  }
     }
+    
+    window.onload = function(event) {
+        window.setInterval(publishHeight, 300);
+    }
+    
   </script>
+  <!-- Allow for iframe resizing despite being at a different subdomain: https://css-tricks.com/cross-domain-iframe-resizing/ -->
+  <script type="text/javascript" src="/media/windowHeight.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- docsify-tabs plugin - (latest v1.x.x) -->
