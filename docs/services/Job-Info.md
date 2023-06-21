@@ -102,13 +102,13 @@ This job returns an unsigned integer.
 ## Testnets
 <!-- tabs:start -->
 
-### **Sepolia**
+### **Ethereum-Sepolia**
 Sepolia is a proof-of-stake testnet, and is the recommended default Ethereum testnet for application development.
 
 <!-- tabs:start -->
 #### **GET > Uint256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -123,7 +123,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Int256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer **int256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer (**int256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -138,7 +138,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bool**
 
-HTTP GET to any public API which parses the response and returns a boolean **bool**.
+HTTP GET to any public API which parses the response and returns a boolean (**bool**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -152,7 +152,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bytes**
 
-HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -166,7 +166,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > String**
 
-HTTP GET to any public API which parses the response and returns a sequence of characters **string**.
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -193,7 +193,7 @@ This job requires the following paramaters to be set:
 
 #### **GET > Uint256[]**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256** array.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -204,7 +204,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 #### **GET > Bytes[]**
 
-HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data **bytes** array.
+HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -215,7 +215,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 #### **POST > Bytes**
 
-HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -226,13 +226,13 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 
 <!-- tabs:end -->
 
-### **Goerli**
+### **Ethereum-Goerli**
 Goerli is a proof-of-stake testnet, and is the recommended default Ethereum testnet for testing of validating and staking.
 
 <!-- tabs:start -->
 #### **GET > Uint256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -247,7 +247,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Int256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer **int256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer (**int256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -262,7 +262,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bool**
 
-HTTP GET to any public API which parses the response and returns a boolean **bool**.
+HTTP GET to any public API which parses the response and returns a boolean (**bool**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -276,7 +276,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bytes**
 
-HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -290,7 +290,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > String**
 
-HTTP GET to any public API which parses the response and returns a sequence of characters **string**.
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -317,7 +317,7 @@ This job requires the following paramaters to be set:
 
 #### **GET > Uint256[]**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256** array.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -328,7 +328,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 #### **GET > Bytes[]**
 
-HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data **bytes** array.
+HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -339,7 +339,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 #### **POST > Bytes**
 
-HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -350,13 +350,13 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 
 <!-- tabs:end -->
 
-### **Polygon**
-Mumbai Testnet replicates the Polygon Mainnet, and uses Ethereum's Goerli testnet as its Layer 1 protocol.
+### **Polygon-Mumbai**
+Mumbai network is a testnet that approximates the Polygon Mainnet, and uses Ethereum's Goerli testnet as its Layer 1 protocol.
 
 <!-- tabs:start -->
 #### **GET > Uint256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -371,7 +371,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Int256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer **int256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer (**int256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -386,7 +386,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bool**
 
-HTTP GET to any public API which parses the response and returns a boolean **bool**.
+HTTP GET to any public API which parses the response and returns a boolean (**bool**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -400,7 +400,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bytes**
 
-HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -414,7 +414,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > String**
 
-HTTP GET to any public API which parses the response and returns a sequence of characters **string**.
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -441,7 +441,7 @@ This job requires the following paramaters to be set:
 
 #### **GET > Uint256[]**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256** array.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -452,7 +452,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 #### **GET > Bytes[]**
 
-HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data **bytes** array.
+HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -463,7 +463,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 #### **POST > Bytes**
 
-HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -474,13 +474,13 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 
 <!-- tabs:end -->
 
-### **Arbitrum**
+### **Arbitrum-Goerli**
 Arbitrum Goerli is the testnet of Layer 2 rollup chain Arbitrum One, and uses Ethereum's Goerli testnet network as its Layer 1 protocol.
 
 <!-- tabs:start -->
 #### **GET > Uint256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -495,7 +495,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Int256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer **int256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer (**int256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -510,7 +510,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bool**
 
-HTTP GET to any public API which parses the response and returns a boolean **bool**.
+HTTP GET to any public API which parses the response and returns a boolean (**bool**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -524,7 +524,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bytes**
 
-HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -538,7 +538,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > String**
 
-HTTP GET to any public API which parses the response and returns a sequence of characters **string**.
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -565,7 +565,7 @@ This job requires the following paramaters to be set:
 
 #### **GET > Uint256[]**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256** array.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -576,7 +576,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 #### **GET > Bytes[]**
 
-HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data **bytes** array.
+HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -587,7 +587,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 #### **POST > Bytes**
 
-HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -598,12 +598,12 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 
 <!-- tabs:end -->
 
-### **Avalanche**
+### **Avalanche-Testnet**
 
 <!-- tabs:start -->
 #### **GET > Uint256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -618,7 +618,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Int256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer **int256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer (**int256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -633,7 +633,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bool**
 
-HTTP GET to any public API which parses the response and returns a boolean **bool**.
+HTTP GET to any public API which parses the response and returns a boolean (**bool**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -647,7 +647,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bytes**
 
-HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -661,7 +661,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > String**
 
-HTTP GET to any public API which parses the response and returns a sequence of characters **string**.
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -688,7 +688,7 @@ This job requires the following paramaters to be set:
 
 #### **GET > Uint256[]**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256** array.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -699,7 +699,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 #### **GET > Bytes[]**
 
-HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data **bytes** array.
+HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -710,7 +710,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 #### **POST > Bytes**
 
-HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -721,13 +721,13 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 
 <!-- tabs:end -->
 
-### **Binance**
+### **Binance-Testnet**
 Binance Smart Chain's testnet is a test environment for BNB Smart Chain mainnet network, run by the BNB Chain development community.
 
 <!-- tabs:start -->
 #### **GET > Uint256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -742,7 +742,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Int256**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer **int256**.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns a signed integer (**int256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -757,7 +757,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bool**
 
-HTTP GET to any public API which parses the response and returns a boolean **bool**.
+HTTP GET to any public API which parses the response and returns a boolean (**bool**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -771,7 +771,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Bytes**
 
-HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -785,7 +785,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > String**
 
-HTTP GET to any public API which parses the response and returns a sequence of characters **string**.
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -812,7 +812,7 @@ This job requires the following paramaters to be set:
 
 #### **GET > Uint256[]**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer **uint256** array.
+HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -823,7 +823,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 #### **GET > Bytes[]**
 
-HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data **bytes** array.
+HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -834,7 +834,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 #### **POST > Bytes**
 
-HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data **bytes**.
+HTTP POST to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
