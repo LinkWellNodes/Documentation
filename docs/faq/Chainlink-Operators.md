@@ -18,15 +18,23 @@ If you are new to Chainlink, we suggest learning about the Chainlink ecosystem (
 
 In order to earn LINK for serving data, you'll need to seek out customer(s) who are willing to pay for your services. In this way, running a Chainlink node is similar to running a traditional business, in that it requires a certain level of marketing, promotion, and lead generation efforts. This differs markedly from other blockchain node infrastructure - such as an Ethereum validator node - where you can earn passive income without any business development initiatives. 
 
-You'll also need to factor in the costs of running a reliable mainnet infrastructure, which you can learn more about [here](#how-much-does-it-cost-to-run-a-chainlink-node).
+You'll also need to factor in the costs of running a reliable mainnet infrastructure, which you can [learn more about here](#how-much-does-it-cost-to-run-a-chainlink-node).
 
 Once you've mastered the core elements of running a reliable Chainlink node infrastructure (ie, automation, high-availability, disaster recovery, security, monitoring, etc.), typically the next step would be to become active in the Chainlink community. By helping others, participating in Chainlink events, and in general giving back to the community, you'll increase your reputation within the Chainlink ecosystem.
 
 ### How much does it cost to run a Chainlink node?
 
-The infrastructure costs required to run a secure, reliable, mainnet Chainlink infrastructure can be daunting to many - and will typically be on the order of **$1,000 USD / month** per mainnet chain. A typical mainnet Chainlink infrastructure includes triple-redundant Chainlink nodes, blockchain full nodes, database read/write replicas, multiple backups of all data, automatic disaster recovery mechanisms, and a reliable monitoring and alerting system. 
+The infrastructure costs required to run a secure, reliable, mainnet Chainlink infrastructure can be daunting to many - and will typically be on the order of **$1,000 USD / month** per mainnet chain.
 
-In order to recoup these costs, you'll need to leverage economies of scale - meaning that each infrastructure will need to serve multiple customers and jobs.
+The expenses paid by a Chainlink node operator typically include: 
+
+* **Infrastructure costs**: a typical mainnet Chainlink infrastructure includes triple-redundant Chainlink nodes, blockchain full nodes, database read/write replicas, external adapters, multiple backups of all data, automatic disaster recovery mechanisms, and a reliable monitoring and alerting system. 
+
+* **Data subscription costs**: node operators often need to pay subscription fees to premium data feeds requested by their clients, which can be significant.
+
+* **Blockchain transaction costs**: for every client request for data, node operators need to pay related gas to write the response on-chain. Gas costs vary significantly by chain, network congestion, and response size, and may range from anywhere between a few cents per transaction, to tens of hundreds of USD per transaction (rare).
+
+In order to recoup these costs, node operators need to leverage economies of scale - meaning that each infrastructure will need to serve multiple customers and jobs to break even.
 
 ### Should I run my own Chainlink node?
 
@@ -152,3 +160,72 @@ Additionally, Chainlink provides TOML validation commands that you can run in or
 **Example 2**:
 
 	docker run --platform linux/x86_64/v8 --name chainlink-config-validator -v ~/.chainlink:/chainlink -it --rm smartcontract/chainlink:2.0.0 -config /chainlink/config.toml -secrets /chainlink/secrets.toml secrets validate
+
+### I'm receiving a keystore authentication error while starting my node
+
+When you run your Chainlink node using a password that's different from what the Chainlink database expects, you'll receive the following error:
+
+```
+error authenticating keystore: unable to decrypt encrypted key ring: could not decrypt key with given password
+```
+
+The most common scenario where this error occurs is while attempting to launch a Chainlink node against an existing Chainlink database which was previously initialized using a different Chainlink password and/or node. 
+
+To get past this error, you'll need to either:
+
+* Enter the correct password (ie, the password used by your original Chainlink node when connecting to your Chainlink database for the first time) into your TOML secrets config file, and restart your Chainlink node:
+```
+[Password]
+Keystore = '<MY_PASSWORD_HERE>'
+```
+
+    You may find more information on configuring your TOML secrets config file in the Chainlink documentation [here](https://docs.chain.link/chainlink-nodes/v1/secrets-config#keystore).
+
+* Wipe your database and restart your Chainlink node. You achieve this by either spinning up a fresh database instance, or by issue the following command using PSQL: `DROP DATABASE <CHAINLINK_DATABASE_NAME;` 
+
+    **IMPORTANT DISCLAIMER**: by clearing your current database, you'll permanently lose access to the Chainlink node wallet (ie, keystore) contained in your current database, along with all associated funds therein. There is no way to recover these funds.
+
+### I'm having file permission issues while starting my node
+
+While starting your Chainlink node, you might receive one or more of the following error messages (or similar):
+
+```
+failed to read config file: /chainlink/config.toml: open /chainlink/config.toml: no such file or directory
+failed to read config file: /chainlink/secrets.toml: open /chainlink/secrets.toml: no such file or directory
+```
+
+These types of errors are caused by your Chainlink container having insufficient access to the relevant files on your local filesystem.
+
+To ensure proper permissions, please check the following:
+
+1. Ensure the following line is added to your TOML config file (see official documentation [here](https://docs.chain.link/chainlink-nodes/v1/node-config#rootdir)):
+```
+RootDir = '~/.chainlink'
+```
+
+1. Ensure the correct filesystem permissions (700) are applied to your `config.toml` and `secrets.toml` files, including their parent directory, as prescribed [here](https://docs.chain.link/chainlink-nodes/v1/node-config#rootdir):
+```
+# <HOST_FILESYSTEM_DIR> should be the directory containing your config.toml and secrets.toml files
+chmod -R 700 <HOST_FILESYSTEM_DIR>
+```
+
+1. If running your Chainlink container as a user other than `root` ([recommended](https://docs.chain.link/chainlink-nodes/resources/best-practices-aws#do-not-run-as-the-root-user)), you'll also need to ensure that the `config.toml` and `secrets.toml` files, as well as their parent directory, have the appropriate ownership permissions:
+```
+# <USER> should be the user running the Chainlink docker container, <GROUP> should be any group that <USER> belongs to, and <HOST_FILESYSTEM_DIR> should be the directory containing your config.toml and secrets.toml files
+chown -R <USER>:<GROUP> <HOST_FILESYSTEM_DIR>
+``` 
+
+1. Ensure that the host directory containing your `config.toml` and `secrets.toml` files is mapped to your Chainlink docker container:
+```
+docker run -d \
+    --restart unless-stopped \
+    -p 6688:6688 \
+    # Pay special attention to the below line. <HOST_FILESYSTEM_DIR> should be the host directory containing your config.toml and secrets.toml files (ie, /home/ec2-user/chainlink-home)
+    -v <HOST_FILESYSTEM_DIR>:~/.chainlink \
+    smartcontract/chainlink:2.0.0 \
+    -config ~/.chainlink/config.toml \
+    -secrets ~/.chainlink/secrets.toml \
+    node start
+```
+
+If, after performing all of the above steps, you are still having the same issue, you might try running the above Docker command using `sudo` (`sudo docker run`...), to ascertain whether your issue is permission-related (NOTE that running your container using `sudo` is NOT a recommended approach for production purposes). 
