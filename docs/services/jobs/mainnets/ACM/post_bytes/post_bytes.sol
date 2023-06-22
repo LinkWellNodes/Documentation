@@ -22,7 +22,7 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
 
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x5947BB275c521040051D82396192181b413227A3);
-        setChainlinkOracle(0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406);
+        setChainlinkOracle(0x720E94621237EE80948E1C14Cf62bb82ceb8b264);
         jobId = "b3390c03bfc24b42a0b0ab8051471bbb";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
     }

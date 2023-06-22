@@ -4,7 +4,7 @@ name = "LW_ACM_DR_Get_Bool"
 externalJobID = "2e0a430b-cd2b-482d-8462-fdcc5224fba1"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68"
+contractAddress = "0x720E94621237EE80948E1C14Cf62bb82ceb8b264"
 minContractPaymentLinkJuels = "100000000000000000"
 observationSource = """
     decode_log   [type="ethabidecodelog"
@@ -20,7 +20,7 @@ observationSource = """
                   abi="fulfillOracleRequest2(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes calldata data)"
                   data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\":   $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
                   ]
-    submit_tx    [type="ethtx" to="0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68" data="$(encode_tx)"]
+    submit_tx    [type="ethtx" to="0x720E94621237EE80948E1C14Cf62bb82ceb8b264" data="$(encode_tx)"]
 
     decode_log -> decode_cbor -> fetch -> parse -> encode_data -> encode_tx -> submit_tx
 """
