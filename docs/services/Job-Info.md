@@ -2,7 +2,7 @@
 
 ## Mainnets
 
-Please [contact us](mailto:hello@linkwellnodes.io) for mainnet job requests and pricing.
+Please [contact us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") for mainnet job requests and pricing.
 
 ## Testnets
 <!-- tabs:start -->
