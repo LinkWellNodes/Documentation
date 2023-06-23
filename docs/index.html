@@ -86,7 +86,7 @@ $(function() {
 			msg = JSON.stringify(event.data);
 		}
 		// Receive all events from the parent regarding the anchor id toward which to scroll, and then do it
-		console.log("Message received from the parent: " + event.origin + " / " + msg);
+		//console.log("Message received from the parent: " + event.origin + " / " + msg);
 		if (msg.parentAnchorId && !scrolledToParentAnchorAlready) {
 			scrolledToParentAnchorAlready = true;
 	   		console.log("Anchor received: " + msg.parentAnchorId);
@@ -112,11 +112,11 @@ $(function() {
 		   	   			clearInterval(loopId1);		// anchor found; don't loop anymore
 	   				} else {
 	   					console.log("Re-checking anchorId...");
-	   					if (loop1Idx > 10) {
+	   					if (loop1Idx > 50) {
 	   						clearInterval(loopId1);		// tried long enough to find this anchorId, so it likely doesn't exist; don't loop anymore
 	   					}
 	   				}
-   				}, 10);
+   				}, 100);
    			});
 		}
 	});
