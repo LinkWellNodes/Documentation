@@ -40,6 +40,7 @@
     
   </script>
   <!-- Allow for iframe resizing despite being at a different subdomain: https://github.com/davidjbradshaw/iframe-resizer -->
+  <script type="text/javascript" src="/media/iframeResizer.contentWindow.min.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- docsify-tabs plugin - (latest v1.x.x) -->
@@ -54,10 +55,14 @@
   <!-- This style looks nice: https://docs.docker.com/compose/extends/#extending-services -->
   <script src="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
 $(function() {
-    $('a[href^=?]').click(function(e) {
+	console.log("start");
+	$(document).on('click', '.anchor', function($e) {
+    	console.log($(this).blur().attr('href'));
         if ('parentIFrame' in window) {
+        	console.log("yes");
             var href = $(this).blur().attr('href');
             var anchor = $('a[name=' + href.substring(1) + ']');
             var offset = Math.round(anchor.offset().top);
