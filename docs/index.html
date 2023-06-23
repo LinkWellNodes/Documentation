@@ -76,8 +76,9 @@ $(function() {
         }
     });
 	
-	// Receive all message events from the parent website 
-	var scrolledToParentAnchorAlready = 0;	// process only 1 'parent anchor' message
+	// Receive all message events from the parent website
+	
+	var scrolledToParentAnchorAlready = true;
 	window.addEventListener('message', function(event) {
 		var msg;
 		try {
@@ -87,14 +88,14 @@ $(function() {
 		}
 		// Receive all events from the parent regarding the anchor id toward which to scroll, and then do it
 		//console.log("Message received from the parent: " + event.origin + " / " + msg);
-		if (msg.parentAnchorId && scrolledToParentAnchorAlready <= 5) {
-			scrolledToParentAnchorAlready++;
+		if (msg.parentAnchorId && !scrolledToParentAnchorAlready) {
 	   		console.log("Anchor received: " + msg.parentAnchorId);
    			$(document).ready(function(){
 	   			// Get the anchored element to which we'd like to scroll
    				var anchor = $('#' + msg.parentAnchorId);
    				console.log("a");
    				if (anchor.length) {	// check to ensure the anchor exists
+   					scrolledToParentAnchorAlready = true;
    					console.log("b");
 	   	   			// Get the Y coordinate of the anchored element
 	   	   			var offset = Math.round(anchor.offset().top);
