@@ -83,17 +83,19 @@ $(function() {
 		}
 		if (msg.parentAnchorId) {
 	   		console.log("Message received from the parent: " + event.origin + " / " + msg.parentAnchorId + "");
-	   			// Get the anchored element to which we'd like to scroll
-	   			console.log("Anchor target received: " + msg.parentAnchorId);
-	   			$(document).ready(function(){
-	   				console.log("Proceeding with anchor...");
-	   				var anchor = $('#' + msg.parentAnchorId);
+   			// Get the anchored element to which we'd like to scroll
+   			console.log("Anchor target received: " + msg.parentAnchorId);
+   			$(document).ready(function(){
+   				console.log("Proceeding with anchor...");
+   				var anchor = $('#' + msg.parentAnchorId);
+   				if (anchor.length) {	// check to ensure the anchor exists
 	   	   			// Get the Y coordinate of the anchored element
 	   	   			var offset = Math.round(anchor.offset().top);
 	   	   			console.log("offset=" + offset);
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
 	   	   			window.parent.postMessage(offset, '*');
-	   			});
+   				}
+   			});
 		} else {
 			console.log("Bad msg received: " + event.origin + " / " + JSON.stringify(msg));
 		}
