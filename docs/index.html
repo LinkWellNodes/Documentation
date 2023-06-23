@@ -71,6 +71,18 @@ $(function() {
             window.parentIFrame.sendMessage(offset);
         }
     });
+	if ('parentIFrame' in window) {		// is this page loaded inside an iframe?
+		const queryString = window.location.search;
+		console.log(queryString);
+		const urlParams = new URLSearchParams(queryString);
+		const anchorId = urlParams.get('parentAnchor');
+		// Get the anchored element to which we'd like to scroll
+		var anchor = $('#' + anchorId);
+		// Get the Y coordinate of the anchored element
+        var offset = Math.round(anchor.offset().top);
+     	// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
+        window.parentIFrame.sendMessage(offset);
+	}
 });
 </script>
   
