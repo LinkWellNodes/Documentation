@@ -73,16 +73,18 @@ $(function() {
     });
 });
 $(window).on('load', function() {
+	console.log("iframe loaded");
 	if ('parentIFrame' in window) {		// is this page loaded inside an iframe?
 		// Look for any parentAnchor query params within the URL sent by the parent website to load as this iframe's URL
 		const queryString = '?' + window.location.href.split('?').pop();
+		console.log(queryString);
 		const urlParams = new URLSearchParams(queryString);
 		const anchorId = urlParams.get('parentAnchor');
 		// Get the anchored element to which we'd like to scroll
 		var anchor = $('#' + anchorId);
 		// Get the Y coordinate of the anchored element
 		var offset = Math.round(anchor.offset().top);
-		console.log(offset);
+		console.log("offset=" + offset);
 		// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
 		window.parentIFrame.sendMessage(offset);
 	}
