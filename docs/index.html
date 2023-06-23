@@ -92,7 +92,7 @@ $(function() {
 	   	   			var offset = Math.round(anchor.offset().top);
    					console.log("Posting anchor offset (" + offset +")");
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
-	   	   			window.parent.postMessage(JSON.stringify({"offsetY" : offset}, '*');
+	   	   			window.parent.postMessage(JSON.stringify({"offsetY" : offset}, '*'));
    				} else {
    					anchor.hide();
    					console.log("Anchor #" + msg.parentAnchorId + " doesn't exist...");
