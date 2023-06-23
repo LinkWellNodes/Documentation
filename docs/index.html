@@ -64,10 +64,17 @@ $(function() {
         if ('parentIFrame' in window) {
         	console.log("yes");
             var href = $(this).blur().attr('href');
-            var anchor = $('a[data-id=' + $(this).blur().attr('href').split('?id=').pop() + ']');
+            var anchor = $('#' + $(this).blur().attr('href').split('?id=').pop() + '');
             var offset = Math.round(anchor.offset().top);
             e.preventDefault();
             window.parentIFrame.sendMessage(offset);
+        } else {
+        	// testing
+        	console.log("yes");
+            var href = $(this).blur().attr('href');
+            var anchor = $('#' + $(this).blur().attr('href').split('?id=').pop() + '');
+            var offset = Math.round(anchor.offset().top);
+            console.log(offset);
         }
     });
 });
