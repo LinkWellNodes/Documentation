@@ -73,8 +73,7 @@ $(function() {
     });
 });
 window.addEventListener('message', function(event) {
-	var msgJSON = JSON.parse(event.data);
-	if (msgJSON.parentAnchorId) {
+	if (event.data.parentAnchorId) {
    		console.log("Message received from the parent: " + event.origin + " / " + msgJSON.parentAnchorId + "");
    		if ('parentIFrame' in window) {		// is this page loaded inside an iframe?
    			// Get the anchored element to which we'd like to scroll
@@ -89,7 +88,7 @@ window.addEventListener('message', function(event) {
    			console.log("iframe NOT yet loaded in parent")
    		}
 	} else {
-		console.log("Bad msg received: " + event.origin + " / " + JSON.parse(msgJSON));
+		console.log("Bad msg received: " + event.origin + " / " + JSON.stringify(event.data));
 	}
 });
 </script>
