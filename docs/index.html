@@ -94,19 +94,29 @@ $(function() {
 	   			// Get the anchored element to which we'd like to scroll
    				var anchor = $('#' + msg.parentAnchorId);
    				console.log("a");
-   				if (anchor.length) {	// check to ensure the anchor exists
-   					console.log("b");
-	   	   			// Get the Y coordinate of the anchored element
-	   	   			var offset = Math.round(anchor.offset().top);
-   					//console.log("Posting anchor offset (Y:" + offset +")");
-	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe), so that it can scroll
-	   	   			const loopId = setInterval(function () {	// perform this as a loop, as window.parentIframe takes a while to actually become available 
-	   	   				if ('parentIFrame' in window) {
-							window.parentIFrame.sendMessage(offset);
-							clearInterval(loopId);
-	   	   				}
-					}, 10);
-   				}
+   				var loop1Idx = 0;
+   				const loopId1 = setInterval(function () {	// perform this as a loop, as window.parentIframe takes a while to actually become available
+   					loop1Idx++;
+	   				if (anchor.length) {	// check to ensure the anchor exists
+	   					console.log("b");
+		   	   			// Get the Y coordinate of the anchored element
+		   	   			var offset = Math.round(anchor.offset().top);
+	   					//console.log("Posting anchor offset (Y:" + offset +")");
+		   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe), so that it can scroll
+		   	   			const loopId2 = setInterval(function () {	// perform this as a loop, as window.parentIframe takes a while to actually become available 
+		   	   				if ('parentIFrame' in window) {
+								window.parentIFrame.sendMessage(offset);
+								clearInterval(loopId2);
+		   	   				}
+						}, 10);
+		   	   			clearInterval(loopId1);		// anchor found; don't loop anymore
+	   				} else {
+	   					console.log("Re-checking anchorId...");
+	   					if (loop1Idx > 10) {
+	   						clearInterval(loopId1);		// tried long enough to find this anchorId, so it likely doesn't exist; don't loop anymore
+	   					}
+	   				}
+   				}, 10);
    			});
 		}
 	});
