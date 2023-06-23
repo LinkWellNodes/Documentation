@@ -73,7 +73,7 @@ $(function() {
     });
 });
 window.addEventListener('message', function(event) {
-	if (event.data.includes("parentAnchorId") {
+	if (event.data.includes("parentAnchorId")) {
    		console.log("Message received from the parent: " + event.origin + " / " + event.data);
    		if ('parentIFrame' in window) {		// is this page loaded inside an iframe?
    			// Get the anchored element to which we'd like to scroll
