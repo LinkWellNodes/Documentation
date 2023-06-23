@@ -94,6 +94,9 @@ $(function() {
 	   	   			console.log("offset=" + offset);
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
 	   	   			window.parent.postMessage(offset, '*');
+   				} else {
+   					anchor.hide();
+   					console.log("Anchor #" + msg.parentAnchorId + " doesn't exist...");
    				}
    			});
 		} else {
