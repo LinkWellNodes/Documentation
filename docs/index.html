@@ -92,7 +92,7 @@ $(function() {
 	   	   			var offset = Math.round(anchor.offset().top);
 	   	   			console.log("offset=" + offset);
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
-	   	   			window.parent.sendMessage(offset);
+	   	   			window.parent.postMessage(offset, '*');
 	   			});
 		} else {
 			console.log("Bad msg received: " + event.origin + " / " + JSON.stringify(msg));
