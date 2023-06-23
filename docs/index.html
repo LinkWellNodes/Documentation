@@ -89,26 +89,24 @@ $(function() {
 		// Receive all events from the parent regarding the anchor id toward which to scroll, and then do it
 		//console.log("Message received from the parent: " + event.origin + " / " + msg);
 		if (msg.parentAnchorId && !scrolledToParentAnchorAlready) {
-	   		console.log("Anchor received: " + msg.parentAnchorId);
+	   		//console.log("Anchor received: " + msg.parentAnchorId);
    			$(document).ready(function(){
 	   			// Get the anchored element to which we'd like to scroll
    				var anchor = $('#' + msg.parentAnchorId);
-   				console.log("a");
    				if (anchor.length) {	// check to ensure the anchor exists
-   					scrolledToParentAnchorAlready = true;
-   					console.log("b");
 	   	   			// Get the Y coordinate of the anchored element
 	   	   			var offset = Math.round(anchor.offset().top);
    					//console.log("Posting anchor offset (Y:" + offset +")");
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe), so that it can scroll
 	   	   			const loopId2 = setInterval(function () {	// perform this as a loop, as window.parentIframe takes a while to actually become available 
 	   	   				if ('parentIFrame' in window) {
+	   	   					scrolledToParentAnchorAlready = true;
 							window.parentIFrame.sendMessage(offset);
 							clearInterval(loopId2);
 	   	   				}
 					}, 10);
    				} else {
-   					console.log("Invalid anchorId...");
+   					//console.log("Invalid anchorId. Will re-try upon receiving the next message...");
    				}
    			});
 		}
