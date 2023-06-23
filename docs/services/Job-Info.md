@@ -5,7 +5,7 @@
 Please [contact us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") for mainnet job requests and pricing.
 
 ## Testnets
-Please see below for our list of currently supported networks, along with their associated operator contracts and job IDs.  All testnet jobs are free to use, and do not require you to prefund your contracts with the LINK token.  If you run into any trouble, we are here to help!  Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our list of currently supported networks, along with their associated operator contracts and job IDs.  All testnet jobs are free to use, and do not require you to prefund your contracts with the LINK token.  If you run into any trouble, we are here to help!  Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 <!-- tabs:start -->
 
 ### **Ethereum-Sepolia**
@@ -25,7 +25,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Seplolia/get_uint256) for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256) for an example of a client contract.
 
 #### **GET > Uint256 No Multiply**
 
@@ -39,7 +39,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_no_multiply) for an example of a client contract.
 
 #### **GET > Int256**
 
@@ -54,7 +54,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_int256) for an example of a client contract.
 
 #### **GET > Bool**
 
@@ -68,7 +68,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bool) for an example of a client contract.
 
 #### **GET > Bytes**
 
@@ -82,7 +82,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bytes) for an example of a client contract.
 
 #### **GET > String**
 
@@ -96,7 +96,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_string) for an example of a client contract.
 
 #### **GET > Uint256 x 2**
 
@@ -113,7 +113,7 @@ This job requires the following paramaters to be set:
 * `path2`: The second [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_x2) for an example of a client contract.
 
 #### **GET > Uint256[]**
 
@@ -127,7 +127,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_array) for an example of a client contract.
 
 #### **GET > Bytes[]**
 
@@ -141,7 +141,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bytes_array) for an example of a client contract.
 
 #### **POST > Bytes**
 
@@ -156,7 +156,7 @@ This job requires the following paramaters to be set:
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_bytes) for an example of a client contract.
 
 #### **POST > Uint256**
 
@@ -172,7 +172,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256) for an example of a client contract.
 
 <!-- tabs:end -->
 
@@ -193,7 +193,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_uint256) for an example of a client contract.
 
 #### **GET > Uint256 No Multiply**
 
@@ -207,7 +207,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_uint256_no_multiply) for an example of a client contract.
 
 #### **GET > Int256**
 
@@ -222,7 +222,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_int256) for an example of a client contract.
 
 #### **GET > Bool**
 
@@ -236,7 +236,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_bool) for an example of a client contract.
 
 #### **GET > Bytes**
 
@@ -250,7 +250,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_bytes) for an example of a client contract.
 
 #### **GET > String**
 
@@ -264,7 +264,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_string) for an example of a client contract.
 
 #### **GET > Uint256 x 2**
 
@@ -281,7 +281,7 @@ This job requires the following paramaters to be set:
 * `path2`: The second [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_uint256_x2) for an example of a client contract.
 
 #### **GET > Uint256[]**
 
@@ -295,7 +295,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_uint256_array) for an example of a client contract.
 
 #### **GET > Bytes[]**
 
@@ -309,7 +309,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/get_bytes_array) for an example of a client contract.
 
 #### **POST > Bytes**
 
@@ -324,7 +324,7 @@ This job requires the following paramaters to be set:
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/post_bytes) for an example of a client contract.
 
 #### **POST > Uint256**
 
@@ -340,7 +340,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/post_uint256) for an example of a client contract.
 
 <!-- tabs:end -->
 
@@ -361,7 +361,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_uint256) for an example of a client contract.
 
 #### **GET > Uint256 No Multiply**
 
@@ -375,7 +375,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_uint256_no_multiply) for an example of a client contract.
 
 #### **GET > Int256**
 
@@ -390,7 +390,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_int256) for an example of a client contract.
 
 #### **GET > Bool**
 
@@ -404,7 +404,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_bool) for an example of a client contract.
 
 #### **GET > Bytes**
 
@@ -418,7 +418,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_bytes) for an example of a client contract.
 
 #### **GET > String**
 
@@ -432,7 +432,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_string) for an example of a client contract.
 
 #### **GET > Uint256 x 2**
 
@@ -449,7 +449,7 @@ This job requires the following paramaters to be set:
 * `path2`: The second [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_uint256_x2) for an example of a client contract.
 
 #### **GET > Uint256[]**
 
@@ -463,7 +463,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_uint256_array) for an example of a client contract.
 
 #### **GET > Bytes[]**
 
@@ -477,7 +477,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/get_bytes_array) for an example of a client contract.
 
 #### **POST > Bytes**
 
@@ -492,7 +492,7 @@ This job requires the following paramaters to be set:
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/post_bytes) for an example of a client contract.
 
 #### **POST > Uint256**
 
@@ -508,7 +508,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/post_uint256) for an example of a client contract.
 
 <!-- tabs:end -->
 
@@ -529,7 +529,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_uint256) for an example of a client contract.
 
 #### **GET > Uint256 No Multiply**
 
@@ -543,7 +543,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_uint256_no_multiply) for an example of a client contract.
 
 #### **GET > Int256**
 
@@ -558,7 +558,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_int256) for an example of a client contract.
 
 #### **GET > Bool**
 
@@ -572,7 +572,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_bool) for an example of a client contract.
 
 #### **GET > Bytes**
 
@@ -586,7 +586,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_bytes) for an example of a client contract.
 
 #### **GET > String**
 
@@ -600,7 +600,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_string) for an example of a client contract.
 
 #### **GET > Uint256 x 2**
 
@@ -617,7 +617,7 @@ This job requires the following paramaters to be set:
 * `path2`: The second [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_uint256_x2) for an example of a client contract.
 
 #### **GET > Uint256[]**
 
@@ -631,7 +631,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_uint256_array) for an example of a client contract.
 
 #### **GET > Bytes[]**
 
@@ -645,7 +645,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_bytes_array) for an example of a client contract.
 
 #### **POST > Bytes**
 
@@ -660,7 +660,7 @@ This job requires the following paramaters to be set:
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_bytes) for an example of a client contract.
 
 #### **POST > Uint256**
 
@@ -676,11 +676,11 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_uint256) for an example of a client contract.
 
 <!-- tabs:end -->
 
-### **Avalanche-Testnet**
+### **Avalanche-Fuji**
 
 <!-- tabs:start -->
 #### **GET > Uint256**
@@ -696,7 +696,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_uint256) for an example of a client contract.
 
 #### **GET > Uint256 No Multiply**
 
@@ -710,7 +710,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_uint256_no_multiply) for an example of a client contract.
 
 #### **GET > Int256**
 
@@ -725,7 +725,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_int256) for an example of a client contract.
 
 #### **GET > Bool**
 
@@ -739,7 +739,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_bool) for an example of a client contract.
 
 #### **GET > Bytes**
 
@@ -753,7 +753,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_bytes) for an example of a client contract.
 
 #### **GET > String**
 
@@ -767,7 +767,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_string) for an example of a client contract.
 
 #### **GET > Uint256 x 2**
 
@@ -784,7 +784,7 @@ This job requires the following paramaters to be set:
 * `path2`: The second [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_uint256_x2) for an example of a client contract.
 
 #### **GET > Uint256[]**
 
@@ -798,7 +798,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_uint256_array) for an example of a client contract.
 
 #### **GET > Bytes[]**
 
@@ -812,7 +812,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/get_bytes_array) for an example of a client contract.
 
 #### **POST > Bytes**
 
@@ -827,7 +827,7 @@ This job requires the following paramaters to be set:
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/post_bytes) for an example of a client contract.
 
 #### **POST > Uint256**
 
@@ -843,7 +843,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256) for an example of a client contract.
 
 <!-- tabs:end -->
 
@@ -864,7 +864,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/BTT/get_bool/get_bool.sol) for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_uint256) for an example of a client contract.
 
 #### **GET > Uint256 No Multiply**
 
@@ -878,7 +878,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_uint256_no_multiply) for an example of a client contract.
 
 #### **GET > Int256**
 
@@ -893,7 +893,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_int256) for an example of a client contract.
 
 #### **GET > Bool**
 
@@ -907,7 +907,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_bool) for an example of a client contract.
 
 #### **GET > Bytes**
 
@@ -921,7 +921,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_bytes) for an example of a client contract.
 
 #### **GET > String**
 
@@ -935,7 +935,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_string) for an example of a client contract.
 
 #### **GET > Uint256 x 2**
 
@@ -952,7 +952,7 @@ This job requires the following paramaters to be set:
 * `path2`: The second [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_uint256_x2) for an example of a client contract.
 
 #### **GET > Uint256[]**
 
@@ -966,7 +966,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_uint256_array) for an example of a client contract.
 
 #### **GET > Bytes[]**
 
@@ -980,7 +980,7 @@ This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/get_bytes_array) for an example of a client contract.
 
 #### **POST > Bytes**
 
@@ -995,7 +995,7 @@ This job requires the following paramaters to be set:
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/post_bytes) for an example of a client contract.
 
 #### **POST > Uint256**
 
@@ -1011,7 +1011,7 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256) for an example of a client contract.
 
 <!-- tabs:end -->
 <!-- tabs:end -->
