@@ -86,15 +86,16 @@ $(function() {
 			msg = JSON.stringify(event.data);
 		}
 		// Receive all events from the parent regarding the anchor id toward which to scroll, and then do it
-		console.log("Message received from the parent: " + event.origin + " / " + msg.parentAnchorId);
+		console.log("Message received from the parent: " + event.origin + " / " + msg);
 		if (msg.parentAnchorId && !scrolledToParentAnchorAlready) {
 			scrolledToParentAnchorAlready = true;
 	   		console.log("Anchor received: " + msg.parentAnchorId);
    			$(document).ready(function(){
 	   			// Get the anchored element to which we'd like to scroll
    				var anchor = $('#' + msg.parentAnchorId);
+   				console.log("a");
    				if (anchor.length) {	// check to ensure the anchor exists
-   					console.log("a");
+   					console.log("b");
 	   	   			// Get the Y coordinate of the anchored element
 	   	   			var offset = Math.round(anchor.offset().top);
    					//console.log("Posting anchor offset (Y:" + offset +")");
