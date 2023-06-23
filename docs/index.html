@@ -40,6 +40,7 @@
     
   </script>
   <!-- Allow for iframe resizing despite being at a different subdomain: https://github.com/davidjbradshaw/iframe-resizer -->
+  <script type="text/javascript" src="/media/iframeResizer.contentWindow.min.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- docsify-tabs plugin - (latest v1.x.x) -->
@@ -72,12 +73,13 @@ $(function() {
     });
 });
 window.addEventListener('message', function(event) {
-	if ((event.data + "").includes("parentAnchorId")) {
-   		console.log("Message received from the parent: " + event.origin + " / " + event.data + "");
+	var msgStr = JSON.stringify(event.data);
+	if (msgStr.includes("parentAnchorId")) {
+   		console.log("Message received from the parent: " + event.origin + " / " + msgStr + "");
    		if ('parentIFrame' in window) {		// is this page loaded inside an iframe?
    			// Get the anchored element to which we'd like to scroll
-   			console.log("Anchor target received: " + (event.data + "").split('=').pop());
-   			var anchor = $('#' + (event.data + "").split('=').pop());
+   			console.log("Anchor target received: " + msgStr.split('=').pop());
+   			var anchor = $('#' + msgStr.split('=').pop());
    			// Get the Y coordinate of the anchored element
    			var offset = Math.round(anchor.offset().top);
    			console.log("offset=" + offset);
@@ -85,8 +87,7 @@ window.addEventListener('message', function(event) {
    			window.parentIFrame.sendMessage(offset);
    		}
 	} else {
-		console.log("Bad msg received1: " + event.origin + " / " + event.data + "");
-		console.log("Bad msg received2: " + event.origin + " / " + JSON.stringify(event.data));
+		console.log("Bad msg received: " + event.origin + " / " + msgStr);
 	}
 });
 </script>
