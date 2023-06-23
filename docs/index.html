@@ -74,7 +74,6 @@ $(function() {
             window.parentIFrame.sendMessage(offset);
         }
     });
-	var onceOnly = false;
 	window.addEventListener('message', function(event) {
 		var msg;
 		try {
@@ -82,8 +81,7 @@ $(function() {
 		} catch (e) {
 			msg = JSON.stringify(event.data);
 		}
-		if (msg.parentAnchorId && !onceOnly) {
-			onceOnly = true;
+		if (msg.parentAnchorId) {
 	   		console.log("Message received from the parent: " + event.origin + " / " + msg.parentAnchorId + "");
    			// Get the anchored element to which we'd like to scroll
    			console.log("Anchor target received: " + msg.parentAnchorId);
@@ -94,7 +92,7 @@ $(function() {
 	   	   			var offset = Math.round(anchor.offset().top);
    					console.log("Posting anchor offset (" + offset +")");
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
-	   	   			window.parent.postMessage(JSON.stringify({"offsetY" : offset}, '*'));
+	   	   			window.parent.postMessage(JSON.stringify({"offsetY" : offset}, 'https://docs.linkwellnodes.io'));
    				} else {
    					anchor.hide();
    					console.log("Anchor #" + msg.parentAnchorId + " doesn't exist...");
