@@ -74,6 +74,7 @@ $(function() {
             window.parentIFrame.sendMessage(offset);
         }
     });
+	var onceOnly = false;
 	window.addEventListener('message', function(event) {
 		var msg;
 		try {
@@ -81,7 +82,8 @@ $(function() {
 		} catch (e) {
 			msg = JSON.stringify(event.data);
 		}
-		if (msg.parentAnchorId) {
+		if (msg.parentAnchorId && !onceOnly) {
+			onceOnly = true;
 	   		console.log("Message received from the parent: " + event.origin + " / " + msg.parentAnchorId + "");
    			// Get the anchored element to which we'd like to scroll
    			console.log("Anchor target received: " + msg.parentAnchorId);
