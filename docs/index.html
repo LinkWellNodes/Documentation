@@ -60,14 +60,10 @@
 $(function() {
 	console.log("start");
 	$(document).on('click', '.anchor', function(e) {
-    	console.log("id=" + $(this).blur().attr('href').split('?id=').pop());
+    	console.log("clicked");
         if ('parentIFrame' in window) {
-        	console.log("yes");
-            var href = $(this).blur().attr('href');
-            var anchor = $('a[data-id=' + $(this).blur().attr('href').split('?id=').pop() + ']');
-            var offset = Math.round(anchor.offset().top);
-            e.preventDefault();
-            window.parentIFrame.sendMessage(offset);
+        	console.log("in iframe");
+            window.parentIFrame.sendMessage($(this).blur().attr('href').split('?id=').pop());
         }
     });
 });
