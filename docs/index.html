@@ -74,6 +74,7 @@ $(function() {
             window.parentIFrame.sendMessage(offset);
         }
     });
+	var scrolledToParentAnchorAlready = false;
 	window.addEventListener('message', function(event) {
 		var msg;
 		try {
@@ -81,7 +82,8 @@ $(function() {
 		} catch (e) {
 			msg = JSON.stringify(event.data);
 		}
-		if (msg.parentAnchorId) {
+		if (msg.parentAnchorId && !scrolledToParentAnchorAlready) {
+			scrolledToParentAnchorAlready = true;
 	   		console.log("Message received from the parent: " + event.origin + " / " + msg.parentAnchorId + "");
    			// Get the anchored element to which we'd like to scroll
    			console.log("Anchor target received: " + msg.parentAnchorId);
@@ -92,7 +94,15 @@ $(function() {
 	   	   			var offset = Math.round(anchor.offset().top);
    					console.log("Posting anchor offset (" + offset +")");
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
-	   	   			window.parentIFrame.sendMessage(offset);
+	   	   			const loopId = setInterval(function () {
+	   	   				if ('parentIFrame' in window) {
+							window.parentIFrame.sendMessage(offset);
+							clearInterval(loopId);
+	   	   				} else {
+	   	   					console.log("Waiting for iframe to load...");
+	   	   				}
+					}, 50);	
+	   	   			//window.parentIFrame.sendMessage(offset);
    				} else {
    					anchor.hide();
    					console.log("Anchor #" + msg.parentAnchorId + " doesn't exist...");
