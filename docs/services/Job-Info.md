@@ -5,6 +5,7 @@
 Please [contact us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") for mainnet job requests and pricing.
 
 ## Testnets
+Please see below for our list of currently supported networks, along with their associated operator contracts and job IDs.  All testnet jobs are free to use, and do not require you to prefund your contracts with the LINK token.  If you run into any trouble, we are here to help!  Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 <!-- tabs:start -->
 
 ### **Ethereum-Sepolia**
@@ -24,11 +25,11 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Seplolia/get_uint256) for an example of a client contract.
 
 #### **GET > Uint256 No Multiply**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
+HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -122,6 +123,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B | 9a2ba54374f34184bdc6390db3171994 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -135,6 +137,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B | 332c0b46e57f49cd8c7d74cdbe5106ab | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -148,6 +151,7 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -162,6 +166,7 @@ HTTP POST to any public API which parses the response and returns an unsigned in
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -192,7 +197,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Uint256 No Multiply**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
+HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -286,6 +291,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xB9C47B9609174716CE536324d4FbEad9292c1d3a | 9a2ba54374f34184bdc6390db3171994 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -299,6 +305,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xB9C47B9609174716CE536324d4FbEad9292c1d3a | 332c0b46e57f49cd8c7d74cdbe5106ab | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -312,6 +319,7 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xB9C47B9609174716CE536324d4FbEad9292c1d3a | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -326,6 +334,7 @@ HTTP POST to any public API which parses the response and returns an unsigned in
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xB9C47B9609174716CE536324d4FbEad9292c1d3a | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -356,7 +365,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Uint256 No Multiply**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
+HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -450,6 +459,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0x12A3d7759F745f4cb8EE8a647038c040cB8862A5 | 9a2ba54374f34184bdc6390db3171994 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -463,6 +473,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0x12A3d7759F745f4cb8EE8a647038c040cB8862A5 | 332c0b46e57f49cd8c7d74cdbe5106ab | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -476,6 +487,7 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0x12A3d7759F745f4cb8EE8a647038c040cB8862A5 | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -490,6 +502,7 @@ HTTP POST to any public API which parses the response and returns an unsigned in
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0x12A3d7759F745f4cb8EE8a647038c040cB8862A5 | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -520,7 +533,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Uint256 No Multiply**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
+HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -614,6 +627,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | 9a2ba54374f34184bdc6390db3171994 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -627,6 +641,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | 332c0b46e57f49cd8c7d74cdbe5106ab | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -640,6 +655,7 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -654,6 +670,7 @@ HTTP POST to any public API which parses the response and returns an unsigned in
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -683,7 +700,7 @@ Please see our supporting documentation [here] for an example of a client contra
 
 #### **GET > Uint256 No Multiply**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
+HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -777,6 +794,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406 | 9a2ba54374f34184bdc6390db3171994 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -790,6 +808,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406 | 332c0b46e57f49cd8c7d74cdbe5106ab | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -803,6 +822,7 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406 | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -817,6 +837,7 @@ HTTP POST to any public API which parses the response and returns an unsigned in
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406 | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -843,11 +864,11 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
-Please see our supporting documentation [here] for an example of a client contract.
+Please see our supporting documentation [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/BTT/get_bool/get_bool.sol) for an example of a client contract.
 
 #### **GET > Uint256 No Multiply**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
+HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -941,6 +962,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | 9a2ba54374f34184bdc6390db3171994 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -954,6 +976,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | 332c0b46e57f49cd8c7d74cdbe5106ab | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `get`: The URL to make the HTTP request to.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 
@@ -967,6 +990,7 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -981,6 +1005,7 @@ HTTP POST to any public API which parses the response and returns an unsigned in
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
+This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
@@ -989,10 +1014,26 @@ HTTP POST to any public API which parses the response and returns an unsigned in
 Please see our supporting documentation [here] for an example of a client contract.
 
 <!-- tabs:end -->
-
 <!-- tabs:end -->
 
+## Custom Data Requests
 
+
+## Troubleshooting
+* For mainnets, ensure you are prefunding the correct and appropriate amount of LINK tokens into your contracts before making the request. 
+* Double check that you are using the correct address and job ID for the job you are targeting via our job listings above.
+* Confirm that the API endpoint you are making the HTTP request to is working via curl.  See below for a few sample curl commands!
+* If your API requires an API key, please [**reach out**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to us so that we can securely store and utilize your key via an [external adapter](https://github.com/smartcontractkit/external-adapters-js/tree/main/packages/sources).
+
+HTTP GET:
+```curl -X 'GET' 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD' -H 'accept: application/json'```
+
+HTTP POST:
+```curl -X POST -H "content-type:application/json" "http://localhost:8080/" --data '{ "id": 0, "data": { "from": "ETH", "to": "USD" } }'```
+
+## Support
+* Feel free to join our [**Discord**](https://discord.gg/AJ66pRz4), or [**contact us**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") if you require support integrating our job into your contract.  We are happy to support custom data requests as well!
+* Please check out our [**FAQ**](/faq/Chainlink-Consumers "FAQ - Chainlink Data Consumers") for additional supporting information.
 
 
 
