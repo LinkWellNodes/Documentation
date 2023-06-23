@@ -72,7 +72,7 @@ $(function() {
             // Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
             window.parentIFrame.sendMessage(offset);
             // Send the anchor id tag to the parent webpage, so that it can update its URL
-            window.parent.postMessage({"childAnchorId": anchorIdStr}, "*");
+            window.parentIFrame.sendMessage({"childAnchorId": anchorIdStr});
         }
     });
 	
