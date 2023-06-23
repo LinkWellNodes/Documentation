@@ -2,7 +2,7 @@
   * [Jobs and Pricing](/services/Job-Info "Supported Chainlink networks, jobs, and fees")
 * **Chainlink FAQ**
   * [Operators](/faq/Chainlink-Operators "FAQ - Chainlink Node Operators")
-  * [Consumers](/faq/Chainlink-Consumers "FAQ - Chainlink Data Consumers")
+  * [Consumers](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers")
 <!--  * [External Adapters](/faq/External-Adapters "FAQ - External Adapters") -->
 * **About**
   <!-- * [Who we are](/about/About "About LinkWell Nodes") -->
