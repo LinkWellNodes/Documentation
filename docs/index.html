@@ -86,8 +86,8 @@ window.addEventListener('message', function(event) {
    			window.parentIFrame.sendMessage(offset);
    		}
 	} else {
-		console.log("Bad msg received: " + event.origin + " / " + event.data + "");
-		console.log("Bad msg received: " + event.origin + " / " + event.data.stringify());
+		console.log("Bad msg received1: " + event.origin + " / " + event.data + "");
+		console.log("Bad msg received2: " + event.origin + " / " + JSON.stringify(event.data));
 	}
 });
 </script>
