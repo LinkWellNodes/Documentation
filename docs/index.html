@@ -59,8 +59,8 @@
 <script>
 $(function() {
 	console.log("start");
-	$(document).on('click', '.anchor', function($e) {
-    	console.log($(this).blur().attr('href').split('?id=').pop());
+	$(document).on('click', '.anchor', function(e) {
+    	console.log("id=" + $(this).blur().attr('href').split('?id=').pop());
         if ('parentIFrame' in window) {
         	console.log("yes");
             var href = $(this).blur().attr('href');
