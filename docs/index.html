@@ -74,7 +74,7 @@ $(function() {
 });
 window.addEventListener('message', function(event) {
 	if (event.origin == "parentAnchorIdMsg") {
-   		console.log("Message received from the parent: " + event.data);
+   		console.log("Message received from the parent: " + event.origin + " / " + event.data);
    		if ('parentIFrame' in window) {		// is this page loaded inside an iframe?
    			// Get the anchored element to which we'd like to scroll
    			var anchor = $('#' + event.data);
@@ -85,7 +85,7 @@ window.addEventListener('message', function(event) {
    			window.parentIFrame.sendMessage(offset);
    		}
 	} else {
-		console.log("Bad msg received: " + event.origin);
+		console.log("Bad msg received: " + event.origin + " / " + event.data);
 	}
 });
 </script>
