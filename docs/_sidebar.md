@@ -5,9 +5,8 @@
   * [Consumers](/faq/Chainlink-Consumers "FAQ - Chainlink Data Consumers")
 <!--  * [External Adapters](/faq/External-Adapters "FAQ - External Adapters") -->
 * **About**
-  <!--* [Who we are](/about/About "About LinkWell Nodes") -->
+  <!-- * [Who we are](/about/About "About LinkWell Nodes") -->
   * [Contact Us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")
-
 
 <!-- * Getting Started
   * [Overview](/README)
