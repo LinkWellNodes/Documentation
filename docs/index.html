@@ -54,27 +54,21 @@
   <!-- Table of contents (right-hand side of pages) -->
   <!-- This style looks nice: https://docs.docker.com/compose/extends/#extending-services -->
   <script src="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
+  <!-- JQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
 $(function() {
-	console.log("start");
+	// Intercept all clicks on anchor links, and tell the parent document the Y coordinate to which to scroll (if this page is loaded inside of an iframe)
 	$(document).on('click', '.anchor', function(e) {
-    	console.log("id=" + $(this).blur().attr('href').split('?id=').pop());
-        if ('parentIFrame' in window) {
-        	console.log("yes");
-            var href = $(this).blur().attr('href');
+        if ('parentIFrame' in window) {		// is this page loaded inside an iframe? 
+        	// Get the anchored element to which we'd like to scroll 
             var anchor = $('#' + $(this).blur().attr('href').split('?id=').pop() + '');
+        	// Get the Y coordinate of the anchored element
             var offset = Math.round(anchor.offset().top);
             e.preventDefault();
+            // Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
             window.parentIFrame.sendMessage(offset);
-        } else {
-        	// testing
-        	console.log("yes");
-            var href = $(this).blur().attr('href');
-            var anchor = $('#' + $(this).blur().attr('href').split('?id=').pop() + '');
-            var offset = Math.round(anchor.offset().top);
-            console.log(offset);
         }
     });
 });
