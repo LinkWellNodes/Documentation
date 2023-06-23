@@ -59,6 +59,9 @@
   
 <script>
 $(function() {
+	
+	//parent.iframeLoaded();
+	
 	// Intercept all clicks on anchor links, and tell the parent document the Y coordinate to which to scroll (if this page is loaded inside of an iframe)
 	$(document).on('click', '.anchor', function(e) {
         if ('parentIFrame' in window) {		// is this page loaded inside an iframe? 
@@ -71,34 +74,34 @@ $(function() {
             window.parentIFrame.sendMessage(offset);
         }
     });
-});
-window.addEventListener('message', function(event) {
-	var msg;
-	try {
-		msg = JSON.parse(event.data);
-	} catch (e) {
-		msg = JSON.stringify(event.data);
-	}
-	if (msg.parentAnchorId) {
-   		console.log("Message received from the parent: " + event.origin + " / " + msg.parentAnchorId + "");
-   		if ('parentIFrame' in window) {		// is this page loaded inside an iframe?
-   			// Get the anchored element to which we'd like to scroll
-   			console.log("Anchor target received: " + msg.parentAnchorId);
-   			$(document).ready(function(){
-   				console.log("Proceeding with anchor...");
-   				var anchor = $('#' + msg.parentAnchorId);
-   	   			// Get the Y coordinate of the anchored element
-   	   			var offset = Math.round(anchor.offset().top);
-   	   			console.log("offset=" + offset);
-   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
-   	   			window.parentIFrame.sendMessage(offset);
-   			});
-   		} else {
-   			console.log("iframe NOT yet loaded in parent")
-   		}
-	} else {
-		console.log("Bad msg received: " + event.origin + " / " + JSON.stringify(msg));
-	}
+	window.addEventListener('message', function(event) {
+		var msg;
+		try {
+			msg = JSON.parse(event.data);
+		} catch (e) {
+			msg = JSON.stringify(event.data);
+		}
+		if (msg.parentAnchorId) {
+	   		console.log("Message received from the parent: " + event.origin + " / " + msg.parentAnchorId + "");
+	   		if ('parentIFrame' in window) {		// is this page loaded inside an iframe?
+	   			// Get the anchored element to which we'd like to scroll
+	   			console.log("Anchor target received: " + msg.parentAnchorId);
+	   			$(document).ready(function(){
+	   				console.log("Proceeding with anchor...");
+	   				var anchor = $('#' + msg.parentAnchorId);
+	   	   			// Get the Y coordinate of the anchored element
+	   	   			var offset = Math.round(anchor.offset().top);
+	   	   			console.log("offset=" + offset);
+	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
+	   	   			window.parentIFrame.sendMessage(offset);
+	   			});
+	   		} else {
+	   			console.log("iframe NOT yet loaded in parent")
+	   		}
+		} else {
+			console.log("Bad msg received: " + event.origin + " / " + JSON.stringify(msg));
+		}
+	});
 });
 </script>
   
