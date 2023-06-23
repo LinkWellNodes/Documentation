@@ -92,7 +92,15 @@ $(function() {
 	   	   			var offset = Math.round(anchor.offset().top);
    					console.log("Posting anchor offset (" + offset +")");
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
-	   	   			window.parentIFrame.sendMessage(offset);
+	   	   			const loopId = setInterval(function () {
+	   	   				if ('parentIFrame' in window) {
+							window.parentIFrame.sendMessage(offset);
+							clearInterval(loopId);
+	   	   				} else {
+	   	   					console.log("Waiting for iframe to load...");
+	   	   				}
+					}, 200);	
+	   	   			//window.parentIFrame.sendMessage(offset);
    				} else {
    					anchor.hide();
    					console.log("Anchor #" + msg.parentAnchorId + " doesn't exist...");
