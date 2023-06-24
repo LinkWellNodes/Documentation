@@ -1057,7 +1057,7 @@ HTTP POST:
 
 ## Support
 * Feel free to join our [**Discord**](https://discord.gg/AJ66pRz4), or [**contact us**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") if you require support integrating our job into your contract.  We are happy to support custom data requests as well!
-* Please check out our [**FAQ**](/faq/Chainlink-Consumers "FAQ - Chainlink Data Consumers") for additional supporting information.
+* Please check out our [**FAQ**](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for additional supporting information.
 
 
 
