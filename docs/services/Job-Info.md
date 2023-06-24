@@ -160,19 +160,45 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-HTTP POST to any public API which parses the response and returns an unsigned integer of type (**uint256**).
+#### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| 0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B | b090204b16644030844a6e91932a7626 | 0 LINK                |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-This job requires the following paramaters to be set:
-* `post`: The URL to make the HTTP request to.
-* `requestData`: A statically-defined JSON payload to be sent to the defined URL.
-* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
-* `times`: Multiplies the provided input.
+#### Request parameters
 
-Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256) for an example of a client contract.
+This job allows the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **post** | Yes | String | `"https://min-api.cryptocompare.com/data/price"` | The URL to which to send the HTTP request for data                                                                                          |
+| **requestData** | Yes | String | `'{"fsym": "ETH", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
+| **path** | Yes | String | `"USD"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **times** | Yes | int256 | `100` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
+* Sample response from the HTTP endpoint: `{"USD":1892.84}`
+* Sample response from the Chainlink oracle: `189284`
+
+#### Implementing your consumer contract
+
+#### Add the constructor:
+[post_uint256_constructor_binance](#services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+[post_uint256_request_binance](#services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+
+#### More resources
+
+* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol).
+* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.toml).
+
+#### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 <!-- tabs:end -->
 
@@ -328,19 +354,45 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-HTTP POST to any public API which parses the response and returns an unsigned integer of type (**uint256**).
+#### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| 0xB9C47B9609174716CE536324d4FbEad9292c1d3a | b090204b16644030844a6e91932a7626 | 0 LINK                |
+| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-This job requires the following paramaters to be set:
-* `post`: The URL to make the HTTP request to.
-* `requestData`: A statically-defined JSON payload to be sent to the defined URL.
-* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
-* `times`: Multiplies the provided input.
+#### Request parameters
 
-Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Ethereum-Goerli/post_uint256) for an example of a client contract.
+This job allows the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **post** | Yes | String | `"https://min-api.cryptocompare.com/data/price"` | The URL to which to send the HTTP request for data                                                                                          |
+| **requestData** | Yes | String | `'{"fsym": "ETH", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
+| **path** | Yes | String | `"USD"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **times** | Yes | int256 | `100` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
+* Sample response from the HTTP endpoint: `{"USD":1892.84}`
+* Sample response from the Chainlink oracle: `189284`
+
+#### Implementing your consumer contract
+
+#### Add the constructor:
+[post_uint256_constructor_binance](#services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+[post_uint256_request_binance](#services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+
+#### More resources
+
+* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol).
+* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.toml).
+
+#### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 <!-- tabs:end -->
 
@@ -496,19 +548,45 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-HTTP POST to any public API which parses the response and returns an unsigned integer of type (**uint256**).
+#### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| 0x12A3d7759F745f4cb8EE8a647038c040cB8862A5 | b090204b16644030844a6e91932a7626 | 0 LINK                |
+| [0x12A3d7759F745f4cb8EE8a647038c040cB8862A5](https://mumbai.polygonscan.com/address/0x12a3d7759f745f4cb8ee8a647038c040cb8862a5) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-This job requires the following paramaters to be set:
-* `post`: The URL to make the HTTP request to.
-* `requestData`: A statically-defined JSON payload to be sent to the defined URL.
-* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
-* `times`: Multiplies the provided input.
+#### Request parameters
 
-Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Polygon-Mumbai/post_uint256) for an example of a client contract.
+This job allows the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **post** | Yes | String | `"https://min-api.cryptocompare.com/data/price"` | The URL to which to send the HTTP request for data                                                                                          |
+| **requestData** | Yes | String | `'{"fsym": "ETH", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
+| **path** | Yes | String | `"USD"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **times** | Yes | int256 | `100` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
+* Sample response from the HTTP endpoint: `{"USD":1892.84}`
+* Sample response from the Chainlink oracle: `189284`
+
+#### Implementing your consumer contract
+
+#### Add the constructor:
+[post_uint256_constructor_binance](#services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+[post_uint256_request_binance](#services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+
+#### More resources
+
+* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol).
+* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.toml).
+
+#### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 <!-- tabs:end -->
 
@@ -664,19 +742,45 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-HTTP POST to any public API which parses the response and returns an unsigned integer of type (**uint256**).
+#### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b090204b16644030844a6e91932a7626 | 0 LINK                |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://testnet.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-This job requires the following paramaters to be set:
-* `post`: The URL to make the HTTP request to.
-* `requestData`: A statically-defined JSON payload to be sent to the defined URL.
-* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
-* `times`: Multiplies the provided input.
+#### Request parameters
 
-Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_uint256) for an example of a client contract.
+This job allows the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **post** | Yes | String | `"https://min-api.cryptocompare.com/data/price"` | The URL to which to send the HTTP request for data                                                                                          |
+| **requestData** | Yes | String | `'{"fsym": "ETH", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
+| **path** | Yes | String | `"USD"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **times** | Yes | int256 | `100` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
+* Sample response from the HTTP endpoint: `{"USD":1892.84}`
+* Sample response from the Chainlink oracle: `189284`
+
+#### Implementing your consumer contract
+
+#### Add the constructor:
+[post_uint256_constructor_binance](#services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+[post_uint256_request_binance](#services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+
+#### More resources
+
+* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol).
+* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.toml).
+
+#### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 <!-- tabs:end -->
 
@@ -831,11 +935,11 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-#### Post > Uint256 Job details
+#### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| 0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406 | b090204b16644030844a6e91932a7626 | 0 LINK                |
+| [0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406](https://testnet.snowtrace.io/address/0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
 #### Request parameters
 
@@ -1017,7 +1121,7 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://etherscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://testnet.bscscan.com/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
 
 ---
 This job requires the following paramaters to be set:
@@ -1041,7 +1145,7 @@ Example Job:
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://etherscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b090204b16644030844a6e91932a7626 | 0 LINK                |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://testnet.bscscan.com/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
 #### Request parameters
 
