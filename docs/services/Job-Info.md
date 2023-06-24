@@ -831,19 +831,45 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-HTTP POST to any public API which parses the response and returns an unsigned integer of type (**uint256**).
+### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406 | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-This job requires the following paramaters to be set:
-* `post`: The URL to make the HTTP request to.
-* `requestData`: A statically-defined JSON payload to be sent to the defined URL.
-* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
-* `times`: Multiplies the provided input.
+### Request parameters
 
-Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256) for an example of a client contract.
+This job allows the following parameters to be set:
+
+| Parameter | Required? | Value type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **post** | Yes | String | `"https://min-api.cryptocompare.com/data/price"` | The URL to which to send the HTTP request for data                                                                                          |
+| **requestData** | Yes | String | `'{"fsym": "ETH", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
+| **path** | Yes | String | `"USD"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **times** | Yes | int256 | `100` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
+* Sample response from the HTTP endpoint: `{"USD":1892.84}`
+* Sample response from the Chainlink oracle: `189284`
+
+### Implementing your consumer contract
+
+#### Add the constructor:
+https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L27-L32
+
+#### Add your request function (example):
+https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L34-L51
+
+### More resources
+
+* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol).
+* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.toml).
+
+### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 <!-- tabs:end -->
 

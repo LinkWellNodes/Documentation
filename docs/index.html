@@ -31,6 +31,7 @@
       loadSidebar: true,
       subMaxLevel: 2,
       name: 'Documentation',
+      nameLink: '#/',    // important for allowing the hashchange event listener to trigger for clicks to the name link
       repo: 'https://github.com/LinkWellNodes',
       search: 'auto',
       pagination: {
@@ -70,6 +71,21 @@
 <script>
 $(function() {
 	
+    // Listen for page changes
+    window.addEventListener('hashchange', function(){
+        console.log("New page loaded: " + window.location.hash);
+        if ('parentIFrame' in window) {        // is this page loaded inside an iframe?
+            var hash = window.location.hash;
+            if (hash.length > 0) {
+                if (hash.charAt(0) == '#') {
+                    hash = hash.substring(1);    // remove the first char ('#')
+                }
+                // TODO
+            }
+            window.parentIFrame.sendMessage({"urlChanged": {"page": pageId, "anchor": anchorId}});
+        }
+    });
+	
 	// Intercept all clicks on anchor links, and tell the parent document the Y coordinate to which to scroll (if this page is loaded inside of an iframe)
 	$(document).on('click', '.anchor', function(e) {
         if ('parentIFrame' in window) {		// is this page loaded inside an iframe? 
@@ -82,7 +98,7 @@ $(function() {
             // Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
             window.parentIFrame.sendMessage(offset);
             // Send the anchor id tag to the parent webpage, so that it can update its URL
-            window.parentIFrame.sendMessage({"childAnchorId": anchorIdStr});
+            //window.parentIFrame.sendMessage({"childAnchorId": anchorIdStr});
         }
     });
 	
@@ -108,11 +124,11 @@ $(function() {
 	   	   			var offset = Math.round(anchor.offset().top);
    					//console.log("Posting anchor offset (Y:" + offset +")");
 	   	   			// Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe), so that it can scroll
-	   	   			const loopId2 = setInterval(function () {	// perform this as a loop, as window.parentIframe takes a while to actually become available 
+	   	   			const loop1Id = setInterval(function () {	// perform this as a loop, as window.parentIframe takes a while to actually become available 
 	   	   				if ('parentIFrame' in window) {
 	   	   					scrolledToParentAnchorAlready = true;
 							window.parentIFrame.sendMessage(offset);
-							clearInterval(loopId2);
+							clearInterval(loop1Id);
 	   	   				}
 					}, 10);
    				} else {
