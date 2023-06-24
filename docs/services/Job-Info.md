@@ -857,6 +857,9 @@ This job allows the following parameters to be set:
 ### Implementing your consumer contract
 
 #### Add the constructor:
+
+[post_uint256.sol](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+
 https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L27-L32
 
 #### Add your request function (example):
