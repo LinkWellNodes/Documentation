@@ -31,35 +31,32 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
         fee = (0 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
     }
 
-    function requestBytes() public {
+    function requestUint256() public {
         Chainlink.Request memory req = buildChainlinkRequest(
             jobId,
             address(this),
-            this.fulfillBytes.selector
+            this.fulfillUint256.selector
         );
         
-        // THE URL TO WHICH TO SEND THIS REQUEST
-        req.add("post", "API_URL"); // Example: https://myUrl.com
-        
-        // REQUEST BODY | cannot be an empty string ("{}" is OK)
-		req.add("requestData", "{}"); // Example: {"name": "Linkwell", "date": "2023"}
-        req.add("path", "JSON_PATH"); // Example: "org,info"
-        int256 timesAmount = 10 ** 18;
+        // The URL which to send this request
+        req.add("post", "API_URL"); // Example: "https://min-api.cryptocompare.com/data/price"       
+        // Request body | cannot be an empty string ("{}" is OK)
+		req.add("requestData", '{ "FIELD1": "VALUE1", "FIELD2": "VALUE2" }'); // Example: {"fsym": "ETH", "tsyms": "USD"}
+        // JSON PATH
+        req.add("path", "JSON_PATH"); // Example: "USD"
+        // The Uint256 Multiplier
+        int256 timesAmount = 100;
         req.addInt("times", timesAmount);
         sendChainlinkRequest(req, fee);
     }
 
-    event RequestFulfilled(bytes32 indexed requestId, bytes indexed value);
-
-    function fulfillBytes(
+    function fulfillUint256(
         bytes32 requestId,
-        bytes memory uint256Data
+        uint256 uint256Data
     ) public recordChainlinkFulfillment(requestId) {
-        emit RequestFulfilled(requestId, uint256Data);
-        value = string(uint256Data);
+        value = uint256Data;
 
     }
-
 
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
