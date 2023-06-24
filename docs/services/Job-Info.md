@@ -1010,23 +1010,24 @@ Example Job:
 
 HTTP POST to any public API which parses the response and returns an unsigned integer of type (**uint256**).
 
-This job requires the following paramaters to be set:
-* `post`: The URL to make the HTTP request to.
-* `requestData`: A statically-defined JSON payload to be sent to the defined URL.
-* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
-* `times`: Multiplies the provided input.
-
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
 ---
-Example job parameters in your contract:
+<!-- Example job parameters in your contract:
 * `post`: https://min-api.cryptocompare.com/data/price
 * `requestData`: '{"fsym": "ETH", "tsyms": "USD"}'
 * `path`: USD
-* `times`: 100
+* `times`: 100 -->
 
+This job requires the following paramaters to be set:
+* `post`: The URL to make the HTTP request to.  `Example: https://min-api.cryptocompare.com/data/price`
+* `requestData`: A statically-defined JSON payload to be sent to the defined URL.  `Example: '{"fsym": "ETH", "tsyms": "USD"}'`
+* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.  `Example: USD`
+* `times`: Multiplies the provided input.  `Example: 100`
+
+---
 Curl command for testing the endpoint: 
 `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
 
@@ -1036,6 +1037,7 @@ JSON response:
 Chainlink oracle response returned: 
 `189084`
 
+---
 Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256) for an example of a client contract.
 <!-- tabs:end -->
 <!-- tabs:end -->
@@ -1049,11 +1051,11 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 * Confirm that the API endpoint you are making the HTTP request to is working via curl.  See below for a few sample curl commands!
 * If your API requires an API key, please [**reach out**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to us so that we can securely store and utilize your key via an [external adapter](https://github.com/smartcontractkit/external-adapters-js/tree/main/packages/sources).
 
-HTTP GET:
+<!-- HTTP GET:
 ```curl -X 'GET' 'https://min-api.cryptocompare.com/data/pricemultifull?fsym=ETH&tsyms=USD' -H 'accept: application/json'```
 
 HTTP POST:
-```curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'```
+```curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'``` -->
 
 ## Support
 * Feel free to join our [**Discord**](https://discord.gg/AJ66pRz4), or [**contact us**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") if you require support integrating our job into your contract.  We are happy to support custom data requests as well!

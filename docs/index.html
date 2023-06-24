@@ -8,9 +8,19 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
   <link rel="stylesheet" href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css">
+  <!-- PrismJS theme -->
+  <link rel="stylesheet" href="path/to/prismjs-theme.css">
   <link rel="stylesheet" href="/media/styles.css">
+  <style>
+    :root {
+    /* Tabs */
+    --docsifytabs-tab-color             : #ffffff;
+    }
+  </style>
+  
 </head>
 <body>
   <div id="app"></div>
@@ -19,7 +29,7 @@
       // logo: '/media/LinkWellLogo.png',
       coverpage: false,
       loadSidebar: true,
-      subMaxLevel: 1,
+      subMaxLevel: 2,
       name: 'Documentation',
       repo: 'https://github.com/LinkWellNodes',
       search: 'auto',
@@ -33,7 +43,7 @@
   	  },
   	  toc: {
   	    tocMaxLevel: 5,
-  	    target: 'h2, h3, h4, h5, h6',
+  	    target: 'h3, h4, h5, h6',
   	    ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
   	  }
     }
