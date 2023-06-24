@@ -32,13 +32,9 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
     }
 /// [constructor]
 
+/// [request]
     function requestUint256() public {
-        Chainlink.Request memory req = buildChainlinkRequest(
-            jobId,
-            address(this),
-            this.fulfillUint256.selector
-        );
-        
+        Chainlink.Request memory req = buildChainlinkRequest(jobId,address(this),this.fulfillUint256.selector);
         // The URL which to send this request
         req.add("post", "API_URL"); // Example: "https://min-api.cryptocompare.com/data/price"       
         // Request body | cannot be an empty string ("{}" is OK)
@@ -50,7 +46,7 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
         req.addInt("times", timesAmount);
         sendChainlinkRequest(req, fee);
     }
-
+/// [request]
     function fulfillUint256(
         bytes32 requestId,
         uint256 uint256Data

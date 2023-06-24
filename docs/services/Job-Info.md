@@ -841,7 +841,7 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 This job allows the following parameters to be set:
 
-| Parameter | Required? | Value type | Value example | Description |
+| Parameter | Required? | Type | Value example | Description |
 |-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | **post** | Yes | String | `"https://min-api.cryptocompare.com/data/price"` | The URL to which to send the HTTP request for data                                                                                          |
 | **requestData** | Yes | String | `'{"fsym": "ETH", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
@@ -857,13 +857,13 @@ This job allows the following parameters to be set:
 ### Implementing your consumer contract
 
 #### Add the constructor:
+[post_uint256_constructor_](#services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
-[post_uint256.sol](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
-
-https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L27-L32
+<!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L27-L32 -->
 
 #### Add your request function (example):
-https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L34-L51
+[post_uint256_request_](#services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+<!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L34-L51 -->
 
 ### More resources
 
