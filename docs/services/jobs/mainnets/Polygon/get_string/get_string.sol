@@ -21,29 +21,31 @@ contract getString is ChainlinkClient, ConfirmedOwner {
 
     event requestStringFulfilled(bytes32 indexed requestId, string id);
 
+/// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0xb0897686c545045aFc77CF20eC7A532E3120E0F1);
         setChainlinkOracle(0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68);
         jobId = "1cc553d092584937bfe9be9a3dd4c1f6";
         fee = ((15 * LINK_DIVISIBILITY) / 100); // 0.15 LINK (varies by network and job)
     }
+/// [constructor]    
 
+/// [request]
     function requestStringData() public returns (bytes32 requestId) {
         Chainlink.Request memory req = buildChainlinkRequest(
             jobId,
             address(this),
             this.fulfillString.selector
         );
-
         req.add(
             "get",
             "API_URL" // Example: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10
         );
-
         req.add("path", "JSON_PATH"); // Example: 0,id
         // Sends the request
         return sendChainlinkRequest(req, fee);
     }
+/// [request]
 
     function fulfillString(
         bytes32 _requestId,

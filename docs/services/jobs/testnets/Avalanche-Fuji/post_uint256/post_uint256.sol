@@ -23,17 +23,18 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
     bytes32 private jobId;
     uint256 private fee;
 
-/// [constructor]
+
+/// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x0b9d5D9136855f6FEc3c0993feE6E9CE8a297846);
         setChainlinkOracle(0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406);
         jobId = "b090204b16644030844a6e91932a7626";
-        fee = (0 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
+        fee = (0 * LINK_DIVISIBILITY) / 10; // 0 LINK (varies by network and job)
     }
 /// [constructor]
 
 /// [request]
-    function requestUint256() public {
+    function postUint256() public {
         Chainlink.Request memory req = buildChainlinkRequest(jobId,address(this),this.fulfillUint256.selector);
         // The URL which to send this request
         req.add("post", "API_URL"); // Example: "https://min-api.cryptocompare.com/data/price"       
@@ -47,6 +48,7 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
         sendChainlinkRequest(req, fee);
     }
 /// [request]
+
     function fulfillUint256(
         bytes32 requestId,
         uint256 uint256Data

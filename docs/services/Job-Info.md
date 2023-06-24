@@ -831,13 +831,13 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-### Job details
+#### Post > Uint256 Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | 0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406 | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-### Request parameters
+#### Request parameters
 
 This job allows the following parameters to be set:
 
@@ -854,7 +854,7 @@ This job allows the following parameters to be set:
 * Sample response from the HTTP endpoint: `{"USD":1892.84}`
 * Sample response from the Chainlink oracle: `189284`
 
-### Implementing your consumer contract
+#### Implementing your consumer contract
 
 #### Add the constructor:
 [post_uint256_constructor_](#services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
@@ -865,12 +865,12 @@ This job allows the following parameters to be set:
 [post_uint256_request_](#services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 <!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L34-L51 -->
 
-### More resources
+#### More resources
 
 * View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol).
 * View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.toml).
 
-### Need assistance?
+#### Need assistance?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
@@ -878,8 +878,8 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 ### **Binance-Testnet**
 Binance Smart Chain's testnet is a test environment for BNB Smart Chain mainnet network, run by the BNB Chain development community.
-
 <!-- tabs:start -->
+
 #### **GET > Uint256**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
@@ -1037,37 +1037,48 @@ Example Job:
 
 #### **POST > Uint256**
 
-HTTP POST to any public API which parses the response and returns an unsigned integer of type (**uint256**).
+#### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b090204b16644030844a6e91932a7626 | 0 LINK                |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://etherscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
----
-<!-- Example job parameters in your contract:
-* `post`: https://min-api.cryptocompare.com/data/price
-* `requestData`: '{"fsym": "ETH", "tsyms": "USD"}'
-* `path`: USD
-* `times`: 100 -->
+#### Request parameters
 
-This job requires the following paramaters to be set:
-* `post`: The URL to make the HTTP request to.  `Example: https://min-api.cryptocompare.com/data/price`
-* `requestData`: A statically-defined JSON payload to be sent to the defined URL.  `Example: '{"fsym": "ETH", "tsyms": "USD"}'`
-* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.  `Example: USD`
-* `times`: Multiplies the provided input.  `Example: 100`
+This job allows the following parameters to be set:
 
----
-Curl command for testing the endpoint: 
-`curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **post** | Yes | String | `"https://min-api.cryptocompare.com/data/price"` | The URL to which to send the HTTP request for data                                                                                          |
+| **requestData** | Yes | String | `'{"fsym": "ETH", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
+| **path** | Yes | String | `"USD"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **times** | Yes | int256 | `100` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
 
-JSON response: 
-`{"USD":1892.84}`
+#### Simulating the request:
 
-Chainlink oracle response returned: 
-`189084`
+* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
+* Sample response from the HTTP endpoint: `{"USD":1892.84}`
+* Sample response from the Chainlink oracle: `189284`
 
----
-Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256) for an example of a client contract.
+#### Implementing your consumer contract
+
+#### Add the constructor:
+[post_uint256_constructor_binance](#services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+
+<!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L27-L32 -->
+
+#### Add your request function (example):
+[post_uint256_request_binance](#services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+<!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L34-L51 -->
+
+#### More resources
+
+* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol).
+* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.toml).
+
+#### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 <!-- tabs:end -->
 <!-- tabs:end -->
 

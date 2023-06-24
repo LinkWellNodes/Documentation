@@ -24,28 +24,30 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
     uint256 private fee;
 
 
+/// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
         setChainlinkOracle(0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B);
         jobId = "b3390c03bfc24b42a0b0ab8051471bbb";
-        fee = (0 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
+        fee = (0 * LINK_DIVISIBILITY) / 10; // 0 LINK (varies by network and job)
     }
+/// [constructor]
 
-    function requestBytes() public {
+/// [request]
+    function postBytes() public {
         Chainlink.Request memory req = buildChainlinkRequest(
             jobId,
             address(this),
             this.fulfillBytes.selector
-        );
-        
+        );      
         // THE URL TO WHICH TO SEND THIS REQUEST
-        req.add("post", "API_URL"); // Example: https://myUrl.com
-        
+        req.add("post", "API_URL"); // Example: https://myUrl.com     
         // REQUEST BODY | cannot be an empty string ("{}" is OK)
 		req.add("requestData", "{}"); // Example: {\"name\": \"Linkwell\", \"date\": \"2023\"}
         req.add("path", "JSON_PATH"); // Example: "org,info"
         sendChainlinkRequest(req, fee);
     }
+/// [request]
 
     event RequestFulfilled(bytes32 indexed requestId, bytes indexed data);
 

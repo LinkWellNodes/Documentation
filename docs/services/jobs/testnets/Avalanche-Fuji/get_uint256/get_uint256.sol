@@ -23,30 +23,32 @@ contract getUint256 is ChainlinkClient, ConfirmedOwner {
     uint256 private fee;
     event requestUint256Fulfilled(bytes32 indexed requestId, uint256 volume);
 
+/// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x0b9d5D9136855f6FEc3c0993feE6E9CE8a297846);
         setChainlinkOracle(0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406);
         jobId = "f4821ba2e8ae4ddba52ea6860887df96";
-        fee = (0 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
+        fee = (0 * LINK_DIVISIBILITY) / 10; // 0 LINK (varies by network and job)
     }
+/// [constructor]
 
+/// [request]
     function requestUint256Data() public returns (bytes32 requestId) {
         Chainlink.Request memory req = buildChainlinkRequest(
             jobId,
             address(this),
             this.fulfillUint256.selector
         );
-
         req.add(
             "get",
             "API_URL" // Example: https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD
         );
         req.add("path", "JSON_PATH"); // Example: RAW,ETH,USD,VOLUME24HOUR
-
         int256 timesAmount = 10 ** 18;
         req.addInt("times", timesAmount);
         return sendChainlinkRequest(req, fee);
     }
+/// [request]
 
     function fulfillUint256(
         bytes32 _requestId,
