@@ -2,10 +2,10 @@
 
 ## Mainnets
 
-Please [contact us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") for mainnet job requests and pricing.
+Please [**contact us**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") for mainnet job requests and pricing.
 
 ## Testnets
-Please see below for our list of currently supported networks, along with their associated operator contracts and job IDs.  All testnet jobs are free to use, and do not require you to prefund your contracts with the LINK token.  If you run into any trouble, we are here to help!  Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our list of currently supported networks, along with their associated operator contracts and job IDs.  All testnet jobs are free to use, and do not require you to prefund your contracts with the LINK token.  If you run into any trouble, we are here to help!  Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 <!-- tabs:start -->
 
 ### **Ethereum-Sepolia**
@@ -988,8 +988,9 @@ HTTP POST to any public API which parses the response and returns arbitrary-leng
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://etherscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b3390c03bfc24b42a0b0ab8051471bbb | 0 LINK                |
 
+---
 This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
 * `requestData`: A statically-defined JSON payload to be sent to the defined URL.
@@ -997,13 +998,17 @@ This job requires the following paramaters to be set:
 
 Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/post_bytes) for an example of a client contract.
 
+---
+Example Job:
+* `post`: 
+* `requestData`: A statically-defined JSON payload to be sent to the defined URL.
+* `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
+
+
+
 #### **POST > Uint256**
 
 HTTP POST to any public API which parses the response and returns an unsigned integer of type (**uint256**).
-
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
 This job requires the following paramaters to be set:
 * `post`: The URL to make the HTTP request to.
@@ -1011,12 +1016,31 @@ This job requires the following paramaters to be set:
 * `path`: The [JSON Path](https://jsonpath.com/) with comma (,) delimited string.
 * `times`: Multiplies the provided input.
 
+| Address                                    | JobID                            | Job Cost              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| 0xd08FEb8203E76f836D74608595346ab6b0f768C9 | b090204b16644030844a6e91932a7626 | 0 LINK                |
+
+---
+Example job parameters in your contract:
+* `post`: https://min-api.cryptocompare.com/data/price
+* `requestData`: '{"fsym": "ETH", "tsyms": "USD"}'
+* `path`: USD
+* `times`: 100
+
+Curl command for testing the endpoint: 
+`curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
+
+JSON response: 
+`{"USD":1892.84}`
+
+Chainlink oracle response returned: 
+`189084`
+
 Please see our supporting documentation [**here**](https://github.com/LinkWellNodes/Documentation/tree/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256) for an example of a client contract.
-
 <!-- tabs:end -->
 <!-- tabs:end -->
 
-## Custom Data Requests
+<!-- ## Custom Data Requests -->
 
 
 ## Troubleshooting
@@ -1026,10 +1050,10 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 * If your API requires an API key, please [**reach out**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to us so that we can securely store and utilize your key via an [external adapter](https://github.com/smartcontractkit/external-adapters-js/tree/main/packages/sources).
 
 HTTP GET:
-```curl -X 'GET' 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD' -H 'accept: application/json'```
+```curl -X 'GET' 'https://min-api.cryptocompare.com/data/pricemultifull?fsym=ETH&tsyms=USD' -H 'accept: application/json'```
 
 HTTP POST:
-```curl -X POST -H "content-type:application/json" "http://localhost:8080/" --data '{ "id": 0, "data": { "from": "ETH", "to": "USD" } }'```
+```curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'```
 
 ## Support
 * Feel free to join our [**Discord**](https://discord.gg/AJ66pRz4), or [**contact us**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") if you require support integrating our job into your contract.  We are happy to support custom data requests as well!
