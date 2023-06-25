@@ -90,7 +90,7 @@ $(function() {
                 }
                 // Send the URL update to the parent page
                 console.log("Sending URL update to parent | pageId: " + pageId + " | anchorId: " + anchorId)
-	            window.parentIFrame.sendMessage({"urlChanged": {"page": pageId, "anchor": anchorId}});
+	            window.parentIFrame.sendMessage({"urlChanged": {"pageId": pageId, "anchorId": anchorId}});
             }
         }
     });
