@@ -160,15 +160,15 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-#### Job details
+### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-#### Request parameters
+### Request parameters
 
-This job allows the following parameters to be set:
+This job allows for the following parameters to be set:
 
 | Parameter | Required? | Type | Value example | Description |
 |-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -183,22 +183,26 @@ This job allows the following parameters to be set:
 * Sample response from the HTTP endpoint: `{"USD":1892.84}`
 * Sample response from the Chainlink oracle: `189284`
 
-#### Implementing your consumer contract
+### Implementing within your consumer contract
 
 #### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
 [post_uint256_constructor_binance](#services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
 [post_uint256_request_binance](#services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
-#### More resources
+### View the full source code
 
-* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol).
-* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.toml).
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
-#### Need assistance?
+### Need assistance?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 <!-- tabs:end -->
 
@@ -354,15 +358,15 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-#### Job details
+### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-#### Request parameters
+### Request parameters
 
-This job allows the following parameters to be set:
+This job allows for the following parameters to be set:
 
 | Parameter | Required? | Type | Value example | Description |
 |-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -377,22 +381,26 @@ This job allows the following parameters to be set:
 * Sample response from the HTTP endpoint: `{"USD":1892.84}`
 * Sample response from the Chainlink oracle: `189284`
 
-#### Implementing your consumer contract
+### Implementing within your consumer contract
 
 #### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
 [post_uint256_constructor_binance](#services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
 [post_uint256_request_binance](#services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
-#### More resources
+### View the full source code
 
-* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol).
-* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.toml).
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
-#### Need assistance?
+### Need assistance?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 <!-- tabs:end -->
 
@@ -548,15 +556,15 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-#### Job details
+### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x12A3d7759F745f4cb8EE8a647038c040cB8862A5](https://mumbai.polygonscan.com/address/0x12a3d7759f745f4cb8ee8a647038c040cb8862a5) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-#### Request parameters
+### Request parameters
 
-This job allows the following parameters to be set:
+This job allows for the following parameters to be set:
 
 | Parameter | Required? | Type | Value example | Description |
 |-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -571,22 +579,26 @@ This job allows the following parameters to be set:
 * Sample response from the HTTP endpoint: `{"USD":1892.84}`
 * Sample response from the Chainlink oracle: `189284`
 
-#### Implementing your consumer contract
+### Implementing within your consumer contract
 
 #### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
 [post_uint256_constructor_binance](#services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
 [post_uint256_request_binance](#services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
-#### More resources
+### View the full source code
 
-* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol).
-* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.toml).
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
-#### Need assistance?
+### Need assistance?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 <!-- tabs:end -->
 
@@ -742,15 +754,15 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-#### Job details
+### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://testnet.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-#### Request parameters
+### Request parameters
 
-This job allows the following parameters to be set:
+This job allows for the following parameters to be set:
 
 | Parameter | Required? | Type | Value example | Description |
 |-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -765,22 +777,26 @@ This job allows the following parameters to be set:
 * Sample response from the HTTP endpoint: `{"USD":1892.84}`
 * Sample response from the Chainlink oracle: `189284`
 
-#### Implementing your consumer contract
+### Implementing within your consumer contract
 
 #### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
 [post_uint256_constructor_binance](#services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
 [post_uint256_request_binance](#services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
-#### More resources
+### View the full source code
 
-* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol).
-* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.toml).
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
-#### Need assistance?
+### Need assistance?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 <!-- tabs:end -->
 
@@ -935,15 +951,15 @@ Please see our supporting documentation [**here**](https://github.com/LinkWellNo
 
 #### **POST > Uint256**
 
-#### Job details
+### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406](https://testnet.snowtrace.io/address/0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-#### Request parameters
+### Request parameters
 
-This job allows the following parameters to be set:
+This job allows for the following parameters to be set:
 
 | Parameter | Required? | Type | Value example | Description |
 |-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -958,25 +974,26 @@ This job allows the following parameters to be set:
 * Sample response from the HTTP endpoint: `{"USD":1892.84}`
 * Sample response from the Chainlink oracle: `189284`
 
-#### Implementing your consumer contract
+### Implementing within your consumer contract
 
 #### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
 [post_uint256_constructor_](#services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
-<!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L27-L32 -->
-
 #### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
 [post_uint256_request_](#services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
-<!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L34-L51 -->
 
-#### More resources
+### View the full source code
 
-* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol).
-* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.toml).
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
-#### Need assistance?
+### Need assistance?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 <!-- tabs:end -->
 
@@ -1141,15 +1158,15 @@ Example Job:
 
 #### **POST > Uint256**
 
-#### Job details
+### Job details
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://testnet.bscscan.com/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | b090204b16644030844a6e91932a7626 | 0 LINK                |
 
-#### Request parameters
+### Request parameters
 
-This job allows the following parameters to be set:
+This job allows for the following parameters to be set:
 
 | Parameter | Required? | Type | Value example | Description |
 |-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -1164,25 +1181,26 @@ This job allows the following parameters to be set:
 * Sample response from the HTTP endpoint: `{"USD":1892.84}`
 * Sample response from the Chainlink oracle: `189284`
 
-#### Implementing your consumer contract
+### Implementing within your consumer contract
 
 #### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction. 
+
 [post_uint256_constructor_binance](#services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
-<!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L27-L32 -->
-
 #### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
 [post_uint256_request_binance](#services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
-<!-- https://github.com/LinkWellNodes/Documentation/blob/ae826c08bc251512ff741bb7decea76341e3375b/docs/services/jobs/testnets/Avalanche-Fuji/post_uint256/post_uint256.sol#L34-L51 -->
 
-#### More resources
+### View the full source code
 
-* View the full consumer contract example [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol).
-* View the oracle job used to fulfill the above request [here](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.toml).
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
-#### Need assistance?
+### Need assistance?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 <!-- tabs:end -->
 <!-- tabs:end -->
 
@@ -1203,15 +1221,5 @@ HTTP POST:
 
 ## Support
 * Feel free to join our [**Discord**](https://discord.gg/AJ66pRz4), or [**contact us**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") if you require support integrating our job into your contract.  We are happy to support custom data requests as well!
-* Please check out our [**FAQ**](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for additional supporting information.
-
-
-
-
-
-
-
-
-
-
+* Check out our [**Chainlink User FAQ**](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common question asked to us by our users.
 

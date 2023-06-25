@@ -83,6 +83,14 @@ function loadIframeUrlBasedOnParentUrl() {
 		}
 	}
 	
+	// Reset the scroll position if no anchor is specified
+	if (!anchorId) {
+		window.scroll({
+			top:0,
+			left:0
+		});
+	}
+	
 	// Load the iframe using a dynamic website
 	var urlTarget = "https://docs.linkwellnodes.io/#" + pageId + "?id=" + anchorId;
 	console.log("Loading iframe page: " + urlTarget)
