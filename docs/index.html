@@ -71,9 +71,8 @@ $(function() {
            	updateUrlInParentPage(null);
         }
     });
-	
 	// Intercept all clicks on anchor links, and tell the parent document the Y coordinate to which to scroll (if this page is loaded inside of an iframe)
-	$(document).on('click', '.anchor', function(e) {
+	$(document).on('click', '.anchor, .section-link', function(e) {
         if ('parentIFrame' in window) {		// is this page loaded inside an iframe? 
         	// Get the anchored element to which we'd like to scroll 
         	var anchorIdStr = $(this).blur().attr('href').split('?id=').pop();
@@ -124,6 +123,7 @@ $(function() {
 	});
 });
 
+var lastUpdateSent = {};
 function updateUrlInParentPage(anchorIdOverride) {
     var hash = window.location.hash;
     if (hash.length > 0) {
@@ -146,8 +146,14 @@ function updateUrlInParentPage(anchorIdOverride) {
 	    	// (no anchorId present)
 	    }
 	    // Send the URL update to the parent page
-	    console.log("Sending URL update to parent | pageId: " + pageId + " | anchorId: " + (anchorIdOverride ? anchorIdOverride : anchorId))
-	    window.parentIFrame.sendMessage({"urlChanged": {"pageId": pageId, "anchorId": (anchorIdOverride ? anchorIdOverride : anchorId)}});
+	    const updToSend = {"urlChanged": {"pageId": pageId, "anchorId": (anchorIdOverride ? anchorIdOverride : anchorId)}};
+	    if (JSON.stringify(lastUpdateSent) == JSON.stringify(updToSend)) {
+	    	//console.log("Discarding repetitive update of parent URL"); 
+	    } else {
+	    	console.log("Sending URL update to parent | pageId: " + pageId + " | anchorId: " + (anchorIdOverride ? anchorIdOverride : anchorId))
+		    lastUpdateSent = updToSend;
+		    window.parentIFrame.sendMessage(updToSend);
+	    }
     } else {
     	console.warn("No URL hash detected. Skipping updateUrlInParentPage()");
     }
