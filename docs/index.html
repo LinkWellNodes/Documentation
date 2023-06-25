@@ -70,12 +70,28 @@ $(function() {
         if ('parentIFrame' in window) {        // is this page loaded inside an iframe?
             var hash = window.location.hash;
             if (hash.length > 0) {
+            	var pageId = "";
+            	var anchorId = "";
                 if (hash.charAt(0) == '#') {
                     hash = hash.substring(1);    // remove the first char ('#')
                 }
-                // TODO
+                if (hash.includes("?id=")) {
+                	// (anchorId present)
+					const hashArr = hash.split("?id=");
+					if (hashArr.length == 2) {
+						pageId = hashArr[0];
+						anchorId = hashArr[1];
+					} else {
+						console.warn("Unexpected URL hash format: " + hash);
+					}
+                } else {
+                	pageId = hash;
+                	// (no anchorId present)
+                }
+                // Send the URL update to the parent page
+                console.log("Sending URL update to parent | pageId: " + pageId + " | anchorId: " + anchorId)
+	            window.parentIFrame.sendMessage({"urlChanged": {"page": pageId, "anchor": anchorId}});
             }
-            window.parentIFrame.sendMessage({"urlChanged": {"page": pageId, "anchor": anchorId}});
         }
     });
 	
