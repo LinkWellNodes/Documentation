@@ -20,7 +20,7 @@ contract getBytesArray is ChainlinkClient, ConfirmedOwner {
   uint256 private fee;
 
 /// [constructor]    
-    constructor() ConfirmedOwner(msg.sender) {
+  constructor() ConfirmedOwner(msg.sender) {
     setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
     setChainlinkOracle(0xB9C47B9609174716CE536324d4FbEad9292c1d3a);
     jobId = "332c0b46e57f49cd8c7d74cdbe5106ab";

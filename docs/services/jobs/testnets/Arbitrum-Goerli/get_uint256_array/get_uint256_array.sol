@@ -19,7 +19,7 @@ contract getUint256Array is ChainlinkClient, ConfirmedOwner {
   uint256 private fee;
 
 /// [constructor]    
-    constructor() ConfirmedOwner(msg.sender) {
+  constructor() ConfirmedOwner(msg.sender) {
     setChainlinkToken(0xd14838A68E8AFBAdE5efb411d5871ea0011AFd28);
     setChainlinkOracle(0xd08FEb8203E76f836D74608595346ab6b0f768C9);
     jobId = "9a2ba54374f34184bdc6390db3171994";

@@ -25,11 +25,11 @@ contract getBool is ChainlinkClient, ConfirmedOwner {
   event requestBoolFulfilled(bytes32 indexed requestId,bool indexed boolean);
 
 /// [constructor]    
-    constructor() ConfirmedOwner(msg.sender) {
-  setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
-  setChainlinkOracle(0xB9C47B9609174716CE536324d4FbEad9292c1d3a);
-  jobId = "2e0a430bcd2b482d8462fdcc5224fba1";
-  fee = ((0 * LINK_DIVISIBILITY) / 10); // 0 LINK (varies by network and job)
+  constructor() ConfirmedOwner(msg.sender) {
+    setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
+    setChainlinkOracle(0xB9C47B9609174716CE536324d4FbEad9292c1d3a);
+    jobId = "2e0a430bcd2b482d8462fdcc5224fba1";
+    fee = ((0 * LINK_DIVISIBILITY) / 10); // 0 LINK (varies by network and job)
   }
 /// [constructor]
 
