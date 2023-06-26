@@ -561,12 +561,12 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_constructor_egt](#services/jobs/testnets/Ethereum-goerli/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
+[get_uint256_constructor_egt](#services/jobs/testnets/Ethereum-Goerli/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_egt](#services/jobs/testnets/Ethereum-goerli/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
+[get_uint256_request_egt](#services/jobs/testnets/Ethereum-Goerli/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
