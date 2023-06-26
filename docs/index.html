@@ -72,7 +72,7 @@ $(function() {
         }
     });
 	// Intercept all clicks on anchor links, and tell the parent document the Y coordinate to which to scroll (if this page is loaded inside of an iframe)
-	$(document).on('click', '.anchor, .section-link', function(e) {
+	$(document).on('click', '.anchor, .section-link, a', function(e) {
         if ('parentIFrame' in window) {		// is this page loaded inside an iframe? 
         	// Get the anchored element to which we'd like to scroll 
         	var anchorIdStr = $(this).blur().attr('href').split('?id=').pop();
