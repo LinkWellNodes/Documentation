@@ -43,8 +43,8 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
         // THE URL TO WHICH TO SEND THIS REQUEST
         req.add("post", "API_URL"); // Example: https://myUrl.com      
         // REQUEST BODY | cannot be an empty string ("{}" is OK)
-		req.add("requestData", "{}"); // Example: {\"name\": \"Linkwell\", \"date\": \"2023\"}
-        req.add("path", "JSON_PATH"); // Example: "org,info"
+		req.add("requestData", "{}"); // Example: '{"fsyms": "LINK", "tsyms": "USD"}'
+        req.add("path", "JSON_PATH"); // Example: "RAW,LINK,USD,LASTMARKET"
         sendChainlinkRequest(req, fee);
     }
 /// [request]
