@@ -76,14 +76,16 @@ $(function() {
         if ('parentIFrame' in window) {		// is this page loaded inside an iframe? 
         	// Get the anchored element to which we'd like to scroll 
         	var anchorIdStr = $(this).blur().attr('href').split('?id=').pop();
-            var anchor = $('#' + anchorIdStr);
-        	// Get the Y coordinate of the anchored element
-            var offset = Math.round(anchor.offset().top);
-            e.preventDefault();
-            // Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
-            window.parentIFrame.sendMessage(offset);
-            // Send the anchor id tag to the parent webpage, so that it can update its URL
-            updateUrlInParentPage(anchorIdStr);
+        	if (!anchorIdStr.includes("/")) {
+	            var anchor = $('#' + anchorIdStr);
+	        	// Get the Y coordinate of the anchored element
+	            var offset = Math.round(anchor.offset().top);
+	            e.preventDefault();
+	            // Send the Y coordinate of the anchored element to the parent webpage (ie, the page containing this iframe)
+	            window.parentIFrame.sendMessage(offset);
+	            // Send the anchor id tag to the parent webpage, so that it can update its URL
+	            updateUrlInParentPage(anchorIdStr);
+        	}
         }
     });
 	
