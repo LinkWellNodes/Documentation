@@ -15,7 +15,7 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * DO NOT USE THIS CODE IN PRODUCTION.
  */
 
-contract getString is ChainlinkClient, ConfirmedOwner {
+contract getStringx2 is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
     string public str1;
@@ -24,7 +24,7 @@ contract getString is ChainlinkClient, ConfirmedOwner {
     bytes32 private jobId;
     uint256 private fee;
 
-    event requestStringFulfilled(bytes32 indexed requestId, string str1, str2);
+    event requestStringFulfilled(bytes32 indexed requestId, string str1, string str2);
 
 /// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
@@ -41,19 +41,17 @@ contract getString is ChainlinkClient, ConfirmedOwner {
             jobId,
             address(this),
             this.fulfillString.selector
-        );
-        
+        );        
         req.add(
             "url1", 
-            "API_URL" // Example: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10
+            "API_URL" // Example: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1
         );
         req.add("path1", "JSON_PATH"); // Example: 0,id
         req.add(
             "url2", 
-            "API_URL" // Example: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10
+            "API_URL" // Example: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2
         );
-        req.add("path2", "JSON_PATH"); // Example: 0,id
-        
+        req.add("path2", "JSON_PATH"); // Example: 1,id        
         // Sends the request
         return sendChainlinkRequest(req, fee);
     }

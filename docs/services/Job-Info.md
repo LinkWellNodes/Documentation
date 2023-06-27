@@ -289,6 +289,57 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+#### **GET > String x 2**
+
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
+
+### Job details
+
+| Address                                    | JobID                            | Job Cost              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | be46cb8070c14cb7ad058b29f127ec6b | 0 LINK                |
+
+### Request parameters
+
+This job allows for the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **url1** | Yes | String | `"https://tinyurl.com/39u6msd7"` | The first URL to which to send the HTTP request for data                                                                                          |
+| **url2** | Yes | String | `"https://tinyurl.com/mtusr8ew"` | The second URL to which to send the HTTP request for data                                                                                          |
+| **path1** | Yes | String | `"0,id"` | The first [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **path2** | Yes | String | `"1,id"` | The second [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
+* Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
+* Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
+* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"ethereum"`
+* First sample response from the Chainlink oracle: `bitcoin`
+* Second sample response from the Chainlink oracle: `ethereum`
+
+### Implementing within your consumer contract
+
+#### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
+[get_string_x2_constructor_est](#services/jobs/testnets/Ethereum-Sepolia/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
+[get_string_x2_request_est](#services/jobs/testnets/Ethereum-Sepolia/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
+
+### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
 #### **GET > Uint256 x 2**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns two unsigned integers of type (**uint256**).
@@ -802,6 +853,57 @@ The 'request function' within your consumer contract specifies the parameters to
 
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/get_string/get_string.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
+
+### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
+#### **GET > String x 2**
+
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
+
+### Job details
+
+| Address                                    | JobID                            | Job Cost              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | be46cb8070c14cb7ad058b29f127ec6b | 0 LINK                |
+
+### Request parameters
+
+This job allows for the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **url1** | Yes | String | `"https://tinyurl.com/39u6msd7"` | The first URL to which to send the HTTP request for data                                                                                          |
+| **url2** | Yes | String | `"https://tinyurl.com/mtusr8ew"` | The second URL to which to send the HTTP request for data                                                                                          |
+| **path1** | Yes | String | `"0,id"` | The first [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **path2** | Yes | String | `"1,id"` | The second [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
+* Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
+* Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
+* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"ethereum",`
+* First sample response from the Chainlink oracle: `bitcoin`
+* Second sample response from the Chainlink oracle: `ethereum`
+
+### Implementing within your consumer contract
+
+#### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
+[get_string_x2_constructor_egt](#services/jobs/testnets/Ethereum-Goerli/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
+[get_string_x2_request_egt](#services/jobs/testnets/Ethereum-Goerli/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -1326,6 +1428,57 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+#### **GET > String x 2**
+
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
+
+### Job details
+
+| Address                                    | JobID                            | Job Cost              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0x12A3d7759F745f4cb8EE8a647038c040cB8862A5](https://mumbai.polygonscan.com/address/0x12a3d7759f745f4cb8ee8a647038c040cb8862a5) | be46cb8070c14cb7ad058b29f127ec6b | 0 LINK                |
+
+### Request parameters
+
+This job allows for the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **url1** | Yes | String | `"https://tinyurl.com/39u6msd7"` | The first URL to which to send the HTTP request for data                                                                                          |
+| **url2** | Yes | String | `"https://tinyurl.com/mtusr8ew"` | The second URL to which to send the HTTP request for data                                                                                          |
+| **path1** | Yes | String | `"0,id"` | The first [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **path2** | Yes | String | `"1,id"` | The second [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
+* Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
+* Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
+* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"ethereum",`
+* First sample response from the Chainlink oracle: `bitcoin`
+* Second sample response from the Chainlink oracle: `ethereum`
+
+### Implementing within your consumer contract
+
+#### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
+[get_string_x2_constructor_mmt](#services/jobs/testnets/Polygon-Mumbai/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
+[get_string_x2_request_mmt](#services/jobs/testnets/Polygon-Mumbai/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
+
+### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
 #### **GET > Uint256 x 2**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns two unsigned integers of type (**uint256**).
@@ -1839,6 +1992,57 @@ The 'request function' within your consumer contract specifies the parameters to
 
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_string/get_string.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
+
+### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
+#### **GET > String x 2**
+
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
+
+### Job details
+
+| Address                                    | JobID                            | Job Cost              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | be46cb8070c14cb7ad058b29f127ec6b | 0 LINK                |
+
+### Request parameters
+
+This job allows for the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **url1** | Yes | String | `"https://tinyurl.com/39u6msd7"` | The first URL to which to send the HTTP request for data                                                                                          |
+| **url2** | Yes | String | `"https://tinyurl.com/mtusr8ew"` | The second URL to which to send the HTTP request for data                                                                                          |
+| **path1** | Yes | String | `"0,id"` | The first [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **path2** | Yes | String | `"1,id"` | The second [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
+* Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
+* Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
+* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"ethereum",`
+* First sample response from the Chainlink oracle: `bitcoin`
+* Second sample response from the Chainlink oracle: `ethereum`
+
+### Implementing within your consumer contract
+
+#### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
+[get_string_x2_constructor_agt](#services/jobs/testnets/Arbitrum-Goerli/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
+[get_string_x2_request_agt](#services/jobs/testnets/Arbitrum-Goerli/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Arbitrum-Goerli/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -2362,6 +2566,57 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+#### **GET > String x 2**
+
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
+
+### Job details
+
+| Address                                    | JobID                            | Job Cost              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406](https://testnet.snowtrace.io/address/0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406) | be46cb8070c14cb7ad058b29f127ec6b | 0 LINK                |
+
+### Request parameters
+
+This job allows for the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **url1** | Yes | String | `"https://tinyurl.com/39u6msd7"` | The first URL to which to send the HTTP request for data                                                                                          |
+| **url2** | Yes | String | `"https://tinyurl.com/mtusr8ew"` | The second URL to which to send the HTTP request for data                                                                                          |
+| **path1** | Yes | String | `"0,id"` | The first [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **path2** | Yes | String | `"1,id"` | The second [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
+* Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
+* Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
+* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"ethereum",`
+* First sample response from the Chainlink oracle: `bitcoin`
+* Second sample response from the Chainlink oracle: `ethereum`
+
+### Implementing within your consumer contract
+
+#### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
+[get_string_x2_constructor_acft](#services/jobs/testnets/Avalanche-Fuji/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
+[get_string_x2_request_acft](#services/jobs/testnets/Avalanche-Fuji/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Avalanche-Fuji/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
+
+### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
 #### **GET > Uint256 x 2**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns two unsigned integers of type (**uint256**).
@@ -2875,6 +3130,57 @@ The 'request function' within your consumer contract specifies the parameters to
 
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/get_string/get_string.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
+
+### Need assistance?
+
+Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
+#### **GET > String x 2**
+
+HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
+
+### Job details
+
+| Address                                    | JobID                            | Job Cost              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://testnet.bscscan.com/address/0xd08feb8203e76f836d74608595346ab6b0f768c9) | be46cb8070c14cb7ad058b29f127ec6b | 0 LINK                |
+
+### Request parameters
+
+This job allows for the following parameters to be set:
+
+| Parameter | Required? | Type | Value example | Description |
+|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **url1** | Yes | String | `"https://tinyurl.com/39u6msd7"` | The first URL to which to send the HTTP request for data                                                                                          |
+| **url2** | Yes | String | `"https://tinyurl.com/mtusr8ew"` | The second URL to which to send the HTTP request for data                                                                                          |
+| **path1** | Yes | String | `"0,id"` | The first [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| **path2** | Yes | String | `"1,id"` | The second [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+
+#### Simulating the request:
+
+* Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
+* Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
+* Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
+* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"ethereum",`
+* First sample response from the Chainlink oracle: `bitcoin`
+* Second sample response from the Chainlink oracle: `ethereum`
+
+### Implementing within your consumer contract
+
+#### Add the constructor:
+Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+
+[get_string_x2_constructor_btt](#services/jobs/testnets/Binance-Testnet/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+
+#### Add your request function (example):
+The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+
+[get_string_x2_request_btt](#services/jobs/testnets/Binance-Testnet/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
