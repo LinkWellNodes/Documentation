@@ -1,8 +1,13 @@
+<!-- * **Services**
+  * [Mainnet Jobs and Pricing](/services/Mainnet-Jobs "Supported Chainlink mainnet networks, jobs, and fees")
+  * [Testnet Jobs and Pricing](/services/Testnet-Jobs "Supported Chainlink testnet networks, jobs, and fees") -->
 * **Services**
-  * [Jobs and Pricing](/services/Job-Info "Supported Chainlink networks, jobs, and fees")
+* Jobs and Pricing
+* [Mainnets](/services/Mainnet-Jobs "Supported Chainlink mainnet networks, jobs, and fees")
+* [Testnets](/services/Testnet-Jobs "Supported Chainlink testnet networks, jobs, and fees")
 * **Chainlink FAQ**
-  * [Operators](/faq/Chainlink-Operators "FAQ - Chainlink Node Operators")
-  * [Consumers](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers")
+* [Operators](/faq/Chainlink-Operators "FAQ - Chainlink Node Operators")
+* [Consumers](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers")
 <!--  * [External Adapters](/faq/External-Adapters "FAQ - External Adapters") -->
 * **About**
   <!-- * [Who we are](/about/About "About LinkWell Nodes") -->

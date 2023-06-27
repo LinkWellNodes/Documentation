@@ -1,14 +1,9 @@
-# Public Job Listings
+# Public Testnet Job Listings
 
-## Mainnets
+Please see below for our list of currently supported testnet networks, along with their associated operator contracts, job IDs and sample contracts.  All testnet jobs are free to use, and do not require you to prefund your contracts with the LINK token.  If you run into any trouble, we are here to help!  Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
-Please [**contact us**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") for mainnet job requests and pricing.
 
-## Testnets
-Please see below for our list of currently supported networks, along with their associated operator contracts and job IDs.  All testnet jobs are free to use, and do not require you to prefund your contracts with the LINK token.  If you run into any trouble, we are here to help!  Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
-<!-- tabs:start -->
-
-### **Ethereum-Sepolia**
+## Ethereum-Sepolia
 Sepolia is a proof-of-stake testnet, and is the recommended default Ethereum testnet for application development.
 
 <!-- tabs:start -->
@@ -559,12 +554,12 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_binance](#services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+[post_uint256_constructor_est](#services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_binance](#services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+[post_uint256_request_est](#services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
@@ -577,7 +572,7 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 <!-- tabs:end -->
 
-### **Ethereum-Goerli**
+## Ethereum-Goerli
 Goerli is a proof-of-stake testnet, and is the recommended default Ethereum testnet for testing of validating and staking.
 
 <!-- tabs:start -->
@@ -1128,12 +1123,12 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_binance](#services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+[post_uint256_constructor_egt](#services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_binance](#services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+[post_uint256_request_egt](#services/jobs/testnets/Ethereum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
@@ -1146,7 +1141,7 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 <!-- tabs:end -->
 
-### **Polygon-Mumbai**
+## Polygon-Mumbai
 Mumbai network is a testnet that approximates the Polygon Mainnet, and uses Ethereum's Goerli testnet as its Layer 1 protocol.
 
 <!-- tabs:start -->
@@ -1698,12 +1693,12 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_binance](#services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+[post_uint256_constructor_mmt](#services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_binance](#services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+[post_uint256_request_mmt](#services/jobs/testnets/Polygon-Mumbai/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
@@ -1716,7 +1711,7 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 <!-- tabs:end -->
 
-### **Arbitrum-Goerli**
+## Arbitrum-Goerli
 Arbitrum Goerli is the testnet of Layer 2 rollup chain Arbitrum One, and uses Ethereum's Goerli testnet network as its Layer 1 protocol.
 
 <!-- tabs:start -->
@@ -2267,12 +2262,12 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_binance](#services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+[post_uint256_constructor_agt](#services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_binance](#services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+[post_uint256_request_agt](#services/jobs/testnets/Arbitrum-Goerli/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
@@ -2285,7 +2280,7 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 <!-- tabs:end -->
 
-### **Avalanche-Fuji**
+## Avalanche-Fuji
 Avalanche Fuji Testnet is the testnet for Avalance Mainnet (AVAX), which is a smart contract-capable blockchain platform focused on transaction speed, low costs, and eco-friendliness.
 
 <!-- tabs:start -->
@@ -2854,7 +2849,7 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 <!-- tabs:end -->
 
-### **Binance-Testnet**
+## Binance-Testnet
 Binance Smart Chain's testnet is a test environment for BNB Smart Chain mainnet network, run by the BNB Chain development community.
 <!-- tabs:start -->
 
@@ -3404,12 +3399,12 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction. 
 
-[post_uint256_constructor_binance](#services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+[post_uint256_constructor_btt](#services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_binance](#services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+[post_uint256_request_btt](#services/jobs/testnets/Binance-Testnet/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
@@ -3420,22 +3415,15 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 <!-- tabs:end -->
-<!-- tabs:end -->
+
 
 <!-- ## Custom Data Requests -->
 
 
 ## Troubleshooting
-* For mainnets, ensure you are prefunding the correct and appropriate amount of LINK tokens into your contracts before making the request. 
 * Double check that you are using the correct address and job ID for the job you are targeting via our job listings above.
-* Confirm that the API endpoint you are making the HTTP request to is working via curl.  See below for a few sample curl commands!
-* If your API requires an API key, please [**reach out**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to us so that we can securely store and utilize your key via an [external adapter](https://github.com/smartcontractkit/external-adapters-js/tree/main/packages/sources).
-
-<!-- HTTP GET:
-```curl -X 'GET' 'https://min-api.cryptocompare.com/data/pricemultifull?fsym=ETH&tsyms=USD' -H 'accept: application/json'```
-
-HTTP POST:
-```curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'``` -->
+* Confirm that the API endpoint you are making the HTTP request to is working via curl.  Each job includes a sample curl command.
+* If your API Endpoint requires authentication via an API key, please [**reach out**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to us so that we can securely store and utilize your key via an [external adapter](https://github.com/smartcontractkit/external-adapters-js/tree/main/packages/sources).
 
 ## Support
 * Feel free to join our [**Discord**](https://discord.gg/AJ66pRz4), or [**contact us**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") if you require support integrating our job into your contract.  We are happy to support custom data requests as well!
