@@ -6,7 +6,7 @@ View our public [Chainlink job offerings](/services/Job-Info).
 
 ## Chainlink FAQ
 
-View our collection of [frequently-asked questions](/faq/Chainlink-Operators) that we've compiled from our extensive experience answering node-related support questions in Chainlink's Discord server. 
+View our collection of [Frequently-Asked Questions](/faq/Chainlink-Operators) that we've compiled from our extensive experience answering node-related support questions in Chainlink's Discord server. 
 
 ## About Us
 
