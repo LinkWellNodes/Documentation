@@ -1,6 +1,8 @@
 ## Arbitrum-Goerli
 Arbitrum Goerli is the testnet of Layer 2 rollup chain Arbitrum One, and uses Ethereum's Goerli testnet network as its Layer 1 protocol.
 
+Please see below for our Chainlink direct request job offerings on the Arbitrum-Goerli network.  All testnet jobs are free to use, and do not require you to prefund your contracts with the LINK token.  If you run into any trouble, we are here to help!  Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+
 <!-- tabs:start -->
 #### **GET > Uint256**
 
