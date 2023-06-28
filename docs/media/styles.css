@@ -4,6 +4,7 @@
 body {
 	font-family: 'Open Sans',sans-serif;
 }
+
 .sidebar-nav > ul > li > ul > li > ul > li > a {
 	font-size: 11pt;	
 	margin-left: 12pt;

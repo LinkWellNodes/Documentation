@@ -1,21 +1,21 @@
 # Public Mainnet Job Listings
 
-Please see below for our list of currently supported mainnet networks, along with their associated operator contracts, job IDs and sample contracts.  If you run into any trouble, we are here to help!  Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our list of currently-supported mainnet networks, along with their associated operator contracts, job IDs and sample contracts.  If you run into any trouble, we are here to help!  Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
-## [Ethereum](/services/EM-Jobs)
-Please see [this page](/services/jobs/mainnets/EM-Jobs) for our Ethereum job offerings!
+## Arbitrum Mainnet
+Please see [this page](/services/jobs/mainnets/Arbitrum-One-Mainnet-Jobs) for our Arbitrum job offerings!
 
-## Polygon
-Please see [this page](/services/jobs/mainnets/MM-Jobs) for our Polygon job offerings!
+## Avalanche Mainnet
+Please see [this page](/services/jobs/mainnets/Avalanche-CChain-Mainnet-Jobs) for our Avalanche job offerings!
 
-## Arbitrum
-Please see [this page](/services/jobs/mainnets/AOM-Jobs) for our Arbitrum job offerings!
+## Binance Mainnet
+Please see [this page](/services/jobs/mainnets/Binance-Mainnet-Jobs) for our Binance job offerings!
 
-## Avalanche
-Please see [this page](/services/jobs/mainnets/ACM-Jobs) for our Avalanche job offerings!
+## Ethereum Mainnet
+Please see [this page](/services/jobs/mainnets/Ethereum-Mainnet-Jobs) for our Ethereum job offerings!
 
-## Binance
-Please see [this page](/services/jobs/mainnets/BM-Jobs) for our Binance job offerings!
+## Polygon Mainnet
+Please see [this page](/services/jobs/mainnets/Polygon-Mainnet-Jobs) for our Polygon job offerings!
 
 
 ## External Adapters

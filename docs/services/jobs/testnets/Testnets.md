@@ -1,24 +1,25 @@
-# Public Mainnet Job Listings
+# Public Testnet Job Listings
 
-Please see below for our list of currently supported mainnet networks, along with their associated operator contracts, job IDs and sample contracts.  If you run into any trouble, we are here to help!  Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our list of currently-supported testnet networks, along with their associated operator contracts, job IDs and sample contracts.  If you run into any trouble, we are here to help!  Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
-## Ethereum-Sepolia
-Please see [this page](/services/jobs/testnets/EST-Jobs) for our Ethereum-Sepolia job offerings!
+## Arbitrum Goerli Testnet
+Please see [this page](/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs) for our Arbitrum Goerli job offerings!
 
-## Ethereum-Goerli
-Please see [this page](/services/jobs/testnets/EGT-Jobs) for our Ethereum-Goerli job offerings!
+## Avalanche Fuji Testnet
+Please see [this page](/services/jobs/testnets/Avalance-Fuji-Testnet-Jobs) for our Avalanche-Fuji job offerings!
 
-## Polygon-Mumbai
-Please see [this page](/services/jobs/testnets/MMT-Jobs) for our Polygon Mumbai job offerings!
+## Binance Testnet
+Please see [this page](/services/jobs/testnets/Binance-Testnet-Jobs) for our Binance-Testnet job offerings!
 
-## Arbitrum-Goerli
-Please see [this page](/services/jobs/testnets/AGT-Jobs) for our Arbitrum-Goerli job offerings!
+## Ethereum Goerli Testnet
+Please see [this page](/services/jobs/testnets/Ethereum-Goerli-Testnet-Jobs) for our Ethereum-Goerli job offerings!
 
-## Avalanche-Fuji
-Please see [this page](/services/jobs/testnets/ACFT-Jobs) for our Avalanche-Fuji job offerings!
+## Ethereum Sepolia Testnet
+Please see [this page](/services/jobs/testnets/Ethereum-Sepolia-Testnet-Jobs) for our Ethereum-Sepolia job offerings!
 
-## Binance-Testnet
-Please see [this page](/services/jobs/testnets/BTT-Jobs) for our Binance-Testnet job offerings!
+## Polygon Mumbai Testnet
+Please see [this page](/services/jobs/testnets/Polygon-Mumbai-Testnet-Jobs) for our Polygon Mumbai job offerings!
+
 
 
 ## External Adapters

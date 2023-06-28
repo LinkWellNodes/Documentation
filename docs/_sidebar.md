@@ -1,17 +1,26 @@
-<!-- * **Services**
-  * [Mainnet Jobs and Pricing](/services/Mainnet-Jobs "Supported Chainlink mainnet networks, jobs, and fees")
-  * [Testnet Jobs and Pricing](/services/Testnet-Jobs "Supported Chainlink testnet networks, jobs, and fees") -->
 * **Services**
-* Jobs and Pricing
-* [Mainnets](/services/jobs/mainnets/Mainnet-Support "Supported Chainlink mainnet networks, jobs, and fees")
-* [Testnets](/services/jobs/testnets/Testnet-Support "Supported Chainlink testnet networks, jobs, and fees")
+* [Jobs and Pricing](/)
+  * [Mainnets](/services/jobs/mainnets/Mainnets)
+    * [Arbitrum One](/services/jobs/mainnets/Arbitrum-One-Mainnet-Jobs)
+    * [Avalanche](/services/jobs/mainnets/Avalanche-CChain-Mainnet-Jobs)
+    * [Binance](/services/jobs/mainnets/Binance-Mainnet-Jobs)
+    * [Ethereum](/services/jobs/mainnets/Ethereum-Mainnet-Jobs)
+    * [Polygon](/services/jobs/mainnets/Polygon-Mainnet-Jobs)
+  * [Testnets](/services/jobs/mainnets/Testnets)
+    * [Arbitrum Goerli](/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs)
+    * [Avalanche Fuji](/services/jobs/testnets/Avalance-Fuji-Testnet-Jobs)
+    * [Binance](/services/jobs/testnets/Binance-Testnet-Jobs)
+    * [Ethereum Goerli](/services/jobs/testnets/Ethereum-Goerli-Testnet-Jobs)
+    * [Ethereum Sepolia](/services/jobs/testnets/Ethereum-Sepolia-Testnet-Jobs)
+    * [Polygon Mumbai](/services/jobs/testnets/Polygon-Mumbai-Testnet-Jobs)
+    
 * **Chainlink FAQ**
 * [Operators](/faq/Chainlink-Operators "FAQ - Chainlink Node Operators")
 * [Consumers](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers")
 <!--  * [External Adapters](/faq/External-Adapters "FAQ - External Adapters") -->
 * **About**
-  <!-- * [Who we are](/about/About "About LinkWell Nodes") -->
-  * [Contact Us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")
+* [Contact Us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")
+<!-- * [Who we are](/about/About "About LinkWell Nodes") -->
 
 <!-- * Getting Started
   * [Overview](/README)

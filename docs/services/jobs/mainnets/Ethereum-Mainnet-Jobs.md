@@ -1,12 +1,6 @@
-## Polygon
+## Ethereum Mainnet
 
-Polygon is a "layer two" or "sidechain" scaling solution that runs alongside the Ethereum blockchain - allowing for speedy transactions and low fees. MATIC is the network's native cryptocurrency, which is used for fees, staking, and more.
-
-You can use the [**Polygon Bridge**](https://wallet.polygon.technology/polygon/bridge) to transfer tokens to Polygon mainnet and then use [**Polygon Gas Swap**](https://wallet.polygon.technology/polygon/gas-swap) to swap supported tokens to MATIC.
-
-?> ERC-677 LINK ON POLYGON - The LINK provided by the Polygon (Matic) Bridge is not ERC-677 compatible, so you cannot use it with Chainlink services or oracle nodes. Use the Chainlink PegSwap service to convert bridged LINK to the official ERC-677 LINK token on Polygon.
-
-
+Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code
 
 <!-- tabs:start -->
 #### **GET > Uint256**
@@ -18,7 +12,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                |
+| [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                |
 
 ### Request parameters
 
@@ -41,17 +35,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_constructor_mm](/Polygon/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
+[get_uint256_constructor_em](/Ethereum/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_mm](/Polygon/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
+[get_uint256_request_em](/Ethereum/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_uint256/get_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256/get_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -65,7 +59,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                |
 
 ### Request parameters
 
@@ -87,17 +81,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_no_multiply_constructor_mm](/Polygon/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=constructor')
+[get_uint256_no_multiply_constructor_em](/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_no_multiply_mm](/Polygon/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=request')
+[get_uint256_request_no_multiply_em](/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -111,7 +105,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                |
 
 ### Request parameters
 
@@ -134,17 +128,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_int256_constructor_mm](/Polygon/get_int256/get_int256.sol ':include :type=code :fragment=constructor')
+[get_int256_constructor_em](/Ethereum/get_int256/get_int256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_int256_request_mm](/Polygon/get_int256/get_int256.sol ':include :type=code :fragment=request')
+[get_int256_request_em](/Ethereum/get_int256/get_int256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_int256/get_int256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_int256/get_int256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -158,7 +152,7 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                |
 
 ### Request parameters
 
@@ -180,17 +174,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bool_constructor_mm](/Polygon/get_bool/get_bool.sol ':include :type=code :fragment=constructor')
+[get_bool_constructor_em](/Ethereum/get_bool/get_bool.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bool_request_mm](/Polygon/get_bool/get_bool.sol ':include :type=code :fragment=request')
+[get_bool_request_em](/Ethereum/get_bool/get_bool.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_bool/get_bool.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bool/get_bool.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -204,7 +198,7 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.15 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.15 LINK                |
 
 ### Request parameters
 
@@ -226,17 +220,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_constructor_mm](/Polygon/get_bytes/get_bytes.sol ':include :type=code :fragment=constructor')
+[get_bytes_constructor_em](/Ethereum/get_bytes/get_bytes.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_request_mm](/Polygon/get_bytes/get_bytes.sol ':include :type=code :fragment=request')
+[get_bytes_request_em](/Ethereum/get_bytes/get_bytes.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_bytes/get_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes/get_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -249,7 +243,7 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.15 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.15 LINK                |
 
 ### Request parameters
 
@@ -271,17 +265,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_constructor_mm](/Polygon/get_string/get_string.sol ':include :type=code :fragment=constructor')
+[get_string_constructor_em](/Ethereum/get_string/get_string.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_request_mm](/Polygon/get_string/get_string.sol ':include :type=code :fragment=request')
+[get_string_request_em](/Ethereum/get_string/get_string.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_string/get_string.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string/get_string.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -295,7 +289,7 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | be46cb8070c14cb7ad058b29f127ec6b | 0.15 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | be46cb8070c14cb7ad058b29f127ec6b | 0.15 LINK                |
 
 ### Request parameters
 
@@ -322,17 +316,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_x2_constructor_mm](/Polygon/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+[get_string_x2_constructor_em](/Ethereum/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_x2_request_mm](/Polygon/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+[get_string_x2_request_em](/Ethereum/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_string_x2/get_string_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -346,7 +340,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.15 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.15 LINK                |
 
 ### Request parameters
 
@@ -374,17 +368,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_x2_constructor_mm](/Polygon/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=constructor')
+[get_uint256_x2_constructor_em](/Ethereum/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_x2_request_mm](/Polygon/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=request')
+[get_uint256_x2_request_em](/Ethereum/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -398,7 +392,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 9a2ba54374f34184bdc6390db3171994 | 0.15 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 9a2ba54374f34184bdc6390db3171994 | 0.15 LINK                |
 
 ### Request parameters
 
@@ -420,17 +414,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_array_constructor_mm](/Polygon/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=constructor')
+[get_uint256_array_constructor_em](/Ethereum/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_array_request_mm](/Polygon/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=request')
+[get_uint256_array_request_em](/Ethereum/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -444,7 +438,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.15 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.15 LINK                |
 
 ### Request parameters
 
@@ -466,17 +460,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_array_constructor_mm](/Polygon/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=constructor')
+[get_bytes_array_constructor_em](/Ethereum/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_array_request_mm](/Polygon/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=request')
+[get_bytes_array_request_em](/Ethereum/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -488,7 +482,7 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                |
 
 ### Request parameters
 
@@ -511,17 +505,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_bytes_constructor_mm](/Polygon/post_bytes/post_bytes.sol ':include :type=code :fragment=constructor')
+[post_bytes_constructor_em](/Ethereum/post_bytes/post_bytes.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_bytes_request_mm](/Polygon/post_bytes/post_bytes.sol ':include :type=code :fragment=request')
+[post_bytes_request_em](/Ethereum/post_bytes/post_bytes.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/post_bytes/post_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_bytes/post_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
@@ -533,7 +527,7 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 | Address                                    | JobID                            | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b090204b16644030844a6e91932a7626 | 0.1 LINK                |
+| [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b090204b16644030844a6e91932a7626 | 0.1 LINK                |
 
 ### Request parameters
 
@@ -557,17 +551,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_mm](/Polygon/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+[post_uint256_constructor_em](/Ethereum/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_mm](/Polygon/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+[post_uint256_request_em](/Ethereum/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/post_uint256/post_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Polygon/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need assistance?
 
