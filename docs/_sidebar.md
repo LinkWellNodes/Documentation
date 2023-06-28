@@ -1,5 +1,5 @@
 * **Services**
-* [Jobs and Pricing](/)
+* [Jobs and Pricing](/services/jobs/Jobs-and-Pricing)
   * [Mainnets](/services/jobs/mainnets/Mainnets)
     * [Arbitrum One](/services/jobs/mainnets/Arbitrum-One-Mainnet-Jobs)
     * [Avalanche](/services/jobs/mainnets/Avalanche-CChain-Mainnet-Jobs)
