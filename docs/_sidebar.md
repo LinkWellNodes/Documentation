@@ -3,8 +3,8 @@
   * [Testnet Jobs and Pricing](/services/Testnet-Jobs "Supported Chainlink testnet networks, jobs, and fees") -->
 * **Services**
 * Jobs and Pricing
-* [Mainnets](/services/Mainnet-Jobs "Supported Chainlink mainnet networks, jobs, and fees")
-* [Testnets](/services/Testnet-Jobs "Supported Chainlink testnet networks, jobs, and fees")
+* [Mainnets](/services/jobs/mainnets/Mainnet-Support "Supported Chainlink mainnet networks, jobs, and fees")
+* [Testnets](/services/jobs/testnets/Testnet-Support "Supported Chainlink testnet networks, jobs, and fees")
 * **Chainlink FAQ**
 * [Operators](/faq/Chainlink-Operators "FAQ - Chainlink Node Operators")
 * [Consumers](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers")

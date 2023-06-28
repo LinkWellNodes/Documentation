@@ -4,7 +4,7 @@ name = "LW_BM_DR_Get_Uint256"
 externalJobID = "f4821ba2-e8ae-4ddb-a52e-a6860887df96"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68"
+contractAddress = ""
 minContractPaymentLinkJuels = "100000000000000000"
 observationSource = """
     decode_log   [type="ethabidecodelog"
@@ -21,7 +21,7 @@ observationSource = """
                   abi="fulfillOracleRequest(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes32 data)"
                   data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
                  ]
-    submit_tx    [type="ethtx" to="0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68" data="$(encode_tx)"]
+    submit_tx    [type="ethtx" to="" data="$(encode_tx)"]
 
     decode_log -> decode_cbor -> fetch -> parse -> multiply -> encode_data -> encode_tx -> submit_tx
 """
