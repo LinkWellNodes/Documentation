@@ -2,7 +2,7 @@
 **Led by truth over trust. Driven to innovate, build and create. Our mission is to enable developers, startups and enterprises unlock the true value of Web3.**
 
 ## Who We Are
-LinkWell Nodes is a U.S.-based Chainlink node operations team specializing in customized delivery of real-world data on-chain. With over 40 years of combined professional experience in the cybersecurity, enterprise software, financial services and Web3 industries, we are dedicated to building secure Chainlink node operations alongside supporting Chainlink's ultimate vision of building a world powered by cryptographic truth.
+LinkWell Nodes is a professional U.S.-based Chainlink node operations team specializing in customized delivery of real-world data on-chain. With over 40 years of combined experience in the cybersecurity, enterprise software, financial services and Web3 industries, we are dedicated to building a secure, reliable Chainlink Oracle infrastructure, as well as supporting Chainlink's ultimate vision of building a world powered by cryptographic truth.
 
 ### Ken
 Ken is a Maryland-based U.S. Navy veteran, cybersecurity professional, and software engineer with specialized knowledge and expertise in multiple cutting edge technology vectors including cloud infrastructure, enterprise monitoring, and Web3. He holds a masters degree in cybersecurity technology and several Splunk, AWS, and cybersecurity certifications. 
