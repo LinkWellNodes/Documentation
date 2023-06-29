@@ -2,7 +2,7 @@
 
 ## Public Job Info
 
-View our public [Chainlink job offerings](/services/Job-Info).
+View our public [Chainlink job offerings](/services/jobs/Jobs-and-Pricing).
 
 ## Chainlink FAQ
 
