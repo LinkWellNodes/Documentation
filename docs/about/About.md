@@ -16,6 +16,8 @@ After 8 years of work in the traditional finance sector, Derek left to pursue a 
 
 Derek is confident that his vast professional experience in building world-class production systems in the traditional financial sector, his passion for distributed cloud infrastructure, and his absolute love for the Chainlink / DeFi sector make the perfect fit for supporting the vision of LinkWell Nodes, and the broader Chainlink community as a whole.
 
+Derek is based primarily in Massachusetts, but spends half the year in California, enjoying the sunny weather and spending time outdoors. 
+
 
 ## Our Story
 LinkWell Node's story began shortly after the 2022 Chainlink Oracle Olympics - a global competition of 30 professional teams vying for the right to become the next official Chainlink node operator. As individual participants during the competition, Ken and Derek ended up tying for third place - passing every challenge that Chainlink threw at them, but just barely missing out on the bonus points which cinched the victory for the winning team. After the competition, Derek and Ken decided to join forces, each noticing the strengths, capabilities, and professionalism in the other. Shortly after, LinkWell Nodes was formed.
