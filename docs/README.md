@@ -14,4 +14,4 @@ Who are we? Learn more about [LinkWell Nodes](/about/About).
 
 ## Contact Us
 
-Want to learn more? [Contact us](/about/Contact) to get started.
+Want to learn more? [Contact us](/about/Contact) to get started!

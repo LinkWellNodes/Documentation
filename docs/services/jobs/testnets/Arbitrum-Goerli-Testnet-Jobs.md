@@ -54,7 +54,7 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 #### **GET > Uint256 No Multiply**
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
+HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
 
 ### Job details
 
