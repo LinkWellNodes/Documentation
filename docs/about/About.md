@@ -1,17 +1,15 @@
-# Our Story
+# LinkWell Nodes' Mission
+**Led by truth over trust, and driven to innovate, build and create, our mission is to support Chainlink in building a world that is fair, a world that is driven by cryptographic guarantees, and to enable developers, startups and enterprises unlock the true value of Web3.**
+
+## Who We Are
+LinkWell Nodes is a U.S.-based Chainlink node operations team specializing in customized delivery of real-world data on-chain.  With over 40 years of combined professional experience in the cybersecurity, enterprise software, financial services and Web3 industries, we are dedicated to Chainlink node operations alongside supporting Chainlink's ultimate vision of building a world powered by cryptographic truth.
+
+## Our Story
 LinkWell Node's story began shortly after the 2022 Chainlink Oracle Olympics - a global competition of 30 professional teams battling it out for the right to become the next official Chainlink node operations team.  As individual teams during the competition, Ken and Derek ended up tying for third place, passing every challenge task Chainlink threw at them, but just barely missing out on the bonus points which cinched the victory for the winning team.  After the competition, Derek and Ken decided to join forces, each noticing the strengths and capability in the other.  Shortly after, LinkWell Nodes was formed.
 
 They went back to the drawing board with their infrastructure and monitoring solutions and architecture - designing and engineering from the ground up the most sophisticated Chainlink node deployment model that they could possibly fathom.  After over a year of intense engineering and putting all of their hard earned knowledge in cybersecurity, cloud, development and monitoring to use, they believe that they accomplished their mission. But that was the first mission of many. Emerging from shadows, LinkWell Nodes has charged head first into the public sphere to help Chainlink fulfill its quest, as any true Link Marine would.  
 
 After spinning up 5 mainnet chains and 6 testnet chains, with 12 direct jobs each and robust documentation to boot, their current mission is to securely deliver on-chain data to as many teams as they can, all the while maintaining their innovative nature and desire to build and create. They have their eyes on not only becoming one of the next official Chainlink node operators, but becoming one of the best teams that Chainlink, and the greater Web3 community, has had the pleasure of working with!
-
-
-## LinkWell Nodes' Mission
-**Led by truth over trust. Driven to innovate, build and create.  Our mission is to enable developers, startups and enterprises in unlocking the true value of Web3.**
-
-
-## Who We Are
-LinkWell Nodes is a U.S.-based Chainlink node operations team specializing in customized delivery of real-world data on-chain.  With over 40 years of combined professional experience in the cybersecurity, enterprise software, financial services and Web3 industries, they are dedicated to Chainlink node operations alongside supporting Chainlink's ultimate vision of building a world powered by cryptographic truth.
 
 ### Ken
 Ken is a Maryland based U.S. Navy veteran, cybersecurity professional and software engineer with specialized knowledge and expertise in multiple cutting edge technology vectors to include cloud, monitoring and Web3. He holds a masters degree in cybersecurity technology and several Splunk, AWS and cybersecurity certifications.  Ken currently supports NASA's infrastructure and security operations center as a full time Splunk professional services consultant - primarily supporting NASA's security teams in keeping the bad guys out, and ultimately enabling NASA to focus on their mission of getting man back to the moon and beyond! His true ambitions and passion, however, lie with Chainlink. Ken is a co-founder of LinkWell Nodes - a community based Chainlink node operations team.  As a subject matter expert and follower of Chainlink since late 2017, he is dedicated to supporting the Chainlink community any way he can.
