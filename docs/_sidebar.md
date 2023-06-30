@@ -1,5 +1,6 @@
 * **Services**
 * [Jobs and Pricing](/services/jobs/Jobs-and-Pricing)
+  * [Getting Started](/services/jobs/Direct-Request-Guide.md)
   * [Mainnets](/services/jobs/mainnets/Mainnets)
     * [Arbitrum One](/services/jobs/mainnets/Arbitrum-One-Mainnet-Jobs "Arbitrum One Mainnet Jobs")
     * [Avalanche](/services/jobs/mainnets/Avalanche-CChain-Mainnet-Jobs "Avalanche C-Chain Mainnet Jobs")
