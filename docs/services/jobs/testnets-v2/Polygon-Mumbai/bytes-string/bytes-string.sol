@@ -26,7 +26,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB); 
         setChainlinkOracle(0x12A3d7759F745f4cb8EE8a647038c040cB8862A5);
-        jobId = "f4821ba2e8ae4ddba52ea6860887df96";
+        jobId = "8ced832954544a3c98543c94a51d6a8d";
         fee = (0 * LINK_DIVISIBILITY) / 10; // 0 LINK
     }
 /// [constructor]
@@ -38,16 +38,16 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
 		     
         // DEFINE THE REQUEST
         req.add("contact", "derek_linkwellnodes.io");
-        req.add("method", "GET");
-        req.add("url", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD");
-        req.add("headers", '["content-type", "application/json", "set-cookie", "sid=14A52"]');
-        req.add("body", "");
+        req.add("method", "POST");
+        req.add("url", "https://httpbin.org/post");
+        req.add("headers", '["accept", "application/json", "set-cookie", "sid=14A52"]');
+        req.add("body", '{"userId": 123, "address": "527 Madison Ave, New York, NY 10022"}');
         
         // The following CURL request simulates the above request parameters: 
-        // curl --insecure --request GET --header "content-type: application/json" --header "set-cookie: sid=14A52" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"
+        // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"userId": 123, "address": "527 Madison Ave, New York, NY 10022"}' "https://httpbin.org/post"
         
         // PROCESS THE RESULT
-        req.add("path", "DISPLAY,ETH,USD,MARKET");
+        req.add("path", "json,address");
         
         // Initiate the oracle request
         sendChainlinkRequest(req, fee);
@@ -63,7 +63,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
         // Process the oracle response
         emit RequestFulfilled(requestId, bytesData);
         response = bytesData;
-        responseStr = string(response);     // sample value: CryptoCompare Index
+        responseStr = string(response);		// sample value: 527 Madison Ave, New York, NY 10022
     }
 /// [response]
 

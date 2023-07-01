@@ -47,8 +47,8 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
         // curl --insecure --request GET --header "content-type: application/json" --header "set-cookie: sid=14A52" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"
         
         // PROCESS THE RESULT
-        req.add("path", "RAW,ETH,USD,VOLUME24HOUR");    // sample value: 319238.42508496
-        req.addInt("times", 10 ** 18);                  // sample value: 319238425084960060000000
+        req.add("path", "RAW,ETH,USD,VOLUME24HOUR"); 
+        req.addInt("multiplier", 10 ** 18);
 
         // Initiate the oracle request        
         sendChainlinkRequest(req, fee);
@@ -62,7 +62,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     function fulfillBytes(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response
         emit RequestFulfilled(requestId, data);
-        response = data;     // sample value: 319238425084960060000000
+        response = data;     // sample value: 319238425084960060000000 (319238.42508496 before "multiplier" is applied)
     }
 /// [response]
 
