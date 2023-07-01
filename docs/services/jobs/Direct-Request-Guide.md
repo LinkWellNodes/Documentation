@@ -5,8 +5,8 @@ As a developer new to the Chainlink ecosystem, we understand that you probably h
 
 ## Chainlink Data Feeds Architecture
 Before diving into the request workflow to our Chainlink nodes, it's important to understand [Chainlink's basic request model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted) when requesting on-chain data.  We recommend reading through Chainlink's documentation on the process, but at a high level and when you are ready to make your first request, your smart contract starts off by making a request to our oracle contract, which then gets passed on to our off-chain Chainlink nodes.  After retrieving the response from an API endpoint, the Chainlink node returns the result to the oracle contract which then submits the result on-chain for you to use in your smart contract.  Please see below for a simple representation of the process.
-![dr-workflow](/images/DR-Request-Workflow.PNG)
 
+![dr-workflow](/images/DR-Request-Workflow.PNG)
 ### Basic Request Workflow Steps
 The typical direct request work flow from the moment you reach out to us for Chainlink node services, to the point you receive your data on-chain, is as follows:
 1. Fill out our [Get Started](https://linkwellnodes.io/Getting-Started.html) form or join our [Discord](https://discord.com/invite/Xs6SjqVPUA), and let us know how we can help!
@@ -21,6 +21,6 @@ The typical direct request work flow from the moment you reach out to us for Cha
 10. After a brief waiting period (typically less than a minute) which is highly dependent on the block time of the network, network congestion and the API endpoint response time, your data should be available in your smart contract! 
 
 #### Direct Request Via Manual Function Execution
-The following diagram demonstrates the request workflow when manually calling your smart contract's request function using an IDE such as [Remix](https://remix-project.org/#:~:text=JUMP%20INTO%20WEB3,teaching%20and%20experimenting%20with%20Ethereum.).  Please note that the workflow on the left (testnets) is virtually the same workflow as on the right (mainnets) with the exception of deploying your contract to a mainnet and funding it with LINK tokens before making a request.  Please see our [Public Mainnet Job Listings](/services/jobs/mainnets/Mainnets) for our job listings and pricing!
+The following diagram demonstrates the request workflow when manually calling your smart contract's request function using an IDE such as [Remix](https://remix-project.org/#:~:text=JUMP%20INTO%20WEB3,teaching%20and%20experimenting%20with%20Ethereum.).  Please note that the below diagram represents two separate workflows. The workflow on the left (testnets) is virtually the same workflow as on the right (mainnets) with the exception of deploying your contract to a mainnet and funding it with LINK tokens before making a request.  Please see our [Public Mainnet Job Listings](/services/jobs/mainnets/Mainnets) for our jobs and pricing!
 
 ![dr-workflow](/images/CL_DR_Model.png) 
