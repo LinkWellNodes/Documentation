@@ -17,7 +17,7 @@ observationSource = """
     send_to_bridge [
         type="bridge" 
         name="common-http-forwarder" 
-        requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path)}" 
+        requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
         headers="[\\"secret-val-01\\", \\"\\", \\"secret-val-02\\", \\"\\", \\"secret-val-03\\", \\"\\", \\"secret-val-04\\", \\"\\", \\"secret-val-05\\", \\"\\"]"]
 
     encode_large [type="ethabiencode"
