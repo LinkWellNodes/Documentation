@@ -20,32 +20,21 @@ This job requires the following parameters to be set:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **contact** | `string` | "derek_linkwellnodes.io" | Enter your Discord handle here. This will ensure rapid communication from us surrounding outages and other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (""). |
 | **method** | `string` | "GET" | The HTTP method to use in initiating the request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
 | **url** | `string` | "https://tinyurl.com/yz4jtj6u" | The URL to which to send the HTTP request for data. |
-| **contact** | `string` | "derek_linkwellnodes.io" | Enter your Discord handle here. This will ensure rapid communication from us surrounding outages and other technical issues that we may notice with your request. If you prefer to stay anonymous, enter "anonymous". |
 | **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, pass an empty string (""). To pass secret value(s) in your headers that you'd like to protect from being broadcast on-chain (ie, an API key), please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html). We'll send you a custom job ID and store your sensitive information securely off-chain. |
 | **body** | `string` | "My request body" | A body to send with the HTTP request. If no body is desired or applicable (as in the case of `GET` and `DELETE` requests), pass an empty string (""). To pass secret value(s) in your body that you'd like to protect from being broadcast on-chain (ie, an API key), please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html). We'll send you a custom job ID and store your sensitive information securely off-chain. |
 | **path** | `string` | "RAW,ETH,USD,VOLUME24HOUR" | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint. This path must point to a JSON type that corresponds to the response type your contract is looking for (ie, if your contract is expecting a uint256 result, this path must point to a number). To return the full JSON result without parsing, pass an empty string. |
 | **multiplier** | `int256` | 10 ** 18 | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. |
 
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"`
-* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":0.18958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
-* Sample response from the Chainlink oracle: `121111172124190010000000`
-
 ### Implementing within your consumer contract
 
 #### Add the constructor:
 
-The constructor within your consumer contract specifies important information about the request destination and payment: 
+The constructor within your consumer contract specifies important information about the request destination and payment (varies by chain, oracle, and job): 
 
 [uint256_constructor_mmt](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=constructor')`
-
-* **LINK token contract address**: the contract address for the LINK token on this chain
-* **Oracle address**: the address of the Chainlink oracle you've chosen for your request (varies by oracle and chain)
-* **Job ID**: the unique job id for the specific request type that you have chosen (varies by oracle and job type)
-* **LINK payment**: payment in LINK token to be sent over to the oracle for each transaction (varies by oracle, chain, and job type)
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request. For detailed information, reference the above '**Request parameters**' section:
