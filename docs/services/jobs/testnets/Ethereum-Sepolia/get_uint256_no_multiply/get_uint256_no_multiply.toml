@@ -17,7 +17,7 @@ observationSource = """
     parse        [type="jsonparse" path="$(decode_cbor.path)" data="$(fetch)"]
     encode_data  [type="ethabiencode" abi="(bytes32 requestId, uint256 value)" data="{ \\"value\\": $(parse) }"]
     encode_tx    [type="ethabiencode"
-                  abi="fulfillOracleRequest(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes32 data)"
+                  abi="fulfillOracleRequest2(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes data)"
                   data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
                  ]
     submit_tx    [type="ethtx" to="0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B" data="$(encode_tx)"]

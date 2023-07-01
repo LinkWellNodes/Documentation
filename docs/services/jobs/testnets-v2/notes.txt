@@ -1,8 +1,8 @@
 PROS:
 eliminate GET/POST/PUT/DELETE dimensions
-eliminate the brittle JSON parser 
+eliminate multiply / no-multiply jobs
+eliminate JSON parse / non-JSON jobs
 	> currently, if user doesn't want to parse a JSON, and just wants the entire naked result, a different job needs to be created, or else the job scheduler will complain
-	> currently, if the API endpoint returns a different format, the CL job will fail entirely, and the user won't get any error code 
 eliminate need for EA for passing headers
 eliminate need for EA for storing API keys
 centralized logging -> centralized monitoring and alerting in a consistent log format (ie, good for Splunk) 

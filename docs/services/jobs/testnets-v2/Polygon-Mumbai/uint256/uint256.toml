@@ -22,7 +22,7 @@ observationSource = """
 
 	multiply     [type="multiply" input="$(send_to_bridge)" times="$(decode_cbor.multiplier)"]
 
-	encode_data  [type="ethabiencode" 
+    encode_data  [type="ethabiencode" 
                 abi="(bytes32 requestId, uint256 value)" 
                 data="{ \\"requestId\\": $(decode_log.requestId), \\"value\\": $(multiply) }"
                 ]

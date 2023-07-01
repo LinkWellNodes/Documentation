@@ -22,11 +22,11 @@ This job requires the following parameters to be set:
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | **method** | `string` | "GET" | The HTTP method to use in initiating the request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
 | **url** | `string` | "https://tinyurl.com/yz4jtj6u" | The URL to which to send the HTTP request for data. |
-| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, pass an empty string (""). To pass secret value(s) in your headers that you'd like to protect from being broadcast on-chain (ie, an API key), please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html). We'll send you a custom job ID and store your sensitive information securely off-chain. |
-| **body** | `string` | "My request body" | A body to send with the HTTP request. If no body is desired or applicable (as in the case of `GET` and `DELETE` requests), pass an empty string (""). To pass secret value(s) in your body that you'd like to protect from being broadcast on-chain (ie, an API key), please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html). We'll send you a custom job ID and store your sensitive information securely off-chain. |
-| **path** | `string` | "RAW,ETH,USD,VOLUME24HOUR" | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint. This path must point to a JSON type that corresponds to the response type your contract is looking for (ie, if your contract is expecting a uint256 result, this path must point to a number). To return the full JSON result without parsing, pass an empty string. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, pass an empty string (""). |
+| **body** | `string` | "My request body" | A body to send with the HTTP request. If no body is desired or applicable (as in the case of `GET` and `DELETE` requests), pass an empty string (""). |
+| **path** | `string` | "RAW,ETH,USD,VOLUME24HOUR" | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string. |
 | **multiplier** | `int256` | 10 ** 18 | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. |
-| **contact** | `string` | "derek_linkwellnodes.io" | Enter your Discord handle here. This will ensure rapid communication from us surrounding outages and other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (""). |
+| **contact** | `string` | "derek_linkwellnodes.io" | Enter your Discord handle here. This will ensure rapid communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (""). |
 
 ### Implementing within your consumer contract
 
@@ -40,6 +40,13 @@ The constructor within your consumer contract specifies important information ab
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request. For detailed information, reference the above '**Request parameters**' section:
 
 [uint256_request_mmt](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=request')
+
+?> Need to send sensitive data?
+
+Request data is usually entered into your consumer contract, which is visible to the general public.
+
+If you need to send sensitive information along with your request (ie, an API key), we can instead store your sensitive details off-chain on our secure infrastructure, and provide you with a custom job ID that allows your request to access it. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - a member of our team will get back to you ASAP. 
+
 
 #### Retrieve the response (example):
 
