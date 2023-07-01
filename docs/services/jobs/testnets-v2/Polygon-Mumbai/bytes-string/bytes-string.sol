@@ -37,11 +37,11 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
 		Chainlink.Request memory req = buildChainlinkRequest(jobId, address(this), this.fulfillBytes.selector);
 		     
         // DEFINE THE REQUEST
-        req.add("contact", "derek_linkwellnodes.io");
         req.add("method", "POST");
         req.add("url", "https://httpbin.org/post");
         req.add("headers", '["accept", "application/json", "set-cookie", "sid=14A52"]');
         req.add("body", '{"userId": 123, "address": "527 Madison Ave, New York, NY 10022"}');
+        req.add("contact", "derek_linkwellnodes.io");
         
         // The following CURL request simulates the above request parameters: 
         // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"userId": 123, "address": "527 Madison Ave, New York, NY 10022"}' "https://httpbin.org/post"
