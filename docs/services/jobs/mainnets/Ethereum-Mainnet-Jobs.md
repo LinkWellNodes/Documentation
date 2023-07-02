@@ -47,7 +47,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256/get_uint256.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -93,7 +93,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -140,7 +140,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_int256/get_int256.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -186,7 +186,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bool/get_bool.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -232,7 +232,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes/get_bytes.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -277,7 +277,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string/get_string.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -328,7 +328,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string_x2/get_string_x2.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -380,7 +380,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -426,7 +426,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -472,7 +472,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -517,7 +517,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_bytes/post_bytes.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
@@ -563,7 +563,7 @@ The 'request function' within your consumer contract specifies the parameters to
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_uint256/post_uint256.sol) of the above consumer contract.
 * View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
-### Need assistance?
+### Need more help?
 
 Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 <!-- tabs:end -->

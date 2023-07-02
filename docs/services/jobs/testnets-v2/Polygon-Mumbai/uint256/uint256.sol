@@ -36,7 +36,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     
         Chainlink.Request memory req = buildChainlinkRequest(jobId, address(this), this.fulfillBytes.selector);
         
-        // DEFINE THE REQUEST
+        // DEFINE THE REQUEST (example)
         req.add("method", "GET");
         req.add("url", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD");
         req.add("headers", '["content-type", "application/json", "set-cookie", "sid=14A52"]');
@@ -46,7 +46,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
         // The following CURL request simulates the above request parameters: 
         // curl --insecure --request GET --header "content-type: application/json" --header "set-cookie: sid=14A52" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"
         
-        // PROCESS THE RESULT
+        // PROCESS THE RESULT (example)
         req.add("path", "RAW,ETH,USD,VOLUME24HOUR"); 
         req.addInt("multiplier", 10 ** 18);
 

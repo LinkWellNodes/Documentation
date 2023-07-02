@@ -36,7 +36,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     
 		Chainlink.Request memory req = buildChainlinkRequest(jobId, address(this), this.fulfillBytes.selector);
 		     
-        // DEFINE THE REQUEST
+        // DEFINE THE REQUEST (example)
         req.add("method", "POST");
         req.add("url", "https://httpbin.org/post");
         req.add("headers", '["accept", "application/json", "set-cookie", "sid=14A52"]');
@@ -46,7 +46,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
         // The following CURL request simulates the above request parameters: 
         // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"userId": 123, "address": "527 Madison Ave, New York, NY 10022"}' "https://httpbin.org/post"
         
-        // PROCESS THE RESULT
+        // PROCESS THE RESULT (example)
         req.add("path", "json,address");
         
         // Initiate the oracle request
