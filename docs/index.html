@@ -19,8 +19,11 @@
       // logo: '/media/LinkWellLogo.png',
       coverpage: false,
       loadSidebar: true,
+	  alias: {
+            '/.*/_sidebar.md': '/_sidebar.md'
+        },
       subMaxLevel: 1,
-      sidebarDisplayLevel: 1,	// the default expansion of the sidebar
+      sidebarDisplayLevel: 0,	// the default expansion of the sidebar
       name: 'Documentation',
       nameLink: '#/',    // important for allowing the hashchange event listener to trigger for clicks to the name link
       repo: 'https://github.com/LinkWellNodes',
@@ -33,11 +36,6 @@
   	    theme: 'classic',
   	  	tabHeadings: true
   	  }
-  	  // toc: {
-  	  //   tocMaxLevel: 5,
-  	  //   target: 'h3',
-  	  //   ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
-  	  // }
     }
     
   </script>
@@ -55,7 +53,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- JQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> Was creating a secondary search bar in the sidebar --> 
   <!-- Sidebar collapsing support -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   

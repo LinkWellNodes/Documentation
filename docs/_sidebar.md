@@ -1,5 +1,5 @@
 * **Services**
-* [Getting Started](/services/jobs/Direct-Request-Guide.md)
+* [Getting Started](/services/jobs/Direct-Request-Guide)
 * [Jobs and Pricing](/services/jobs/Jobs-and-Pricing)
   * [Mainnets](/services/jobs/mainnets/Mainnets)
     * [Arbitrum One](/services/jobs/mainnets/Arbitrum-One-Mainnet-Jobs "Arbitrum One Mainnet Jobs")
