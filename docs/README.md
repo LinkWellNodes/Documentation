@@ -1,5 +1,9 @@
 # Documentation
 
+## Getting Started
+
+Check out our [Getting Started](/services/jobs/Direct-Request-Guide) page for a high level guide on integrating our direct request jobs into your contracts.
+
 ## Public Job Info
 
 View our public [Chainlink job offerings](/services/jobs/Jobs-and-Pricing).
