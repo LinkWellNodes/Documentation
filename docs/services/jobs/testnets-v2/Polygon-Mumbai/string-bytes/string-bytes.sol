@@ -27,7 +27,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
         setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB); 
         setChainlinkOracle(0x12A3d7759F745f4cb8EE8a647038c040cB8862A5);
         jobId = "8ced832954544a3c98543c94a51d6a8d";
-        fee = (0 * LINK_DIVISIBILITY) / 10; // 0 LINK
+        fee = (0 * LINK_DIVISIBILITY) / 10;     // 0 LINK
     }
 /// [constructor]
 
@@ -40,11 +40,11 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
         req.add("method", "POST");
         req.add("url", "https://httpbin.org/post");
         req.add("headers", '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add("body", '{"userId": 123, "address": "527 Madison Ave, New York, NY 10022"}');
+        req.add("body", '{"userId": 123, "address": "527 Madison Ave"}');
         req.add("contact", "derek_linkwellnodes.io");
         
         // The following CURL request simulates the above request parameters: 
-        // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"userId": 123, "address": "527 Madison Ave, New York, NY 10022"}' "https://httpbin.org/post"
+        // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"userId": 123, "address": "527 Madison Ave"}' "https://httpbin.org/post"
         
         // PROCESS THE RESULT (example)
         req.add("path", "json,address");
@@ -62,8 +62,8 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     function fulfillBytes(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         emit RequestFulfilled(requestId, bytesData);
-        response = bytesData;
-        responseStr = string(response);		// sample value: 527 Madison Ave, New York, NY 10022
+        response = bytesData;               // sample value: 0x353237204d616469736f6e20417665
+        responseStr = string(response);     // sample value: 527 Madison Ave
     }
 /// [response]
 
