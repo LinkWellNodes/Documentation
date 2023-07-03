@@ -22,7 +22,7 @@ contract getInt256 is ChainlinkClient, ConfirmedOwner {
 /// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x404460C6A5EdE2D891e8297795264fDe62ADBB75);
-        setChainlinkOracle();
+        setChainlinkOracle(0x20f6596bA2c39EFd9340F2aF0428D541f7C51954);
         jobId = "339ac1ad0a864ea7b94811de8a362a64";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
     }

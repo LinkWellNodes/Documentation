@@ -20,17 +20,17 @@ observationSource = """
         requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
         headers="[\\"secret-val-01\\", \\"\\", \\"secret-val-02\\", \\"\\", \\"secret-val-03\\", \\"\\", \\"secret-val-04\\", \\"\\", \\"secret-val-05\\", \\"\\"]"]
 
-    encode_large [type="ethabiencode"
+    encode_data [type="ethabiencode"
                 abi="(bytes32 requestId, bytes _data)"
                 data="{\\"requestId\\": $(decode_log.requestId), \\"_data\\": $(send_to_bridge)}"
                 ]
 
     encode_tx  [type="ethabiencode"
                 abi="fulfillOracleRequest2(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes calldata data)"
-                data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_large)}"
+                data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
                 ]
 
     submit_tx    [type="ethtx" to="0x12A3d7759F745f4cb8EE8a647038c040cB8862A5" data="$(encode_tx)"]
 
-    decode_log -> decode_cbor -> send_to_bridge -> encode_large -> encode_tx -> submit_tx
+    decode_log -> decode_cbor -> send_to_bridge -> encode_data -> encode_tx -> submit_tx
 """

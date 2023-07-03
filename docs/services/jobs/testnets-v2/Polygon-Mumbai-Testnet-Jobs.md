@@ -8,7 +8,7 @@ Please see below for our Chainlink direct request job offerings on the Polygon-M
 <!-- tabs:start -->
 #### **Uint256**
 
-## Uint256
+## Uint256 Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a specific value, multiplies this value by the given multiplier, and returns the resulting unsigned 256-bit integer (**uint256**) to your consumer contract.
 
@@ -51,7 +51,7 @@ The 'request' function specifies the parameters to be sent over with your Chainl
 
 Data sent by your consumer contract is visible to the general public.
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store your sensitive data off-chain, on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will allow your request to access your sensitive data. 
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store your sensitive data off-chain, on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 
 #### Retrieve the response (example):
@@ -61,6 +61,19 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 ### View the full source code
 
 * View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/uint256/uint256.sol) of the above consumer contract.
+
+### Simulating the above request
+
+Let's simulate the above request example using a `curl` command:
+
+Send the request:
+```
+curl --insecure --request GET --header "content-type: application/json" --header "set-cookie: sid=14A52" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"
+```
+
+Analyze the response:
+
+
 
 ### Need more help?
 
@@ -81,11 +94,11 @@ Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you requ
 
 #### **String (Bytes) **
 
-## String (Bytes)
+## String (Bytes) Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a specific value, and returns the resulting dynamic bytes array (**bytes**) - which can also be represented as a **string** - to your consumer contract.
 
-?> This job returns a single **bytes** object, which can easily be converted into a **string** value. 
+?> This job returns a single **bytes** object, which can readily be converted into a **string** value. 
 
 ### Job details
 
@@ -123,7 +136,7 @@ The 'request' function specifies the parameters to be sent over with your Chainl
 
 Data sent by your consumer contract is visible to the general public.
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store your sensitive data off-chain, on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will allow your request to access your sensitive data. 
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store your sensitive data off-chain, on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 
 #### Retrieve the response (example):

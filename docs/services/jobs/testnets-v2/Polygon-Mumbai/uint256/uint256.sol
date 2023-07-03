@@ -15,12 +15,11 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * DO NOT USE THIS CODE IN PRODUCTION.
  */
 
-contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
     bytes32 private jobId;
     uint256 private fee;
-
 
 /// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
@@ -62,7 +61,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     function fulfillBytes(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response
         emit RequestFulfilled(requestId, data);
-        response = data;     // sample value: 1913540000000000000000 (1913.54 before "multiplier" is applied)
+        response = data;     // example value: 1913540000000000000000 (1913.54 before "multiplier" is applied)
     }
 /// [response]
 

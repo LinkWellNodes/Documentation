@@ -4,7 +4,7 @@ name = "LW_BM_DR_Post_Bytes"
 externalJobID = "b3390c03-bfc2-4b42-a0b0-ab8051471bbb"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = ""
+contractAddress = "0x20f6596bA2c39EFd9340F2aF0428D541f7C51954"
 minContractPaymentLinkJuels = "100000000000000000"
 observationSource = """
     decode_log   [type="ethabidecodelog"
@@ -38,7 +38,7 @@ observationSource = """
                 data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\":   $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_large)}"
                 ]
 
-    submit_tx    [type="ethtx" to="" data="$(encode_tx)"]
+    submit_tx    [type="ethtx" to="0x20f6596bA2c39EFd9340F2aF0428D541f7C51954" data="$(encode_tx)"]
 
     decode_log -> decode_cbor -> post -> parse -> encode_large -> encode_tx -> submit_tx
 """

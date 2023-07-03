@@ -23,7 +23,7 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
 /// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x404460C6A5EdE2D891e8297795264fDe62ADBB75);
-        setChainlinkOracle();
+        setChainlinkOracle(0x20f6596bA2c39EFd9340F2aF0428D541f7C51954);
         jobId = "b090204b16644030844a6e91932a7626";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
     }
