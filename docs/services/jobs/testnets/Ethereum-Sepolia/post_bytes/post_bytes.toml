@@ -18,7 +18,7 @@ observationSource = """
 	                method=POST
 	                url="$(decode_cbor.post)" 
 	                # Permits the task to access a URL at localhost, which could present a security risk. Note that Bridge tasks allow this by default.
-	                allowUnrestrictedNetworkAccess="true" 
+	                allowunrestrictednetworkaccess="false" 
 	                # (optional) REQUEST HEADERS | these headers must be hardcoded below, and cannot be added dynamically (ie, decode_cbor.var), as var injection is not supported for this field
 	                # headers="[
 	                #	\\"HeaderNm1\\", \\"HeaderVal1\\", 

@@ -15,11 +15,11 @@ observationSource = """
     decode_log -> decode_cbor
     decode_cbor -> value1
     decode_cbor -> value2
-    value1          [type="http" method=GET url="$(decode_cbor.url1)" allowunrestrictednetworkaccess="true"]
+    value1          [type="http" method=GET url="$(decode_cbor.url1)" allowunrestrictednetworkaccess="false"]
     value1_parse    [type="jsonparse" path="$(decode_cbor.path1)" data="$(value1)"]
     value1_multiply [type="multiply" input="$(value1_parse)", times="$(decode_cbor.times)"]
     value1 -> value1_parse -> value1_multiply
-    value2          [type="http" method=GET url="$(decode_cbor.url2)" allowunrestrictednetworkaccess="true"]
+    value2          [type="http" method=GET url="$(decode_cbor.url2)" allowunrestrictednetworkaccess="false"]
     value2_parse    [type="jsonparse" path="$(decode_cbor.path2)" data="$(value2)"]
     value2_multiply [type="multiply" input="$(value2_parse)", times="$(decode_cbor.times)"]
     value2 -> value2_parse -> value2_multiply
