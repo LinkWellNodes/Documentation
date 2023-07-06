@@ -2,7 +2,7 @@
 
 Please see below for our list of currently-supported testnet networks, along with their associated operator contracts, Job IDs, and sample contracts. 
 
-If you run into any trouble, we are here to help! Head on over to our [**Discord**](https://discord.gg/AJ66pRz4) for the fastest service.
+If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4) for the fastest service.
 
 ### View our job offerings:
 
@@ -34,5 +34,5 @@ You can learn more about external adapters [here](https://docs.chain.link/chainl
 * If your API Endpoint requires authentication via an API key, please [**reach out**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to us so that we can securely store and utilize your key via an [external adapter](https://github.com/smartcontractkit/external-adapters-js/tree/main/packages/sources).
 
 ## Support
-* Feel free to join our [**Discord**](https://discord.gg/AJ66pRz4) if you require support integrating our job into your contract.  We are happy to support custom data requests as well!
+* Feel free to join our [Discord](https://discord.gg/AJ66pRz4) if you require support integrating our job into your contract.  We are happy to support custom data requests as well!
 * Check out our [**Chainlink User FAQ**](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked to us by our users.

@@ -49,7 +49,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Uint256 No Multiply**
 
@@ -95,7 +95,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Int256**
 
@@ -142,7 +142,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Bool**
 
@@ -188,7 +188,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Bytes**
 
@@ -234,7 +234,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > String**
 
@@ -279,7 +279,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > String x 2**
 
@@ -330,7 +330,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Uint256 x 2**
 
@@ -382,7 +382,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Uint256[]**
 
@@ -428,7 +428,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Bytes[]**
 
@@ -474,7 +474,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **POST > Bytes**
 
@@ -519,7 +519,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **POST > Uint256**
 
@@ -565,5 +565,5 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 <!-- tabs:end -->

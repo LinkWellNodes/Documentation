@@ -1,7 +1,7 @@
 type = "directrequest"
 schemaVersion = 1
-name = "LW_MMT_EA_uint256"
-externalJobID = "a8356f48-569c-434e-aa4a-c5fcb4db5cc0"
+name = "LW_MMT_EA_string-bytes-array"
+externalJobID = "07f761e2-6a28-4cb8-b7ed-67188dece6d4"
 forwardingAllowed = false
 maxTaskDuration = "0s"
 contractAddress = "0x12A3d7759F745f4cb8EE8a647038c040cB8862A5"
@@ -20,11 +20,11 @@ observationSource = """
         requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
         headers="[\\"secret-val-01\\", \\"\\", \\"secret-val-02\\", \\"\\", \\"secret-val-03\\", \\"\\", \\"secret-val-04\\", \\"\\", \\"secret-val-05\\", \\"\\"]"]
 
-	multiply     [type="multiply" input="$(send_to_bridge)" times="$(decode_cbor.multiplier)"]
+    parse        [type="jsonparse" path="" data="$(send_to_bridge)"]
 
-    encode_data  [type="ethabiencode" 
-                abi="(bytes32 requestId, uint256 value)" 
-                data="{ \\"requestId\\": $(decode_log.requestId), \\"value\\": $(multiply) }"
+    encode_data [type="ethabiencode"
+                abi="(bytes32 requestId, bytes[] _data)"
+                data="{\\"requestId\\": $(decode_log.requestId), \\"_data\\": $(parse)}"
                 ]
 
     encode_tx  [type="ethabiencode"
@@ -34,5 +34,7 @@ observationSource = """
 
     submit_tx    [type="ethtx" to="0x12A3d7759F745f4cb8EE8a647038c040cB8862A5" data="$(encode_tx)"]
 
-    decode_log -> decode_cbor -> send_to_bridge -> multiply -> encode_data -> encode_tx -> submit_tx
+    decode_log -> decode_cbor -> send_to_bridge -> parse -> encode_data -> encode_tx -> submit_tx
 """
+# NOTES:
+# Necessary to keep the parse task for some data types (ie, bytes/string arrays), as it normalizes the response from the EA and allows for proper serialization by ethabiencode

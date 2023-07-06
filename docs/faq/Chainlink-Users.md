@@ -91,3 +91,27 @@ If you're having trouble finding the appropriate price feed for your application
 ### How can I find a node operator to host my external adapter or job?
 
 To get connected to the appropriate Chainlink node operator for your use case, you can reach out within the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink) - a node operator (such as ourselves) will almost certainly be willing to help you with your request!
+
+## Job Troubleshooting
+
+### My request transaction won't send
+
+Please ensure that you have enough gas token present in the wallet that is initiating the request. For mainnet requests, please additionally ensure that you have the appropriate amount of LINK tokens present within your consumer contract before making the request. 
+
+If you are using one of our jobs, see the `fee` object present within your consumer contract for the minimum amount of LINK token that needs to be present within your consumer contract in order to initiate a `request()` call.
+ 
+### I'm not getting a response back to my consumer contract
+
+If you've waited over 60 seconds after successfully sending your request transaction, and aren't seeing any data returned to your smart contract:
+
+1. Double-check that you are passing the correct values into the `setChainlinkToken()` and `setChainlinkOracle()` functions , and assigning the correct value to the `jobId` object. 
+
+?> If you are using one of our oracles, you may find the correct corresponding values in our job documentation [here](/services/jobs/Jobs-and-Pricing).
+
+2. Confirm that the API endpoint to which you are making your HTTP request is working via `curl`. If you are Each job includes a sample curl command.
+
+?> If you are using one of our oracles, an exemplifying curl command is included in each sample consumer contract within our job documentation [here](/services/jobs/Jobs-and-Pricing).
+
+3. Confirm that the oracle you are using didn't run out of gas while writing your requested data on-chain. To check this, look up the address of your related oracle (ie, the address passed to your `setChainlinkOracle()` function) within the appropriate blockchain explorer, to check for any recent transactions that failed due to an **'out of gas'** error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact the corresponding oracle team to request a higher gas allowance for your specific use case (may result in higher job pricing).
+
+?> If you are using one of our oracles, you may find the oracle address that corresponds to your specific job within our job documentation [here](/services/jobs/Jobs-and-Pricing), or reach out to us regarding higher gas limits for your specific use case via our [Discord server](https://discord.gg/AJ66pRz4). 

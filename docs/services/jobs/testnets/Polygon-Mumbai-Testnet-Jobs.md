@@ -1,7 +1,7 @@
 ## Polygon Mumbai Testnet Jobs
 Mumbai network is a testnet that approximates the Polygon Mainnet, and uses Ethereum's Goerli testnet as its Layer 1 protocol.
 
-Please see below for our Chainlink direct request job offerings on the Polygon-Mumbai network. All testnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [**Discord**](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our Chainlink direct request job offerings on the Polygon-Mumbai network. All testnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [**here**](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 <!-- tabs:start -->
 #### **GET > Uint256**
@@ -50,7 +50,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Uint256 No Multiply**
 
@@ -96,7 +96,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Int256**
 
@@ -143,7 +143,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Bool**
 
@@ -189,7 +189,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Bytes**
 
@@ -235,7 +235,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > String**
 
@@ -280,7 +280,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > String x 2**
 
@@ -331,7 +331,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Uint256 x 2**
 
@@ -383,7 +383,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Uint256[]**
 
@@ -429,7 +429,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **GET > Bytes[]**
 
@@ -475,7 +475,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **POST > Bytes**
 
@@ -520,7 +520,7 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 #### **POST > Uint256**
 
@@ -566,6 +566,6 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### Need more help?
 
-Please reach out to us in [**Discord**](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
 <!-- tabs:end -->
