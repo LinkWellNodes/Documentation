@@ -33,7 +33,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
 /// [request]
     function request() public {
     
-        Chainlink.Request memory req = buildChainlinkRequest(jobId, address(this), this.fulfillBytes.selector);
+        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfillBytes.selector);
         
         // DEFINE THE REQUEST (example)
         req.add("method", "GET");

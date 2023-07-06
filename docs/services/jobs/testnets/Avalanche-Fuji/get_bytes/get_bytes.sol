@@ -36,9 +36,8 @@ contract getBytes is ChainlinkClient, ConfirmedOwner {
 
 /// [request]
     function requestBytes() public {
-        Chainlink.Request memory req = buildChainlinkRequest(
+        Chainlink.Request memory req = buildOperatorRequest(
             jobId,
-            address(this),
             this.fulfillBytes.selector
         );
         req.add(

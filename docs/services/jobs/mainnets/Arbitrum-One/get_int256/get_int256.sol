@@ -30,9 +30,8 @@ contract getInt256 is ChainlinkClient, ConfirmedOwner {
 
 /// [request]
     function requestInt256Data() public returns (bytes32 requestId) {
-        Chainlink.Request memory req = buildChainlinkRequest(
+        Chainlink.Request memory req = buildOperatorRequest(
             jobId,
-            address(this),
             this.fulfillInt256.selector
         );
 

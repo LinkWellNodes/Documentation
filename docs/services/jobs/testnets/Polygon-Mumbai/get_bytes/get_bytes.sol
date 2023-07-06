@@ -36,9 +36,8 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
 
 /// [request]
     function request() public {
-        Chainlink.Request memory req = buildChainlinkRequest(
+        Chainlink.Request memory req = buildOperatorRequest(
             jobId,
-            address(this),
             this.fulfillBytes.selector
         );       
         // THE URL TO WHICH TO SEND THIS REQUEST

@@ -34,9 +34,8 @@ contract getUint256 is ChainlinkClient, ConfirmedOwner {
 
 /// [request]
     function requestUint256Data() public returns (bytes32 requestId) {
-        Chainlink.Request memory req = buildChainlinkRequest(
+        Chainlink.Request memory req = buildOperatorRequest(
             jobId,
-            address(this),
             this.fulfillUint256.selector
         );
         req.add(

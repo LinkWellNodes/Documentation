@@ -32,9 +32,8 @@ contract getString is ChainlinkClient, ConfirmedOwner {
 
 /// [request]
     function requestStringData() public returns (bytes32 requestId) {
-        Chainlink.Request memory req = buildChainlinkRequest(
+        Chainlink.Request memory req = buildOperatorRequest(
             jobId,
-            address(this),
             this.fulfillString.selector
         );
         req.add(

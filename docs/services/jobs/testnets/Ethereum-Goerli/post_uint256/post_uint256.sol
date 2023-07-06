@@ -35,9 +35,8 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
 
 /// [request]
     function postUint256() public {
-        Chainlink.Request memory req = buildChainlinkRequest(
+        Chainlink.Request memory req = buildOperatorRequest(
             jobId,
-            address(this),
             this.fulfillUint256.selector
         );        
         // The URL which to send this request

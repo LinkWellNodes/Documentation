@@ -35,7 +35,7 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
 
 /// [request]
     function postUint256() public {
-        Chainlink.Request memory req = buildChainlinkRequest(jobId,address(this),this.fulfillUint256.selector);
+        Chainlink.Request memory req = buildOperatorRequest(jobId,address(this),this.fulfillUint256.selector);
         // The URL which to send this request
         req.add("post", "API_URL"); // Example: "https://min-api.cryptocompare.com/data/price"       
         // Request body | cannot be an empty string ("{}" is OK)
