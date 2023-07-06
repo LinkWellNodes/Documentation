@@ -29,4 +29,4 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ## Support
 * Feel free to join our [Discord](https://discord.gg/AJ66pRz4) if you require support integrating our job into your contract.  We are happy to support custom data requests as well!
-* Check out our [**Chainlink User FAQ**](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked to us by our users.
+* Check out our [Chainlink User FAQ](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked to us by our users.
