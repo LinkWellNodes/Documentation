@@ -53,7 +53,7 @@ contract getStringx2 is ChainlinkClient, ConfirmedOwner {
         );
         req.add("path2", "JSON_PATH"); // Example: 1,id       
         // Sends the request
-        return sendChainlinkRequest(req, fee);
+        return sendOperatorRequest(req, fee);
     }
 /// [request]
 

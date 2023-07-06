@@ -35,7 +35,7 @@ contract getUint256Array is ChainlinkClient, ConfirmedOwner {
     Chainlink.Request memory req = buildChainlinkRequest(jobId, address(this), this.fulfillUint256Array.selector);
     req.add("get", "API_URL"); // Example: https://api.binance.us/api/v3/depth?symbol=ETHUSD
     req.add("path", "JSON_PATH"); // Example: bids,0
-    sendChainlinkRequest(req, fee);
+    sendOperatorRequest(req, fee);
   }
 /// [request]
 

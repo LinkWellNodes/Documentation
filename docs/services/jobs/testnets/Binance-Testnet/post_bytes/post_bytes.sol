@@ -45,7 +45,7 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
         // REQUEST BODY | cannot be an empty string ("{}" is OK)
 		req.add("requestData", "{}"); // Example: '{"fsyms": "LINK", "tsyms": "USD"}'
         req.add("path", "JSON_PATH"); // Example: "RAW,LINK,USD,LASTMARKET"
-        sendChainlinkRequest(req, fee);
+        sendOperatorRequest(req, fee);
     }
 /// [request]
 

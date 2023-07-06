@@ -36,7 +36,7 @@ contract getBytesArray is ChainlinkClient, ConfirmedOwner {
     Chainlink.Request memory req = buildChainlinkRequest(jobId, address(this), this.fulfillBytesArray.selector);
     req.add("get", "API_URL"); // Example: https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD
     req.add("path", "JSON_PATH"); // Example: symbols,0,orderTypes
-    sendChainlinkRequest(req, fee);
+    sendOperatorRequest(req, fee);
   }
 /// [request]
 

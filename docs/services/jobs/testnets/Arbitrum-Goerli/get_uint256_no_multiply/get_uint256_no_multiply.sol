@@ -44,7 +44,7 @@ contract getUint256 is ChainlinkClient, ConfirmedOwner {
             "API_URL" // Example: https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD
         );
         req.add("path", "JSON_PATH"); // Example: RAW,ETH,USD,VOLUME24HOUR
-        return sendChainlinkRequest(req, fee);
+        return sendOperatorRequest(req, fee);
     }
 /// [request]
 

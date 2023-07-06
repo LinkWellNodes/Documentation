@@ -45,7 +45,7 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
         // The Uint256 Multiplier
         int256 timesAmount = 100;
         req.addInt("times", timesAmount);
-        sendChainlinkRequest(req, fee);
+        sendOperatorRequest(req, fee);
     }
 /// [request]
 

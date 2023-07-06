@@ -42,7 +42,7 @@ contract getBytes is ChainlinkClient, ConfirmedOwner {
             "API_URL" // Example: https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json
         );
         req.add("path", "JSON_PATH"); // Example: image
-        sendChainlinkRequest(req, fee);
+        sendOperatorRequest(req, fee);
     }
 /// [request]
 

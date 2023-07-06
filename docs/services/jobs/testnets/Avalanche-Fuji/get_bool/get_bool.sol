@@ -41,7 +41,7 @@ contract getBool is ChainlinkClient, ConfirmedOwner {
     Chainlink.Request memory req = buildChainlinkRequest(jobId, address(this), this.fulfillBool.selector);
     req.add("get", 'API_URL'); // Example: https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD
     req.add("path", "JSON_PATH"); // Example: symbols,0,isSpotTradingAllowed
-    sendChainlinkRequest(req, fee);
+    sendOperatorRequest(req, fee);
   }
 /// [request]
 

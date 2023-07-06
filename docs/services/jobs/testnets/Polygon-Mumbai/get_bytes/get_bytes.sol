@@ -48,7 +48,7 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
         req.add("headers", '["Authorization", "${SECRET_01}", "my-header-2", "my value 2"]');
         req.add("body", "test request body");
 		
-        sendChainlinkRequest(req, fee);
+        sendOperatorRequest(req, fee);
     }
 /// [request]
 

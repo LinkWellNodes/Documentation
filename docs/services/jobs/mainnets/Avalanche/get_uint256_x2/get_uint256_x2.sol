@@ -55,7 +55,7 @@ contract getUint256x2 is ChainlinkClient, ConfirmedOwner {
         req.add("path2", "JSON_PATH"); // Example: USD
         int256 timesAmount = 10 ** 18;
         req.addInt("times", timesAmount);
-        sendChainlinkRequest(req, fee); 
+        sendOperatorRequest(req, fee); 
     }
 /// [request]
 

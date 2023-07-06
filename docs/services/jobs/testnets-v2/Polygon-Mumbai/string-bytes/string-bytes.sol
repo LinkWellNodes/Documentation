@@ -49,7 +49,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         req.add("path", "json,data,0,name");
         
         // Initiate the oracle request
-        sendChainlinkRequest(req, fee);
+        sendOperatorRequest(req, fee);
     }
 /// [request]
 

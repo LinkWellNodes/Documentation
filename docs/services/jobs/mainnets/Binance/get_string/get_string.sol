@@ -43,7 +43,7 @@ contract getString is ChainlinkClient, ConfirmedOwner {
         );
         req.add("path", "JSON_PATH"); // Example: 0,id
         // Sends the request
-        return sendChainlinkRequest(req, fee);
+        return sendOperatorRequest(req, fee);
     }
 /// [request]
 

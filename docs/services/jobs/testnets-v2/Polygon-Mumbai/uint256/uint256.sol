@@ -50,7 +50,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         req.addInt("multiplier", 10 ** 18);
 
         // Initiate the oracle request        
-        sendChainlinkRequest(req, fee);
+        sendOperatorRequest(req, fee);
     }
 /// [request]
 
