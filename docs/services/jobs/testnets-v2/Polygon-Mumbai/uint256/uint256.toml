@@ -17,14 +17,12 @@ observationSource = """
     send_to_bridge [
         type="bridge" 
         name="common-http-forwarder" 
-        requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
+        requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path),\\"multiplier\\":$(decode_cbor.multiplier),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
         headers="[\\"secret-val-01\\", \\"\\", \\"secret-val-02\\", \\"\\", \\"secret-val-03\\", \\"\\", \\"secret-val-04\\", \\"\\", \\"secret-val-05\\", \\"\\"]"]
-
-	multiply     [type="multiply" input="$(send_to_bridge)" times="$(decode_cbor.multiplier)"]
 
     encode_data  [type="ethabiencode" 
                 abi="(bytes32 requestId, uint256 value)" 
-                data="{ \\"requestId\\": $(decode_log.requestId), \\"value\\": $(multiply) }"
+                data="{ \\"requestId\\": $(decode_log.requestId), \\"value\\": $(send_to_bridge) }"
                 ]
 
     encode_tx  [type="ethabiencode"
@@ -34,5 +32,5 @@ observationSource = """
 
     submit_tx    [type="ethtx" to="0x12A3d7759F745f4cb8EE8a647038c040cB8862A5" data="$(encode_tx)"]
 
-    decode_log -> decode_cbor -> send_to_bridge -> multiply -> encode_data -> encode_tx -> submit_tx
+    decode_log -> decode_cbor -> send_to_bridge -> encode_data -> encode_tx -> submit_tx
 """

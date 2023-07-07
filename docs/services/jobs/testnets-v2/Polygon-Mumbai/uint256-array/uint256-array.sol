@@ -15,7 +15,7 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * DO NOT USE THIS CODE IN PRODUCTION.
  */
 
-contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
     bytes32 private jobId;
@@ -25,7 +25,7 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB); 
         setChainlinkOracle(0x12A3d7759F745f4cb8EE8a647038c040cB8862A5);
-        jobId = "07f761e26a284cb8b7ed67188dece6d4";
+        jobId = "e20c7567b2bb4e3690c615d03457b5d3";
         fee = (0 * LINK_DIVISIBILITY) / 10;     // 0 LINK
     }
 /// [constructor]
@@ -39,14 +39,15 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         req.add("method", "POST");
         req.add("url", "https://httpbin.org/post");
         req.add("headers", '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add("body", '{"data":["Coinbase","Binance","Kraken"]}');
+        req.add("body", '{"data":[412.43,983.89,473.31]}');
         req.add("contact", "derek_linkwellnodes.io");
         
         // The following CURL request simulates the above request parameters: 
-        // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"data":["Coinbase","Binance","Kraken"]}' "https://httpbin.org/post"
+        // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"data":[412.43,983.89,473.31]}' "https://httpbin.org/post"
         
         // PROCESS THE RESULT (example)
-        req.add("path", "json,data");
+        req.add("path", "json,data"); 
+        req.addInt("multiplier", 10 ** 18);
         
         // Initiate the oracle request
         sendOperatorRequest(req, fee);
@@ -54,17 +55,13 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
 /// [request]
 
 /// [response]
-    bytes[] public responseBytesArr;
-    string[] public responseStringArr;
+    uint256[] public responseArr;
 
-    event RequestFulfilled(bytes32 indexed requestId, bytes[] indexed responseBytesArr);
-    function fulfill(bytes32 requestId, bytes[] memory bytesData) public recordChainlinkFulfillment(requestId) {
+    event RequestFulfilled(bytes32 indexed requestId, uint256[] indexed responseArr);
+    function fulfill(bytes32 requestId, uint256[] memory data) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
-        emit RequestFulfilled(requestId, bytesData);
-        responseBytesArr = bytesData;                                // example value: responseBytesArr[0] = "0x436f696e62617365", responseBytesArr[1] = "0x42696e616e6365", responseBytesArr[2] = "0x4b72616b656e"
-        for (uint i = 0; i < responseBytesArr.length; i++) {
-            responseStringArr.push(string(responseBytesArr[i]));     // example value: responseStringArr[0] = "Coinbase", responseStringArr[1] = "Binance", responseStringArr[2] = "Kraken"
-        }
+        emit RequestFulfilled(requestId, data);
+        responseArr = data;     // example value: responseArr[0] = 412430000000000000000, responseArr[1] = 983890000000000000000, responseArr[2] = 473310000000000000000
     }
 /// [response]
 

@@ -33,7 +33,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
 /// [request]
     function request() public {
     
-        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfillBytes.selector);
+        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
         
         // DEFINE THE REQUEST (example)
         req.add("method", "GET");
@@ -58,7 +58,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     uint256 public response;
     
     event RequestFulfilled(bytes32 indexed requestId, uint256 indexed response);
-    function fulfillBytes(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
+    function fulfill(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response
         emit RequestFulfilled(requestId, data);
         response = data;     // example value: 1913540000000000000000 (1913.54 before "multiplier" is applied)

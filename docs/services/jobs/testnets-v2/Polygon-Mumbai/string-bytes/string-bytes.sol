@@ -33,7 +33,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
 /// [request]
     function request() public {
     
-        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfillBytes.selector);
+        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
 		     
         // DEFINE THE REQUEST (example)
         req.add("method", "POST");
@@ -58,7 +58,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     string public responseString;
 
     event RequestFulfilled(bytes32 indexed requestId, bytes indexed responseBytes);
-    function fulfillBytes(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
+    function fulfill(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         emit RequestFulfilled(requestId, bytesData);
         responseBytes = bytesData;              // example value: 0x426974636f696e

@@ -7,7 +7,8 @@ eliminate need for EA for passing headers
 eliminate need for EA for storing API keys
 centralized logging -> centralized monitoring and alerting in a consistent log format (ie, good for Splunk) 
 customer whitelisting is possible (ie, allow only certain customers)
-custom error handling is possible 
+custom error handling is possible
+allow for multiplication of all elements within a uint256[] result (multipliers not supported for numeric arrays otherwise) 
 
 
 CONS:
