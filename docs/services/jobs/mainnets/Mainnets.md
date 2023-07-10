@@ -12,20 +12,6 @@ If you run into any trouble, we are here to help! Head on over to our [Discord](
 * [Ethereum Mainnet](/services/jobs/mainnets/Ethereum-Mainnet-Jobs)
 * [Polygon Mainnet](/services/jobs/mainnets/Polygon-Mainnet-Jobs)
 
-## External Adapters
-
-#### Full-service external adapter hosting and development:
-
-* We'll host your external adapter (EA) for free on our highly redundant infrastructure - all you'll pay is the typical per-transaction cost in LINK!
-* If you need a custom adapter developed, we've got you covered, and can do this for free within 1-2 business days.
-
-#### Situations in which you might need an external adapter:
-* API Authentication (keep private API password keys private via our securely hosted infrastructure).
-* Private, low latency, and/or high throughput off-chain computation to save gas.
-* Writing data to other blockchains (interoperability).
-
-You can learn more about external adapters [here](https://docs.chain.link/chainlink-nodes/external-adapters/external-adapters), and find the list of Chainlink-provided external adapters [here](https://github.com/smartcontractkit/external-adapters-js/tree/main/packages/sources).
-
 ## Troubleshooting
 * Please ensure you are pre-funding the correct and appropriate amount of LINK tokens into your contracts before making the request. 
 * Double check that you are using the correct address and job ID for the job you are targeting via our job listings above.

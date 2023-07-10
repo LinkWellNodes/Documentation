@@ -42,6 +42,7 @@ Despite the obvious [advantages](#should-i-use-chainlink-functions) of using Cha
 
 You should use Chainlink Functions only if ALL of the following apply:
 
+* You are OK with your logic being executed multiple times per request (ie, this might not be ideal for placing a trade, or sending an email) 
 * Your ERC-20 address has been whitelisted by Chainlink Labs for access to Chainlink Functions (may take up to 2 weeks in some cases)
 * You don't need a mainnet deployment (Functions is currently in beta)
 * Your use case is limited to the following [supported testnets](https://docs.chain.link/chainlink-functions/supported-networks)
