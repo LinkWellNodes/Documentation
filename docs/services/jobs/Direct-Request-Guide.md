@@ -8,7 +8,7 @@ Before diving into the request workflow to our Chainlink nodes, it's important t
 
 ![dr-workflow](/images/DR-Request-Workflow.PNG)
 ### Basic Request Workflow Steps
-The typical direct request work flow from the moment you reach out to us for Chainlink node services, to the point you receive your data on-chain, is as follows:
+The typical direct request workflow from the moment you reach out to us for Chainlink node services, to the point you receive your data on-chain, is as follows:
 1. Fill out our [Get Started](https://linkwellnodes.io/Getting-Started.html) form or join our [Discord](https://discord.com/invite/Xs6SjqVPUA), and let us know how we can help!
 2. After discussing the details of your request, and once we understand your data needs, we may be able to simply point you to our [Public Job Listings](/services/jobs/Jobs-and-Pricing) page.  If your request requires any kind of API authentication or advanced functionality, we are happy to support you in building out an external adapter.  
 4. Deploy your smart contract application using an IDE such as Remix.

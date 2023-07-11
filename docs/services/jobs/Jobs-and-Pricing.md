@@ -17,7 +17,7 @@ At LinkWell nodes, it's our goal to provide **transparency** around the way our 
 
 When you make a request to a Chainlink node, a fee (denominated in `LINK`) is sent along with your request. This fee varies by the specific **network** and **data type**, and is set by the oracle node operator. 
 
-After retrieving your requested data, the node operator writes the result onto the blockchain, which involves an on-chain transaction. This transaction costs **gas**, which is for paid by the node operator in the currency of the respective chain's native gas token (ie, `ETH`).
+After retrieving your requested data, the node operator writes the result onto the blockchain, which involves an on-chain transaction. This transaction costs **gas**, which is paid for by the node operator in the currency of the respective chain's native gas token (ie, `ETH`).
 
 ?> To ensure you send the appropriate amount of LINK with your request, please ensure that your consumer contract is funded with sufficient LINK token, and that the `fee` variable within your consumer contract matches the one specified within our documentation for the related job. 
 
@@ -56,7 +56,7 @@ You can read more about the associated [costs of being a node operator](/faq/Cha
 
 ### The pricing of our fellow node operators 
 
-In order remain competitive, LinkWell Nodes needs to take into consideration the pricing model of our fellow node operators when establishing our target price point. 
+In order to remain competitive, LinkWell Nodes needs to take into consideration the pricing model of our fellow node operators when establishing our target price point. 
 
 ### Have more questions about our pricing?
 
