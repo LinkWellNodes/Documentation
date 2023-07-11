@@ -177,8 +177,14 @@ function updateUrlInParentPage(anchorId) {
     }
 }
 
-<!-- Start Single Page Apps for GitHub Pages (https://github.com/rafgraph/spa-github-pages). We use this to allow for routerMode: 'history', so that Google can index all pages, while at the same time redirecting the resulting 404.html target that GitHub wants to send us to to the appropriate page  -->
-<!-- SEO implications here: https://github.com/rafgraph/spa-github-pages#seo -->
+<!-- 
+Start Single Page Apps for GitHub Pages (https://github.com/rafgraph/spa-github-pages). 
+Background: We set routerMode: 'history', so that the hash (#) symbol isn't used in the URL and Google can index all pages. 
+However, when reloading / using a direct link to any GH page now, we get a 404 error 
+This plugin (and the accompanying 404.html page) redirect this 404 error from GH pages to the appropriate page.
+Pitfalls: SEO implications here: https://github.com/rafgraph/spa-github-pages#seo
+Could work around this by serving these static pages on a server w/ rewrite rules enabled (so as to avoid any 404 signal), or using an SSG (Static Site Generator) for our markdown content instead of docsify
+-->
 // Single Page Apps for GitHub Pages
 // MIT License
 // https://github.com/rafgraph/spa-github-pages

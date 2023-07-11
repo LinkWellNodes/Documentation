@@ -10,23 +10,22 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  */
 
 /**
- * THIS IS AN EXAMPLE CONTRACT THAT USES HARDCODED VALUES FOR CLARITY.
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
- * DO NOT USE THIS CODE IN PRODUCTION.
  */
 
 contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
+	address private oracleAddress;
     bytes32 private jobId;
     uint256 private fee;
 
 /// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB); 
-        setChainlinkOracle(0x12A3d7759F745f4cb8EE8a647038c040cB8862A5);
-        jobId = "433ba6a76b374e2580dd43685a9de8c6";
-        fee = (0 * LINK_DIVISIBILITY) / 10;     // 0 LINK
+        setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
+        setOracleAddress(0x12A3d7759F745f4cb8EE8a647038c040cB8862A5);
+        setJobId("433ba6a76b374e2580dd43685a9de8c6");
+        setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 /// [constructor]
 
@@ -63,6 +62,36 @@ contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwn
         responseArr = data;      // example value: responseBytesArr[0] = true, responseBytesArr[1] = false, responseBytesArr[2] = true
     }
 /// [response]
+
+/// [maintenance]
+    // Update oracle address
+    function setOracleAddress(address _oracleAddress) public onlyOwner {
+        oracleAddress = _oracleAddress;
+        setChainlinkOracle(_oracleAddress);
+    }
+    function getOracleAddress() public view onlyOwner returns (address) {
+        return oracleAddress;
+    }
+
+    // Update jobId
+    function setJobId(string memory _jobId) public onlyOwner {
+        jobId = bytes32(bytes(_jobId));
+    }
+    function getJobId() public view onlyOwner returns (string memory) {
+        return string(abi.encodePacked(jobId));
+    }
+    
+    // Update fees
+    function setFeeInJuels(uint256 _feeInJuels) public onlyOwner {
+        fee = _feeInJuels;
+    }
+    function setFeeInHundredthsOfLink(uint256 _feeInHundredthsOfLink) public onlyOwner {
+        setFeeInJuels((_feeInHundredthsOfLink * LINK_DIVISIBILITY) / 100);
+    }
+    function getFeeInHundredthsOfLink() public view onlyOwner returns (uint256) {
+        return (fee * 100) / LINK_DIVISIBILITY;
+    }
+/// [maintenance]
 
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());

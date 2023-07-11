@@ -65,6 +65,36 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     }
 /// [response]
 
+/// [maintenance]
+    // Update oracle address
+    function setOracleAddress(address _oracleAddress) public onlyOwner {
+        oracleAddress = _oracleAddress;
+        setChainlinkOracle(_oracleAddress);
+    }
+    function getOracleAddress() public view onlyOwner returns (address) {
+        return oracleAddress;
+    }
+
+    // Update jobId
+    function setJobId(string memory _jobId) public onlyOwner {
+        jobId = bytes32(bytes(_jobId));
+    }
+    function getJobId() public view onlyOwner returns (string memory) {
+        return string(abi.encodePacked(jobId));
+    }
+    
+    // Update fees
+    function setFeeInJuels(uint256 _feeInJuels) public onlyOwner {
+        fee = _feeInJuels;
+    }
+    function setFeeInHundredthsOfLink(uint256 _feeInHundredthsOfLink) public onlyOwner {
+        setFeeInJuels((_feeInHundredthsOfLink * LINK_DIVISIBILITY) / 100);
+    }
+    function getFeeInHundredthsOfLink() public view onlyOwner returns (uint256) {
+        return (fee * 100) / LINK_DIVISIBILITY;
+    }
+/// [maintenance]
+
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
         require(
