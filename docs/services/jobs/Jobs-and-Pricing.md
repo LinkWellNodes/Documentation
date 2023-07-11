@@ -15,9 +15,9 @@ At LinkWell nodes, it's our goal to provide **transparency** around the way our 
 
 ## How oracle fees work
 
-When you make a request to a Chainlink node, a fee (denominated in `LINK`) is sent along with your request. This fee varies by the specific **network** and **data type**, and is set by the oracle node operator. 
+When you make a request to a Chainlink oracle, a fee (denominated in `LINK`) is sent along with your request. This fee varies by the specific **network** and **data type**, and is set by the node operator. 
 
-After retrieving your requested data, the node operator writes the result onto the blockchain, which involves an on-chain transaction. This transaction costs **gas**, which is paid for by the node operator in the currency of the respective chain's native gas token (ie, `ETH`).
+After retrieving your requested data, the oracle writes the result onto the blockchain, which involves an on-chain transaction. This transaction costs **gas**, which is for paid by the node operator in the currency of the respective chain's native gas token (ie, `ETH`).
 
 ?> To ensure you send the appropriate amount of LINK with your request, please ensure that your consumer contract is funded with sufficient LINK token, and that the `fee` variable within your consumer contract matches the one specified within our documentation for the related job. 
 
@@ -35,12 +35,12 @@ Our per-request pricing is enumerated on our respective [job pages](#view-our-jo
 
 ### Gas costs on the specified network
 
-Writing your requested data on-chain requires a [fulfillment transaction](https://docs.chain.link/architecture-overview/architecture-request-model?parent=anyApi#fulfillment), which requires us to spend gas. Depending on the network you have chosen for your data, these gas costs can vary wildly. To minimize your costs and ensure a more consistent pricing model, **we recommend against using the Ethereum mainnet** network for your requests.
+Writing your requested data on-chain requires a [fulfillment transaction](https://docs.chain.link/architecture-overview/architecture-request-model?parent=anyApi#fulfillment), which requires us to spend gas. Depending on the network you have chosen for your data, these gas costs can vary significantly. To minimize your costs and ensure a more consistent pricing model, **we recommend against using the Ethereum mainnet** network for your requests.
 
 Gas pricing example:
 
-* A node operator writes a `uint256` object to a consumer contract deployed on MATIC mainnet, which costs **63000 gas units** to fulfill. Assuming a MATIC price of **1 USD**, and an average gas price of **150 Gwei**, this will cost the node operator **0.01 USD** in gas fees.
-* A node operator writes a `uint256` object to a consumer contract deployed on Ethereum mainnet, which costs **63000 gas units** to fulfill. Assuming an ETH price of **2000 USD**, and an average gas price of **30 Gwei**, this will cost the node operator **3.80 USD** in gas fees.
+* A node operator writes a `uint256` object to a consumer contract deployed on MATIC mainnet, which costs **63,000 gas units** to fulfill. Assuming a MATIC token price of **1 USD**, and a network gas price of **150 Gwei**, this will cost the node operator **0.01 USD** in gas fees.
+* A node operator writes a `uint256` object to a consumer contract deployed on Ethereum mainnet, which costs **63,000 gas units** to fulfill. Assuming an ETH token price of **2,000 USD**, and a network gas price of **30 Gwei**, this will cost the node operator **3.80 USD** in gas fees.
 
 The above example is for illustrative purposes only; in the real world, gas price, gas token price, and Chainlink token prices all fluctuate dramatically, and factor heavily into our pricing model.  
 

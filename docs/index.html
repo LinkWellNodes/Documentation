@@ -28,6 +28,7 @@
       nameLink: '#/',    // important for allowing the hashchange event listener to trigger for clicks to the name link
       repo: 'https://github.com/LinkWellNodes',
       search: 'auto',
+      routerMode: 'history',
       pagination: {
         crossChapter: true,
         crossChapterText: true
@@ -60,13 +61,28 @@
 <script>
 $(function() {
 	
-    // Listen for page changes
-    window.addEventListener('hashchange', function(){
-        console.log("New page loaded: " + window.location.hash);
-        if ('parentIFrame' in window) {        // is this page loaded inside an iframe?
-           	updateUrlInParentPage(null);
-        }
-    });
+	// Listen for page URL changes (doesn't detect PATH or PARAM changes though)
+	const observeUrlChange = () => {
+		let oldHref = document.location.href;
+		const body = document.querySelector("body");
+		const observer = new MutationObserver(mutations => {
+			if (oldHref !== document.location.href) {
+				oldHref = document.location.href;
+				// Ensure we start at the top of the new page
+				window.scroll({
+					top:0,
+					left:0
+				});
+				if ('parentIFrame' in window) {        // is this page loaded inside an iframe?
+					//console.log("New iframe page loaded: " + window.location.hash);
+					updateUrlInParentPage(null);
+				}
+			}
+		});
+		observer.observe(body, { childList: true, subtree: true });
+	};
+	window.onload = observeUrlChange;
+	
 	// Intercept all clicks on anchor links, and tell the parent document the Y coordinate to which to scroll (if this page is loaded inside of an iframe)
 	$(document).on('click', '.anchor, .section-link, a', function(e) {
         if ('parentIFrame' in window) {		// is this page loaded inside an iframe? 
@@ -122,38 +138,42 @@ $(function() {
 });
 
 var lastUpdateSent = {};
-function updateUrlInParentPage(anchorIdOverride) {
-    var hash = window.location.hash;
-    if (hash.length > 0) {
+function updateUrlInParentPage(anchorId) {
+    var path = window.location.pathname;
+    if (!anchorId) {
+    	anchorId = "";
+    }
+    if (path.length > 0) {
 		var pageId = "";
-		var anchorId = "";
-	    if (hash.charAt(0) == '#') {
-	        hash = hash.substring(1);    // remove the first char ('#')
+	    if (path.charAt(0) == '#') {
+	    	path = path.substring(1);    // remove the first char ('#')
 	    }
-	    if (hash.includes("?id=")) {
+	    if (path.includes("?id=")) {
 	    	// (anchorId present)
-			const hashArr = hash.split("?id=");
-			if (hashArr.length == 2) {
-				pageId = hashArr[0];
-				anchorId = hashArr[1];
+			const pathArr = path.split("?id=");
+			if (pathArr.length == 2) {
+				pageId = pathArr[0];
+				//anchorId = pathArr[1];
 			} else {
-				console.warn("Unexpected URL hash format: " + hash);
+				console.warn("Unexpected URL path format: " + path);
 			}
 	    } else {
-	    	pageId = hash;
+	    	pageId = path;
 	    	// (no anchorId present)
 	    }
+	    //console.log("pageId="+pageId);
+	    //console.log("anchorId="+anchorId);
 	    // Send the URL update to the parent page
-	    const updToSend = {"urlChanged": {"pageId": pageId, "anchorId": (anchorIdOverride ? anchorIdOverride : anchorId)}};
+	    const updToSend = {"urlChanged": {"pageId": pageId, "anchorId": anchorId}};
 	    if (JSON.stringify(lastUpdateSent) == JSON.stringify(updToSend)) {
 	    	//console.log("Discarding repetitive update of parent URL"); 
 	    } else {
-	    	console.log("Sending URL update to parent | pageId: " + pageId + " | anchorId: " + (anchorIdOverride ? anchorIdOverride : anchorId))
+	    	//console.log("Sending URL update to parent | pageId: " + pageId + " | anchorId: " + anchorId);
 		    lastUpdateSent = updToSend;
 		    window.parentIFrame.sendMessage(updToSend);
 	    }
     } else {
-    	console.warn("No URL hash detected. Skipping updateUrlInParentPage()");
+    	console.warn("No URL path detected. Skipping updateUrlInParentPage()");
     }
 }
 

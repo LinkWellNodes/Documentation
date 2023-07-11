@@ -58,12 +58,6 @@ iFrameResize({
 	}
 }, '#docIframe'); 
 
-// Listen for page changes
-window.addEventListener('hashchange', function(){
-    console.log("New hash loaded: " + window.location.hash);
-	loadIframeUrlBasedOnParentUrl();
-});
-
 // Update the iframe's URL based on the parent page's URL 
 function loadIframeUrlBasedOnParentUrl() {
 	// EXPECTED URL FORMAT: https://myUrl.com/iframePage.html#page=my-page-tag&topic=my-question-anchor
@@ -92,7 +86,7 @@ function loadIframeUrlBasedOnParentUrl() {
 	}
 	
 	// Load the iframe using a dynamic website
-	var urlTarget = "https://docs.linkwellnodes.io/#" + pageId + "?id=" + anchorId;
+	var urlTarget = "https://docs.linkwellnodes.io" + pageId + "?id=" + anchorId;
 	console.log("Loading iframe page: " + urlTarget)
 	document.getElementById("docIframe").src = urlTarget;	
 }
