@@ -60,7 +60,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/uint256/uint256.sol) of the above consumer contract.
+* View a [working example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/uint256/uint256.sol) of the above consumer contract.
 
 ### Simulating the above request
 
@@ -138,7 +138,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol) of the above consumer contract.
+* View a [working example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -208,7 +208,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/bool/bool.sol) of the above consumer contract.
+* View a [working example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/bool/bool.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -273,7 +273,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol) of the above consumer contract.
+* View a [working example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -339,7 +339,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol) of the above consumer contract.
+* View a [working example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -405,7 +405,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol) of the above consumer contract.
+* View a [working example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol) of the above consumer contract.
 
 ### Troubleshooting
 

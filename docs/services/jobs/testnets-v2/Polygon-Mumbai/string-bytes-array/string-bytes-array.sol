@@ -35,17 +35,17 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
 		     
         // DEFINE THE REQUEST (example)
-        req.add("method", "POST");
-        req.add("url", "https://httpbin.org/post");
-        req.add("headers", '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add("body", '{"data":["Coinbase","Binance","Kraken"]}');
-        req.add("contact", "derek_linkwellnodes.io");
+        req.add('method', 'POST');
+        req.add('url', 'https://httpbin.org/post');
+        req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('body', '{"data":["Coinbase","Binance","Kraken"]}');
+        req.add('contact', 'derek_linkwellnodes.io');
         
         // The following CURL request simulates the above request parameters: 
         // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"data":["Coinbase","Binance","Kraken"]}' "https://httpbin.org/post"
         
         // PROCESS THE RESULT (example)
-        req.add("path", "json,data");
+        req.add('path', 'json,data');
         
         // Initiate the oracle request
         sendOperatorRequest(req, fee);

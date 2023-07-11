@@ -36,18 +36,18 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
         
         // DEFINE THE REQUEST (example)
-        req.add("method", "GET");
-        req.add("url", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD");
-        req.add("headers", '["content-type", "application/json", "set-cookie", "sid=14A52"]');
-        req.add("body", "");
-        req.add("contact", "derek_linkwellnodes.io");
+        req.add('method', 'GET');
+        req.add('url', 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD');
+        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('body', '');
+        req.add('contact', 'derek_linkwellnodes.io');
         
         // The following CURL request simulates the above request parameters: 
         // curl --insecure --request GET --header "content-type: application/json" --header "set-cookie: sid=14A52" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"
         
         // PROCESS THE RESULT (example)
-        req.add("path", "RAW,ETH,USD,PRICE"); 
-        req.addInt("multiplier", 10 ** 18);
+        req.add('path', 'RAW,ETH,USD,PRICE'); 
+        req.addInt('multiplier', 10 ** 18);
 
         // Initiate the oracle request        
         sendOperatorRequest(req, fee);

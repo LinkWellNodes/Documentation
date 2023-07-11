@@ -30,7 +30,7 @@ Our per-request pricing is outlined on our respective [job pages](#view-our-job-
 - [Our own infrastructure costs](#infrastructure-costs)
 - [The pricing of our fellow node operators](#the-pricing-of-our-fellow-node-operators) 
 
-!> While we make every effort to keep our pricing consistent, as market conditions change, we may eventually need to re-evaluate. As such, it's recommended to keep your LINK payment configurable (ie, the `fee` object within your consumer contract), so that you can easily accommodate any such changes without having to re-deploy your contract.   
+!> While we make every effort to keep our pricing consistent, as market conditions change, we may eventually need to re-evaluate. As such, it's recommended to keep your LINK payment configurable (ie, the `fee` object within your consumer contract), so that you can easily accommodate any such changes without having to re-deploy your contract. By default, all consumer contract examples present within our documentation provide an interface for updating fees (see: `setFeeInHundredthsOfLink()` method).
 
 
 ### Gas costs on the specified network

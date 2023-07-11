@@ -99,7 +99,7 @@ To get connected to the appropriate Chainlink node operator for your use case, y
 
 Please ensure that you have enough gas token present in the wallet that is initiating the request. For mainnet requests, please additionally ensure that you have the appropriate amount of LINK tokens present within your consumer contract before making the request. 
 
-If you are using one of our jobs, see the `fee` object present within your consumer contract for the minimum amount of LINK token that needs to be present within your consumer contract in order to initiate a `request()` call.
+If you are using one of our jobs, see the `setFeeInHundredthsOfLink()` function call present within the constructor of your consumer contract for the minimum amount of LINK token that needs to be present within your consumer contract in order to initiate a `request()` call.
  
 ### I'm not getting a response back to my consumer contract
 

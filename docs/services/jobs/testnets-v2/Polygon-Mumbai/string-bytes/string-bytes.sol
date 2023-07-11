@@ -35,17 +35,17 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
 		     
         // DEFINE THE REQUEST (example)
-        req.add("method", "POST");
-        req.add("url", "https://httpbin.org/post");
-        req.add("headers", '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add("body", '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}');
-        req.add("contact", "derek_linkwellnodes.io");
+        req.add('method', 'POST');
+        req.add('url', 'https://httpbin.org/post');
+        req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('body', '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}');
+        req.add('contact', 'derek_linkwellnodes.io');
         
         // The following CURL request simulates the above request parameters: 
         // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}' "https://httpbin.org/post"
         
         // PROCESS THE RESULT (example)
-        req.add("path", "json,data,0,name");
+        req.add('path', 'json,data,0,name');
         
         // Initiate the oracle request
         sendOperatorRequest(req, fee);
