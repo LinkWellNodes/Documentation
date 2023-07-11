@@ -23,7 +23,7 @@ After retrieving your requested data, the oracle writes the result onto the bloc
 
 ## Fee considerations
 
-Our per-request pricing is enumerated on our respective [job pages](#view-our-job-offerings), and is based on the following environmental factors: 
+Our per-request pricing is outlined on our respective [job pages](#view-our-job-offerings), and is based on the following environmental factors: 
 
 - [Gas costs on the specified network](#gas-costs-on-the-specified-network)
 - [The data type and quantity returned](#the-data-type-and-quantity-returned)
