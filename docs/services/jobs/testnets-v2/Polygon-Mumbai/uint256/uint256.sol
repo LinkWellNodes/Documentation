@@ -30,25 +30,26 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
 /// [constructor]
 
 /// [request]
+    // Send a request to the Chainlink oracle
     function request() public {
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
         
         // DEFINE THE REQUEST (example)
         req.add('method', 'GET');
-        req.add('url', 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD');
+        req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
         req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following CURL request simulates the above request parameters: 
-        // curl --insecure --request GET --header "content-type: application/json" --header "set-cookie: sid=14A52" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"
+        // The following curl request simulates the above request parameters: 
+        // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'RAW,ETH,USD,PRICE'); 
+        req.add('path', 'ETH,USD');
         req.addInt('multiplier', 10 ** 18);
 
-        // Initiate the oracle request        
+        // Send the request to the Chainlink oracle        
         sendOperatorRequest(req, fee);
     }
 /// [request]
@@ -56,6 +57,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
 /// [response]
     uint256 public response;
     
+    // Receive the result from the Chainlink oracle    
     event RequestFulfilled(bytes32 indexed requestId, uint256 indexed response);
     function fulfill(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response

@@ -30,6 +30,7 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
 /// [constructor]
 
 /// [request]
+    // Send a request to the Chainlink oracle
     function request() public {
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
@@ -38,16 +39,16 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         req.add('method', 'POST');
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '{"data":["Coinbase","Binance","Kraken"]}');
+        req.add('body', '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following CURL request simulates the above request parameters: 
-        // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"data":["Coinbase","Binance","Kraken"]}' "https://httpbin.org/post"
+        // The following curl request simulates the above request parameters: 
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data');
+        req.add('path', 'json,data,0');
         
-        // Initiate the oracle request
+        // Send the request to the Chainlink oracle
         sendOperatorRequest(req, fee);
     }
 /// [request]
@@ -56,6 +57,7 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
     bytes[] public responseBytesArr;
     string[] public responseStringArr;
 
+    // Receive the result from the Chainlink oracle
     event RequestFulfilled(bytes32 indexed requestId, bytes[] indexed responseBytesArr);
     function fulfill(bytes32 requestId, bytes[] memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response

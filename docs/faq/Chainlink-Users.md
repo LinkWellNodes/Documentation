@@ -107,12 +107,16 @@ If you've waited over 60 seconds after successfully sending your request transac
 
 1. Double-check that you are passing the correct values into the `setChainlinkToken()` and `setChainlinkOracle()` functions , and assigning the correct value to the `jobId` object. 
 
-?> If you are using one of our oracles, you may find the correct corresponding values in our job documentation [here](/services/jobs/Jobs-and-Pricing).
+?> If you are using our oracle services, you may find the correct corresponding values in our job documentation [here](/services/jobs/Jobs-and-Pricing).
 
-2. Confirm that the API endpoint to which you are making your HTTP request is working via `curl`. If you are Each job includes a sample curl command.
+2. Confirm that the API endpoint to which you are making your HTTP request is working via `curl`.
 
-?> If you are using one of our oracles, an exemplifying curl command is included in each sample consumer contract within our job documentation [here](/services/jobs/Jobs-and-Pricing).
+?> If you are using our oracle services, a sample `curl` command is included within the documentation for each job [here](/services/jobs/Jobs-and-Pricing).
 
-3. Confirm that the oracle you are using didn't run out of gas while writing your requested data on-chain. To check this, look up the address of your related oracle (ie, the address passed to your `setChainlinkOracle()` function) within the appropriate blockchain explorer, to check for any recent transactions that failed due to an **'out of gas'** error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact the corresponding oracle team to request a higher gas allowance for your specific use case (may result in higher job pricing).
+3. If you've included a JSON `path` var (ie, `req.add("path", "key1,0,key2)`), ensure that the response returned by your HTTP request is in JSON format, and that the provided path exists within it.
 
-?> If you are using one of our oracles, you may find the oracle address that corresponds to your specific job within our job documentation [here](/services/jobs/Jobs-and-Pricing), or reach out to us regarding higher gas limits for your specific use case via our [Discord server](https://discord.gg/AJ66pRz4). 
+4. If you've included a `mulitiplier` var (ie, `req.addInt('multiplier', 10 ** 18)`), ensure that the response that you are trying to multiply is a number. If a JSON `path` was also included in the request, the multiplication operation occurs on the result of the JSON path filter.  
+
+5. Confirm that the oracle you are using didn't run out of gas while writing your requested data on-chain. To check this, look up the address of your related oracle (ie, the address passed to your `setChainlinkOracle()` function) within the appropriate blockchain explorer, to check for any recent transactions that failed due to an **'out of gas'** error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact the corresponding oracle team to request a higher gas allowance for your specific use case (may result in higher job pricing).
+
+?> If you are using our oracle services, you may find the oracle address that corresponds to your specific job within our job documentation [here](/services/jobs/Jobs-and-Pricing), or reach out to us regarding higher gas limits for your specific use case via our [Discord server](https://discord.gg/AJ66pRz4). 

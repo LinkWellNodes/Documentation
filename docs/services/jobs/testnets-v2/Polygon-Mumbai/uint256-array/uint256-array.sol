@@ -30,6 +30,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
 /// [constructor]
 
 /// [request]
+    // Send a request to the Chainlink oracle
     function request() public {
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
@@ -38,17 +39,17 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
         req.add('method', 'POST');
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '{"data":[412.43,983.89,473.31]}');
+        req.add('body', '{"data":[[12.43,54.47,98.34],[89.99,34.21,85.65],[412.43,983.89,473.31]]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following CURL request simulates the above request parameters: 
-        // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"data":[412.43,983.89,473.31]}' "https://httpbin.org/post"
+        // The following curl request simulates the above request parameters: 
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[[12.43,54.47,98.34],[89.99,34.21,85.65],[412.43,983.89,473.31]]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data'); 
+        req.add('path', 'json,data,2'); 
         req.addInt('multiplier', 10 ** 18);
         
-        // Initiate the oracle request
+        // Send the request to the Chainlink oracle
         sendOperatorRequest(req, fee);
     }
 /// [request]
@@ -56,6 +57,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
 /// [response]
     uint256[] public responseArr;
 
+    // Receive the result from the Chainlink oracle
     event RequestFulfilled(bytes32 indexed requestId, uint256[] indexed responseArr);
     function fulfill(bytes32 requestId, uint256[] memory data) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response

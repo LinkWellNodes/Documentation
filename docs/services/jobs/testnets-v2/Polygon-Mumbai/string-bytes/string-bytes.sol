@@ -30,6 +30,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
 /// [constructor]
 
 /// [request]
+    // Send a request to the Chainlink oracle
     function request() public {
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
@@ -41,13 +42,13 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         req.add('body', '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following CURL request simulates the above request parameters: 
-        // curl --insecure --request POST --header "content-type: application/json" --header "set-cookie: sid=14A52" --data '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}' "https://httpbin.org/post"
+        // The following curl request simulates the above request parameters: 
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}'
         
         // PROCESS THE RESULT (example)
         req.add('path', 'json,data,0,name');
         
-        // Initiate the oracle request
+        // Send the request to the Chainlink oracle
         sendOperatorRequest(req, fee);
     }
 /// [request]
@@ -56,6 +57,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     bytes public responseBytes;
     string public responseString;
 
+    // Receive the result from the Chainlink oracle
     event RequestFulfilled(bytes32 indexed requestId, bytes indexed responseBytes);
     function fulfill(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
