@@ -1,5 +1,5 @@
 # Our Mission
-**Led by truth over trust. Driven to innovate, build and create. Our mission is to enable developers, startups and enterprises unlock the true value of Web3.**
+**Led by truth over trust. Driven to innovate, build and create. Our mission is to support Chainlink in enabling developers, startups and enterprises to unlock the true value of Web3.**
 
 ## Who We Are
 LinkWell Nodes is a professional U.S.-based Chainlink node operations team specializing in customized delivery of real-world data on-chain. With over 40 years of combined experience in the cybersecurity, enterprise software, financial services and Web3 industries, we are dedicated to building a secure, reliable Chainlink Oracle infrastructure, as well as supporting Chainlink's ultimate vision of building a world powered by cryptographic truth.
