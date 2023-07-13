@@ -69,7 +69,7 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance in creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 ## Simulating the above request
 
@@ -182,7 +182,7 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance in creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 ## Simulating the above request
 
@@ -307,7 +307,7 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance in creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 ## Simulating the above request
 
@@ -432,7 +432,7 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance in creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 ## Simulating the above request
 
@@ -556,7 +556,7 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance in creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 ## Simulating the above request
 
@@ -669,7 +669,7 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance in creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 ## Simulating the above request
 
@@ -785,7 +785,7 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance in creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 ## Simulating the above request
 
@@ -903,7 +903,7 @@ Having trouble with your request? Check our [Job Troubleshooting Guide](/faq/Cha
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance in creating this request.
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
 ## Simulating the above request
 
