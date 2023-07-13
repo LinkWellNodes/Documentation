@@ -1,0 +1,10 @@
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxTSfFZ_OSLldeb0BWt3fWXacIkOqy8g2Ep4H0qlxfsELaBw/viewform?embedded=true" id="iframe-form" height="3922" frameborder="0" marginheight="0" marginwidth="0" align="bottom" style="min-width:100%;">Loading…</iframe>
+<script>
+	document.getElementById("iframe-form").addEventListener("load", function(e) {
+		if(window.myFrameChange !== undefined) {
+			window.location.replace("Thank-You.html");
+		}
+		window.myFrameChange=true;
+		console.log("iframe loaded!");
+	});
+</script>
