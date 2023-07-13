@@ -36,3 +36,5 @@ observationSource = """
 
     decode_log -> decode_cbor -> send_to_bridge -> parse -> encode_data -> encode_tx -> submit_tx
 """
+# NOTES:
+# Necessary to keep the parse task for arrays, as it normalizes the response from the EA and allows for proper serialization by ethabiencode
