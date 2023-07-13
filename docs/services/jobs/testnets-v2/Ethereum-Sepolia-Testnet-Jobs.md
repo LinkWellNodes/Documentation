@@ -1,7 +1,7 @@
-## Ethereum Goerli Testnet Jobs
-Goerli is a proof-of-stake testnet, and is the recommended default Ethereum testnet for testing of validating and staking.
+## Ethereum Sepolia Testnet Jobs
+Sepolia is a proof-of-stake testnet, and is the recommended default Ethereum testnet for application development.
 
-Please see below for our Chainlink direct request job offerings on the Ethereum-Goerli network. All testnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our Chainlink direct request job offerings on the Ethereum-Sepolia network. All testnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 ### Select the type of data that you need:
 
@@ -18,7 +18,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
 
 ### Request parameters
 
@@ -40,16 +40,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256_constructor](/Ethereum-Goerli/uint256/uint256.sol ':include :type=code :fragment=constructor')`
+[uint256_constructor](/Ethereum-Sepolia/uint256/uint256.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[uint256_request](/Ethereum-Goerli/uint256/uint256.sol ':include :type=code :fragment=request')
+[uint256_request](/Ethereum-Sepolia/uint256/uint256.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[uint256_response](/Ethereum-Goerli/uint256/uint256.sol ':include :type=code :fragment=response')
+[uint256_response](/Ethereum-Sepolia/uint256/uint256.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -59,7 +59,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/uint256/uint256.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/uint256/uint256.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -131,7 +131,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
 
 ### Request parameters
 
@@ -153,16 +153,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256-array_constructor](/Ethereum-Goerli/uint256-array/uint256-array.sol ':include :type=code :fragment=constructor')`
+[uint256-array_constructor](/Ethereum-Sepolia/uint256-array/uint256-array.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[uint256-array_request](/Ethereum-Goerli/uint256-array/uint256-array.sol ':include :type=code :fragment=request')
+[uint256-array_request](/Ethereum-Sepolia/uint256-array/uint256-array.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[uint256-array_response](/Ethereum-Goerli/uint256-array/uint256-array.sol ':include :type=code :fragment=response')
+[uint256-array_response](/Ethereum-Sepolia/uint256-array/uint256-array.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -172,7 +172,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/uint256-array/uint256-array.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/uint256-array/uint256-array.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -256,7 +256,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
 
 ### Request parameters
 
@@ -278,16 +278,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[int256_constructor](/Ethereum-Goerli/int256/int256.sol ':include :type=code :fragment=constructor')`
+[int256_constructor](/Ethereum-Sepolia/int256/int256.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[int256_request](/Ethereum-Goerli/int256/int256.sol ':include :type=code :fragment=request')
+[int256_request](/Ethereum-Sepolia/int256/int256.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[int256_response](/Ethereum-Goerli/int256/int256.sol ':include :type=code :fragment=response')
+[int256_response](/Ethereum-Sepolia/int256/int256.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -297,7 +297,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/int256/int256.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/int256/int256.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -381,7 +381,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
 
 ### Request parameters
 
@@ -403,16 +403,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[int256-array_constructor](/Ethereum-Goerli/int256-array/int256-array.sol ':include :type=code :fragment=constructor')`
+[int256-array_constructor](/Ethereum-Sepolia/int256-array/int256-array.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[int256-array_request](/Ethereum-Goerli/int256-array/int256-array.sol ':include :type=code :fragment=request')
+[int256-array_request](/Ethereum-Sepolia/int256-array/int256-array.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[int256-array_response](/Ethereum-Goerli/int256-array/int256-array.sol ':include :type=code :fragment=response')
+[int256-array_response](/Ethereum-Sepolia/int256-array/int256-array.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -422,7 +422,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/int256-array/int256-array.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/int256-array/int256-array.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -506,7 +506,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
 
 ### Request parameters
 
@@ -527,16 +527,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[bool_constructor](/Ethereum-Goerli/bool/bool.sol ':include :type=code :fragment=constructor')`
+[bool_constructor](/Ethereum-Sepolia/bool/bool.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[bool_request](/Ethereum-Goerli/bool/bool.sol ':include :type=code :fragment=request')
+[bool_request](/Ethereum-Sepolia/bool/bool.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[bool_response](/Ethereum-Goerli/bool/bool.sol ':include :type=code :fragment=response')
+[bool_response](/Ethereum-Sepolia/bool/bool.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -546,7 +546,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/bool/bool.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/bool/bool.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -619,7 +619,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
 
 ### Request parameters
 
@@ -640,16 +640,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[bool-array_constructor](/Ethereum-Goerli/bool-array/bool-array.sol ':include :type=code :fragment=constructor')`
+[bool-array_constructor](/Ethereum-Sepolia/bool-array/bool-array.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[bool-array_request](/Ethereum-Goerli/bool-array/bool-array.sol ':include :type=code :fragment=request')
+[bool-array_request](/Ethereum-Sepolia/bool-array/bool-array.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[bool-array_response](/Ethereum-Goerli/bool-array/bool-array.sol ':include :type=code :fragment=response')
+[bool-array_response](/Ethereum-Sepolia/bool-array/bool-array.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -659,7 +659,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/bool-array/bool-array.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/bool-array/bool-array.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -735,7 +735,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
 
 ### Request parameters
 
@@ -756,16 +756,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes_constructor](/Ethereum-Goerli/string-bytes/string-bytes.sol ':include :type=code :fragment=constructor')`
+[string-bytes_constructor](/Ethereum-Sepolia/string-bytes/string-bytes.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[string-bytes_request](/Ethereum-Goerli/string-bytes/string-bytes.sol ':include :type=code :fragment=request')
+[string-bytes_request](/Ethereum-Sepolia/string-bytes/string-bytes.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[string-bytes_response](/Ethereum-Goerli/string-bytes/string-bytes.sol ':include :type=code :fragment=response')
+[string-bytes_response](/Ethereum-Sepolia/string-bytes/string-bytes.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -775,7 +775,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/string-bytes/string-bytes.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/string-bytes/string-bytes.sol) of the above consumer contract.
 
 ### Troubleshooting
 
@@ -853,7 +853,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xB9C47B9609174716CE536324d4FbEad9292c1d3a](https://goerli.etherscan.io/address/0xB9C47B9609174716CE536324d4FbEad9292c1d3a) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
+| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
 
 ### Request parameters
 
@@ -874,16 +874,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes-array_constructor](/Ethereum-Goerli/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=constructor')`
+[string-bytes-array_constructor](/Ethereum-Sepolia/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[string-bytes-array_request](/Ethereum-Goerli/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=request')
+[string-bytes-array_request](/Ethereum-Sepolia/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[string-bytes-array_response](/Ethereum-Goerli/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=response')
+[string-bytes-array_response](/Ethereum-Sepolia/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -893,7 +893,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Goerli/string-bytes-array/string-bytes-array.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/string-bytes-array/string-bytes-array.sol) of the above consumer contract.
 
 ### Troubleshooting
 

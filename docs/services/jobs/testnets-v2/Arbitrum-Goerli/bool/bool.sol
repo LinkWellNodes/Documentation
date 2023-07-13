@@ -13,18 +13,18 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
  */
 
-contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellBoolConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
-	address private oracleAddress;
+    address private oracleAddress;
     bytes32 private jobId;
     uint256 private fee;
 
 /// [constructor]    
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
-        setOracleAddress(0xB9C47B9609174716CE536324d4FbEad9292c1d3a);
-        setJobId("a8356f48569c434eaa4ac5fcb4db5cc0");
+        setChainlinkToken(0xd14838A68E8AFBAdE5efb411d5871ea0011AFd28);
+        setOracleAddress(0xd08FEb8203E76f836D74608595346ab6b0f768C9);
+        setJobId("43309009a154495cb2ed794233e6ff56");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 /// [constructor]
@@ -36,18 +36,17 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
         
         // DEFINE THE REQUEST (example)
-        req.add('method', 'GET');
-        req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
-        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '');
+        req.add('method', 'POST');
+        req.add('url', 'https://httpbin.org/post');
+        req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('body', '{"data":[{"coin":"BTC","isActive":false},{"coin":"ETH","isActive":false},{"coin":"LINK","isActive":true}]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl request simulates the above request parameters: 
-        // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[{"coin":"BTC","isActive":false},{"coin":"ETH","isActive":false},{"coin":"LINK","isActive":true}]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'ETH,USD');
-        req.addInt('multiplier', 10 ** 18);
+        req.add('path', 'json,data,2,isActive'); 
 
         // Send the request to the Chainlink oracle        
         sendOperatorRequest(req, fee);
@@ -55,14 +54,14 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
 /// [request]
 
 /// [response]
-    uint256 public response;
-    
-    // Receive the result from the Chainlink oracle    
-    event RequestFulfilled(bytes32 indexed requestId, uint256 indexed response);
-    function fulfill(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
+    bool public response;
+
+    // Receive the result from the Chainlink oracle
+    event RequestFulfilled(bytes32 indexed requestId, bool indexed response);
+    function fulfill(bytes32 requestId, bool data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response
         emit RequestFulfilled(requestId, data);
-        response = data;     // example value: 1913540000000000000000 (1913.54 before "multiplier" is applied)
+        response = data;     // example value: true
     }
 /// [response]
 

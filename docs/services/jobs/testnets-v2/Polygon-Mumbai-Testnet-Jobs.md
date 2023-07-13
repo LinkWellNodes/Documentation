@@ -40,16 +40,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256_constructor_mumbai-testnet](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=constructor')`
+[uint256_constructor](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[uint256_request_mumbai-testnet](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=request')
+[uint256_request](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[uint256_response_mumbai-testnet](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=response')
+[uint256_response](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -153,16 +153,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256-array_constructor_mumbai-testnet](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=constructor')`
+[uint256-array_constructor](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[uint256-array_request_mumbai-testnet](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=request')
+[uint256-array_request](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[uint256-array_response_mumbai-testnet](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=response')
+[uint256-array_response](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -278,16 +278,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[int256_constructor_mumbai-testnet](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=constructor')`
+[int256_constructor](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[int256_request_mumbai-testnet](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=request')
+[int256_request](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[int256_response_mumbai-testnet](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=response')
+[int256_response](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -403,16 +403,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[int256-array_constructor_mumbai-testnet](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=constructor')`
+[int256-array_constructor](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[int256-array_request_mumbai-testnet](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=request')
+[int256-array_request](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[int256-array_response_mumbai-testnet](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=response')
+[int256-array_response](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -527,16 +527,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[bool_constructor_mumbai-testnet](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=constructor')`
+[bool_constructor](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[bool_request_mumbai-testnet](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=request')
+[bool_request](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[bool_response_mumbai-testnet](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=response')
+[bool_response](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -640,16 +640,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[bool-array_constructor_mumbai-testnet](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=constructor')`
+[bool-array_constructor](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[bool-array_request_mumbai-testnet](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=request')
+[bool-array_request](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[bool-array_response_mumbai-testnet](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=response')
+[bool-array_response](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -756,16 +756,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes_constructor_mumbai-testnet](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=constructor')`
+[string-bytes_constructor](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[string-bytes_request_mumbai-testnet](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=request')
+[string-bytes_request](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[string-bytes_response_mumbai-testnet](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=response')
+[string-bytes_response](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
@@ -874,16 +874,16 @@ This job requires the following parameters to be set:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes-array_constructor_mumbai-testnet](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=constructor')`
+[string-bytes-array_constructor](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=constructor')`
 
 #### Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
-[string-bytes-array_request_mumbai-testnet](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=request')
+[string-bytes-array_request](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=request')
 
 #### Retrieve the response (example):
 
-[string-bytes-array_response_mumbai-testnet](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=response')
+[string-bytes-array_response](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=response')
 
 ### Need to send sensitive information?
 
