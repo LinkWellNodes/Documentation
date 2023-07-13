@@ -12,7 +12,7 @@
     * [Avalanche Fuji](/services/jobs/testnets/Avalance-Fuji-Testnet-Jobs "Avalanche Fuji Testnet Jobs")
     * [Binance](/services/jobs/testnets/Binance-Testnet-Jobs "Binance Testnet Jobs")
     * [Ethereum Goerli](/services/jobs/testnets/Ethereum-Goerli-Testnet-Jobs "Ethereum Goerli Testnet Jobs")
-    * [Ethereum Sepolia](/services/jobs/testnets/Ethereum-Sepolia-Testnet-Jobs "Binance Sepolia Testnet Jobs")
+    * [Ethereum Sepolia](/services/jobs/testnets/Ethereum-Sepolia-Testnet-Jobs "Ethereum Sepolia Testnet Jobs")
     * [Polygon Mumbai](/services/jobs/testnets/Polygon-Mumbai-Testnet-Jobs "Polygon Mumbai Testnet Jobs")
     
 * **Chainlink FAQ**
