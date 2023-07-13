@@ -16,6 +16,8 @@ While [market.link](https://market.link) was formerly the go-to directory for pu
 
 That being said, many node operators (such as ourselves) choose to host their own websites and documentation pages that display their Chainlink job offerings. A decent approach is to perform a Google search for 'Chainlink node operator' to see what job offerings you might find!
 
+?> To view a comprehensive list of jobs offered by LinkWell Nodes, visit our [job documentation](/services/jobs/Jobs-and-Pricing).
+
 ### Where can I find Job IDs and Chainlink Oracles for my consumer contract?
 
 If you are a developer who simply requires data for your smart contract application, the best place to request a Job ID specific to your requirements is within the #operator-requests channel of the Chainlink Discord. An existing node operator will typically respond to your request by providing you with a corresponding Job ID and oracle contract address. Transactions on testnet chains are typically free of charge, meaning they do not require any LINK token.
