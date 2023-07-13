@@ -9,7 +9,7 @@
     * [Polygon](/services/jobs/mainnets/Polygon-Mainnet-Jobs "Polygon Mainnet Jobs")
   * [Testnets](/services/jobs/testnets/Testnets)
     * [Arbitrum Goerli](/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs "Arbitrum Goerli Testnet Jobs")
-    * [Avalanche Fuji](/services/jobs/testnets/Avalance-Fuji-Testnet-Jobs "Avalanche Fuji Testnet Jobs")
+    * [Avalanche Fuji](/services/jobs/testnets/Avalanche-Fuji-Testnet-Jobs "Avalanche Fuji Testnet Jobs")
     * [Binance](/services/jobs/testnets/Binance-Testnet-Jobs "Binance Testnet Jobs")
     * [Ethereum Goerli](/services/jobs/testnets/Ethereum-Goerli-Testnet-Jobs "Ethereum Goerli Testnet Jobs")
     * [Ethereum Sepolia](/services/jobs/testnets/Ethereum-Sepolia-Testnet-Jobs "Ethereum Sepolia Testnet Jobs")
