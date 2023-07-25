@@ -16,9 +16,12 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
 
 ### Request parameters
 
@@ -63,9 +66,12 @@ HTTP GET to any public API which parses the response and returns an unsigned int
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
 
 ### Request parameters
 
@@ -109,9 +115,12 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
 
 ### Request parameters
 
@@ -156,9 +165,12 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
 
 ### Request parameters
 
@@ -202,9 +214,12 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.15 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.15 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.15 LINK |
 
 ### Request parameters
 
@@ -245,11 +260,15 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 #### **GET > String**
 
 HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
+
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.15 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.15 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.15 LINK |
 
 ### Request parameters
 
@@ -293,9 +312,12 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | be46cb8070c14cb7ad058b29f127ec6b | 0.15 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | be46cb8070c14cb7ad058b29f127ec6b | 0.15 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.15 LINK |
 
 ### Request parameters
 
@@ -344,9 +366,12 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.15 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.15 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.15 LINK |
 
 ### Request parameters
 
@@ -396,9 +421,12 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 9a2ba54374f34184bdc6390db3171994 | 0.15 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 9a2ba54374f34184bdc6390db3171994 | 0.15 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.15 LINK |
 
 ### Request parameters
 
@@ -442,9 +470,12 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.15 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.15 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.15 LINK |
 
 ### Request parameters
 
@@ -486,9 +517,12 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
 
 ### Request parameters
 
@@ -531,9 +565,12 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 
 ### Job details
 
-| Address                                    | JobID                            | Job Cost              |
-|--------------------------------------------|----------------------------------|-----------------------|
-| [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b090204b16644030844a6e91932a7626 | 0.1 LINK                |
+<!-- | Address                                    | JobID                            | Job Cost              | -->
+<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
+| Address and JobID | Job Cost |
+|-------------------|----------|
+| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
 
 ### Request parameters
 
