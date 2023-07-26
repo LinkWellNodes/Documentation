@@ -15,9 +15,9 @@
     * [Polygon Mumbai](/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs "Polygon Mumbai Testnet Jobs")
     
 * **Knowledgebase**
+* [Direct Request Guide](/knowledgebase/Direct-Request-Guide)
 * [Operator FAQ](/knowledgebase/Chainlink-Operators-FAQ "FAQ - Chainlink Node Operators")
 * [Consumer FAQ](/knowledgebase/Chainlink-Users-FAQ "FAQ - Chainlink Data Consumers")
-* [Direct Request Guide](/knowledgebase/Direct-Request-Guide)
 <!--  * [External Adapters](/knowledgebase/External-Adapters "FAQ - External Adapters") -->
 * **About**
 * [About Us](/about/About "About LinkWell Nodes")
