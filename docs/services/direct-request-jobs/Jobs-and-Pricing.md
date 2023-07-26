@@ -1,17 +1,19 @@
-# Public Job Listings
+# Direct Request Jobs
 
-Please use the links below to view our currently-supported networks, along with their associated contracts, job IDs, and data types. 
+**Direct Request** jobs allow you to write custom, real-world data received from any API to your blockchain smart contracts. Our highly-redundant Chainlink node infrastructure ensures that your data is delivered safely, securely, and reliably every time.
 
-If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4) for the fastest service.
+Please use the links below to view our direct request job offerings. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4) for the fastest service.
 
-### View our job offerings:
+### View our jobs:
 
-* [Mainnets](/services/jobs/mainnets/Mainnets)
-* [Testnets](/services/jobs/testnets/Testnets)
+* [Mainnets](/services/direct-request-jobs/mainnets/Mainnets)
+* [Testnets](/services/direct-request-jobs/testnets/Testnets)
 
 # Pricing
 
-At LinkWell nodes, it's our goal to provide **transparency** around the way our pricing model works. 
+Our goal is to provide **transparency** around the way our pricing works. 
+
+The per-request price for each job is outlined within the [documentation page](#view-our-jobs) for each respective job.
 
 ## Fee lifecycle
 
@@ -23,7 +25,7 @@ After retrieving your requested data, the node operator pays for the required `g
 
 ## Fee considerations
 
-Our per-request pricing is outlined on our respective [job pages](#view-our-job-offerings), and is based on the following environmental factors: 
+Our per-request pricing is outlined on our respective [job pages](#view-our-jobs), and is based on the following environmental factors: 
 
 1. [Gas costs on the specified network](#_1-gas-costs-on-the-specified-network)
 1. [The data type and quantity returned](#_2-the-data-type-and-quantity-returned)
@@ -52,15 +54,15 @@ While a `uint256` object may cost us on the order of **60000 gas units** to fulf
 
 In maintaining a triple-redundant, highly-secure, zero-downtime environment for our customers, we incur heavy infrastructure costs. Fees sent along with your requests go toward offsetting these costs.
 
-You can read more about the associated [costs of being a node operator](/faq/Chainlink-Operators?id=how-much-does-it-cost-to-run-a-chainlink-node) on our FAQ page.
+You can read more about the associated [costs of being a node operator](/knowledgebase/Chainlink-Operators-FAQ?id=how-much-does-it-cost-to-run-a-chainlink-node) on our FAQ page.
 
 #### 4. The pricing of our fellow node operators 
 
 In order to remain competitive, LinkWell Nodes needs to take into consideration the pricing model of our fellow node operators when establishing our target price point. 
 
-### Have questions about pricing?
+### Have a question about our pricing?
 
-Feel free to reach out to us via our [contact form](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to discuss.
+Please reach out to us via our [contact form](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to discuss.
 
 ## External Adapters
 
@@ -75,10 +77,14 @@ Feel free to reach out to us via our [contact form](https://linkwellnodes.io/Hom
 
 You can learn more about external adapters [here](https://docs.chain.link/chainlink-nodes/external-adapters/external-adapters), and find the list of Chainlink-provided external adapters [here](https://github.com/smartcontractkit/external-adapters-js/tree/main/packages/sources).
 
+## Learn More
+
+To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/knowledgebase/Direct-Request-Guide) in our knowledgebase.
+
 ## Troubleshooting
 
-Having technical difficulties with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having technical difficulties with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 ## Need more help?
 * Join our [Discord](https://discord.gg/AJ66pRz4) for the fastest assistance with your request. We are happy to support custom data requests as well!
-* Check out our [Chainlink User FAQ](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked to us by our customers.
+* Check out our [Chainlink User FAQ](/knowledgebase/Chainlink-Users-FAQ "FAQ - Chainlink Data Consumers") for common questions asked to us by our customers.

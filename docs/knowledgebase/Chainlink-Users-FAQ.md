@@ -16,7 +16,7 @@ While [market.link](https://market.link) was formerly the go-to directory for pu
 
 That being said, many node operators (such as ourselves) choose to host their own websites and documentation pages that display their Chainlink job offerings. A decent approach is to perform a Google search for 'Chainlink node operator' to see what job offerings you might find!
 
-?> To view a comprehensive list of jobs offered by LinkWell Nodes, visit our [job documentation](/services/jobs/Jobs-and-Pricing).
+?> To view a comprehensive list of jobs offered by LinkWell Nodes, visit our [job documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 
 ### Where can I find Job IDs and Chainlink Oracles for my consumer contract?
 
@@ -26,7 +26,11 @@ If you are looking to run your own Chainlink node, we recommend familiarizing yo
 
 ### Should I run my own Chainlink node?
 
-Please see the following answer in our Node Operator FAQ page [here](/faq/Chainlink-Operators#should-i-run-my-own-chainlink-node).
+Please see the following answer in our Node Operator FAQ page [here](/knowledgebase/Chainlink-Operators-FAQ#should-i-run-my-own-chainlink-node).
+
+### What is a Direct Request job?
+
+Please see our [Direct Request Guide](/knowledgebase/Direct-Request-Guide) page for more information on how direct requests work, and how to get started. 
 
 ### Should I use Chainlink Functions?
 
@@ -69,7 +73,7 @@ There are however, some use cases where using an external adapter does make sens
 
 If you already have an external adapter, you can choose to either connect it to your own Chainlink node, or reach out to an existing Chainlink node operator, who will typically host your adapter on their redundant infrastructure for free. 
 
-To help you decide whether to run your Chainlink node, read our write-up about it [here](/faq/Chainlink-Operators#should-i-run-my-own-chainlink-node).
+To help you decide whether to run your Chainlink node, read our write-up about it [here](/knowledgebase/Chainlink-Operators-FAQ#should-i-run-my-own-chainlink-node).
 
 ### Are external adapters decentralized?
 
@@ -95,7 +99,7 @@ If you're having trouble finding the appropriate price feed for your application
 
 To get connected to the appropriate Chainlink node operator for your use case, you can reach out within the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink) - a node operator (such as ourselves) will almost certainly be willing to help you with your request!
 
-## Job Troubleshooting
+## Direct Request Job Troubleshooting
 
 ### My request transaction won't send
 
@@ -109,11 +113,11 @@ If you've waited over 60 seconds after successfully sending your request transac
 
 1. Double-check that you are passing the correct values into the `setChainlinkToken()` and `setChainlinkOracle()` functions , and assigning the correct value to the `jobId` object. 
 
-?> If you are using our oracle services, you may find the correct corresponding values in our job documentation [here](/services/jobs/Jobs-and-Pricing).
+?> If you are using our oracle services, you may find the correct corresponding values in our job documentation [here](/services/direct-request-jobs/Jobs-and-Pricing).
 
 2. Confirm that the API endpoint to which you are making your HTTP request is working via `curl`.
 
-?> If you are using our oracle services, a sample `curl` command is included within the documentation for each job [here](/services/jobs/Jobs-and-Pricing).
+?> If you are using our oracle services, a sample `curl` command is included within the documentation for each job [here](/services/direct-request-jobs/Jobs-and-Pricing).
 
 3. If you've included a JSON `path` var (ie, `req.add("path", "key1,0,key2)`), ensure that the response returned by your HTTP request is in JSON format, and that the provided path exists within it.
 
@@ -121,4 +125,4 @@ If you've waited over 60 seconds after successfully sending your request transac
 
 5. Confirm that the oracle you are using didn't run out of gas while writing your requested data on-chain. To check this, look up the address of your related oracle (ie, the address passed to your `setChainlinkOracle()` function) within the appropriate blockchain explorer, to check for any recent transactions that failed due to an **'out of gas'** error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact the corresponding oracle team to request a higher gas allowance for your specific use case (may result in higher job pricing).
 
-?> If you are using our oracle services, you may find the oracle address that corresponds to your specific job within our job documentation [here](/services/jobs/Jobs-and-Pricing), or reach out to us regarding higher gas limits for your specific use case via our [Discord server](https://discord.gg/AJ66pRz4). 
+?> If you are using our oracle services, you may find the oracle address that corresponds to your specific job within our job documentation [here](/services/direct-request-jobs/Jobs-and-Pricing), or reach out to us regarding higher gas limits for your specific use case via our [Discord server](https://discord.gg/AJ66pRz4). 

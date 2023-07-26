@@ -40,7 +40,7 @@ In order to recoup these costs, node operators need to leverage economies of sca
 
 The answer depends on your specific use case:
 
-* **If you require testnet data**: Generally YES, it could be advisable to run your own Chainlink node - especially if you're interested in learning the ropes from a node operator's perspective, and [Chainlink Functions](/faq/Chainlink-Users#should-i-use-chainlink-functions) won't suit your requirements. On testnets, the stakes are low, and you can easily take advantage of trial-and-error without fear of monetary loss. That being said, there are many existing Chainlink node operators who already run jobs on a multitude of testnets, all which you can use for free (ie, without having to spin up your own node infrastructure). The `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink) is the best way to get matched up with one of these node operators. Typically, you'll have a response within the hour.     
+* **If you require testnet data**: Generally YES, it could be advisable to run your own Chainlink node - especially if you're interested in learning the ropes from a node operator's perspective, and [Chainlink Functions](/knowledgebase/Chainlink-Users-FAQ#should-i-use-chainlink-functions) won't suit your requirements. On testnets, the stakes are low, and you can easily take advantage of trial-and-error without fear of monetary loss. That being said, there are many existing Chainlink node operators who already run jobs on a multitude of testnets, all which you can use for free (ie, without having to spin up your own node infrastructure). The `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink) is the best way to get matched up with one of these node operators. Typically, you'll have a response within the hour.     
 
 * **If you require mainnet data**: Generally NO, mainnet data consumers should not be running their own Chainlink node - not only from a decentralization standpoint (controlling all parts of the data pipeline is typically frowned upon in the trustless Web3 space), but from a cost perspective as well. See [here](#how-much-does-it-cost-to-run-a-chainlink-node) for information related to the costs of running a reliable mainnet Chainlink node infrastructure.
 
@@ -96,7 +96,7 @@ If you must use Windows, Chainlink Labs strongly recommends using WSL (Windows S
 
 Functions may eventually invalidate the current model that devs have used in the past to get data from community node operators, as the functionality that Functions provides will be far superior. However, at this time Functions are only available on a small [subnet of networks](https://docs.chain.link/chainlink-functions/supported-networks). 
 
-Learn more about the benefits and limitations of Chainlink Functions [here](/faq/Chainlink-Users#should-i-use-chainlink-functions). 
+Learn more about the benefits and limitations of Chainlink Functions [here](/knowledgebase/Chainlink-Users-FAQ#should-i-use-chainlink-functions). 
 
 ### My job is stuck at the final submit_tx task
 

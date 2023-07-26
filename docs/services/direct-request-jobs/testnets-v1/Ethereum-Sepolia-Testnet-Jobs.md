@@ -44,8 +44,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256/get_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_uint256/get_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -90,8 +90,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -137,8 +137,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_int256/get_int256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_int256/get_int256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -183,8 +183,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bool/get_bool.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_bool/get_bool.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -229,8 +229,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bytes/get_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_bytes/get_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -274,8 +274,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_string/get_string.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_string/get_string.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -325,8 +325,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_string_x2/get_string_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -377,8 +377,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -423,8 +423,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -469,8 +469,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -514,8 +514,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_bytes/post_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/post_bytes/post_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -560,8 +560,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 

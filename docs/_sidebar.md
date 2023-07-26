@@ -1,24 +1,24 @@
 * **Services**
-* [Getting Started](/services/jobs/Direct-Request-Guide)
-* [Jobs and Pricing](/services/jobs/Jobs-and-Pricing)
-  * [Mainnets](/services/jobs/mainnets/Mainnets)
-    * [Arbitrum One](/services/jobs/mainnets/Arbitrum-One-Mainnet-Jobs "Arbitrum One Mainnet Jobs")
-    * [Avalanche](/services/jobs/mainnets/Avalanche-CChain-Mainnet-Jobs "Avalanche C-Chain Mainnet Jobs")
-    * [Binance](/services/jobs/mainnets/Binance-Mainnet-Jobs "Binance Mainnet Jobs")
-    * [Ethereum](/services/jobs/mainnets/Ethereum-Mainnet-Jobs "Ethereum Mainnet Jobs")
-    * [Polygon](/services/jobs/mainnets/Polygon-Mainnet-Jobs "Polygon Mainnet Jobs")
-  * [Testnets](/services/jobs/testnets/Testnets)
-    * [Arbitrum Goerli](/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs "Arbitrum Goerli Testnet Jobs")
-    * [Avalanche Fuji](/services/jobs/testnets/Avalanche-Fuji-Testnet-Jobs "Avalanche Fuji Testnet Jobs")
-    * [Binance](/services/jobs/testnets/Binance-Testnet-Jobs "Binance Testnet Jobs")
-    * [Ethereum Goerli](/services/jobs/testnets/Ethereum-Goerli-Testnet-Jobs "Ethereum Goerli Testnet Jobs")
-    * [Ethereum Sepolia](/services/jobs/testnets/Ethereum-Sepolia-Testnet-Jobs "Ethereum Sepolia Testnet Jobs")
-    * [Polygon Mumbai](/services/jobs/testnets/Polygon-Mumbai-Testnet-Jobs "Polygon Mumbai Testnet Jobs")
+* [Direct Request Jobs](/services/direct-request-jobs/Jobs-and-Pricing)
+  * [Mainnets](/services/direct-request-jobs/mainnets/Mainnets)
+    * [Arbitrum One](/services/direct-request-jobs/mainnets/Arbitrum-One-Mainnet-Jobs "Arbitrum One Mainnet Jobs")
+    * [Avalanche](/services/direct-request-jobs/mainnets/Avalanche-CChain-Mainnet-Jobs "Avalanche C-Chain Mainnet Jobs")
+    * [Binance](/services/direct-request-jobs/mainnets/Binance-Mainnet-Jobs "Binance Mainnet Jobs")
+    * [Ethereum](/services/direct-request-jobs/mainnets/Ethereum-Mainnet-Jobs "Ethereum Mainnet Jobs")
+    * [Polygon](/services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs "Polygon Mainnet Jobs")
+  * [Testnets](/services/direct-request-jobs/testnets/Testnets)
+    * [Arbitrum Goerli](/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs "Arbitrum Goerli Testnet Jobs")
+    * [Avalanche Fuji](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs "Avalanche Fuji Testnet Jobs")
+    * [Binance](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs "Binance Testnet Jobs")
+    * [Ethereum Goerli](/services/direct-request-jobs/testnets/Ethereum-Goerli-Testnet-Jobs "Ethereum Goerli Testnet Jobs")
+    * [Ethereum Sepolia](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs "Ethereum Sepolia Testnet Jobs")
+    * [Polygon Mumbai](/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs "Polygon Mumbai Testnet Jobs")
     
-* **Chainlink FAQ**
-* [Operators](/faq/Chainlink-Operators "FAQ - Chainlink Node Operators")
-* [Consumers](/faq/Chainlink-Users "FAQ - Chainlink Data Consumers")
-<!--  * [External Adapters](/faq/External-Adapters "FAQ - External Adapters") -->
+* **Knowledgebase**
+* [Operator FAQ](/knowledgebase/Chainlink-Operators-FAQ "FAQ - Chainlink Node Operators")
+* [Consumer FAQ](/knowledgebase/Chainlink-Users-FAQ "FAQ - Chainlink Data Consumers")
+* [Direct Request Guide](/knowledgebase/Direct-Request-Guide)
+<!--  * [External Adapters](/knowledgebase/External-Adapters "FAQ - External Adapters") -->
 * **About**
 * [About Us](/about/About "About LinkWell Nodes")
 * [Contact Us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")

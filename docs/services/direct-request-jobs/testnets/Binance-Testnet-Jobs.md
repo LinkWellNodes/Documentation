@@ -14,7 +14,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ?> This job returns a single **uint256** object, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
 
-### Job details
+### Job metadata
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -34,22 +34,28 @@ This job requires the following parameters to be set:
 | **multiplier** | `int256` | 10 ** 18 | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, it is not a number), the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-### Implementing within your consumer contract
+### Try it for yourself
 
-#### Add the constructor:
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [uint256_constructor](/Binance-Testnet/uint256/uint256.sol ':include :type=code :fragment=constructor')`
 
-#### Add your request function (example):
+#### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 [uint256_request](/Binance-Testnet/uint256/uint256.sol ':include :type=code :fragment=request')
 
-#### Retrieve the response (example):
+#### 3. Retrieve the response (example):
 
 [uint256_response](/Binance-Testnet/uint256/uint256.sol ':include :type=code :fragment=response')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/uint256/uint256.sol) of the above consumer contract.
 
 ### Need to send sensitive information?
 
@@ -57,13 +63,9 @@ The 'request' function defines the request parameters and sends the request to t
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/uint256/uint256.sol) of the above consumer contract.
-
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 
@@ -127,7 +129,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ?> This job returns a single **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
 
-### Job details
+### Job metadata
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -147,22 +149,28 @@ This job requires the following parameters to be set:
 | **multiplier** | `int256` | 10 ** 18 | The number by which to multiply every element within the result array returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, all elements are not numbers), the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-### Implementing within your consumer contract
+### Try it for yourself
 
-#### Add the constructor:
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [uint256-array_constructor](/Binance-Testnet/uint256-array/uint256-array.sol ':include :type=code :fragment=constructor')`
 
-#### Add your request function (example):
+#### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
 [uint256-array_request](/Binance-Testnet/uint256-array/uint256-array.sol ':include :type=code :fragment=request')
 
-#### Retrieve the response (example):
+#### 3. Retrieve the response (example):
 
 [uint256-array_response](/Binance-Testnet/uint256-array/uint256-array.sol ':include :type=code :fragment=response')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/uint256-array/uint256-array.sol) of the above consumer contract.
 
 ### Need to send sensitive information?
 
@@ -170,13 +178,9 @@ The 'request' function defines the request parameters and sends the request to t
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/uint256-array/uint256-array.sol) of the above consumer contract.
-
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 
@@ -252,7 +256,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ?> This job returns a single **int256** object, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
 
-### Job details
+### Job metadata
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -272,22 +276,28 @@ This job requires the following parameters to be set:
 | **multiplier** | `int256` | 10 ** 18 | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, it is not a number), the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-### Implementing within your consumer contract
+### Try it for yourself
 
-#### Add the constructor:
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [int256_constructor](/Binance-Testnet/int256/int256.sol ':include :type=code :fragment=constructor')`
 
-#### Add your request function (example):
+#### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 [int256_request](/Binance-Testnet/int256/int256.sol ':include :type=code :fragment=request')
 
-#### Retrieve the response (example):
+#### 3. Retrieve the response (example):
 
 [int256_response](/Binance-Testnet/int256/int256.sol ':include :type=code :fragment=response')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/int256/int256.sol) of the above consumer contract.
 
 ### Need to send sensitive information?
 
@@ -295,13 +305,9 @@ The 'request' function defines the request parameters and sends the request to t
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/int256/int256.sol) of the above consumer contract.
-
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 
@@ -377,7 +383,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ?> This job returns a single **int256[]** object, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
 
-### Job details
+### Job metadata
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -397,22 +403,28 @@ This job requires the following parameters to be set:
 | **multiplier** | `int256` | 10 ** 18 | The number by which to multiply every element within the result array returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, all elements are not numbers), the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-### Implementing within your consumer contract
+### Try it for yourself
 
-#### Add the constructor:
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [int256-array_constructor](/Binance-Testnet/int256-array/int256-array.sol ':include :type=code :fragment=constructor')`
 
-#### Add your request function (example):
+#### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
 [int256-array_request](/Binance-Testnet/int256-array/int256-array.sol ':include :type=code :fragment=request')
 
-#### Retrieve the response (example):
+#### 3. Retrieve the response (example):
 
 [int256-array_response](/Binance-Testnet/int256-array/int256-array.sol ':include :type=code :fragment=response')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/int256-array/int256-array.sol) of the above consumer contract.
 
 ### Need to send sensitive information?
 
@@ -420,13 +432,9 @@ The 'request' function defines the request parameters and sends the request to t
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/int256-array/int256-array.sol) of the above consumer contract.
-
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 
@@ -502,7 +510,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ?> This job returns a single **bool** object, which can store a `true` or `false` value. 
 
-### Job details
+### Job metadata
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -521,22 +529,28 @@ This job requires the following parameters to be set:
 | **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-### Implementing within your consumer contract
+### Try it for yourself
 
-#### Add the constructor:
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [bool_constructor](/Binance-Testnet/bool/bool.sol ':include :type=code :fragment=constructor')`
 
-#### Add your request function (example):
+#### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
 [bool_request](/Binance-Testnet/bool/bool.sol ':include :type=code :fragment=request')
 
-#### Retrieve the response (example):
+#### 3. Retrieve the response (example):
 
 [bool_response](/Binance-Testnet/bool/bool.sol ':include :type=code :fragment=response')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/bool/bool.sol) of the above consumer contract.
 
 ### Need to send sensitive information?
 
@@ -544,13 +558,9 @@ The 'request' function defines the request parameters and sends the request to t
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/bool/bool.sol) of the above consumer contract.
-
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 
@@ -615,7 +625,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ?> This job returns a single **bool[]** object, which can store an array of `true` or `false` values. 
 
-### Job details
+### Job metadata
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -634,22 +644,28 @@ This job requires the following parameters to be set:
 | **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-### Implementing within your consumer contract
+### Try it for yourself
 
-#### Add the constructor:
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [bool-array_constructor](/Binance-Testnet/bool-array/bool-array.sol ':include :type=code :fragment=constructor')`
 
-#### Add your request function (example):
+#### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
 [bool-array_request](/Binance-Testnet/bool-array/bool-array.sol ':include :type=code :fragment=request')
 
-#### Retrieve the response (example):
+#### 3. Retrieve the response (example):
 
 [bool-array_response](/Binance-Testnet/bool-array/bool-array.sol ':include :type=code :fragment=response')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/bool-array/bool-array.sol) of the above consumer contract.
 
 ### Need to send sensitive information?
 
@@ -657,13 +673,9 @@ The 'request' function defines the request parameters and sends the request to t
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/bool-array/bool-array.sol) of the above consumer contract.
-
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 
@@ -731,7 +743,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ?> This job returns a single **bytes** object, which can readily be converted into a **string** value. 
 
-### Job details
+### Job metadata
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -750,22 +762,28 @@ This job requires the following parameters to be set:
 | **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-### Implementing within your consumer contract
+### Try it for yourself
 
-#### Add the constructor:
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [string-bytes_constructor](/Binance-Testnet/string-bytes/string-bytes.sol ':include :type=code :fragment=constructor')`
 
-#### Add your request function (example):
+#### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
 [string-bytes_request](/Binance-Testnet/string-bytes/string-bytes.sol ':include :type=code :fragment=request')
 
-#### Retrieve the response (example):
+#### 3. Retrieve the response (example):
 
 [string-bytes_response](/Binance-Testnet/string-bytes/string-bytes.sol ':include :type=code :fragment=response')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/string-bytes/string-bytes.sol) of the above consumer contract.
 
 ### Need to send sensitive information?
 
@@ -773,13 +791,9 @@ The 'request' function defines the request parameters and sends the request to t
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/string-bytes/string-bytes.sol) of the above consumer contract.
-
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
 
@@ -849,7 +863,7 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ?> This job returns a single **bytes[]** object, which can readily be converted into a **string[]** value. 
 
-### Job details
+### Job metadata
 
 | Oracle Address                             | Job ID                           | Job Cost              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -868,22 +882,28 @@ This job requires the following parameters to be set:
 | **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-### Implementing within your consumer contract
+### Try it for yourself
 
-#### Add the constructor:
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [string-bytes-array_constructor](/Binance-Testnet/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=constructor')`
 
-#### Add your request function (example):
+#### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
 
 [string-bytes-array_request](/Binance-Testnet/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=request')
 
-#### Retrieve the response (example):
+#### 3. Retrieve the response (example):
 
 [string-bytes-array_response](/Binance-Testnet/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=response')
+
+### View the full source code
+
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/string-bytes-array/string-bytes-array.sol) of the above consumer contract.
 
 ### Need to send sensitive information?
 
@@ -891,13 +911,9 @@ The 'request' function defines the request parameters and sends the request to t
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/testnets/Binance-Testnet/string-bytes-array/string-bytes-array.sol) of the above consumer contract.
-
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Job Troubleshooting Guide](/faq/Chainlink-Users?id=job-troubleshooting).
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
 

@@ -1,6 +1,6 @@
-## Arbitrum One Mainnet Jobs
+## Binance Mainnet Jobs
 
-Arbitrum-One is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code
+Binance is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code.
 
 <!-- tabs:start -->
 #### **GET > Uint256**
@@ -12,10 +12,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -38,17 +38,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_constructor_aom](/Arbitrum-One/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
+[get_uint256_constructor_bm](/Binance/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_aom](/Arbitrum-One/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
+[get_uint256_request_bm](/Binance/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_uint256/get_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -62,10 +62,10 @@ HTTP GET to any public API which parses the response and returns an unsigned int
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -87,17 +87,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_no_multiply_constructor_aom](/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=constructor')
+[get_uint256_no_multiply_constructor_bm](/Binance/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_no_multiply_aom](/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=request')
+[get_uint256_request_no_multiply_bm](/Binance/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -111,10 +111,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -137,17 +137,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_int256_constructor_aom](/Arbitrum-One/get_int256/get_int256.sol ':include :type=code :fragment=constructor')
+[get_int256_constructor_bm](/Binance/get_int256/get_int256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_int256_request_aom](/Arbitrum-One/get_int256/get_int256.sol ':include :type=code :fragment=request')
+[get_int256_request_bm](/Binance/get_int256/get_int256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_int256/get_int256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_int256/get_int256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -161,10 +161,10 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -186,17 +186,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bool_constructor_aom](/Arbitrum-One/get_bool/get_bool.sol ':include :type=code :fragment=constructor')
+[get_bool_constructor_bm](/Binance/get_bool/get_bool.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bool_request_aom](/Arbitrum-One/get_bool/get_bool.sol ':include :type=code :fragment=request')
+[get_bool_request_bm](/Binance/get_bool/get_bool.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_bool/get_bool.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_bool/get_bool.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -210,10 +210,10 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.15 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
 
 ### Request parameters
 
@@ -235,17 +235,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_constructor_aom](/Arbitrum-One/get_bytes/get_bytes.sol ':include :type=code :fragment=constructor')
+[get_bytes_constructor_bm](/Binance/get_bytes/get_bytes.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_request_aom](/Arbitrum-One/get_bytes/get_bytes.sol ':include :type=code :fragment=request')
+[get_bytes_request_bm](/Binance/get_bytes/get_bytes.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_bytes/get_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_bytes/get_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -259,10 +259,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.15 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
 
 ### Request parameters
 
@@ -284,17 +284,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_constructor_aom](/Arbitrum-One/get_string/get_string.sol ':include :type=code :fragment=constructor')
+[get_string_constructor_bm](/Binance/get_string/get_string.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_request_aom](/Arbitrum-One/get_string/get_string.sol ':include :type=code :fragment=request')
+[get_string_request_bm](/Binance/get_string/get_string.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_string/get_string.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_string/get_string.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -308,10 +308,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | be46cb8070c14cb7ad058b29f127ec6b | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | be46cb8070c14cb7ad058b29f127ec6b | 0.15 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
 
 ### Request parameters
 
@@ -329,26 +329,26 @@ This job allows for the following parameters to be set:
 * Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
 * Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
 * Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
-* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"Arbitrum-One",`
+* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"Binance",`
 * First sample response from the Chainlink oracle: `bitcoin`
-* Second sample response from the Chainlink oracle: `Arbitrum-One`
+* Second sample response from the Chainlink oracle: `Binance`
 
 ### Implementing within your consumer contract
 
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_x2_constructor_aom](/Arbitrum-One/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+[get_string_x2_constructor_bm](/Binance/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_x2_request_aom](/Arbitrum-One/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+[get_string_x2_request_bm](/Binance/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_string_x2/get_string_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -362,10 +362,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.15 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
 
 ### Request parameters
 
@@ -393,17 +393,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_x2_constructor_aom](/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=constructor')
+[get_uint256_x2_constructor_bm](/Binance/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_x2_request_aom](/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=request')
+[get_uint256_x2_request_bm](/Binance/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -417,10 +417,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | 9a2ba54374f34184bdc6390db3171994 | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 9a2ba54374f34184bdc6390db3171994 | 0.15 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
 
 ### Request parameters
 
@@ -442,17 +442,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_array_constructor_aom](/Arbitrum-One/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=constructor')
+[get_uint256_array_constructor_bm](/Binance/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_array_request_aom](/Arbitrum-One/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=request')
+[get_uint256_array_request_bm](/Binance/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -466,10 +466,10 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.15 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
 
 ### Request parameters
 
@@ -491,17 +491,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_array_constructor_aom](/Arbitrum-One/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=constructor')
+[get_bytes_array_constructor_bm](/Binance/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_array_request_aom](/Arbitrum-One/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=request')
+[get_bytes_array_request_bm](/Binance/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -513,10 +513,10 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -539,17 +539,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_bytes_constructor_aom](/Arbitrum-One/post_bytes/post_bytes.sol ':include :type=code :fragment=constructor')
+[post_bytes_constructor_bm](/Binance/post_bytes/post_bytes.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_bytes_request_aom](/Arbitrum-One/post_bytes/post_bytes.sol ':include :type=code :fragment=request')
+[post_bytes_request_bm](/Binance/post_bytes/post_bytes.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/post_bytes/post_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/post_bytes/post_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -561,10 +561,10 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://arbiscan.io/address/0xd8eddb284d25dbbc5189e488639d689dfe7aab49) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
-| Address and JobID | Job Cost |
+<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -588,17 +588,17 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_aom](/Arbitrum-One/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+[post_uint256_constructor_bm](/Binance/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_aom](/Arbitrum-One/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+[post_uint256_request_bm](/Binance/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/post_uint256/post_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Arbitrum-One/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Binance/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 

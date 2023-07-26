@@ -13,9 +13,9 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | f4821ba2e8ae4ddba52ea6860887df96 | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -47,8 +47,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256/get_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256/get_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -63,9 +63,9 @@ HTTP GET to any public API which parses the response and returns an unsigned int
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 65cfa14a158540e1a8a94f9a33163839 | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -96,8 +96,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -112,9 +112,9 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 339ac1ad0a864ea7b94811de8a362a64 | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -146,8 +146,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_int256/get_int256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_int256/get_int256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -162,9 +162,9 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 2e0a430bcd2b482d8462fdcc5224fba1 | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -195,8 +195,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bool/get_bool.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_bool/get_bool.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -211,9 +211,9 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 5b48fe6ac244436bb5ad689ab64ef28b | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -244,8 +244,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes/get_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_bytes/get_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -260,9 +260,9 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 1cc553d092584937bfe9be9a3dd4c1f6 | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -293,8 +293,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string/get_string.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_string/get_string.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -309,9 +309,9 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | be46cb8070c14cb7ad058b29f127ec6b | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -347,8 +347,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string_x2/get_string_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -363,9 +363,9 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -402,8 +402,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -418,9 +418,9 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 9a2ba54374f34184bdc6390db3171994 | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -451,8 +451,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -467,9 +467,9 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 332c0b46e57f49cd8c7d74cdbe5106ab | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -500,8 +500,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -514,9 +514,9 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b3390c03bfc24b42a0b0ab8051471bbb | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -548,8 +548,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_bytes/post_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/post_bytes/post_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -562,9 +562,9 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b090204b16644030844a6e91932a7626 | 1.4 LINK                | -->
-| Address and JobID | Job Cost |
+| Address and Job ID | Job Cost |
 |-------------------|----------|
-| Complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal mainnet `Addresses` and `JobIds` | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -597,8 +597,8 @@ The 'request function' within your consumer contract specifies the parameters to
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_uint256/post_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/jobs/mainnets/Ethereum/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
