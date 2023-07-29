@@ -83,7 +83,7 @@ In choosing where to host your external adapter, you may also choose to reach ou
 
 To get connected with the appropriate oracle operator(s) for your external adapter's use case, we suggest reaching out within the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink). 
 
-### Can I use a single data source or Chailink node for my smart contract?
+### Can I use a single data source or Chainlink node for my smart contract?
 
 While using a single data source can be a sufficient approach for testnet applications, it represents a single point-of-failure (SPOF) for your application, and thus is not recommended for mainnet / production purposes. 
 

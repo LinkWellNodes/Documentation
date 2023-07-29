@@ -98,11 +98,32 @@ Functions may eventually invalidate the current model that devs have used in the
 
 Learn more about the benefits and limitations of Chainlink Functions [here](/knowledgebase/Chainlink-Users-FAQ#should-i-use-chainlink-functions). 
 
-### My job is stuck at the final submit_tx task
+### How do I deploy multiple external adapters?
+
+The process for deploying an external adapter is identical to deploying any other servlet; external adapters are just simple HTTP servers.
+
+If you wish to deploy multiple adapters (servlets), there are many ways to do this - for a quick solution (ie, testnets or private use), you might consider batching the related build / launch commands for each adapter into a single shell script that runs on a single machine. For a more Production-grade deployment, you might consider using a well-known build / cluster orchestration tool - such as Kubernetes - to manage a fleet of instances, all of which might run your adapters / servlets behind a load balancer. 
+
+### My job is stuck at the final 'submit_tx' task
 
 Typically, when a Chainlink job is stuck at the final submit task, the issue is that you forgot to fund the Chainlink node address with the gas token for the chain you are running on. Please note that the Chainlink node address is different and separate from the oracle/operator contract that the node interacts with. The Chainlink node address can be found in the Chainlink GUI, or listed on the CLI via Chainlink's command-line interface. 
 
 As an example, if you are deploying a Chainlink node on Polygon's Mumbai testnet, you would need to send the testnet MATIC token to your Chainlink node's wallet address. This is a requirement for completing jobs, as the Chainlink node requires the respective chain's native gas token for submitting response transactions on-chain.
+
+### How do I run a Webhook job?
+
+If you are receiving the error '`manual job runs only supported in dev mode - export CL_DEV=true to use`' or similar, you may be trying to access a feature that is currently unsupported in Chainlink production builds past 2.x.x.
+
+As of Chainlink client version 2.x.x, the `CHAINLINK_DEV`, `FEATURE_EXTERNAL_INITIATORS`, and `FEATURE_WEBHOOK_V2` config flags have been deprecated, and Chainlink has migrated to the [TOML-based configuration format](https://docs.chain.link/chainlink-nodes/v1/node-config).
+
+In order to access the features enabled by these flags (ie, running Webhook jobs manually via the Chainlink GUI interface), we'd recommend deploying the older [v1.4.1 Chainlink client](https://github.com/smartcontractkit/chainlink/releases/tag/v1.4.1). Alternatively, you may try building a development version of the more recent Chainlink code from scratch, which allows you to set various [insecure flags](https://docs.chain.link/chainlink-nodes/v1/node-config#insecure) within the Chainlink TOML config.
+
+### Why is my oracle transaction failing due to an 'out of gas' error?
+
+`Out of gas` exceptions may occur when a Chainlink node exceeds the allowable gas limit while attempting to write the appropriate data response to the consumer contract. There are several ways to mitigate this:
+
+1. Try reducing the size of the data returned by the Chainlink node. For example, if you are attempting to return a very large JSON string (ie, over 200 chars), consider reducing the size of the JSON string, or only returning a subset of the JSON, using the [JSON Parse](https://docs.chain.link/chainlink-nodes/oracle-jobs/all-tasks#json-parse-task) job task.
+1. If you have access to the oracle node's configuration settings, try increasing the `LimitDefault` value within [GasEstimator](https://docs.chain.link/chainlink-nodes/v1/node-config#limitdefault) config (this defaults to 500,000 gas, or '`500_000`'). **WARNING**: increasing your node's gas limit will allow your oracle to spend a large amount of gas per transaction, and is not recommended on mainnet chains! 
 
 ### What is the best way to monitor my Chainlink node?
 
