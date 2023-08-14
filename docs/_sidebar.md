@@ -9,9 +9,11 @@
   * [Testnets](/services/direct-request-jobs/testnets/Testnets)
     * [Arbitrum Goerli](/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs "Arbitrum Goerli Testnet Jobs")
     * [Avalanche Fuji](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs "Avalanche Fuji Testnet Jobs")
+    * [Base Goerli](/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs "Base Goerli Testnet Jobs")
     * [Binance](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs "Binance Testnet Jobs")
     * [Ethereum Goerli](/services/direct-request-jobs/testnets/Ethereum-Goerli-Testnet-Jobs "Ethereum Goerli Testnet Jobs")
     * [Ethereum Sepolia](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs "Ethereum Sepolia Testnet Jobs")
+    * [Optimism Goerli](/services/direct-request-jobs/testnets/Optimism-Goerli-Testnet-Jobs "Optimism Goerli Testnet Jobs")
     * [Polygon Mumbai](/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs "Polygon Mumbai Testnet Jobs")
     
 * **Knowledgebase**
