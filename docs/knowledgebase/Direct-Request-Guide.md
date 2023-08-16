@@ -24,7 +24,7 @@ The following diagram demonstrates the direct request workflow.
 **At a high level**:
 
 1. The diagram begins with a call to your consumer contract's request function, via a Solidity-based IDE such as [Remix](https://remix-project.org/#:~:text=JUMP%20INTO%20WEB3,teaching%20and%20experimenting%20with%20Ethereum.), combined with a Web3 wallet provider such as [MetaMask](https://metamask.io). 
-1. The left-hand workflow (**testnets**) is virtually the same as the right-hand workflow (**mainnets**) with the exception of needing to funding your consumer contract with LINK tokens before making a request.  
+1. The left-hand workflow (**testnets**) is virtually the same as the right-hand workflow (**mainnets**) with the exception of needing to fund your consumer contract with LINK tokens before making a request.  
 
 ![dr-workflow](/../media/CL_DR_Model.png) 
 
