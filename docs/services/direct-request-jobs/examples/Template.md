@@ -1,31 +1,48 @@
-# Chainlink Direct Requests
+# Retrieving MySports data using Chainlink
 
-## Retrieving MySports data using Chainlink
+## Introduction
 
 The MySports API is orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### Try it for yourself
+The following guide illustrates an easy example of how to retrieve MySports data from within your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
+
+## Real-world example
+
+Accessing MySports data from within your blockchain contract or Web3 application is as simple as:
+
+1. Creating an MySports API key through the MySports website.
+1. Deploying the following Chainlink consumer contract onto the ERC-20 blockchain network of your choice. 
+
+Below we'll walk you through the steps necessary to implement such a solution.
+
+### 1. Create a MySports API key
+
+In order to retrieve data from the MySports API, you'll need an API key. Luckily, MySports provides API keys for free, and ipsum dolor sit amet.
+
+You may request an API key from MySports here: [link](link)
+
+### 2. Design your consumer contract
 
 Add the following sample code to your **consumer contract**.
 
-#### 1. Add the constructor:
+#### 2a. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 [uint256_constructor](/template.sol ':include :type=code :fragment=constructor')`
 
-#### 2. Add your request function (example):
+#### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 [uint256_request](/template.sol ':include :type=code :fragment=request')
 
-#### 3. Retrieve the response (example):
+#### 2c. Retrieve the response (example):
 
 [uint256_response](/template.sol ':include :type=code :fragment=response')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/template.sol.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/template.sol) of the above consumer contract.
 
 ### Need to protect your API key?
 
@@ -81,12 +98,12 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 1913540000000000000000
 ```
 
-### Troubleshooting
+## Troubleshooting
 
 Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
 !> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 
-### Still need more help?
+## Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
