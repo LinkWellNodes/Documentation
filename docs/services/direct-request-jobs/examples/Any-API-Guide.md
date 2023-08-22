@@ -18,11 +18,11 @@ Chainlink's [Any API](https://docs.chain.link/any-api/introduction) service is a
 ### Stock Price Data
 * [AlphaVantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.md)
 
-### Stock Price Data
-* [Stock Price Data](/services/direct-request-jobs/examples/coin-price-data/.md)
+### Coin Price Data
+<!-- * [Coin Price Data](/services/direct-request-jobs/examples/coin-price-data/.md) -->
 
 ### IPFS Data
-* [IPFS Data](/services/direct-request-jobs/examples/.md)
+<!-- * [IPFS Data](/services/direct-request-jobs/examples/.md) -->
 
 ## Learn More
 
