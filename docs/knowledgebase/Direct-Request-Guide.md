@@ -1,4 +1,7 @@
 # Direct Request Guide
+LinkWell Nodes is a community based Chainlink node operations team that is dedicated to providing the most secure and comprehensive Chainlink Any API services out there today. We understand that as a Web3 developer, you shouldn't have to worry about deploying and configuring your own Chainlink nodes on top of building out your smart contract applications.  This is why we have gone through great lengths in deploying Chainlink nodes across multiple networks, configuring jobs that you can immediately utilize in your contracts, and providing documentation and guides to help you out along the way. 
+
+Connecting to any API through our Chainlink oracles enables your contracts to access any external data source required for your smart contract application.  Whether your contract requires sports results, the latest weather, or any other publicly available data, we have you covered.  Please read on if you would like to better understand the basic direct request workflow when making a request to our Chainlink nodes.
 
 ## Overview
 Before diving into Chainlink's direct request architecture, it's important to understand the [basic request model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted). 

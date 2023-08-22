@@ -20,6 +20,7 @@
     
 * **Knowledgebase**
 * [Direct Request Guide](/knowledgebase/Direct-Request-Guide)
+* [Any API Examples](/services/direct-request-jobs/examples/Any-API-Guide "Polygon Mainnet Jobs")
 * [Operator FAQ](/knowledgebase/Chainlink-Operators-FAQ "FAQ - Chainlink Node Operators")
 * [Consumer FAQ](/knowledgebase/Chainlink-Users-FAQ "FAQ - Chainlink Data Consumers")
 <!--  * [External Adapters](/knowledgebase/External-Adapters "FAQ - External Adapters") -->

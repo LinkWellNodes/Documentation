@@ -1,25 +1,25 @@
-# Retrieving MySports data using Chainlink
+# Retrieving AccuWeather data using Chainlink
 
 ## Introduction
 
-The MySports API is orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+AccuWeather provides and supports many different weather APIs that provide up-to-date and highly accurate forecasts around the globe. With AccuWeather's utility APIs, users can retrieve unique identifiers and geographical coordinates for various locations.  AccuWeather offers two different types of APIs - the Core weather API and MinuteCast API. The Core weather API provides endpoints to get daily and hourly weather forecasts, current conditions, and daily index data. It also provides endpoints to search for locations all around the world, including cities and countries. Using the MinuteCast API, you can specify a specific location for a 120-minute precipitation forecasts.
 
-The following guide illustrates an easy example of how to retrieve MySports data from within your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
+The following guide illustrates an easy example of how to retrieve Accuweather data from within your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
 
 ## Real-world example
 
-Accessing MySports data from within your blockchain contract or Web3 application is as simple as:
+Accessing AccuWeather data from within your blockchain contract or Web3 application is as simple as:
 
-1. Creating an MySports API key through the MySports website.
-1. Deploying the following Chainlink consumer contract onto the ERC-20 blockchain network of your choice. 
+1. Creating an AccuWeather API key through the AccuWeather website.
+2. Deploying the following Chainlink consumer contract onto the ERC-20 blockchain network of your choice. 
 
 Below we'll walk you through the steps necessary to implement such a solution.
 
-### 1. Create a MySports API key
+### 1. Create an AccuWeather API key
 
-In order to retrieve data from the MySports API, you'll need an API key. Luckily, MySports provides API keys for free, and ipsum dolor sit amet.
+In order to retrieve data from the AccuWeather API, you'll need an API key. 
 
-You may request an API key from MySports here: [link](link)
+You may request a free API key from AccuWeather here: [AccuWeather Developer Portal](https://developer.accuweather.com/)
 
 ### 2. Design your consumer contract
 
@@ -29,22 +29,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256_constructor](/template.sol ':include :type=code :fragment=constructor')`
+[uint256_constructor](/AccuWeather.sol ':include :type=code :fragment=constructor')`
 
 ?> You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 
 #### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[uint256_request](/template.sol ':include :type=code :fragment=request')
+[uint256_request](/AccuWeather.sol ':include :type=code :fragment=request')
 
 #### 2c. Retrieve the response (example):
 
-[uint256_response](/template.sol ':include :type=code :fragment=response')
+[uint256_response](/AccuWeather.sol ':include :type=code :fragment=response')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/template.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/weather-data/AccuWeather.sol) of the above consumer contract.
 
 ### Need to protect your API key?
 
@@ -61,7 +61,7 @@ Let's walk through each step of the above **sample request**, to better understa
 The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
 
 ```
-curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' \
+curl 'https://api.accuweather.com/currentconditions/v1/335315.json?apikey={your key}' \
  --request 'GET' \
  --header 'content-type: application/json' \
  --header 'set-cookie: sid=14A52'
@@ -72,24 +72,39 @@ curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,
 The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
 
 ```
-{
-   "BTC":{
-      "USD":30575.12,
-      "EUR":27810.9
-   },
-   "ETH":{
-      "USD":1875.87,
-      "EUR":1706.29
-   }
-}
+[
+  {
+    "LocalObservationDateTime": "2018-11-01T14:11:00-04:00",
+    "EpochTime": 1541095860,
+    "WeatherText": "Cloudy",
+    "WeatherIcon": 7,
+    "HasPrecipitation": false,
+    "PrecipitationType": null,
+    "IsDayTime": true,
+    "Temperature": {
+      "Metric": {
+        "Value": 13.9,
+        "Unit": "C",
+        "UnitType": 17
+      },
+      "Imperial": {
+        "Value": 57,
+        "Unit": "F",
+        "UnitType": 18
+      }
+    },
+    "MobileLink": "https://m.accuweather.com/en/us/state-college-pa/16801/current-weather/335315?lang=en-us",
+    "Link": "https://www.accuweather.com/en/us/state-college-pa/16801/current-weather/335315?lang=en-us"
+  }
+]
 ```
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`ETH,USD`). After applying the provided path, we get the following result:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`Imperial,Value`). After applying the provided path, we get the following result:
 
 ```
-1875.87
+57
 ```
 
 #### 4. **Apply the multiplier**:
@@ -97,7 +112,7 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 After filtering the sample response by the provided JSON path, our Chainlink node will multiply the result by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following value, which is ultimately written to your smart contract as a `uint256` object by our Chainlink oracle:
 
 ```
-1913540000000000000000
+57000000000000000000
 ```
 
 ## Troubleshooting
