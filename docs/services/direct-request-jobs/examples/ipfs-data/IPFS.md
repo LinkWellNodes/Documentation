@@ -1,25 +1,25 @@
-# Retrieving Alpha Vantage Stock Price data using Chainlink
+# Retrieving IPFS data using Chainlink
 
 ## Introduction
 
-Alpha Vantage is a renowned platform that offers an extensive collection of APIs tailored to stock market data, financial indicators, and more. The Alpha Vantage API provides users with real-time and historical stock price data, foreign exchange rates, cryptocurrency prices, and technical indicators. It caters to individual traders, financial professionals, and developers seeking to integrate financial data into their applications. With its rich dataset and easy-to-use interface, Alpha Vantage has become an essential tool for those who require accurate and timely financial information for decision-making, analysis, or application development.
+The InterPlanetary File System (IPFS) is a revolutionary peer-to-peer network protocol designed to make the web faster, safer, and more open. The IPFS API allows developers to interact with the IPFS network, enabling them to store and retrieve files, manage IPFS nodes, and handle other related tasks. This decentralized file system aims to replace the traditional centralized web hosting model, making content permanently available and resistant to censorship. By using the IPFS API, users can benefit from a distributed web where content is addressed by what it is (content-based addressing) rather than where it's stored (location-based addressing). This ensures data persistence, high availability, and a more resilient internet infrastructure.
 
-The following guide illustrates an easy example of how to retrieve a `uint256` value from the Alpha Vantage API into your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
+The following guide illustrates an easy example of how to retrieve a `string-bytes` value from the IPFS API into your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
 
 ## Real-world example
 
-Accessing Alpha Vantage data from within your blockchain contract or Web3 application is as simple as:
+Accessing IPFS data from within your blockchain contract or Web3 application is as simple as:
 
-1. Creating an Alpha Vantage API key through the Alpha Vantage website.
+1. Creating an IPFS API key through the IPFS website.
 1. Deploying the following Chainlink consumer contract onto the ERC-20 blockchain network of your choice. 
 
 Below we'll walk you through the steps necessary to implement such a solution.
 
-### 1. Create a Alpha Vantage API key
+### 1. Create a IPFS API key
 
-In order to retrieve data from the Alpha Vantage API, you'll need an API key. 
+In order to retrieve data from the IPFS API, you'll need an API key. Luckily, IPFS provides API keys for free, and ipsum dolor sit amet.
 
-You may request an API key from Alpha Vantage here: [link](https://www.alphavantage.co/support/#api-key)
+You may request an API key from IPFS here: [link](link)
 
 ### 2. Design your consumer contract
 
@@ -29,22 +29,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256_constructor](/Alpha-Vantage.sol ':include :type=code :fragment=constructor')`
+[string-bytes_constructor](/IPFS.sol ':include :type=code :fragment=constructor')`
 
 ?> You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 
 #### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[uint256_request](/Alpha-Vantage.sol ':include :type=code :fragment=request')
+[string-bytes_request](/IPFS.sol ':include :type=code :fragment=request')
 
 #### 2c. Retrieve the response (example):
 
-[uint256_response](/Alpha-Vantage.sol ':include :type=code :fragment=response')
+[string-bytes_response](/IPFS.sol ':include :type=code :fragment=response')
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.sol) of the above consumer contract.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/ipfs-data/IPFS.sol) of the above consumer contract.
 
 ### Need to protect your API key?
 
@@ -61,10 +61,9 @@ Let's walk through each step of the above **sample request**, to better understa
 The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
 
 ```
-curl 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={your_key}' \
- --request 'GET' \
- --header 'content-type: application/json' \
- --header 'set-cookie: sid=14A52'
+curl -X 'GET' \
+  'https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json' \
+  -H 'accept: application/json'
 ```
 
 #### 2. **Analyze the response**:
@@ -73,35 +72,16 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 ```
 {
-    "Global Quote": {
-        "01. symbol": "IBM",
-        "02. open": "141.4200",
-        "03. high": "142.3900",
-        "04. low": "141.1100",
-        "05. price": "142.2800",
-        "06. volume": "2937781",
-        "07. latest trading day": "2023-08-21",
-        "08. previous close": "141.4100",
-        "09. change": "0.8700",
-        "10. change percent": "0.6152%"
-    }
+  "image": "0x68747470733a2f2f697066732e696f2f697066732f516d5358416257356b716e3259777435444c336857354d736a654b4a4839724c654c6b51733362527579547871313f66696c656e616d653d73756e2d636861696e6c696e6b2e676966"
 }
 ```
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`Global Quote,05. price`). After applying the provided path, we get the following result:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`image`). After applying the provided path, we get the following result:
 
 ```
-142.2800
-```
-
-#### 4. **Apply the multiplier**:
-
-After filtering the sample response by the provided JSON path, our Chainlink node will multiply the result by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following value, which is ultimately written to your smart contract as a `uint256` object by our Chainlink oracle:
-
-```
-142280000000000000000
+0x68747470733a2f2f697066732e696f2f697066732f516d5358416257356b716e3259777435444c336857354d736a654b4a4839724c654c6b51733362527579547871313f66696c656e616d653d73756e2d636861696e6c696e6b2e676966
 ```
 
 ## Troubleshooting

@@ -19,10 +19,10 @@ Chainlink's [Any API](https://docs.chain.link/any-api/introduction) service is a
 * [AlphaVantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.md)
 
 ### Coin Price Data
-<!-- * [Coin Price Data](/services/direct-request-jobs/examples/coin-price-data/.md) -->
+* [Coin Gecko Data](/services/direct-request-jobs/examples/coin-price-data/CoinGecko.md)
 
 ### IPFS Data
-<!-- * [IPFS Data](/services/direct-request-jobs/examples/.md) -->
+* [IPFS Data](/services/direct-request-jobs/examples/ipfs-data/IPFS.md)
 
 ## Learn More
 

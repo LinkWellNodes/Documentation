@@ -41,7 +41,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         
         // DEFINE THE REQUEST (example)
         req.add('method', 'GET');
-        req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
+        req.add('url', 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=chainlink&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en');
         req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
@@ -50,7 +50,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'ETH,USD');
+        req.add('path', 'current_price');
         req.addInt('multiplier', 10 ** 18);
 
         // Send the request to the Chainlink oracle        

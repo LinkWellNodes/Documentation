@@ -17,7 +17,7 @@ Below we'll walk you through the steps necessary to implement such a solution.
 
 ### 1. Create a MySports API key
 
-In order to retrieve data from the MySports API, you'll need an API key. Luckily, MySports provides API keys for free, and ipsum dolor sit amet.
+In order to retrieve data from the MySports API, you'll need an API key. 
 
 You may request an API key from MySports here: [link](link)
 

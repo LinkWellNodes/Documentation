@@ -4,7 +4,7 @@
 
 AccuWeather provides and supports many different weather APIs that provide up-to-date and highly accurate forecasts around the globe. With AccuWeather's utility APIs, users can retrieve unique identifiers and geographical coordinates for various locations.  AccuWeather offers two different types of APIs - the Core weather API and MinuteCast API. The Core weather API provides endpoints to get daily and hourly weather forecasts, current conditions, and daily index data. It also provides endpoints to search for locations all around the world, including cities and countries. Using the MinuteCast API, you can specify a specific location for a 120-minute precipitation forecasts.
 
-The following guide illustrates an easy example of how to retrieve Accuweather data from within your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
+The following guide illustrates an easy example of how to retrieve a `uint256` value from the AccuWeather API into your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
 
 ## Real-world example
 
