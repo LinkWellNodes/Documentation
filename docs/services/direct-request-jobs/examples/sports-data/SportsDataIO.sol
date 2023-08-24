@@ -42,7 +42,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         // DEFINE THE REQUEST (example)
         req.add('method', 'GET');
         req.add('url', 'https://api.sportsdata.io/v3/mma/scores/json/Fighter/140000098?key={your_key}');
-        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('headers', '["content-type", "application/json"]');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         

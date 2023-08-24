@@ -42,12 +42,12 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         // DEFINE THE REQUEST (example)
         req.add('method', 'GET');
         req.add('url', 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={your_key}');
-        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('headers', '["content-type", "application/json"]');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl request simulates the above request parameters: 
-        // curl -k 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={your_key}' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
+        // curl -k 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={your_key}' --request 'GET' --header 'content-type: application/json'
         
         // PROCESS THE RESULT (example)
         req.add('path', 'Global Quote,05. price');

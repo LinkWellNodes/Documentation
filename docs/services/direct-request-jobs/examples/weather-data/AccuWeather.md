@@ -64,8 +64,7 @@ The following `curl` command simulates the same HTTP request that our Chainlink 
 ```
 curl -k 'https://api.accuweather.com/currentconditions/v1/335315.json?apikey={your key}' \
  --request 'GET' \
- --header 'content-type: application/json' \
- --header 'set-cookie: sid=14A52'
+ --header 'content-type: application/json'
 ```
 
 #### 2. **Analyze the response**:

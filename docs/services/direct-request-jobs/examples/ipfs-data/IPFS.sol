@@ -41,7 +41,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         // DEFINE THE REQUEST (example)
         req.add('method', 'GET');
         req.add('url', 'https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json');
-        req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('headers', '["accept", "application/json"]');
         req.add('body','');
         req.add('contact', 'derek_linkwellnodes.io');
         
