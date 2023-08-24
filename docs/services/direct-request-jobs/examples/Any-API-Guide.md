@@ -13,10 +13,10 @@ Chainlink's [Any API](https://docs.chain.link/any-api/introduction) service is a
 * [AccuWeather](/services/direct-request-jobs/examples/weather-data/AccuWeather.md)
 
 ### Sports Data
-* [AlphaVantage](/services/direct-request-jobs/examples/sports-data/SportsDataIO.md)
+* [SportsDataIO](/services/direct-request-jobs/examples/sports-data/SportsDataIO.md)
 
 ### Stock Price Data
-* [AlphaVantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.md)
+* [Alpha Vantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.md)
 
 ### Coin Price Data
 * [Coin Gecko Data](/services/direct-request-jobs/examples/coin-price-data/CoinGecko.md)

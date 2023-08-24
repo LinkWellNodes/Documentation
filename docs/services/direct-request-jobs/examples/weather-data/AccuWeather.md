@@ -32,6 +32,7 @@ The constructor specifies important information about the request destination an
 [uint256_constructor](/AccuWeather.sol ':include :type=code :fragment=constructor')`
 
 ?> You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
 
 #### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
@@ -61,7 +62,7 @@ Let's walk through each step of the above **sample request**, to better understa
 The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
 
 ```
-curl 'https://api.accuweather.com/currentconditions/v1/335315.json?apikey={your key}' \
+curl -k 'https://api.accuweather.com/currentconditions/v1/335315.json?apikey={your key}' \
  --request 'GET' \
  --header 'content-type: application/json' \
  --header 'set-cookie: sid=14A52'
@@ -74,8 +75,8 @@ The following is a sample response body returned to our Chainlink node by the ab
 ```
 [
   {
-    "LocalObservationDateTime": "2018-11-01T14:11:00-04:00",
-    "EpochTime": 1541095860,
+    "LocalObservationDateTime": "2023-08-24T07:08:00-04:00",
+    "EpochTime": 1692875280,
     "WeatherText": "Cloudy",
     "WeatherIcon": 7,
     "HasPrecipitation": false,
@@ -83,25 +84,25 @@ The following is a sample response body returned to our Chainlink node by the ab
     "IsDayTime": true,
     "Temperature": {
       "Metric": {
-        "Value": 13.9,
+        "Value": 19.6,
         "Unit": "C",
         "UnitType": 17
       },
       "Imperial": {
-        "Value": 57,
+        "Value": 67,
         "Unit": "F",
         "UnitType": 18
       }
     },
-    "MobileLink": "https://m.accuweather.com/en/us/state-college-pa/16801/current-weather/335315?lang=en-us",
-    "Link": "https://www.accuweather.com/en/us/state-college-pa/16801/current-weather/335315?lang=en-us"
+    "MobileLink": "http://www.accuweather.com/en/us/fort-george-g-meade-md/20755/current-weather/8641_pc?lang=en-us",
+    "Link": "http://www.accuweather.com/en/us/fort-george-g-meade-md/20755/current-weather/8641_pc?lang=en-us"
   }
 ]
 ```
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`Imperial,Value`). After applying the provided path, we get the following result:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`0,Temperature,Imperial,Value`). After applying the provided path, we get the following result:
 
 ```
 57

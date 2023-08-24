@@ -41,8 +41,8 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         
         // DEFINE THE REQUEST (example)
         req.add('method', 'GET');
-        req.add('url', 'https://api.accuweather.com/currentconditions/v1/335315.json?apikey={your_key}');
-        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('url', 'http://dataservice.accuweather.com/currentconditions/v1/8641_PC?apikey={your_key}');
+        req.add('headers', '');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         
@@ -50,7 +50,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'Imperial,Value');
+        req.add('path', '0,Temperature,Imperial,Value');
         req.addInt('multiplier', 10 ** 18);
 
         // Send the request to the Chainlink oracle        

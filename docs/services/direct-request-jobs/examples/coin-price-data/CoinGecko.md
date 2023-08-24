@@ -32,6 +32,7 @@ The constructor specifies important information about the request destination an
 [uint256_constructor](/CoinGecko.sol ':include :type=code :fragment=constructor')`
 
 ?> You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
 
 #### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
@@ -103,7 +104,7 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`current_price`). After applying the provided path, we get the following result:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`0,current_price`). After applying the provided path, we get the following result:
 
 ```
 6.23

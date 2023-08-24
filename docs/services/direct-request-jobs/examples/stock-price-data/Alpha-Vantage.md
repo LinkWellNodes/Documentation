@@ -19,7 +19,7 @@ Below we'll walk you through the steps necessary to implement such a solution.
 
 In order to retrieve data from the Alpha Vantage API, you'll need an API key. 
 
-You may request an API key from Alpha Vantage here: [link](https://www.alphavantage.co/support/#api-key)
+You may request an API key from Alpha Vantage [here](https://www.alphavantage.co/support/#api-key).
 
 ### 2. Design your consumer contract
 
@@ -32,6 +32,7 @@ The constructor specifies important information about the request destination an
 [uint256_constructor](/Alpha-Vantage.sol ':include :type=code :fragment=constructor')`
 
 ?> You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
 
 #### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
@@ -61,7 +62,7 @@ Let's walk through each step of the above **sample request**, to better understa
 The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
 
 ```
-curl 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={your_key}' \
+curl -k 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={your_key}' \
  --request 'GET' \
  --header 'content-type: application/json' \
  --header 'set-cookie: sid=14A52'

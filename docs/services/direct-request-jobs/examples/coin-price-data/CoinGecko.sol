@@ -50,7 +50,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'current_price');
+        req.add('path', '0,current_price');
         req.addInt('multiplier', 10 ** 18);
 
         // Send the request to the Chainlink oracle        

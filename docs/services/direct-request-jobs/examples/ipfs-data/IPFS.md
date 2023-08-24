@@ -17,9 +17,7 @@ Below we'll walk you through the steps necessary to implement such a solution.
 
 ### 1. Create a IPFS API key
 
-In order to retrieve data from the IPFS API, you'll need an API key. Luckily, IPFS provides API keys for free, and ipsum dolor sit amet.
-
-You may request an API key from IPFS here: [link](link)
+API keys are not required to use IPFS
 
 ### 2. Design your consumer contract
 
@@ -32,6 +30,7 @@ The constructor specifies important information about the request destination an
 [string-bytes_constructor](/IPFS.sol ':include :type=code :fragment=constructor')`
 
 ?> You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
 
 #### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
