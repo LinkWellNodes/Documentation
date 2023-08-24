@@ -17,7 +17,7 @@ Below we'll walk you through the steps necessary to implement such a solution.
 
 ### 1. Create a IPFS API key
 
-API keys are not required to use IPFS
+API keys are not required to use with IPFS.
 
 ### 2. Design your consumer contract
 

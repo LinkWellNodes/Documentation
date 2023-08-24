@@ -39,14 +39,14 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
 		     
         // DEFINE THE REQUEST (example)
-        req.add('method', 'POST');
+        req.add('method', 'GET');
         req.add('url', 'https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
         req.add('body','');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl request simulates the above request parameters: 
-        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}'
+        // curl -X 'GET' 'https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json' -H 'accept: application/json'
         
         // PROCESS THE RESULT (example)
         req.add('path', 'image');
@@ -65,8 +65,8 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     function fulfill(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         emit RequestFulfilled(requestId, bytesData);
-        responseBytes = bytesData;              // example value: 0x426974636f696e
-        responseString = string(bytesData);     // example value: Bitcoin
+        responseBytes = bytesData;             
+        responseString = string(bytesData);     
     }
 /// [response]
 

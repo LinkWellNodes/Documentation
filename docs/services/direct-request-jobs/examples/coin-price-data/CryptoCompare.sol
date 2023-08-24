@@ -28,7 +28,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         setChainlinkToken(ADD_CHAINLINK_TOKEN_ADDRESS_HERE);
         setOracleAddress(ADD_ORACLE_ADDRESS_HERE);
         
-        setJobId("43309009a154495cb2ed794233e6ff56");
+        setJobId("ADD_JOB_ID_HERE");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 /// [constructor]
@@ -41,16 +41,16 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         
         // DEFINE THE REQUEST (example)
         req.add('method', 'GET');
-        req.add('url', 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=chainlink&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en');
-        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
+        req.add('headers', '');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl request simulates the above request parameters: 
-        // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
+        // curl -X 'GET' 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' -H 'accept: application/json'
         
         // PROCESS THE RESULT (example)
-        req.add('path', '0,current_price');
+        req.add('path', 'ETH,USD');
         req.addInt('multiplier', 10 ** 18);
 
         // Send the request to the Chainlink oracle        
@@ -66,7 +66,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     function fulfill(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response
         emit RequestFulfilled(requestId, data);
-        response = data;     // example value: 1913540000000000000000 (1913.54 before "multiplier" is applied)
+        response = data;     
     }
 /// [response]
 
