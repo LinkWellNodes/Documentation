@@ -1,6 +1,3 @@
-import CodeBlock from '@theme/CodeBlock';
-import get_uint256_constructor_aom from '!!raw-loader!/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol#L23-L28';
-
 Arbitrum-One is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code
 
 <!-- tabs:start -->
@@ -44,7 +41,7 @@ CODEBLOCK TESTING GROUND:
 **docsify style (defunct):**
 
 ```jsx reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol#L22-L27
 ```
 
 #### Add your request function (example):
