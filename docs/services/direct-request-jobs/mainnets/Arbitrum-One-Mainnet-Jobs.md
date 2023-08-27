@@ -36,11 +36,7 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-CODEBLOCK TESTING GROUND:
-
-**docsify style (defunct):**
-
-```jsx reference showLineNumbers
+```jsx reference showLineNumbers title="Consumer contract constructor"
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol#L22-L27
 ```
 

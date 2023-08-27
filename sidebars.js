@@ -1,11 +1,15 @@
-
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 module.exports = {
   docsSidebar: [
-    'docs',
+    'index',
+    {
+        type: 'html',
+        value: '<div class="sidebarGroupTitle">Services</div><hr class="sidebarGroupRuler">',
+        defaultStyle: true
+    },
     {
       type: 'category',
-      label: 'Services',
+      label: 'Direct Request jobs',
+      collapsible: false,
       link: {type: 'doc', id: 'services/direct-request-jobs/Jobs-and-Pricing'},
       items: [
         {
@@ -81,10 +85,10 @@ module.exports = {
   	            label: 'Ethereum Goerli',
               },
               {
-    	            type: 'doc',
-    	            id: 'services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs',
-    	            label: 'Ethereum Sepolia',
-                },
+	            type: 'doc',
+	            id: 'services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs',
+	            label: 'Ethereum Sepolia',
+              },
               {
   	            type: 'doc',
   	            id: 'services/direct-request-jobs/testnets/Optimism-Goerli-Testnet-Jobs',
@@ -100,40 +104,29 @@ module.exports = {
       ],     
     },
     {
-      type: 'category',
-      label: 'Knowledge Base',
-      // link: {type: 'doc', id: 'services/testnets/testnets'},
-      items: [
-        {
-          type: 'doc',
-          id: 'knowledgebase/Any-API-Guide',
-          label: 'Any API Guide',
-        },
-        {
-          type: 'doc',
-          id: 'knowledgebase/Direct-Request-Guide',
-          label: 'Direct Request Guide',
-        },
-        {
-          type: 'category',
-          label: 'FAQ',
-          // link: {type: 'doc', id: 'services/direct-request-jobs/testnets/Testnets'},
-          items: [
-            {
-              type: 'doc',
-              id: 'knowledgebase/Chainlink-Operators-FAQ',
-              label: 'Chainlink Node Operators',
-            },
-            {
-              type: 'doc',
-              id: 'knowledgebase/Chainlink-Users-FAQ',
-              label: 'Chainlink Data Consumers',
-            },
-          ]
-        }
-      ]
+        type: 'html',
+        value: '<div class="sidebarGroupTitle">Knowledgebase</div><hr class="sidebarGroupRuler">',
+        defaultStyle: true
+    },
+    {
+      type: 'doc',
+      id: 'knowledgebase/Any-API-Guide',
+      label: 'Any API Guide',
+    },
+    {
+      type: 'doc',
+      id: 'knowledgebase/Direct-Request-Guide',
+      label: 'Direct Request Guide',
+    },
+    {
+      type: 'doc',
+      id: 'knowledgebase/Chainlink-Operators-FAQ',
+      label: 'Chainlink Node Operators',
+    },
+    {
+      type: 'doc',
+      id: 'knowledgebase/Chainlink-Users-FAQ',
+      label: 'Chainlink Data Consumers',
     }
   ]
 };
-
-// module.exports = sidebars;

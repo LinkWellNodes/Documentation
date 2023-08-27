@@ -45,10 +45,6 @@ const config = {
           path: './docs', // this should be the path to your docs folder
           routeBasePath: '/',  // this should be the word that you want to set
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -58,15 +54,13 @@ const config = {
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/style.css'),
         },
       }),
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+  themeConfig: {
       // Replace with your project's social card
       image: 'img/LinkWellLogo.png',
       navbar: {
@@ -76,11 +70,16 @@ const config = {
           src: 'img/favicon.ico',
         },
         items: [
+		  {
+		    href: 'https://linkwellnodes.io',
+		    label: 'Home',
+		    position: 'left',
+		  },
           {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Docs',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -165,7 +164,7 @@ const config = {
           runmeLinkLabel: 'Checkout via Runme'
         },
       },
-    }),
+    },
 };
 
 module.exports = config;

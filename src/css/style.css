@@ -33,6 +33,27 @@ h4 {
 	font-size:16px;
 	font-weight:600;
 }
+.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+	display: none;	/** remove any code block titles forced by @saucelabs/theme-github-codeblock plugin*/
+}
+.sidebarGroupTitle {
+	margin-top: 16px;
+	font-family: 'Open Sans',sans-serif;
+	color: #000;
+	font-size:12px;
+	font-weight:600;
+	text-transform: uppercase;
+}
+.sidebarGroupRuler {
+	background-color: #E3E3E3;
+	margin-top: 14px;
+	margin-bottom: 0px;
+}
+.menu__link {
+	font-family: 'Open Sans',sans-serif;
+	color: #4D4D4D;
+	font-weight:400;
+}
 :root {
   --ifm-color-primary: #0B87DF;
   --ifm-color-primary-dark: #295578;

@@ -1,4 +1,9 @@
-# Documentation
+---
+id: index
+slug: /
+---
+
+# Start Here
 
 ## Direct Request Job Info
 
