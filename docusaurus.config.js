@@ -84,6 +84,16 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://discordapp.com/invite/docusaurus',
+            label: 'Discord',
+            position: 'right',
+          },
+          {
+            href: 'https://twitter.com/LinkWell_Nodes',
+            label: 'Twitter',
+            position: 'right',
+          },                    
         ],
       },
       footer: {
@@ -93,9 +103,13 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/index',
+                label: 'Documentation',
+                to: '/docs',
               },
+              {
+                label: 'Services',
+                to: '/services/direct-request-jobs/Jobs-and-Pricing',
+              },                     
             ],
           },
           {
@@ -113,6 +127,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/LinkWell_Nodes',
               },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/linkwell-nodes',
+              },              
             ],
           },
           {

@@ -6,8 +6,8 @@ Please use the links below to view our direct request job offerings. If you run 
 
 ### View our jobs:
 
-* [Mainnets](/services/direct-request-jobs/mainnets/Mainnets)
-* [Testnets](/services/direct-request-jobs/testnets/Testnets)
+* [Mainnets](/services/direct-request-jobs/mainnets/)
+* [Testnets](/services/direct-request-jobs/testnets/)
 
 # Pricing
 
@@ -21,7 +21,9 @@ When you make a request to a Chainlink oracle, you'll send a fee (denominated in
 
 After retrieving your requested data, the node operator pays for the required `gas` to write the result onto the blockchain, in the currency of the respective chain's native gas token (ie, `ETH`).
 
-?> To ensure you send the appropriate amount of LINK with your request, please ensure that your consumer contract is funded with sufficient LINK token, and that the `fee` variable within your consumer contract matches the one specified within our documentation for the related job. 
+:::info 
+To ensure you send the appropriate amount of LINK with your request, please ensure that your consumer contract is funded with sufficient LINK token, and that the `fee` variable within your consumer contract matches the one specified within our documentation for the related job. 
+:::
 
 ## Fee considerations
 
@@ -32,7 +34,9 @@ Our per-request pricing is outlined on our respective [job pages](#view-our-jobs
 1. [Our own infrastructure costs](#_3-infrastructure-costs)
 1. [The pricing of our fellow node operators](#_4-the-pricing-of-our-fellow-node-operators) 
 
-!> While we make every effort to keep our pricing consistent, as market conditions change, we may eventually need to re-evaluate. As such, it's recommended to keep your LINK payment configurable (ie, the `fee` object within your consumer contract), so that you can easily accommodate any such changes without having to re-deploy your contract. By default, all consumer contract examples present within our documentation provide an interface for updating fees (see: `setFeeInHundredthsOfLink()` method).
+:::warning 
+While we make every effort to keep our pricing consistent, as market conditions change, we may eventually need to re-evaluate. As such, it's recommended to keep your LINK payment configurable (ie, the `fee` object within your consumer contract), so that you can easily accommodate any such changes without having to re-deploy your contract. By default, all consumer contract examples present within our documentation provide an interface for updating fees (see: `setFeeInHundredthsOfLink()` method).
+:::
 
 
 #### 1. Gas costs on the specified network
@@ -83,7 +87,7 @@ To learn more about how Chainlink's direct request model works, visit our [Direc
 
 ## Troubleshooting
 
-Having technical difficulties with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having technical difficulties with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting#direct-request-job-troubleshooting) for direct request jobs.
 
 ## Need more help?
 * Join our [Discord](https://discord.gg/AJ66pRz4) for the fastest assistance with your request. We are happy to support custom data requests as well!
