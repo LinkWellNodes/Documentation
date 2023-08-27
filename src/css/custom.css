@@ -5,6 +5,34 @@
  */
 
 /* You can override the default Infima variables here. */
+body {
+	font-family: 'Open Sans',sans-serif;
+	color: #4D4D4D;
+}
+h1 {
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+	font-size:38px;
+	font-weight:600;
+}
+h2 {
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+	font-size:28px;
+	font-weight:400;
+}
+h3 {
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+	font-size:20px;
+	font-weight:600;
+}
+h4 {
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+	font-size:16px;
+	font-weight:600;
+}
 :root {
   --ifm-color-primary: #0B87DF;
   --ifm-color-primary-dark: #295578;

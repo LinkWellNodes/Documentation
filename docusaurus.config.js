@@ -115,13 +115,9 @@ const config = {
           {
             title: 'Community',
             items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/Xs6SjqVPUA',
               },
               {
                 label: 'Twitter',
@@ -154,11 +150,11 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       themes: [
-        'docusaurus-theme-github-codeblock'
+          '@saucelabs/theme-github-codeblock'
       ],
       themeConfig: {
         prism: {
-          additionalLanguages: ['solidity'],
+          additionalLanguages: ['solidity'],	// not sure if this is supported? https://lucidar.me/en/web-dev/list-of-supported-languages-by-prism/
         },
         // github codeblock theme configuration
         codeblock: {
@@ -166,7 +162,7 @@ const config = {
           githubLinkLabel: 'View on GitHub',
           showRunmeLink: false,
           runmeLinkLabel: 'Checkout via Runme'
-      },
+        },
       },
     }),
 };
