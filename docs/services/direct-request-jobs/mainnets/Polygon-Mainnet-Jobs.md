@@ -1,5 +1,3 @@
-## Polygon Mainnet Jobs
-
 Polygon is a "layer two" or "sidechain" scaling solution that runs alongside the Ethereum blockchain - allowing for speedy transactions and low fees. MATIC is the network's native cryptocurrency, which is used for fees, staking, and more.
 
 You can use the [Polygon Bridge](https://wallet.polygon.technology/polygon/bridge) to transfer tokens to Polygon mainnet and then use [Polygon Gas Swap](https://wallet.polygon.technology/polygon/gas-swap) to swap supported tokens to MATIC.

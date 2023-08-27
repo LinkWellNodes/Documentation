@@ -29,3 +29,5 @@ Thumbs.db
 *backup*.sql
 deploy-bucket/lib/
 .git.bak
+/node_modules/
+/.docusaurus/

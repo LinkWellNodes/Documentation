@@ -1,4 +1,4 @@
-# Our Mission
+# About Us
 **Led by truth over trust. Driven to innovate, build and create. Our mission is to support Chainlink in enabling developers, startups and enterprises to unlock the true value of Web3.**
 
 ## Who We Are

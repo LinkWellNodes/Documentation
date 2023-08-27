@@ -1,5 +1,3 @@
-## Ethereum Mainnet Jobs
-
 Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code.
 
 <!-- tabs:start -->

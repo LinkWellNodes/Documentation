@@ -1,6 +1,4 @@
-# Frequently Asked Questions (FAQ)
-
-## Chainlink Node Operators
+# Chainlink Node Operators
 
 The following is a list of frequently-asked questions and answers collected from our experience supporting the `#nodes`, `#operator-requests`, and `#external-adapters` channels within the [Chainlink Official Discord server](https://discord.com/invite/chainlink).
 

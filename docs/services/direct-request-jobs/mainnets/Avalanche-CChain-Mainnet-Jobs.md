@@ -1,5 +1,3 @@
-## Avalanche Mainnet Jobs
-
 Avalanche is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code.
 
 <!-- tabs:start -->

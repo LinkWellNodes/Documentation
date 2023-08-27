@@ -12,7 +12,7 @@ Before diving into Chainlink's direct request architecture, it's important to un
 1. Our Chainlink nodes receive the request, make an HTTP request to the appropriate API endpoint, and write the result back to your consumer contract.
 1. Your Web3 application reads the data from your consumer contract.
 
-![dr-workflow](/../media/DR-Request-Workflow.png)
+![dr-workflow](/img/DR-Request-Workflow.png)
 
 ## Key Terms
 
@@ -29,7 +29,7 @@ The following diagram demonstrates the direct request workflow.
 1. The diagram begins with a call to your consumer contract's request function, via a Solidity-based IDE such as [Remix](https://remix-project.org/#:~:text=JUMP%20INTO%20WEB3,teaching%20and%20experimenting%20with%20Ethereum.), combined with a Web3 wallet provider such as [MetaMask](https://metamask.io). 
 1. The left-hand workflow (**testnets**) is virtually the same as the right-hand workflow (**mainnets**) with the exception of needing to fund your consumer contract with LINK tokens before making a request.  
 
-![dr-workflow](/../media/CL_DR_Model.png) 
+![dr-workflow](/img/CL_DR_Model.png) 
 
 ## Getting Started with Direct Requests
 
