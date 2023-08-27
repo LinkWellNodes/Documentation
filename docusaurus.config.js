@@ -31,6 +31,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  
+  themes: [
+	  '@saucelabs/theme-github-codeblock'
+  ],
 
   presets: [
     [
@@ -149,9 +153,6 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      themes: [
-          '@saucelabs/theme-github-codeblock'
-      ],
       themeConfig: {
         prism: {
           additionalLanguages: ['solidity'],	// not sure if this is supported? https://lucidar.me/en/web-dev/list-of-supported-languages-by-prism/

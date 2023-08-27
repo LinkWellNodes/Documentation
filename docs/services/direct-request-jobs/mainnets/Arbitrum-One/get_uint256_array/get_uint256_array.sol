@@ -17,17 +17,14 @@ contract getUint256Array is ChainlinkClient, ConfirmedOwner {
   uint256[] public uint256Array;
   bytes32 private jobId;
   uint256 private fee;
-
-/// [constructor]    
+    
   constructor() ConfirmedOwner(msg.sender) {
     setChainlinkToken(0xf97f4df75117a78c1A5a0DBb814Af92458539FB4);
     setChainlinkOracle(0xD8edDB284d25DbbC5189E488639D689DFE7AaB49);
     jobId = "9a2ba54374f34184bdc6390db3171994";
     fee = ((15 * LINK_DIVISIBILITY) / 100); // 0.15 LINK (varies by network and job)
-  }
-/// [constructor]    
+  }    
 
-/// [request]
   function requestUint256Array()
     public
     onlyOwner
@@ -37,7 +34,6 @@ contract getUint256Array is ChainlinkClient, ConfirmedOwner {
     req.add("path", "JSON_PATH"); // Example: bids,0
     sendOperatorRequest(req, fee);
   }
-/// [request]
 
   event RequestFulfilledArray(bytes32 indexed requestId, uint256[] _uint256Array);
 

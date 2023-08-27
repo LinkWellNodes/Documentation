@@ -26,17 +26,14 @@ contract getUint256x2 is ChainlinkClient, ConfirmedOwner {
         uint256 value1,
         uint256 value2
     );
-
-/// [constructor]    
+    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0xf97f4df75117a78c1A5a0DBb814Af92458539FB4);
         setChainlinkOracle(0xD8edDB284d25DbbC5189E488639D689DFE7AaB49);
         jobId = "fe82fb4d00794483a1cf5ed23bd5e1b7";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
-    }
-/// [constructor]    
+    }    
 
-/// [request]
     function requestUint256x2() public {
         Chainlink.Request memory req = buildOperatorRequest(
             jobId,
@@ -56,7 +53,6 @@ contract getUint256x2 is ChainlinkClient, ConfirmedOwner {
         req.addInt("times", timesAmount);
         sendOperatorRequest(req, fee); 
     }
-/// [request]
 
     function fulfillUint256x2(
         bytes32 requestId,

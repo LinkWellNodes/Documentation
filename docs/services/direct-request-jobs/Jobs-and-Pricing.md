@@ -29,10 +29,10 @@ To ensure you send the appropriate amount of LINK with your request, please ensu
 
 Our per-request pricing is outlined on our respective [job pages](#view-our-jobs), and is based on the following environmental factors: 
 
-1. [Gas costs on the specified network](#_1-gas-costs-on-the-specified-network)
-1. [The data type and quantity returned](#_2-the-data-type-and-quantity-returned)
-1. [Our own infrastructure costs](#_3-infrastructure-costs)
-1. [The pricing of our fellow node operators](#_4-the-pricing-of-our-fellow-node-operators) 
+1. [Gas costs on the specified network](#1-gas-costs-on-the-specified-network)
+1. [The data type and quantity returned](#2-the-data-type-and-quantity-returned)
+1. [Our own infrastructure costs](#3-infrastructure-costs)
+1. [The pricing of our fellow node operators](#4-the-pricing-of-our-fellow-node-operators) 
 
 :::warning 
 While we make every effort to keep our pricing consistent, as market conditions change, we may eventually need to re-evaluate. As such, it's recommended to keep your LINK payment configurable (ie, the `fee` object within your consumer contract), so that you can easily accommodate any such changes without having to re-deploy your contract. By default, all consumer contract examples present within our documentation provide an interface for updating fees (see: `setFeeInHundredthsOfLink()` method).

@@ -20,17 +20,14 @@ contract getBytes is ChainlinkClient, ConfirmedOwner {
     bytes32 private jobId;
     uint256 private fee;
 
-
-/// [constructor]    
+    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x404460C6A5EdE2D891e8297795264fDe62ADBB75);
         setChainlinkOracle(0x20f6596bA2c39EFd9340F2aF0428D541f7C51954);
         jobId = "5b48fe6ac244436bb5ad689ab64ef28b";
         fee = ((15 * LINK_DIVISIBILITY) / 100); // 0.15 LINK (varies by network and job)
-    }
-/// [constructor]    
+    }    
 
-/// [request]
     function requestBytes() public {
         Chainlink.Request memory req = buildOperatorRequest(
             jobId,
@@ -43,7 +40,6 @@ contract getBytes is ChainlinkClient, ConfirmedOwner {
         req.add("path", "JSON_PATH"); // Example: image
         sendOperatorRequest(req, fee);
     }
-/// [request]
 
     event RequestFulfilled(bytes32 indexed requestId, bytes indexed data);
 

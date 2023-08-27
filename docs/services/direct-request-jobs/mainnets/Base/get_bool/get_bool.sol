@@ -18,17 +18,14 @@ contract getBool is ChainlinkClient, ConfirmedOwner {
   bytes32 private jobId;
   uint256 private fee;
   event requestBoolFulfilled(bytes32 indexed requestId,bool indexed boolean);
-
-/// [constructor]    
+    
   constructor() ConfirmedOwner(msg.sender) {
     setChainlinkToken(0x88038752750D7717a19F2A681eF75e65Fb714f1E);
     setChainlinkOracle(0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c);
     jobId = "2e0a430bcd2b482d8462fdcc5224fba1";
     fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
-  }
-/// [constructor]    
+  }    
 
-/// [request]
   function requestBool()
     public
     onlyOwner
@@ -38,7 +35,6 @@ contract getBool is ChainlinkClient, ConfirmedOwner {
     req.add("path", "JSON_PATH"); // Example: symbols,0,isSpotTradingAllowed
     sendOperatorRequest(req, fee);
   }
-/// [request]
 
   function fulfillBool(bytes32 _requestId, bool _boolean)
     public

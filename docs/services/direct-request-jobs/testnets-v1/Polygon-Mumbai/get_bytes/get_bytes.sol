@@ -24,17 +24,14 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     bytes32 private jobId;
     uint256 private fee;
 
-
-/// [constructor]    
+    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
         setChainlinkOracle(0x12A3d7759F745f4cb8EE8a647038c040cB8862A5);
         jobId = "8ced832954544a3c98543c94a51d6a8d";
         fee = (0 * LINK_DIVISIBILITY) / 10; // 0 LINK (varies by network and job)
     }
-/// [constructor]
 
-/// [request]
     function request() public {
         Chainlink.Request memory req = buildOperatorRequest(
             jobId,
@@ -49,7 +46,6 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
 		
         sendOperatorRequest(req, fee);
     }
-/// [request]
 
     event RequestFulfilled(bytes32 indexed requestId, bytes indexed data);
 

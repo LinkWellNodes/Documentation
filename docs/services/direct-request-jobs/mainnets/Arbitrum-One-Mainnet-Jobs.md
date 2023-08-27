@@ -43,18 +43,9 @@ CODEBLOCK TESTING GROUND:
 
 **docsify style (defunct):**
 
-[get_uint256_constructor_aom](/Arbitrum-One/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
-
-**docusaurus-theme-github-codeblock Style:** https://github.com/saucelabs/docusaurus-theme-github-codeblock
-
-```js reference
+```jsx reference showLineNumbers
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol#L23-L28
 ```
-
-**raw-loader style:** https://docusaurus.io/docs/markdown-features/react#importing-code-snippets
-
-<CodeBlock language="jsx" showLineNumbers>{get_uint256_constructor_aom}</CodeBlock>
-
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:

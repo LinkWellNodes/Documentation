@@ -20,17 +20,14 @@ contract getString is ChainlinkClient, ConfirmedOwner {
     uint256 private fee;
 
     event requestStringFulfilled(bytes32 indexed requestId, string id);
-
-/// [constructor]    
+    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x404460C6A5EdE2D891e8297795264fDe62ADBB75);
         setChainlinkOracle(0x20f6596bA2c39EFd9340F2aF0428D541f7C51954);
         jobId = "1cc553d092584937bfe9be9a3dd4c1f6";
         fee = ((15 * LINK_DIVISIBILITY) / 100); // 0.15 LINK (varies by network and job)
-    }
-/// [constructor]    
+    }    
 
-/// [request]
     function requestStringData() public returns (bytes32 requestId) {
         Chainlink.Request memory req = buildOperatorRequest(
             jobId,
@@ -44,7 +41,6 @@ contract getString is ChainlinkClient, ConfirmedOwner {
         // Sends the request
         return sendOperatorRequest(req, fee);
     }
-/// [request]
 
     function fulfillString(
         bytes32 _requestId,

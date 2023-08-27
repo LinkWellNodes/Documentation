@@ -19,17 +19,14 @@ contract LinkWellInt256ConsumerContractExample is ChainlinkClient, ConfirmedOwne
 	address private oracleAddress;
     bytes32 private jobId;
     uint256 private fee;
-
-/// [constructor]    
+    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
         setOracleAddress(0xB9C47B9609174716CE536324d4FbEad9292c1d3a);
         setJobId("7f221811c63d49dd98031f957bf9bce0");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
-/// [constructor]
 
-/// [request]
     // Send a request to the Chainlink oracle
     function request() public {
     
@@ -52,7 +49,6 @@ contract LinkWellInt256ConsumerContractExample is ChainlinkClient, ConfirmedOwne
         // Send the request to the Chainlink oracle        
         sendOperatorRequest(req, fee);
     }
-/// [request]
 
 /// [response]
     int256 public response;

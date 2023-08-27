@@ -19,17 +19,14 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
     bytes32 private jobId;
     uint256 private fee;
 
-
-/// [constructor]    
+    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x88038752750D7717a19F2A681eF75e65Fb714f1E);
         setChainlinkOracle(0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c);
         jobId = "b090204b16644030844a6e91932a7626";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
-    }
-/// [constructor]    
+    }    
 
-/// [request]
     function postUint256() public {
         Chainlink.Request memory req = buildOperatorRequest(
             jobId,
@@ -46,7 +43,6 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
         req.addInt("times", timesAmount);
         sendOperatorRequest(req, fee);
     }
-/// [request]
 
     function fulfillUint256(
         bytes32 requestId,

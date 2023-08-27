@@ -19,8 +19,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
 	address private oracleAddress;
     bytes32 private jobId;
     uint256 private fee;
-
-/// [constructor]    
+    
     constructor() ConfirmedOwner(msg.sender) {
     	// The Chainlink token address and Oracle address vary by network. 
     	// You may find the appropriate values for each network here: https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing
@@ -30,9 +29,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         setJobId("ADD_JOB_ID_HERE");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
-/// [constructor]
 
-/// [request]
     // Send a request to the Chainlink oracle
     function request() public {
     
@@ -54,7 +51,6 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         // Send the request to the Chainlink oracle
         sendOperatorRequest(req, fee);
     }
-/// [request]
 
 /// [response]
     bytes public responseBytes;

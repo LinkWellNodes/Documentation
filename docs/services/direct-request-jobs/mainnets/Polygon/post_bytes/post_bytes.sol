@@ -19,17 +19,14 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
     bytes32 private jobId;
     uint256 private fee;
 
-
-/// [constructor]    
+    
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0xb0897686c545045aFc77CF20eC7A532E3120E0F1);
         setChainlinkOracle(0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68);
         jobId = "b3390c03bfc24b42a0b0ab8051471bbb";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
-    }
-/// [constructor]    
+    }    
 
-/// [request]
     function postBytes() public {
         Chainlink.Request memory req = buildOperatorRequest(
             jobId,
@@ -42,7 +39,6 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
         req.add("path", "JSON_PATH"); // Example: "RAW,LINK,USD,LASTMARKET"
         sendOperatorRequest(req, fee);
     }
-/// [request]
 
     event RequestFulfilled(bytes32 indexed requestId, bytes indexed data);
 
