@@ -50,21 +50,21 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L1-L2
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L23-L28
 ```
-
-<!-- [uint256_constructor](/Arbitrum-Goerli/uint256/uint256.sol ':include :type=code :fragment=constructor')` -->
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L31-L51
+```
+
 #### 3. Retrieve the response (example):
 
-<!-- [uint256_response](/Arbitrum-Goerli/uint256/uint256.sol ':include :type=code :fragment=response') -->
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L53-L61
+```
 
 ### Need to send sensitive information?
 
