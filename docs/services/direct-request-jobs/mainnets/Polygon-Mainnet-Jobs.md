@@ -5,10 +5,8 @@ You can use the [Polygon Bridge](https://wallet.polygon.technology/polygon/bridg
 ?> ERC-677 LINK ON POLYGON - The LINK provided by the Polygon (Matic) Bridge is not ERC-677 compatible, so you cannot use it with Chainlink services or oracle nodes. Use the Chainlink PegSwap service to convert bridged LINK to the official ERC-677 LINK token on Polygon.
 
 
-
 <!-- tabs:start -->
 #### **GET > Uint256**
-
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 

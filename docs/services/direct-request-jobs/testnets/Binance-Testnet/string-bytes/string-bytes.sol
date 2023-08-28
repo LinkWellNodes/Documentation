@@ -49,7 +49,6 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         sendOperatorRequest(req, fee);
     }
 
-/// [response]
     bytes public responseBytes;
     string public responseString;
 
@@ -61,9 +60,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         responseBytes = bytesData;              // example value: 0x426974636f696e
         responseString = string(bytesData);     // example value: Bitcoin
     }
-/// [response]
 
-/// [maintenance]
     // Update oracle address
     function setOracleAddress(address _oracleAddress) public onlyOwner {
         oracleAddress = _oracleAddress;
@@ -91,7 +88,6 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     function getFeeInHundredthsOfLink() public view onlyOwner returns (uint256) {
         return (fee * 100) / LINK_DIVISIBILITY;
     }
-/// [maintenance]
 
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());

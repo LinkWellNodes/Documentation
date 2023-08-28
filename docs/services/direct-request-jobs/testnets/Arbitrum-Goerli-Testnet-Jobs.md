@@ -135,7 +135,6 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 ```
 </TabItem>
 
-
 <TabItem value="Uint256[]"> 
 
 ---
@@ -271,7 +270,6 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 [412430000000000000000,983890000000000000000,473310000000000000000]
 ```
 </TabItem>
-
 
 <TabItem value="Int256"> 
 
@@ -990,7 +988,6 @@ Data entered into a smart contract is visible to the general public.
 :::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
-
 
 ### Troubleshooting
 

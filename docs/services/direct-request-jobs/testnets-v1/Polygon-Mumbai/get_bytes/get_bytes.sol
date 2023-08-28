@@ -58,7 +58,6 @@ contract LinkWellConsumerContractExample is ChainlinkClient, ConfirmedOwner {
         dataStr = string(data);
     }
 
-
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
         require(

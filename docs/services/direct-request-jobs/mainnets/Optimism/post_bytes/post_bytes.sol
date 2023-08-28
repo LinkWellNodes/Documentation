@@ -51,7 +51,6 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
 
     }
 
-
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
         require(

@@ -49,7 +49,6 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         sendOperatorRequest(req, fee);
     }
 
-/// [response]
     bytes[] public responseBytesArr;
     string[] public responseStringArr;
 
@@ -63,9 +62,7 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
             responseStringArr.push(string(responseBytesArr[i]));     // example value: responseStringArr[0] = "Coinbase", responseStringArr[1] = "Binance", responseStringArr[2] = "Kraken"
         }
     }
-/// [response]
 
-/// [maintenance]
     // Update oracle address
     function setOracleAddress(address _oracleAddress) public onlyOwner {
         oracleAddress = _oracleAddress;
@@ -93,7 +90,6 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
     function getFeeInHundredthsOfLink() public view onlyOwner returns (uint256) {
         return (fee * 100) / LINK_DIVISIBILITY;
     }
-/// [maintenance]
 
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());

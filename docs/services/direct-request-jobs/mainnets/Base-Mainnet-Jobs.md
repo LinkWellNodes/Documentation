@@ -3,7 +3,6 @@ Base is a "layer-2" optimistic rollup solution for the Ethereum blockchain, deve
 <!-- tabs:start -->
 #### **GET > Uint256**
 
-
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 
 ### Job details

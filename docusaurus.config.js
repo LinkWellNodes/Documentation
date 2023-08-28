@@ -69,6 +69,7 @@ const config = {
           alt: 'LinkWell Nodes',
           src: 'img/favicon.ico',
         },
+        hideOnScroll: true,
         items: [
 		  {
 		    href: 'https://linkwellnodes.io',
@@ -82,6 +83,7 @@ const config = {
             label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/about', label: 'About Us', position: 'left'},          
           {
             href: 'https://github.com/LinkWellNodes/Documentation',
             label: 'GitHub',
@@ -150,19 +152,8 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-      themeConfig: {
-        prism: {
-          additionalLanguages: ['solidity'],	// not sure if this is supported? https://lucidar.me/en/web-dev/list-of-supported-languages-by-prism/
-        },
-        // github codeblock theme configuration
-        codeblock: {
-          showGithubLink: true,
-          githubLinkLabel: 'View on GitHub',
-          showRunmeLink: false,
-          runmeLinkLabel: 'Checkout via Runme'
-        },
+        darkTheme: darkCodeTheme,      
+        additionalLanguages: ['solidity'],        
       },
     },
 };

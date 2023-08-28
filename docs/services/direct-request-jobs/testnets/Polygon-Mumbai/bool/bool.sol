@@ -49,7 +49,6 @@ contract LinkWellBoolConsumerContractExample is ChainlinkClient, ConfirmedOwner 
         sendOperatorRequest(req, fee);
     }
 
-/// [response]
     bool public response;
 
     // Receive the result from the Chainlink oracle
@@ -59,9 +58,7 @@ contract LinkWellBoolConsumerContractExample is ChainlinkClient, ConfirmedOwner 
         emit RequestFulfilled(requestId, data);
         response = data;     // example value: true
     }
-/// [response]
 
-/// [maintenance]
     // Update oracle address
     function setOracleAddress(address _oracleAddress) public onlyOwner {
         oracleAddress = _oracleAddress;
@@ -89,7 +86,6 @@ contract LinkWellBoolConsumerContractExample is ChainlinkClient, ConfirmedOwner 
     function getFeeInHundredthsOfLink() public view onlyOwner returns (uint256) {
         return (fee * 100) / LINK_DIVISIBILITY;
     }
-/// [maintenance]
 
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());

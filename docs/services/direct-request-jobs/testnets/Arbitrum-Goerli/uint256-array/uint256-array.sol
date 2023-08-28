@@ -50,7 +50,6 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
         sendOperatorRequest(req, fee);
     }
 
-/// [response]
     uint256[] public responseArr;
 
     // Receive the result from the Chainlink oracle
@@ -60,9 +59,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
         emit RequestFulfilled(requestId, data);
         responseArr = data;     // example value: responseArr[0] = 412430000000000000000, responseArr[1] = 983890000000000000000, responseArr[2] = 473310000000000000000
     }
-/// [response]
 
-/// [maintenance]
     // Update oracle address
     function setOracleAddress(address _oracleAddress) public onlyOwner {
         oracleAddress = _oracleAddress;
@@ -90,7 +87,6 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
     function getFeeInHundredthsOfLink() public view onlyOwner returns (uint256) {
         return (fee * 100) / LINK_DIVISIBILITY;
     }
-/// [maintenance]
 
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());

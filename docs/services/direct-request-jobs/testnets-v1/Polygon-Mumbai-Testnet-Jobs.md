@@ -6,7 +6,6 @@ Please see below for our Chainlink direct request job offerings on the Polygon-M
 <!-- tabs:start -->
 #### **GET > Uint256**
 
-
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
 
 ### Job details

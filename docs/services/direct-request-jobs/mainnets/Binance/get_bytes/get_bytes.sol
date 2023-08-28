@@ -52,7 +52,6 @@ contract getBytes is ChainlinkClient, ConfirmedOwner {
         image_url = string(data);
     }
 
-
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
         require(
