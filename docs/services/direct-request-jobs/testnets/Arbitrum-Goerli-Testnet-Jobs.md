@@ -76,7 +76,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -175,20 +175,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256-array_constructor](/Arbitrum-Goerli/uint256-array/uint256-array.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256-array/uint256-array.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[uint256-array_request](/Arbitrum-Goerli/uint256-array/uint256-array.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256-array/uint256-array.sol#L31-L51
+```
 
 #### 3. Retrieve the response (example):
 
-[uint256-array_response](/Arbitrum-Goerli/uint256-array/uint256-array.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256-array/uint256-array.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256-array/uint256-array.sol#L53-L61
+```
 
 ### Need to send sensitive information?
 
@@ -200,7 +202,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -311,20 +313,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[int256_constructor](/Arbitrum-Goerli/int256/int256.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256/int256.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[int256_request](/Arbitrum-Goerli/int256/int256.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256/int256.sol#L31-L51
+```
 
 #### 3. Retrieve the response (example):
 
-[int256_response](/Arbitrum-Goerli/int256/int256.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256/int256.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256/int256.sol#L53-L61
+```
 
 ### Need to send sensitive information?
 
@@ -336,7 +340,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -448,20 +452,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[int256-array_constructor](/Arbitrum-Goerli/int256-array/int256-array.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256-array/int256-array.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[int256-array_request](/Arbitrum-Goerli/int256-array/int256-array.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256-array/int256-array.sol#L31-L51
+```
 
 #### 3. Retrieve the response (example):
 
-[int256-array_response](/Arbitrum-Goerli/int256-array/int256-array.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256-array/int256-array.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256-array/int256-array.sol#L53-L61
+```
 
 ### Need to send sensitive information?
 
@@ -473,7 +479,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -583,20 +589,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[bool_constructor](/Arbitrum-Goerli/bool/bool.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool/bool.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[bool_request](/Arbitrum-Goerli/bool/bool.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool/bool.sol#L30-L50
+```
 
 #### 3. Retrieve the response (example):
 
-[bool_response](/Arbitrum-Goerli/bool/bool.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool/bool.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool/bool.sol#L52-L60
+```
 
 ### Need to send sensitive information?
 
@@ -608,7 +616,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -672,7 +680,7 @@ true
 
 ---
 
-## Boolean[]Retrieval
+## Boolean[] Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of boolean values at the given path, and returns the resulting array of booleans (**bool[]**) to your consumer contract.
 
@@ -707,20 +715,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[bool-array_constructor](/Arbitrum-Goerli/bool-array/bool-array.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool-array/bool-array.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[bool-array_request](/Arbitrum-Goerli/bool-array/bool-array.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool-array/bool-array.sol#L30-L50
+```
 
 #### 3. Retrieve the response (example):
 
-[bool-array_response](/Arbitrum-Goerli/bool-array/bool-array.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool-array/bool-array.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool-array/bool-array.sol#L52-L60
+```
 
 ### Need to send sensitive information?
 
@@ -732,7 +742,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -834,20 +844,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes_constructor](/Arbitrum-Goerli/string-bytes/string-bytes.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[string-bytes_request](/Arbitrum-Goerli/string-bytes/string-bytes.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol#L30-L50
+```
 
 #### 3. Retrieve the response (example):
 
-[string-bytes_response](/Arbitrum-Goerli/string-bytes/string-bytes.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol#L52-L62
+```
 
 ### Need to send sensitive information?
 
@@ -859,7 +871,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
@@ -966,20 +978,22 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes-array_constructor](/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[string-bytes-array_request](/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol#L30-L50
+```
 
 #### 3. Retrieve the response (example):
 
-[string-bytes-array_response](/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol#L52-L64
+```
 
 ### Need to send sensitive information?
 
@@ -991,7 +1005,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   

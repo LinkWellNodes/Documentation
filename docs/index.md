@@ -15,7 +15,7 @@ View our collection of [Frequently-Asked Questions](/knowledgebase/Chainlink-Ope
 
 ## About Us
 
-**Who are we?** Learn more about [LinkWell Nodes](/about/About).
+**Who are we?** Learn more about [LinkWell Nodes](/About).
 
 ## Contact Us
 

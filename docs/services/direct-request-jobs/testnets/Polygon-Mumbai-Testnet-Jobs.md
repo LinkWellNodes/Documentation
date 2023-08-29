@@ -1,18 +1,25 @@
-## Polygon Mumbai Testnet Jobs
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
+
 Mumbai network is a testnet that approximates the Polygon Mainnet, and uses Ethereum's Goerli testnet as its Layer 1 protocol.
 
 Please see below for our Chainlink direct request job offerings on the Polygon-Mumbai network. All testnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 ### Select the type of data that you need:
 
-<!-- tabs:start -->
-#### **Uint256**
+<Tabs className="unique-tabs" query-string="current-job">
+<TabItem value="Uint256"> 
+
+---
 
 ## Uint256 Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit unsigned integer (**uint256**) to your consumer contract.
 
-?> This job returns a single **uint256** object, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::info 
+This job returns a single **uint256** object, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::
 
 ### Job metadata
 
@@ -42,38 +49,44 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256_constructor](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[uint256_request](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L31-L51
+```
 
 #### 3. Retrieve the response (example):
 
-[uint256_response](/Polygon-Mumbai/uint256/uint256.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L53-L61
+```
 
 ### Need to send sensitive information?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
 
 ### Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
-## Simulating the above request
+### Simulating the above request
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -120,14 +133,19 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 ```
 1913540000000000000000
 ```
+</TabItem>
 
-#### **Uint256[]**
+<TabItem value="Uint256[]"> 
+
+---
 
 ## Uint256[] Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your consumer contract.
 
-?> This job returns a single **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::info 
+This job returns a single **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::
 
 ### Job metadata
 
@@ -157,38 +175,44 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256-array_constructor](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[uint256-array_request](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L31-L51
+```
 
 #### 3. Retrieve the response (example):
 
-[uint256-array_response](/Polygon-Mumbai/uint256-array/uint256-array.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L53-L61
+```
 
 ### Need to send sensitive information?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
 
 ### Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
-## Simulating the above request
+### Simulating the above request
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -247,14 +271,19 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 ```
 [412430000000000000000,983890000000000000000,473310000000000000000]
 ```
+</TabItem>
 
-#### **Int256**
+<TabItem value="Int256"> 
+
+---
 
 ## Int256 Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit signed integer (**int256**) to your consumer contract.
 
-?> This job returns a single **int256** object, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+:::info  
+This job returns a single **int256** object, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+:::
 
 ### Job metadata
 
@@ -284,38 +313,44 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[int256_constructor](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[int256_request](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L31-L51
+```
 
 #### 3. Retrieve the response (example):
 
-[int256_response](/Polygon-Mumbai/int256/int256.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L53-L61
+```
 
 ### Need to send sensitive information?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
 
 ### Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
-## Simulating the above request
+### Simulating the above request
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -375,13 +410,19 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 -85650000000000000000
 ```
 
-#### **Int256[]**
+</TabItem>
+
+<TabItem value="Int256[]">
+
+---
 
 ## Int256[] Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit signed integers (**int256[]**) to your consumer contract.
 
-?> This job returns a single **int256[]** object, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+:::info  
+This job returns a single **int256[]** object, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+:::
 
 ### Job metadata
 
@@ -411,38 +452,44 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[int256-array_constructor](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[int256-array_request](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L31-L51
+```
 
 #### 3. Retrieve the response (example):
 
-[int256-array_response](/Polygon-Mumbai/int256-array/int256-array.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L53-L61
+```
 
 ### Need to send sensitive information?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
 
 ### Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
-## Simulating the above request
+### Simulating the above request
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -501,14 +548,19 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 ```
 [-412430000000000000000,983890000000000000000,473310000000000000000]
 ```
+</TabItem>
 
-#### **Bool**
+<TabItem value="Bool">
+
+---
 
 ## Boolean Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a boolean value at the given path, and returns the resulting object (**bool**) to your consumer contract.
 
-?> This job returns a single **bool** object, which can store a `true` or `false` value. 
+:::info  
+This job returns a single **bool** object, which can store a `true` or `false` value. 
+:::
 
 ### Job metadata
 
@@ -537,38 +589,44 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[bool_constructor](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[bool_request](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L30-L50
+```
 
 #### 3. Retrieve the response (example):
 
-[bool_response](/Polygon-Mumbai/bool/bool.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L52-L60
+```
 
 ### Need to send sensitive information?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
 
 ### Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
-## Simulating the above request
+### Simulating the above request
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -616,14 +674,19 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 ```
 true
 ```
+</TabItem>
 
-#### **Bool[]**
+<TabItem value="Bool[]">
 
-## Boolean[]Retrieval
+---
+
+## Boolean[] Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of boolean values at the given path, and returns the resulting array of booleans (**bool[]**) to your consumer contract.
 
-?> This job returns a single **bool[]** object, which can store an array of `true` or `false` values. 
+:::info  
+This job returns a single **bool[]** object, which can store an array of `true` or `false` values. 
+:::
 
 ### Job metadata
 
@@ -652,38 +715,44 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[bool-array_constructor](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[bool-array_request](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L30-L50
+```
 
 #### 3. Retrieve the response (example):
 
-[bool-array_response](/Polygon-Mumbai/bool-array/bool-array.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L52-L60
+```
 
 ### Need to send sensitive information?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
 
 ### Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
-## Simulating the above request
+### Simulating the above request
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -734,14 +803,19 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 ```
 [true,false,true]
 ```
+</TabItem>
 
-#### **String (Bytes) **
+<TabItem value="String (Bytes)">
+
+---
 
 ## String (Bytes) Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting dynamic bytes array (**bytes**) - which can also be represented as a **string** - to your consumer contract.
 
-?> This job returns a single **bytes** object, which can readily be converted into a **string** value. 
+:::info 
+This job returns a single **bytes** object, which can readily be converted into a **string** value. 
+:::
 
 ### Job metadata
 
@@ -770,38 +844,44 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes_constructor](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[string-bytes_request](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L30-L50
+```
 
 #### 3. Retrieve the response (example):
 
-[string-bytes_response](/Polygon-Mumbai/string-bytes/string-bytes.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L52-L62
+```
 
 ### Need to send sensitive information?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
+::: 
 
 ### Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
-## Simulating the above request
+### Simulating the above request
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -853,15 +933,23 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 "Bitcoin"
 ```
 
-?> Note that the double-quotes will not be present when retrieving the above response as a `string` object within your smart contract.
+:::info  
+Note that the double-quotes will not be present when retrieving the above response as a `string` object within your smart contract.
+:::
 
-#### **String[] (Bytes[])**
+</TabItem>
+
+<TabItem value="String[] (Bytes[])">
+
+---
 
 ## String[] (Bytes[]) Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting array of dynamic bytes arrays (**bytes[]**) - which can also be represented as a **string[]** - to your consumer contract.
 
-?> This job returns a single **bytes[]** object, which can readily be converted into a **string[]** value. 
+:::info  
+This job returns a single **bytes[]** object, which can readily be converted into a **string[]** value.
+::: 
 
 ### Job metadata
 
@@ -890,38 +978,44 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes-array_constructor](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L23-L28
+```
 
 #### 2. Add your request function (example):
-The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information, reference the above '**Request parameters**' section:
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[string-bytes-array_request](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L30-L50
+```
 
 #### 3. Retrieve the response (example):
 
-[string-bytes-array_response](/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L52-L64
+```
 
 ### Need to send sensitive information?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
+:::
 
 ### Still need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
 
-## Simulating the above request
+### Simulating the above request
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -973,7 +1067,13 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 ["Coinbase","Binance","Kraken"]
 ```
 
-?> Note that the double-quotes will not be present when retrieving any of the above array elements as a `string` within your smart contract. 
+:::info  
+Note that the double-quotes will not be present when retrieving any of the above array elements as a `string` within your smart contract. 
+:::
+
+</TabItem>
+
+<TabItem value="Other...">
 
 #### **Other...**
 
@@ -984,6 +1084,9 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with relevant details about your request. 
 1. We'll assess your request and provide you with a custom job ID that works for you.
 
-?> **Tip**: Join our [Discord](https://discord.gg/AJ66pRz4) to get the fastest service for your request!
+:::tip  
+Join our [Discord](https://discord.gg/AJ66pRz4) to get the fastest service for your request!
+:::
 
-<!-- tabs:end -->
+</TabItem>
+</Tabs>
