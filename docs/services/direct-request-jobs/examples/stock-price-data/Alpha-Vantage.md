@@ -30,7 +30,7 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.sol#L23-L32
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.sol#L23-L32
 ```
 
 :::info 
@@ -41,13 +41,13 @@ You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_H
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.sol#L34-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.sol#L34-L55
 ```
 
 #### 2c. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.sol#L57-L65
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.sol#L57-L65
 ```
 
 ### Need to protect your API key?

@@ -48,20 +48,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256/uint256.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -172,20 +172,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/uint256-array/uint256-array.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -308,20 +308,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256/int256.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -445,20 +445,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/int256-array/int256-array.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -580,20 +580,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool/bool.sol#L52-L60
 ```
 
 ### Need to send sensitive information?
@@ -704,20 +704,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/bool-array/bool-array.sol#L52-L60
 ```
 
 ### Need to send sensitive information?
@@ -831,20 +831,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L52-L62
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes/string-bytes.sol#L52-L62
 ```
 
 ### Need to send sensitive information?
@@ -963,20 +963,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L52-L64
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-Mumbai/string-bytes-array/string-bytes-array.sol#L52-L64
 ```
 
 ### Need to send sensitive information?
