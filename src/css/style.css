@@ -91,7 +91,7 @@ code {
 	font-weight: 400;
 }
 
-/** TABS STYLING */
+/** TABS */
 /* Tabs box */
 .tabs {
 	font-weight: 400;
@@ -107,7 +107,7 @@ code {
 }
 /* Inactive tab */
 .tabs__item[aria-selected='false'] {
-	color: #CBB9B3;
+	color: #B3988E;
 	border-bottom: 1px solid #E3E3E3;
 	padding-top: 18px;
 }
@@ -122,11 +122,17 @@ code {
 }
 /* Entire tab's content panel */
 .tabs-container > .margin-top--md {
-	padding: 24px 24px 24px 24px;
+	padding: 0 24px 24px 24px;
 	margin: 0 !important;
 	border-left: 1px solid #E3E3E3;
 	border-right: 1px solid #E3E3E3;
 	border-bottom: 1px solid #E3E3E3;
+}
+
+/* TABLES */
+/* Header row */
+thead > tr {
+	background-color: #EAEAEA;
 }
 
 :root {

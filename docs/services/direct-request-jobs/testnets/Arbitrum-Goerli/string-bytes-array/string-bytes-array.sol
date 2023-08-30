@@ -43,7 +43,7 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data,0');
+        req.add('path', 'json,data,0,2;json,data,1,0;json,data,2,1');
         
         // Send the request to the Chainlink oracle
         sendOperatorRequest(req, fee);
@@ -57,9 +57,9 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
     function fulfill(bytes32 requestId, bytes[] memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         emit RequestFulfilled(requestId, bytesData);
-        responseBytesArr = bytesData;                                // example value: responseBytesArr[0] = "0x436f696e62617365", responseBytesArr[1] = "0x42696e616e6365", responseBytesArr[2] = "0x4b72616b656e"
+        responseBytesArr = bytesData;                                // example value: responseBytesArr[0] = "0x4b72616b656e", responseBytesArr[1] = "0x48756f6269", responseBytesArr[2] = "0x47656d696e69"
         for (uint i = 0; i < responseBytesArr.length; i++) {
-            responseStringArr.push(string(responseBytesArr[i]));     // example value: responseStringArr[0] = "Coinbase", responseStringArr[1] = "Binance", responseStringArr[2] = "Kraken"
+            responseStringArr.push(string(responseBytesArr[i]));     // example value: responseStringArr[0] = "Kraken", responseStringArr[1] = "Huobi", responseStringArr[2] = "Gemini"
         }
     }
 
