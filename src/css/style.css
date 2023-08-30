@@ -50,6 +50,8 @@ h4 {
 code {
 	background-color: #E3E3E3;
 }
+
+/* Alert info boxes */
 .alert--info {
 	margin: 40px 0 !important;
     padding: 24px;
@@ -66,12 +68,16 @@ code {
 	margin: 40px 0 !important;
 	padding: 24px;
 }
+
+/* Code blocks */
 .codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
 	display: none;	/* remove any code block titles forced by @saucelabs/theme-github-codeblock plugin*/
 }
 .codeBlockContent_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module > pre > code {
 	background-color: #F7F7F7; /* code block background color */
 }
+
+/* Sidebar */
 .sidebarGroupTitle {
 	margin-top: 16px;
 	font-family: 'Open Sans',sans-serif;
@@ -90,10 +96,14 @@ code {
 	color: #4D4D4D;
 	font-weight: 400;
 }
+nav[aria-label="Docs sidebar"] {
+	padding: 8px 0 60px 8px;
+}
 
 /** TABS */
 /* Tabs box */
 .tabs {
+	font-size: 15px;
 	font-weight: 400;
 	background-color: #F7F7F7;
 	border-left: 1px solid #E3E3E3;
@@ -122,7 +132,7 @@ code {
 }
 /* Entire tab's content panel */
 .tabs-container > .margin-top--md {
-	padding: 0 24px 24px 24px;
+	padding: 24px 24px 24px 24px;
 	margin: 0 !important;
 	border-left: 1px solid #E3E3E3;
 	border-right: 1px solid #E3E3E3;

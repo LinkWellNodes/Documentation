@@ -2,6 +2,8 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
+# Avalanche Fuji Testnet Jobs
+
 Avalanche Fuji Testnet is the testnet for Avalanche Mainnet (AVAX), which is a smart contract-capable blockchain platform focused on transaction speed, low costs, and eco-friendliness.
 
 Please see below for our Chainlink direct request job offerings on the Avalanche-Fuji network. All testnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!

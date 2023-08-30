@@ -2,6 +2,8 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
+# Binance Mainnet Jobs
+
 Binance is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code.
 
 <Tabs groupId="dataType" queryString>

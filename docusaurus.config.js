@@ -63,6 +63,10 @@ const config = {
   themeConfig: {
       // Replace with your project's social card
       image: 'img/LinkWellLogo.png',
+      colorMode: {
+          defaultMode: 'light',
+          disableSwitch: true
+        },
       navbar: {
         title: 'LinkWell Nodes',
         logo: {
@@ -82,23 +86,23 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          /*{to: '/blog', label: 'Blog', position: 'left'},*/
           {to: '/about', label: 'About Us', position: 'left'},          
+          {
+        	  href: 'https://discord.gg/Xs6SjqVPUA',
+        	  label: 'Discord',
+        	  position: 'right',
+          },
+          {
+        	  href: 'https://twitter.com/LinkWell_Nodes',
+        	  label: 'Twitter',
+        	  position: 'right',
+          },                    
           {
             href: 'https://github.com/LinkWellNodes/Documentation',
             label: 'GitHub',
             position: 'right',
           },
-          {
-            href: 'https://discordapp.com/invite/docusaurus',
-            label: 'Discord',
-            position: 'right',
-          },
-          {
-            href: 'https://twitter.com/LinkWell_Nodes',
-            label: 'Twitter',
-            position: 'right',
-          },                    
         ],
       },
       footer: {
@@ -137,10 +141,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
+/*              {
                 label: 'Blog',
                 to: '/blog',
-              },
+              },*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/LinkWellNodes/Documentation',
