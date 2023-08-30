@@ -67,10 +67,10 @@ code {
 	padding: 24px;
 }
 .codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
-	display: none;	/** remove any code block titles forced by @saucelabs/theme-github-codeblock plugin*/
+	display: none;	/* remove any code block titles forced by @saucelabs/theme-github-codeblock plugin*/
 }
 .codeBlockContent_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module > pre > code {
-	background-color: #F7F7F7; /** code block background color */
+	background-color: #F7F7F7; /* code block background color */
 }
 .sidebarGroupTitle {
 	margin-top: 16px;
@@ -88,8 +88,47 @@ code {
 .menu__link {
 	font-family: 'Open Sans',sans-serif;
 	color: #4D4D4D;
-	font-weight:400;
+	font-weight: 400;
 }
+
+/** TABS STYLING */
+/* Tabs box */
+.tabs {
+	font-weight: 400;
+	background-color: #F7F7F7;
+	border-left: 1px solid #E3E3E3;
+	border-right: 1px solid #E3E3E3;
+	border-top: 1px solid #E3E3E3;
+}
+/* Tab defaults */
+.tabs__item {
+	border-right: 1px solid #E3E3E3;
+	border-radius: 0;
+}
+/* Inactive tab */
+.tabs__item[aria-selected='false'] {
+	color: #CBB9B3;
+	border-bottom: 1px solid #E3E3E3;
+	padding-top: 18px;
+}
+/* Active tab */ 
+.tabs__item[aria-selected='true'] {
+	background-color: #FFF;
+	border-top: 3px solid;
+	border-top-color: #0B87DA;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom: 0;
+}
+/* Entire tab's content panel */
+.tabs-container > .margin-top--md {
+	padding: 24px 24px 24px 24px;
+	margin: 0 !important;
+	border-left: 1px solid #E3E3E3;
+	border-right: 1px solid #E3E3E3;
+	border-bottom: 1px solid #E3E3E3;
+}
+
 :root {
   --ifm-color-primary: #0B87DF;
   --ifm-color-primary-dark: #295578;

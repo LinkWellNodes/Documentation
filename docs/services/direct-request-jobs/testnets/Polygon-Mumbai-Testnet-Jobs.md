@@ -8,10 +8,8 @@ Please see below for our Chainlink direct request job offerings on the Polygon-M
 
 ### Select the type of data that you need:
 
-<Tabs className="unique-tabs" query-string="current-job">
+<Tabs groupId="dataType" queryString>
 <TabItem value="Uint256"> 
-
----
 
 ## Uint256 Retrieval
 
@@ -136,8 +134,6 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 </TabItem>
 
 <TabItem value="Uint256[]"> 
-
----
 
 ## Uint256[] Retrieval
 
@@ -274,8 +270,6 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 </TabItem>
 
 <TabItem value="Int256"> 
-
----
 
 ## Int256 Retrieval
 
@@ -414,8 +408,6 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 <TabItem value="Int256[]">
 
----
-
 ## Int256[] Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit signed integers (**int256[]**) to your consumer contract.
@@ -552,8 +544,6 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 <TabItem value="Bool">
 
----
-
 ## Boolean Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a boolean value at the given path, and returns the resulting object (**bool**) to your consumer contract.
@@ -677,8 +667,6 @@ true
 </TabItem>
 
 <TabItem value="Bool[]">
-
----
 
 ## Boolean[] Retrieval
 
@@ -806,8 +794,6 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 </TabItem>
 
 <TabItem value="String (Bytes)">
-
----
 
 ## String (Bytes) Retrieval
 
@@ -941,8 +927,6 @@ Note that the double-quotes will not be present when retrieving the above respon
 
 <TabItem value="String[] (Bytes[])">
 
----
-
 ## String[] (Bytes[]) Retrieval
 
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting array of dynamic bytes arrays (**bytes[]**) - which can also be represented as a **string[]** - to your consumer contract.
@@ -1075,8 +1059,6 @@ Note that the double-quotes will not be present when retrieving any of the above
 
 <TabItem value="Other...">
 
-#### **Other...**
-
 ## Need a custom data type delivered?
 
 **We've got you covered:**
@@ -1084,7 +1066,7 @@ Note that the double-quotes will not be present when retrieving any of the above
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with relevant details about your request. 
 1. We'll assess your request and provide you with a custom job ID that works for you.
 
-:::tip  
+:::info  
 Join our [Discord](https://discord.gg/AJ66pRz4) to get the fastest service for your request!
 :::
 
