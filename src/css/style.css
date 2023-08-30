@@ -145,6 +145,17 @@ thead > tr {
 	background-color: #EAEAEA;
 }
 
+/* TABLE OF CONTENTS (right-hand breadcrumbs) */
+.table-of-contents {
+	font-size:14px;
+}
+.table-of-contents li {
+	margin: 0.7rem 0.5rem;
+}
+.table-of-contents__link--active {
+	font-weight: 600;
+}
+
 :root {
   --ifm-color-primary: #0B87DF;
   --ifm-color-primary-dark: #295578;
