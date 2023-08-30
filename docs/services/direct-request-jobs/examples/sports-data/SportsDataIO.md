@@ -29,27 +29,32 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[uint256_constructor](/SportsDataIO.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/sports-data/SportsDataIO.sol#L23-L32
+```
 
-?> You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
-Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
+:::info 
+You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing). Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
+:::
 
 #### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[uint256_request](/SportsDataIO.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/sports-data/SportsDataIO.sol#L34-L55
+```
 
 #### 2c. Retrieve the response (example):
 
-[uint256_response](/SportsDataIO.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/sports-data/SportsDataIO.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/sports-data/SportsDataIO.sol#L57-L65
+```
 
 ### Need to protect your API key?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you'd like to protect your API key from being broadcast on-chain, you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your API key along with your request.
 
@@ -108,10 +113,10 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`Imperial,Value`). After applying the provided path, we get the following result:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`Wins`). After applying the provided path, we get the following result:
 
 ```
-57
+18
 ```
 
 #### 4. **Apply the multiplier**:
@@ -119,14 +124,16 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 After filtering the sample response by the provided JSON path, our Chainlink node will multiply the result by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following value, which is ultimately written to your smart contract as a `uint256` object by our Chainlink oracle:
 
 ```
-1913540000000000000000
+18000000000000000000
 ```
 
 ## Troubleshooting
 
 Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
 
 ## Still need more help?
 

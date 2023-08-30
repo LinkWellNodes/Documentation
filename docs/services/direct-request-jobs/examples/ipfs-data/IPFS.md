@@ -27,27 +27,32 @@ Add the following sample code to your **consumer contract**.
 
 The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
 
-[string-bytes_constructor](/IPFS.sol ':include :type=code :fragment=constructor')`
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/ipfs-data/IPFS.sol#L23-L31
+```
 
-?> You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
-Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
+:::tip 
+You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing). Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
+:::
 
 #### 2b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-[string-bytes_request](/IPFS.sol ':include :type=code :fragment=request')
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/ipfs-data/IPFS.sol#L33-L53
+```
 
 #### 2c. Retrieve the response (example):
 
-[string-bytes_response](/IPFS.sol ':include :type=code :fragment=response')
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/ipfs-data/IPFS.sol) of the above consumer contract.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/examples/ipfs-data/IPFS.sol#L55-L65
+```
 
 ### Need to protect your API key?
 
-!> Data entered into a smart contract is visible to the general public.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
 
 If you'd like to protect your API key from being broadcast on-chain, you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your API key along with your request.
 
@@ -87,7 +92,9 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 
 Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
 
-!> This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
 
 ## Still need more help?
 
