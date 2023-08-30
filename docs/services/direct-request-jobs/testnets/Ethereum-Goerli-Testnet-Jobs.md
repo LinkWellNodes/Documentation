@@ -159,7 +159,7 @@ This job requires the following parameters to be set:
 | **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
 | **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
 | **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
-| **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+| **path** | `string` | 'data,0,val;data,1,val;data,2,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If a single path is desired, enter the path without any semicolons. The target of this singular path must be an array of numbers. If multiple paths are specified, the target of each requested path must be a singular number. An array (`uint256[]`) will be returned containing the individual results of each path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array of numbers), pass an empty string (''). |
 | **multiplier** | `int256` | 10 ** 18 | The number by which to multiply every element within the result array returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, all elements are not numbers), the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
@@ -254,10 +254,10 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,2`). After applying the provided path, we get the following array:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`).After applying the provided path, which contains 3 separate (;-delimited) JSON paths, we get the following array:
 
 ```
-[412.43,983.89,473.31]
+[-54.47,89.89,983.89]
 ```
 
 #### 4. **Apply the multiplier**:
@@ -265,7 +265,7 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 After filtering the sample response by the provided JSON path, our Chainlink node will multiply every element in the result array by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following array, which is ultimately written to your smart contract as a `uint256[]` object by our Chainlink oracle:
 
 ```
-[412430000000000000000,983890000000000000000,473310000000000000000]
+[98340000000000000000,89990000000000000000,412430000000000000000]
 ```
 </TabItem>
 
@@ -432,7 +432,7 @@ This job requires the following parameters to be set:
 | **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
 | **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
 | **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
-| **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+| **path** | `string` | 'data,0,val;data,1,val;data,2,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If a single path is desired, enter the path without any semicolons. The target of this singular path must be an array of numbers. If multiple paths are specified, the target of each requested path must be a singular number. An array (`int256[]`) will be returned containing the individual results of each path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array of numbers), pass an empty string (''). |
 | **multiplier** | `int256` | 10 ** 18 | The number by which to multiply every element within the result array returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, all elements are not numbers), the request will not be fulfilled. |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
@@ -527,10 +527,10 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,2`). After applying the provided path, we get the following array:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,1;json,data,1,0;json,data,2,1`). After applying the provided path, which contains 3 separate (;-delimited) JSON paths, we get the following result:
 
 ```
-[-412.43,983.89,473.31]
+[-54.47,89.89,983.89]
 ```
 
 #### 4. **Apply the multiplier**:
@@ -538,7 +538,7 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 After filtering the sample response by the provided JSON path, our Chainlink node will multiply every element in the result array by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following array, which is ultimately written to your smart contract as a `int256[]` object by our Chainlink oracle:
 
 ```
-[-412430000000000000000,983890000000000000000,473310000000000000000]
+[-54470000000000000000,89990000000000000000,983890000000000000000]
 ```
 </TabItem>
 
@@ -951,7 +951,7 @@ This job requires the following parameters to be set:
 | **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
 | **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
 | **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
-| **path** | `string` | 'data,0,val;data,1,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If multiple paths are specified, an array (`bytes[]`) will be returned containing result of each requested path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array), pass an empty string (''). |
+| **path** | `string` | 'data,0,val;data,1,val;data,2,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If a single path is desired, enter the path without any semicolons. If multiple paths are specified, an array (`bytes[]`) will be returned containing result of each requested path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array), pass an empty string (''). |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
 ### Try it for yourself

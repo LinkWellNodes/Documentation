@@ -43,7 +43,7 @@ contract LinkWellInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedO
         // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[[12.43,-54.47,98.34],[89.99,-34.21,-85.65],[-412.43,983.89,473.31]]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data,2'); 
+        req.add('path', 'json,data,0,1;json,data,1,0;json,data,2,1');
         req.addInt('multiplier', 10 ** 18);
         
         // Send the request to the Chainlink oracle
@@ -57,7 +57,7 @@ contract LinkWellInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedO
     function fulfill(bytes32 requestId, int256[] memory data) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         emit RequestFulfilled(requestId, data);
-        responseArr = data;     // example value: responseArr[0] = -412430000000000000000, responseArr[1] = 983890000000000000000, responseArr[2] = 473310000000000000000
+        responseArr = data;     // example value: responseArr[0] = -54470000000000000000, responseArr[1] = 89990000000000000000, responseArr[2] = 983890000000000000000
     }
 
     // Update oracle address
