@@ -1,11 +1,18 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
+
 Polygon is a "layer two" or "sidechain" scaling solution that runs alongside the Ethereum blockchain - allowing for speedy transactions and low fees. MATIC is the network's native cryptocurrency, which is used for fees, staking, and more.
 
 You can use the [Polygon Bridge](https://wallet.polygon.technology/polygon/bridge) to transfer tokens to Polygon mainnet and then use [Polygon Gas Swap](https://wallet.polygon.technology/polygon/gas-swap) to swap supported tokens to MATIC.
 
-?> ERC-677 LINK ON POLYGON - The LINK provided by the Polygon (Matic) Bridge is not ERC-677 compatible, so you cannot use it with Chainlink services or oracle nodes. Use the Chainlink PegSwap service to convert bridged LINK to the official ERC-677 LINK token on Polygon.
+:::info 
+ERC-677 LINK ON POLYGON - The LINK provided by the Polygon (Matic) Bridge is not ERC-677 compatible, so you cannot use it with Chainlink services or oracle nodes. Use the Chainlink PegSwap service to convert bridged LINK to the official ERC-677 LINK token on Polygon.
+:::
 
+<Tabs groupId="dataType" queryString>
+<TabItem value="GET>Uint256"> 
 
-<!-- tabs:start -->
 #### **GET > Uint256**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
@@ -40,12 +47,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_constructor_mm](/Polygon/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_uint256/get_uint256.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_mm](/Polygon/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_uint256/get_uint256.sol#L29-L42
+```
 
 ### View the full source code
 
@@ -56,6 +67,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value=" GET>Uint256_No_Multiply"> 
+
 #### **GET > Uint256 No Multiply**
 
 HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
@@ -64,7 +79,7 @@ HTTP GET to any public API which parses the response and returns an unsigned int
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
@@ -89,12 +104,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_no_multiply_constructor_mm](/Polygon/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_uint256_no_multiply/get_uint256_no_multiply.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_no_multiply_mm](/Polygon/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_uint256_no_multiply/get_uint256_no_multiply.sol#L29-L40
+```
 
 ### View the full source code
 
@@ -105,6 +124,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Int256"> 
+
 #### **GET > Int256**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**int256**).
@@ -113,7 +136,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
@@ -139,12 +162,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_int256_constructor_mm](/Polygon/get_int256/get_int256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_int256/get_int256.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_int256_request_mm](/Polygon/get_int256/get_int256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_int256/get_int256.sol#L29-L43
+```
 
 ### View the full source code
 
@@ -155,6 +182,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Bool"> 
+
 #### **GET > Bool**
 
 HTTP GET to any public API which parses the response and returns a boolean (**bool**).
@@ -163,7 +194,7 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
@@ -188,12 +219,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bool_constructor_mm](/Polygon/get_bool/get_bool.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_bool/get_bool.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bool_request_mm](/Polygon/get_bool/get_bool.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_bool/get_bool.sol#L29-L37
+```
 
 ### View the full source code
 
@@ -204,6 +239,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Bytes"> 
+
 #### **GET > Bytes**
 
 HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
@@ -212,10 +251,10 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.15 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -237,12 +276,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_constructor_mm](/Polygon/get_bytes/get_bytes.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_bytes/get_bytes.sol#L24-L29
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_request_mm](/Polygon/get_bytes/get_bytes.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_bytes/get_bytes.sol#L31-L42
+```
 
 ### View the full source code
 
@@ -253,6 +296,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>String"> 
+
 #### **GET > String**
 
 HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
@@ -261,10 +308,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.15 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -286,12 +333,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_constructor_mm](/Polygon/get_string/get_string.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_string/get_string.sol#L24-L29
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_request_mm](/Polygon/get_string/get_string.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_string/get_string.sol#L31-L43
+```
 
 ### View the full source code
 
@@ -302,6 +353,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>String_x_2"> 
+
 #### **GET > String x 2**
 
 HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
@@ -310,10 +365,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | be46cb8070c14cb7ad058b29f127ec6b | 0.15 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | be46cb8070c14cb7ad058b29f127ec6b | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -340,12 +395,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_x2_constructor_mm](/Polygon/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_string_x2/get_string_x2.sol#L29-L34
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_x2_request_mm](/Polygon/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_string_x2/get_string_x2.sol#L36-L53
+```
 
 ### View the full source code
 
@@ -356,6 +415,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Uint256_x_2"> 
+
 #### **GET > Uint256 x 2**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns two unsigned integers of type (**uint256**).
@@ -364,10 +427,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.15 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -395,12 +458,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_x2_constructor_mm](/Polygon/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_uint256_x2/get_uint256_x2.sol#L30-L35
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_x2_request_mm](/Polygon/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_uint256_x2/get_uint256_x2.sol#L37-L55
+```
 
 ### View the full source code
 
@@ -411,6 +478,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Uint256[]"> 
+
 #### **GET > Uint256[]**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
@@ -419,10 +490,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 9a2ba54374f34184bdc6390db3171994 | 0.15 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 9a2ba54374f34184bdc6390db3171994 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -444,12 +515,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_array_constructor_mm](/Polygon/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_uint256_array/get_uint256_array.sol#L21-L26
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_array_request_mm](/Polygon/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_uint256_array/get_uint256_array.sol#L28-L36
+```
 
 ### View the full source code
 
@@ -460,6 +535,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Bytes[]"> 
+
 #### **GET > Bytes[]**
 
 HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
@@ -468,10 +547,10 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.15 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -493,12 +572,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_array_constructor_mm](/Polygon/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_bytes_array/get_bytes_array.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_array_request_mm](/Polygon/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/get_bytes_array/get_bytes_array.sol#L29-L37
+```
 
 ### View the full source code
 
@@ -509,13 +592,17 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="POST>Bytes"> 
+
 #### **POST > Bytes**
 
 ### Job details
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
@@ -541,12 +628,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_bytes_constructor_mm](/Polygon/post_bytes/post_bytes.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/post_bytes/post_bytes.sol#L23-L28
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_bytes_request_mm](/Polygon/post_bytes/post_bytes.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/post_bytes/post_bytes.sol#L30-L43
+```
 
 ### View the full source code
 
@@ -557,13 +648,17 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="POST>Uint256"> 
+
 #### **POST > Uint256**
 
 ### Job details
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://mumbai.polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
+<!-- | [0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68](https://polygonscan.com/address/0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
@@ -590,12 +685,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_mm](/Polygon/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/post_uint256/post_uint256.sol#L23-L28
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_mm](/Polygon/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Polygon/post_uint256/post_uint256.sol#L30-L45
+```
 
 ### View the full source code
 
@@ -605,4 +704,6 @@ The 'request function' within your consumer contract specifies the parameters to
 ### Need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-<!-- tabs:end -->
+
+</TabItem>
+</Tabs>

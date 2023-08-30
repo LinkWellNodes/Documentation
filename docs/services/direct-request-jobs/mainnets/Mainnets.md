@@ -8,8 +8,10 @@ Please use the links below to view our direct request job offerings. If you run 
 
 * [Arbitrum Mainnet](/services/direct-request-jobs/mainnets/Arbitrum-One-Mainnet-Jobs)
 * [Avalanche Mainnet](/services/direct-request-jobs/mainnets/Avalanche-CChain-Mainnet-Jobs)
+* [Base Mainnet](/services/direct-request-jobs/mainnets/Base-Mainnet-Jobs)
 * [Binance Mainnet](/services/direct-request-jobs/mainnets/Binance-Mainnet-Jobs)
 * [Ethereum Mainnet](/services/direct-request-jobs/mainnets/Ethereum-Mainnet-Jobs)
+* [Optimism Mainnet](/services/direct-request-jobs/mainnets/Optimism-Mainnet-Jobs)
 * [Polygon Mainnet](/services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs)
 
 ## Troubleshooting

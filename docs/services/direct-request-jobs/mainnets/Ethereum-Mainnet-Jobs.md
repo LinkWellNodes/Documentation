@@ -1,6 +1,12 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
+
 Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code.
 
-<!-- tabs:start -->
+<Tabs groupId="dataType" queryString>
+<TabItem value="GET>Uint256"> 
+
 #### **GET > Uint256**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
@@ -9,10 +15,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | f4821ba2e8ae4ddba52ea6860887df96 | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -35,12 +41,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_constructor_em](/Ethereum/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256/get_uint256.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_em](/Ethereum/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256/get_uint256.sol#L29-L42
+```
 
 ### View the full source code
 
@@ -51,6 +61,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value=" GET>Uint256_No_Multiply"> 
+
 #### **GET > Uint256 No Multiply**
 
 HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
@@ -59,10 +73,10 @@ HTTP GET to any public API which parses the response and returns an unsigned int
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 65cfa14a158540e1a8a94f9a33163839 | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -84,12 +98,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_no_multiply_constructor_em](/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_no_multiply_em](/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_no_multiply/get_uint256_no_multiply.sol#L29-L40
+```
 
 ### View the full source code
 
@@ -100,6 +118,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Int256"> 
+
 #### **GET > Int256**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**int256**).
@@ -108,10 +130,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 339ac1ad0a864ea7b94811de8a362a64 | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -134,12 +156,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_int256_constructor_em](/Ethereum/get_int256/get_int256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_int256/get_int256.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_int256_request_em](/Ethereum/get_int256/get_int256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_int256/get_int256.sol#L29-L43
+```
 
 ### View the full source code
 
@@ -150,6 +176,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Bool"> 
+
 #### **GET > Bool**
 
 HTTP GET to any public API which parses the response and returns a boolean (**bool**).
@@ -158,10 +188,10 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 2e0a430bcd2b482d8462fdcc5224fba1 | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -175,7 +205,7 @@ This job allows for the following parameters to be set:
 #### Simulating the request:
 
 * Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD"`
-* Sample response from the HTTP endpoint: `{"timezone":"UTC","serverTime":1687782213836,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":10,"limit":100},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":200000},{"rateLimitType":"RAW_REQUESTS","interval":"MINUTE","intervalNum":5,"limit":6100}],"exchangeFilters":[],"symbols":[{"symbol":"ETHUSD","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":8,"quoteAssetPrecision":8,"baseCommissionPrecision":8,"quoteCommissionPrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"quoteOrderQtyMarketAllowed":true,"allowTrailingStop":true,"cancelReplaceAllowed":true,"isSpotTradingAllowed":true,`
+* Sample response from the HTTP endpoint: `{"timezone":"UTC","serverTime":1693398329642,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":10,"limit":100},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":200000},{"rateLimitType":"RAW_REQUESTS","interval":"MINUTE","intervalNum":5,"limit":6100}],"exchangeFilters":[],"symbols":[{"symbol":"ETHUSD","status":"BREAK","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":8,"quoteAssetPrecision":8,"baseCommissionPrecision":8,"quoteCommissionPrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"quoteOrderQtyMarketAllowed":true,"allowTrailingStop":true,"cancelReplaceAllowed":true,"isSpotTradingAllowed":true,`
 * Sample response from the Chainlink oracle: `true`
 
 ### Implementing within your consumer contract
@@ -183,12 +213,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bool_constructor_em](/Ethereum/get_bool/get_bool.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_bool/get_bool.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bool_request_em](/Ethereum/get_bool/get_bool.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_bool/get_bool.sol#L29-L37
+```
 
 ### View the full source code
 
@@ -199,6 +233,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Bytes"> 
+
 #### **GET > Bytes**
 
 HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
@@ -207,10 +245,10 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 5b48fe6ac244436bb5ad689ab64ef28b | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -232,12 +270,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_constructor_em](/Ethereum/get_bytes/get_bytes.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_bytes/get_bytes.sol#L24-L29
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_request_em](/Ethereum/get_bytes/get_bytes.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_bytes/get_bytes.sol#L31-L42
+```
 
 ### View the full source code
 
@@ -248,6 +290,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>String"> 
+
 #### **GET > String**
 
 HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
@@ -256,10 +302,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 1cc553d092584937bfe9be9a3dd4c1f6 | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -281,12 +327,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_constructor_em](/Ethereum/get_string/get_string.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_string/get_string.sol#L24-L29
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_request_em](/Ethereum/get_string/get_string.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_string/get_string.sol#L31-L43
+```
 
 ### View the full source code
 
@@ -297,6 +347,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>String_x_2"> 
+
 #### **GET > String x 2**
 
 HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
@@ -305,10 +359,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | be46cb8070c14cb7ad058b29f127ec6b | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | be46cb8070c14cb7ad058b29f127ec6b | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -335,12 +389,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_x2_constructor_em](/Ethereum/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_string_x2/get_string_x2.sol#L29-L34
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_x2_request_em](/Ethereum/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_string_x2/get_string_x2.sol#L36-L53
+```
 
 ### View the full source code
 
@@ -351,6 +409,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Uint256_x_2"> 
+
 #### **GET > Uint256 x 2**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns two unsigned integers of type (**uint256**).
@@ -359,10 +421,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -390,12 +452,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_x2_constructor_em](/Ethereum/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.sol#L30-L35
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_x2_request_em](/Ethereum/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_x2/get_uint256_x2.sol#L37-L55
+```
 
 ### View the full source code
 
@@ -406,6 +472,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Uint256[]"> 
+
 #### **GET > Uint256[]**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
@@ -414,10 +484,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 9a2ba54374f34184bdc6390db3171994 | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 9a2ba54374f34184bdc6390db3171994 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -439,12 +509,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_array_constructor_em](/Ethereum/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.sol#L21-L26
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_array_request_em](/Ethereum/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_uint256_array/get_uint256_array.sol#L28-L36
+```
 
 ### View the full source code
 
@@ -455,6 +529,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Bytes[]"> 
+
 #### **GET > Bytes[]**
 
 HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
@@ -463,10 +541,10 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 332c0b46e57f49cd8c7d74cdbe5106ab | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -488,12 +566,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_array_constructor_em](/Ethereum/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_array_request_em](/Ethereum/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/get_bytes_array/get_bytes_array.sol#L29-L37
+```
 
 ### View the full source code
 
@@ -504,16 +586,20 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="POST>Bytes"> 
+
 #### **POST > Bytes**
 
 ### Job details
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b3390c03bfc24b42a0b0ab8051471bbb | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -536,12 +622,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_bytes_constructor_em](/Ethereum/post_bytes/post_bytes.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/post_bytes/post_bytes.sol#L23-L28
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_bytes_request_em](/Ethereum/post_bytes/post_bytes.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/post_bytes/post_bytes.sol#L30-L43
+```
 
 ### View the full source code
 
@@ -552,16 +642,20 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="POST>Uint256"> 
+
 #### **POST > Uint256**
 
 ### Job details
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168b5fcb54f662998b0620b9365ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b090204b16644030844a6e91932a7626 | 1.4 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -585,12 +679,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_em](/Ethereum/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/post_uint256/post_uint256.sol#L23-L28
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_em](/Ethereum/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Ethereum/post_uint256/post_uint256.sol#L30-L45
+```
 
 ### View the full source code
 
@@ -600,4 +698,6 @@ The 'request function' within your consumer contract specifies the parameters to
 ### Need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-<!-- tabs:end -->
+
+</TabItem>
+</Tabs>

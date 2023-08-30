@@ -9,19 +9,19 @@ Chainlink's [Any API](https://docs.chain.link/any-api/introduction) service is a
 * [Coin Price Data](#Coin-Price-Data)
 * [IPFS Data](#IPFS-Data)
 
-### Weather Data
+### Weather Data {#Weather-Data}
 * [AccuWeather](/services/direct-request-jobs/examples/weather-data/AccuWeather.md)
 
-### Sports Data
+### Sports Data {#Sports-Data}
 * [SportsDataIO](/services/direct-request-jobs/examples/sports-data/SportsDataIO.md)
 
-### Stock Price Data
+### Stock Price Data {#Stock-Price-Data}
 * [Alpha Vantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.md)
 
-### Coin Price Data
+### Coin Price Data {#Coin-Price-Data}
 * [CryptoCompare Data](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare.md)
 
-### IPFS Data
+### IPFS Data {#IPFS-Data}
 * [IPFS Data](/services/direct-request-jobs/examples/ipfs-data/IPFS.md)
 
 ## Learn More

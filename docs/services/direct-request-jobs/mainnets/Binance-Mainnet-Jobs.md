@@ -1,6 +1,12 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
+
 Binance is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code.
 
-<!-- tabs:start -->
+<Tabs groupId="dataType" queryString>
+<TabItem value="GET>Uint256"> 
+
 #### **GET > Uint256**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
@@ -35,12 +41,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_constructor_bm](/Binance/get_uint256/get_uint256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_uint256/get_uint256.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_bm](/Binance/get_uint256/get_uint256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_uint256/get_uint256.sol#L29-L42
+```
 
 ### View the full source code
 
@@ -50,6 +60,10 @@ The 'request function' within your consumer contract specifies the parameters to
 ### Need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
+</TabItem>
+
+<TabItem value=" GET>Uint256_No_Multiply"> 
 
 #### **GET > Uint256 No Multiply**
 
@@ -84,12 +98,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_no_multiply_constructor_bm](/Binance/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_no_multiply/get_uint256_no_multiply.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_request_no_multiply_bm](/Binance/get_uint256_no_multiply/get_uint256_no_multiply.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_no_multiply/get_uint256_no_multiply.sol#L29-L40
+```
 
 ### View the full source code
 
@@ -99,6 +117,10 @@ The 'request function' within your consumer contract specifies the parameters to
 ### Need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
+</TabItem>
+
+<TabItem value="GET>Int256"> 
 
 #### **GET > Int256**
 
@@ -134,12 +156,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_int256_constructor_bm](/Binance/get_int256/get_int256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_int256/get_int256.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_int256_request_bm](/Binance/get_int256/get_int256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_int256/get_int256.sol#L29-L43
+```
 
 ### View the full source code
 
@@ -149,6 +175,10 @@ The 'request function' within your consumer contract specifies the parameters to
 ### Need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
+</TabItem>
+
+<TabItem value="GET>Bool"> 
 
 #### **GET > Bool**
 
@@ -175,7 +205,7 @@ This job allows for the following parameters to be set:
 #### Simulating the request:
 
 * Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD"`
-* Sample response from the HTTP endpoint: `{"timezone":"UTC","serverTime":1687782213836,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":10,"limit":100},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":200000},{"rateLimitType":"RAW_REQUESTS","interval":"MINUTE","intervalNum":5,"limit":6100}],"exchangeFilters":[],"symbols":[{"symbol":"ETHUSD","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":8,"quoteAssetPrecision":8,"baseCommissionPrecision":8,"quoteCommissionPrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"quoteOrderQtyMarketAllowed":true,"allowTrailingStop":true,"cancelReplaceAllowed":true,"isSpotTradingAllowed":true,`
+* Sample response from the HTTP endpoint: `{"timezone":"UTC","serverTime":1693398098306,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":10,"limit":100},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":200000},{"rateLimitType":"RAW_REQUESTS","interval":"MINUTE","intervalNum":5,"limit":6100}],"exchangeFilters":[],"symbols":[{"symbol":"ETHUSD","status":"BREAK","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":8,"quoteAssetPrecision":8,"baseCommissionPrecision":8,"quoteCommissionPrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"quoteOrderQtyMarketAllowed":true,"allowTrailingStop":true,"cancelReplaceAllowed":true,"isSpotTradingAllowed":true,`
 * Sample response from the Chainlink oracle: `true`
 
 ### Implementing within your consumer contract
@@ -183,12 +213,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bool_constructor_bm](/Binance/get_bool/get_bool.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_bool/get_bool.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bool_request_bm](/Binance/get_bool/get_bool.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_bool/get_bool.sol#L29-L37
+```
 
 ### View the full source code
 
@@ -199,6 +233,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Bytes"> 
+
 #### **GET > Bytes**
 
 HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
@@ -207,10 +245,10 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.15 LINK                | -->
+<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -232,12 +270,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_constructor_bm](/Binance/get_bytes/get_bytes.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_bytes/get_bytes.sol#L24-L29
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_request_bm](/Binance/get_bytes/get_bytes.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_bytes/get_bytes.sol#L31-L42
+```
 
 ### View the full source code
 
@@ -248,6 +290,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>String"> 
+
 #### **GET > String**
 
 HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
@@ -256,10 +302,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.15 LINK                | -->
+<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -281,12 +327,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_constructor_bm](/Binance/get_string/get_string.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_string/get_string.sol#L24-L29
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_request_bm](/Binance/get_string/get_string.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_string/get_string.sol#L31-L43
+```
 
 ### View the full source code
 
@@ -297,6 +347,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>String_x_2"> 
+
 #### **GET > String x 2**
 
 HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
@@ -305,10 +359,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | be46cb8070c14cb7ad058b29f127ec6b | 0.15 LINK                | -->
+<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | be46cb8070c14cb7ad058b29f127ec6b | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -326,21 +380,25 @@ This job allows for the following parameters to be set:
 * Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
 * Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
 * Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
-* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"Binance",`
+* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"ethereum",`
 * First sample response from the Chainlink oracle: `bitcoin`
-* Second sample response from the Chainlink oracle: `Binance`
+* Second sample response from the Chainlink oracle: `ethereum`
 
 ### Implementing within your consumer contract
 
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_string_x2_constructor_bm](/Binance/get_string_x2/get_string_x2.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_string_x2/get_string_x2.sol#L29-L34
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_string_x2_request_bm](/Binance/get_string_x2/get_string_x2.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_string_x2/get_string_x2.sol#L36-L53
+```
 
 ### View the full source code
 
@@ -351,6 +409,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Uint256_x_2"> 
+
 #### **GET > Uint256 x 2**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns two unsigned integers of type (**uint256**).
@@ -359,10 +421,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.15 LINK                | -->
+<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -390,12 +452,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_x2_constructor_bm](/Binance/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_x2/get_uint256_x2.sol#L30-L35
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_x2_request_bm](/Binance/get_uint256_x2/get_uint256_x2.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_x2/get_uint256_x2.sol#L37-L55
+```
 
 ### View the full source code
 
@@ -406,6 +472,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Uint256[]"> 
+
 #### **GET > Uint256[]**
 
 HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
@@ -414,10 +484,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 9a2ba54374f34184bdc6390db3171994 | 0.15 LINK                | -->
+<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 9a2ba54374f34184bdc6390db3171994 | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -439,12 +509,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_uint256_array_constructor_bm](/Binance/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_array/get_uint256_array.sol#L21-L26
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_uint256_array_request_bm](/Binance/get_uint256_array/get_uint256_array.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_uint256_array/get_uint256_array.sol#L28-L36
+```
 
 ### View the full source code
 
@@ -455,6 +529,10 @@ The 'request function' within your consumer contract specifies the parameters to
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
 
+</TabItem>
+
+<TabItem value="GET>Bytes[]"> 
+
 #### **GET > Bytes[]**
 
 HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
@@ -463,10 +541,10 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 <!-- | Address                                    | JobID                            | Job Cost              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.15 LINK                | -->
+<!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.1 LINK                | -->
 | Address and Job ID | Job Cost |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.15 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to reveal our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -480,20 +558,23 @@ This job allows for the following parameters to be set:
 #### Simulating the request:
 
 * Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD"`
-* Sample response from the HTTP endpoint: `{"timezone":"UTC","serverTime":1687788634554,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":10,"limit":100},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":200000},{"rateLimitType":"RAW_REQUESTS","interval":"MINUTE","intervalNum":5,"limit":6100}],"exchangeFilters":[],"symbols":[{"symbol":"ETHUSD","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":8,"quoteAssetPrecision":8,"baseCommissionPrecision":8,"quoteCommissionPrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"]`
-* Sample response from the Chainlink oracle: `[LIMIT, LIMIT_MAKER, MARKET, STOP_LOSS_LIMIT, TAKE_PROFIT_LIMIT]`
+* Sample response from the HTTP endpoint: `{"timezone":"UTC","serverTime":1693398178157,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":10,"limit":100},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":200000},{"rateLimitType":"RAW_REQUESTS","interval":"MINUTE","intervalNum":5,"limit":6100}],"exchangeFilters":[],"symbols":[{"symbol":"ETHUSD","status":"BREAK","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":8,"quoteAssetPrecision":8,"baseCommissionPrecision":8,"quoteCommissionPrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],`
 
 ### Implementing within your consumer contract
 
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[get_bytes_array_constructor_bm](/Binance/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_bytes_array/get_bytes_array.sol#L22-L27
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[get_bytes_array_request_bm](/Binance/get_bytes_array/get_bytes_array.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/get_bytes_array/get_bytes_array.sol#L29-L37
+```
 
 ### View the full source code
 
@@ -503,6 +584,10 @@ The 'request function' within your consumer contract specifies the parameters to
 ### Need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
+</TabItem>
+
+<TabItem value="POST>Bytes"> 
 
 #### **POST > Bytes**
 
@@ -536,12 +621,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_bytes_constructor_bm](/Binance/post_bytes/post_bytes.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/post_bytes/post_bytes.sol#L23-L28
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_bytes_request_bm](/Binance/post_bytes/post_bytes.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/post_bytes/post_bytes.sol#L30-L43
+```
 
 ### View the full source code
 
@@ -551,6 +640,10 @@ The 'request function' within your consumer contract specifies the parameters to
 ### Need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+
+</TabItem>
+
+<TabItem value="POST>Uint256"> 
 
 #### **POST > Uint256**
 
@@ -585,12 +678,16 @@ This job allows for the following parameters to be set:
 #### Add the constructor:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
-[post_uint256_constructor_bm](/Binance/post_uint256/post_uint256.sol ':include :type=code :fragment=constructor')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/post_uint256/post_uint256.sol#L23-L28
+```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
-[post_uint256_request_bm](/Binance/post_uint256/post_uint256.sol ':include :type=code :fragment=request')
+```sol reference showLineNumbers
+https://github.com/LinkWellNodes/Documentation/blob/docusaurus/docs/services/direct-request-jobs/mainnets/Binance/post_uint256/post_uint256.sol#L30-L45
+```
 
 ### View the full source code
 
@@ -600,4 +697,6 @@ The 'request function' within your consumer contract specifies the parameters to
 ### Need more help?
 
 Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-<!-- tabs:end -->
+
+</TabItem>
+</Tabs>

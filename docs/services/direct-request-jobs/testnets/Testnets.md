@@ -8,9 +8,11 @@ Please use the links below to view our direct request job offerings. If you run 
 
 * [Arbitrum Goerli Testnet](/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs)
 * [Avalanche Fuji Testnet](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs)
+* [Base Goerli Testnet](/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs)
 * [Binance Testnet](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs)
 * [Ethereum Goerli Testnet](/services/direct-request-jobs/testnets/Ethereum-Goerli-Testnet-Jobs)
 * [Ethereum Sepolia Testnet](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs)
+* [Optimism Goerli Testnet](/services/direct-request-jobs/testnets/Optimism-Goerli-Testnet-Jobs)
 * [Polygon Mumbai Testnet](/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs)
 
 ## Troubleshooting
