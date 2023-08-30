@@ -36,14 +36,14 @@ contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwn
         req.add('method', 'POST');
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '{"data":[[false,false,true],[true,false,true],[false,false,false]]}');
+        req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl request simulates the above request parameters: 
-        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[[false,false,true],[true,false,true],[false,false,false]]}'
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data,1');
+        req.add('path', 'json,data,0,2;json,data,1,0;json,data,2,1');
         
         // Send the request to the Chainlink oracle
         sendOperatorRequest(req, fee);
@@ -56,7 +56,7 @@ contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwn
     function fulfill(bytes32 requestId, bool[] memory data) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         emit RequestFulfilled(requestId, data);
-        responseArr = data;      // example value: responseBytesArr[0] = true, responseBytesArr[1] = false, responseBytesArr[2] = true
+        responseArr = data;      // example value: responseBytesArr[0] = true, responseBytesArr[1] = false, responseBytesArr[2] = false
     }
 
     // Update oracle address

@@ -254,7 +254,7 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`).After applying the provided path, which contains 3 separate (;-delimited) JSON paths, we get the following array:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`), which contains 3 separate (`;`-delimited) JSON paths. After applying the provided path parameter, we get the following array:
 
 ```
 [-54.47,89.89,983.89]
@@ -527,7 +527,7 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,1;json,data,1,0;json,data,2,1`). After applying the provided path, which contains 3 separate (;-delimited) JSON paths, we get the following result:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,1;json,data,1,0;json,data,2,1`), which contains 3 separate (`;`-delimited) JSON paths. After applying the provided path parameter, we get the following result:
 
 ```
 [-54.47,89.89,983.89]
@@ -692,7 +692,7 @@ This job requires the following parameters to be set:
 | **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
 | **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
 | **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
-| **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+| **path** | `string` | 'data,0,val;data,1,val;data,2,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If a single path is desired, enter the path without any semicolons. The target of this singular path must be an array of boolean values (`true` or `false`). If multiple paths are specified, the target of each requested path must be a singular boolean value. An array (`bool[]`) will be returned containing the individual results of each path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array of boolean values), pass an empty string (''). |
 | **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
 ### Try it for yourself
@@ -753,7 +753,7 @@ curl "https://httpbin.org/post" \
  --request 'POST' \
  --header 'content-type: application/json' \
  --header 'set-cookie: sid=14A52' \
- --data '{"data":[[false,false,true],[true,false,true],[false,false,false]]}'
+ req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
 ```
 
 #### 2. **Analyze the response**:
@@ -770,14 +770,14 @@ The following is a sample response body returned to our Chainlink node by the ab
             true
          ],
          [
-            true,
             false,
+            true,
             true
          ],
          [
+            true,
             false,
-            false,
-            false
+            true
          ]
       ]
    }
@@ -786,10 +786,10 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,1`). After applying the provided path, we get the following array, which is ultimately written to your smart contract as a `bool[]` object by our Chainlink oracle:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`), which contains 3 separate (`;`-delimited) JSON paths. After applying the provided path parameter, we get the following array, which is ultimately written to your smart contract as a `bool[]` object by our Chainlink oracle:
 
 ```
-[true,false,true]
+[true,false,false]
 ```
 </TabItem>
 
@@ -1045,7 +1045,7 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 #### 3. **Apply the JSON path**:
 
-After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`). After applying the provided path, which contains 3 separate (;-delimited) JSON paths, we get the following array, which is ultimately written to your smart contract as a `bytes[]` object (which can also be represented as a `string[]`) object by our Chainlink oracle:
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`), which contains 3 separate (`;`-delimited) JSON paths. After applying the provided path parameter, we get the following array, which is ultimately written to your smart contract as a `bytes[]` object (which can also be represented as a `string[]`) object by our Chainlink oracle:
 
 ```
 ["Kraken","Huobi","Gemini"]
