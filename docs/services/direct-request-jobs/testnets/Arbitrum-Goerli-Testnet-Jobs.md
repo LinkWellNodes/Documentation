@@ -1059,6 +1059,38 @@ Note that the double-quotes will not be present when retrieving any of the above
 
 </TabItem>
 
+<TabItem value="Multiple">
+
+<Tabs groupId="multiVar" queryString>
+
+<TabItem value="String (Bytes), Uint256"> 
+
+## String (Bytes), Uint256 Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting **bytes** (string) and **uint256** objects, represented as two separate variables within your consumer contract.
+
+</TabItem>
+
+<TabItem value="String (Bytes), Bool">
+
+## String (Bytes), Boolean Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting **bytes** (string) and **bool** objects, represented as two separate variables within your consumer contract.
+
+</TabItem>
+
+<TabItem value="Uint256, Bool">
+
+## Uint256, Boolean Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting **uint256** and **bool** objects, represented as two separate variables within your consumer contract.
+
+</TabItem>
+
+</Tabs>
+
+</TabItem>
+
 <TabItem value="Other...">
 
 ## Need a custom data type delivered?
