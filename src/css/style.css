@@ -9,6 +9,8 @@ body {
 	font-family: 'Open Sans',sans-serif;
 	color: #4D4D4D;
 }
+
+/* HEADERS */
 h1 {
 	margin: 40px 0 24px 0 !important;
 	font-family: 'Open Sans',sans-serif;
@@ -47,6 +49,12 @@ h4 {
 	font-size:16px;
 	font-weight:600;
 }
+.hash-link::before {
+  content: "\1F517" !important;
+  font-weight: 400;
+}
+
+/* Code boxes and excerpts */
 code {
 	background-color: #E3E3E3;
 }
