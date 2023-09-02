@@ -4,7 +4,7 @@
 
 Please use the links below to view our direct request job offerings. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4) for the fastest service.
 
-### View our job offerings:
+### View our direct request job offerings:
 
 * [Arbitrum Mainnet](/services/direct-request-jobs/mainnets/Arbitrum-One-Mainnet-Jobs)
 * [Avalanche Mainnet](/services/direct-request-jobs/mainnets/Avalanche-CChain-Mainnet-Jobs)
