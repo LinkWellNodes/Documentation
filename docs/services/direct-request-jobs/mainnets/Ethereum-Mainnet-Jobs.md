@@ -17,10 +17,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | f4821ba2e8ae4ddba52ea6860887df96 | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -35,7 +35,7 @@ This job allows for the following parameters to be set:
 #### Simulating the request:
 
 * Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"`
-* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":0.18958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
+* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":1.58958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
 * Sample response from the Chainlink oracle: `121111172124190010000000`
 
 ### Implementing within your consumer contract
@@ -75,10 +75,10 @@ HTTP GET to any public API which parses the response and returns an unsigned int
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 65cfa14a158540e1a8a94f9a33163839 | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -92,7 +92,7 @@ This job allows for the following parameters to be set:
 #### Simulating the request:
 
 * Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"`
-* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":0.18958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
+* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":1.58958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
 * Sample response from the Chainlink oracle: `1211111.72124190010000000`
 
 ### Implementing within your consumer contract
@@ -132,10 +132,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 339ac1ad0a864ea7b94811de8a362a64 | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -150,7 +150,7 @@ This job allows for the following parameters to be set:
 #### Simulating the request:
 
 * Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"`
-* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":0.18958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
+* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":1.58958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
 * Sample response from the Chainlink oracle: `1211111.72124190010000000`
 
 ### Implementing within your consumer contract
@@ -190,10 +190,10 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 2e0a430bcd2b482d8462fdcc5224fba1 | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -247,10 +247,10 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 5b48fe6ac244436bb5ad689ab64ef28b | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -304,10 +304,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 1cc553d092584937bfe9be9a3dd4c1f6 | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -361,10 +361,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | be46cb8070c14cb7ad058b29f127ec6b | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | be46cb8070c14cb7ad058b29f127ec6b | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -423,10 +423,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -486,10 +486,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 9a2ba54374f34184bdc6390db3171994 | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 9a2ba54374f34184bdc6390db3171994 | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -543,10 +543,10 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | 332c0b46e57f49cd8c7d74cdbe5106ab | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -598,10 +598,10 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b3390c03bfc24b42a0b0ab8051471bbb | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
@@ -654,10 +654,10 @@ Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require 
 
 <!-- | Address                                    | JobID                            | Request Fee              | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
+<!-- | [0x0168B5FcB54F662998B0620b9365Ae027192621f](https://etherscan.io/address/0x0168b5fcb54f662998b0620b9365ae027192621f) | b090204b16644030844a6e91932a7626 | 1.5 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
 ### Request parameters
 
