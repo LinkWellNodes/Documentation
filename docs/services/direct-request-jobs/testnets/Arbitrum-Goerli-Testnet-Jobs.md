@@ -23,7 +23,7 @@ This job returns a single **uint256** object, which can store any integer from `
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
 
@@ -147,7 +147,7 @@ This job returns a single **uint256[]** object, which can store an array of unsi
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
 
@@ -283,7 +283,7 @@ This job returns a single **int256** object, which can store any integer from `-
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
 
@@ -420,7 +420,7 @@ This job returns a single **int256[]** object, which can store an array of signe
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
 
@@ -556,7 +556,7 @@ This job returns a single **bool** object, which can store a `true` or `false` v
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
 
@@ -680,7 +680,7 @@ This job returns a single **bool[]** object, which can store an array of `true` 
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
 
@@ -807,7 +807,7 @@ This job returns a single **bytes** object, which can readily be converted into 
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
 
@@ -939,7 +939,7 @@ This job returns a single **bytes[]** object, which can readily be converted int
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
 
@@ -1067,7 +1067,132 @@ Note that the double-quotes will not be present when retrieving any of the above
 
 ## String (Bytes), Uint256 Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting **bytes** (string) and **uint256** objects, represented as two separate variables within your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a string and a numeric value at the given path(s), multiplies the numeric value by the given multiplier, and returns the resulting **bytes** (string) and **uint256** objects, represented as two separate variables within your consumer contract.
+
+:::info 
+This job returns the following 2 objects:
+1. A **bytes** object, which can readily be converted into a **string** value
+1. A **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::
+
+### Job metadata
+
+| Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | XXX | 0 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set, all of which are **mandatory**:
+
+#### For retrieving the first object (**bytes**):
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method_1** | `string` | 'POST' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url_1** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers_1** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body_1** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path_1** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+
+#### For retrieving the second object (**uint256**):
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method_2** | `string` | 'POST' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url_2** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers_2** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body_2** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path_2** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+| **multiplier_2** | `int256` | 10 ** 18 | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, it is not a number), the request will not be fulfilled. |
+
+### Miscellaneous fields:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead. This will allow communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+
+```sol reference
+XXX https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+XXX https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L31-L51
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+XXX https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L53-L61
+```
+
+### Need to send sensitive information?
+
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting) for direct request jobs.
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+XXX
+
+</TabItem>
+
+<TabItem value="String (Bytes), Uint256 x2"> 
+
+## String (Bytes), Uint256, Uint256 Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for 1 string and 2 numeric values at the given path(s), multiplies the numeric values by the given multipliers, and returns the resulting **bytes** (string), **uint256**, and **uint256** objects, represented as three separate variables within your consumer contract.
+
+:::info 
+This job returns the following 3 objects:
+1. A **bytes** object, which can readily be converted into a **string** value
+1. A **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`).
+1. A **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::
+
+</TabItem>
+
+<TabItem value="String (Bytes), Uint256 x3"> 
+
+## String (Bytes), Uint256, Uint256, Uint256 Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for 1 string and 3 numeric values at the given path(s), multiplies the numeric values by the given multipliers, and returns the resulting **bytes** (string), **uint256**, **uint256**, and **uint256** objects, represented as four separate variables within your consumer contract.
+
+:::info 
+This job returns the following 3 objects:
+1. A **bytes** object, which can readily be converted into a **string** value
+1. A **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`).
+1. A **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`).
+1. A **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::
 
 </TabItem>
 
@@ -1075,7 +1200,13 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ## String (Bytes), Boolean Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting **bytes** (string) and **bool** objects, represented as two separate variables within your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a string and a boolean value at the given path(s), and returns the resulting **bytes** (string) and **bool** objects, represented as two separate variables within your consumer contract.
+
+:::info 
+This job returns the following 2 objects:
+1. A **bytes** object, which can readily be converted into a **string** value
+1. A **bool** object, which can store a `true` or `false` value. 
+:::
 
 </TabItem>
 
@@ -1083,7 +1214,13 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 
 ## Uint256, Boolean Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting **uint256** and **bool** objects, represented as two separate variables within your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value and a boolean value at the given path(s), multiplies the numeric value by the given multiplier, and returns the resulting **uint256** and **bool** objects, represented as two separate variables within your consumer contract.
+
+:::info 
+This job returns the following 2 objects:
+1. A **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`).
+1. A **bool** object, which can store a `true` or `false` value. 
+:::
 
 </TabItem>
 

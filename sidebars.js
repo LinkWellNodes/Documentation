@@ -111,7 +111,7 @@ module.exports = {
     {
       type: 'doc',
       id: 'knowledgebase/Any-API-Guide',
-      label: 'Any API Guide',
+      label: 'Any API Examples',
     },
     {
       type: 'doc',

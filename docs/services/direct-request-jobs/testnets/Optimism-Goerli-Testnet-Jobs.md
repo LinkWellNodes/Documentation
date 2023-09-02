@@ -23,7 +23,7 @@ This job returns a single **uint256** object, which can store any integer from `
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://goerli-optimism.etherscan.io/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
 
@@ -147,7 +147,7 @@ This job returns a single **uint256[]** object, which can store an array of unsi
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://goerli-optimism.etherscan.io/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
 
@@ -283,7 +283,7 @@ This job returns a single **int256** object, which can store any integer from `-
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://goerli-optimism.etherscan.io/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
 
@@ -420,7 +420,7 @@ This job returns a single **int256[]** object, which can store an array of signe
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://goerli-optimism.etherscan.io/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
 
@@ -556,7 +556,7 @@ This job returns a single **bool** object, which can store a `true` or `false` v
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://goerli-optimism.etherscan.io/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
 
@@ -680,7 +680,7 @@ This job returns a single **bool[]** object, which can store an array of `true` 
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://goerli-optimism.etherscan.io/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
 
@@ -807,7 +807,7 @@ This job returns a single **bytes** object, which can readily be converted into 
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://goerli-optimism.etherscan.io/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
 
@@ -939,7 +939,7 @@ This job returns a single **bytes[]** object, which can readily be converted int
 
 ### Job metadata
 
-| Oracle Address                             | Job ID                           | Job Cost              |
+| Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://goerli-optimism.etherscan.io/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
 

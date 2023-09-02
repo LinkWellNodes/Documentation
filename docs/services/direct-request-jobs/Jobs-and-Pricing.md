@@ -1,10 +1,10 @@
 # Direct Request Jobs
 
-**Direct Request** jobs allow you to write any custom, real-world data received from any internet-based API to your blockchain smart contracts. Our highly-redundant Chainlink node infrastructure ensures that your data is delivered safely, securely, and reliably every time.
+**Direct Request** jobs allow you to write any custom, real-world data received from any internet-based API ('any API') to your blockchain smart contracts. Our highly-redundant Chainlink node infrastructure ensures that your data is delivered safely, securely, and reliably every time.
 
 Please use the links below to view our direct request job offerings. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4) for the fastest service.
 
-### View our jobs:
+### View our direct request jobs:
 
 * [Mainnets](/services/direct-request-jobs/mainnets/)
 * [Testnets](/services/direct-request-jobs/testnets/)
@@ -13,7 +13,7 @@ Please use the links below to view our direct request job offerings. If you run 
 
 Our goal is to provide **transparency** around the way our pricing works. 
 
-The per-request price for each job is outlined within the [documentation page](#view-our-jobs) for each respective job.
+To view our fees, please visit the [documentation page](/services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs) for the respective job.
 
 ## Fee lifecycle
 
@@ -82,7 +82,7 @@ You can learn more about external adapters [here](https://docs.chain.link/chainl
 
 ## Learn More
 
-To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/knowledgebase/Direct-Request-Guide) in our knowledgebase.
+To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/knowledgebase/Direct-Request-Guide). You can also read more about it in Chainlink's official [Any API](https://docs.chain.link/any-api/introduction) documentation.
 
 ## Troubleshooting
 
