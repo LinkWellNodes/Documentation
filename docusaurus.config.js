@@ -46,14 +46,13 @@ const config = {
           routeBasePath: '/',  // this should be the word that you want to set
           sidebarPath: require.resolve('./sidebars.js'),
         },
-        blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   // editUrl:
-        //   //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
         theme: {
           customCss: require.resolve('./src/css/style.css'),
         },
@@ -76,19 +75,19 @@ const config = {
         },
         hideOnScroll: true,
         items: [
-		  {
-		    href: 'https://linkwellnodes.io',
-		    label: 'Home',
-		    position: 'left',
-		  },
+          {
+            href: 'https://linkwellnodes.io',
+            label: 'Home',
+            position: 'left',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Documentation',
           },
-          /*{to: '/blog', label: 'Blog', position: 'left'},*/
-          {to: '/about', label: 'About Us', position: 'left'},          
+          {to: '/about', label: 'About Us', position: 'left'},  
+          {to: '/blog', label: 'Blog', position: 'left'},                  
           {
         	  href: 'https://discord.gg/Xs6SjqVPUA',
         	  label: 'Discord',
@@ -101,9 +100,10 @@ const config = {
           },                    
           {
             href: 'https://github.com/LinkWellNodes/Documentation',
-            label: 'GitHub',
             position: 'right',
-          },
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
+          },          
         ],
       },
       footer: {
@@ -142,10 +142,10 @@ const config = {
           {
             title: 'More',
             items: [
-/*              {
+              {
                 label: 'Blog',
                 to: '/blog',
-              },*/
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/LinkWellNodes/Documentation',
