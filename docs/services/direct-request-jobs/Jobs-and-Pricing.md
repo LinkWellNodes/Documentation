@@ -57,7 +57,7 @@ While a `uint256` object may cost us on the order of **60000 gas units** to fulf
 
 In maintaining a triple-redundant, highly-secure, zero-downtime environment for our customers, we incur heavy infrastructure costs. Fees sent along with your requests go toward offsetting these costs.
 
-You can read more about the associated [costs of being a node operator](/knowledgebase/Chainlink-Operators-FAQ?id=how-much-does-it-cost-to-run-a-chainlink-node) on our FAQ page.
+You can read more about the associated [costs of being a node operator](/knowledgebase/Chainlink-Operators-FAQ#how-much-does-it-cost-to-run-a-chainlink-node) on our FAQ page.
 
 #### 4. The pricing of our fellow node operators 
 
@@ -86,7 +86,7 @@ To learn more about how Chainlink's direct request model works, visit our [Direc
 
 ## Troubleshooting
 
-Having technical difficulties with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting#direct-request-job-troubleshooting) for direct request jobs.
+Having technical difficulties with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting#direct-request-job-troubleshooting) for direct request jobs.
 
 ## Need more help?
 * Join our [Discord](https://discord.gg/AJ66pRz4) for the fastest assistance with your request. We are happy to support custom data requests as well!

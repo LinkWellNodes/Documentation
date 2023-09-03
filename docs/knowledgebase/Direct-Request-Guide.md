@@ -36,7 +36,7 @@ The following diagram demonstrates the direct request workflow.
 **Prepare your request**:
 
 1. Fill out our [Getting Started](https://linkwellnodes.io/Getting-Started.html) form, so that we can better understand your data needs.
-1. After discussing the details of your request, we may be able to simply point you to our [Direct Request Jobs](/services/direct-request-jobs/Jobs-and-Pricing) page. If your request requires any kind of authentication secrets or other advanced functionality, we are happy to support you in building out an [external adapter](/services/direct-request-jobs/Jobs-and-Pricing?id=external-adapters).  
+1. After discussing the details of your request, we may be able to simply point you to our [Direct Request Jobs](/services/direct-request-jobs/Jobs-and-Pricing) page. If your request requires any kind of authentication secrets or other advanced functionality, we are happy to support you in building out an [external adapter](/services/direct-request-jobs/Jobs-and-Pricing#external-adapters).  
 1. Deploy your consumer contract using an IDE such as Remix. Consumer contract examples can be found within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing) for each specific data type.
 1. For **mainnet** chains, please also ensure that your consumer contract is properly funded with enough LINK tokens to make the request.
 

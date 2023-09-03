@@ -30,7 +30,7 @@ To learn more about how Chainlink's direct request model works, visit our [Direc
 
 ## Troubleshooting
 
-Having technical difficulties with your request? Check out our [Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ?id=direct-request-job-troubleshooting) for direct request jobs.
+Having technical difficulties with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
 
 ## Need more help?
 * Join our [Discord](https://discord.gg/AJ66pRz4) for the fastest assistance with your request. We are happy to support custom data requests as well!
