@@ -6,7 +6,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 Optimism Goerli is the testnet of Layer 2 rollup chain Optimism mainnet, and uses Ethereum's Goerli testnet network as its Layer 1 protocol.
 
-Please see below for our Chainlink direct request job offerings on the Optimism-Goerli network. All testnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our Chainlink direct request job offerings on the Optimism-Goerli network. All testnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 ### Select the type of data that you need:
 

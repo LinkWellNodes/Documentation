@@ -2,7 +2,7 @@
 
 **Direct Request** jobs allow you to write custom, real-world data received from any API to your blockchain smart contracts. Our highly-redundant Chainlink node infrastructure ensures that your data is delivered safely, securely, and reliably every time.
 
-Please use the links below to view our direct request job offerings. If you run into any trouble, we are here to help! Head on over to our [Discord](https://discord.gg/AJ66pRz4) for the fastest service.
+Please use the links below to view our direct request job offerings. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4) for the fastest service.
 
 ### View our direct request job offerings:
 
@@ -19,5 +19,5 @@ Please use the links below to view our direct request job offerings. If you run 
 Having technical difficulties with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
 
 ## Support
-* Join our [Discord](https://discord.gg/AJ66pRz4) for the fastest assistance with your request. We are happy to support custom data requests as well!
+* Join our [Discord server](https://discord.gg/AJ66pRz4) for the fastest assistance with your request. We are happy to support custom data requests as well!
 * Check out our [Chainlink User FAQ](/knowledgebase/Chainlink-Users-FAQ "FAQ - Chainlink Data Consumers") for common questions asked by our customers.
