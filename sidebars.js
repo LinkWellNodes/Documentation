@@ -1,6 +1,10 @@
 module.exports = {
   docsSidebar: [
-    'index',
+	{
+	    type: 'doc',
+	    id: 'index',
+	    label: 'Start Here',
+	},
     {
         type: 'html',
         value: '<div class="sidebarGroupTitle">Services</div><hr class="sidebarGroupRuler">',

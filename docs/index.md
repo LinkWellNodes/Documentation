@@ -3,7 +3,7 @@ id: index
 slug: /
 ---
 
-# Start Here
+# Documentation Home
 
 ## Direct Request Job Info
 

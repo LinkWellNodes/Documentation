@@ -47,7 +47,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/uint256/uint256.sol#L23-L28
@@ -171,7 +171,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/uint256-array/uint256-array.sol#L23-L28
@@ -307,7 +307,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/int256/int256.sol#L23-L28
@@ -444,7 +444,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/int256-array/int256-array.sol#L23-L28
@@ -579,7 +579,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/bool/bool.sol#L23-L28
@@ -703,7 +703,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/bool-array/bool-array.sol#L23-L28
@@ -830,7 +830,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/string-bytes/string-bytes.sol#L23-L28
@@ -962,7 +962,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/string-bytes-array/string-bytes-array.sol#L23-L28

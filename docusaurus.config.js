@@ -45,6 +45,7 @@ const config = {
           path: './docs', // this should be the path to your docs folder
           routeBasePath: '/',  // this should be the word that you want to set
           sidebarPath: require.resolve('./sidebars.js'),
+          breadcrumbs: true,
         },
         blog: {
           showReadingTime: true,
@@ -122,16 +123,37 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Home',
             items: [
               {
-                label: 'Documentation',
-                to: '/',
+                label: 'Website',
+                href: 'https://linkwellnodes.io',
               },
               {
-                label: 'Services',
+                label: 'Request a data feed',
+                href: 'https://linkwellnodes.io/Getting-Started.html',
+              },
+              {
+                label: 'Contact Us',
+                href: 'https://linkwellnodes.io/#contact-us',
+              },
+            ],
+          },
+          {
+            title: 'Documentation',
+            items: [
+              {
+                label: 'Direct Request listings',
                 to: '/services/direct-request-jobs/Jobs-and-Pricing',
-              },                     
+              },
+              {
+                label: 'User FAQ',
+                to: '/knowledgebase/Chainlink-Users-FAQ',
+              },              
+              {
+                label: 'Node Operator FAQ',
+                to: '/knowledgebase/Chainlink-Operators-FAQ',
+              },
             ],
           },
           {
@@ -149,6 +171,10 @@ const config = {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/company/linkwell-nodes',
               },              
+              {
+                label: 'GitHub',
+                href: 'https://github.com/LinkWellNodes/Documentation',
+              },
             ],
           },
           {
@@ -156,11 +182,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/LinkWellNodes/Documentation',
+                href: '/blog',
               },
             ],
           },

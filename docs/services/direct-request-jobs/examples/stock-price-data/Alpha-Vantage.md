@@ -27,7 +27,7 @@ Add the following sample code to your **consumer contract**.
 
 #### 2a. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request (varies by chain, oracle, and job): 
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.sol#L23-L32
