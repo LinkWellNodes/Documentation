@@ -29,7 +29,7 @@ This job returns a single **uint256** object, which can store any integer from `
 
 ### Request parameters
 
-This job requires the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -153,7 +153,7 @@ This job returns a single **uint256[]** object, which can store an array of unsi
 
 ### Request parameters
 
-This job requires the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -289,7 +289,7 @@ This job returns a single **int256** object, which can store any integer from `-
 
 ### Request parameters
 
-This job requires the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -426,7 +426,7 @@ This job returns a single **int256[]** object, which can store an array of signe
 
 ### Request parameters
 
-This job requires the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -562,7 +562,7 @@ This job returns a single **bool** object, which can store a `true` or `false` v
 
 ### Request parameters
 
-This job requires the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -686,7 +686,7 @@ This job returns a single **bool[]** object, which can store an array of `true` 
 
 ### Request parameters
 
-This job requires the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -813,7 +813,7 @@ This job returns a single **bytes** object, which can readily be converted into 
 
 ### Request parameters
 
-This job requires the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -945,7 +945,7 @@ This job returns a single **bytes[]** object, which can readily be converted int
 
 ### Request parameters
 
-This job requires the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
 | Parameter | Type | Value example | Description |
 |-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|

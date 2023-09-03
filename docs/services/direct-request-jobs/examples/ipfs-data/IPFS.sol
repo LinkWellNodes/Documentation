@@ -35,14 +35,14 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
 		     
-        // DEFINE THE REQUEST (example)
+        // DEFINE THE REQUEST PARAMETERS (example)
         req.add('method', 'GET');
         req.add('url', 'https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json');
         req.add('headers', '["accept", "application/json"]');
         req.add('body','');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following curl request simulates the above request parameters: 
+        // The following curl command simulates the above request parameters: 
         // curl -X 'GET' 'https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json' -H 'accept: application/json'
         
         // PROCESS THE RESULT (example)

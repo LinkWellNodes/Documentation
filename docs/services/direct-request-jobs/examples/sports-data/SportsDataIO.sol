@@ -36,14 +36,14 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
         
-        // DEFINE THE REQUEST (example)
+        // DEFINE THE REQUEST PARAMETERS (example)
         req.add('method', 'GET');
         req.add('url', 'https://api.sportsdata.io/v3/mma/scores/json/Fighter/140000098?key={your_key}');
         req.add('headers', '["content-type", "application/json"]');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following curl request simulates the above request parameters: 
+        // The following curl command simulates the above request parameters: 
         // curl -k 'https://api.sportsdata.io/v3/mma/scores/json/Fighter/140000098?key={your key}'
         
         // PROCESS THE RESULT (example)

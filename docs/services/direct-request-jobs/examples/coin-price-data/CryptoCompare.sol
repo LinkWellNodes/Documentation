@@ -36,14 +36,14 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
         
-        // DEFINE THE REQUEST (example)
+        // DEFINE THE REQUEST PARAMETERS (example)
         req.add('method', 'GET');
         req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
         req.add('headers', '');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following curl request simulates the above request parameters: 
+        // The following curl command simulates the above request parameters: 
         // curl -X 'GET' 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' -H 'accept: application/json'
         
         // PROCESS THE RESULT (example)

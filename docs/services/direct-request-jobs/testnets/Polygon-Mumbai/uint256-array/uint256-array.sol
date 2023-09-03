@@ -32,14 +32,14 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
 		     
-        // DEFINE THE REQUEST (example)
+        // DEFINE THE REQUEST PARAMETERS (example)
         req.add('method', 'POST');
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
         req.add('body', '{"data":[[12.43,54.47,98.34],[89.99,34.21,85.65],[412.43,983.89,473.31]]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following curl request simulates the above request parameters: 
+        // The following curl command simulates the above request parameters: 
         // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[[12.43,54.47,98.34],[89.99,34.21,85.65],[412.43,983.89,473.31]]}'
         
         // PROCESS THE RESULT (example)

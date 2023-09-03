@@ -36,14 +36,14 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
         
-        // DEFINE THE REQUEST (example)
+        // DEFINE THE REQUEST PARAMETERS (example)
         req.add('method', 'GET');
         req.add('url', 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={your_key}');
         req.add('headers', '["content-type", "application/json"]');
         req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         
-        // The following curl request simulates the above request parameters: 
+        // The following curl command simulates the above request parameters: 
         // curl -k 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={your_key}' --request 'GET' --header 'content-type: application/json'
         
         // PROCESS THE RESULT (example)
