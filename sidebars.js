@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Direct Request jobs',
+      label: 'Direct Request Jobs',
       collapsible: false,
       link: {type: 'doc', id: 'services/direct-request-jobs/Jobs-and-Pricing'},
       items: [
@@ -105,6 +105,11 @@ module.exports = {
               },
           ]
         },
+	    {
+	      type: 'doc',
+	      id: 'services/direct-request-jobs/Pricing',
+	      label: 'Pricing',
+	    },
       ],     
     },
     {

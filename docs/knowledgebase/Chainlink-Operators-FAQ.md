@@ -38,13 +38,15 @@ The infrastructure costs required to run a secure, reliable, mainnet Chainlink i
 
 The expenses paid by a Chainlink node operator typically include: 
 
-* **Infrastructure costs**: a typical mainnet Chainlink infrastructure includes triple-redundant Chainlink nodes, blockchain full nodes, database read/write replicas, external adapters, multiple backups of all data, automatic disaster recovery mechanisms, and a reliable monitoring and alerting system. 
-
-* **Data subscription costs**: node operators often need to pay subscription fees to premium data feeds requested by their clients, which can be significant.
+* **Infrastructure costs**: a typical mainnet Chainlink infrastructure includes triple-redundant Chainlink nodes, redundant blockchain full nodes, database read/write replicas, external adapters, multiple backups of all data, automatic disaster recovery mechanisms, and a reliable monitoring and alerting system. 
 
 * **Blockchain transaction costs**: for every client request for data, node operators need to pay related gas to write the response on-chain. Gas costs vary significantly by chain, network congestion, and response size, and may range from anywhere between a few cents per transaction, to tens of hundreds of USD per transaction (rare).
 
-In order to recoup these costs, node operators need to leverage economies of scale - meaning that each infrastructure will need to serve multiple customers and jobs to break even.
+* **Data subscription costs**: node operators often need to pay subscription fees to premium data feeds requested by their clients, which can be significant.
+
+In order to recoup these costs, node operators need to leverage economies of scale - meaning that each infrastructure will need to serve multiple customers in order to break even.
+
+In this way, as public node operators, LinkWell Nodes can afford to provide a more reliable oracle data infrastructure than any lone node operator can afford to maintain - resulting in a win-win for everyone! 
 
 ### Should I run my own Chainlink node?
 
