@@ -1,0 +1,36 @@
+type = "directrequest"
+schemaVersion = 1
+name = "LW_AGT_EA_uint256"
+externalJobID = "a8356f48-569c-434e-aa4a-c5fcb4db5cc0"
+forwardingAllowed = false
+maxTaskDuration = "0s"
+contractAddress = "0x20f6596bA2c39EFd9340F2aF0428D541f7C51954"
+minContractPaymentLinkJuels = "0"
+observationSource = """
+    decode_log   [type="ethabidecodelog"
+                  abi="OracleRequest(bytes32 indexed specId, address requester, bytes32 requestId, uint256 payment, address callbackAddr, bytes4 callbackFunctionId, uint256 cancelExpiration, uint256 dataVersion, bytes data)"
+                  data="$(jobRun.logData)"
+                  topics="$(jobRun.logTopics)"]
+
+    decode_cbor  [type="cborparse" data="$(decode_log.data)"]
+
+    send_to_bridge [
+        type="bridge" 
+        name="common-http-forwarder" 
+        requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path),\\"multiplier\\":$(decode_cbor.multiplier),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
+        headers="[\\"secret-val-01\\", \\"\\", \\"secret-val-02\\", \\"\\", \\"secret-val-03\\", \\"\\", \\"secret-val-04\\", \\"\\", \\"secret-val-05\\", \\"\\"]"]
+
+    encode_data  [type="ethabiencode" 
+                abi="(bytes32 requestId, uint256 value)" 
+                data="{ \\"requestId\\": $(decode_log.requestId), \\"value\\": $(send_to_bridge) }"
+                ]
+
+    encode_tx  [type="ethabiencode"
+                abi="fulfillOracleRequest2(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes calldata data)"
+                data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
+                ]
+
+    submit_tx    [type="ethtx" to="0x20f6596bA2c39EFd9340F2aF0428D541f7C51954" data="$(encode_tx)"]
+
+    decode_log -> decode_cbor -> send_to_bridge -> encode_data -> encode_tx -> submit_tx
+"""

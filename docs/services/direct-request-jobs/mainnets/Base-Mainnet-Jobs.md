@@ -6,700 +6,1103 @@ import CodeBlock from '@theme/CodeBlock';
 
 Base is a "layer-2" optimistic rollup solution for the Ethereum blockchain, developed by Coinbase, Inc.
 
+Please see below for our Chainlink direct request job offerings on the Base network. All mainnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+
+### Select the type of data that you need:
+
 <Tabs groupId="dataType" queryString>
-<TabItem value="GET>Uint256"> 
+<TabItem value="Uint256"> 
 
-#### **GET > Uint256**
+## Uint256 Retrieval
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**uint256**).
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit unsigned integer (**uint256**) to your consumer contract.
 
-### Job details
+:::info 
+This job returns a single **uint256** object, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::
 
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                | -->
+### Job metadata
+
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK | -->
+
 | Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
-This job allows for the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **get** | Yes | String | `"https://tinyurl.com/yz4jtj6u"` | The URL to which to send the HTTP request for data                                                                                          |
-| **path** | Yes | String | `"RAW,ETH,USD,VOLUME24HOUR"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-| **times** | Yes | int256 | `10 ** 18` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method** | `string` | 'POST' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+| **multiplier** | `int256` | 10 ** 18 | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, it is not a number), the request will not be fulfilled. |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead (ie, my-project). This will allow prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-#### Simulating the request:
+### Try it for yourself
 
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"`
-* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":0.18958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
-* Sample response from the Chainlink oracle: `121111172124190010000000`
+Add the following sample code to your **consumer contract**.
 
-### Implementing within your consumer contract
+#### 1. Add the constructor:
 
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256/get_uint256.sol#L22-L27
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/uint256/uint256.sol#L23-L28
 ```
 
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256/get_uint256.sol#L29-L42
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/uint256/uint256.sol#L31-L51
 ```
 
-### View the full source code
+#### 3. Retrieve the response (example):
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256/get_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/uint256/uint256.sol#L53-L61
+```
 
-### Need more help?
+### Need to send sensitive information?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+#### 1. **Send the HTTP request**:
+
+The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
+
+```
+curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' \
+ --request 'GET' \
+ --header 'content-type: application/json' \
+ --header 'set-cookie: sid=14A52'
+```
+
+#### 2. **Analyze the response**:
+
+The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
+
+```
+{
+   "BTC":{
+      "USD":30575.12,
+      "EUR":27810.9
+   },
+   "ETH":{
+      "USD":1875.87,
+      "EUR":1706.29
+   }
+}
+```
+
+#### 3. **Apply the JSON path**:
+
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`ETH,USD`). After applying the provided path, we get the following result:
+
+```
+1875.87
+```
+
+#### 4. **Apply the multiplier**:
+
+After filtering the sample response by the provided JSON path, our Chainlink node will multiply the result by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following value, which is ultimately written to your smart contract as a `uint256` object by our Chainlink oracle:
+
+```
+1913540000000000000000
+```
+</TabItem>
+
+<TabItem value="Uint256[]"> 
+
+## Uint256[] Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your consumer contract.
+
+:::info 
+This job returns a single **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+:::
+
+### Job metadata
+
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK | -->
+
+| Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set within your contract's `request()` function:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method** | `string` | 'GET' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path** | `string` | 'data,0,val;data,1,val;data,2,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If a single path is desired, enter the path without any semicolons. The target of this singular path must be an array of numbers. If multiple paths are specified, the target of each requested path must be a singular number. An array (`uint256[]`) will be returned containing the individual results of each path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array of numbers), pass an empty string (''). |
+| **multiplier** | `int256` | 10 ** 18 | The number by which to multiply every element within the result array returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, all elements are not numbers), the request will not be fulfilled. |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead (ie, my-project). This will allow prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/uint256-array/uint256-array.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/uint256-array/uint256-array.sol#L31-L51
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/uint256-array/uint256-array.sol#L53-L61
+```
+
+### Need to send sensitive information?
+
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+#### 1. **Send the HTTP request**:
+
+The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
+
+```
+curl "https://httpbin.org/post" \
+ --request 'POST' \
+ --header 'content-type: application/json' \
+ --header 'set-cookie: sid=14A52' \
+ --data '{"data":[[12.43,54.47,98.34],[89.99,34.21,85.65],[412.43,983.89,473.31]]}'
+```
+
+#### 2. **Analyze the response**:
+
+The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
+
+```
+{
+   "json":{
+      "data":[
+         [
+            12.43,
+            54.47,
+            98.34
+         ],
+         [
+            89.99,
+            34.21,
+            85.65
+         ],
+         [
+            412.43,
+            983.89,
+            473.31
+         ]
+      ]
+   }
+}
+```
+
+#### 3. **Apply the JSON path**:
+
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`), which contains 3 separate (`;`-delimited) JSON paths. After applying the provided path parameter, we get the following array:
+
+```
+[98.34,89.99,412.43]
+```
+
+#### 4. **Apply the multiplier**:
+
+After filtering the sample response by the provided JSON path, our Chainlink node will multiply every element in the result array by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following array, which is ultimately written to your smart contract as a `uint256[]` object by our Chainlink oracle:
+
+```
+[98340000000000000000,89990000000000000000,412430000000000000000]
+```
+</TabItem>
+
+<TabItem value="Int256"> 
+
+## Int256 Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit signed integer (**int256**) to your consumer contract.
+
+:::info  
+This job returns a single **int256** object, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+:::
+
+### Job metadata
+
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK | -->
+
+| Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set within your contract's `request()` function:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method** | `string` | 'POST' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+| **multiplier** | `int256` | 10 ** 18 | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, it is not a number), the request will not be fulfilled. |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead (ie, my-project). This will allow prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/int256/int256.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/int256/int256.sol#L31-L51
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/int256/int256.sol#L53-L61
+```
+
+### Need to send sensitive information?
+
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+#### 1. **Send the HTTP request**:
+
+The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
+
+```
+curl 'https://httpbin.org/post' \
+ --request 'POST' \
+ --header 'content-type: application/json' \
+ --header 'set-cookie: sid=14A52' \
+ --data '{"data":[[12.43,-54.47,98.34],[89.99,-34.21,-85.65],[-412.43,983.89,473.31]]}'
+```
+
+#### 2. **Analyze the response**:
+
+The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
+
+```
+{
+   "json":{
+      "data":[
+         [
+            12.43,
+            -54.47,
+            98.34
+         ],
+         [
+            89.99,
+            -34.21,
+            -85.65
+         ],
+         [
+            -412.43,
+            983.89,
+            473.31
+         ]
+      ]
+   }
+}
+```
+
+#### 3. **Apply the JSON path**:
+
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,1,2`). After applying the provided path, we get the following result:
+
+```
+-85.65
+```
+
+#### 4. **Apply the multiplier**:
+
+After filtering the sample response by the provided JSON path, our Chainlink node will multiply the result by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following value, which is ultimately written to your smart contract as a `int256` object by our Chainlink oracle:
+
+```
+-85650000000000000000
+```
 
 </TabItem>
 
-<TabItem value=" GET>Uint256_No_Multiply"> 
+<TabItem value="Int256[]">
 
-#### **GET > Uint256 No Multiply**
+## Int256[] Retrieval
 
-HTTP GET to any public API which parses the response and returns an unsigned integer (**uint256**).
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit signed integers (**int256[]**) to your consumer contract.
 
-### Job details
+:::info  
+This job returns a single **int256[]** object, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+:::
 
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
+### Job metadata
+
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK | -->
+
 | Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
-This job allows for the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **get** | Yes | String | `"https://tinyurl.com/yz4jtj6u"` | The URL to which to send the HTTP request for data                                                                                          |
-| **path** | Yes | String | `"RAW,ETH,USD,VOLUME24HOUR"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method** | `string` | 'GET' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path** | `string` | 'data,0,val;data,1,val;data,2,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If a single path is desired, enter the path without any semicolons. The target of this singular path must be an array of numbers. If multiple paths are specified, the target of each requested path must be a singular number. An array (`int256[]`) will be returned containing the individual results of each path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array of numbers), pass an empty string (''). |
+| **multiplier** | `int256` | 10 ** 18 | The number by which to multiply every element within the result array returned to the contract. This is important, as Solidity cannot handle decimal objects. If no multiplication is desired, enter 1. If the result cannot be multiplied (ie, all elements are not numbers), the request will not be fulfilled. |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead (ie, my-project). This will allow prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-#### Simulating the request:
+### Try it for yourself
 
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"`
-* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":0.18958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
-* Sample response from the Chainlink oracle: `1211111.72124190010000000`
+Add the following sample code to your **consumer contract**.
 
-### Implementing within your consumer contract
+#### 1. Add the constructor:
 
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_no_multiply/get_uint256_no_multiply.sol#L22-L27
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/int256-array/int256-array.sol#L23-L28
 ```
 
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_no_multiply/get_uint256_no_multiply.sol#L29-L40
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/int256-array/int256-array.sol#L31-L51
 ```
 
-### View the full source code
+#### 3. Retrieve the response (example):
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/int256-array/int256-array.sol#L53-L61
+```
 
-### Need more help?
+### Need to send sensitive information?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+#### 1. **Send the HTTP request**:
+
+The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
+
+```
+curl "https://httpbin.org/post" \
+ --request 'POST' \
+ --header 'content-type: application/json' \
+ --header 'set-cookie: sid=14A52' \
+ --data '{"data":[[12.43,-54.47,98.34],[89.99,-34.21,-85.65],[-412.43,983.89,473.31]]}'
+```
+
+#### 2. **Analyze the response**:
+
+The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
+
+```
+{
+   "json":{
+      "data":[
+         [
+            12.43,
+            -54.47,
+            98.34
+         ],
+         [
+            89.99,
+            -34.21,
+            -85.65
+         ],
+         [
+            -412.43,
+            983.89,
+            473.31
+         ]
+      ]
+   }
+}
+```
+
+#### 3. **Apply the JSON path**:
+
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,1;json,data,1,0;json,data,2,1`), which contains 3 separate (`;`-delimited) JSON paths. After applying the provided path parameter, we get the following result:
+
+```
+[-54.47,89.89,983.89]
+```
+
+#### 4. **Apply the multiplier**:
+
+After filtering the sample response by the provided JSON path, our Chainlink node will multiply every element in the result array by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following array, which is ultimately written to your smart contract as a `int256[]` object by our Chainlink oracle:
+
+```
+[-54470000000000000000,89990000000000000000,983890000000000000000]
+```
+</TabItem>
+
+<TabItem value="Bool">
+
+## Boolean Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a boolean value at the given path, and returns the resulting object (**bool**) to your consumer contract.
+
+:::info  
+This job returns a single **bool** object, which can store a `true` or `false` value. 
+:::
+
+### Job metadata
+
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 43309009a154495cb2ed794233e6ff56 | 0 LINK | -->
+
+| Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set within your contract's `request()` function:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method** | `string` | 'GET' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead (ie, my-project). This will allow prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/bool/bool.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/bool/bool.sol#L30-L50
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/bool/bool.sol#L52-L60
+```
+
+### Need to send sensitive information?
+
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+#### 1. **Send the HTTP request**:
+
+The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
+
+```
+curl 'https://httpbin.org/post' \
+ --request 'POST' \
+ --header 'content-type: application/json' \
+ --header 'set-cookie: sid=14A52' \
+ --data '{"data":[{"coin":"BTC","isActive":false},{"coin":"ETH","isActive":false},{"coin":"LINK","isActive":true}]}'
+```
+
+#### 2. **Analyze the response**:
+
+The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
+
+```
+{
+   "json":{
+      "data":[
+         {
+            "coin":"BTC",
+            "isActive":false
+         },
+         {
+            "coin":"ETH",
+            "isActive":false
+         },
+         {
+            "coin":"LINK",
+            "isActive":true
+         }
+      ]
+   }
+}
+```
+
+#### 3. **Apply the JSON path**:
+
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,2,isActive`). After applying the provided path, we get the following result, which is ultimately written to your smart contract as a `bool` object by our Chainlink oracle:
+
+```
+true
+```
+</TabItem>
+
+<TabItem value="Bool[]">
+
+## Boolean[] Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of boolean values at the given path, and returns the resulting array of booleans (**bool[]**) to your consumer contract.
+
+:::info  
+This job returns a single **bool[]** object, which can store an array of `true` or `false` values. 
+:::
+
+### Job metadata
+
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK | -->
+
+| Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set within your contract's `request()` function:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method** | `string` | 'GET' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path** | `string` | 'data,0,val;data,1,val;data,2,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If a single path is desired, enter the path without any semicolons. The target of this singular path must be an array of boolean values (`true` or `false`). If multiple paths are specified, the target of each requested path must be a singular boolean value. An array (`bool[]`) will be returned containing the individual results of each path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array of boolean values), pass an empty string (''). |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead (ie, my-project). This will allow prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/bool-array/bool-array.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/bool-array/bool-array.sol#L30-L50
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/bool-array/bool-array.sol#L52-L60
+```
+
+### Need to send sensitive information?
+
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+:::
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+#### 1. **Send the HTTP request**:
+
+The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
+
+```
+curl "https://httpbin.org/post" \
+ --request 'POST' \
+ --header 'content-type: application/json' \
+ --header 'set-cookie: sid=14A52' \
+ req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
+```
+
+#### 2. **Analyze the response**:
+
+The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
+
+```
+{
+   "json":{
+      "data":[
+         [
+            false,
+            false,
+            true
+         ],
+         [
+            false,
+            true,
+            true
+         ],
+         [
+            true,
+            false,
+            true
+         ]
+      ]
+   }
+}
+```
+
+#### 3. **Apply the JSON path**:
+
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`), which contains 3 separate (`;`-delimited) JSON paths. After applying the provided path parameter, we get the following array, which is ultimately written to your smart contract as a `bool[]` object by our Chainlink oracle:
+
+```
+[true,false,false]
+```
+</TabItem>
+
+<TabItem value="String (Bytes)">
+
+## String (Bytes) Retrieval
+
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting dynamic bytes array (**bytes**) - which can also be represented as a **string** - to your consumer contract.
+
+:::info 
+This job returns a single **bytes** object, which can readily be converted into a **string** value. 
+:::
+
+### Job metadata
+
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK | -->
+
+| Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set within your contract's `request()` function:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method** | `string` | 'POST' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path** | `string` | 'data,0,val' | The [JSON Path](https://jsonpath.com/) at which to extract the result returned by the requested HTTP endpoint (JSON results only). To return the full result without parsing, pass an empty string (''). If the provided path cannot be found in the response, the request will not be fulfilled. |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead (ie, my-project). This will allow prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**.
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/string-bytes/string-bytes.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/string-bytes/string-bytes.sol#L30-L50
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/string-bytes/string-bytes.sol#L52-L62
+```
+
+### Need to send sensitive information?
+
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
+::: 
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+#### 1. **Send the HTTP request**:
+
+The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
+
+```
+curl 'https://httpbin.org/post' \
+ --request 'POST' \
+ --header 'content-type: application/json' \
+ --header 'set-cookie: sid=14A52' \
+ --data '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}'
+```
+
+#### 2. **Analyze the response**:
+
+The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
+
+```
+{
+   "json":{
+      "data":[
+         {
+            "id":1,
+            "name":"Bitcoin",
+            "price":20194.52
+         },
+         {
+            "id":2,
+            "name":"Ethereum",
+            "price":1850.46
+         },
+         {
+            "id":3,
+            "name":"Chainlink",
+            "price":18.36
+         }
+      ]
+   }
+}
+```
+
+#### 3. **Apply the JSON path**:
+
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,name`). After applying the provided path, we get the following result, which is ultimately written to your smart contract as a `bytes` object (which can also be represented as a `string` object) by our Chainlink oracle:
+
+```
+"Bitcoin"
+```
+
+:::info  
+Note that the double-quotes will not be present when retrieving the above response as a `string` object within your smart contract.
+:::
 
 </TabItem>
 
-<TabItem value="GET>Int256"> 
+<TabItem value="String[] (Bytes[])">
 
-#### **GET > Int256**
+## String[] (Bytes[]) Retrieval
 
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer (**int256**).
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting array of dynamic bytes arrays (**bytes[]**) - which can also be represented as a **string[]** - to your consumer contract.
 
-### Job details
+:::info  
+This job returns a single **bytes[]** object, which can readily be converted into a **string[]** value.
+::: 
 
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
+### Job metadata
+
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xD8edDB284d25DbbC5189E488639D689DFE7AaB49](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK | -->
+
 | Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
-This job allows for the following parameters to be set:
+This job requires the following parameters to be set within your contract's `request()` function:
 
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **get** | Yes | String | `"https://tinyurl.com/yz4jtj6u"` | The URL to which to send the HTTP request for data                                                                                          |
-| **path** | Yes | String | `"RAW,ETH,USD,VOLUME24HOUR"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-| **times** | Yes | int256 | `10 ** 18` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **method** | `string` | 'POST' | The HTTP method to use in initiating your request for data (`GET`, `POST`, `PUT`, or `DELETE`). |
+| **url** | `string` | 'https://myRequestURL.com/path?var1=abc&var2=xyz' | The URL to which to send your HTTP request for data. |
+| **headers** | `string` | '["my-header-1", "header 1 value", "my-header-2", "header 2 value"]' | An array of headers to send with the HTTP request, represented as an even-numbered array of strings. If no headers are desired, you must pass an empty string (''). |
+| **body** | `string` | 'My request body' | A body to send with the HTTP request (`POST`, `PUT` requests only). If no body is desired or applicable, you must pass an empty string (''). |
+| **path** | `string` | 'data,0,val;data,1,val;data,2,val' | A semicolon-delimited list of [JSON Paths](https://jsonpath.com/) at which to extract data from the result returned by the requested HTTP endpoint (JSON results only). If a single path is desired, enter the path without any semicolons. If multiple paths are specified, an array (`bytes[]`) will be returned containing result of each requested path, with order preserved. If any of the provided path(s) cannot be found in the response, the request will not be fulfilled. To return the full result without any parsing (must be an array), pass an empty string (''). |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle here. Or, if we already have a dedicated customer support channel set up for you in our Discord server, enter the channel name instead (ie, my-project). This will allow prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, pass an empty string (''). |
 
-#### Simulating the request:
+### Try it for yourself
 
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"`
-* Sample response from the HTTP endpoint: `{"RAW":{"ETH":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"ETH","TOSYMBOL":"USD","FLAGS":"2052","PRICE":1878.15,"LASTUPDATE":1687648218,"MEDIAN":1878.7,"LASTVOLUME":0.18958184,"LASTVOLUMETO":355.9986749704,"LASTTRADEID":"458340262","VOLUMEDAY":82841.07502237387,"VOLUMEDAYTO":156245016.13863632,"VOLUME24HOUR":1211111.7212419`
-* Sample response from the Chainlink oracle: `1211111.72124190010000000`
+Add the following sample code to your **consumer contract**.
 
-### Implementing within your consumer contract
+#### 1. Add the constructor:
 
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_int256/get_int256.sol#L22-L27
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/string-bytes-array/string-bytes-array.sol#L23-L28
 ```
 
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
+#### 2. Add your request function (example):
+The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_int256/get_int256.sol#L29-L43
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/string-bytes-array/string-bytes-array.sol#L30-L50
 ```
 
-### View the full source code
+#### 3. Retrieve the response (example):
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_int256/get_int256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/string-bytes-array/string-bytes-array.sol#L52-L64
+```
 
-### Need more help?
+### Need to send sensitive information?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+:::danger 
+Data entered into a smart contract is visible to the general public.
+:::
+
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+
+### Troubleshooting
+
+Having trouble with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+
+:::caution 
+This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
+:::
+
+### Still need more help?
+
+Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+
+### Simulating the above request
+
+Let's walk through each step of the above **sample request**, to better understand how it all works together:
+
+#### 1. **Send the HTTP request**:
+
+The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
+
+```
+curl "https://httpbin.org/post" \
+ --request 'POST' \
+ --header 'content-type: application/json' \
+ --header 'set-cookie: sid=14A52' \
+ --data '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}'
+```
+
+#### 2. **Analyze the response**:
+
+The following is a sample response body returned to our Chainlink node by the above HTTP request (abbreviated for clarity):
+
+```
+{
+   "json":{
+      "data":[
+         [
+            "Coinbase",
+            "Binance",
+            "Kraken"
+         ],
+         [
+            "Huobi",
+            "Crypto.com",
+            "KuCoin"
+         ],
+         [
+            "Yobit",
+            "Gemini",
+            "OKX"
+         ]
+      ]
+   }
+}
+```
+
+#### 3. **Apply the JSON path**:
+
+After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`json,data,0,2;json,data,1,0;json,data,2,1`), which contains 3 separate (`;`-delimited) JSON paths. After applying the provided path parameter, we get the following array, which is ultimately written to your smart contract as a `bytes[]` object (which can also be represented as a `string[]`) object by our Chainlink oracle:
+
+```
+["Kraken","Huobi","Gemini"]
+```
+
+:::info  
+Note that the double-quotes will not be present when retrieving any of the above array elements as a `string` within your smart contract. 
+:::
 
 </TabItem>
 
-<TabItem value="GET>Bool"> 
+<TabItem value="Other...">
 
-#### **GET > Bool**
+## Need a custom data type delivered?
 
-HTTP GET to any public API which parses the response and returns a boolean (**bool**).
+**We've got you covered:**
 
-### Job details
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with relevant details about your request. 
+1. We'll assess your request and provide you with a custom job ID that works for you.
 
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **get** | Yes | String | `"https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD"` | The URL to which to send the HTTP request for data                                                                                          |
-| **path** | Yes | String | `"symbols,0,isSpotTradingAllowed"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD"`
-* Sample response from the HTTP endpoint: `{"timezone":"UTC","serverTime":1687782213836,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":10,"limit":100},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":200000},{"rateLimitType":"RAW_REQUESTS","interval":"MINUTE","intervalNum":5,"limit":6100}],"exchangeFilters":[],"symbols":[{"symbol":"ETHUSD","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":8,"quoteAssetPrecision":8,"baseCommissionPrecision":8,"quoteCommissionPrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"quoteOrderQtyMarketAllowed":true,"allowTrailingStop":true,"cancelReplaceAllowed":true,"isSpotTradingAllowed":true,`
-* Sample response from the Chainlink oracle: `true`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bool/get_bool.sol#L22-L27
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bool/get_bool.sol#L29-L37
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bool/get_bool.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-
-</TabItem>
-
-<TabItem value="GET>Bytes"> 
-
-#### **GET > Bytes**
-
-HTTP GET to any public API which parses the response and returns arbitrary-length raw byte data (**bytes**).
-
-### Job details
-
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **get** | Yes | String | `"See sample curl command below"` | The URL to which to send the HTTP request for data                                                                                          |
-| **path** | Yes | String | `"image"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json"`
-* Sample response from the HTTP endpoint: `{"image":"0x68747470733a2f2f697066732e696f2f697066732f516d5358416257356b716e3259777435444c336857354d736a654b4a4839724c654c6b51733362527579547871313f66696c656e616d653d73756e2d636861696e6c696e6b2e676966"}`
-* Sample response from the Chainlink oracle: `https://ipfs.io/ipfs/QmSXAbW5kqn2Ywt5DL3hW5MsjeKJH9rLeLkQs3bRuyTxq1?filename=sun-chainlink.gif`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bytes/get_bytes.sol#L24-L29
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bytes/get_bytes.sol#L31-L42
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bytes/get_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-
-</TabItem>
-
-<TabItem value="GET>String"> 
-
-#### **GET > String**
-
-HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
-
-### Job details
-
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **get** | Yes | String | `"https://tinyurl.com/2xw2us69"` | The URL to which to send the HTTP request for data                                                                                          |
-| **path** | Yes | String | `"0,id"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10"`
-* Sample response from the HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30385,"m`
-* Sample response from the Chainlink oracle: `bitcoin`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_string/get_string.sol#L24-L29
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_string/get_string.sol#L31-L43
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_string/get_string.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-
-</TabItem>
-
-<TabItem value="GET>String_x_2"> 
-
-#### **GET > String x 2**
-
-HTTP GET to any public API which parses the response and returns a sequence of characters (**string**).
-
-### Job details
-
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | be46cb8070c14cb7ad058b29f127ec6b | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **url1** | Yes | String | `"https://tinyurl.com/39u6msd7"` | The first URL to which to send the HTTP request for data                                                                                          |
-| **url2** | Yes | String | `"https://tinyurl.com/mtusr8ew"` | The second URL to which to send the HTTP request for data                                                                                          |
-| **path1** | Yes | String | `"0,id"` | The first [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-| **path2** | Yes | String | `"1,id"` | The second [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1"`
-* Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2"`
-* Sample response from the first HTTP endpoint: `[{"id":"bitcoin"`
-* Sample response from the second HTTP endpoint: `[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":30712,"market_cap":595456009382,"market_cap_rank":1,"fully_diluted_valuation":644120277894,"total_volume":15152753943,"high_24h":30715,"low_24h":30011,"price_change_24h":384.13,"price_change_percentage_24h":1.2666,"market_cap_change_24h":6400455297,"market_cap_change_percentage_24h":1.08656,"circulating_supply":19413418.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":69045,"ath_change_percentage":-55.51869,"ath_date":"2021-11-10T14:24:11.849Z","atl":67.81,"atl_change_percentage":45191.94972,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2023-06-27T12:00:13.128Z"},{"id":"ethereum",`
-* First sample response from the Chainlink oracle: `bitcoin`
-* Second sample response from the Chainlink oracle: `ethereum`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_string_x2/get_string_x2.sol#L29-L34
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_string_x2/get_string_x2.sol#L36-L53
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_string_x2/get_string_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-
-</TabItem>
-
-<TabItem value="GET>Uint256_x_2"> 
-
-#### **GET > Uint256 x 2**
-
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns two unsigned integers of type (**uint256**).
-
-### Job details
-
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **url1** | Yes | String | `"https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC"` | The first URL to which to send the HTTP request for data                                                                                          |
-| **url2** | Yes | String | `"https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"` | The second URL to which to send the HTTP request for data                                                                                          |
-| **path1** | Yes | String | `"BTC"` | The first [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-| **path2** | Yes | String | `"USD"` | The second [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-| **times** | Yes | int256 | `10 ** 18` | The number by which to multiply the results returned to the contract. This is important, as Solidity cannot handle decimal objects. |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the first provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC"`
-* Use the following curl command to test out the above request directly against the second provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"`
-* Sample response from the first HTTP endpoint: `{"BTC":0.06201}`
-* Sample response from the second HTTP endpoint: `{"USD":1886.15}`
-* First sample response from the Chainlink oracle: `62010000000000000`
-* Second sample response from the Chainlink oracle: `1886150000000000000000`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_x2/get_uint256_x2.sol#L30-L35
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_x2/get_uint256_x2.sol#L37-L55
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-
-</TabItem>
-
-<TabItem value="GET>Uint256[]"> 
-
-#### **GET > Uint256[]**
-
-HTTP GET to any public API which parses the response, multiplies the result by a multiplier and returns an unsigned integer array (**uint256[]**).
-
-### Job details
-
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 9a2ba54374f34184bdc6390db3171994 | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **get** | Yes | String | `"https://api.binance.us/api/v3/depth?symbol=ETHUSD"` | The URL to which to send the HTTP request for data                                                                                          |
-| **path** | Yes | String | `"bids,0"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.binance.us/api/v3/depth?symbol=ETHUSD"`
-* Sample response from the HTTP endpoint: `{"lastUpdateId":3224229511,"bids":[["1838.71000000","0.01540000"],["1838.69000000","0.83100000"]`
-* Sample response from the Chainlink oracle: `[1838, 0]`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_array/get_uint256_array.sol#L21-L26
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_array/get_uint256_array.sol#L28-L36
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-
-</TabItem>
-
-<TabItem value="GET>Bytes[]"> 
-
-#### **GET > Bytes[]**
-
-HTTP GET to any public API which parses the response and returns an arbitrary-length raw byte data array (**bytes[]**).
-
-### Job details
-
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **get** | Yes | String | `"https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD"` | The URL to which to send the HTTP request for data                                                                                          |
-| **path** | Yes | String | `"symbols,0,orderTypes"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X GET -H "content-type:application/json" "https://api.binance.us/api/v3/exchangeInfo?symbol=ETHUSD"`
-* Sample response from the HTTP endpoint: `{"timezone":"UTC","serverTime":1687788634554,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":10,"limit":100},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":200000},{"rateLimitType":"RAW_REQUESTS","interval":"MINUTE","intervalNum":5,"limit":6100}],"exchangeFilters":[],"symbols":[{"symbol":"ETHUSD","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":8,"quoteAssetPrecision":8,"baseCommissionPrecision":8,"quoteCommissionPrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"]`
-* Sample response from the Chainlink oracle: `[LIMIT, LIMIT_MAKER, MARKET, STOP_LOSS_LIMIT, TAKE_PROFIT_LIMIT]`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bytes_array/get_bytes_array.sol#L22-L27
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bytes_array/get_bytes_array.sol#L29-L37
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-
-</TabItem>
-
-<TabItem value="POST>Bytes"> 
-
-#### **POST > Bytes**
-
-### Job details
-
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **post** | Yes | String | `"https://min-api.cryptocompare.com/data/pricemultifull"` | The URL to which to send the HTTP request for data                                                                                          |
-| **requestData** | Yes | String | `'{"fsyms": "LINK", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
-| **path** | Yes | String | `"RAW,LINK,USD,LASTMARKET"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/pricemultifull" --data '{ "fsyms": "LINK", "tsyms": "USD"  }'`
-* Sample response from the HTTP endpoint: `{"RAW":{"LINK":{"USD":{"TYPE":"5","MARKET":"CCCAGG","FROMSYMBOL":"LINK","TOSYMBOL":"USD","FLAGS":"516","PRICE":6.082,"LASTUPDATE":1687813049,"MEDIAN":6.0785,"LASTVOLUME":74.97,"LASTVOLUMETO":456.04251,"LASTTRADEID":"65483495","VOLUMEDAY":1083331.4428641663,"VOLUMEDAYTO":6646357.149629641,"VOLUME24HOUR":1203763.9424006,"VOLUME24HOURTO":7385168.951435876,"OPENDAY":6.161,"HIGHDAY":6.259,"LOWDAY":6.024,"OPEN24HOUR":6.088,"HIGH24HOUR":6.259,"LOW24HOUR":6.021,"LASTMARKET":"Coinbase"`
-* Sample response from the Chainlink oracle: `Coinbase`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/post_bytes/post_bytes.sol#L23-L28
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/post_bytes/post_bytes.sol#L30-L43
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/post_bytes/post_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
-
-</TabItem>
-
-<TabItem value="POST>Uint256"> 
-
-#### **POST > Uint256**
-
-### Job details
-
-<!-- | Address                                    | JobID                            | Request Fee              | -->
-<!-- |--------------------------------------------|----------------------------------|-----------------------| -->
-<!-- | [0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c](https://basescan.org/address/0xc287d52dff95a6a49bdd2c3bb985c0e581b33d9c) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
-| Address and Job ID | Request Fee |
-|-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
-
-### Request parameters
-
-This job allows for the following parameters to be set:
-
-| Parameter | Required? | Type | Value example | Description |
-|-------------|--------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **post** | Yes | String | `"https://min-api.cryptocompare.com/data/price"` | The URL to which to send the HTTP request for data                                                                                          |
-| **requestData** | Yes | String | `'{"fsym": "ETH", "tsyms": "USD"}'` | A statically-defined JSON body to be sent to the defined URL. Must enter "{}" if no request body is to be sent |
-| **path** | Yes | String | `"USD"` | The [JSON Path](https://jsonpath.com/) from which to extract the result returned by the requested HTTP endpoint |
-| **times** | Yes | int256 | `100` | The number by which to multiply the result returned to the contract. This is important, as Solidity cannot handle decimal objects. |
-
-#### Simulating the request:
-
-* Use the following curl command to test out the above request directly against the provided HTTP endpoint: `curl -k -X POST -H "content-type:application/json" "https://min-api.cryptocompare.com/data/price" --data '{ "fsym": "ETH", "tsyms": "USD"  }'`
-* Sample response from the HTTP endpoint: `{"USD":1892.84}`
-* Sample response from the Chainlink oracle: `189284`
-
-### Implementing within your consumer contract
-
-#### Add the constructor:
-Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/post_uint256/post_uint256.sol#L23-L28
-```
-
-#### Add your request function (example):
-The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
-
-```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/post_uint256/post_uint256.sol#L30-L45
-```
-
-### View the full source code
-
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/post_uint256/post_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Base/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
-
-### Need more help?
-
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+:::info  
+Join our [Discord](https://discord.gg/AJ66pRz4) to get the fastest service for your request!
+:::
 
 </TabItem>
 </Tabs>
