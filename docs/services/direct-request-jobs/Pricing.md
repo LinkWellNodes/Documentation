@@ -16,6 +16,8 @@ To view our per-request fees, please visit the [documentation page](/services/di
   maxHeadingLevel={2}
 />
 
+---
+
 ## Fee lifecycle
 
 When you make a request to a Chainlink oracle, you'll send a fee (denominated in `LINK` token) along with your request. This fee varies by the specific **network** and **data type**, and is set by the node operator. 

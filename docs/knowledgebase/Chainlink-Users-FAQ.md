@@ -8,11 +8,15 @@ The target audience for this FAQ is **consumers of Chainlink** - in other words,
 
 ---
 
+**On this page**:
+
 <TOCInline
   toc={toc.filter((node) => node.level >= 2)}
   minHeadingLevel={1}
   maxHeadingLevel={4}
 />
+
+---
 
 ## General Topics
 

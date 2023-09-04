@@ -88,7 +88,11 @@ opacity: 0.6;
 opacity: 0.6;
 }
 
-
+/* Breadcrumbs */
+.breadcrumbs__link {
+	font-size:16px;
+	padding: 5px 10px;
+}
 
 /* Code boxes and excerpts */
 code {
@@ -158,6 +162,9 @@ nav[aria-label="Docs sidebar"] {
 .tabs__item {
 	border-right: 1px solid #E3E3E3;
 	border-radius: 0;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
 }
 /* Inactive tab */
 .tabs__item[aria-selected='false'] {
@@ -198,6 +205,11 @@ thead > tr {
 }
 .table-of-contents__link--active {
 	font-weight: 600;
+}
+
+/* FOOTER */
+.footer__link-item {
+	color: #87c6ef;
 }
 
 :root {

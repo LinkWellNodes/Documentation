@@ -3,7 +3,7 @@ module.exports = {
 	{
 	    type: 'doc',
 	    id: 'index',
-	    label: 'Start Here',
+	    label: 'Docs Home',
 	},
     {
         type: 'html',
@@ -110,6 +110,11 @@ module.exports = {
 	      id: 'services/direct-request-jobs/Pricing',
 	      label: 'Pricing',
 	    },
+	    //{
+	    //  type: 'doc',
+	    //  id: 'knowledgebase/Any-API-Guide',
+	    //  label: 'Examples',
+	    //},
       ],     
     },
     {

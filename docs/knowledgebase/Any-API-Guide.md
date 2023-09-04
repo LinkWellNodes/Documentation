@@ -1,13 +1,21 @@
 # Any API Examples 
-Chainlink's [Any API](https://docs.chain.link/any-api/introduction) service is a powerful capability that allows smart contracts to request data from off-chain sources. At LinkWell Nodes, we strive to make it as easy as possible for Web3 developers to leverage and utilize our [Chainlink oracles](https://chain.link/education/blockchain-oracles) when making requests. The below examples will walk you through the process of implementing our Chainlink oracles when requesting data from various API providers.
+Chainlink's [Any API](https://docs.chain.link/any-api/introduction) service is a powerful capability that allows smart contracts to request data from off-chain sources. At LinkWell Nodes, we strive to make it as easy as possible for Web3 developers to leverage and utilize Chainlink to make such requests. 
 
-## View our examples:
+The below examples will walk you through the process of using our Chainlink oracles to request data from various API providers.
+
+---
+
+**On this page**:
 
 * [Weather Data](#Weather-Data)
 * [Sports Data](#Sports-Data)
 * [Stock Price Data](#Stock-Price-Data)
 * [Coin Price Data](#Coin-Price-Data)
 * [IPFS Data](#IPFS-Data)
+
+---
+
+## View our examples:
 
 ### Weather Data {#Weather-Data}
 * [AccuWeather](/services/direct-request-jobs/examples/weather-data/AccuWeather.md)
@@ -26,7 +34,7 @@ Chainlink's [Any API](https://docs.chain.link/any-api/introduction) service is a
 
 ## Learn More
 
-To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/knowledgebase/Direct-Request-Guide) in our knowledgebase.
+To learn more about how Chainlink's direct request model works, visit the [Direct Request Guide](/knowledgebase/Direct-Request-Guide) in our knowledgebase.
 
 ## Troubleshooting
 

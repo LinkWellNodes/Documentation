@@ -63,7 +63,7 @@ const config = {
 
   themeConfig: {
       // Replace with your project's social card
-      image: 'img/LinkWellLogo.png',
+      image: 'img/linkwell-logo-276x237.webp',
       colorMode: {
           defaultMode: 'light',
           disableSwitch: true
@@ -72,7 +72,7 @@ const config = {
         title: 'LinkWell Nodes',
         logo: {
           alt: 'LinkWell Nodes',
-          src: 'img/favicon.ico',
+          src: 'img/linkwell-logo-276x237.webp',
         },
         hideOnScroll: true,
         items: [
