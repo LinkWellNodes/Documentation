@@ -131,7 +131,7 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 After filtering the sample response by the provided JSON path, our Chainlink node will multiply the result by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following value, which is ultimately written to your smart contract as a `uint256` object by our Chainlink oracle:
 
 ```
-1913540000000000000000
+1875870000000000000000
 ```
 </TabItem>
 

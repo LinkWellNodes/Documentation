@@ -19,7 +19,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         setChainlinkToken(0xb0897686c545045aFc77CF20eC7A532E3120E0F1);
         setOracleAddress(0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68);
         setJobId("a8356f48569c434eaa4ac5fcb4db5cc0");
-        setFeeInHundredthsOfLink(0);     // 0 LINK
+        setFeeInHundredthsOfLink(0.1);     // 0.1 LINK
     }
 
     // Send a request to the Chainlink oracle
@@ -52,7 +52,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     function fulfill(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response
         emit RequestFulfilled(requestId, data);
-        response = data;     // example value: 1913540000000000000000 (1913.54 before "multiplier" is applied)
+        response = data;     // example value: 1875870000000000000000 (1875.87 before "multiplier" is applied)
     }
 
     // Update oracle address

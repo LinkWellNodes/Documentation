@@ -29,7 +29,7 @@ This job returns a single **uint256** object, which can store any integer from `
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -54,20 +54,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256/uint256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256/uint256.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256/uint256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256/uint256.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256/uint256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256/uint256.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -135,7 +135,7 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 After filtering the sample response by the provided JSON path, our Chainlink node will multiply the result by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following value, which is ultimately written to your smart contract as a `uint256` object by our Chainlink oracle:
 
 ```
-1913540000000000000000
+1875870000000000000000
 ```
 </TabItem>
 
@@ -157,7 +157,7 @@ This job returns a single **uint256[]** object, which can store an array of unsi
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -182,20 +182,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256-array/uint256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256-array/uint256-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256-array/uint256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256-array/uint256-array.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256-array/uint256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/uint256-array/uint256-array.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -297,7 +297,7 @@ This job returns a single **int256** object, which can store any integer from `-
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -322,20 +322,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256/int256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256/int256.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256/int256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256/int256.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256/int256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256/int256.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -438,7 +438,7 @@ This job returns a single **int256[]** object, which can store an array of signe
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -463,20 +463,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256-array/int256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256-array/int256-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256-array/int256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256-array/int256-array.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256-array/int256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/int256-array/int256-array.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -578,7 +578,7 @@ This job returns a single **bool** object, which can store a `true` or `false` v
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -602,20 +602,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool/bool.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool/bool.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool/bool.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool/bool.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool/bool.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool/bool.sol#L47-L55
 ```
 
 ### Need to send sensitive information?
@@ -706,7 +706,7 @@ This job returns a single **bool[]** object, which can store an array of `true` 
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -730,20 +730,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool-array/bool-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool-array/bool-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool-array/bool-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool-array/bool-array.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool-array/bool-array.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/bool-array/bool-array.sol#L47-L55
 ```
 
 ### Need to send sensitive information?
@@ -837,7 +837,7 @@ This job returns a single **bytes** object, which can readily be converted into 
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -861,20 +861,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes/string-bytes.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes/string-bytes.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes/string-bytes.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes/string-bytes.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes/string-bytes.sol#L52-L62
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes/string-bytes.sol#L47-L57
 ```
 
 ### Need to send sensitive information?
@@ -973,7 +973,7 @@ This job returns a single **bytes[]** object, which can readily be converted int
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK |
 
 ### Request parameters
 
@@ -997,20 +997,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes-array/string-bytes-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes-array/string-bytes-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes-array/string-bytes-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes-array/string-bytes-array.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes-array/string-bytes-array.sol#L52-L64
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Ethereum/string-bytes-array/string-bytes-array.sol#L47-L59
 ```
 
 ### Need to send sensitive information?

@@ -19,7 +19,7 @@ contract LinkWellInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedO
         setChainlinkToken(0x5947BB275c521040051D82396192181b413227A3);
         setOracleAddress(0x720E94621237EE80948E1C14Cf62bb82ceb8b264);
         setJobId("356a0aced8f7425abd2ec17df9014359");
-        setFeeInHundredthsOfLink(0);     // 0 LINK
+        setFeeInHundredthsOfLink(0.1);     // 0.1 LINK
     }
 
     // Send a request to the Chainlink oracle

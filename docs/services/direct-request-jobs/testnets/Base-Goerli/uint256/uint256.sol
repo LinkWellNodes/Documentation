@@ -57,7 +57,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     function fulfill(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response
         emit RequestFulfilled(requestId, data);
-        response = data;     // example value: 1913540000000000000000 (1913.54 before "multiplier" is applied)
+        response = data;     // example value: 1875870000000000000000 (1875.87 before "multiplier" is applied)
     }
 
     // Update oracle address
