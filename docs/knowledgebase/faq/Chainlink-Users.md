@@ -1,10 +1,10 @@
 import TOCInline from '@theme/TOCInline';
 
-# Chainlink Data Consumers FAQ
+# Chainlink Users FAQ
+
+The target audience for this FAQ is **consumers of Chainlink data** - in other words, those looking to integrate Chainlink in order to write real-world data into their blockchain smart contract.
 
 The following is a list of frequently-asked questions and answers collected from our experience supporting the `#nodes`, `#operator-requests`, and `#external-adapters` channels within the [Chainlink Official Discord server](https://discord.com/invite/chainlink).
-
-The target audience for this FAQ is **consumers of Chainlink** - in other words, those looking to retrieve real-world data from the blockchain using the Chainlink ecosystem.
 
 ---
 

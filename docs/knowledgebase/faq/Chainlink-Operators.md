@@ -1,10 +1,10 @@
 import TOCInline from '@theme/TOCInline';
 
-# Chainlink Node Operators FAQ
+# Chainlink Oracles FAQ
+
+The target audience for this FAQ is **Chainlink oracle operators** - in other words, those running their own Chainlink nodes.
 
 The following is a list of frequently-asked questions and answers collected from our experience supporting the `#nodes`, `#operator-requests`, and `#external-adapters` channels within the [Chainlink Official Discord server](https://discord.com/invite/chainlink).
-
-The target audience for this FAQ is **Chainlink oracle operators**.
 
 ---
 
