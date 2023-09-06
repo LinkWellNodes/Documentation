@@ -203,7 +203,7 @@ const config = {
         redirects: [
           {
             from: '/knowledgebase/Chainlink-Consumers-FAQ',
-            to: '/knowledgebase/faq/Chainlink-Consumers',
+            to: '/knowledgebase/faq/Chainlink-Users',
           },
           {
             from: '/knowledgebase/Chainlink-Operators-FAQ',
