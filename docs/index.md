@@ -11,7 +11,7 @@ View our [Chainlink direct request job offerings](/services/direct-request-jobs/
 
 ## Chainlink FAQ
 
-View our collection of [Frequently-Asked Questions](/knowledgebase/Chainlink-Operators-FAQ) that we've compiled from our extensive experience answering node-related support questions in Chainlink's Discord server. 
+View our collection of [Frequently-Asked Questions](/knowledgebase/faq/Chainlink-Operators) that we've compiled from our extensive experience answering node-related support questions in Chainlink's Discord server. 
 
 ## About Us
 

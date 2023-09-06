@@ -40,7 +40,7 @@ If you are looking to run your own Chainlink node, we recommend familiarizing yo
 
 ### Should I run my own Chainlink node?
 
-Please see the following answer in our Node Operator FAQ page [here](/knowledgebase/Chainlink-Operators-FAQ#should-i-run-my-own-chainlink-node).
+Please see the following answer in our Node Operator FAQ page [here](/knowledgebase/faq/Chainlink-Operators#should-i-run-my-own-chainlink-node).
 
 ### What is a Direct Request job?
 
@@ -87,7 +87,7 @@ There are however, some use cases where using an external adapter does make sens
 
 If you already have an external adapter, you can choose to either connect it to your own Chainlink node, or reach out to an existing Chainlink node operator, who will typically host your adapter on their redundant infrastructure for free. 
 
-To help you decide whether to run your Chainlink node, read our write-up about it [here](/knowledgebase/Chainlink-Operators-FAQ#should-i-run-my-own-chainlink-node).
+To help you decide whether to run your Chainlink node, read our write-up about it [here](/knowledgebase/faq/Chainlink-Operators#should-i-run-my-own-chainlink-node).
 
 ### Are external adapters decentralized?
 

@@ -63,7 +63,7 @@ While a `uint256` object may cost us on the order of **60000 gas units** to fulf
 
 In maintaining a triple-redundant, highly-secure, zero-downtime environment for our customers, we incur heavy infrastructure costs. Fees sent along with your requests go toward offsetting these costs.
 
-You can read more about the associated [costs of being a node operator](/knowledgebase/Chainlink-Operators-FAQ#how-much-does-it-cost-to-run-a-chainlink-node) on our FAQ page.
+You can read more about the associated [costs of being a node operator](/knowledgebase/faq/Chainlink-Operators#how-much-does-it-cost-to-run-a-chainlink-node) on our FAQ page.
 
 ### 4. Our existing customer volume
 

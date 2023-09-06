@@ -17,8 +17,8 @@ Please use the links below to view our direct request job offerings. If you run 
 
 ## Troubleshooting
 
-Having technical difficulties with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/Chainlink-Users-FAQ#direct-request-job-troubleshooting).
+Having technical difficulties with your request? Check out our [Direct Request Troubleshooting Guide](/knowledgebase/faq/Chainlink-Users#direct-request-job-troubleshooting).
 
 ## Need more help?
 * Join our [Discord server](https://discord.gg/AJ66pRz4) for the fastest assistance with your request. We are happy to support custom data requests!
-* Check out our [User FAQ](/knowledgebase/Chainlink-Users-FAQ "FAQ - Chainlink Data Consumers") for common questions asked by our customers.
+* Check out our [User FAQ](/knowledgebase/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked by our customers.

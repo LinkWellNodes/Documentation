@@ -57,6 +57,12 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/style.css'),
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
@@ -148,11 +154,11 @@ const config = {
               },
               {
                 label: 'User FAQ',
-                to: '/knowledgebase/Chainlink-Users-FAQ',
+                to: '/knowledgebase/faq/Chainlink-Users',
               },              
               {
                 label: 'Node Operator FAQ',
-                to: '/knowledgebase/Chainlink-Operators-FAQ',
+                to: '/knowledgebase/faq/Chainlink-Operators',
               },
             ],
           },
