@@ -195,6 +195,24 @@ const config = {
         additionalLanguages: ['solidity'],        
       },
     },
+    
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/knowledgebase/Chainlink-Consumers-FAQ',
+            to: '/knowledgebase/faq/Chainlink-Consumers',
+          },
+          {
+            from: '/knowledgebase/Chainlink-Operators-FAQ',
+            to: '/knowledgebase/faq/Chainlink-Operators',
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 module.exports = config;

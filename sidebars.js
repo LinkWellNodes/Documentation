@@ -133,14 +133,21 @@ module.exports = {
       label: 'Direct Request Guide',
     },
     {
-      type: 'doc',
-      id: 'knowledgebase/Chainlink-Operators-FAQ',
-      label: 'Chainlink Node Operators',
+      type: 'category',
+      label: 'Frequently Asked Questions (FAQ)',
+      link: {type: 'doc', id: 'knowledgebase/FAQ'},
+      items: [
+	    {
+	      type: 'doc',
+	      id: 'knowledgebase/faq/Chainlink-Users',
+	      label: 'Chainlink Users',
+	    },
+	    {
+	      type: 'doc',
+	      id: 'knowledgebase/faq/Chainlink-Operators',
+	      label: 'Chainlink Oracles',
+	    },
+      ]
     },
-    {
-      type: 'doc',
-      id: 'knowledgebase/Chainlink-Users-FAQ',
-      label: 'Chainlink Data Consumers',
-    }
   ]
 };
