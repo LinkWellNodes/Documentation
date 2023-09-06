@@ -1,6 +1,6 @@
 type = "directrequest"
 schemaVersion = 1
-name = "LW_AGT_EA_int256"
+name = "LW_OM_EA_int256"
 externalJobID = "7f221811-c63d-49dd-9803-1f957bf9bce0"
 forwardingAllowed = false
 maxTaskDuration = "0s"
