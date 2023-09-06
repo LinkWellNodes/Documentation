@@ -118,8 +118,8 @@ code {
 }
 
 /* Code blocks */
-.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
-	display: none;	/* remove any code block titles forced by @saucelabs/theme-github-codeblock plugin*/
+div[class^='codeBlockTitle'] {
+	display: none;	/* remove any code block titles forced by @saucelabs/theme-github-codeblock plugin */
 }
 .codeBlockContent_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module > pre > code {
 	background-color: #F7F7F7; /* code block background color */
