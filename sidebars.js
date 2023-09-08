@@ -134,7 +134,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Frequently Asked Questions (FAQ)',
+      label: 'FAQ',
       link: {type: 'doc', id: 'knowledgebase/FAQ'},
       items: [
 	    {

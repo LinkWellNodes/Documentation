@@ -57,7 +57,7 @@ The above example is for illustrative purposes only; in the real world, gas pric
 
 ### 2. The data type and quantity returned
 
-While a `uint256` object may cost us on the order of **60000 gas units** to fulfill on-chain, writing a `bytes[]` object may cost us **500,000 gas units** or more, depending on the content and length of the elements returned. As such, our job pricing may vary by object type and quantity. 
+While a `uint256` object may cost us on the order of **60,000 gas units** to fulfill on-chain, writing a `bytes[]` object may cost us **500,000 gas units** or more, depending on the content and length of the elements returned. As such, our job pricing may vary by object type and quantity. 
 
 ### 3. Infrastructure costs
 
@@ -77,4 +77,4 @@ In order to remain competitive, LinkWell Nodes needs to take into consideration 
 
 ## Have a question about our pricing?
 
-Please [contact us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") to discuss.
+Please don't hesitate to [reach out](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") - we're always happy to discuss.
