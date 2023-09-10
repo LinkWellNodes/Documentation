@@ -113,6 +113,14 @@ If you're having trouble finding the appropriate price feed for your application
 
 To get connected to the appropriate Chainlink node operator for your use case, you can reach out within the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink) - a node operator (such as ourselves) will almost certainly be willing to help you with your request!
 
+### As a solo node operator, do you have any security guarantee?
+
+We take the security of our oracles and infrastructure very seriously. We do this by hosting everything securely and privately on AWS, performing regular audits of our network and infrastructure activity, and following security best practices provided by AWS and Chainlink. We also monitor our Chainlink infrastructure for not only uptime/reliability, but also for any anomalous or suspicious activity via enterprise-grade monitoring tools (Splunk in our case, along with others that we cannot mention). 
+
+In theory, when making a direct request for data to a singular node, that node could possibly manipulate the data if they were a malicious actor. However, any kind of data manipulation by a singular node operator would quickly be identified, and the reputation of the node operator destroyed. At LinkWell Nodes, we know that our reputation (and our customers' happiness) is the key to our business model, and hence to our continued success.
+
+NOTE: If you are in need of maximum decentralization and security of your data, you might consider using a DON (Decentralized Oracle Network). As community-based node operators, the only type of DON for which we can provide support are the legacy 'flux monitor' networks, which are highly expensive to the consumer (the fees typically scale directly with the number of node operators supporting the DON) as compared to OCR-based DONs. The benefit of our [direct request](/services/direct-request-jobs/Jobs-and-Pricing) offerings, however, are that they are ready-to-go for most basic requests, and that we can immediately provide custom support for all of them without involving other node operators.
+
 ## Direct Request Job Troubleshooting
 
 ### My request transaction won't send
