@@ -59,13 +59,9 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         responseBytesArr = bytesData;           // example value: responseBytesArr[0] = "0x4b72616b656e", responseBytesArr[1] = "0x48756f6269", responseBytesArr[2] = "0x47656d696e69"
     }
 
-    // Getter function demonstrating how to retrieve an array of strings from the result object
-    function getResponseStringArr() public view onlyOwner returns (string[] memory) {
-        string[] memory responseStringArr;
-        for (uint i = 0; i < responseBytesArr.length; i++) {
-            responseStringArr[i] = string(responseBytesArr[i]);     // example value: responseStringArr[0] = "Kraken", responseStringArr[1] = "Huobi", responseStringArr[2] = "Gemini"
-        }
-        return responseStringArr;
+    // Getter function demonstrating how to retrieve strings from the result object
+    function getResponseString(uint256 i) public view onlyOwner returns (string memory) {
+        return string(responseBytesArr[i]);     // example value: [0] = "Kraken", [1] = "Huobi", [2] = "Gemini"
     }
 
     // Update oracle address
