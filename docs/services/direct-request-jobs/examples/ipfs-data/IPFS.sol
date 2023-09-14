@@ -62,7 +62,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         responseBytes = bytesData;             
     }
 
-	// Retrieve the response data as a string
+    // Retrieve the response data as a string
     function getResponseString() public view onlyOwner returns (string memory) {
         return string(bytesData);
     }
