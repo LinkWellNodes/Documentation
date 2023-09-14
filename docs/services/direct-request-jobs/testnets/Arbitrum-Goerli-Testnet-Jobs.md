@@ -846,7 +846,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol#L52-L62
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol#L52-L65
 ```
 
 ### Need to send sensitive information?
@@ -978,7 +978,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol#L52-L64
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol#L52-L69
 ```
 
 ### Need to send sensitive information?

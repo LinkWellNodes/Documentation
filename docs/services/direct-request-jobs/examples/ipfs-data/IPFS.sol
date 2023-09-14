@@ -53,15 +53,18 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     }
 
     bytes public responseBytes;
-    string public responseString;
 
     // Receive the result from the Chainlink oracle
-    event RequestFulfilled(bytes32 indexed requestId, bytes indexed responseBytes);
+    event RequestFulfilled(bytes32 indexed requestId);
     function fulfill(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
-        emit RequestFulfilled(requestId, bytesData);
+        // emit RequestFulfilled(requestId);		// (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
         responseBytes = bytesData;             
-        responseString = string(bytesData);     
+    }
+
+	// Retrieve the response data as a string
+    function getResponseString() public view onlyOwner returns (string memory) {
+        return string(bytesData);
     }
 
     // Update oracle address
