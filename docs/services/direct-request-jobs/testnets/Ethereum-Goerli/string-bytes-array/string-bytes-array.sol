@@ -56,7 +56,7 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
     function fulfill(bytes32 requestId, bytes[] memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
-        responseBytesArr = bytesData;                                // example value: responseBytesArr[0] = "0x4b72616b656e", responseBytesArr[1] = "0x48756f6269", responseBytesArr[2] = "0x47656d696e69"
+        responseBytesArr = bytesData;           // example value: responseBytesArr[0] = "0x4b72616b656e", responseBytesArr[1] = "0x48756f6269", responseBytesArr[2] = "0x47656d696e69"
     }
 
     // Getter function demonstrating how to retrieve an array of strings from the result object
