@@ -58,7 +58,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     event RequestFulfilled(bytes32 indexed requestId);
     function fulfill(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
-        // emit RequestFulfilled(requestId);		// (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
+        // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
         responseBytes = bytesData;             
     }
 

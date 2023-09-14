@@ -55,7 +55,7 @@ contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwn
     event RequestFulfilled(bytes32 indexed requestId);
     function fulfill(bytes32 requestId, bool[] memory data) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
-        // emit RequestFulfilled(requestId);		// (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
+        // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
         responseArr = data;      // example value: responseBytesArr[0] = true, responseBytesArr[1] = false, responseBytesArr[2] = false
     }
 

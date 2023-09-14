@@ -56,7 +56,7 @@ contract LinkWellInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedO
     event RequestFulfilled(bytes32 indexed requestId);
     function fulfill(bytes32 requestId, int256[] memory data) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
-        // emit RequestFulfilled(requestId);		// (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
+        // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
         responseArr = data;     // example value: responseArr[0] = -54470000000000000000, responseArr[1] = 89990000000000000000, responseArr[2] = 983890000000000000000
     }
 

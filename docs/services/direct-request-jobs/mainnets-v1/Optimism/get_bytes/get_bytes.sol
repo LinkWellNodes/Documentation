@@ -47,7 +47,7 @@ contract getBytes is ChainlinkClient, ConfirmedOwner {
         bytes32 requestId,
         bytes memory bytesData
     ) public recordChainlinkFulfillment(requestId) {
-        // emit RequestFulfilled(requestId);		// (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
+        // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
         data = bytesData;
         image_url = string(data);
     }
