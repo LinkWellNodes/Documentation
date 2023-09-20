@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Direct Request Jobs',
+      label: 'Custom Data Feeds',
       collapsible: false,
       link: {type: 'doc', id: 'services/direct-request-jobs/Jobs-and-Pricing'},
       items: [

@@ -2,7 +2,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Arbitrum One Mainnet Jobs
+# Arbitrum One Mainnet Data Feeds
 
 Arbitrum-One is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code
 

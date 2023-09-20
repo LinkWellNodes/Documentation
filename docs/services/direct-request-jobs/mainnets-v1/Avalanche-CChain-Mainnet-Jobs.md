@@ -2,7 +2,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Avalanche Mainnet Jobs
+# Avalanche Mainnet Data Feeds
 
 Avalanche is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code.
 

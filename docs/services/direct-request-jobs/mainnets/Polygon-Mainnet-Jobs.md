@@ -2,11 +2,11 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Polygon Mainnet Jobs
+# Polygon Mainnet Data Feeds
 
 Polygon (MATIC) is a "layer two" or "sidechain" scaling solution that runs alongside the Ethereum blockchain - allowing for speedy transactions and low fees. MATIC is the network's native cryptocurrency, which is used for fees, staking, and more.
 
-Please see below for our Chainlink direct request job offerings on the Polygon network. All mainnet jobs are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our Chainlink data feed offerings ('**jobs**') on the Polygon network. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 ### Select the type of data that you need:
 

@@ -1,10 +1,10 @@
-# Testnet Direct Request Job Listings
+# Testnet Data Feeds
 
-**Direct Request** jobs allow you to write custom, real-world data received from any API to your blockchain smart contracts. Our highly-redundant Chainlink node infrastructure ensures that your data is delivered safely, securely, and reliably every time.
+Using the Chainlink **direct request** model, we allow you to retrieve any custom, real-world data from any internet-based API ('any API'), and write it to your blockchain smart contract. Our highly-redundant Chainlink oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
 
-Please use the links below to view our direct request job offerings. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4) for the fastest service.
+Please use the links below to view our documentation on how to initiate a request. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4) for the fastest service.
 
-### View our direct request job offerings:
+### Select your network:
 
 * [Arbitrum Goerli Testnet](/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs)
 * [Avalanche Fuji Testnet](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs)
