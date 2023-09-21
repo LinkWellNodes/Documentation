@@ -18,10 +18,10 @@ Please see below for our Chainlink data feed offerings ('**jobs**') on the Optim
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit unsigned integer (**uint256**) to your consumer contract.
 
 :::info 
-This job returns a single **uint256** object, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+This job writes a single **uint256** object to your contract, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
 :::
 
-### Job metadata
+### Request metadata
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -142,10 +142,10 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your consumer contract.
 
 :::info 
-This job returns a single **uint256[]** object, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
+This job writes a single **uint256[]** object to your contract, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
 :::
 
-### Job metadata
+### Request metadata
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -278,10 +278,10 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit signed integer (**int256**) to your consumer contract.
 
 :::info  
-This job returns a single **int256** object, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+This job writes a single **int256** object to your contract, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
 :::
 
-### Job metadata
+### Request metadata
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -415,10 +415,10 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit signed integers (**int256[]**) to your consumer contract.
 
 :::info  
-This job returns a single **int256[]** object, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+This job writes a single **int256[]** object to your contract, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
 :::
 
-### Job metadata
+### Request metadata
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -551,10 +551,10 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a boolean value at the given path, and returns the resulting object (**bool**) to your consumer contract.
 
 :::info  
-This job returns a single **bool** object, which can store a `true` or `false` value. 
+This job writes a single **bool** object to your contract, which can store a `true` or `false` value. 
 :::
 
-### Job metadata
+### Request metadata
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -675,10 +675,10 @@ true
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of boolean values at the given path, and returns the resulting array of booleans (**bool[]**) to your consumer contract.
 
 :::info  
-This job returns a single **bool[]** object, which can store an array of `true` or `false` values. 
+This job writes a single **bool[]** object to your contract, which can store an array of `true` or `false` values. 
 :::
 
-### Job metadata
+### Request metadata
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -802,10 +802,10 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting dynamic bytes array (**bytes**) - which can also be represented as a **string** - to your consumer contract.
 
 :::info 
-This job returns a single **bytes** object, which can readily be converted into a **string** value. 
+This job writes a single **bytes** object to your contract, which can readily be converted into a **string** value. 
 :::
 
-### Job metadata
+### Request metadata
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
@@ -934,10 +934,10 @@ Note that the double-quotes will not be present when retrieving the above respon
 This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting array of dynamic bytes arrays (**bytes[]**) - which can also be represented as a **string[]** - to your consumer contract.
 
 :::info  
-This job returns a single **bytes[]** object, which can readily be converted into a **string[]** value.
+This job writes a single **bytes[]** object to your contract, which can readily be converted into a **string[]** value.
 ::: 
 
-### Job metadata
+### Request metadata
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|

@@ -30,7 +30,9 @@ While [market.link](https://market.link) was formerly the go-to directory for pu
 
 That being said, many node operators (such as ourselves) choose to host their own websites and documentation pages that display their Chainlink job offerings. A decent approach is to perform a Google search for 'Chainlink node operator' to see what job offerings you might find!
 
-?> To view a comprehensive list of jobs offered by LinkWell Nodes, visit our [job documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::info 
+To view a comprehensive list of jobs offered by LinkWell Nodes, visit our [job documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
 
 ### Where can I find Job IDs and Chainlink Oracles for my consumer contract?
 

@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Custom Data Feeds',
+      label: 'Chainlink Data Feeds',
       collapsible: false,
       link: {type: 'doc', id: 'services/direct-request-jobs/Jobs-and-Pricing'},
       items: [
