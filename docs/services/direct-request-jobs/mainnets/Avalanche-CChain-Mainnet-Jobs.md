@@ -1097,7 +1097,7 @@ Note that the double-quotes will not be present when retrieving any of the above
 
 **We've got you covered:**
 
-1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with relevant details about your request. 
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
 1. We'll assess your request and provide you with a custom job ID that works for you.
 
 :::info  
