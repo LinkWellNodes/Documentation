@@ -4,8 +4,8 @@ import TOCInline from '@theme/TOCInline';
 
 ---
 
-Please see below for our FAQs:
+Please see the below FAQs for answers to questions that are commonly asked in Chainlink's Discord server:
 
-- [Chainlink Users FAQ](/knowledgebase/faq/Chainlink-Users) - for those looking to integrate Chainlink into their project
+- [Chainlink Users FAQ](/knowledgebase/faq/Chainlink-Users) (for those looking to retrieve data using Chainlink in their project)
 
-- [Chainlink Oracle Operator FAQ](/knowledgebase/faq/Chainlink-Operators) - for those running their own Chainlink node
+- [Chainlink Oracle Operator FAQ](/knowledgebase/faq/Chainlink-Operators) (for those running their own Chainlink oracle node)

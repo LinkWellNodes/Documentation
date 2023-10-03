@@ -1,6 +1,6 @@
 import TOCInline from '@theme/TOCInline';
 
-# Direct Request Pricing
+# Data Feed Pricing
 
 Our goal is to provide **transparency** around the way our pricing works. 
 

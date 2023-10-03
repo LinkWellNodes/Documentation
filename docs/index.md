@@ -5,18 +5,24 @@ slug: /
 
 # Documentation Home
 
-## Direct Request Job Info
+![dr-workflow](/img/banner-x.jpeg)
 
-View our [Chainlink direct request job offerings](/services/direct-request-jobs/Jobs-and-Pricing), which includes pricing, examples, and detailed instructions on how to integrate data from any API into your smart contracts.
+## Custom Chainlink Data Feeds
 
-## Chainlink FAQ
+View our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) for our pricing, API, and full examples of how to integrate data from anywhere on the internet ('Any API') into your smart contracts.
 
-View our collection of [Frequently-Asked Questions](/knowledgebase/faq/Chainlink-Operators) that we've compiled from our extensive experience answering node-related support questions in Chainlink's Discord server. 
+## Frequently Asked Questions (FAQ)
+
+View our [FAQ pages](/knowledgebase/FAQ) for answers to questions we've commonly seen throughout our extensive experience answering node-related support questions in Chainlink's official Discord server.
 
 ## About Us
 
-**Who are we?** Learn more about [LinkWell Nodes](/About).
+**Who are we?** 
+
+Learn more about [LinkWell Nodes](/About).
 
 ## Contact Us
 
-**Want to learn more?** [Contact us](https://linkwellnodes.io/Home.html#contact-us) for more info!!
+**Need a custom quote or project?** 
+
+[Contact us](https://linkwellnodes.io/Home.html#contact-us) for more info!
