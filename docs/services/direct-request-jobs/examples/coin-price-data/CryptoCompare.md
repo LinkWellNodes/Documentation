@@ -44,7 +44,7 @@ You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_H
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/coin-price-data/CryptoCompare.sol#L35-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/coin-price-data/CryptoCompare.sol#L34-L55
 ```
 
 #### 2c. Retrieve the response (example):

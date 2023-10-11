@@ -22,8 +22,8 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     
     constructor() ConfirmedOwner(msg.sender) {
     
-    	// The Chainlink token address and Oracle address vary by network. 
-    	// You may find the appropriate values for each network here: https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing
+        // The Chainlink token address and Oracle address vary by network. 
+        // You may find the appropriate values for each network here: https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing
         setChainlinkToken(ADD_CHAINLINK_TOKEN_ADDRESS_HERE);
         setOracleAddress(ADD_ORACLE_ADDRESS_HERE);
         

@@ -7,18 +7,25 @@ The below examples will walk you through the process of using our Chainlink orac
 
 **On this page**:
 
-* [Weather Data](#Weather-Data)
-* [Sports Data](#Sports-Data)
-* [Stock Price Data](#Stock-Price-Data)
 * [Coin Price Data](#Coin-Price-Data)
 * [IPFS Data](#IPFS-Data)
+* [Sports Data](#Sports-Data)
+* [Stock Price Data](#Stock-Price-Data)
+* [Weather Data](#Weather-Data)
 
 ---
 
 ## View our examples:
 
-### Weather Data {#Weather-Data}
-* [AccuWeather](/services/direct-request-jobs/examples/weather-data/AccuWeather.md)
+**Don't see your API listed below?** 
+
+Our oracles can still support your request. Fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to receive a custom smart contract that works for your use case, or refer to our [custom data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) for how-to instructions on developing your own contract! 
+
+### Coin Price Data {#Coin-Price-Data}
+* [CryptoCompare Data](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare.md)
+
+### IPFS Data {#IPFS-Data}
+* [IPFS Data](/services/direct-request-jobs/examples/ipfs-data/IPFS.md)
 
 ### Sports Data {#Sports-Data}
 * [SportsDataIO](/services/direct-request-jobs/examples/sports-data/SportsDataIO.md)
@@ -26,11 +33,8 @@ The below examples will walk you through the process of using our Chainlink orac
 ### Stock Price Data {#Stock-Price-Data}
 * [Alpha Vantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.md)
 
-### Coin Price Data {#Coin-Price-Data}
-* [CryptoCompare Data](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare.md)
-
-### IPFS Data {#IPFS-Data}
-* [IPFS Data](/services/direct-request-jobs/examples/ipfs-data/IPFS.md)
+### Weather Data {#Weather-Data}
+* [AccuWeather](/services/direct-request-jobs/examples/weather-data/AccuWeather.md)
 
 ## Learn More
 
