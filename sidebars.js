@@ -105,16 +105,26 @@ module.exports = {
               },
           ]
         },
-	    {
-	      type: 'doc',
-	      id: 'services/direct-request-jobs/Pricing',
-	      label: 'Pricing',
-	    },
-	    //{
-	    //  type: 'doc',
-	    //  id: 'knowledgebase/Any-API-Guide',
-	    //  label: 'Examples',
-	    //},
+        {
+            type: 'doc',
+            id: 'services/direct-request-jobs/Pricing',
+            label: 'Pricing',
+        },
+        {
+            type: 'doc',
+            id: 'services/direct-request-jobs/Any-API-Guide',
+            label: 'Sample Requests',
+        },
+        {
+            type: 'doc',
+            id: 'services/direct-request-jobs/External-Adapters',
+            label: 'External Adapters',
+        },
+        {
+            type: 'doc',
+            id: 'services/direct-request-jobs/Service-Level-Agreement',
+            label: 'Service-Level Agreement',
+        },
       ],     
     },
     {
@@ -124,13 +134,8 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'knowledgebase/Any-API-Guide',
-      label: 'Any API Examples',
-    },
-    {
-      type: 'doc',
       id: 'knowledgebase/Direct-Request-Guide',
-      label: 'Direct Request Guide',
+      label: 'Direct Request Model',
     },
     {
       type: 'category',
@@ -145,7 +150,7 @@ module.exports = {
 	    {
 	      type: 'doc',
 	      id: 'knowledgebase/faq/Chainlink-Operators',
-	      label: 'Chainlink Oracles',
+	      label: 'Chainlink Oracle Operators',
 	    },
       ]
     },

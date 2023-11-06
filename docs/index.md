@@ -5,15 +5,19 @@ slug: /
 
 # Documentation Home
 
-![dr-workflow](/img/banner-x.jpeg)
+![dr-workflow](/img/banner-x.webp)
 
 ## Custom Chainlink Data Feeds
 
-View our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) for our pricing, API, and full examples of how to integrate data from anywhere on the internet ('Any API') into your smart contracts.
+Our highly reliable data feeds allow you to move data from from anywhere on the internet into your smart contracts. Our documentation includes pricing info, API documentation, and code samples of how to integrate our oracle data feeds into your smart contracts:
+
+- [View our Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
 
 ## Frequently Asked Questions (FAQ)
 
-View our [FAQ pages](/knowledgebase/FAQ) for answers to questions we've commonly seen throughout our extensive experience answering node-related support questions in Chainlink's official Discord server.
+Our FAQ provides answers to questions we've commonly seen throughout our extensive experience answering community-sourced questions in Chainlink's official Discord server:
+
+- [View our Chainlink FAQ](/knowledgebase/FAQ)
 
 ## About Us
 

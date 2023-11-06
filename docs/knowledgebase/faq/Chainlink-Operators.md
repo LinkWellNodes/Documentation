@@ -1,6 +1,6 @@
 import TOCInline from '@theme/TOCInline';
 
-# Chainlink Oracles FAQ
+# Chainlink Oracle Operator FAQ
 
 The target audience for this FAQ is **Chainlink oracle operators** - in other words, those running their own Chainlink nodes.
 

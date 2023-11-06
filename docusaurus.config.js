@@ -215,6 +215,10 @@ const config = {
             from: '/knowledgebase/Chainlink-Operators-FAQ',
             to: '/knowledgebase/faq/Chainlink-Operators',
           },
+          {
+            from: '/knowledgebase/Any-API-Guide',
+            to: '/services/direct-request-jobs/Any-API-Guide',
+          }
         ],
       },
     ],

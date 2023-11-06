@@ -1,6 +1,6 @@
 import TOCInline from '@theme/TOCInline';
 
-# Chainlink Users FAQ
+# Chainlink User FAQ
 
 The target audience for this FAQ is **consumers of Chainlink data** - in other words, those looking to integrate Chainlink in order to write real-world data into their blockchain smart contract.
 
@@ -24,37 +24,83 @@ The following is a list of frequently-asked questions and answers collected from
 
 The chains that Chainlink supports can be viewed in the Chainlink documentation [here](https://docs.chain.link/chainlink-automation/supported-networks). Please note that this list of chains is subject to change over time as Chainlink adds or removes support for a given chain.
 
-### Where can I find all node and job listings?
-
-While [market.link](https://market.link) was formerly the go-to directory for public Chainlink node and job listings, this feature has since been deprecated, and it is unclear if it will resurface in the future. You may, however, still leverage this website to gain insights into the many official node operator teams, as well as the respective network(s) that they support. Besides this, we aren't currently aware of any centralized directory for Chainlink nodes / job offerings. 
-
-That being said, many node operators (such as ourselves) choose to host their own websites and documentation pages that display their Chainlink job offerings. A decent approach is to perform a Google search for 'Chainlink node operator' to see what job offerings you might find!
-
-:::info 
-To view a comprehensive list of jobs offered by LinkWell Nodes, visit our [job documentation](/services/direct-request-jobs/Jobs-and-Pricing).
-:::
-
-### Where can I find Job IDs and Chainlink Oracles for my consumer contract?
-
-If you are a developer who simply requires data for your smart contract application, the best place to request a Job ID specific to your requirements is within the #operator-requests channel of the Chainlink Discord. An existing node operator will typically respond to your request by providing you with a corresponding Job ID and oracle contract address. Transactions on testnet chains are typically free of charge, meaning they do not require any LINK token.
-
-If you are looking to run your own Chainlink node, we recommend familiarizing yourself with the [pros and cons](#should-i-run-my-own-chainlink-node) of becoming your own node operator. If you decide to go ahead, feel free to visit the section related to [creating a job](https://docs.chain.link/chainlink-nodes/v1/fulfilling-requests#add-a-job-to-the-node) within the Chainlink documentation.
-
 ### Should I run my own Chainlink node?
 
 Please see the following answer in our Node Operator FAQ page [here](/knowledgebase/faq/Chainlink-Operators#should-i-run-my-own-chainlink-node).
 
+### How do I find a specific price feed?
+
+Contract addresses for official Chainlink price feeds across the various blockchain networks supported by Chainlink can be found [here](https://docs.chain.link/data-feeds/price-feeds/addresses).
+
+If you can't find a price feed that works for you, we'd be happy to support your request. Please feel free to visit our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) to get started! You can also shop around for other node operators via the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink).
+
+### Where can I find all node and job listings?
+
+While [market.link](https://market.link) was formerly the go-to directory for public Chainlink node and job listings, this feature has since been deprecated, and it is unclear if it will resurface in the future. Besides this, we aren't currently aware of any centralized directory for Chainlink nodes / job offerings. 
+
+That being said, many node operators (such as ourselves) choose to host their own websites and documentation pages that display their own Chainlink job offerings. A decent approach is to perform a Google search for 'Chainlink node operator' to see what job offerings you might find!
+
+To view a comprehensive list of Chainlink jobs offered by LinkWell Nodes, visit our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+
+### Where can I find an Oracle Address and Job ID for my smart contract?
+
+The best place to request a Job ID specific to your requirements is within the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink). An existing node operator will typically respond to your request by providing you with a corresponding Job ID and oracle contract address. 
+
+If you're looking to get started using LinkWell Nodes as your oracle data provider, please feel free to visit our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing), which contains job IDs, oracle addresses, and smart contract code samples for initiating your first oracle request against our Chainlink oracle infrastructure.
+
+:::info 
+Have a question? Please feel free to join our [Discord](https://discord.com/invite/Xs6SjqVPUA) server for immediate assistance!
+:::
+
+## Direct Request Jobs
+
 ### What is a Direct Request job?
 
-Please see our [Direct Request Guide](/knowledgebase/Direct-Request-Guide) page for more information on how direct requests work, and how to get started. 
+Please see our [Direct Request knowledgebase article](/knowledgebase/Direct-Request-Guide) for more information on how direct requests work, and how to get started. 
+
+### My request transaction won't send
+
+Please ensure that you have enough gas token present in the wallet that is initiating the request. For mainnet requests, please additionally ensure that you have the appropriate amount of LINK tokens present within your consumer contract before making the request. 
+
+If you are using one of our jobs, see the `setFeeInHundredthsOfLink()` function call present within the constructor of your consumer contract for the minimum amount of LINK token that needs to be present within your consumer contract in order to initiate a `request()` call.
+ 
+### I'm not getting a response back to my consumer contract
+
+If you've waited over 60 seconds after successfully sending your request transaction, and aren't seeing any data returned to your smart contract:
+
+1. Double-check that you are passing the correct values into the `setChainlinkToken()` and `setChainlinkOracle()` functions , and assigning the correct value to the `jobId` object. 
+
+:::info
+If you are using our oracle services, you may find the correct corresponding values in our job documentation [here](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
+
+2. Confirm that the API endpoint to which you are making your HTTP request is working via `curl`.
+
+:::info
+If you are using our oracle services, a sample `curl` command is included within the documentation for each job [here](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
+
+3. If you've included a JSON `path` var (ie, `req.add("path", "key1,0,key2)`), ensure that the response returned by your HTTP request is in JSON format, and that the provided path exists within it.
+
+4. If you've included a `mulitiplier` var (ie, `req.addInt('multiplier', 10 ** 18)`), ensure that the response that you are trying to multiply is a number. If a JSON `path` was also included in the request, the multiplication operation occurs on the result of the JSON path filter.  
+
+5. Confirm that the oracle you are using didn't run out of gas while writing your requested data on-chain. To check this, look up the address of your related oracle (ie, the address passed to your `setChainlinkOracle()` function) within the appropriate blockchain explorer, to check for any recent transactions that failed due to an **'out of gas'** error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact the corresponding oracle team to request a higher gas allowance for your specific use case (may result in higher job pricing).
+
+:::info
+If you are using our oracle services, you may find the oracle address that corresponds to your specific job within our job documentation [here](/services/direct-request-jobs/Jobs-and-Pricing), or reach out to us regarding higher gas limits for your specific use case via our [Discord server](https://discord.gg/AJ66pRz4).
+::: 
+
+## Chainlink Functions
 
 ### Should I use Chainlink Functions?
 
-Currently, Chainlink Functions is in limited beta, and available only to whitelisted participants on a small subset of testnets. You can apply for access [here](https://chainlinkcommunity.typeform.com/requestaccess). 
+Currently, Chainlink Functions is in beta, and available only to whitelisted participants on a subset of mainnets. You can apply for access [here](https://chainlinkcommunity.typeform.com/requestaccess). 
 
-In general, Chainlink Functions is superior to the traditional 'Direct Request' model, in that your request logic is executed by a DON (Decentralized Oracle Network), instead of by a single Chainlink Oracle - thereby eliminating any concerns around centralization and reliability - while keeping costs roughly the same as if executed by a single node. 
+Chainlink Functions is superior to the traditional 'Direct Request' model in many aspects, in that your request logic is executed by a DON (Decentralized Oracle Network), instead of by a single Chainlink Oracle - thereby eliminating any concerns around centralization and reliability - while keeping costs roughly the same as if executed by a single node. 
 
 It is also superior to requesting data from a typical OCR (Off-Chain Reporting) network, in that you remain in control of your logic's deployment lifecycle, eliminating the need for any external adapter deployments or other coordination with your chosen node operator(s).
+
+Conversely, in order to use Chainlink Functions, you'll need to write your request and response workflow in JavaScript (JS), which may be a limitation for some users.
 
 To determine whether Chainlink Functions is right for you, weigh the various [limitations of Chainlink Functions](#limitations-of-chainlink-functions) in making your decision. 
 
@@ -66,7 +112,7 @@ You should use Chainlink Functions only if ALL of the following apply:
 
 * You are OK with your logic being executed multiple times per request (ie, this might not be ideal for placing a trade, or sending an email) 
 * Your ERC-20 address has been whitelisted by Chainlink Labs for access to Chainlink Functions (may take up to 2 weeks in some cases)
-* You don't need a mainnet deployment (Functions is currently in beta)
+* You don't need a mainnet deployment ASAP (Functions is currently in mainnet beta)
 * Your use case is limited to the following [supported testnets](https://docs.chain.link/chainlink-functions/supported-networks)
 * You are comfortable programming your request in **JavaScript**
 * Your consumer contract's callback function will always require less than **300,000 gas**
@@ -85,6 +131,8 @@ Chainlink Functions are better than external adapters in many ways - namely, ena
 
 There are however, some use cases where using an external adapter does make sense - namely, if you're using a network that's not yet supported on Functions, you already have an external adapter developed and don't want to re-write it using JavaScript, or if you'd like your logic developed for you by a node operator. You can read more about the limitations of using Chainlink Functions [here](#limitations-of-chainlink-functions).
 
+## External Adapters
+
 ### Do I need to run my own Chainlink node in order to use my external adapter?
 
 If you already have an external adapter, you can choose to either connect it to your own Chainlink node, or reach out to an existing Chainlink node operator, who will typically host your adapter on their redundant infrastructure for free. 
@@ -99,54 +147,24 @@ In choosing where to host your external adapter, you may also choose to reach ou
 
 To get connected with the appropriate oracle operator(s) for your external adapter's use case, we suggest reaching out within the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink). 
 
-### Can I use a single data source or Chainlink node for my smart contract?
+## Security
 
-While using a single data source can be a sufficient approach for testnet applications, it represents a single point-of-failure (SPOF) for your application, and thus is not recommended for mainnet / production purposes. 
+### Can I use a single data source for my data feed?
 
-To keep your Web3 application decentralized, we recommend requesting your data from multiple data sources, and performing some sort of aggregation (mean, median, mode, etc.) within your job / external adapter / function logic in order to determine the appropriate result.  
+While using a single data source can be a sufficient approach for testnet applications, it represents a single point-of-failure (SPOF) for your application, and thus is typically not recommended for mainnet / production applications. 
 
-### How do I find a specific price feed for my contract?
+To keep your Web3 application decentralized, we recommend requesting your data from multiple data sources, and performing some sort of aggregation (mean, median, mode, etc.) within your job / external adapter / function logic in order to determine the appropriate result. 
 
-Price feed contract addresses for various currency pairs across Chainlink's list of supported networks can be found [here](https://docs.chain.link/data-feeds/price-feeds/addresses).
+At LinkWell Nodes, we are certainly happy to help you set up a job that aggregates your decentralized production data. Please feel free to join our [Discord](https://discord.com/invite/Xs6SjqVPUA) server to get started!  
 
-If you're having trouble finding the appropriate price feed for your application, you can request support for this via the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink) - a node operator (such as ourselves) will almost certainly be willing to help you with your request!
+### Can I trust a single node operator?
 
-### How can I find a node operator to host my external adapter or job?
+Any time you make a direct request for data to a singular node, that node could possibly manipulate the data (ie, if they were a malicious actor). However, it's our view that any kind of profitable data manipulation by a singular node operator would quickly be identified, and the reputation of the node operator destroyed. 
 
-To get connected to the appropriate Chainlink node operator for your use case, you can reach out within the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink) - a node operator (such as ourselves) will almost certainly be willing to help you with your request!
+At LinkWell Nodes, we know that our reputation - and our customers' happiness - is the key to our business model, and to our continued success. Leveraging our team's vast experience in the financial services, government, and security industries, we ensure that our infrastructure is hardened using world-class security techniques. Among other strategies, we accomplish this by following best practices provided not only by Chainlink - but by the financial services industry as a whole. In addition, we monitor all major aspects of our Chainlink infrastructure not only for uptime and reliability, but also for any anomalous and/or suspicious traffic, using enterprise-grade monitoring tools (primarily [Splunk](https://www.splunk.com/) in our case, along with several other proprietary systems that we cannot mention). 
+
+For those in need of maximum decentralization, you might consider using a DON (Decentralized Oracle Network). As community-based node operators, the only type of DON for which we are able to provide support are the legacy [Flux Monitor](https://docs.chain.link/chainlink-nodes/oracle-jobs/all-jobs#flux-monitor-jobs) networks, which are highly expensive to the consumer, as the fees and support complexities typically scale directly with the number of node operators supporting the DON. The benefit of our [data feed offerings](/services/direct-request-jobs/Jobs-and-Pricing), however, is their relatively quick implementation time (time-to-market), and our ability to immediately provide support and resolution without involving other node operators.
 
 ### Do you have any security guarantees?
 
-Any time you make a direct request for data to a singular node, that node could possibly manipulate the data (ie, if they were a malicious actor). However, any kind of data manipulation by a singular node operator would quickly be identified, and the reputation of the node operator destroyed. At LinkWell Nodes, we know that our reputation - and our customers' happiness - is the key to our business model, and our continued success.
-
-In addition to the above, we take security very seriously. With our team's vast experience in the financial services, government, and security sectors, we're able to harden our infrastructure using world-class security techniques. We do this by hosting everything on a private cloud infrastructure, performing regular audits of our network and infrastructure activity, and following security best practices (or better) provided not only by Chainlink - but by the banking industry as well. We monitor our Chainlink infrastructure not only for uptime and reliability, but also for any anomalous and/or suspicious traffic, using enterprise-grade monitoring tools (Splunk in our case, along with several other systems that we cannot mention). 
-
-NOTE: If you are in need of maximum decentralization and security of your data, you might consider using a DON (Decentralized Oracle Network). As community-based node operators, the only type of DON for which we can provide support are the legacy 'flux monitor' networks, which are highly expensive to the consumer (the fees typically scale directly with the number of node operators supporting the DON) as compared to OCR-based DONs. The benefit of our [direct request](/services/direct-request-jobs/Jobs-and-Pricing) offerings, however, are that they are ready-to-go for most basic requests, and that we can immediately provide custom support for all of them without involving other node operators.
-
-## Direct Request Job Troubleshooting
-
-### My request transaction won't send
-
-Please ensure that you have enough gas token present in the wallet that is initiating the request. For mainnet requests, please additionally ensure that you have the appropriate amount of LINK tokens present within your consumer contract before making the request. 
-
-If you are using one of our jobs, see the `setFeeInHundredthsOfLink()` function call present within the constructor of your consumer contract for the minimum amount of LINK token that needs to be present within your consumer contract in order to initiate a `request()` call.
- 
-### I'm not getting a response back to my consumer contract
-
-If you've waited over 60 seconds after successfully sending your request transaction, and aren't seeing any data returned to your smart contract:
-
-1. Double-check that you are passing the correct values into the `setChainlinkToken()` and `setChainlinkOracle()` functions , and assigning the correct value to the `jobId` object. 
-
-?> If you are using our oracle services, you may find the correct corresponding values in our job documentation [here](/services/direct-request-jobs/Jobs-and-Pricing).
-
-2. Confirm that the API endpoint to which you are making your HTTP request is working via `curl`.
-
-?> If you are using our oracle services, a sample `curl` command is included within the documentation for each job [here](/services/direct-request-jobs/Jobs-and-Pricing).
-
-3. If you've included a JSON `path` var (ie, `req.add("path", "key1,0,key2)`), ensure that the response returned by your HTTP request is in JSON format, and that the provided path exists within it.
-
-4. If you've included a `mulitiplier` var (ie, `req.addInt('multiplier', 10 ** 18)`), ensure that the response that you are trying to multiply is a number. If a JSON `path` was also included in the request, the multiplication operation occurs on the result of the JSON path filter.  
-
-5. Confirm that the oracle you are using didn't run out of gas while writing your requested data on-chain. To check this, look up the address of your related oracle (ie, the address passed to your `setChainlinkOracle()` function) within the appropriate blockchain explorer, to check for any recent transactions that failed due to an **'out of gas'** error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact the corresponding oracle team to request a higher gas allowance for your specific use case (may result in higher job pricing).
-
-?> If you are using our oracle services, you may find the oracle address that corresponds to your specific job within our job documentation [here](/services/direct-request-jobs/Jobs-and-Pricing), or reach out to us regarding higher gas limits for your specific use case via our [Discord server](https://discord.gg/AJ66pRz4). 
+For information about our security and service guarantees, please visit our [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement).

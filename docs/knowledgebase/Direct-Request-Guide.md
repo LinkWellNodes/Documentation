@@ -1,18 +1,28 @@
-# Direct Request Guide
-LinkWell Nodes is a community-based Chainlink node operations team that is dedicated to providing the most secure and comprehensive Chainlink Any API services out there today. We understand that as a Web3 developer, you shouldn't have to worry about deploying and configuring your own Chainlink nodes on top of building out your smart contract applications.  This is why we have gone through great lengths in deploying Chainlink nodes across multiple networks, configuring jobs that you can immediately utilize in your contracts, and providing documentation and guides to help you out along the way. 
+# Chainlink Direct Requests
 
-Connecting to any API through our Chainlink oracles enables your contracts to access any external data source required for your smart contract application.  Whether your contract requires sports results, the latest weather, or any other publicly available data, we have you covered.  Please read on if you would like to better understand the basic direct request workflow when making a request to our Chainlink nodes.
+The Chainlink Direct Requests (also called [Basic Requests](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted)) are a type of Chainlink request pattern that allows your blockchain smart contract to request data directly from a given Chainlink oracle. 
+
+As compared to [Chainlink Functions](/knowledgebase/faq/Chainlink-Users#should-i-use-chainlink-functions), Chainlink Direct Requests can be convenient for the end-user, as they can support the greatest range of requested data types (and data sizes), while requiring the least amount of technical effort to implement: the oracle team simply provides you with a `request` and `receive` function to place into your smart contract, leaving you free to focus on the development of the rest of your smart contract application. 
+
+As direct requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team that you trust.
+
+:::info
+**LinkWell Nodes** is a full service Chainlink oracle solution that provides secure, reliable, direct request data feeds in exchange for a fee. We offer free external adapter hosting services, as well as free development services for any efforts required to get your smart contract application up and running.
+
+You can read more about our direct request data offerings [here](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
 
 ## Overview
-Before diving into Chainlink's direct request architecture, it's important to understand the [basic request model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted). 
 
-**At a high level**:
+Before diving into Chainlink's direct request architecture, it's important to understand the [Basic Request Model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted) for Chainlink requests. 
+
+**High-level workflow**:
 
 1. Your consumer contract (ie, `ChainlinkClient`) makes a request to our oracle contract.
 1. Our Chainlink nodes receive the request, make an HTTP request to the appropriate API endpoint, and write the result back to your consumer contract.
 1. Your Web3 application reads the data from your consumer contract.
 
-![dr-workflow](/img/DR-Request-Workflow.png)
+![dr-workflow](/img/DR-Request-Workflow.webp)
 
 ## Key Terms
 
@@ -21,30 +31,35 @@ Before diving into Chainlink's direct request architecture, it's important to un
 * **Oracle node** (also known as a **Chainlink node**): An off-chain service runtime that receives on-chain requests from the consumer contract (via the oracle contract), retrieves the requested data, and delivers the result on-chain to the consumer contract (via the oracle contract) by execution of a blockchain transaction.
 
 
-## Workflow Diagram
+## Process Diagram
 The following diagram demonstrates the direct request workflow.
 
-**At a high level**:
+**Key points**:
 
-1. The diagram begins with a call to your consumer contract's request function, via a Solidity-based IDE such as [Remix](https://remix-project.org/#:~:text=JUMP%20INTO%20WEB3,teaching%20and%20experimenting%20with%20Ethereum.), combined with a Web3 wallet provider such as [MetaMask](https://metamask.io). 
+1. The diagram begins with a call to your consumer contract's request function, via an EVM-compatible IDE such as [Remix](https://remix-project.org/#:~:text=JUMP%20INTO%20WEB3,teaching%20and%20experimenting%20with%20Ethereum.), combined with a Web3 wallet provider such as [MetaMask](https://metamask.io). 
 1. The left-hand workflow (**testnets**) is virtually the same as the right-hand workflow (**mainnets**) with the exception of needing to fund your consumer contract with LINK tokens before making a request.  
 
-![dr-workflow](/img/CL_DR_Model.png) 
+![dr-workflow](/img/CL_DR_Model.webp) 
 
-## Getting Started with Direct Requests
+## Requesting Data from LinkWell Nodes
+
+The following information details how to initiate a request for data from the LinkWell Nodes oracle infrastructure. 
 
 **Prepare your request**:
 
 1. Fill out our [Getting Started](https://linkwellnodes.io/Getting-Started.html) form, so that we can better understand your data needs.
-1. After discussing the details of your request, we may be able to simply point you to our [Direct Request Jobs](/services/direct-request-jobs/Jobs-and-Pricing) page. If your request requires any kind of authentication secrets or other advanced functionality, we are happy to support you in building out an [external adapter](/services/direct-request-jobs/Jobs-and-Pricing#external-adapters).  
-1. Deploy your consumer contract using an IDE such as Remix. Consumer contract examples can be found within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing) for each specific data type.
-1. For **mainnet** chains, please also ensure that your consumer contract is properly funded with enough LINK tokens to make the request.
+1. Begin designing your consumer contract, using our [Direct Request Documentation](/services/direct-request-jobs/Jobs-and-Pricing) as a guide (code examples included).
+1. Deploy your consumer contract using an EVM-compatible IDE such as [Remix](https://remix.ethereum.org/).
+
+:::info
+For **mainnet** chains, please wait up to 24 hours after filling out our 'Getting Started' form to receive our mainnet contract info and custom job ID. Please also ensure that your consumer contract is properly funded with enough LINK tokens to make the request.
+:::
 
 **Execute your request**:
 
-1. Trigger the `transferAndCall()` function (also known as the `sendOperatorRequest()`, or `request()` function) within your consumer contract.
+1. Trigger the `transferAndCall()` function (sometimes called the `request()` or `sendOperatorRequest()` function) within your consumer contract.
 1. Once triggered, your contract will emit an `OracleRequest` event, which will get picked up by one of our off-chain oracle nodes. On **mainnets**, the appropriate amount of LINK token will simultaneously be sent to the oracle contract as a form of payment.
-1. After detecting the `OracleRequest` event, one of our oracle nodes will uses the data emitted to perform the designated job. This is typically an HTTP request to an API endpoint for data retrieval.
+1. After detecting the `OracleRequest` event, one of our oracle nodes will use the emitted data to perform the designated job. This typically involves an HTTP request to an API endpoint for data retrieval.
 1. Once the data has been retrieved, parsed, and converted into a blockchain compatible format, our oracle node executes a blockchain transaction against the oracle contract, which in turn writes the data back to your consumer contract via its `fulfill()` function.
 
 **Retrieve your result**:
