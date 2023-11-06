@@ -7,9 +7,9 @@ As compared to [Chainlink Functions](/knowledgebase/faq/Chainlink-Users#should-i
 As direct requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team that you trust.
 
 :::info
-**LinkWell Nodes** is a full service Chainlink oracle solution that provides secure, reliable, direct request data feeds in exchange for a fee. We offer free external adapter hosting services, as well as free development services for any efforts required to get your smart contract application up and running.
+**LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct request data feeds in exchange for a fee. We offer free external adapter hosting services, as well as free development services for any efforts required to get your smart contract application up and running.
 
-You can read more about our direct request data offerings [here](/services/direct-request-jobs/Jobs-and-Pricing).
+You can read more about our direct request data offerings [here](/services/direct-request-jobs/Jobs-and-Pricing), as well as our security guarantees [here](/services/direct-request-jobs/Service-Level-Agreement).
 :::
 
 ## Overview

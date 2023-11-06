@@ -51,8 +51,8 @@ h4 {
 	font-weight:600;
 }
 .hash-link::before {
-  content: "\1F517" !important;
-  font-weight: 400;
+	content: "\1F517" !important;
+	font-weight: 400;
 }
 .header-github-link:before {
 	content: '';
@@ -63,7 +63,7 @@ h4 {
 	  no-repeat;
 }
 .header-github-link:hover {
-opacity: 0.6;
+	opacity: 0.6;
 }
 .header-x-link:before {
 	content: '';
@@ -74,7 +74,7 @@ opacity: 0.6;
 	  no-repeat;
 }
 .header-x-link:hover {
-opacity: 0.6;
+	opacity: 0.6;
 }
 .header-discord-link:before {
 	content: '';
@@ -85,7 +85,7 @@ opacity: 0.6;
 	  no-repeat;
 }
 .header-discord-link:hover {
-opacity: 0.6;
+	opacity: 0.6;
 }
 
 /* Breadcrumbs */
@@ -105,6 +105,13 @@ code {
     padding: 24px;
     --ifm-alert-border-color: #0B87DA;
 }
+.alert--info a {
+	color: #0B87DF;
+	text-decoration: none;
+}
+.alert--info a:hover {
+	text-decoration: underline;
+}
 .alert--warning {
 	margin: 40px 0 !important;
 	padding: 24px;
@@ -112,10 +119,25 @@ code {
     color: #DA0B50;
     --ifm-alert-border-color: #DA0B50;
 }
+.alert--warning a {
+	color: #0B87DF;
+	text-decoration: none;
+}
+.alert--warning a:hover {
+	text-decoration: underline;
+}
 .alert--danger {
 	margin: 40px 0 !important;
 	padding: 24px;
 }
+.alert--danger a {
+	color: #0B87DF;
+	text-decoration: none;
+}
+.alert--danger a:hover {
+	text-decoration: underline;
+}
+
 
 /* Code blocks */
 div[class^='codeBlockTitle'] {
