@@ -44,20 +44,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol#L22-L27
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256/get_uint256.sol#L22-L27
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol#L29-L42
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256/get_uint256.sol#L29-L42
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256/get_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256/get_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -101,20 +101,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol#L22-L27
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol#L22-L27
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol#L29-L40
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol#L29-L40
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_no_multiply/get_uint256_no_multiply.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -159,20 +159,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_int256/get_int256.sol#L22-L27
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_int256/get_int256.sol#L22-L27
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_int256/get_int256.sol#L29-L43
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_int256/get_int256.sol#L29-L43
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_int256/get_int256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_int256/get_int256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_int256/get_int256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -216,20 +216,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bool/get_bool.sol#L22-L27
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bool/get_bool.sol#L22-L27
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bool/get_bool.sol#L29-L37
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bool/get_bool.sol#L29-L37
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bool/get_bool.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bool/get_bool.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bool/get_bool.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -273,20 +273,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bytes/get_bytes.sol#L24-L29
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bytes/get_bytes.sol#L24-L29
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bytes/get_bytes.sol#L31-L42
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bytes/get_bytes.sol#L31-L42
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bytes/get_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bytes/get_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bytes/get_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -330,20 +330,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_string/get_string.sol#L24-L29
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_string/get_string.sol#L24-L29
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_string/get_string.sol#L31-L43
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_string/get_string.sol#L31-L43
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_string/get_string.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_string/get_string.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_string/get_string.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -392,20 +392,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_string_x2/get_string_x2.sol#L29-L34
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_string_x2/get_string_x2.sol#L29-L34
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_string_x2/get_string_x2.sol#L36-L53
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_string_x2/get_string_x2.sol#L36-L53
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_string_x2/get_string_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_string_x2/get_string_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_string_x2/get_string_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -455,20 +455,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol#L30-L35
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol#L30-L35
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol#L37-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol#L37-L55
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_x2/get_uint256_x2.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_x2/get_uint256_x2.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -512,20 +512,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_array/get_uint256_array.sol#L21-L26
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_array/get_uint256_array.sol#L21-L26
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_array/get_uint256_array.sol#L28-L36
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_array/get_uint256_array.sol#L28-L36
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_array/get_uint256_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_uint256_array/get_uint256_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -569,20 +569,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bytes_array/get_bytes_array.sol#L22-L27
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bytes_array/get_bytes_array.sol#L22-L27
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bytes_array/get_bytes_array.sol#L29-L37
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bytes_array/get_bytes_array.sol#L29-L37
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bytes_array/get_bytes_array.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/get_bytes_array/get_bytes_array.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -625,20 +625,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/post_bytes/post_bytes.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/post_bytes/post_bytes.sol#L23-L28
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/post_bytes/post_bytes.sol#L30-L43
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/post_bytes/post_bytes.sol#L30-L43
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/post_bytes/post_bytes.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/post_bytes/post_bytes.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/post_bytes/post_bytes.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 
@@ -682,20 +682,20 @@ This job allows for the following parameters to be set:
 Your consumer contract's constructor sets the Chainlink token address, Chainlink oracle address, and per-request LINK payment to be sent over with each transaction.
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/post_uint256/post_uint256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/post_uint256/post_uint256.sol#L23-L28
 ```
 
 #### Add your request function (example):
 The 'request function' within your consumer contract specifies the parameters to be sent over with your Chainlink request - the requirements for which are outlined in the above 'Request parameters' section:
 
 ```sol reference showLineNumbers
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/post_uint256/post_uint256.sol#L30-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/post_uint256/post_uint256.sol#L30-L45
 ```
 
 ### View the full source code
 
-* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/post_uint256/post_uint256.sol) of the above consumer contract.
-* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
+* View a [full example](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/post_uint256/post_uint256.sol) of the above consumer contract.
+* View the [actual oracle job](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets-v1/Arbitrum-One/post_uint256/post_uint256.toml) that LinkWell's oracles use to fulfill the above request.
 
 ### Need more help?
 

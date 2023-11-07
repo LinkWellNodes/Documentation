@@ -22,7 +22,7 @@ The following is a list of frequently-asked questions and answers collected from
 
 ### What chains does Chainlink support?
 
-The chains that Chainlink supports can be viewed in the Chainlink documentation [here](https://docs.chain.link/chainlink-automation/supported-networks). Please note that this list of chains is subject to change over time as Chainlink adds or removes support for a given chain.
+The chains that Chainlink supports can be viewed in the Chainlink documentation [here](https://docs.chain.link/resources/link-token-contracts). Please note that this list of chains is subject to change over time as Chainlink adds or removes support for a given chain.
 
 ### Should I run my own Chainlink node?
 

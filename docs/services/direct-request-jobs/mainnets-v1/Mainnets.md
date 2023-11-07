@@ -6,13 +6,13 @@ Please use the links below to view our direct request job offerings. If you run 
 
 ### View our direct request job offerings:
 
-* [Arbitrum Mainnet](/services/direct-request-jobs/mainnets/Arbitrum-One-Mainnet-Jobs)
-* [Avalanche Mainnet](/services/direct-request-jobs/mainnets/Avalanche-CChain-Mainnet-Jobs)
-* [Base Mainnet](/services/direct-request-jobs/mainnets/Base-Mainnet-Jobs)
-* [Binance Mainnet](/services/direct-request-jobs/mainnets/Binance-Mainnet-Jobs)
-* [Ethereum Mainnet](/services/direct-request-jobs/mainnets/Ethereum-Mainnet-Jobs)
-* [Optimism Mainnet](/services/direct-request-jobs/mainnets/Optimism-Mainnet-Jobs)
-* [Polygon Mainnet](/services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs)
+* [Arbitrum Mainnet](/services/direct-request-jobs/mainnets-v1/Arbitrum-One-Mainnet-Jobs)
+* [Avalanche Mainnet](/services/direct-request-jobs/mainnets-v1/Avalanche-CChain-Mainnet-Jobs)
+* [Base Mainnet](/services/direct-request-jobs/mainnets-v1/Base-Mainnet-Jobs)
+* [Binance Mainnet](/services/direct-request-jobs/mainnets-v1/Binance-Mainnet-Jobs)
+* [Ethereum Mainnet](/services/direct-request-jobs/mainnets-v1/Ethereum-Mainnet-Jobs)
+* [Optimism Mainnet](/services/direct-request-jobs/mainnets-v1/Optimism-Mainnet-Jobs)
+* [Polygon Mainnet](/services/direct-request-jobs/mainnets-v1/Polygon-Mainnet-Jobs)
 
 ## Troubleshooting
 
