@@ -23,7 +23,7 @@ Our FAQ provides answers to questions we've commonly seen throughout our extensi
 
 **Who are we?** 
 
-Learn more about [LinkWell Nodes](/About).
+Learn more about [LinkWell Nodes](/about).
 
 ## Contact Us
 
