@@ -31,3 +31,4 @@ deploy-bucket/lib/
 .git.bak
 /node_modules/
 /.docusaurus/
+/docs/services/direct-request-jobs/defunct/
