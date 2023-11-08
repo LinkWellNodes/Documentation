@@ -1,3 +1,7 @@
+---
+description: We are a U.S.-based Chainlink Oracle specializing in secure delivery of real-world data onto the blockchain.
+---
+
 # About Us
 **Led by truth over trust. Driven to innovate, build and create. Our mission is to support Chainlink in enabling developers, startups and enterprises to unlock the true value of Web3.**
 

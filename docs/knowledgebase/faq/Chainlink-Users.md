@@ -1,3 +1,7 @@
+---
+description: A list of frequently-asked questions by our Chainlink users.
+---
+
 import TOCInline from '@theme/TOCInline';
 
 # Chainlink User FAQ

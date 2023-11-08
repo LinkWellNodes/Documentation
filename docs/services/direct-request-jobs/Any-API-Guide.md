@@ -1,3 +1,7 @@
+---
+description: Code examples of Chainlink oracle data requests using the direct request model.
+---
+
 # Oracle Request Examples 
 Chainlink's [Any API](https://docs.chain.link/any-api/introduction) request model is a versatile feature that allows smart contracts to request data from off-chain sources. At LinkWell Nodes, we strive to make it as easy as possible for Web3 developers to leverage and utilize Chainlink to make such requests. 
 

@@ -1,3 +1,7 @@
+---
+description: Oracle addresses and Job IDs for our Chainlink oracles using the direct request model.
+---
+
 # Chainlink Data Feeds
 
 Our Chainlink data feeds utilize Chainlink's **direct request** model, allowing you to write real-world data from anywhere on the internet ('any API') to your blockchain smart contract. Our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 

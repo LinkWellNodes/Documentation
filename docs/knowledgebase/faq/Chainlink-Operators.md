@@ -1,3 +1,7 @@
+---
+description: A list of frequently-asked questions by Chainlink node (oracle) operators.
+---
+
 import TOCInline from '@theme/TOCInline';
 
 # Chainlink Oracle Operator FAQ

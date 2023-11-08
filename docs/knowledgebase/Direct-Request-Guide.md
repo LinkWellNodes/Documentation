@@ -1,3 +1,7 @@
+---
+description: A quick run-through of how the Chainlink Direct Request model works.
+---
+
 # Chainlink Direct Requests
 
 The Chainlink Direct Requests (also called [Basic Requests](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted)) are a type of Chainlink request pattern that allows your blockchain smart contract to request data directly from a given Chainlink oracle. 
