@@ -1,3 +1,7 @@
+---
+description: A guide to how our Chainlink request pricing works
+---
+
 import TOCInline from '@theme/TOCInline';
 
 # Data Feed Pricing
