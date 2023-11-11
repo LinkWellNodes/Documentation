@@ -111,10 +111,42 @@ module.exports = {
             label: 'Pricing',
         },
         {
-            type: 'doc',
-            id: 'services/direct-request-jobs/Any-API-Guide',
+            type: 'category',
             label: 'Sample Requests',
-        },
+            link: {type: 'doc', id: 'services/direct-request-jobs/Any-API-Guide'},
+            items: [
+                {
+    	            type: 'doc',
+    	            id: 'services/direct-request-jobs/examples/weather-data/AccuWeather',
+    	            label: 'AccuWeather',
+                },
+                {
+    	            type: 'doc',
+    	            id: 'services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage',
+    	            label: 'Alpha-Vantage',
+                },
+                {
+    	            type: 'doc',
+    	            id: 'services/direct-request-jobs/examples/coin-price-data/CryptoCompare',
+    	            label: 'CryptoCompare',
+                },
+                {
+    	            type: 'doc',
+    	            id: 'services/direct-request-jobs/examples/ipfs-data/IPFS',
+    	            label: 'IPFS',
+                },
+                {
+    	            type: 'doc',
+    	            id: 'services/direct-request-jobs/examples/sports-data/SportsDataIO',
+    	            label: 'SportsDataIO',
+                },
+                {
+    	            type: 'doc',
+    	            id: 'services/direct-request-jobs/examples/sports-data/TheRundown',
+    	            label: 'TheRundown',
+                },
+            ]
+          },
         {
             type: 'doc',
             id: 'services/direct-request-jobs/External-Adapters',

@@ -29,10 +29,10 @@ Our oracles can still support your request. Fill out our [request survey](https:
 ## View our examples:
 
 ### Coin Price Data
-* [CryptoCompare Data](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare)
+* [CryptoCompare](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare)
 
 ### IPFS Data
-* [IPFS Data](/services/direct-request-jobs/examples/ipfs-data/IPFS)
+* [IPFS (InterPlanetary File System)](/services/direct-request-jobs/examples/ipfs-data/IPFS)
 
 ### Sports Data
 * [TheRundown](/services/direct-request-jobs/examples/sports-data/TheRundown)
