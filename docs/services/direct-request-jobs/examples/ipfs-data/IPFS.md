@@ -4,7 +4,7 @@
 
 The InterPlanetary File System (IPFS) is a revolutionary peer-to-peer network protocol designed to make the web faster, safer, and more open. The IPFS API allows developers to interact with the IPFS network, enabling them to store and retrieve files, manage IPFS nodes, and handle other related tasks. This decentralized file system aims to replace the traditional centralized web hosting model, making content permanently available and resistant to censorship. By using the IPFS API, users can benefit from a distributed web where content is addressed by what it is (content-based addressing) rather than where it's stored (location-based addressing). This ensures data persistence, high availability, and a more resilient internet infrastructure.
 
-The following guide illustrates an easy example of how to retrieve a `string-bytes` value from the IPFS API into your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
+The following guide illustrates an easy example of how to retrieve a `string-bytes` value from the IPFS API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
 
 ## Real-world example
 

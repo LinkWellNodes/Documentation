@@ -29,19 +29,20 @@ Our oracles can still support your request. Fill out our [request survey](https:
 ## View our examples:
 
 ### Coin Price Data
-* [CryptoCompare Data](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare.md)
+* [CryptoCompare Data](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare)
 
 ### IPFS Data
-* [IPFS Data](/services/direct-request-jobs/examples/ipfs-data/IPFS.md)
+* [IPFS Data](/services/direct-request-jobs/examples/ipfs-data/IPFS)
 
 ### Sports Data
-* [SportsDataIO](/services/direct-request-jobs/examples/sports-data/SportsDataIO.md)
+* [TheRundown](/services/direct-request-jobs/examples/sports-data/TheRundown)
+* [SportsDataIO](/services/direct-request-jobs/examples/sports-data/SportsDataIO)
 
 ### Stock Price Data
-* [Alpha Vantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage.md)
+* [Alpha Vantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage)
 
 ### Weather Data
-* [AccuWeather](/services/direct-request-jobs/examples/weather-data/AccuWeather.md)
+* [AccuWeather](/services/direct-request-jobs/examples/weather-data/AccuWeather)
 
 ## Learn More
 

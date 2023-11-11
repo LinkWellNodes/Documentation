@@ -4,7 +4,7 @@
 
 CryptoCompare is a digital platform that offers an extensive API tailored to the world of cryptocurrencies. The CryptoCompare API provides users with a wealth of information, including real-time and historical cryptocurrency price data, market analysis, and other vital metrics across a multitude of exchanges. This comprehensive data set is invaluable for traders, investors, researchers, and developers aiming to integrate cryptocurrency data into their applications or platforms. By offering a combination of accuracy, breadth, and ease of use, CryptoCompare has solidified its position as a go-to resource for those seeking reliable insights into the ever-evolving cryptocurrency market.
 
-The following guide illustrates an easy example of how to retrieve a `uint256` value from the CryptoCompare API into your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
+The following guide illustrates an easy example of how to retrieve a `uint256` value from the CryptoCompare API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
 
 ## Real-world example
 

@@ -4,7 +4,7 @@
 
 Alpha Vantage is a renowned platform that offers an extensive collection of APIs tailored to stock market data, financial indicators, and more. The Alpha Vantage API provides users with real-time and historical stock price data, foreign exchange rates, cryptocurrency prices, and technical indicators. It caters to individual traders, financial professionals, and developers seeking to integrate financial data into their applications. With its rich dataset and easy-to-use interface, Alpha Vantage has become an essential tool for those who require accurate and timely financial information for decision-making, analysis, or application development.
 
-The following guide illustrates an easy example of how to retrieve a `uint256` value from the Alpha Vantage API into your blockchain smart contract, using our highly-resilient Chainlink node infrastructure as an oracle for your data needs.
+The following guide illustrates an easy example of how to retrieve a `uint256` value from the Alpha Vantage API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
 
 ## Real-world example
 
