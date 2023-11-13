@@ -6,7 +6,7 @@ description: A quick run-through of how the Chainlink Direct Request model works
 
 The Chainlink Direct Requests (also called [Basic Requests](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted)) are a type of Chainlink request pattern that allows your blockchain smart contract to request data directly from a given Chainlink oracle. 
 
-As compared to [Chainlink Functions](/knowledgebase/faq/Chainlink-Users#should-i-use-chainlink-functions), Chainlink Direct Requests can be convenient for the end-user, as they can support the greatest range of requested data types (and data sizes), while requiring the least amount of technical effort to implement: the oracle team simply provides you with a `request` and `receive` function to place into your smart contract, leaving you free to focus on the development of the rest of your smart contract application. 
+Chainlink Direct Requests can be convenient for the end-user, as they can support the greatest range of requested data types (and data sizes), while requiring the least amount of technical effort to implement: the oracle team simply provides you with a `request` and `receive` function to place into your smart contract, leaving you free to focus on the development of the rest of your smart contract application. 
 
 As direct requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team that you trust.
 
