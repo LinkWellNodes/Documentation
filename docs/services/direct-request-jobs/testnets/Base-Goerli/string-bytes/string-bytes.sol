@@ -61,7 +61,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     
     // Retrieve the response data as a string
     function getResponseString() public view onlyOwner returns (string memory) {
-        return string(bytesData);     			// example value: Bitcoin
+        return string(responseBytes);     			// example value: Bitcoin
     }
 
     // Update oracle address
