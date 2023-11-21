@@ -65,8 +65,8 @@ module.exports = {
           items: [
               {
   	            type: 'doc',
-  	            id: 'services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
-  	            label: 'Arbitrum Goerli',
+  	            id: 'services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+  	            label: 'Arbitrum Sepolia',
               },
               {
   	            type: 'doc',

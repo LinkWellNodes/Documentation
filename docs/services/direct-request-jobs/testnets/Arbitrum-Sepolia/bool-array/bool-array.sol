@@ -13,7 +13,7 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
  */
 
-contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
 	address private oracleAddress;
@@ -21,9 +21,9 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
     uint256 private fee;
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0xd14838A68E8AFBAdE5efb411d5871ea0011AFd28);
+        setChainlinkToken(0xb1D4538B4571d411F07960EF2838Ce337FE1E80E);
         setOracleAddress(0xd08FEb8203E76f836D74608595346ab6b0f768C9);
-        setJobId("07f761e26a284cb8b7ed67188dece6d4");
+        setJobId("433ba6a76b374e2580dd43685a9de8c6");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 
@@ -36,11 +36,11 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         req.add('method', 'POST');
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}');
+        req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl command simulates the above request parameters: 
-        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}'
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
         
         // PROCESS THE RESULT (example)
         req.add('path', 'json,data,0,2;json,data,1,0;json,data,2,1');
@@ -49,19 +49,14 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         sendOperatorRequest(req, fee);
     }
 
-    bytes[] public responseBytesArr;    
+    bool[] public responseArr;
 
     // Receive the result from the Chainlink oracle
     event RequestFulfilled(bytes32 indexed requestId);
-    function fulfill(bytes32 requestId, bytes[] memory bytesData) public recordChainlinkFulfillment(requestId) {
+    function fulfill(bytes32 requestId, bool[] memory data) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
-        responseBytesArr = bytesData;           // example value: responseBytesArr[0] = "0x4b72616b656e", responseBytesArr[1] = "0x48756f6269", responseBytesArr[2] = "0x47656d696e69"
-    }
-
-    // Getter function demonstrating how to retrieve strings from the result object
-    function getResponseString(uint256 i) public view onlyOwner returns (string memory) {
-        return string(responseBytesArr[i]);     // example value: [0] = "Kraken", [1] = "Huobi", [2] = "Gemini"
+        responseArr = data;      // example value: responseBytesArr[0] = true, responseBytesArr[1] = false, responseBytesArr[2] = false
     }
 
     // Update oracle address

@@ -13,7 +13,7 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
  */
 
-contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
 	address private oracleAddress;
@@ -21,9 +21,9 @@ contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwn
     uint256 private fee;
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0xd14838A68E8AFBAdE5efb411d5871ea0011AFd28);
+        setChainlinkToken(0xb1D4538B4571d411F07960EF2838Ce337FE1E80E);
         setOracleAddress(0xd08FEb8203E76f836D74608595346ab6b0f768C9);
-        setJobId("433ba6a76b374e2580dd43685a9de8c6");
+        setJobId("8ced832954544a3c98543c94a51d6a8d");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 
@@ -36,27 +36,32 @@ contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwn
         req.add('method', 'POST');
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
+        req.add('body', '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl command simulates the above request parameters: 
-        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data,0,2;json,data,1,0;json,data,2,1');
+        req.add('path', 'json,data,0,name');
         
         // Send the request to the Chainlink oracle
         sendOperatorRequest(req, fee);
     }
 
-    bool[] public responseArr;
+    bytes public responseBytes;
 
     // Receive the result from the Chainlink oracle
     event RequestFulfilled(bytes32 indexed requestId);
-    function fulfill(bytes32 requestId, bool[] memory data) public recordChainlinkFulfillment(requestId) {
+    function fulfill(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
         // Process the oracle response
         // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
-        responseArr = data;      // example value: responseBytesArr[0] = true, responseBytesArr[1] = false, responseBytesArr[2] = false
+        responseBytes = bytesData;              // example value: 0x426974636f696e
+    }
+    
+    // Retrieve the response data as a string
+    function getResponseString() public view onlyOwner returns (string memory) {
+        return string(responseBytes);     			// example value: Bitcoin
     }
 
     // Update oracle address

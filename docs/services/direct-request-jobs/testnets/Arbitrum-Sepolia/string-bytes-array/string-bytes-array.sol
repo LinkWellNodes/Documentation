@@ -13,7 +13,7 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
  */
 
-contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
 	address private oracleAddress;
@@ -21,9 +21,9 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     uint256 private fee;
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0xd14838A68E8AFBAdE5efb411d5871ea0011AFd28);
+        setChainlinkToken(0xb1D4538B4571d411F07960EF2838Ce337FE1E80E);
         setOracleAddress(0xd08FEb8203E76f836D74608595346ab6b0f768C9);
-        setJobId("a8356f48569c434eaa4ac5fcb4db5cc0");
+        setJobId("07f761e26a284cb8b7ed67188dece6d4");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 
@@ -31,33 +31,37 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     function request() public {
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
-        
+		     
         // DEFINE THE REQUEST PARAMETERS (example)
-        req.add('method', 'GET');
-        req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
-        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '');
+        req.add('method', 'POST');
+        req.add('url', 'https://httpbin.org/post');
+        req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('body', '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl command simulates the above request parameters: 
-        // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'ETH,USD');
-        req.addInt('multiplier', 10 ** 18);
-
-        // Send the request to the Chainlink oracle        
+        req.add('path', 'json,data,0,2;json,data,1,0;json,data,2,1');
+        
+        // Send the request to the Chainlink oracle
         sendOperatorRequest(req, fee);
     }
 
-    uint256 public response;
-    
-    // Receive the result from the Chainlink oracle    
+    bytes[] public responseBytesArr;    
+
+    // Receive the result from the Chainlink oracle
     event RequestFulfilled(bytes32 indexed requestId);
-    function fulfill(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
-    	// Process the oracle response
+    function fulfill(bytes32 requestId, bytes[] memory bytesData) public recordChainlinkFulfillment(requestId) {
+        // Process the oracle response
         // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
-        response = data;     // example value: 1875870000000000000000 (1875.87 before "multiplier" is applied)
+        responseBytesArr = bytesData;           // example value: responseBytesArr[0] = "0x4b72616b656e", responseBytesArr[1] = "0x48756f6269", responseBytesArr[2] = "0x47656d696e69"
+    }
+
+    // Getter function demonstrating how to retrieve strings from the result object
+    function getResponseString(uint256 i) public view onlyOwner returns (string memory) {
+        return string(responseBytesArr[i]);     // example value: [0] = "Kraken", [1] = "Huobi", [2] = "Gemini"
     }
 
     // Update oracle address

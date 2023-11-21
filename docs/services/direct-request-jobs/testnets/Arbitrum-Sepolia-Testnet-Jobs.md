@@ -1,15 +1,16 @@
-import Tabs from '@theme/Tabs';
+## Coming Soon!
+<!-- import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Arbitrum Goerli Testnet Data Feeds
+# Arbitrum Sepolia Testnet Data Feeds
 
-Arbitrum Goerli is the testnet of Layer 2 rollup chain Arbitrum One, and uses Ethereum's Goerli testnet network as its Layer 1 protocol.
+Arbitrum Sepolia is the testnet of Layer 2 rollup chain Arbitrum One, and uses Ethereum's Sepolia testnet network as its Layer 1 protocol.
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Arbitrum-Goerli network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our Chainlink data feed offerings ('**jobs**') on the Arbitrum-Sepolia network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 :::caution
-In light of the deprecation of Arbitrum Goerli testnet (https://docs.arbitrum.io/for-devs/concepts/public-chains#what-arbitrum-testnet-chains-are-available), we will be shutting down oracle support for this testnet network on **November 15, 2023**. In the meantime, please consider migrating your Arbitrum Goerli testnet contracts to Arbitrum Sepolia testnet. Please note that these changes do NOT affect Arbitrum mainnet, which we will continue to support throughout.
+In light of the deprecation of Arbitrum Sepolia testnet (https://docs.arbitrum.io/for-devs/concepts/public-chains#what-arbitrum-testnet-chains-are-available), we will be shutting down oracle support for this testnet network on **November 15, 2023**. In the meantime, please consider migrating your Arbitrum Sepolia testnet contracts to Arbitrum Sepolia testnet. Please note that these changes do NOT affect Arbitrum mainnet, which we will continue to support throughout.
 :::
 
 ### Select the type of data that you need:
@@ -29,7 +30,7 @@ This job writes a single **uint256** object to your contract, which can store an
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://sepolia.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
 
 ### Request parameters
 
@@ -54,20 +55,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256/uint256.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256/uint256.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256/uint256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256/uint256.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -153,7 +154,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://sepolia.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
 
 ### Request parameters
 
@@ -178,20 +179,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256-array/uint256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/uint256-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256-array/uint256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/uint256-array.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/uint256-array/uint256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/uint256-array.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -289,7 +290,7 @@ This job writes a single **int256** object to your contract, which can store any
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://sepolia.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
 
 ### Request parameters
 
@@ -314,20 +315,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256/int256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/int256.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256/int256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/int256.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256/int256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/int256.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -426,7 +427,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://sepolia.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
 
 ### Request parameters
 
@@ -451,20 +452,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256-array/int256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/int256-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256-array/int256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/int256-array.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/int256-array/int256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/int256-array.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -562,7 +563,7 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://sepolia.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
 
 ### Request parameters
 
@@ -586,20 +587,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool/bool.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool/bool.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool/bool.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool/bool.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool/bool.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool/bool.sol#L52-L60
 ```
 
 ### Need to send sensitive information?
@@ -686,7 +687,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://sepolia.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
 
 ### Request parameters
 
@@ -710,20 +711,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool-array/bool-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool-array/bool-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool-array/bool-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool-array/bool-array.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/bool-array/bool-array.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool-array/bool-array.sol#L52-L60
 ```
 
 ### Need to send sensitive information?
@@ -813,7 +814,7 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://sepolia.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
 
 ### Request parameters
 
@@ -837,20 +838,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes/string-bytes.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes/string-bytes.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes/string-bytes.sol#L52-L65
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes/string-bytes.sol#L52-L65
 ```
 
 ### Need to send sensitive information?
@@ -945,7 +946,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://goerli.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
+| [0xd08FEb8203E76f836D74608595346ab6b0f768C9](https://sepolia.arbiscan.io/address/0xd08FEb8203E76f836D74608595346ab6b0f768C9) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
 
 ### Request parameters
 
@@ -969,20 +970,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes-array/string-bytes-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes-array/string-bytes-array.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Goerli/string-bytes-array/string-bytes-array.sol#L52-L69
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes-array/string-bytes-array.sol#L52-L69
 ```
 
 ### Need to send sensitive information?
@@ -1077,4 +1078,4 @@ Join our [Discord](https://discord.gg/AJ66pRz4) to get the fastest service for y
 :::
 
 </TabItem>
-</Tabs>
+</Tabs> -->

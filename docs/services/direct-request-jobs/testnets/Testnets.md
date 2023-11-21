@@ -6,7 +6,7 @@ Please use the links below to view our documentation on how to initiate a reques
 
 ### Select your network:
 
-* [Arbitrum Goerli Testnet](/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs)
+* [Arbitrum Sepolia Testnet](/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs)
 * [Avalanche Fuji Testnet](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs)
 * [Base Goerli Testnet](/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs)
 * [Binance Testnet](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs)

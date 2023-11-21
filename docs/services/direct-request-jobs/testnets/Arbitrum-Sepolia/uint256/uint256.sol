@@ -13,7 +13,7 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
  */
 
-contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
 	address private oracleAddress;
@@ -21,9 +21,9 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     uint256 private fee;
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0xd14838A68E8AFBAdE5efb411d5871ea0011AFd28);
+        setChainlinkToken(0xb1D4538B4571d411F07960EF2838Ce337FE1E80E);
         setOracleAddress(0xd08FEb8203E76f836D74608595346ab6b0f768C9);
-        setJobId("8ced832954544a3c98543c94a51d6a8d");
+        setJobId("a8356f48569c434eaa4ac5fcb4db5cc0");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 
@@ -31,37 +31,33 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
     function request() public {
     
         Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
-		     
+        
         // DEFINE THE REQUEST PARAMETERS (example)
-        req.add('method', 'POST');
-        req.add('url', 'https://httpbin.org/post');
-        req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}');
+        req.add('method', 'GET');
+        req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
+        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req.add('body', '');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl command simulates the above request parameters: 
-        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[{"id":1,"name":"Bitcoin","price":20194.52},{"id":2,"name":"Ethereum","price":1850.46},{"id":3,"name":"Chainlink","price":18.36}]}'
+        // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data,0,name');
-        
-        // Send the request to the Chainlink oracle
+        req.add('path', 'ETH,USD');
+        req.addInt('multiplier', 10 ** 18);
+
+        // Send the request to the Chainlink oracle        
         sendOperatorRequest(req, fee);
     }
 
-    bytes public responseBytes;
-
-    // Receive the result from the Chainlink oracle
-    event RequestFulfilled(bytes32 indexed requestId);
-    function fulfill(bytes32 requestId, bytes memory bytesData) public recordChainlinkFulfillment(requestId) {
-        // Process the oracle response
-        // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
-        responseBytes = bytesData;              // example value: 0x426974636f696e
-    }
+    uint256 public response;
     
-    // Retrieve the response data as a string
-    function getResponseString() public view onlyOwner returns (string memory) {
-        return string(responseBytes);     			// example value: Bitcoin
+    // Receive the result from the Chainlink oracle    
+    event RequestFulfilled(bytes32 indexed requestId);
+    function fulfill(bytes32 requestId, uint256 data) public recordChainlinkFulfillment(requestId) {
+    	// Process the oracle response
+        // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
+        response = data;     // example value: 1875870000000000000000 (1875.87 before "multiplier" is applied)
     }
 
     // Update oracle address

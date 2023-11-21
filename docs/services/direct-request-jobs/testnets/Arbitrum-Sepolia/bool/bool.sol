@@ -13,17 +13,17 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
  */
 
-contract LinkWellInt256ConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellBoolConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
-	address private oracleAddress;
+    address private oracleAddress;
     bytes32 private jobId;
     uint256 private fee;
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0xd14838A68E8AFBAdE5efb411d5871ea0011AFd28);
+        setChainlinkToken(0xb1D4538B4571d411F07960EF2838Ce337FE1E80E);
         setOracleAddress(0xd08FEb8203E76f836D74608595346ab6b0f768C9);
-        setJobId("7f221811c63d49dd98031f957bf9bce0");
+        setJobId("43309009a154495cb2ed794233e6ff56");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 
@@ -36,28 +36,27 @@ contract LinkWellInt256ConsumerContractExample is ChainlinkClient, ConfirmedOwne
         req.add('method', 'POST');
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '{"data":[[12.43,-54.47,98.34],[89.99,-34.21,-85.65],[-412.43,983.89,473.31]]}');
+        req.add('body', '{"data":[{"coin":"BTC","isActive":false},{"coin":"ETH","isActive":false},{"coin":"LINK","isActive":true}]}');
         req.add('contact', 'derek_linkwellnodes.io');
         
         // The following curl command simulates the above request parameters: 
-        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[[12.43,-54.47,98.34],[89.99,-34.21,-85.65],[-412.43,983.89,473.31]]}'
+        // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[{"coin":"BTC","isActive":false},{"coin":"ETH","isActive":false},{"coin":"LINK","isActive":true}]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data,1,2'); 
-        req.addInt('multiplier', 10 ** 18);
+        req.add('path', 'json,data,2,isActive'); 
 
         // Send the request to the Chainlink oracle        
         sendOperatorRequest(req, fee);
     }
 
-    int256 public response;
-    
-    // Receive the result from the Chainlink oracle    
+    bool public response;
+
+    // Receive the result from the Chainlink oracle
     event RequestFulfilled(bytes32 indexed requestId);
-    function fulfill(bytes32 requestId, int256 data) public recordChainlinkFulfillment(requestId) {
+    function fulfill(bytes32 requestId, bool data) public recordChainlinkFulfillment(requestId) {
     	// Process the oracle response
         // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
-        response = data;     // example value: -85650000000000000000 (-85.65 before "multiplier" is applied)
+        response = data;     // example value: true
     }
 
     // Update oracle address
