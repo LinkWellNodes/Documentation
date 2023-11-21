@@ -218,6 +218,10 @@ const config = {
           {
             from: '/knowledgebase/Any-API-Guide',
             to: '/services/direct-request-jobs/Any-API-Guide',
+          },
+          {
+        	  from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
+        	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
           }
         ],
       },
