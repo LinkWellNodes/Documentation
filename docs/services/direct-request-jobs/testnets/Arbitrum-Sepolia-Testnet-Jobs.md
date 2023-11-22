@@ -9,10 +9,6 @@ Arbitrum Sepolia is the testnet of Layer 2 rollup chain Arbitrum One, and uses E
 
 Please see below for our Chainlink data feed offerings ('**jobs**') on the Arbitrum-Sepolia network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
-:::caution
-In light of the deprecation of Arbitrum Sepolia testnet (https://docs.arbitrum.io/for-devs/concepts/public-chains#what-arbitrum-testnet-chains-are-available), we will be shutting down oracle support for this testnet network on **November 15, 2023**. In the meantime, please consider migrating your Arbitrum Sepolia testnet contracts to Arbitrum Sepolia testnet. Please note that these changes do NOT affect Arbitrum mainnet, which we will continue to support throughout.
-:::
-
 ### Select the type of data that you need:
 
 <Tabs groupId="dataType" queryString>
