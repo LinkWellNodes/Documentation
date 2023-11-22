@@ -4,7 +4,7 @@ name = "LW_AST_EA_bool-array"
 externalJobID = "433ba6a7-6b37-4e25-80dd-43685a9de8c6"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0xd08FEb8203E76f836D74608595346ab6b0f768C9"
+contractAddress = "0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46"
 minContractPaymentLinkJuels = "0"
 observationSource = """
 
@@ -47,7 +47,7 @@ observationSource = """
 
     submit_tx   [
                 type="ethtx"
-                to="0xd08FEb8203E76f836D74608595346ab6b0f768C9"
+                to="0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46"
                 data="$(encode_tx)"
                 gasLimit="500000"
                 ]
