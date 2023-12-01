@@ -37,7 +37,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
         req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
         req.add('body', '');
-        req.add('contact', 'derek_linkwellnodes.io');
+        req.add('contact', 'ENTER_YOUR_CONTACT_INFO_HERE');     // example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'

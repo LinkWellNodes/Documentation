@@ -41,7 +41,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         req.add('url', 'http://dataservice.accuweather.com/currentconditions/v1/8641_PC?apikey={your_key}');
         req.add('headers', '');
         req.add('body', '');
-        req.add('contact', 'derek_linkwellnodes.io');
+        req.add('contact', 'ENTER_YOUR_CONTACT_INFO_HERE');     // example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl -k 'https://api.accuweather.com/currentconditions/v1/335315.json?apikey={your key}' --request 'GET' --header 'content-type: application/json'

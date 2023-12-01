@@ -32,7 +32,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json"]');
         req.add('body', '{"data":[[12.43,54.47,98.34],[89.99,34.21,85.65],[412.43,983.89,473.31]]}');
-        req.add('contact', 'derek_linkwellnodes.io');
+        req.add('contact', 'ENTER_YOUR_CONTACT_INFO_HERE');     // example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --data '{"data":[[12.43,54.47,98.34],[89.99,34.21,85.65],[412.43,983.89,473.31]]}'

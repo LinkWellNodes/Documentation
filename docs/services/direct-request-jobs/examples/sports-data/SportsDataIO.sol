@@ -41,7 +41,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         req.add('url', 'https://api.sportsdata.io/v3/mma/scores/json/Fighter/140000098?key={your_key}');
         req.add('headers', '["content-type", "application/json"]');
         req.add('body', '');
-        req.add('contact', 'derek_linkwellnodes.io');
+        req.add('contact', 'ENTER_YOUR_CONTACT_INFO_HERE');     // example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl -k 'https://api.sportsdata.io/v3/mma/scores/json/Fighter/140000098?key={your key}'

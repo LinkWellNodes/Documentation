@@ -37,7 +37,7 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
         req.add('body', '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}');
-        req.add('contact', 'derek_linkwellnodes.io');
+        req.add('contact', 'ENTER_YOUR_CONTACT_INFO_HERE');     // example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[["Coinbase","Binance","Kraken"],["Huobi","Crypto.com","KuCoin"],["Yobit","Gemini","OKX"]]}'
