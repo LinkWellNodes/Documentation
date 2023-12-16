@@ -10,9 +10,16 @@ Please use the links below to view our documentation on how to initiate a reques
 * [Avalanche Mainnet](/services/direct-request-jobs/mainnets/Avalanche-CChain-Mainnet-Jobs)
 * [Base Mainnet](/services/direct-request-jobs/mainnets/Base-Mainnet-Jobs)
 * [Binance Mainnet](/services/direct-request-jobs/mainnets/Binance-Mainnet-Jobs)
+* [Celo Mainnet](/services/direct-request-jobs/mainnets/Celo-Mainnet-Jobs)
 * [Ethereum Mainnet](/services/direct-request-jobs/mainnets/Ethereum-Mainnet-Jobs)
+* [Fantom Mainnet](/services/direct-request-jobs/mainnets/Fantom-Mainnet-Jobs)
+* [Gnosis Mainnet](/services/direct-request-jobs/mainnets/Gnosis-Mainnet-Jobs)
+* [Linea Mainnet](/services/direct-request-jobs/mainnets/Linea-Mainnet-Jobs)
 * [Optimism Mainnet](/services/direct-request-jobs/mainnets/Optimism-Mainnet-Jobs)
 * [Polygon Mainnet](/services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs)
+* [Polygon zkEVM Mainnet](/services/direct-request-jobs/mainnets/Polygon-zkEVM-Mainnet-Jobs)
+* [Scroll Mainnet](/services/direct-request-jobs/mainnets/Scroll-Mainnet-Jobs)
+* [zkSync Mainnet](/services/direct-request-jobs/mainnets/zkSync-Mainnet-Jobs)
 
 ## Troubleshooting
 
