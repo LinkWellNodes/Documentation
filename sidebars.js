@@ -43,8 +43,28 @@ module.exports = {
             },
             {
 	            type: 'doc',
+	            id: 'services/direct-request-jobs/mainnets/Celo-Mainnet-Jobs',
+	            label: 'Celo',
+            },
+            {
+	            type: 'doc',
 	            id: 'services/direct-request-jobs/mainnets/Ethereum-Mainnet-Jobs',
 	            label: 'Ethereum',
+            },
+            {
+	            type: 'doc',
+	            id: 'services/direct-request-jobs/mainnets/Fantom-Mainnet-Jobs',
+	            label: 'Fantom',
+            },
+            {
+	            type: 'doc',
+	            id: 'services/direct-request-jobs/mainnets/Gnosis-Chain-Mainnet-Jobs',
+	            label: 'Gnosis-Chain',
+            },
+            {
+	            type: 'doc',
+	            id: 'services/direct-request-jobs/mainnets/Linea-Mainnet-Jobs',
+	            label: 'Linea',
             },
             {
 	            type: 'doc',
@@ -56,6 +76,21 @@ module.exports = {
 	            id: 'services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs',
 	            label: 'Polygon',
             },
+            {
+	            type: 'doc',
+	            id: 'services/direct-request-jobs/mainnets/Polygon-zkEVM-Mainnet-Jobs',
+	            label: 'Polygon zkEVM',
+            },
+            {
+	            type: 'doc',
+	            id: 'services/direct-request-jobs/mainnets/Scroll-Mainnet-Jobs',
+	            label: 'Scroll',
+            },
+            {
+	            type: 'doc',
+	            id: 'services/direct-request-jobs/mainnets/zkSync-Era-Mainnet-Jobs',
+	            label: 'zkSync-Era',
+            }
           ]
         },
         {

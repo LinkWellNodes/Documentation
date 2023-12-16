@@ -2,7 +2,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# zkSync Mainnet Data Feeds
+# zkSync Era Mainnet Data Feeds
 
 zkSync Era is a trustless Layer 2 protocol for scalable low-cost payments on Ethereum, powered by zkRollup technology. ZkSync is the network's native cryptocurrency, which is used for fees, staking, and more.
 
