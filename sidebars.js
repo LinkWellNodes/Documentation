@@ -120,6 +120,11 @@ module.exports = {
               },
               {
   	            type: 'doc',
+  	            id: 'services/direct-request-jobs/testnets/Celo-Alfajores-Testnet-Jobs',
+  	            label: 'Celo Alfajores',
+              },
+              {
+  	            type: 'doc',
   	            id: 'services/direct-request-jobs/testnets/Ethereum-Goerli-Testnet-Jobs',
   	            label: 'Ethereum Goerli',
               },
@@ -127,6 +132,11 @@ module.exports = {
 	            type: 'doc',
 	            id: 'services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs',
 	            label: 'Ethereum Sepolia',
+              },
+              {
+  	            type: 'doc',
+  	            id: 'services/direct-request-jobs/testnets/Fantom-Testnet-Jobs',
+  	            label: 'Fantom',
               },
               {
   	            type: 'doc',
@@ -138,6 +148,21 @@ module.exports = {
   	            id: 'services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
   	            label: 'Polygon Mumbai',
               },
+              {
+  	            type: 'doc',
+  	            id: 'services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet-Jobs',
+  	            label: 'Polygon zkEVM',
+              },
+              {
+  	            type: 'doc',
+  	            id: 'services/direct-request-jobs/testnets/Scroll-Sepolia-Testnet-Jobs',
+  	            label: 'Scroll Sepolia',
+              },
+              {
+  	            type: 'doc',
+  	            id: 'services/direct-request-jobs/testnets/zkSync-Goerli-Testnet-Jobs',
+  	            label: 'zkSync Goerli',
+              }
           ]
         },
         {

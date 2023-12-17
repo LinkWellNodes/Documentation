@@ -4,7 +4,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Avalanche Fuji Testnet Data Feeds
 
-Avalanche Fuji is the testnet for Avalanche Mainnet (AVAX), which is a smart contract-capable blockchain platform focused on transaction speed, low costs, and eco-friendliness.
+Avalanche Fuji is the testnet for Avalanche Mainnet (AVAX), which is a smart contract-capable blockchain platform focused on transaction speed, low costs, and eco-friendliness. Testnet AVAX is used to pay for transactions on Avalanche Fuji. Testnet LINK and AVAX are available at [faucets.chain.link](https://faucets.chain.link/fuji). Testnet AVAX is also available at [faucet.avax.network](https://core.app/tools/testnet-faucet/?subnet=c&token=c).
 
 Please see below for our Chainlink data feed offerings ('**jobs**') on the Avalanche-Fuji network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 

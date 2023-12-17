@@ -2,11 +2,11 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Gnosis Chain Mainnet Data Feeds
+# Gnosis-Chain Mainnet Data Feeds
 
-Gnosis Chain is a fully equivalent EVM zk-rollup designed to scale the Ethereum network. xDAI is used to pay for transactions on Gnosis Chain Mainnet. Use the [xDai Bridge](https://bridge.gnosischain.com/) to send DAI from Ethereum Mainnet to Gnosis Chain and convert it to xDAI. Use [OmniBridge](https://omni.gnosischain.com/bridge) to send LINK from Ethereum Mainnet to Gnosis Chain.
+Gnosis-Chain is a fully equivalent EVM zk-rollup designed to scale the Ethereum network. xDAI is used to pay for transactions on Gnosis-Chain Mainnet. Use the [xDai Bridge](https://bridge.gnosischain.com/) to send DAI from Ethereum Mainnet to Gnosis-Chain and convert it to xDAI. Use [OmniBridge](https://omni.gnosischain.com/bridge) to send LINK from Ethereum Mainnet to Gnosis-Chain.
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Gnosis Chain network. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our Chainlink data feed offerings ('**jobs**') on the Gnosis-Chain network. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 ### Select the type of data that you need:
 
@@ -54,20 +54,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/uint256/uint256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/uint256/uint256.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/uint256/uint256.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/uint256/uint256.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/uint256/uint256.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/uint256/uint256.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -182,20 +182,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/uint256-array/uint256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/uint256-array/uint256-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/uint256-array/uint256-array.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/uint256-array/uint256-array.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/uint256-array/uint256-array.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/uint256-array/uint256-array.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -322,20 +322,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/int256/int256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/int256/int256.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/int256/int256.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/int256/int256.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/int256/int256.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/int256/int256.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -463,20 +463,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/int256-array/int256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/int256-array/int256-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/int256-array/int256-array.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/int256-array/int256-array.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/int256-array/int256-array.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/int256-array/int256-array.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -602,20 +602,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/bool/bool.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/bool/bool.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/bool/bool.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/bool/bool.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/bool/bool.sol#L47-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/bool/bool.sol#L47-L55
 ```
 
 ### Need to send sensitive information?
@@ -730,20 +730,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/bool-array/bool-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/bool-array/bool-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/bool-array/bool-array.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/bool-array/bool-array.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/bool-array/bool-array.sol#L47-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/bool-array/bool-array.sol#L47-L55
 ```
 
 ### Need to send sensitive information?
@@ -861,20 +861,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/string-bytes/string-bytes.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/string-bytes/string-bytes.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/string-bytes/string-bytes.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/string-bytes/string-bytes.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/string-bytes/string-bytes.sol#L47-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/string-bytes/string-bytes.sol#L47-L60
 ```
 
 ### Need to send sensitive information?
@@ -997,20 +997,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/string-bytes-array/string-bytes-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/string-bytes-array/string-bytes-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/string-bytes-array/string-bytes-array.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/string-bytes-array/string-bytes-array.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis Chain/string-bytes-array/string-bytes-array.sol#L47-L64
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Gnosis-Chain/string-bytes-array/string-bytes-array.sol#L47-L64
 ```
 
 ### Need to send sensitive information?

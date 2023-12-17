@@ -10,10 +10,15 @@ Please use the links below to view our documentation on how to initiate a reques
 * [Avalanche Fuji Testnet](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs)
 * [Base Goerli Testnet](/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs)
 * [Binance Testnet](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs)
+* [Celo Alfajores Testnet](/services/direct-request-jobs/testnets/Celo-Alfajores-Testnet-Jobs)
 * [Ethereum Goerli Testnet](/services/direct-request-jobs/testnets/Ethereum-Goerli-Testnet-Jobs)
 * [Ethereum Sepolia Testnet](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs)
+* [Fantom Testnet](/services/direct-request-jobs/testnets/Fantom-Testnet-Jobs)
 * [Optimism Goerli Testnet](/services/direct-request-jobs/testnets/Optimism-Goerli-Testnet-Jobs)
 * [Polygon Mumbai Testnet](/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs)
+* [Scroll Sepolia Testnet](/services/direct-request-jobs/testnets/Scroll-Sepolia-Testnet-Jobs)
+* [zkSync Goerli Testnet](/services/direct-request-jobs/testnets/zkSync-Goerli-Testnet-Jobs)
+* [Polygon zkEVM Testnet](/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet-Jobs)
 
 ## Troubleshooting
 

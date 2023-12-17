@@ -4,7 +4,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Base Goerli Testnet Data Feeds
 
-Base Goerli is the testnet of Layer 2 rollup chain Base mainnet, and uses Ethereum's Goerli testnet network as its Layer 1 protocol.
+Base Goerli is the testnet of Layer 2 rollup chain Base mainnet, and uses Ethereum's Goerli testnet network as its Layer 1 protocol. Testnet ETH is used to pay for transactions on BASE. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/base-testnet). Testnet ETH is available from one of the [BASE Network Faucets](https://docs.base.org/tools/network-faucets/).
 
 Please see below for our Chainlink data feed offerings ('**jobs**') on the Base-Goerli network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 

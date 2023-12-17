@@ -4,7 +4,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Polygon Mumbai Testnet Data Feeds
 
-Polygon Mumbai is a testnet that approximates the Polygon (MATIC) Mainnet, and uses Ethereum's Goerli testnet as its Layer 1 protocol.
+Polygon Mumbai is a testnet that approximates the Polygon (MATIC) Mainnet, and uses Ethereum's Goerli testnet as its Layer 1 protocol. Testnet MATIC is used to pay for transactions on Polygon Mumbai. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/mumbai). Testnet MATIC is available at the [Polygon faucet](https://faucet.polygon.technology/).
 
 Please see below for our Chainlink data feed offerings ('**jobs**') on the Polygon-Mumbai network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 

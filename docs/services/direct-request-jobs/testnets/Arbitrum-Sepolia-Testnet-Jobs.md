@@ -4,7 +4,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Arbitrum Sepolia Testnet Data Feeds
 
-Arbitrum Sepolia is the testnet of Layer 2 rollup chain Arbitrum One, and uses Ethereum's Sepolia testnet network as its Layer 1 protocol.
+Arbitrum Sepolia is the testnet of Layer 2 rollup chain Arbitrum One, and uses Ethereum's Sepolia testnet network as its Layer 1 protocol. Testnet ETH is used to pay for transactions on Arbitrum Sepolia. Use the [Arbitrum Bridge](https://bridge.arbitrum.io/) to transfer testnet ETH from Ethereum Sepolia to Arbitrum Sepolia. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/arbitrum-sepolia). Testnet ETH is available from several public [faucets](https://faucetlink.to/sepolia).
 
 Please see below for our Chainlink data feed offerings ('**jobs**') on the Arbitrum-Sepolia network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 

@@ -4,7 +4,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Polygon zkEVM Mainnet Data Feeds
 
-Polygon zkEVM is an EVM equivalent ZK rollup scaling solution. ETH is used to pay for transactions on Polygon zkEVM testnet. Use the [Polygon zkEVM Bridge](https://wallet.polygon.technology/?redirectOnConnect=%2FzkEVM-Bridge%2Fbridge) to transfer ETH and LINK to Polygon zkEVM testnet.
+Polygon zkEVM is an EVM equivalent ZK rollup scaling solution. ETH is used to pay for transactions on Polygon zkEVM. Use the [Polygon zkEVM Bridge](https://wallet.Polygon-zkEVM.technology/?redirectOnConnect=%2FzkEVM-Bridge%2Fbridge) to transfer ETH and LINK to Polygon zkEVM.
 
 Please see below for our Chainlink data feed offerings ('**jobs**') on the Polygon zkEVM network. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
@@ -25,7 +25,7 @@ This job writes a single **uint256** object to your contract, which can store an
 
 <!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<oracle address>](https://zkevm.polygonscan.com/<oracle address>) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK | -->
+| [<oracle address>](https://zkevm.polygonscan.com/address/<oracle address>) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK | -->
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -54,20 +54,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/uint256/uint256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/uint256/uint256.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/uint256/uint256.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/uint256/uint256.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/uint256/uint256.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/uint256/uint256.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -153,7 +153,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 <!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<oracle address>](https://zkevm.polygonscan.com/<oracle address>) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK | -->
+| [<oracle address>](https://zkevm.polygonscan.com/address/<oracle address>) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK | -->
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -182,20 +182,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/uint256-array/uint256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/uint256-array/uint256-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/uint256-array/uint256-array.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/uint256-array/uint256-array.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/uint256-array/uint256-array.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/uint256-array/uint256-array.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -293,7 +293,7 @@ This job writes a single **int256** object to your contract, which can store any
 
 <!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<oracle address>](https://zkevm.polygonscan.com/<oracle address>) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK | -->
+| [<oracle address>](https://zkevm.polygonscan.com/address/<oracle address>) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK | -->
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -322,20 +322,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/int256/int256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/int256/int256.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/int256/int256.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/int256/int256.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/int256/int256.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/int256/int256.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -434,7 +434,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 <!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<oracle address>](https://zkevm.polygonscan.com/<oracle address>) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK | -->
+| [<oracle address>](https://zkevm.polygonscan.com/address/<oracle address>) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK | -->
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -463,20 +463,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/int256-array/int256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/int256-array/int256-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/int256-array/int256-array.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/int256-array/int256-array.sol#L26-L46
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/int256-array/int256-array.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/int256-array/int256-array.sol#L48-L56
 ```
 
 ### Need to send sensitive information?
@@ -574,7 +574,7 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 <!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<oracle address>](https://zkevm.polygonscan.com/<oracle address>) | 43309009a154495cb2ed794233e6ff56 | 0 LINK | -->
+| [<oracle address>](https://zkevm.polygonscan.com/address/<oracle address>) | 43309009a154495cb2ed794233e6ff56 | 0 LINK | -->
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -602,20 +602,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/bool/bool.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/bool/bool.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/bool/bool.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/bool/bool.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/bool/bool.sol#L47-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/bool/bool.sol#L47-L55
 ```
 
 ### Need to send sensitive information?
@@ -702,7 +702,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 <!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<oracle address>](https://zkevm.polygonscan.com/<oracle address>) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK | -->
+| [<oracle address>](https://zkevm.polygonscan.com/address/<oracle address>) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK | -->
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -730,20 +730,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/bool-array/bool-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/bool-array/bool-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/bool-array/bool-array.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/bool-array/bool-array.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/bool-array/bool-array.sol#L47-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/bool-array/bool-array.sol#L47-L55
 ```
 
 ### Need to send sensitive information?
@@ -833,7 +833,7 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 <!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<oracle address>](https://zkevm.polygonscan.com/<oracle address>) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK | -->
+| [<oracle address>](https://zkevm.polygonscan.com/address/<oracle address>) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK | -->
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -861,20 +861,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/string-bytes/string-bytes.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/string-bytes/string-bytes.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/string-bytes/string-bytes.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/string-bytes/string-bytes.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/string-bytes/string-bytes.sol#L47-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/string-bytes/string-bytes.sol#L47-L60
 ```
 
 ### Need to send sensitive information?
@@ -969,7 +969,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 <!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<oracle address>](https://zkevm.polygonscan.com/<oracle address>) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK | -->
+| [<oracle address>](https://zkevm.polygonscan.com/address/<oracle address>) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK | -->
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -997,20 +997,20 @@ Add the following sample code to your **consumer contract**.
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/string-bytes-array/string-bytes-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/string-bytes-array/string-bytes-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/string-bytes-array/string-bytes-array.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/string-bytes-array/string-bytes-array.sol#L26-L45
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon/string-bytes-array/string-bytes-array.sol#L47-L64
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Polygon-zkEVM/string-bytes-array/string-bytes-array.sol#L47-L64
 ```
 
 ### Need to send sensitive information?

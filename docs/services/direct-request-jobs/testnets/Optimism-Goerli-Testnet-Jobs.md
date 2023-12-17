@@ -4,7 +4,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Optimism Goerli Testnet Data Feeds
 
-Optimism Goerli is the testnet of Layer 2 rollup chain Optimism mainnet, and uses Ethereum's Goerli testnet network as its Layer 1 protocol.
+Optimism Goerli is the testnet of Layer 2 rollup chain Optimism mainnet, and uses Ethereum's Goerli testnet network as its Layer 1 protocol. Testnet ETH is used to pay for transactions on Optimism. Use the [Optimism Bridge](https://app.optimism.io/bridge/deposit) to transfer testnet ETH and LINK from Ethereum Goerli to Optimistim Goerli. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/goerli).
 
 Please see below for our Chainlink data feed offerings ('**jobs**') on the Optimism-Goerli network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
