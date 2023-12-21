@@ -89,7 +89,7 @@ module.exports = {
             {
 	            type: 'doc',
 	            id: 'services/direct-request-jobs/mainnets/zkSync-Era-Mainnet-Jobs',
-	            label: 'zkSync-Era',
+	            label: 'zkSync Era',
             }
           ]
         },
