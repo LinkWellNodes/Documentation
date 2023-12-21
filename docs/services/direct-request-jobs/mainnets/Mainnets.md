@@ -13,7 +13,7 @@ Please use the links below to view our documentation on how to initiate a reques
 * [Celo Mainnet](/services/direct-request-jobs/mainnets/Celo-Mainnet-Jobs)
 * [Ethereum Mainnet](/services/direct-request-jobs/mainnets/Ethereum-Mainnet-Jobs)
 * [Fantom Mainnet](/services/direct-request-jobs/mainnets/Fantom-Mainnet-Jobs)
-* [Gnosis Chain Mainnet](/services/direct-request-jobs/mainnets/Gnosis-Chain-Mainnet-Jobs)
+* [Gnosis Mainnet](/services/direct-request-jobs/mainnets/Gnosis-Chain-Mainnet-Jobs)
 * [Linea Mainnet](/services/direct-request-jobs/mainnets/Linea-Mainnet-Jobs)
 * [Optimism Mainnet](/services/direct-request-jobs/mainnets/Optimism-Mainnet-Jobs)
 * [Polygon Mainnet](/services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs)

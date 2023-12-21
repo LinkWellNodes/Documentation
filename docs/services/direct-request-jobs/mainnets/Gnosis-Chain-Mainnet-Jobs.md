@@ -2,11 +2,11 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Gnosis-Chain Mainnet Data Feeds
+# Gnosis Chain Mainnet Data Feeds
 
-Gnosis-Chain is a fully equivalent EVM zk-rollup designed to scale the Ethereum network. xDAI is used to pay for transactions on Gnosis-Chain Mainnet. Use the [xDai Bridge](https://bridge.gnosischain.com/) to send DAI from Ethereum Mainnet to Gnosis-Chain and convert it to xDAI. Use [OmniBridge](https://omni.gnosischain.com/bridge) to send LINK from Ethereum Mainnet to Gnosis-Chain.
+The Gnosis Chain is a fully equivalent EVM zk-rollup designed to scale the Ethereum network. xDAI is used to pay for transactions on Gnosis Mainnet. Use the [xDai Bridge](https://bridge.gnosischain.com/) to send DAI from Ethereum Mainnet to Gnosis and convert it to xDAI. Use [OmniBridge](https://omni.gnosischain.com/bridge) to send LINK from Ethereum Mainnet to Gnosis Chain.
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Gnosis-Chain network. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our Chainlink data feed offerings ('**jobs**') on the Gnosis network. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 ### Select the type of data that you need:
 

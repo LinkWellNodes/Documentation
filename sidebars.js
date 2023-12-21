@@ -59,7 +59,7 @@ module.exports = {
             {
 	            type: 'doc',
 	            id: 'services/direct-request-jobs/mainnets/Gnosis-Chain-Mainnet-Jobs',
-	            label: 'Gnosis-Chain',
+	            label: 'Gnosis',
             },
             {
 	            type: 'doc',
