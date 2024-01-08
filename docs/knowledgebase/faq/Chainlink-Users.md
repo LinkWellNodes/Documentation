@@ -40,9 +40,9 @@ If you can't find a price feed that works for you, we'd be happy to support your
 
 ### Where can I find all node and job listings?
 
-While [market.link](https://market.link) was formerly the go-to directory for public Chainlink node and job listings, this feature has since been deprecated, and it is unclear if it will resurface in the future. Besides this, we aren't currently aware of any centralized directory for Chainlink nodes / job offerings. 
+While [market.link](https://market.link) was previously the go-to directory for public Chainlink node and job listings, this website has since been deprecated, and will eventually be migrated to Dune Analytics. In the meantime, we aren't currently aware of any centralized directory for Chainlink nodes / job offerings. 
 
-That being said, many node operators (such as ourselves) choose to host their own websites and documentation pages that display their own Chainlink job offerings. A decent approach is to perform a Google search for 'Chainlink node operator' to see what job offerings you might find!
+That being said, many node operators choose to host their own websites and documentation regarding their Chainlink job offerings. If you're in need of a node operator, a decent approach might be to perform a Google search for 'Chainlink node operator' to see what job offerings you might find!
 
 To view a comprehensive list of Chainlink jobs offered by LinkWell Nodes, visit our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 
