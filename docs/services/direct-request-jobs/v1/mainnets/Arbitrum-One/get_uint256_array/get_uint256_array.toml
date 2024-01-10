@@ -1,0 +1,43 @@
+type = "directrequest"
+schemaVersion = 1
+name = "LW_AOM_DR_Get_Uint256_Array"
+externalJobID = "9a2ba543-74f3-4184-bdc6-390db3171994"
+forwardingAllowed = false
+maxTaskDuration = "0s"
+contractAddress = "0xD8edDB284d25DbbC5189E488639D689DFE7AaB49"
+minContractPaymentLinkJuels = "150000000000000000"
+observationSource = """
+
+    decode_log  [
+                type="ethabidecodelog"
+                abi="OracleRequest(bytes32 indexed specId, address requester, bytes32 requestId, uint256 payment, address callbackAddr, bytes4 callbackFunctionId, uint256 cancelExpiration, uint256 dataVersion, bytes data)"
+                data="$(jobRun.logData)"
+                topics="$(jobRun.logTopics)"
+                ]
+    decode_cbor [
+                type="cborparse"
+                data="$(decode_log.data)"
+                ]
+    fetch        [type="http" method=GET url="$(decode_cbor.get)"]
+    parse        [type=jsonparse path="$(decode_cbor.path)"
+                data="$(fetch)"
+                ]
+    encode_data [
+                type="ethabiencode"
+                abi="(bytes32 requestId, uint256[] _data)"
+                data="{\\"requestId\\": $(decode_log.requestId), \\"_data\\": $(parse)}"
+                ]
+    encode_tx   [
+                type="ethabiencode"
+                abi="fulfillOracleRequest2(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes calldata data)"
+                data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\":   $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
+                ]
+    submit_tx   [
+                type="ethtx"
+                to="0xD8edDB284d25DbbC5189E488639D689DFE7AaB49"
+                data="$(encode_tx)"
+                gasLimit="500000"
+                ]
+    
+    decode_log -> decode_cbor -> fetch -> parse -> encode_data -> encode_tx -> submit_tx
+"""

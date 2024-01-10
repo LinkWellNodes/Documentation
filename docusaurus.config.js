@@ -227,10 +227,20 @@ const config = {
         ],
         // Redirect entire paths
         createRedirects(existingPath) {
-            if (existingPath.includes('/services/direct-request-jobs')) {	// correct path
+            if (existingPath.includes('/services/direct-request-jobs')) {
               return [
-                existingPath.replace('/services/direct-request-jobs', '/services/jobs'),	// new (correct) path, old path
+                existingPath.replace('/services/direct-request-jobs', '/services/jobs'),
               ];
+            }
+            if (existingPath.includes('/v1/mainnets')) {
+                return [
+                  existingPath.replace('/v1/mainnets', '/mainnets-v1'),
+                ];
+            }
+            if (existingPath.includes('/v1/testnets')) {
+                return [
+                  existingPath.replace('/v1/testnets', '/testnets-v1'),
+                ];
             }
             // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
             // if (existingPath.includes('/newPath')) {	 // correct path
