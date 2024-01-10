@@ -227,13 +227,18 @@ const config = {
         ],
         // Redirect entire paths
         createRedirects(existingPath) {
-            if (existingPath.includes('/services/jobs')) {
+            if (existingPath.includes('/services/direct-request-jobs')) {
               return [
-        	    // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
-            	// existingPath.replace('/newPath', '/old/path'),
                 existingPath.replace('/services/direct-request-jobs', '/services/jobs'),
               ];
             }
+            // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
+            // if (existingPath.includes('/newPath')) {
+            //     // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            //     return [
+            //       existingPath.replace('/newPath', '/old/path'),
+            //     ];
+            // }
             return undefined; // Return a falsey value: no redirect created
           },
       },
