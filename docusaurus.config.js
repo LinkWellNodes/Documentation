@@ -206,6 +206,7 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
+    	// Redirect specific pages
         redirects: [
           {
             from: '/knowledgebase/Chainlink-Consumers-FAQ',
@@ -224,16 +225,16 @@ const config = {
         	to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
           }
         ],
+        // Redirect entire paths
         createRedirects(existingPath) {
-        	// /blog
-            if (existingPath.includes('/blog')) {
-              // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            if (existingPath.includes('/services/jobs')) {
               return [
-                existingPath.replace('/blog', '/blog2'),
-                existingPath.replace('/community', '/docs/support'),
+        	    // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
+            	// existingPath.replace('/newPath', '/old/path'),
+                existingPath.replace('/services/direct-request-jobs', '/services/jobs'),
               ];
             }
-            return undefined; // Return a falsy value: no redirect created
+            return undefined; // Return a falsey value: no redirect created
           },
       },
     ],
