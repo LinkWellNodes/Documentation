@@ -220,10 +220,21 @@ const config = {
             to: '/services/direct-request-jobs/Any-API-Guide',
           },
           {
-        	  from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
-        	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+        	from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
+        	to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
           }
         ],
+        createRedirects(existingPath) {
+        	// /blog
+            if (existingPath.includes('/blog')) {
+              // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+              return [
+                existingPath.replace('/blog', '/blog2'),
+                existingPath.replace('/community', '/docs/support'),
+              ];
+            }
+            return undefined; // Return a falsy value: no redirect created
+          },
       },
     ],
   ],
