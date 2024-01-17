@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklinkwell_nodes_documentation=self.webpackChunklinkwell_nodes_documentation||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Introduction","permalink":"/blog/introduction"},{"title":"Welcome","permalink":"/blog/welcome"}]}')}}]);

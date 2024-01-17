@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklinkwell_nodes_documentation=self.webpackChunklinkwell_nodes_documentation||[]).push([[4778],{1281:e=>{e.exports=JSON.parse('{"label":"oracles","permalink":"/blog/tags/oracles","allTagsPath":"/blog/tags","count":1}')}}]);
