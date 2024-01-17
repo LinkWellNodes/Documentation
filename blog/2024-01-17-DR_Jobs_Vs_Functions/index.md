@@ -20,7 +20,7 @@ Make no mistake- Chainlink Functions is a monumental enhancement for off-chain c
 
 > Disclaimer: All views below are strictly our own, and not the views or opinions of Chainlink Labs. As a community-based Chainlink node operations team with extensive [Chainlink Direct Request service offerings](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing), we acknowledge our potential bias in writing on this topic. In that vein, we promise to be as objective as possible in assessing the relevance of both approaches.
 
-While Chainlink Functions reigns supreme in many ways to the traditional Direct Request model, there are pros and cons to each approach. Having a nuanced understanding acknowledges the fact that Direct Requests can still a relevant option for off-chain data data retrieval and computation, depending on your use case. 
+While Chainlink Functions reigns supreme in many ways to the traditional Direct Request model, there are pros and cons to each approach. Having a nuanced understanding acknowledges the fact that Direct Requests can still be a relevant option for off-chain data data retrieval and computation, depending on your use case. 
 
 Our objective here is to illuminate this choice for Web3 developers, who might be faced with the challenge of selecting one over the other.
 
@@ -41,7 +41,7 @@ The following diagram illustrates a direct request to a Chainlink node via the m
 ![Chainlink Direct Request Diagram](./Chainlink_Direct_Request_Diagram.png "Chainlink Direct Request Diagram")<center>**Chainlink Direct Request Diagram**</center>
 
 
-Until recently, Direct Requests were the only viable solution for Web3 developers looking to securely write external data on-chain. Since its inception, Direct Requests have successfully been implemented by thousands of teams within the [Chainlink Ecosystem](https://www.chainlinkecosystem.com/ecosystem).
+Until recently, Direct Requests were the only viable solution for Web3 developers looking to securely write external data on-chain. Since its inception, Direct Requests have successfully been implemented by hundreds of teams within the [Chainlink Ecosystem](https://www.chainlinkecosystem.com/ecosystem).
 
 And yet - inherent shortcomings within the Direct Request model have precipitated the emergence of Chainlink Functions.
 
@@ -85,7 +85,7 @@ Despite the obvious benefits and allure of Chainlink Functions, certain [limitat
 
 While Chainlink Functions will almost certainly continue to evolve, the current state of the above limitations may give some users pause for production Web3 applications.
 
-In the mean time, if you are a Web3 developer or project with time-sensitive requirements for off-chain data and/or computation for your mainnet applications, but are concerned about the above limitations, you ultimately have three options: 1) Wait until Functions to evolve and mature more to support your use case, 2) Implement Functions as-is, or 3) Utilize the Direct Request model (ie, reach out to an existing node operator, such as [ourselves](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)).
+In the mean time, if you are a Web3 developer or project with time-sensitive requirements for off-chain data and/or computation for your mainnet applications, but are concerned about the above limitations, you ultimately have three options: 1) Wait for Functions to evolve and mature more to support your use case, 2) Implement Functions as-is, or 3) Utilize the Direct Request model (ie, reach out to an existing node operator, such as [ourselves](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)).
 
 **Pros of Chainlink Direct Requests:**
 
@@ -95,7 +95,7 @@ Given some of the above limitations of Functions, the advantages of Chainlink's 
 2. **Control and Customization:** While Functions provides streamlined and efficient execution, it may not accommodate the specific needs of certain applications which may exceed Function's service limitations (ie, gas costs, network support, execution time, etc.).
 3. **Mainnet Support:** Direct Requests are supported across all mainnet chains that [Chainlink supports](https://docs.chain.link/resources/link-token-contracts).
 4. **Pricing:** There is also typically a good deal of wiggle room in how much LINK is charged for each Direct Request job, whereas Functions uses a fixed calculation. Additionally, experienced Chainlink node operators can even help out with gas optimization within the client/consumer contracts request and fulfill functions, ultimately enabling them to reduce the amount of LINK charged per request.
-5. **Human Support:** While power users may not require it, establishing a a relationship with an existing node operator via the Direct Request model provides for an experienced human component, and a support team that's available when you need the help.
+5. **Human Support:** While power users may not require it, establishing a relationship with an existing node operator via the Direct Request model provides for an experienced human component, and a support team that's available when you need the help.
 
 **Conclusion**
 
