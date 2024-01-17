@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklinkwell_nodes_documentation=self.webpackChunklinkwell_nodes_documentation||[]).push([[4173],{4238:e=>{e.exports=JSON.parse('{"label":"custom data feeds","permalink":"/blog/tags/custom-data-feeds","allTagsPath":"/blog/tags","count":1}')}}]);
