@@ -2,7 +2,7 @@
 slug: welcome
 title: Welcome
 authors: [Ken, Derek]
-tags: [Chainlink, Splunk, AWS, oracles, blockchain, smart contracts, web3, solidity]
+tags: [Chainlink]
 ---
 
 Welcome to our blog!

@@ -2,7 +2,7 @@
 slug: introduction
 title: Introduction
 authors: [Ken, Derek]
-tags: [Chainlink, Splunk, AWS, oracles, blockchain, smart contracts, web3, solidity]
+tags: [Chainlink, Splunk, AWS, oracles, web3]
 ---
 
 # LinkWell Nodes
