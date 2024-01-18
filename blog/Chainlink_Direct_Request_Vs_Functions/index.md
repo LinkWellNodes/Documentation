@@ -1,9 +1,10 @@
 ---
 title: Chainlink Any API - Direct Request vs. Functions
-description: "Navigate Chainlink's Direct Requests vs. Functions - A guide for Web3 developers for off-chain data retrieval and computation."
-keywords: [chainlink, oracle, custom data feed, functions, any api, node operator]
+description: "Exploring the pros and cons of Chainlink's Direct Requests vs. Functions - A guide for Web3 developers for off-chain data retrieval and computation."
+date: "2024-01-17"
+keywords: [chainlink, oracle, data, functions, any api, web3, blockchain]
 authors: [Ken, Derek]
-tags: [chainlink, oracle, custom data feeds, functions, any api, direct requests]
+tags: [chainlink, oracle, data, functions, any api, web3, blockchain]
 ---
 
 ![Chainlink Any API - Direct Request vs. Functions](./Header.webp "Chainlink Any API - Direct Request vs. Functions")
@@ -79,7 +80,7 @@ It's worth mentioning that Chainlink Functions operates via a self-service reque
 
 From [Chainlink's blog](https://blog.chain.link/introducing-chainlink-functions/), major benefits of Functions include:
 
-* **Trust-minimizated security:** Build upon time-tested decentralized infrastructure that already helps secure billions of dollars for Web3 apps.
+* **Trust-minimized security:** Build upon time-tested decentralized infrastructure that already helps secure billions of dollars for Web3 apps.
 * **Self-service model:** Get started in minutes with Functions' serverless development solution, which features a CLI, starter kits, and a debugging environment.
 * **Serverless runtime environment:** Run JavaScript (JS) code in a serverless manner so that you can focus less on infrastructure (ie, writing an external adapter), and more on your core application.
 
