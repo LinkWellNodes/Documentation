@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklinkwell_nodes_documentation=self.webpackChunklinkwell_nodes_documentation||[]).push([[4974],{1145:a=>{a.exports=JSON.parse('{"label":"data","permalink":"/blog/tags/data","allTagsPath":"/blog/tags","count":1}')}}]);
