@@ -13,7 +13,7 @@ body {
 
 /* HEADERS */
 h1 {
-	margin: 40px 0 24px 0 !important;
+	margin: 40px 0 32px 0 !important;
 	font-family: 'Open Sans',sans-serif;
 	color: #333;
 	font-size:38px;
@@ -88,6 +88,31 @@ h4 {
 	opacity: 0.6;
 }
 
+/* BODY */
+p {
+	margin: 0 0 24px 0 !important;
+}
+blockquote {
+	margin: 42px 0 42px 0;
+}
+iframe {
+	margin: 0 0 24px 0;
+}
+hr {
+	margin: 42px 0 42px 0;
+}
+
+/* LISTS */
+/* (apply to lists having no class) */
+ol > li {
+	margin: 0 0 14px 0;
+	padding-left: 8px;
+}
+li::marker {
+	font-weight:600;
+}
+
+
 /* Links */
 a {
   color: var(--ifm-color-primary);
@@ -125,8 +150,11 @@ code {
 /* Alert info boxes */
 .alert--info {
 	margin: 40px 0 !important;
-    padding: 24px;
+    padding: 28px;
     --ifm-alert-border-color: #0B87DA;
+}
+.alert--info p {
+	margin: 0 !important;
 }
 .alert--info a {
 	text-decoration: none;
@@ -136,10 +164,13 @@ code {
 }
 .alert--warning {
 	margin: 40px 0 !important;
-	padding: 24px;
+	padding: 28px;
     background-color: #FBEFF3;
     color: #DA0B50;
     --ifm-alert-border-color: #DA0B50;
+}
+.alert--warning p {
+	margin: 0 !important;
 }
 .alert--warning a {
 	text-decoration: none;
@@ -149,7 +180,10 @@ code {
 }
 .alert--danger {
 	margin: 40px 0 !important;
-	padding: 24px;
+	padding: 28px;
+}
+.alert--danger p {
+	margin: 0 !important;
 }
 .alert--danger a {
 	text-decoration: none;

@@ -3,13 +3,13 @@ title: Chainlink Any API - Direct Request vs. Functions
 description: "Exploring the pros and cons of Chainlink's Direct Requests vs. Functions - A guide for Web3 developers for off-chain data retrieval and computation."
 date: "2024-01-17"
 keywords: [chainlink, oracle, data, functions, any api, web3, blockchain]
-authors: [Ken, Derek]
+authors: [Ken]
 tags: [chainlink, oracle, data, functions, any api, web3, blockchain]
 ---
 
 ![Chainlink Any API - Direct Request vs. Functions](./Header.webp "Chainlink Any API - Direct Request vs. Functions")
 
-**How to choose?**
+**Direct Requests vs. Functions: How to decide?**
 
 Navigating the ever-evolving landscape of Chainlink and its integrations within the Web3 ecosystem can at times be daunting.
 

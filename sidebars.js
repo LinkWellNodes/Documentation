@@ -166,13 +166,8 @@ module.exports = {
           ]
         },
         {
-            type: 'doc',
-            id: 'services/direct-request-jobs/Pricing',
-            label: 'Pricing',
-        },
-        {
             type: 'category',
-            label: 'Sample Requests',
+            label: 'Real-world examples',
             link: {type: 'doc', id: 'services/direct-request-jobs/Any-API-Guide'},
             items: [
                 {
@@ -207,17 +202,22 @@ module.exports = {
                 },
             ]
           },
-        {
-            type: 'doc',
-            id: 'services/direct-request-jobs/External-Adapters',
-            label: 'External Adapters',
-        },
-        {
-            type: 'doc',
-            id: 'services/direct-request-jobs/Service-Level-Agreement',
-            label: 'Service-Level Agreement',
-        },
-      ],     
+          {
+              type: 'doc',
+              id: 'services/direct-request-jobs/Pricing',
+              label: 'Pricing Info',
+          },
+          {
+              type: 'doc',
+              id: 'services/direct-request-jobs/Service-Level-Agreement',
+              label: 'Service-Level Agreement',
+          },
+      ],
+    },
+    {
+  	  type: 'doc',
+  	  id: 'services/Development-Services',
+  	  label: 'Development Services',
     },
     {
         type: 'html',

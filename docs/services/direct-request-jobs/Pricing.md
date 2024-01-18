@@ -8,7 +8,9 @@ import TOCInline from '@theme/TOCInline';
 
 Our goal is to provide **transparency** around the way our pricing works. 
 
-To view our per-request fees, please visit the [documentation page](/services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs) for the respective job, and look for the **Request Fee**.
+:::info 
+To view our specific fees, please visit the [documentation page](/services/direct-request-jobs/mainnets/Polygon-Mainnet-Jobs) for the respective job, and look for the **Request Fee**. 
+:::
 
 ---
 

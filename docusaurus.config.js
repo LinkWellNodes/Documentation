@@ -132,11 +132,11 @@ const config = {
             title: 'Home',
             items: [
               {
-                label: 'Website',
+                label: 'Home',
                 href: 'https://linkwellnodes.io',
               },
               {
-                label: 'Request a data feed',
+                label: 'Request a Data Feed',
                 href: 'https://linkwellnodes.io/Getting-Started.html',
               },
               {
@@ -149,8 +149,12 @@ const config = {
             title: 'Documentation',
             items: [
               {
-                label: 'Direct Request listings',
+                label: 'Our Data Feeds',
                 to: '/services/direct-request-jobs/Jobs-and-Pricing',
+              },
+              {
+                  label: 'Pricing Info',
+                  to: '/services/direct-request-jobs/Pricing',
               },
               {
                 label: 'User FAQ',
@@ -160,8 +164,21 @@ const config = {
                 label: 'Node Operator FAQ',
                 to: '/knowledgebase/faq/Chainlink-Operators',
               },
+              {
+            	  label: 'Service-Level Agreement (SLA)',
+            	  to: '/services/direct-request-jobs/Service-Level-Agreement',
+              },
             ],
           },
+          {
+              title: 'Blog',
+              items: [
+                {
+                  label: 'Blog',
+                  href: '/blog',
+                },
+              ],
+            },
           {
             title: 'Community',
             items: [
@@ -183,15 +200,6 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                href: '/blog',
-              },
-            ],
-          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} LinkWell Nodes`,
       },
@@ -208,6 +216,10 @@ const config = {
       {
     	// Redirect specific pages
         redirects: [
+          // {
+          //   from: '/old/page',
+          //   to: '/new/page',
+          // }
           {
             from: '/knowledgebase/Chainlink-Consumers-FAQ',
             to: '/knowledgebase/faq/Chainlink-Users',
@@ -223,11 +235,22 @@ const config = {
           {
         	from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
         	to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
-          }
+          },
+          {
+              from: '/services/direct-request-jobs/External-Adapters',
+              to: '/services/Development-Services',
+          },
         ],
         // Redirect entire paths
         createRedirects(existingPath) {
         	// NOTE: order matters, as the below block will return at the first match
+            // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
+            // if (existingPath.includes('/newPath')) {	 // correct path
+            //     // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            //     return [
+            //       existingPath.replace('/newPath', '/old/path'),	   // new (correct) path, old path
+            //     ];
+            // }
             if (existingPath.includes('/v1/mainnets')) {
                 return [
                   existingPath.replace('/v1/mainnets', '/mainnets-v1'),
@@ -243,13 +266,6 @@ const config = {
                 existingPath.replace('/services/direct-request-jobs', '/services/jobs'),
               ];
             }
-            // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
-            // if (existingPath.includes('/newPath')) {	 // correct path
-            //     // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-            //     return [
-            //       existingPath.replace('/newPath', '/old/path'),	   // new (correct) path, old path
-            //     ];
-            // }
             return undefined; // Return a falsey value: no redirect created
           },
       },
