@@ -5,7 +5,7 @@ slug: /
 
 # Welcome to LinkWell Nodes Documentation
 
-![dr-workflow](/img/banner-x.webp)
+![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x360_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
 ## Custom Chainlink Data Feeds
 

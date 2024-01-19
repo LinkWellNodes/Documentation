@@ -3,7 +3,10 @@ description: We are a U.S.-based Chainlink Oracle specializing in secure deliver
 ---
 
 # About Us
+
 **Led by truth over trust. Driven to innovate, build and create. Our mission is to support Chainlink in enabling developers, startups and enterprises to unlock the true value of Web3.**
+
+![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x360_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
 ## Who We Are
 LinkWell Nodes is a U.S.-based Chainlink oracle specializing in customized delivery of real-world data on-chain. With over 30 years of combined experience in the cybersecurity, enterprise software, financial services and Web3 industries, we are dedicated to building a secure, reliable Chainlink Oracle infrastructure, as well as supporting Chainlink's ultimate vision of building a world powered by cryptographic truth.
@@ -28,4 +31,4 @@ LinkWell Node's story began shortly after the 2022 Chainlink Oracle Olympics - a
 
 Derek and Ken immediately went back to the drawing board, designing and engineering a scalable, redundant, and re-usable Chainlink node deployment model from the ground up. After over a year of aggressive engineering efforts in the infrastructure, monitoring, and cypersecurity space, phase 1 of their infrastructure solution was fully-deployed and ready for production. Fully-aware that this was but the first of many future missions, LinkWell nodes charged head-first into the public sphere to help Chainlink fulfill its quest - as any true Link Marines would.
 
-After spinning up 5 mainnet chains, 6 testnet chains, over 130 direct request jobs, and robust documentation to boot, LinkWell Nodes' present mission is to deliver secure, reliable, on-chain data to the general public, all while continuing to innovate on the back-end and support the community on the front-end. LinkWell Nodes has its eyes set on eventually becoming an official node operator, but more importantly, being recognized as one of the most reliable, communicative, and passionate Node Operator teams present in the Chainlink (and broader Web3) space.
+After spinning up 14 mainnet chains, 13 testnet chains, over 130 direct request jobs, and robust documentation to boot, LinkWell Nodes' present mission is to deliver secure, reliable, on-chain data to the general public, all while continuing to innovate on the back-end and support the community on the front-end. LinkWell Nodes has its eyes set on eventually becoming an official node operator, but more importantly, being recognized as one of the most reliable, communicative, and passionate Node Operator teams present in the Chainlink (and broader Web3) space.

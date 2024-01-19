@@ -123,3 +123,5 @@ If you have any questions, please don't hesitate to reach out!
 > *LinkWell Nodes is a U.S.-based Chainlink community oracle.*
 >
 > *We provide self-service oracle solutions across 14 mainnet (and 13 testnet) blockchains, and offer free smart contract development and monitoring for all Any API (Direct) requests.*
+
+![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
