@@ -8,7 +8,7 @@
 body {
 	font-family: 'Open Sans',sans-serif;
 	color: #4D4D4D;
-	line-height:32px;
+	line-height:34px;
 }
 
 /* HEADERS */
@@ -18,6 +18,7 @@ h1 {
 	color: #333;
 	font-size:38px;
 	font-weight:600;
+	line-height:52px;
 }
 h2 {
 	margin: 48px 0 24px 0 !important;
@@ -25,6 +26,7 @@ h2 {
 	color: #333;
 	font-size:28px;
 	font-weight:400;
+	line-height:40px;
 }
 h2:after
 {
@@ -42,6 +44,7 @@ h3 {
 	color: #333;
 	font-size:20px;
 	font-weight:600;
+	line-height:32px;
 }
 h4 {
 	margin: 48px 0 20px 0 !important;
@@ -103,14 +106,24 @@ hr {
 }
 
 /* LISTS */
-/* (apply to lists having no class) */
-ol > li {
-	margin: 0 0 14px 0;
+/* (apply to lists within page content only) */
+.markdown ol > li {
+	margin-bottom: 14px;
+	padding-left: 8px;
+}
+/* (apply to lists within page content only, except for tabs) */
+.markdown ul:not(.tabs) > li {
+	margin-bottom: 14px;
 	padding-left: 8px;
 }
 li::marker {
 	font-weight:600;
 }
+ul.table-of-contents > li {
+	margin-bottom: 14px;
+	margin-left: 12px;
+}
+
 
 
 /* Links */
@@ -124,7 +137,7 @@ a:hover {
 /* Breadcrumbs */
 .breadcrumbs__link {
 	font-size:16px;
-	padding: 5px 10px;
+	padding: 5px 12px;
 	vertical-align:middle;
 }
 a[aria-label="Home page"] > svg {
@@ -151,6 +164,7 @@ code {
 .alert--info {
 	margin: 40px 0 !important;
     padding: 28px;
+    background-color: #EEF9FD;
     --ifm-alert-border-color: #0B87DA;
 }
 .alert--info p {
@@ -200,27 +214,43 @@ div[class^='codeBlockTitle'] {
 	background-color: #F7F7F7; /* code block background color */
 }
 
-/* Sidebar */
-.sidebarGroupTitle {
-	margin-top: 16px;
-	font-family: 'Open Sans',sans-serif;
-	color: #000;
-	font-size:12px;
-	font-weight:600;
-	text-transform: uppercase;
+/* SIDEBAR */
+/* Sidebar box */
+nav[aria-label="Docs sidebar"] {
+	padding: 8px 0 60px 8px;
+	background-color: #EEF9FD;
 }
 .sidebarGroupRuler {
 	background-color: var(--table-bg-color-dark);
 	margin-top: 14px;
 	margin-bottom: 0px;
 }
+/* Sidebar items default */
 .menu__link {
 	font-family: 'Open Sans',sans-serif;
 	color: #4D4D4D;
 	font-weight: 400;
+	font-size: 15px;
 }
-nav[aria-label="Docs sidebar"] {
-	padding: 8px 0 60px 8px;
+/* Sidebar category title */
+.sidebarGroupTitle {
+	margin-top: 16px;
+	font-family: 'Open Sans',sans-serif;
+	color: #000;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+/* Sidebar item parent nodes */
+.menu__list-item-collapsible--active > a {
+	color: var(--ifm-color-primary);
+}
+/* Sidebar items leaf nodes */
+.menu__list-item-collapsible--active > a {
+	color: var(--ifm-color-primary);
+}
+.menu__list-item > a.menu__link--active {
+	color: var(--ifm-color-primary);
 }
 
 /** TABS / TABLES */

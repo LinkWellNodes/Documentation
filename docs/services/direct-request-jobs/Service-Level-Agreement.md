@@ -2,7 +2,7 @@ import TOCInline from '@theme/TOCInline';
 
 # Service-Level Agreement (SLA)
 
-LinkWell Nodes strives to be transparent about the level and quality of service we aim to provide to our customers. Below you'll find information on the uptime, reliability, and security we practice within our **data feeds** infrastructure. 
+LinkWell Nodes strives to be transparent about the level and quality of service we aim to provide to our customers. Below you'll find information on the uptime, reliability, and security we practice within our [data feeds](/services/direct-request-jobs/Jobs-and-Pricing) product. 
 
 ---
 

@@ -26,7 +26,7 @@ Please feel free to reach out to us via our [onboarding form](https://linkwellno
 
 ### Miscellaneous development
 
-We offer custom smart contract development services for any request NOT related to our infrastructure, for a fee.
+We offer simple custom smart contract development services for any request NOT related to using our infrastructure, for a fee.
 
 Please feel free to [email us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") with the relevant details of your request.
 

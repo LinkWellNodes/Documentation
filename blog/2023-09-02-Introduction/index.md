@@ -6,7 +6,7 @@ tags: [Chainlink, Splunk, AWS, oracles, web3]
 ---
 
 # LinkWell Nodes
-A community based Chainlink node operations team. Led by truth over trust. Driven to innovate, build and create. Our mission is to enable developers, startups and enterprises to unlock the true value of Web3.
+A Chainlink community node operations team. Led by truth over trust. Driven to innovate, build and create. Our mission is to enable developers, startups and enterprises to unlock the true value of Web3.
 
 ![LWN Logo](./LWN-Banner.jpg)
 
@@ -18,7 +18,7 @@ From the start, Chainlink has kept their nose to the grindstone, caring little f
 
 And after enabling $7 trillion in transaction value, integrating with over 1,700 Web3 projects and the development of CCIP (which is launching soon), it's safe to say that their plan for total world domination (just kidding, kind of) has slowly but surely been coming to fruition.
 
-At LinkWell Nodes, a community based Chainlink node operations team, we liken ourselves to Chainlink in a sense. While perhaps not on such a large or epic scale, we too have been keeping our nose to the grindstone, researching, developing and building. And after over a year of hard work and dedication building out our Chainlink node infrastructure, we decided it was time to step out of the shadows and formally announce what we've been working on, and what we have in store.
+At LinkWell Nodes, we liken ourselves to Chainlink in a sense. While perhaps not on such a large or epic scale, we too have been keeping our nose to the grindstone, researching, developing and building. And after over a year of hard work and dedication building out our Chainlink node infrastructure, we decided it was time to step out of the shadows and formally announce what we've been working on, and what we have in store.
 
 But before we do, you may be wondering, where did these LinkWell Nodes guys come from? What are they all about, and who are they? Well, hold on to your tendies, as it's time for a short bedtime story.
 
@@ -36,7 +36,7 @@ Furthermore, we designed our Chainlink infrastructure stack to be easily deploya
 ## Our Mission
 Led by truth over trust. Driven to innovate, build and create. Our mission is to support Chainlink in enabling developers, startups and enterprises unlock the true value of Web3.
 
-Ultimately, we want to help Chainlink fulfill its mission by doing whatever we can to support the Chainlink community. As community based Chainlink node operators, we are limited to what services we can provide, but that isn't stopping us from going above and beyond the call of duty.
+Ultimately, we want to help Chainlink fulfill its mission by doing whatever we can to support the Chainlink community. As community-based Chainlink node operators, we are limited to what services we can provide, but that isn't stopping us from going above and beyond the call of duty.
 
 After spinning up 5 mainnet chains, 6 testnet chains, over 130 direct request jobs and robust documentation to boot, LinkWell Nodes' present objective is to deliver secure, reliable, on-chain data to the general public, all while continuing to innovate on the back-end and supporting the community on the front-end.
 

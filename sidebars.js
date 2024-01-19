@@ -227,11 +227,11 @@ module.exports = {
     {
       type: 'doc',
       id: 'knowledgebase/Direct-Request-Guide',
-      label: 'Direct Request Model',
+      label: 'Direct Requests Explained',
     },
     {
       type: 'category',
-      label: 'FAQ',
+      label: 'Chainlink FAQ',
       link: {type: 'doc', id: 'knowledgebase/FAQ'},
       items: [
 	    {

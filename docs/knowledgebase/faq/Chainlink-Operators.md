@@ -4,9 +4,9 @@ description: A list of frequently-asked questions by Chainlink node (oracle) ope
 
 import TOCInline from '@theme/TOCInline';
 
-# Chainlink Oracle Operator FAQ
+# Chainlink Oracle (Node) Operator FAQ
 
-The target audience for this FAQ is **Chainlink oracle operators** - in other words, those running their own Chainlink nodes.
+The target audience for this FAQ is **Chainlink oracle operators** (also known as **node operators**) - in other words, those running their own Chainlink nodes.
 
 The following is a list of frequently-asked questions and answers collected from our experience supporting the `#nodes`, `#operator-requests`, and `#external-adapters` channels within the [Chainlink Official Discord server](https://discord.com/invite/chainlink).
 
@@ -41,6 +41,12 @@ The answer depends on your specific use case:
 * **If you require mainnet data**: Generally NO, mainnet data consumers should not be running their own Chainlink node - not only from a decentralization standpoint (controlling all parts of the data pipeline is typically frowned upon in the trustless Web3 space), but from a cost perspective as well. See [here](#how-much-does-it-cost-to-run-a-chainlink-node) for information related to the costs of running a reliable mainnet Chainlink node infrastructure.
 
 * **If you want to make money running a Chainlink node**: Please see our write-up on this topic [here](#is-running-a-chainlink-node-profitable).
+
+### Is a Chainlink oracle the same thing as a Chainlink node?
+
+Yes! For the most part 'Chainlink node' and 'Chainlink oracle' can be used interchangeably. 
+
+More specifically however, a 'node' is the piece of software upon which a Chainlink oracle business runs, whereas an 'oracle' refers more to the overall service and functionality that a node (or set of nodes) - along with its resulting smart contracts and team - delivers to the end-user.  
 
 ## Official Node Operators
 

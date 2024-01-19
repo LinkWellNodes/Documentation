@@ -153,21 +153,13 @@ const config = {
                 to: '/services/direct-request-jobs/Jobs-and-Pricing',
               },
               {
-                  label: 'Pricing Info',
-                  to: '/services/direct-request-jobs/Pricing',
+                  label: 'Development Services',
+                  to: '/services/Development-Services',
               },
               {
-                label: 'User FAQ',
-                to: '/knowledgebase/faq/Chainlink-Users',
-              },              
-              {
-                label: 'Node Operator FAQ',
-                to: '/knowledgebase/faq/Chainlink-Operators',
-              },
-              {
-            	  label: 'Service-Level Agreement (SLA)',
-            	  to: '/services/direct-request-jobs/Service-Level-Agreement',
-              },
+                label: 'Chainlink FAQ',
+                to: '/knowledgebase/FAQ',
+              }              
             ],
           },
           {
