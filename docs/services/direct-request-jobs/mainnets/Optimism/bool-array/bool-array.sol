@@ -32,7 +32,7 @@ contract LinkWellBoolArrConsumerContractExample is ChainlinkClient, ConfirmedOwn
         req.add('url', 'https://httpbin.org/post');
         req.add('headers', '["accept", "application/json"]');
         req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
-        req.add('contact', 'ENTER_YOUR_CONTACT_INFO_HERE');     // example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
+        req.add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');

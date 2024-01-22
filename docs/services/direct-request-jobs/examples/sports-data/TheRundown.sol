@@ -41,7 +41,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
         req.add('url', 'https://therundown-therundown-v1.p.rapidapi.com/events/9a35b8986a76eaaea364be331cb453ec');
         req.add('headers', '["X-RapidAPI-Host", "therundown-therundown-v1.p.rapidapi.com", "X-RapidAPI-Key", "{your_api_key}"]');
         req.add('body', '');
-        req.add('contact', 'ENTER_YOUR_CONTACT_INFO_HERE');     // example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
+        req.add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl -k -X GET -H "X-RapidAPI-Host: therundown-therundown-v1.p.rapidapi.com" -H "X-RapidAPI-Key: {your_api_key}" "https://therundown-therundown-v1.p.rapidapi.com/events/9a35b8986a76eaaea364be331cb453ec"
