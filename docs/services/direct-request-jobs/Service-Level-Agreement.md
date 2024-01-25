@@ -22,7 +22,7 @@ LinkWell Nodes strives to be transparent about the level and quality of service 
 
 ## Testnet uptime
 
-* To reduce costs for our customers, our testnet data feeds may experience occassional interruptions as we roll out periodic updates and continuously improve our services. These updates should last fewer than **5 minutes**, and occur no more than once per day. If you are experiencing an unexpected issue in our testnet data feeds that exceeds this timeframe, please reach out to us via our [Discord server](https://discord.gg/AJ66pRz4).
+* To reduce costs for our customers, our testnet data feeds may experience occassional interruptions as we roll out periodic updates and continuously improve our services. These updates should last fewer than **5 minutes**, and occur no more than once per day. If you are experiencing an unexpected issue in our testnet data feeds that exceeds this timeframe, please reach out to us via our [Discord server](https://discord.gg/Xs6SjqVPUA).
 
 ## Data security
 

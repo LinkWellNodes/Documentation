@@ -53,5 +53,5 @@ To learn more about how Chainlink's direct request model works, visit the [Direc
 Having technical difficulties with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
 
 ## Need more help?
-* Join our [Discord server](https://discord.gg/AJ66pRz4) for the fastest assistance with your request. We are happy to support custom data requests!
+* Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance with your request. We are happy to support custom data requests!
 * Check out our [User FAQ](/knowledgebase/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked by our customers.

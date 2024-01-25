@@ -119,4 +119,4 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ## Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.

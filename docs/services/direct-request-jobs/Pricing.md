@@ -24,9 +24,15 @@ To view our specific fees, please visit the [documentation page](/services/direc
 
 ---
 
+## Fee currency
+
+Oracle request fees are typically denominated in `LINK` token, which are sent along with each request as payment. 
+
+If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.
+
 ## Fee lifecycle
 
-When you make a request to a Chainlink oracle, you'll send a fee (denominated in `LINK` token) along with your request. This fee varies by the specific **network** and **data type**, and is set by the node operator. 
+When you make a request to a Chainlink oracle, you'll send a fee (typically denominated in `LINK` token) along with your request. This fee varies by the specific **network** and **data type**, and is set by the node operator. 
 
 After retrieving your requested data, the node operator pays for the required `gas` to write the result onto the blockchain, in the currency of the respective chain's native gas token (ie, `ETH`).
 

@@ -6,7 +6,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 zkSync Era Goerli is the testnet for zkSync Era. Testnet ETH is used to pay for transactions on zkSync Era Goerli testnet. Use the recommended [zkSync Bridges](https://zksync.io/explore#bridges) to transfer testnet ETH from Ethereum Goerli to the zkSync Goerli Testnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/).
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the zkSync-Goerli network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/AJ66pRz4), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+Please see below for our Chainlink data feed offerings ('**jobs**') on the zkSync-Goerli network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
 
 ### Select the type of data that you need:
 
@@ -88,7 +88,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
 ### Simulating the above request
 
@@ -216,7 +216,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
 ### Simulating the above request
 
@@ -356,7 +356,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
 ### Simulating the above request
 
@@ -497,7 +497,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
 ### Simulating the above request
 
@@ -636,7 +636,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
 ### Simulating the above request
 
@@ -764,7 +764,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
 ### Simulating the above request
 
@@ -895,7 +895,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
 ### Simulating the above request
 
@@ -1031,7 +1031,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 ### Still need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance with this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
 ### Simulating the above request
 
@@ -1101,7 +1101,7 @@ Note that the double-quotes will not be present when retrieving any of the above
 1. We'll assess your request and provide you with a custom job ID that works for you.
 
 :::info  
-Join our [Discord](https://discord.gg/AJ66pRz4) to get the fastest service for your request!
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
 :::
 
 </TabItem>

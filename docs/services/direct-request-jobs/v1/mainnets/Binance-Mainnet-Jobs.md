@@ -61,7 +61,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -118,7 +118,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -176,7 +176,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -233,7 +233,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -290,7 +290,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -347,7 +347,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -409,7 +409,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -472,7 +472,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -529,7 +529,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -585,7 +585,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -641,7 +641,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 
@@ -698,7 +698,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 
 ### Need more help?
 
-Please reach out to us in [Discord](https://discord.gg/AJ66pRz4) if you require additional assistance creating this request.
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance creating this request.
 
 </TabItem>
 </Tabs>

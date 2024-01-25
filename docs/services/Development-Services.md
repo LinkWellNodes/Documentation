@@ -72,5 +72,5 @@ Our specialities include:
 Feel free to [contact us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") with the relevant details of your request! 
 
 :::info  
-Join our [Discord](https://discord.gg/AJ66pRz4) to get the fastest service for your request!
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
 :::
