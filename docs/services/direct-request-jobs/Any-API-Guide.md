@@ -3,7 +3,7 @@ description: Code examples of Chainlink oracle data requests using the direct re
 ---
 
 # Oracle Request Examples 
-Chainlink's [Any API](https://docs.chain.link/any-api/introduction) request model is a versatile feature that allows smart contracts to request data from off-chain sources. At LinkWell Nodes, we strive to make it as easy as possible for Web3 developers to leverage and utilize Chainlink to make such requests. 
+Chainlink's [Any API](https://docs.chain.link/any-api/introduction) (Direct Request) model is a versatile feature that allows smart contracts to request data from off-chain sources. At LinkWell Nodes, we strive to make it as easy as possible for Web3 and dApp developers to leverage and utilize Chainlink to make such requests. 
 
 The below examples will walk you through the process of using our Chainlink oracles to request data from various example API providers.
 
@@ -11,7 +11,7 @@ The below examples will walk you through the process of using our Chainlink orac
 :::info 
 **Don't see your API listed below?** 
 
-Our oracles can still support your request. Fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to receive a free custom smart contract that works for your use case, or refer to our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) for how-to instructions on requesting your data! 
+Our oracles can still support your request. Fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to receive a free custom smart contract that works for your use case, or refer to our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) for how-to instructions on programming your request! 
 :::
 
 ---

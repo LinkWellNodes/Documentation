@@ -31,7 +31,7 @@ This job writes a single **uint256** object to your contract, which can store an
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.*
+**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
 ### Request parameters
 
@@ -161,7 +161,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.*
+**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
 ### Request parameters
 
@@ -303,7 +303,7 @@ This job writes a single **int256** object to your contract, which can store any
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.*
+**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
 ### Request parameters
 
@@ -446,7 +446,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.*
+**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
 ### Request parameters
 
@@ -588,7 +588,7 @@ This job writes a single **bool** object to your contract, which can store a `tr
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.*
+**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
 ### Request parameters
 
@@ -718,7 +718,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.*
+**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
 ### Request parameters
 
@@ -851,7 +851,7 @@ This job writes a single **bytes** object to your contract, which can readily be
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.*
+**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
 ### Request parameters
 
@@ -989,7 +989,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 |-------------------|----------|
 | Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment in return for a set number of oracle requests.*
+**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
 ### Request parameters
 

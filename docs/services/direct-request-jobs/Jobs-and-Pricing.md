@@ -16,7 +16,7 @@ Please use the links below to view our documentation on how to initiate a reques
 ## Related topics:
 
 - [Pricing Info](/services/direct-request-jobs/Pricing)
-- [Sample Requests](/services/direct-request-jobs/Any-API-Guide)
+- [Real-World Examples](/services/direct-request-jobs/Any-API-Guide)
 - [Development Services](/services/Development-Services)
 - [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement)
 

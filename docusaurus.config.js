@@ -93,8 +93,8 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/about', label: 'About Us', position: 'left'},  
           {to: '/blog', label: 'Blog', position: 'left'},                  
+          {to: '/about', label: 'About Us', position: 'left'},  
           // {
         	//   href: 'https://discord.gg/Xs6SjqVPUA',
         	//   label: 'Discord',

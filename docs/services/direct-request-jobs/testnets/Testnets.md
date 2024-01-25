@@ -1,29 +1,37 @@
+---
+title: Chainlink Testnet Custom Data Feeds (Ethereum, Polygon, Arbitrum, Binance, Avalanche, Base, Optimism, Fantom, Gnosis, Celo, Scroll, Linea, zkSync)
+---
+
 # Testnet Data Feeds
 
-The following documentation allows you to retrieve any custom, real-world data from any internet-based API ('any API'), and write it to your blockchain smart contract. Using the Chainlink **direct request** model, our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
+The following documentation allows you to retrieve any custom, real-world data from any internet-based API ('any API'), and write it to your testnet blockchain smart contract. 
+
+Using the Chainlink [direct request](/knowledgebase/Direct-Request-Guide) model, our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
 
 Please use the links below to view our documentation on how to initiate a request from your smart contract. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
 
-### Select your network:
+:::info
+The fee for all of our testnet data feeds is set to **0 LINK** (free).
+:::
 
-* [Arbitrum Sepolia Testnet](/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs)
-* [Avalanche Fuji Testnet](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs)
-* [Base Goerli Testnet](/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs)
-* [Binance Testnet](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs)
-* [Celo Alfajores Testnet](/services/direct-request-jobs/testnets/Celo-Alfajores-Testnet-Jobs)
-* [Ethereum Goerli Testnet](/services/direct-request-jobs/testnets/Ethereum-Goerli-Testnet-Jobs)
-* [Ethereum Sepolia Testnet](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs)
-* [Fantom Testnet](/services/direct-request-jobs/testnets/Fantom-Testnet-Jobs)
-* [Optimism Goerli Testnet](/services/direct-request-jobs/testnets/Optimism-Goerli-Testnet-Jobs)
-* [Polygon Mumbai Testnet](/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs)
-* [Scroll Sepolia Testnet](/services/direct-request-jobs/testnets/Scroll-Sepolia-Testnet-Jobs)
-* [zkSync Goerli Testnet](/services/direct-request-jobs/testnets/zkSync-Goerli-Testnet-Jobs)
-* [Polygon zkEVM Testnet](/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet-Jobs)
+* ## [Arbitrum Sepolia Testnet](/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs)
+* ## [Avalanche Fuji Testnet](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs)
+* ## [Base Goerli Testnet](/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs)
+* ## [Binance Testnet](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs)
+* ## [Celo Alfajores Testnet](/services/direct-request-jobs/testnets/Celo-Alfajores-Testnet-Jobs)
+* ## [Ethereum Goerli Testnet](/services/direct-request-jobs/testnets/Ethereum-Goerli-Testnet-Jobs)
+* ## [Ethereum Sepolia Testnet](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs)
+* ## [Fantom Testnet](/services/direct-request-jobs/testnets/Fantom-Testnet-Jobs)
+* ## [Optimism Goerli Testnet](/services/direct-request-jobs/testnets/Optimism-Goerli-Testnet-Jobs)
+* ## [Polygon Mumbai Testnet](/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs)
+* ## [Scroll Sepolia Testnet](/services/direct-request-jobs/testnets/Scroll-Sepolia-Testnet-Jobs)
+* ## [zkSync Goerli Testnet](/services/direct-request-jobs/testnets/zkSync-Goerli-Testnet-Jobs)
+* ## [Polygon zkEVM Testnet](/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet-Jobs)
 
-## Troubleshooting
+### Troubleshooting
 
 Having technical difficulties with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
 
-## Need more help?
+### Need more help?
 * Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance with your request. We are happy to support custom data requests!
 * Check out our [User FAQ](/knowledgebase/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked by our customers.

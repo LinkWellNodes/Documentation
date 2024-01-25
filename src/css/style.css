@@ -26,7 +26,7 @@ h2 {
 	color: #333;
 	font-size:28px;
 	font-weight:400;
-	line-height:40px;
+	line-height:52px;
 }
 h2:after
 {
@@ -123,7 +123,15 @@ ul.table-of-contents > li {
 	margin-bottom: 14px;
 	margin-left: 12px;
 }
-
+li > h2 {
+	margin: 0 !important;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	line-height: 34px !important;
+}
+li > h2:after {
+	display:none !important;
+}
 
 
 /* Links */
