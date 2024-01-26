@@ -2,9 +2,9 @@
 
 ## Introduction
 
-AccuWeather provides and supports many different weather APIs that provide up-to-date and highly accurate forecasts around the globe. With AccuWeather's utility APIs, users can retrieve unique identifiers and geographical coordinates for various locations. 
+AccuWeather provides and supports many different weather APIs that provide up-to-date and highly accurate temperature, precipitation, and other forecasts for locations around the globe. With AccuWeather's utility APIs, users can retrieve unique geographical identifiers for various locations that may then be used in requesting their corresponding weather information. 
 
-AccuWeather offers several different APIs within their [documentation](https://developer.accuweather.com/apis)::
+AccuWeather offers several different APIs within their [documentation](https://developer.accuweather.com/apis). Among others, these include:
 
 - [Locations API](https://developer.accuweather.com/accuweather-locations-api/apis) - allows you to retrieve a location key that can be used to retrieve current or forecasted data for a specific latitude and longitude (using the Forecast or Current Conditions API). 
 
