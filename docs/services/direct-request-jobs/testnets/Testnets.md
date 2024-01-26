@@ -8,7 +8,7 @@ The following documentation allows you to retrieve any custom, real-world data f
 
 Using the Chainlink [direct request](/knowledgebase/Direct-Request-Guide) model, our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
 
-Please use the links below to view our documentation on how to initiate a request from your smart contract. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
+Please use the links below to view our documentation on how to initiate an oracle request from your smart contract. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
 
 :::info
 The fee for all of our testnet data feeds is set to **0 LINK** (free).

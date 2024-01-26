@@ -2,30 +2,81 @@
 
 ## Introduction
 
-AccuWeather provides and supports many different weather APIs that provide up-to-date and highly accurate forecasts around the globe. With AccuWeather's utility APIs, users can retrieve unique identifiers and geographical coordinates for various locations.  AccuWeather offers two different types of APIs - the Core weather API and MinuteCast API. The Core weather API provides endpoints to get daily and hourly weather forecasts, current conditions, and daily index data. It also provides endpoints to search for locations all around the world, including cities and countries. Using the MinuteCast API, you can specify a specific location for a 120-minute precipitation forecasts.
+AccuWeather provides and supports many different weather APIs that provide up-to-date and highly accurate forecasts around the globe. With AccuWeather's utility APIs, users can retrieve unique identifiers and geographical coordinates for various locations. 
 
-The following guide illustrates an easy example of how to retrieve a `uint256` value from the AccuWeather API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
+AccuWeather offers several different APIs within their [documentation](https://developer.accuweather.com/apis)::
 
-## Real-world example
+- [Locations API](https://developer.accuweather.com/accuweather-locations-api/apis) - allows you to retrieve a location key that can be used to retrieve current or forecasted data for a specific latitude and longitude (using the Forecast or Current Conditions API). 
+
+- [Forecast API](https://developer.accuweather.com/accuweather-forecast-api/apis) - allows you to retrieve the weather forecast for a specific location.
+
+- [Current Conditions API](https://developer.accuweather.com/accuweather-current-conditions-api/apis) - allows you to retrieve the current weather conditions for a specific location.
+
+- [MinuteCast API](https://developer.accuweather.com/minutecast-api/apis) - allows you to retrieve a 120-minute precipitation forecast given a latitude and longitude coordinate.
+
+The following guide illustrates an easy example of how to retrieve a `uint256` value from AccuWeather's **Current Conditions API**, and write it to your blockchain smart contract or Web3 application using our highly-resilient Chainlink oracle infrastructure.
+
+## Real-world example (Retrieve Current Temperature from AccuWeather given a )
 
 Accessing AccuWeather data from within your blockchain contract or Web3 application is as simple as:
 
 1. Creating an AccuWeather API key through the AccuWeather website.
-2. Deploying the following Chainlink consumer contract onto the ERC-20 blockchain network of your choice. 
+1. Determining the **location key** for your target latitude / longitude.
+1. Deploying the following Chainlink consumer contract onto the ERC-20 blockchain network of your choice. 
 
-Below we'll walk you through the steps necessary to implement such a solution.
+Below we'll walk you through the steps necessary to implement this solution.
 
 ### 1. Create an AccuWeather API key
 
 In order to retrieve data from the AccuWeather API, you'll need an API key. 
 
-You may request a free API key from AccuWeather here: [AccuWeather Developer Portal](https://developer.accuweather.com/)
+You may request a free API key from AccuWeather here: [AccuWeather Developer Portal](https://developer.accuweather.com/). Once you're signed up, you'll need to navigate to your 'My Apps' dashboard, and create a new app. After creating it, you'll be able to view your API key from within your 'My Apps' dashboard.
 
-### 2. Design your consumer contract
+### 2. Determine the location key
+
+Before making a request to the **Current Conditions API** or **Forecast API**, you'll need to determine the `locationKey` that corresponds to your target latitude / longitude.
+
+To do so, you'll need to make a request to the [Geoposition endpoint](https://developer.accuweather.com/accuweather-locations-api/apis/get/locations/v1/cities/geoposition/search) within AccuWeather's Locations API.
+
+#### 2a: Request the location key:
+
+The following curl command simulates an HTTP request against the Geoposition endpoint (for the purposes of this example, we'll be using a latitude of `38.569723`, and a longitude of `-103.229807`:
+```
+curl -k 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey={your key}&q=38.569723,-103.229807' \
+ --request 'GET'
+```
+
+#### 2b: Find the location key within the result:
+
+The following JSON (abbreviated for clarity) represents an excerpt from the response. The location key is the value of the "key" attribute:
+
+```
+{
+   "Version":1,
+   "Key":"332243",
+   "Type":"City",
+   "Rank":85,
+   "LocalizedName":"Haswell",
+   "EnglishName":"Haswell",
+   "PrimaryPostalCode":"81045",
+   ...
+}
+```
+
+Save this location key. You'll be using this in the next step when making your AccuWeather conditions request from within your smart contract.
+
+:::info
+If the `locationKey` is not known at the time of your oracle request, you have two options:
+1. Make two separate oracle requests from within your smart contract: the first one to the Location API for the `locationKey`, and a second one to the weather API of your choice, once the `locationKey` has been obtained.
+1. Ask the Chainlink oracle team of your choice to implement both requests on their end, so that you may bundle your logic into a single oracle request. This will save on gas costs, but typically require the node operator team to design an external adapter (at LinkWell Nodes, we are willing to do this!). 
+:::
+
+
+### 3. Design your consumer contract
 
 Add the following sample code to your **consumer contract**.
 
-#### 2a. Add the constructor:
+#### 3a. Add the constructor:
 
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
@@ -37,14 +88,18 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 You'll need to replace `ADD_CHAINLINK_TOKEN_ADDRESS_HERE`, `ADD_ORACLE_ADDRESS_HERE`, and `ADD_JOB_ID_HERE` with the values appropriate to the specific blockchain network and job that you'll be using. You can find these values within our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing). Chainlink token addresses can be found [here](https://docs.chain.link/resources/link-token-contracts).
 :::
 
-#### 2b. Add your request function (example):
+#### 3b. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+:::info
+In the following request, we will enter the `locationKey` determined in the above steps into the AccuWeather request URL.
+:::
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/weather-data/AccuWeather.sol#L34-L55
 ```
 
-#### 2c. Retrieve the response (example):
+#### 3c. Retrieve the response (example):
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/weather-data/AccuWeather.sol#L57-L65
@@ -67,9 +122,8 @@ Let's walk through each step of the above **sample request**, to better understa
 The following `curl` command simulates the same HTTP request that our Chainlink node makes shortly after you trigger the `request()` function within your consumer contract:
 
 ```
-curl -k 'https://api.accuweather.com/currentconditions/v1/335315.json?apikey={your key}' \
+curl -k 'http://dataservice.accuweather.com/currentconditions/v1/{location_key}?apikey={your key}' \
  --request 'GET' \
- --header 'content-type: application/json'
 ```
 
 #### 2. **Analyze the response**:
@@ -78,29 +132,29 @@ The following is a sample response body returned to our Chainlink node by the ab
 
 ```
 [
-  {
-    "LocalObservationDateTime": "2023-08-24T07:08:00-04:00",
-    "EpochTime": 1692875280,
-    "WeatherText": "Cloudy",
-    "WeatherIcon": 7,
-    "HasPrecipitation": false,
-    "PrecipitationType": null,
-    "IsDayTime": true,
-    "Temperature": {
-      "Metric": {
-        "Value": 19.6,
-        "Unit": "C",
-        "UnitType": 17
+   {
+      "LocalObservationDateTime":"2024-01-25T20:28:00-07:00",
+      "EpochTime":1706239680,
+      "WeatherText":"Cloudy",
+      "WeatherIcon":7,
+      "HasPrecipitation":false,
+      "PrecipitationType":null,
+      "IsDayTime":false,
+      "Temperature":{
+         "Metric":{
+            "Value":1.5,
+            "Unit":"C",
+            "UnitType":17
+         },
+         "Imperial":{
+            "Value":35.0,
+            "Unit":"F",
+            "UnitType":18
+         }
       },
-      "Imperial": {
-        "Value": 67,
-        "Unit": "F",
-        "UnitType": 18
-      }
-    },
-    "MobileLink": "http://www.accuweather.com/en/us/fort-george-g-meade-md/20755/current-weather/8641_pc?lang=en-us",
-    "Link": "http://www.accuweather.com/en/us/fort-george-g-meade-md/20755/current-weather/8641_pc?lang=en-us"
-  }
+      "MobileLink":"http://www.accuweather.com/en/us/haswell-co/81045/current-weather/332243?lang=en-us",
+      "Link":"http://www.accuweather.com/en/us/haswell-co/81045/current-weather/332243?lang=en-us"
+   }
 ]
 ```
 
@@ -109,7 +163,7 @@ The following is a sample response body returned to our Chainlink node by the ab
 After receiving the above sample response, our Chainlink node will attempt to filter the result by the provided `path` parameter value (`0,Temperature,Imperial,Value`). After applying the provided path, we get the following result:
 
 ```
-57
+35.0
 ```
 
 #### 4. **Apply the multiplier**:
@@ -117,7 +171,7 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 After filtering the sample response by the provided JSON path, our Chainlink node will multiply the result by the provided `multiplier` parameter value (`10 ** 18`). After applying this multiplier, we get the following value, which is ultimately written to your smart contract as a `uint256` object by our Chainlink oracle:
 
 ```
-57000000000000000000
+35000000000000000000
 ```
 
 ## Troubleshooting

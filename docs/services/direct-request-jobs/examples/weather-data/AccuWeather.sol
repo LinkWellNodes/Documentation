@@ -38,7 +38,9 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         
         // DEFINE THE REQUEST PARAMETERS (example)
         req.add('method', 'GET');
-        req.add('url', 'http://dataservice.accuweather.com/currentconditions/v1/8641_PC?apikey={your_key}');
+        # Location key may be determined via the AccuWeather Location API here: https://developer.accuweather.com/accuweather-locations-api/apis
+        # Example locationKey for latitude 38.569723 and longitude -103.229807 is 332243
+        req.add('url', 'http://dataservice.accuweather.com/currentconditions/v1/{location_key}?apikey={your_key}');
         req.add('headers', '');
         req.add('body', '');
         req.add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
