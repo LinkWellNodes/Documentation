@@ -16,7 +16,7 @@ AccuWeather offers several different APIs within their [documentation](https://d
 
 The following guide illustrates an easy example of how to retrieve a `uint256` value from AccuWeather's **Current Conditions API**, and write it to your blockchain smart contract or Web3 application using our highly-resilient Chainlink oracle infrastructure.
 
-## Real-world example (Retrieve Current Temperature from AccuWeather given a )
+## Real-world example (retrieve current temperature from AccuWeather API to your smart contract application)
 
 Accessing AccuWeather data from within your blockchain contract or Web3 application is as simple as:
 
@@ -32,15 +32,17 @@ In order to retrieve data from the AccuWeather API, you'll need an API key.
 
 You may request a free API key from AccuWeather here: [AccuWeather Developer Portal](https://developer.accuweather.com/). Once you're signed up, you'll need to navigate to your 'My Apps' dashboard, and create a new app. After creating it, you'll be able to view your API key from within your 'My Apps' dashboard.
 
-### 2. Determine the location key
+### 2. Determine the location key for your target coordinate
 
-Before making a request to the **Current Conditions API** or **Forecast API**, you'll need to determine the `locationKey` that corresponds to your target latitude / longitude.
+Before making a request to the **Current Conditions API** or **Forecast API**, you'll need to determine the corresponding `locationKey` for your target location.
 
-To do so, you'll need to make a request to the [Geoposition endpoint](https://developer.accuweather.com/accuweather-locations-api/apis/get/locations/v1/cities/geoposition/search) within AccuWeather's Locations API.
+To do so, you'll need to make a request to the [geoposition endpoint](https://developer.accuweather.com/accuweather-locations-api/apis/get/locations/v1/cities/geoposition/search) within AccuWeather's Locations API.
 
-#### 2a: Request the location key:
+Follow the steps below for instructions on how to request your `locationKey`:
 
-The following curl command simulates an HTTP request against the Geoposition endpoint (for the purposes of this example, we'll be using a latitude of `38.569723`, and a longitude of `-103.229807`:
+#### 2a: Request the location key from AccuWeather's geoposition endpoint:
+
+The following curl command simulates an HTTP request against the [geoposition endpoint](https://developer.accuweather.com/accuweather-locations-api/apis/get/locations/v1/cities/geoposition/search) (for the purposes of this example, we'll be using a latitude of `38.569723`, and a longitude of `-103.229807`:
 ```
 curl -k 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey={your key}&q=38.569723,-103.229807' \
  --request 'GET'
@@ -48,7 +50,7 @@ curl -k 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/sear
 
 #### 2b: Find the location key within the result:
 
-The following JSON (abbreviated for clarity) represents an excerpt from the response. The location key is the value of the "key" attribute:
+The following JSON (abbreviated for clarity) represents an excerpt from the response. The location key is the value of the "key" attribute below:
 
 ```
 {
