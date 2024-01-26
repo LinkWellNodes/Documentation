@@ -18,42 +18,42 @@ Our oracles can still support your request. Fill out our [request survey](https:
 
 **On this page**:
 
-* ## [Coin Price Data](#coin-price-data)
-* ## [IPFS Data](#ipfs-data)
-* ## [Sports Data](#sports-data)
-* ## [Stock Price Data](#stock-price-data)
-* ## [Weather Data](#weather-data)
+* ## [Coin Price Data](#coin-price-data-examples)
+* ## [IPFS Data](#ipfs-data-examples)
+* ## [Sports Data](#sports-data-examples)
+* ## [Stock Price Data](#stock-price-data-examples)
+* ## [Weather Data](#weather-data-examples)
 
 ---
 
 ## View our examples:
 
-### Coin Price Data
+### Coin Price Data Examples
 
 Write live coin prices from internet-based crypto price aggregators to your blockchain smart contract:
 
 * [CryptoCompare](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare)
 
-### IPFS Data
+### IPFS Data Examples
 
 Send/receive data to and from the [Interplanetary File System](https://ipfs.tech/) using your smart contract application:
 
 * [IPFS (InterPlanetary File System)](/services/direct-request-jobs/examples/ipfs-data/IPFS)
 
-### Sports Data
+### Sports Data Examples
 
 Retrieve live sports updates, scores, and betting odds for your decentralized sports betting application:
 
 * [TheRundown](/services/direct-request-jobs/examples/sports-data/TheRundown)
 * [SportsDataIO](/services/direct-request-jobs/examples/sports-data/SportsDataIO)
 
-### Stock Price Data
+### Stock Price Data Examples
 
 Download price updates for traditional stock market instruments, enabling tokenized financial assets within the DeFi ecosystem:
 
 * [Alpha Vantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage)
 
-### Weather Data
+### Weather Data Examples
 
 Write temperature, forecast, and other weather data to your smart contract, enabling a variety of Web3 use cases (ie, DeFi insurance protocols):
 

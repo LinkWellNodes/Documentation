@@ -1,5 +1,7 @@
 # Retrieving AccuWeather data using Chainlink
 
+![Retrieving AccuWeather data using Chainlink](./accuweather-header.webp "Retrieving AccuWeather data using Chainlink")
+
 ## Introduction
 
 AccuWeather provides and supports many different weather APIs that provide up-to-date and highly accurate temperature, precipitation, and other forecasts for locations around the globe. With AccuWeather's utility APIs, users can retrieve unique geographical identifiers for various locations that may then be used in requesting their corresponding weather information. 
