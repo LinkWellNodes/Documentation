@@ -33,4 +33,4 @@ LinkWell Nodes strives to be transparent about the level and quality of service 
 
 ## Questions?
 
-Please don't hesitate to [reach out](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") - we're always happy to discuss.
+Please don't hesitate to [reach out](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") - we're always happy to have a private conversation about your requirements.

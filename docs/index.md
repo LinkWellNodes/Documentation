@@ -5,6 +5,8 @@ slug: /
 
 # Welcome to LinkWell Nodes Documentation
 
+**LinkWell Nodes is a U.S.-based Chainlink oracle. Our mission is to support Web3 developers in building a world powered by cryptographic truth.**
+
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x360_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
 ## Custom Chainlink Data Feeds
@@ -20,6 +22,12 @@ Our documentation includes pricing info, request API, and code examples of how t
 Whether you need a custom smart contract, help spinning up your Chainlink node, or an external adapter to help process your oracle result, we've got you covered:
 
 - [Development Services](/services/Development-Services)
+
+## Blog
+
+Check out our blog, where where we write about topics ranging from Chainlink service offerings to designing, monitoring, and maintaining your own Chainlink node infrastructure!
+
+- [Blog](/blog) 
 
 ## Frequently Asked Questions (FAQ)
 

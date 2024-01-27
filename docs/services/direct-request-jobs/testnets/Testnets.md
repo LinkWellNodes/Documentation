@@ -4,9 +4,9 @@ title: Chainlink Testnet Custom Data Feeds (Ethereum, Polygon, Arbitrum, Binance
 
 # Testnet Data Feeds
 
-The following documentation allows you to retrieve any custom, real-world data from any internet-based API ('any API'), and write it to your testnet blockchain smart contract. 
+The following documentation allows you to retrieve any custom, real-world data from any internet-based API (using Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality), and write it to your testnet blockchain smart contract or Web3 dApp. 
 
-Using the Chainlink [direct request](/knowledgebase/Direct-Request-Guide) model, our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
+Using the Chainlink 'direct request' model - also known as the 'basic request' model - our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
 
 Please use the links below to view our documentation on how to initiate an oracle request from your smart contract. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
 
@@ -30,8 +30,9 @@ The fee for all of our testnet data feeds is set to **0 LINK** (free).
 
 ### Troubleshooting
 
-Having technical difficulties with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having technical difficulties with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 ### Need more help?
+
 * Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance with your request. We are happy to support custom data requests!
 * Check out our [User FAQ](/knowledgebase/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked by our customers.

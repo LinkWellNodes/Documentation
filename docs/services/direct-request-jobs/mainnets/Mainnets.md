@@ -4,14 +4,14 @@ title: Chainlink Custom Data Feeds (Ethereum, Polygon, Arbitrum, Binance, Avalan
 
 # Mainnet Data Feeds
 
-The following documentation allows you to retrieve any custom, real-world data from any internet-based API ('any API'), and write it to your mainnet blockchain smart contract. 
+The following documentation allows you to retrieve any custom, real-world data from any internet-based API (using Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality), and write it to your mainnet blockchain smart contract or Web3 dApp. 
 
-Using the Chainlink [direct request](/knowledgebase/Direct-Request-Guide) model, our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
+Using the Chainlink 'direct request' model - also known as the 'basic request' model - our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
 
 Please use the links below to view our documentation on how to initiate an oracle request from your smart contract. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
 
 :::info
-Fees for mainnet data requests vary by data type and chain. You can find specific pricing info for each request type within the corresponding documentation pages below.
+Fees for mainnet data requests vary by data type and chain. You can find specific pricing information for each request type within the corresponding documentation pages below.
 :::
 
 * ## [Arbitrum Mainnet](/services/direct-request-jobs/mainnets/Arbitrum-One-Mainnet-Jobs)
@@ -31,8 +31,10 @@ Fees for mainnet data requests vary by data type and chain. You can find specifi
 
 ### Troubleshooting
 
-Having technical difficulties with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having technical difficulties with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Us#custom-data-feeds).
 
 ### Need more help?
-* Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance with your request. We are happy to support custom data requests!
+
+* Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance with your request. 
+* As part of our free [development services offerings](/services/Development-Services), we are happy to support custom data requests, external adapter development / hosting, and consumer contract design for our mainnet customers (minimum request volume may apply).
 * Check out our [User FAQ](/knowledgebase/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked by our customers.

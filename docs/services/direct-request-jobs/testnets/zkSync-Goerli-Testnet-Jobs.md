@@ -80,7 +80,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -208,7 +208,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -348,7 +348,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -489,7 +489,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -628,7 +628,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -756,7 +756,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -887,7 +887,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
@@ -1023,7 +1023,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Direct Request FAQ](/knowledgebase/faq/Chainlink-Users#direct-request-jobs).
+Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   

@@ -56,11 +56,13 @@ If you're looking to get started using LinkWell Nodes as your oracle data provid
 Have a question? Please feel free to join our [Discord](https://discord.com/invite/Xs6SjqVPUA) server for immediate assistance!
 :::
 
-## Direct Request Jobs
+## Custom Data Feeds
 
 ### What is a Direct Request job?
 
-Please see our [Direct Request knowledgebase article](/knowledgebase/Direct-Request-Guide) for more information on how direct requests work, and how to get started. 
+Direct Requests - also known as Basic Requests, are the technology underpinning Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality.
+
+Please see our [Direct Request knowledgebase article](/knowledgebase/Direct-Request-Guide) for more information on how direct requests work, and how to get started initiating a request yourself. 
 
 ### My request transaction won't send
 
@@ -100,34 +102,36 @@ If you are using our oracle services, you may find the oracle address that corre
 
 Currently, Chainlink Functions is in beta, and available only to whitelisted participants on a subset of mainnets. You can apply for access [here](https://chainlinkcommunity.typeform.com/requestaccess). 
 
-Chainlink Functions is superior to the traditional 'Direct Request' model in many aspects, in that your request logic is executed by a DON (Decentralized Oracle Network), instead of by a single Chainlink Oracle - thereby eliminating any concerns around centralization and reliability - while keeping costs roughly the same as if executed by a single node. 
+While Chainlink Functions is superior to the traditional Direct Request model in many aspects (ie, your request logic is executed by a trustless DON / Decentralized Oracle Network, instead of by a single Chainlink Oracle team), it's important to consider the many tradeoffs in making your decision. 
 
-It is also superior to requesting data from a typical OCR (Off-Chain Reporting) network, in that you remain in control of your logic's deployment lifecycle, eliminating the need for any external adapter deployments or other coordination with your chosen node operator(s).
+To determine whether Chainlink Functions is right for you, we've included a couple of resources below which should assist you in making your decision:
 
-Conversely, in order to use Chainlink Functions, you'll need to write your request and response workflow in JavaScript (JS), which may be a limitation for some users.
-
-To determine whether Chainlink Functions is right for you, weigh the various [limitations of Chainlink Functions](#limitations-of-chainlink-functions) in making your decision. 
+- [*Op-ed:* Chainlink Direct Request vs. Functions](/blog/Chainlink_Direct_Request_Vs_Functions) 
+- [Chainlink Functions service limitations](#limitations-of-chainlink-functions)
 
 ### Limitations of Chainlink Functions
 
-Despite the obvious [advantages](#should-i-use-chainlink-functions) of using Chainlink Functions, there are several limitations that need to be considered.
+Despite the many advantages of using Chainlink Functions, there are several limitations that need to be considered before determining whether it is the right fit for your use case.
 
 You should use Chainlink Functions only if ALL of the following apply:
 
 * You are OK with your logic being executed multiple times per request (ie, this might not be ideal for placing a trade, or sending an email) 
 * Your ERC-20 address has been whitelisted by Chainlink Labs for access to Chainlink Functions (may take up to 2 weeks in some cases)
 * You don't need a mainnet deployment ASAP (Functions is currently in mainnet beta)
-* Your use case is limited to the following [supported testnets](https://docs.chain.link/chainlink-functions/supported-networks)
+* Your use case is limited to the following [supported networks](https://docs.chain.link/chainlink-functions/supported-networks)
 * You are comfortable programming your request in **JavaScript**
-* Your consumer contract's callback function will always require less than **300,000 gas**
+* Your consumer contract's callback function will always require less than **300,000 gas** (ie, a short string).
 * Your JavaScript code can execute in under **5 minutes**
 * Your JavaScript code requires less than **128 megabytes** of memory to run
 * The request sent by your JavaScript code is under **30kb**
 * Your response you expect from Chainlink is under **256 bytes**
-* Your JavaScript code makes at most **5 HTTP requests**, that each respond within **3 seconds**
+* Your JavaScript code makes at most **5 HTTP requests**, each of which respond within **3 seconds**
 * Your HTTP requests don't return a payload of more than **2 megabytes** (ie, a large image file)
 
-To read more about service limits related to Chainlink Functions, you may view the official documentation [here](https://docs.chain.link/chainlink-functions/resources/service-limits).
+To read more Chainlink Functions, including its benefits and limitations, you may view the official Chainlink documentation here:
+
+- [Chainlink Functions Home](https://docs.chain.link/chainlink-functions)
+- [Chainlink Functions Service limitations](https://docs.chain.link/chainlink-functions/resources/service-limits)
 
 ### Should I use an external adapter, or Chainlink Functions?
 
