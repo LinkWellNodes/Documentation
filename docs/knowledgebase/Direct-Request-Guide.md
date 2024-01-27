@@ -8,12 +8,12 @@ Chainlink Direct Requests (also called [Basic Requests](https://docs.chain.link/
 
 Chainlink Direct Requests can be convenient for the end-user, as they can support the greatest range of requested data types (and data sizes), while requiring the least amount of technical effort to implement: the oracle team simply provides you with a `request` and `receive` function to place into your smart contract, leaving you free to focus on the development of the rest of your smart contract application. 
 
-As direct requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team that you trust.
+As direct requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team with a proven track record.
 
 :::info
 **LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct request data feeds in exchange for a fee. We offer free external adapter hosting services, as well as free development services for any efforts required to get your smart contract application up and running.
 
-You can read more about our direct request (Any API) data offerings [here](/services/direct-request-jobs/Jobs-and-Pricing), as well as our security guarantees [here](/services/direct-request-jobs/Service-Level-Agreement).
+You can read more about our direct request (Any API) data offerings [here](/services/direct-request-jobs/Jobs-and-Pricing), as well as our service-level guarantees [here](/services/direct-request-jobs/Service-Level-Agreement).
 :::
 
 ## Overview
