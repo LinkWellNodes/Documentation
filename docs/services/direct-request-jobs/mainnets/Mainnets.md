@@ -31,7 +31,7 @@ Fees for mainnet data requests vary by data type and chain. You can find specifi
 
 ### Troubleshooting
 
-Having technical difficulties with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Us#custom-data-feeds).
+Having technical difficulties with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 ### Need more help?
 
