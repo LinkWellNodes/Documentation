@@ -19,14 +19,14 @@ As compared to [Chainlink Functions](https://docs.chain.link/chainlink-functions
 As Direct Requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team with a proven track record.
 
 :::info
-**LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct-to-consumer data feeds in exchange for a fee. We offer free external adapter hosting services, as well as free development services for any efforts required to get your smart contract application up and running.
+**LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct-to-consumer data feeds in exchange for a fee. We offer free external adapter design services, as well as free development services for any efforts required to get your smart contract application up and running.
 <br/>
 You can read more about our direct request ('Any API') data feeds <a href='/services/direct-request-jobs/Jobs-and-Pricing'>here</a>, as well as our service-level guarantees <a href='/services/direct-request-jobs/Service-Level-Agreement'>here</a>.
 :::
 
 ## Request Model
 
-Before diving deeper into the direct request architecture, it's important to understand the [Basic Request Model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted) for Chainlink requests. 
+Before diving deeper into the direct request architecture, it's important to understand the [basic request model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted) for Chainlink oracle requests. 
 
 **High-level request workflow**:
 
