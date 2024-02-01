@@ -1,6 +1,6 @@
 ---
-slug: welcome
 title: Welcome
+date: "2023-09-01"
 authors: [Ken, Derek]
 tags: [Chainlink]
 ---

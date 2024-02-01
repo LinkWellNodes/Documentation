@@ -15,11 +15,11 @@ Navigating the ever-evolving landscape of Chainlink and its integrations within 
 
 Since its inception, Chainlink has evolved at a rapid rate. One of the original services provided by Chainlink's decentralized oracle network was [Direct Request jobs](https://docs.chain.link/any-api/introduction) (also known as "Any API") — Chainlink's first iteration of a solution to help bridge the gap between on-chain and off-chain data. While it worked effectively, there were inherent shortcomings that eventually prompted the release of [Chainlink Functions](https://docs.chain.link/chainlink-functions), marking an improvement in security, reliability, and self-service capabilities.
 
+<!-- truncate -->
+
 Yet, after the release of Functions, a lingering question remains:
 
 **Are Direct Requests still viable?**
-
-<!--truncate-->
 
 We would argue that they are. 
 
@@ -120,8 +120,10 @@ As the Web3 ecosystem continues to evolve, a nuanced understanding of these appr
 
 If you have any questions, please don't hesitate to reach out!
 
-> *LinkWell Nodes is a U.S.-based Chainlink community oracle.*
+> *LinkWell Nodes is a U.S.-based Chainlink oracle.*
 >
-> *We provide self-service oracle solutions across 14 mainnet (and 13 testnet) blockchains, and offer free smart contract development and monitoring for all Any API (Direct) requests.*
+> *We provide custom data feed capabilities and self-service oracle solutions across all major mainnet and testnet blockchains supported by Chainlink.*
+>
+> *Looking for a custom data feed? Head on over to our [documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)*, *or hop into our [Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!*
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")

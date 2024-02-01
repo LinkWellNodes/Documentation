@@ -1,6 +1,6 @@
 ---
-slug: introduction
 title: Introduction
+date: "2023-09-02"
 authors: [Ken, Derek]
 tags: [Chainlink, Splunk, AWS, oracles, web3]
 ---

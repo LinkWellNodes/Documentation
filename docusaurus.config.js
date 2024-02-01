@@ -49,10 +49,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogTitle: 'Blog',
+          blogDescription: 'A blog about anything related to Chainlink, Web3, and oracle smart contract solutions. LinkWell Nodes is a U.S.-based Chainlink oracle specializing in secure, timely delivery of real-world data onto the blockchain.',
         },
         theme: {
           customCss: require.resolve('./src/css/style.css'),
