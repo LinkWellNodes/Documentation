@@ -236,7 +236,7 @@ const config = {
           },
           {
               from: '/blog/welcome',
-              to: '/2023/09/01/Welcome',
+              to: '/blog/2023/09/01/Welcome',
           },
           {
               from: '/blog/Chainlink_Direct_Request_Vs_Functions',
