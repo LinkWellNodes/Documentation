@@ -106,7 +106,7 @@ While Chainlink Functions is superior to the traditional Direct Request model in
 
 To determine whether Chainlink Functions is right for you, we've included a couple of resources below which should assist you in making your decision:
 
-- [*Op-ed:* Chainlink Direct Request vs. Functions](/blog/2024/01/17/Direct-Requests-Vs-Functions) 
+- [*Op-ed:* Chainlink Direct Request vs. Functions](/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions) 
 - [Chainlink Functions service limitations](#limitations-of-chainlink-functions)
 
 ### Limitations of Chainlink Functions

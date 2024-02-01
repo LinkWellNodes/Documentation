@@ -232,15 +232,19 @@ const config = {
           },
           {
               from: '/blog/introduction',
-              to: '/blog/2023/09/02/Introduction',
+              to: '/blog/Introduction',
           },
           {
               from: '/blog/welcome',
-              to: '/blog/2023/09/01/Welcome',
+              to: '/blog/Welcome',
           },
           {
               from: '/blog/Chainlink_Direct_Request_Vs_Functions',
-              to: '/blog/2024/01/17/Direct-Requests-Vs-Functions',
+              to: '/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions',
+          },
+          {
+              from: '/blog/requesting_a_custom_chainlink_data_feed',
+              to: '/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API',
           },
         ],
         // Redirect entire paths
