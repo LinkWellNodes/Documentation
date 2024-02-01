@@ -230,6 +230,18 @@ const config = {
               from: '/services/direct-request-jobs/External-Adapters',
               to: '/services/Development-Services',
           },
+          {
+              from: '/blog/introduction',
+              to: '/blog/2023/09/02/Introduction',
+          },
+          {
+              from: '/blog/welcome',
+              to: '/2023/09/01/Welcome',
+          },
+          {
+              from: '/blog/Chainlink_Direct_Request_Vs_Functions',
+              to: '/blog/2024/01/17/Direct-Requests-Vs-Functions',
+          },
         ],
         // Redirect entire paths
         createRedirects(existingPath) {
