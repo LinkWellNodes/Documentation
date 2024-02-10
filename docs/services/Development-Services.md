@@ -22,7 +22,7 @@ LinkWell Nodes offers a variety of development services to assist you with all o
 
 For any customers looking to utilize our infrastructure for custom data, we offer free smart contract development services (with some exceptions). To get you started, we'll provide you with a custom **consumer contract** (smart contract) that receives your required data. 
 
-Please feel free to reach out to us via our [onboarding form](https://linkwellnodes.io/Getting-Started.html) with the specific details of your request.
+Please feel free to reach out to us via our [request survey](https://linkwellnodes.io/Getting-Started.html) with the specific details of your request.
 
 ### Miscellaneous development
 

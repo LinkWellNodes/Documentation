@@ -29,7 +29,7 @@ This job writes a single **uint256** object to your contract, which can store an
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
 
 **&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
@@ -92,7 +92,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -159,7 +159,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
 
 **&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
@@ -222,7 +222,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -301,7 +301,7 @@ This job writes a single **int256** object to your contract, which can store any
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
 
 **&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
@@ -364,7 +364,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -444,7 +444,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
 
 **&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
@@ -507,7 +507,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -586,7 +586,7 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
 
 **&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
@@ -648,7 +648,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -716,7 +716,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
 
 **&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
@@ -778,7 +778,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -849,7 +849,7 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
 
 **&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
@@ -911,7 +911,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -987,7 +987,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.4 LINK * |
 
 **&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
 
@@ -1049,7 +1049,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 

@@ -20,7 +20,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | f4821ba2e8ae4ddba52ea6860887df96 | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -78,7 +78,7 @@ HTTP GET to any public API which parses the response and returns an unsigned int
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 65cfa14a158540e1a8a94f9a33163839 | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -135,7 +135,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 339ac1ad0a864ea7b94811de8a362a64 | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -193,7 +193,7 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 2e0a430bcd2b482d8462fdcc5224fba1 | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -250,7 +250,7 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 5b48fe6ac244436bb5ad689ab64ef28b | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -307,7 +307,7 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 1cc553d092584937bfe9be9a3dd4c1f6 | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -364,7 +364,7 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | be46cb8070c14cb7ad058b29f127ec6b | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -426,7 +426,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -489,7 +489,7 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 9a2ba54374f34184bdc6390db3171994 | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -546,7 +546,7 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | 332c0b46e57f49cd8c7d74cdbe5106ab | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -600,7 +600,7 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | b3390c03bfc24b42a0b0ab8051471bbb | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 
@@ -656,7 +656,7 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 <!-- | [0x20f6596bA2c39EFd9340F2aF0428D541f7C51954](https://bscscan.com/address/0x20f6596bA2c39EFd9340F2aF0428D541f7C51954) | b090204b16644030844a6e91932a7626 | 0.1 LINK                | -->
 | Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**onboarding form**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK |
 
 ### Request parameters
 

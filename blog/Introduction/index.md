@@ -6,7 +6,7 @@ tags: [Chainlink, Splunk, AWS, oracles, web3]
 ---
 
 # LinkWell Nodes
-A Chainlink community node operations team. Led by truth over trust. Driven to innovate, build and create. Our mission is to enable developers, startups and enterprises to unlock the true value of Web3.
+LinkWell Nodes is a U.S.-based Chainlink oracle. Our mission is to support Web3 developers in building a world powered by cryptographic truth.
 
 ![LWN Logo](./LWN-Banner.jpg)
 

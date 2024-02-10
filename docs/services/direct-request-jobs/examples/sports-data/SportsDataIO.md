@@ -58,7 +58,7 @@ Data entered into a smart contract is visible to the general public.
 
 If you'd like to protect your API key from being broadcast on-chain, you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your API key safely along with your request.
 
-## Simulating the above request
+## Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 

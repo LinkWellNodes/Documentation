@@ -86,7 +86,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -210,7 +210,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -346,7 +346,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -483,7 +483,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -618,7 +618,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -742,7 +742,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -869,7 +869,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
@@ -1001,7 +1001,7 @@ This job has a configured gas limit of **500,000** for writing your result on-ch
 
 Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
 
-### Simulating the above request
+### Simulating the above request logic
 
 Let's walk through each step of the above **sample request**, to better understand how it all works together:
 
