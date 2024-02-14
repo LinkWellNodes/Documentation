@@ -115,6 +115,11 @@ module.exports = {
               },
               {
   	            type: 'doc',
+  	            id: 'services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs',
+  	            label: 'Base Sepolia',
+              },              
+              {
+  	            type: 'doc',
   	            id: 'services/direct-request-jobs/testnets/Binance-Testnet-Jobs',
   	            label: 'Binance',
               },
@@ -122,11 +127,6 @@ module.exports = {
   	            type: 'doc',
   	            id: 'services/direct-request-jobs/testnets/Celo-Alfajores-Testnet-Jobs',
   	            label: 'Celo Alfajores',
-              },
-              {
-  	            type: 'doc',
-  	            id: 'services/direct-request-jobs/testnets/Ethereum-Goerli-Testnet-Jobs',
-  	            label: 'Ethereum Goerli',
               },
               {
 	            type: 'doc',
@@ -140,8 +140,8 @@ module.exports = {
               },
               {
   	            type: 'doc',
-  	            id: 'services/direct-request-jobs/testnets/Optimism-Goerli-Testnet-Jobs',
-  	            label: 'Optimism Goerli',
+  	            id: 'services/direct-request-jobs/testnets/Optimism-Sepolia-Testnet-Jobs',
+  	            label: 'Optimism Sepolia',
               },
               {
   	            type: 'doc',
