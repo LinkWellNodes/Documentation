@@ -9,7 +9,7 @@ tags: [chainlink, smart contracts, decentralized oracles, web3, blockchain, node
 
 ## Chainlink’s Basic (Direct) Request Model: Chainlink Oracle Architectures Explained
 
-![Chainlink Basic Request Model Architectures](./Header.webp "Chainlink Basic Request Model Architectures")
+![Chainlink Basic Request Model Architecture Header](./Header.webp "Chainlink Basic Request Model Architectures")
 
 ## **Introduction**
 
@@ -29,7 +29,7 @@ This article will provide an in-depth analysis of the components that make up th
 
 > For a high-level overview of the basic request model (direct request model), you can also visit our [website’s documentation](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide), our previous article on [building custom Chainlink data feeds using Any API](https://docs.linkwellnodes.io/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API), or our exploration of [Chainlink Functions Versus Direct Request Jobs](https://docs.linkwellnodes.io/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions).
 
-![Basic Request (Direct Request) Model workflow](CL_DR_Model_Single_Chainlink_Oracle.webp "Basic Request (Direct Request) Model Workflow Single Chainlink Oracle")
+![Basic Request (Direct Request) Model Single Chainlink Oracle Workflow](CL_DR_Model_Single_Chainlink_Oracle.webp "Basic Request (Direct Request) Model Workflow Single Chainlink Oracle")
 
 The components of the basic request model implementation include the following:
 
@@ -53,7 +53,7 @@ The following architectures depict the sequential progression of a Web3 develope
 
 ### **Architecture 1: Direct Request to a Single Chainlink Oracle**
 
-![Basic Request (Direct Request) Model workflow](CL_DR_Model_Single_Chainlink_Oracle.webp)*Basic Request (Direct Request) Model Workflow Single Chainlink Oracle*
+![Basic Request (Direct Request) Model Single Chainlink Oracle](CL_DR_Model_Single_Chainlink_Oracle.webp "Basic Request (Direct Request) Model Single Chainlink Oracle")
 
 **Architecture 1** is the simplest version of the basic request model. The sequence begins with a Web3 developer triggering a request (through the on-chain consumer contract) to a single Chainlink oracle owned by a single Chainlink node operator. The Chainlink oracle fetches the requested data and submits the obtained result back on-chain.
 > **Important note**: Reputable node operators will run multiple Chainlink nodes in a redundant cluster, having one “primary” oracle responding to requests, and at least one “backup” oracle operating in passive mode, ready to take over in case of a failure in the primary oracle.
