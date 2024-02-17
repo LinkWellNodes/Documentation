@@ -65,7 +65,7 @@ To learn more about how Chainlink's direct request model works, visit the [Direc
 
 ## Troubleshooting
 
-Having technical difficulties with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having technical difficulties with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 ## Need more help?
 * Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance with your request. We are happy to support custom data requests!

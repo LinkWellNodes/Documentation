@@ -15,7 +15,7 @@ Please see below for our Chainlink data feed offerings ('**jobs**') on the zkSyn
 
 ## Uint256 Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit unsigned integer (**uint256**) to your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
 
 :::info 
 This job writes a single **uint256** object to your contract, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
@@ -27,11 +27,13 @@ This job writes a single **uint256** object to your contract, which can store an
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://explorer.zksync.io/<oracle address>) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK | -->
 
-| Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
+*&nbsp;**Fee notes**:
+- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -82,7 +84,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -145,7 +147,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Uint256[] Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
 
 :::info 
 This job writes a single **uint256[]** object to your contract, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
@@ -157,11 +159,13 @@ This job writes a single **uint256[]** object to your contract, which can store 
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://explorer.zksync.io/<oracle address>) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK | -->
 
-| Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
+*&nbsp;**Fee notes**:
+- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -212,7 +216,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -287,7 +291,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Int256 Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit signed integer (**int256**) to your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
 
 :::info  
 This job writes a single **int256** object to your contract, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
@@ -299,11 +303,13 @@ This job writes a single **int256** object to your contract, which can store any
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://explorer.zksync.io/<oracle address>) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK | -->
 
-| Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
+*&nbsp;**Fee notes**:
+- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -354,7 +360,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -430,7 +436,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Int256[] Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit signed integers (**int256[]**) to your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
 
 :::info  
 This job writes a single **int256[]** object to your contract, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
@@ -442,11 +448,13 @@ This job writes a single **int256[]** object to your contract, which can store a
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://explorer.zksync.io/<oracle address>) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK | -->
 
-| Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
+*&nbsp;**Fee notes**:
+- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -497,7 +505,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -572,7 +580,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Boolean Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a boolean value at the given path, and returns the resulting object (**bool**) to your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a boolean value at the given path, and returns the resulting object (**bool**) to your smart contract.
 
 :::info  
 This job writes a single **bool** object to your contract, which can store a `true` or `false` value. 
@@ -584,11 +592,13 @@ This job writes a single **bool** object to your contract, which can store a `tr
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://explorer.zksync.io/<oracle address>) | 43309009a154495cb2ed794233e6ff56 | 0 LINK | -->
 
-| Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
+*&nbsp;**Fee notes**:
+- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -638,7 +648,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -702,7 +712,7 @@ true
 
 ## Boolean[] Retrieval
 
-This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of boolean values at the given path, and returns the resulting array of booleans (**bool[]**) to your consumer contract.
+This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of boolean values at the given path, and returns the resulting array of booleans (**bool[]**) to your smart contract.
 
 :::info  
 This job writes a single **bool[]** object to your contract, which can store an array of `true` or `false` values. 
@@ -714,11 +724,13 @@ This job writes a single **bool[]** object to your contract, which can store an 
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://explorer.zksync.io/<oracle address>) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK | -->
 
-| Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
+*&nbsp;**Fee notes**:
+- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -768,7 +780,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -847,11 +859,13 @@ This job writes a single **bytes** object to your contract, which can readily be
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://explorer.zksync.io/<oracle address>) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK | -->
 
-| Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
+*&nbsp;**Fee notes**:
+- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -901,7 +915,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
@@ -985,11 +999,13 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://explorer.zksync.io/<oracle address>) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK | -->
 
-| Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
-**&nbsp;NOTE: If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.*
+*&nbsp;**Fee notes**:
+- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -1039,7 +1055,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
 This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   

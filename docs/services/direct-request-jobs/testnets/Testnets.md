@@ -30,7 +30,7 @@ The fee for all of our testnet data feeds is set to **0 LINK** (free).
 
 ### Troubleshooting
 
-Having technical difficulties with your request? Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having technical difficulties with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 ### Need more help?
 

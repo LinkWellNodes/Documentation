@@ -105,6 +105,12 @@ hr {
 	margin: 42px 0 42px 0;
 }
 
+/* PREV / NEXT PAGE FOOTERS */
+.pagination-nav__label {
+	margin-top: 8px;
+	line-height: 24px;
+}
+
 /* LISTS */
 /* (apply to lists within page content only) */
 .markdown ol > li {

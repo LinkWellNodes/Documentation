@@ -7,7 +7,7 @@ slug: /
 
 **LinkWell Nodes is a U.S.-based Chainlink oracle. Our mission is to support Web3 developers in building a world powered by cryptographic truth.**
 
-![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x360_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
+![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
 ## Custom Chainlink Data Feeds
 

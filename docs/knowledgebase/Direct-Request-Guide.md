@@ -59,7 +59,7 @@ The following information details how to initiate an oracle request from within 
 
 **Prepare your request**:
 
-1. *(mainnet customers only)* Fill out our [Getting Started](https://linkwellnodes.io/Getting-Started.html) form, so that we can fulfill our compliance obligations and better understand your data needs.
+1. *(mainnet customers only)* Fill out our [Oracle request survey](https://linkwellnodes.io/Getting-Started.html) form, so that we can fulfill our compliance obligations and better understand your data needs.
 1. Design your consumer contract, using our [Data Feeds Documentation](/services/direct-request-jobs/Jobs-and-Pricing) as a guide (code examples included).
 1. Deploy your contract using an EVM-compatible IDE such as [Remix](https://remix.ethereum.org/).
 

@@ -6,7 +6,7 @@ import TOCInline from '@theme/TOCInline';
 
 # Chainlink Oracle (Node) Operator FAQ
 
-The target audience for this FAQ is **Chainlink oracle operators** (also known as **node operators**) - in other words, those running their own Chainlink nodes.
+The target audience for this FAQ is **Chainlink oracle operators** (also known as **node operators**). In other words, those running their own Chainlink nodes.
 
 The following is a list of frequently-asked questions and answers collected from our experience supporting the `#nodes`, `#operator-requests`, and `#external-adapters` channels within the [Chainlink Official Discord server](https://discord.com/invite/chainlink).
 
@@ -257,10 +257,11 @@ The most common scenario where this error occurs is while attempting to launch a
 To get past this error, you'll need to either:
 
 * Enter the correct password (ie, the password used by your original Chainlink node when connecting to your Chainlink database for the first time) into your TOML secrets config file, and restart your Chainlink node:
-```
-[Password]
-Keystore = '<MY_PASSWORD_HERE>'
-```
+
+	```
+	[Password]
+	Keystore = '<MY_PASSWORD_HERE>'
+	```
 
     You may find more information on configuring your TOML secrets config file in the Chainlink documentation [here](https://docs.chain.link/chainlink-nodes/v1/secrets-config#keystore).
 

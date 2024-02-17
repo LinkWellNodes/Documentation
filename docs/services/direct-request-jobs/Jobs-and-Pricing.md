@@ -4,9 +4,9 @@ description: Oracle addresses and Job IDs for our Chainlink oracles using the di
 
 # Chainlink Data Feeds
 
-Our Chainlink data feeds utilize Chainlink's **direct request** model, allowing you to write real-world data from anywhere on the internet ('Any API') to your blockchain smart contract or Web3 app. Our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
+Our Chainlink data feeds utilize Chainlink's **direct request** model, allowing you to write customized real-world data from anywhere on the internet ('Any API') to your blockchain smart contract or Web3 dApp. Our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
 
-Please use the links below to view our documentation on how to initiate a request from your smart contract. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
+Please use the links below to view our documentation on how to initiate a request from your smart contract. If you run into any trouble, we recommend joining our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
 
 ### View our data feeds:
 
@@ -27,6 +27,6 @@ To learn more about how Chainlink's direct request model works, visit our [Direc
 
 ## Need more help?
 
-* Check out our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+* Check our [Custom Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+* Check our [Chainlink User FAQ](/knowledgebase/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked by our customers.
 * Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance with your request. We are happy to support custom data requests!
-* Check out our [Chainlink User FAQ](/knowledgebase/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked by our customers.
