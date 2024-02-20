@@ -5,7 +5,7 @@ slug: /
 
 # Welcome to LinkWell Nodes Documentation
 
-**LinkWell Nodes is a U.S.-based Chainlink oracle committed to redefining custom data feed creation for Web3 developers. By offering a process that is secure, flexible,and seamless, we aim to accelerate the deployment of innovative Web3 applications with unparalleled speed and simplicity.**
+**LinkWell Nodes is a U.S.-based Chainlink oracle committed to redefining custom data feed creation for Web3 developers. By offering a process that is secure, flexible, and seamless, we aim to accelerate the deployment of innovative Web3 applications with unparalleled speed and simplicity. Our ultimate mission? To support Chainlink in building a world powered by cryptographic truth.**
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
