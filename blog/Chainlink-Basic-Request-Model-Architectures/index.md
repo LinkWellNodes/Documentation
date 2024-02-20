@@ -30,7 +30,7 @@ This article will provide an in-depth analysis of the components that make up th
 > For a high-level overview of the basic request model (direct request model), you can also visit our [website’s documentation](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide), our previous article on [building custom Chainlink data feeds using Any API](https://docs.linkwellnodes.io/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API), or our exploration of [Chainlink Functions Versus Direct Request Jobs](https://docs.linkwellnodes.io/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions).
 
 <p align="center">
-  <img src="CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Single Chainlink Oracle" />
+  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Single Chainlink Oracle" />
 </p>
 
 The components of the basic request model implementation include the following:
@@ -56,7 +56,7 @@ The following architectures depict the sequential progression of a Web3 develope
 ### **Architecture 1: Direct Request to a Single Chainlink Oracle**
 
 <p align="center">
-  <img src="CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle" />
+  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle" />
 </p>
 
 **Architecture 1** is the simplest version of the basic request model. The sequence begins with a Web3 developer triggering a request (through the on-chain consumer contract) to a single Chainlink oracle owned by a single Chainlink node operator. The Chainlink oracle fetches the requested data and submits the obtained result back on-chain.
@@ -84,7 +84,7 @@ The following architectures depict the sequential progression of a Web3 develope
 ### **Architecture 2: Direct Request to Multiple Chainlink Oracles**
 
 <p align="center">
-  <img src="CL_DR_Model_Multi_LW_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple LinkWell Chainlink Oracles" />
+  <img src="/img/CL_DR_Model_Multi_LW_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple LinkWell Chainlink Oracles" />
 </p>
 
 **Architecture 2** closely resembles **Architecture 1**, with the primary difference lying in the inclusion of multiple Chainlink oracles (linked to separate oracle/operator contracts) handling the request. These oracles are owned and overseen by the same Chainlink node operator.
@@ -117,7 +117,7 @@ The following architectures depict the sequential progression of a Web3 develope
 ### **Architecture 3: Direct Request to a Multiple Chainlink Oracles Across Independent Chainlink Node Operators**
 
 <p align="center">
-  <img src="CL_DR_Model_Four_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple Independent Chainlink Oracles" />
+  <img src="/img/CL_DR_Model_Four_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple Independent Chainlink Oracles" />
 </p>
 
 **Architecture 3** is distinct from **Architecture 2** in that it incorporates multiple independent Chainlink oracle teams. Diverging from previous designs, this architecture embraces the essence of decentralization, emulating a decentralized oracle network (DON) as seen with Chainlink’s official protocols.
@@ -149,7 +149,7 @@ The following architectures depict the sequential progression of a Web3 develope
 ### **Bonus Architecture: Direct Request Without a LINK Fee**
 
 <p align="center">
-  <img src="Chainlink_DR_Model_Single_Chainlink_Oracle_No_LINK_Fee.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle No LINK Fee" />
+  <img src="/img/Chainlink_DR_Model_Single_Chainlink_Oracle_No_LINK_Fee.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle No LINK Fee" />
 </p>
 
 As a notable feature of the basic request model, we are introducing a bonus architecture where Chainlink node operators have the option to eliminate the LINK fee for each request and opt for alternative forms of payment, such as fiat or other L1/L2 tokens. **This methodology can be implemented within any of the above architectures in this article.**
