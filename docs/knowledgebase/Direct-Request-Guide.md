@@ -35,7 +35,7 @@ Before diving deeper into the direct request architecture, it's important to und
 1. Your Web3 application reads the data from your consumer contract.
 
 <p align="center">
-  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Chainlink Basic Request Model">
+  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Chainlink Basic Request Model" />
 </p>
 
 ## Key Terms
