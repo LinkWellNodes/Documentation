@@ -21,7 +21,7 @@ The process for integrating a custom Chainlink data feed is simple:
 
 1. [Book a call](https://calendly.com/linkwell-nodes) or fill out our [request survey form](https://linkwellnodes.io/Getting-Started.html) and let us know how we can help.
 2. We'll build your custom data feed and test it on testnet for free.
-3. Receive all necessary smart contract request logic for seamless integration.
+3. You'll receive all necessary smart contract request logic for seamless integration.
 
 ## Development Services
 
