@@ -34,7 +34,9 @@ Before diving deeper into the direct request architecture, it's important to und
 1. Our Chainlink nodes receive the request, make an HTTP request to the appropriate API endpoint, and write the result back to your consumer contract.
 1. Your Web3 application reads the data from your consumer contract.
 
-![dr-workflow](/img/DR-Request-Workflow.webp)
+<p align="center">
+  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Chainlink Basic Request Model">
+</p>
 
 ## Key Terms
 

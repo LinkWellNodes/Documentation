@@ -5,7 +5,7 @@ slug: /
 
 # Welcome to LinkWell Nodes Documentation
 
-**LinkWell Nodes is a U.S.-based Chainlink oracle. Our mission is to support Web3 developers in building a world powered by cryptographic truth.**
+**LinkWell Nodes is a U.S.-based Chainlink oracle committed to redefining custom data feed creation for Web3 developers. By offering a process that is secure, flexible,and seamless, we aim to accelerate the deployment of innovative Web3 applications with unparalleled speed and simplicity.**
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
@@ -16,6 +16,12 @@ Our highly redundant data feeds allow you to write data reliably from anywhere o
 Our documentation includes pricing info, request API, and code examples of how to integrate our oracle data feeds into your smart contract application:
 
 - [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
+
+The process for integrating a custom Chainlink data feed is simple:
+
+1. [Book a call](https://calendly.com/linkwell-nodes) or fill out our [request survey form](https://linkwellnodes.io/Getting-Started.html) and let us know how we can help.
+2. We'll build your custom data feed and test it on testnet for free.
+3. Receive all necessary smart contract request logic for seamless integration.
 
 ## Development Services
 
