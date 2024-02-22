@@ -237,6 +237,10 @@ const config = {
               to: '/services/Development-Services',
           },
           {
+              from: '/services/direct-request-jobs/testnets/Testnets',
+              to: '/services/direct-request-jobs/testnets',
+          },
+          {
               from: '/blog/introduction',
               to: '/blog/Introduction',
           },
