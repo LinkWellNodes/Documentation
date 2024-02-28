@@ -81,7 +81,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 Data entered into a smart contract is visible to the general public.
 :::
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started, and specify within the notes that you'd like us to store your API key for you - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
 
 ### Troubleshooting
 
@@ -213,7 +213,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 Data entered into a smart contract is visible to the general public.
 :::
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started, and specify within the notes that you'd like us to store your API key for you - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
 
 ### Troubleshooting
 
@@ -357,7 +357,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 Data entered into a smart contract is visible to the general public.
 :::
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started, and specify within the notes that you'd like us to store your API key for you - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
 
 ### Troubleshooting
 
@@ -502,7 +502,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 Data entered into a smart contract is visible to the general public.
 :::
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started, and specify within the notes that you'd like us to store your API key for you - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
 
 ### Troubleshooting
 
@@ -645,7 +645,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 Data entered into a smart contract is visible to the general public.
 :::
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started, and specify within the notes that you'd like us to store your API key for you - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
 
 ### Troubleshooting
 
@@ -777,7 +777,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 Data entered into a smart contract is visible to the general public.
 :::
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started, and specify within the notes that you'd like us to store your API key for you - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
 
 ### Troubleshooting
 
@@ -912,7 +912,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 Data entered into a smart contract is visible to the general public.
 :::
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started, and specify within the notes that you'd like us to store your API key for you - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
 
 ### Troubleshooting
 
@@ -1052,7 +1052,7 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 Data entered into a smart contract is visible to the general public.
 :::
 
-If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
+If you need to send sensitive information along with your HTTP request (ie, an API key), you can instead store this information off-chain on our secure infrastructure. Please fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) to get started, and specify within the notes that you'd like us to store your API key for you - once we receive your information, we'll provide you with a custom job ID that will send your sensitive data safely along with your request.
 
 ### Troubleshooting
 

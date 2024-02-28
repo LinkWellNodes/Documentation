@@ -17,11 +17,13 @@ Our documentation includes pricing info, request API, and code examples of how t
 
 - [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
 
+:::info
 The process for integrating a custom Chainlink data feed is simple:
 
-1. [Book a call](https://calendly.com/linkwell-nodes) or fill out our [request survey form](https://linkwellnodes.io/Getting-Started.html) and let us know how we can help.
-2. We'll build your custom data feed and test it on testnet for free.
-3. You'll receive all necessary smart contract request logic for seamless integration.
+1. Use our self-service documentation to build your contract (link above).
+2. If needed, we'll build your custom data feed and test it on testnet for free.
+3. You'll receive all necessary smart contract request logic to integrate your data feed into your Web3 dApp.
+:::
 
 ## Development Services
 
