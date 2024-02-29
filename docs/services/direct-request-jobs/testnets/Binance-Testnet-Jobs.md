@@ -6,7 +6,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 Binance Smart Chain's testnet is a test environment for BNB Smart Chain mainnet network, run by the BNB Chain development community. Testnet BNB is used to pay for transactions on the BNB Chain testnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/bnb-chain-testnet). Testnet BNB is available at [testnet.bnbchain.org/faucet-smart](https://www.bnbchain.org/en/testnet-faucet).
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Binance-Testnet network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Binance-Testnet network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 ### Select the type of data that you need:
 

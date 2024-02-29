@@ -6,7 +6,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 The Alfajores Testnet is a test network for developers building on the Celo platform. Testnet CELO is used to pay for transactions on Celo Alfajores, and is available the [Alfajores Token Faucet](https://faucet.celo.org/alfajores). Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/celo-alfajores-testnet). Testnet CELO is available from the [Alfajores Token Faucet](https://faucet.celo.org/alfajores).
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Celo-Alfajores network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Celo Alfajores network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 ### Select the type of data that you need:
 

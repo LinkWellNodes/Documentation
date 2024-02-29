@@ -6,7 +6,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 Scroll Sepolia testnet is the beta testnet on Sepolia. It runs alongside Scroll Mainnet and serve as a testing ground for smart contracts, dapp deployments, and upgrades.  Testnet ETH is used to pay for transactions on Scroll testnet. Use the [Scroll Sepolia Testnet Bridge](https://sepolia.scroll.io/bridge) to transfer testnet ETH from Ethereum Sepolia testnet to Scroll Sepolia testnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/scroll-sepolia-testnet).
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Scroll-Sepolia network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Scroll Sepolia network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 ### Select the type of data that you need:
 

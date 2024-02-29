@@ -13,17 +13,9 @@ slug: /
 
 Our highly redundant data feeds allow you to write data reliably from anywhere on the internet into your smart contracts. 
 
-Our documentation includes pricing info, request API, and code examples of how to integrate our oracle data feeds into your smart contract application:
+Our documentation includes pricing info, as well as code examples showing how to integrate a custom Chainlink data feed into your smart contract or Web3 dApp:
 
 - [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
-
-:::info
-The process for integrating a custom Chainlink data feed is simple:
-
-1. Use our self-service documentation to build your contract (link above).
-2. If needed, we'll build your custom data feed and test it on testnet for free.
-3. You'll receive all necessary smart contract request logic to integrate your data feed into your Web3 dApp.
-:::
 
 ## Development Services
 

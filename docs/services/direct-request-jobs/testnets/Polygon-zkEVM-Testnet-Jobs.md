@@ -6,7 +6,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 Polygon zkEVM testnet is the testnet for Polygon zkEVM, an EVM equivalent ZK rollup scaling solution. Testnet ETH is used to pay for transactions on Polygon zkEVM testnet. Use the [Polygon zkEVM Bridge](https://wallet.polygon.technology/?redirectOnConnect=%2FzkEVM-Bridge%2Fbridge) to transfer ETH and LINK to Polygon zkEVM testnet.
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Polygon zkEVM testnet network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Polygon zkEVM testnet network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 ### Select the type of data that you need:
 

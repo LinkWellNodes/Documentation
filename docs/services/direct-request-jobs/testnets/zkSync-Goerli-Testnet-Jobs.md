@@ -6,7 +6,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 zkSync Era Goerli is the testnet for zkSync Era. Testnet ETH is used to pay for transactions on zkSync Era Goerli testnet. Use the recommended [zkSync Bridges](https://zksync.io/explore#bridges) to transfer testnet ETH from Ethereum Goerli to the zkSync Goerli Testnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/).
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the zkSync-Goerli network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the zkSync Goerli network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 ### Select the type of data that you need:
 

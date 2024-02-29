@@ -4,9 +4,9 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Celo Mainnet Data Feeds
 
-Celo is a platform acting as a global payment infrastructure for cryptocurrencies that aims to target mobile users. CELO is the network's native cryptocurrency, which is used for fees, staking, and more.
+Celo is a blockchain platform focused on enabling financial inclusion through mobile-first decentralized finance (DeFi) solutions. It aims to provide accessible and affordable financial services to billions of people worldwide, leveraging mobile technology and a proof-of-stake consensus mechanism for efficiency and scalability.
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Celo network. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA), or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes")!
+The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Celo network. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 ### Select the type of data that you need:
 
@@ -32,7 +32,7 @@ This job writes a single **uint256** object to your contract, which can store an
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
 *&nbsp;**Fee notes**:
-- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
@@ -164,7 +164,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
 *&nbsp;**Fee notes**:
-- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
@@ -308,7 +308,7 @@ This job writes a single **int256** object to your contract, which can store any
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
 *&nbsp;**Fee notes**:
-- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
@@ -453,7 +453,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
 *&nbsp;**Fee notes**:
-- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
@@ -597,7 +597,7 @@ This job writes a single **bool** object to your contract, which can store a `tr
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
 *&nbsp;**Fee notes**:
-- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
@@ -729,7 +729,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
 *&nbsp;**Fee notes**:
-- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
@@ -864,7 +864,7 @@ This job writes a single **bytes** object to your contract, which can readily be
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
 *&nbsp;**Fee notes**:
-- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
@@ -1004,7 +1004,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
 
 *&nbsp;**Fee notes**:
-- We offer discounts for our high-volume customers. Fill out our request survey to get started.
+- We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - If you prefer paying your fees in a different currency (ie, `ETH` or fiat), please [reach out to us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes"), as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters

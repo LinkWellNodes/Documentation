@@ -6,7 +6,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 Sepolia is a proof-of-stake testnet, and is the recommended default testnet for application development on Ethereum. Testnet ETH is used to pay for transactions on Sepolia. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link). Testnet ETH is available from several public [faucets](https://faucetlink.to/sepolia).
 
-Please see below for our Chainlink data feed offerings ('**jobs**') on the Ethereum-Sepolia network. All testnet data feeds are free to use, and do not require you to fund your contracts with the LINK token. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA), or feel free to contact us [here](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes")!
+The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Ethereum Sepolia network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 ### Select the type of data that you need:
 

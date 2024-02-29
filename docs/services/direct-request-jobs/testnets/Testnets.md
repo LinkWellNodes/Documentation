@@ -6,12 +6,10 @@ title: Chainlink Testnet Custom Data Feeds (Ethereum, Polygon, Arbitrum, Binance
 
 The following documentation allows you to retrieve any custom, real-world data from any internet-based API (using Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality), and write it to your testnet blockchain smart contract or Web3 dApp. 
 
-Using the Chainlink 'direct request' model - also known as the 'basic request' model - our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
-
-Please use the links below to view our documentation on how to initiate an oracle request from your smart contract. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
+Please use the links below to learn how to initiate an oracle request from your smart contract. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
 
 :::info
-The fee for all of our testnet data feeds is set to **0 LINK** (free).
+The fee for all of our testnet data feeds is **0 LINK** (free).
 :::
 
 * ## [Arbitrum Sepolia Testnet](/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs)
