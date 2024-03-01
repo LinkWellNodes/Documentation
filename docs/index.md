@@ -46,4 +46,4 @@ Learn more about [LinkWell Nodes](/about).
 
 **Need a custom quote or project?** 
 
-[Contact us](https://linkwellnodes.io/Home.html#contact-us) for more info!
+[Contact us](https://linkwellnodes.io/#contact-us) for more info!

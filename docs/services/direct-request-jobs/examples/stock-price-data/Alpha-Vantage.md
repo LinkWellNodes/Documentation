@@ -6,7 +6,7 @@ Alpha Vantage is a renowned platform that offers an extensive collection of APIs
 
 The following guide illustrates an easy example of how to retrieve a `uint256` value from the Alpha Vantage API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
 
-## Real-world example
+## Writing a stock price from Alpha Vantage to your blockchain smart contract
 
 Accessing Alpha Vantage data from within your blockchain contract or Web3 application is as simple as:
 

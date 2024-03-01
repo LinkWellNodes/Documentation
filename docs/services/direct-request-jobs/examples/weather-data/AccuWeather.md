@@ -18,9 +18,9 @@ AccuWeather offers several different APIs within their [documentation](https://d
 
 The following guide illustrates an easy example of how to retrieve a `uint256` value from AccuWeather's **Current Conditions API**, and write it to your blockchain smart contract or Web3 application using our highly-resilient Chainlink oracle infrastructure.
 
-## Real-world example (retrieve current temperature from AccuWeather API to your smart contract application)
+## Writing the current AccuWeather temperature to your blockchain smart contract
 
-Accessing AccuWeather data from within your blockchain contract or Web3 application is as simple as:
+Retrieving AccuWeather data from within your blockchain contract or Web3 application is as simple as:
 
 1. Creating an AccuWeather API key through the AccuWeather website.
 1. Determining the **location key** for your target latitude / longitude.

@@ -22,15 +22,19 @@ LinkWell Nodes strives to be transparent about the level and quality of service 
 
 ## Testnet uptime
 
-* To reduce costs for our customers, our testnet data feeds may experience occassional interruptions as we roll out periodic updates and continuously improve our services. These updates should last fewer than **5 minutes**, and occur no more than once per day. If you are experiencing an unexpected issue in our testnet data feeds that exceeds this timeframe, please reach out to us via our [Discord server](https://discord.gg/Xs6SjqVPUA).
+* To reduce costs for our customers, our testnet data feeds may experience occasional interruptions as we roll out periodic updates and continuously improve our services. These updates should last fewer than **5 minutes**, and occur no more than once per day. If you are experiencing an unexpected issue in our testnet data feeds that exceeds this timeframe, please reach out to us via our [Discord server](https://discord.gg/Xs6SjqVPUA).
 
 ## Data security
 
-* All data at rest is protected with **256-bit** encryption (or better)
-* All data that leaves our internal network is **end-to-end encrypted**, including all in-transit data
-* All infrastructure access points are secured by **2-factor authentication** (or better)
-* All infrastructure access and traffic is monitored **24/7** for security
+* All data at rest is protected with **256-bit** encryption (or better).
+* All data that leaves our internal network is **end-to-end encrypted**, including all in-transit data.
+* All infrastructure access points are secured by **2-factor authentication** (or better).
+* All infrastructure access and traffic is monitored **24/7** for security.
+
+## Data accuracy
+
+* LinkWell Nodes cannot guarantee of accuracy of the data returned by any singular API provider, as we function simply as the messenger. To minimize the risk of any data outages or inaccuracies, we recommend leveraging multiple data providers within your data feed, and performing an aggregation on the result. We are happy to provide assistance with this sort of implementation.
 
 ## Questions?
 
-Please don't hesitate to [reach out](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") - we're always happy to have a private conversation about your requirements.
+Please don't hesitate to [reach out](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes") - we're always happy to have a private conversation about your requirements.

@@ -167,7 +167,7 @@ module.exports = {
         },
         {
             type: 'category',
-            label: 'Real-world examples',
+            label: 'Real-World Examples',
             link: {type: 'doc', id: 'services/direct-request-jobs/Any-API-Guide'},
             items: [
                 {

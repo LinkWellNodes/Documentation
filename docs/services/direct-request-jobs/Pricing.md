@@ -96,4 +96,4 @@ In order to remain competitive, LinkWell Nodes needs to take into consideration 
 
 ## Have a question about our pricing?
 
-Please don't hesitate to [contact us](https://linkwellnodes.io/Home.html#contact-us "Contact LinkWell Nodes") about your budget constraints. We're always happy to discuss!
+Please don't hesitate to [contact us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes") about your budget constraints. We're always happy to discuss!

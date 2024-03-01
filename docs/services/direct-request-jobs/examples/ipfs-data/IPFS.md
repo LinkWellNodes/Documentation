@@ -6,7 +6,7 @@ The InterPlanetary File System (IPFS) is a revolutionary peer-to-peer network pr
 
 The following guide illustrates an easy example of how to retrieve a `string-bytes` value from the IPFS API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
 
-## Real-world example
+## Writing IPFS data to your blockchain smart contract
 
 Accessing IPFS data from within your blockchain contract or Web3 application is as simple as:
 

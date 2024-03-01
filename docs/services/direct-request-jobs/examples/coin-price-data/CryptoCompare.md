@@ -6,7 +6,7 @@ CryptoCompare is a digital platform that offers an extensive API tailored to the
 
 The following guide illustrates an easy example of how to retrieve a `uint256` value from the CryptoCompare API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
 
-## Real-world example
+## Writing coin prices from CryptoCompare to your blockchain smart contract
 
 Accessing CryptoCompare data from within your blockchain contract or Web3 application is as simple as:
 

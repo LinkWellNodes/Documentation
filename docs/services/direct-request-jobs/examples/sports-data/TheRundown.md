@@ -2,11 +2,11 @@
 
 ## Introduction
 
-TheRundown is the leading platform for real-time odds, scores, stats, and unrivaled insights into the sports betting marketplace. Through their API, developers can access a vast array of data across various sports, including **football (NFL)**, **basketball (NBA)**, **baseball (MLB)**, **hockey (NHL)**, **cricket (IPL)**, **fighting (UFC)**, **soccer (MLS)**, and more. This data encompasses live scores, real-time odds, player statistics, team information, and historical data, among other aspects of sports analytics. By catering to the needs of sports enthusiasts, fantasy sports platforms, and professional analytics teams, TheRundown has established itself as an invaluable resource in the sports tech industry.
+TheRundown is the leading platform for real-time odds, scores, betting data, stats, and unrivaled insights into the sports betting marketplace. Through their API, developers can access a vast array of data across various sports, including **football (NFL)**, **basketball (NBA)**, **baseball (MLB)**, **hockey (NHL)**, **cricket (IPL)**, **fighting (UFC)**, **soccer (MLS)**, and more. This data encompasses live scores, real-time odds, player statistics, team information, and historical data, among other aspects of sports analytics. By catering to the needs of sports enthusiasts, fantasy sports platforms, and professional analytics teams, TheRundown has established itself as an invaluable resource in the sports tech industry.
 
 The following guide illustrates an easy example of how to retrieve a `uint256[]` (unsigned 256-bit integer array) value from TheRundown API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
 
-## Real-world example
+## Writing sports / betting data from TheRundown to your blockchain smart contract
 
 Accessing TheRundown data from within your blockchain contract or Web3 application is as simple as:
 

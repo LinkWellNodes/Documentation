@@ -2,11 +2,11 @@
 
 ## Introduction
 
-SportsDataIO is a leading provider of sports data services, offering accurate, timely, and comprehensive sports statistics and information to a wide range of clients. Through their API, developers can access a vast array of data across various sports, including the NFL, NBA, MLB, NHL, and more. This data encompasses live scores, player statistics, team information, and historical data, among other aspects of sports analytics. By catering to the needs of sports enthusiasts, fantasy sports platforms, and professional analytics teams, SportsDataIO has established itself as an invaluable resource in the sports tech industry.
+SportsDataIO is a leading provider of sports data and sports betting services, offering accurate, timely, and comprehensive sports statistics and information to a wide range of clients. Through their API, developers can access a vast array of data across various sports, including the NFL, NBA, MLB, NHL, and more. This data encompasses live scores, player statistics, team information, and historical data, among other aspects of sports analytics. By catering to the needs of sports enthusiasts, fantasy sports platforms, and professional analytics teams, SportsDataIO has established itself as an invaluable resource in the sports tech industry.
 
 The following guide illustrates an easy example of how to retrieve a `uint256` value from the SportsDataIO API, and write it to your blockchain smart contract using our highly-resilient Chainlink oracle infrastructure.
 
-## Real-world example
+## Writing sports / betting data from SportsDataIO to your blockchain smart contract
 
 Accessing SportsDataIO data from within your blockchain contract or Web3 application is as simple as:
 

@@ -22,7 +22,7 @@ The process for integrating a custom data feed into your smart contract or Web3 
 3. Trigger your contract's `request` function! Our oracle will write your data to your smart contract within seconds.
 
 :::info
-We offer free smart contract development and testing services for our **mainnet customers**. If this is of interest, please reach out to us via our [request form](https://linkwellnodes.io/Getting-Started.html), or [book a call](https://calendly.com/linkwell-nodes) with us to get started. 
+We offer free smart contract development and testing services for our **mainnet customers**. If interested, please reach out to us via our [request form](https://linkwellnodes.io/Getting-Started.html), or [book a meeting](https://calendly.com/linkwell-nodes) with us to get started. 
 :::
 
 ## Related topics:
