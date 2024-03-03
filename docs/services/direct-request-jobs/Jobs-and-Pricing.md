@@ -1,6 +1,6 @@
 ---
-title: Custom Chainlink Data Feeds
-description: View our Chainlink oracle addresses and Job IDs. Connect your smart contract to any API on the internet.
+title: Chainlink Custom Data Feeds
+description: Chainlink oracle addresses and Job IDs to connect your smart contract to any API on the internet. Retrieve RWA prices, sports betting, weather, and real estate data.
 ---
 
 # Chainlink Data Feeds

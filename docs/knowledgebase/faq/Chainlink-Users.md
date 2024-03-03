@@ -4,7 +4,7 @@ description: A list of frequently-asked questions by our Chainlink users.
 
 import TOCInline from '@theme/TOCInline';
 
-# Chainlink User FAQ
+# Chainlink Users FAQ
 
 The target audience for this FAQ is **consumers of Chainlink data** - in other words, those looking to integrate Chainlink in order to write real-world data into their blockchain smart contract.
 

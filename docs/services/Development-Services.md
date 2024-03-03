@@ -1,3 +1,8 @@
+---
+title: Chainlink Development Help
+description: Need help with your Chainlink smart contract? We provide custom data feeds, external adapter support, and Chainlink infrastructure / monitoring / security support. 
+---
+
 import TOCInline from '@theme/TOCInline';
 
 # Development Services
@@ -21,9 +26,7 @@ LinkWell Nodes offers a variety of development services to assist you with all o
 Looking for a team of Web3 experts to advise you on your latest **infrastructure**, **monitoring**, **smart contract**, or **Chainlink node** issues? 
 
 :::info
-[Book a 30-minute video call](https://calendly.com/linkwell-nodes) with us to get the help you need. Please include the details of your request in the calendar invite. 
-
-Our standard advisory rate is **100 USD** / half hour session (payment through cryptocurrency preferred). If we can't help you with your question, the call is free.
+[Book a 30-minute video call](https://calendly.com/linkwell-nodes) with us to get the help you need. Please include the details of your request in the calendar invite. Our standard advisory rate is **100 USD** / half hour session (payment through cryptocurrency preferred). If we can't help you with your question, the call is free.
 :::
 
 Our team has over **30 years** of combined professional experience in the cybersecurity, enterprise software, financial services, and Web3 industries, and are confident we can assist you with your Web3 needs.
@@ -55,8 +58,8 @@ Please feel free to [contact us](https://linkwellnodes.io/#contact-us "Contact L
 
 ### Free external adapter hosting and development
 
-* We'll host your external adapter for free on our highly redundant infrastructure - all you'll pay is the typical per-transaction cost in LINK.
-* If you need a custom adapter developed, we've got you covered, and can typically do this for free within **1-2 business days**.
+* We'll host your mainnet external adapter for free on our highly redundant infrastructure - all you'll pay is the typical per-transaction cost in LINK.
+* If you need a custom external adapter developed, we've got you covered, and can typically do this for free within **1-2 business days**.
 
 ### External adapter use cases
 
@@ -65,8 +68,9 @@ You might need an external adapter if any of the following requirements pertain 
 * You need private, low latency, and/or high throughput off-chain computation to save gas.
 * You need to write data to other blockchains (interoperability).
 
-You can read Chainlink's official documentation on external adapters [here](https://docs.chain.link/chainlink-nodes/external-adapters/external-adapters).
-
+:::info
+You can read more about external adapters in Chainlink's official documentation [here](https://docs.chain.link/chainlink-nodes/external-adapters/external-adapters).
+:::
 
 ## Need something else?
 

@@ -1,6 +1,6 @@
 ---
-description: A quick run-through of how the Chainlink Direct Request model works.
----
+title: Chainlink Direct Requests (Any API)
+description: Chainlink Direct Requests explained (A.K.A. Basic Requests or Any API), and a comparison to Chainlink Functions. What is a Chainlink oracle, and how does it work? 
 
 # Chainlink Direct Requests (Any API)
 

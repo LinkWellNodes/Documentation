@@ -1,5 +1,6 @@
 ---
-title: Chainlink Testnet Custom Data Feeds (Ethereum, Polygon, Arbitrum, Binance, Avalanche, Base, Optimism, Fantom, Gnosis, Celo, Scroll, Linea, zkSync)
+title: Chainlink Testnet Oracle Data Feeds
+description: Write internet data to your smart contract on Ethereum, Polygon, Arbitrum, Binance, Avalanche, Base, Optimism, Fantom, Gnosis, Celo, Scroll, Linea, and zkSync networks.
 ---
 
 # Testnet Data Feeds
