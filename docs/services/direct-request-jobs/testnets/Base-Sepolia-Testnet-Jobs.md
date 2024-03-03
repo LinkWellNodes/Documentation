@@ -4,7 +4,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Base Sepolia Testnet Data Feeds
 
-Base Sepolia is the testnet of Layer 2 rollup chain Base mainnet, and uses Ethereum's Sepolia testnet network as its Layer 1 protocol. Testnet ETH is used to pay for transactions on BASE. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/base-testnet). Testnet ETH is available from one of the [BASE Network Faucets](https://docs.base.org/tools/network-faucets/).
+Base Sepolia is the testnet of Layer 2 rollup chain Base mainnet, and uses Ethereum's Sepolia testnet network as its Layer 1 protocol. Testnet ETH is used to pay for transactions on BASE. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/base-sepolia). Testnet ETH is available from one of the [BASE Network Faucets](https://docs.base.org/tools/network-faucets/).
 
 The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Base Sepolia network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
