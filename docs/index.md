@@ -1,4 +1,5 @@
 ---
+title: Documentation
 id: index
 slug: /
 ---

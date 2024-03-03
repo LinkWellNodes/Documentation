@@ -1,5 +1,6 @@
 ---
-description: Oracle addresses and Job IDs for our Chainlink oracles using the direct request model.
+title: Custom Chainlink Data Feeds
+description: View our Chainlink oracle addresses and Job IDs. Connect your smart contract to any API on the internet.
 ---
 
 # Chainlink Data Feeds

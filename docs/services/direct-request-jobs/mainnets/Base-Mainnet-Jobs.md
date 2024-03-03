@@ -1,3 +1,8 @@
+---
+title: Base Mainnet Oracle Addresses
+description: Connect your smart contract to the internet using our customizable Chainlink oracle data feeds running on the Base (Coinbase) mainnet network.  
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
