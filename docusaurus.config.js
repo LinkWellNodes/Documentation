@@ -238,7 +238,7 @@ const config = {
           },
           {
         	  from: '/services/direct-request-jobs/testnets/Avalance-Fuji-Testnet-Jobs',
-        	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobss',
+        	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
           },
           {
               from: '/services/direct-request-jobs/External-Adapters',
