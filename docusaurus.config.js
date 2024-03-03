@@ -217,20 +217,28 @@ const config = {
           //   to: '/new/page',
           // }
           {
-            from: '/knowledgebase/Chainlink-Consumers-FAQ',
-            to: '/knowledgebase/faq/Chainlink-Users',
+              from: '/knowledgebase/Chainlink-Consumers-FAQ',
+              to: '/knowledgebase/faq/Chainlink-Users',
           },
           {
-            from: '/knowledgebase/Chainlink-Operators-FAQ',
-            to: '/knowledgebase/faq/Chainlink-Operators',
+              from: '/knowledgebase/Chainlink-Operators-FAQ',
+              to: '/knowledgebase/faq/Chainlink-Operators',
           },
           {
-            from: '/knowledgebase/Any-API-Guide',
-            to: '/services/direct-request-jobs/Any-API-Guide',
+              from: '/knowledgebase/Any-API-Guide',
+              to: '/services/direct-request-jobs/Any-API-Guide',
           },
           {
-        	from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
-        	to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+        	  from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
+        	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+          },
+          {
+        	  from: '/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
+        	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+          },
+          {
+        	  from: '/services/direct-request-jobs/testnets/Avalance-Fuji-Testnet-Jobs',
+        	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobss',
           },
           {
               from: '/services/direct-request-jobs/External-Adapters',

@@ -13,7 +13,7 @@ slug: /
 
 Our highly redundant data feeds allow you to write data reliably from anywhere on the internet into your smart contracts. 
 
-Our documentation includes pricing info, as well as code examples showing how to integrate a custom Chainlink data feed into your smart contract or Web3 dApp:
+Our documentation includes pricing info, as well as code examples showing how to request a custom Chainlink data feed from smart contract or Web3 dApp:
 
 - [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
 
