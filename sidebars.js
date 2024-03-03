@@ -110,11 +110,6 @@ module.exports = {
               },
               {
   	            type: 'doc',
-  	            id: 'services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs',
-  	            label: 'Base Goerli',
-              },
-              {
-  	            type: 'doc',
   	            id: 'services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs',
   	            label: 'Base Sepolia',
               },              
