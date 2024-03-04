@@ -5,6 +5,8 @@ externalJobID = "07f761e2-6a28-4cb8-b7ed-67188dece6d4"
 forwardingAllowed = false
 maxTaskDuration = "0s"
 contractAddress = "0x12A3d7759F745f4cb8EE8a647038c040cB8862A5"
+evmChainID = "80001"
+minIncomingConfirmations = 5
 minContractPaymentLinkJuels = "0"
 observationSource = """
 

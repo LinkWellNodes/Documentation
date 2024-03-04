@@ -5,6 +5,8 @@ externalJobID = "e20c7567-b2bb-4e36-90c6-15d03457b5d3"
 forwardingAllowed = false
 maxTaskDuration = "0s"
 contractAddress = "<oracle address>"
+evmChainID = "280"
+minIncomingConfirmations = 1
 minContractPaymentLinkJuels = "0"
 observationSource = """
 

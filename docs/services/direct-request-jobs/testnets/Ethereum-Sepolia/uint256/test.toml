@@ -1,10 +1,12 @@
 type = "directrequest"
 schemaVersion = 1
-name = "LW_CBGT_EA_bool-array"
-externalJobID = "433ba6a7-6b37-4e25-80dd-43685a9de8c6"
+name = "LW_EST_EA_uint256-test-blocks"
+externalJobID = "071dee3d-3ffc-4d9e-aadb-ed87c2f9b8b2"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0xa57f0cEd49bB1ed7327f950B12a8419cFD01855f"
+contractAddress = "0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B"
+evmChainID = "11155111"
+minIncomingConfirmations = 3
 minContractPaymentLinkJuels = "0"
 observationSource = """
 
@@ -22,21 +24,15 @@ observationSource = """
 
     send_to_bridge [
                 type="bridge" 
-                name="common-http-forwarder" 
-                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
+                name="test-bridge" 
+                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"url\\":$(decode_cbor.url),\\"method\\":$(decode_cbor.method),\\"headers\\":$(decode_cbor.headers),\\"body\\":$(decode_cbor.body),\\"jsonpath\\":$(decode_cbor.path),\\"multiplier\\":$(decode_cbor.multiplier),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
                 headers="[\\"secret-val-01\\", \\"\\", \\"secret-val-02\\", \\"\\", \\"secret-val-03\\", \\"\\", \\"secret-val-04\\", \\"\\", \\"secret-val-05\\", \\"\\"]"
                 ]
 
-    parse       [
-                type="jsonparse"
-                path=""
-                data="$(send_to_bridge)"
-                ]
-
     encode_data [
-                type="ethabiencode"
-                abi="(bytes32 requestId, bool[] _data)"
-                data="{\\"requestId\\": $(decode_log.requestId), \\"_data\\": $(parse)}"
+                type="ethabiencode" 
+                abi="(bytes32 requestId, uint256 value)" 
+                data="{ \\"requestId\\": $(decode_log.requestId), \\"value\\": $(send_to_bridge) }"
                 ]
 
     encode_tx   [
@@ -47,12 +43,10 @@ observationSource = """
 
     submit_tx   [
                 type="ethtx"
-                to="0xa57f0cEd49bB1ed7327f950B12a8419cFD01855f"
+                to="0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B"
                 data="$(encode_tx)"
                 gasLimit="500000"
                 ]
 
-    decode_log -> decode_cbor -> send_to_bridge -> parse -> encode_data -> encode_tx -> submit_tx
+    decode_log -> decode_cbor -> send_to_bridge -> encode_data -> encode_tx -> submit_tx
 """
-# NOTES:
-# Necessary to keep the parse task for arrays, as it normalizes the response from the EA and allows for proper serialization by ethabiencode
