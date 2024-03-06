@@ -47,6 +47,19 @@ observationSource = """
                 data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
                 ]
 
+    encode_gas_guardian_data   [
+                type="ethabiencode"
+                abi="fulfill(bytes32 requestId, int256[] value)" 
+                data="{\\"requestId\\": $(decode_log.requestId), \\"value\\": $(parse)}"
+                ]
+
+    gas_guardian [
+                type="bridge" 
+                name="gas-guardian" 
+                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"data\\":$(encode_gas_guardian_data),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
+                headers="[\\"gas-limit\\", \\"500000\\", \\"max-loss-usd\\", \\"0\\", \\"max-loss-pct\\", \\"0\\"]"
+                ]
+
     submit_tx   [
                 type="ethtx"
                 to="0x0168B5FcB54F662998B0620b9365Ae027192621f"
@@ -54,7 +67,13 @@ observationSource = """
                 gasLimit="500000"
                 ]
 
-    decode_log -> decode_cbor -> send_to_bridge -> parse -> encode_data -> encode_tx -> submit_tx
+    decode_log -> decode_cbor -> send_to_bridge -> parse
+
+    parse -> encode_data -> encode_tx
+    parse -> encode_gas_guardian_data -> gas_guardian
+
+    encode_tx -> submit_tx
+    gas_guardian -> submit_tx
 """
 # NOTES:
 # Necessary to keep the parse task for arrays, as it normalizes the response from the EA and allows for proper serialization by ethabiencode
