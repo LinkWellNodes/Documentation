@@ -56,7 +56,7 @@ observationSource = """
 
     submit_tx   [
                 type="ethtx"
-                to="0xd08FEb8203E76f836D74608595346ab6b0f768C9"
+                to="0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46"
                 data="$(encode_tx)"
                 gasLimit="500000"
                 ]

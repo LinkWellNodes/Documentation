@@ -264,6 +264,10 @@ const config = {
               from: '/blog/requesting_a_custom_chainlink_data_feed',
               to: '/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API',
           },
+          {
+              from: '/services/jobs/Direct-Request-Guide',
+              to: '/knowledgebase/Direct-Request-Guide',
+          },
         ],
         // Redirect entire paths
         createRedirects(existingPath) {
