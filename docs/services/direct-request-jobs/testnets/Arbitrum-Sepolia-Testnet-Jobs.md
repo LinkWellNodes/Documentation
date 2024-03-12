@@ -48,7 +48,11 @@ This job requires the following parameters to be set within your contract's `req
 
 ### Try it for yourself
 
-Add the following sample code to your **consumer contract**. You can also [open the code in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256/uint256.sol).
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256/uint256.sol).
+:::
 
 #### 1. Add the constructor:
 
@@ -172,7 +176,11 @@ This job requires the following parameters to be set within your contract's `req
 
 ### Try it for yourself
 
-Add the following sample code to your **consumer contract**. You can also [open the code in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/uint256-array.sol).
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/uint256-array.sol).
+:::
 
 #### 1. Add the constructor:
 
@@ -308,7 +316,11 @@ This job requires the following parameters to be set within your contract's `req
 
 ### Try it for yourself
 
-Add the following sample code to your **consumer contract**. You can also [open the code in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/int256.sol).
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/int256.sol).
+:::
 
 #### 1. Add the constructor:
 
@@ -445,7 +457,11 @@ This job requires the following parameters to be set within your contract's `req
 
 ### Try it for yourself
 
-Add the following sample code to your **consumer contract**. You can also [open the code in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/int256-array.sol).
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/int256-array.sol).
+:::
 
 #### 1. Add the constructor:
 
@@ -580,7 +596,11 @@ This job requires the following parameters to be set within your contract's `req
 
 ### Try it for yourself
 
-Add the following sample code to your **consumer contract**. You can also [open the code in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool/bool.sol).
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool/bool.sol).
+:::
 
 #### 1. Add the constructor:
 
@@ -704,7 +724,11 @@ This job requires the following parameters to be set within your contract's `req
 
 ### Try it for yourself
 
-Add the following sample code to your **consumer contract**. You can also [open the code in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool-array/bool-array.sol).
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/bool-array/bool-array.sol).
+:::
 
 #### 1. Add the constructor:
 
@@ -831,7 +855,11 @@ This job requires the following parameters to be set within your contract's `req
 
 ### Try it for yourself
 
-Add the following sample code to your **consumer contract**. You can also [open the code in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes/string-bytes.sol).
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes/string-bytes.sol).
+:::
 
 #### 1. Add the constructor:
 
@@ -963,7 +991,11 @@ This job requires the following parameters to be set within your contract's `req
 
 ### Try it for yourself
 
-Add the following sample code to your **consumer contract**. You can also [open the code in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes-array/string-bytes-array.sol).
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/string-bytes-array/string-bytes-array.sol).
+:::
 
 #### 1. Add the constructor:
 

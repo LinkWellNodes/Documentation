@@ -174,7 +174,22 @@ code {
 	background-color: var(--table-bg-color-dark);
 }
 
-/* Alert info boxes */
+/* Alert boxes */
+.alert--success {
+	margin: 40px 0 !important;
+    padding: 28px;
+    background-color: #EEF9FD;
+    --ifm-alert-border-color: #0B87DA;
+}
+.alert--success p {
+	margin: 0 !important;
+}
+.alert--success a {
+	text-decoration: none;
+}
+.alert--success a:hover {
+	text-decoration: underline;
+}
 .alert--info {
 	margin: 40px 0 !important;
     padding: 28px;
