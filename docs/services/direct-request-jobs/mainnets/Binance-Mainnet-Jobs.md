@@ -166,7 +166,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.12 LINK * |
 
 *&nbsp;**Fee notes**:
 - We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
@@ -455,7 +455,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.12 LINK * |
 
 *&nbsp;**Fee notes**:
 - We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
@@ -731,7 +731,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.12 LINK * |
 
 *&nbsp;**Fee notes**:
 - We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
@@ -1006,7 +1006,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.12 LINK * |
 
 *&nbsp;**Fee notes**:
 - We may offer discounts for our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
