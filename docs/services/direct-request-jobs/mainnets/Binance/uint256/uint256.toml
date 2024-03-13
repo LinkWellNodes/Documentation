@@ -7,7 +7,7 @@ maxTaskDuration = "0s"
 contractAddress = "0x20f6596bA2c39EFd9340F2aF0428D541f7C51954"
 evmChainID = "56"
 minIncomingConfirmations = 3
-minContractPaymentLinkJuels = "0"
+minContractPaymentLinkJuels = "100000000000000000"
 observationSource = """
 
     decode_log  [
@@ -51,14 +51,14 @@ observationSource = """
                 type="bridge" 
                 name="gas-guardian" 
                 requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"data\\":$(encode_gas_guardian_data),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
-                headers="[\\"gas-limit\\", \\"500000\\", \\"max-loss-usd\\", \\"0\\", \\"max-loss-pct\\", \\"0\\"]"
+                headers="[\\"disable\\", \\"false\\", \\"gas-limit\\", \\"1000000\\", \\"max-loss-usd\\", \\"0\\", \\"max-loss-pct\\", \\"0\\"]"
                 ]
 
     submit_tx   [
                 type="ethtx"
                 to="0x20f6596bA2c39EFd9340F2aF0428D541f7C51954"
                 data="$(encode_tx)"
-                gasLimit="500000"
+                gasLimit="1000000"
                 ]
 
     decode_log -> decode_cbor -> send_to_bridge
