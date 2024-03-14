@@ -21,7 +21,7 @@ contract getBool is ChainlinkClient, ConfirmedOwner {
     
   constructor() ConfirmedOwner(msg.sender) {
     setChainlinkToken(0x404460C6A5EdE2D891e8297795264fDe62ADBB75);
-    setChainlinkOracle(0x20f6596bA2c39EFd9340F2aF0428D541f7C51954);
+    setChainlinkOracle(<oracle address>);
     jobId = "2e0a430bcd2b482d8462fdcc5224fba1";
     fee = ((1 * LINK_DIVISIBILITY) / 10); // 0.1 LINK (varies by network and job)
   }    

@@ -20,7 +20,7 @@ contract getUint256Array is ChainlinkClient, ConfirmedOwner {
     
   constructor() ConfirmedOwner(msg.sender) {
     setChainlinkToken(0x514910771AF9Ca656af840dff83E8264EcF986CA);
-    setChainlinkOracle(0x0168B5FcB54F662998B0620b9365Ae027192621f);
+    setChainlinkOracle(<oracle address>);
     jobId = "9a2ba54374f34184bdc6390db3171994";
     fee = ((16 * LINK_DIVISIBILITY) / 10); // 1.6 LINK (varies by network and job)
   }    

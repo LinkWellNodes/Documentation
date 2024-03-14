@@ -4,7 +4,7 @@ name = "LW_AOM_DR_Post_Bytes"
 externalJobID = "b3390c03-bfc2-4b42-a0b0-ab8051471bbb"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0xD8edDB284d25DbbC5189E488639D689DFE7AaB49"
+contractAddress = "<oracle address>"
 minContractPaymentLinkJuels = "100000000000000000"
 observationSource = """
 
@@ -49,7 +49,7 @@ observationSource = """
 
     submit_tx   [
                 type="ethtx"
-                to="0xD8edDB284d25DbbC5189E488639D689DFE7AaB49"
+                to="<oracle address>"
                 data="$(encode_tx)"
                 gasLimit="500000"
                 ]

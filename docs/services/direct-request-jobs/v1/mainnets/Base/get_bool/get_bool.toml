@@ -4,7 +4,7 @@ name = "LW_CBM_DR_Get_Bool"
 externalJobID = "2e0a430b-cd2b-482d-8462-fdcc5224fba1"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c"
+contractAddress = "<oracle address>"
 minContractPaymentLinkJuels = "100000000000000000"
 observationSource = """
 
@@ -33,7 +33,7 @@ observationSource = """
                   ]
     submit_tx   [
                 type="ethtx"
-                to="0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c"
+                to="<oracle address>"
                 data="$(encode_tx)"
                 gasLimit="500000"
                 ]

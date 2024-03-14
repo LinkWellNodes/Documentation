@@ -4,7 +4,7 @@ name = "LW_CBM_DR_Get_Uint256_No_Multiply"
 externalJobID = "65cfa14a-1585-40e1-a8a9-4f9a33163839"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c"
+contractAddress = "<oracle address>"
 minContractPaymentLinkJuels = "100000000000000000"
 observationSource = """
 
@@ -33,7 +33,7 @@ observationSource = """
                  ]
     submit_tx   [
                 type="ethtx"
-                to="0xc287d52DFF95A6A49bdd2c3BB985c0E581b33d9c"
+                to="<oracle address>"
                 data="$(encode_tx)"
                 gasLimit="500000"
                 ]

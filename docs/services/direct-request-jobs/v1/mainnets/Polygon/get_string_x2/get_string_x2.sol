@@ -28,7 +28,7 @@ contract getStringx2 is ChainlinkClient, ConfirmedOwner {
     
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0xb0897686c545045aFc77CF20eC7A532E3120E0F1);
-        setChainlinkOracle(0x9F306bB9da1a12bF1590d3EA65e038fC414d6b68);
+        setChainlinkOracle(<oracle address>);
         jobId = "be46cb8070c14cb7ad058b29f127ec6b";
         fee = ((15 * LINK_DIVISIBILITY) / 100); // 0.15 LINK (varies by network and job)
     }

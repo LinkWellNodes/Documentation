@@ -17,7 +17,7 @@ contract LinkWellStringBytesArrConsumerContractExample is ChainlinkClient, Confi
     
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6);
-        setOracleAddress(0xbF974f8faf696229854D70E5030CC6CA01A34c4B);
+        setOracleAddress(<oracle address>);
         setJobId("07f761e26a284cb8b7ed67188dece6d4");
         setFeeInHundredthsOfLink(12);     // 0.12 LINK
     }

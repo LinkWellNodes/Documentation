@@ -4,7 +4,7 @@ name = "LW_AOM_DR_Get_Uint256_Array"
 externalJobID = "9a2ba543-74f3-4184-bdc6-390db3171994"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0xD8edDB284d25DbbC5189E488639D689DFE7AaB49"
+contractAddress = "<oracle address>"
 minContractPaymentLinkJuels = "150000000000000000"
 observationSource = """
 
@@ -34,7 +34,7 @@ observationSource = """
                 ]
     submit_tx   [
                 type="ethtx"
-                to="0xD8edDB284d25DbbC5189E488639D689DFE7AaB49"
+                to="<oracle address>"
                 data="$(encode_tx)"
                 gasLimit="500000"
                 ]
