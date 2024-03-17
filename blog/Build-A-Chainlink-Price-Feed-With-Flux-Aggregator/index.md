@@ -2,7 +2,7 @@
 title: "Chainlink Price Feeds: Connect your Web3 App to a Custom Flux Monitor DON"
 description: "How to build and integrate a custom Chainlink oracle price feed using FluxAggregator for aggregating real-world data on-chain for your Web3 application."
 date: "2024-03-16"
-image: 'https://docs.linkwellnodes.io/img/flux-agg-article/Flux_Aggregator_Architecture_Diagram.png'
+image: https://docs.linkwellnodes.io/img/flux-agg-article/Flux_Aggregator_Architecture_Diagram.png
 keywords: [chainlink oracle, smart contracts, price feed, web3, blockchain, decentralized]
 authors: [Ken]
 tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, decentralized]
