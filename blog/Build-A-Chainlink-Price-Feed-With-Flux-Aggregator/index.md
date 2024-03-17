@@ -246,7 +246,7 @@ Tokenizing real-world assets, from currencies to stocks, bonds, real estate, and
 For the successful tokenization of assets, the availability of accurate, onchain market price data via Chainlink price feeds is crucial. Take, for instance, the PAXG Chainlink price feed for tokenized gold, which allows for the creation of secure markets around physical gold. Moreover, Paxos leverages Chainlink Proof of Reserve to assure onchain that its tokenized gold offerings are fully backed by offchain gold reserves, fostering high-integrity markets for these assets.
 
 <p align="center">
-  <img src="/img/flux-agg-article/Decentralized_Orace_Network_Price_Feed.webp" alt="Chainlink Price Feeds Oracle Network" />
+  <img src="/img/flux-agg-article/Decentralized_Oracle_Network_Price_Feed.webp" alt="Chainlink Price Feeds Oracle Network" />
 </p>
 
 > For additional use cases of Chainlink price feeds, we highly recommend checking out Chainlink's article on the [77+ smart contract use cases enabled by Chainlink](https://blog.chain.link/smart-contract-use-cases/).
