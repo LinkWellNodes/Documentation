@@ -8,9 +8,7 @@ authors: [Ken]
 tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, decentralized]
 ---
 
-## Chainlink Price Feeds: Connect your Web3 App to a Custom Flux Monitor DON
-
-A how-to guide for building a custom Chainlink oracle price feed that can be integrated into your Web3 application.
+## A how-to guide for building a custom Chainlink oracle price feed that can be integrated into your Web3 application.
 
 ![Chainlink Blog- How Price Feeds Secure DeFi](./Header.webp "Chainlink Blog- How Price Feeds Secure DeFi")
 
@@ -65,7 +63,7 @@ The decentralized data model introduces a number of features:
 </p>
 
 > In the architecture depicted above, three independent Chainlink oracle teams are showcased solely for illustrative purposes. In practice, any number and combination of independent Chainlink oracles can be employed. The flexibility in this arrangement is mainly motivated by considerations such as trust-minimization, reliability, and security budgets.
-> Additionally, each Chainlink oracle can (and should) utilize a different external data sources or API endpoints if at all possible. This provides decentralization at the external data source layer. For more on this topic, we recommend referring to Chainlink's article on [the 3 levels of aggregation for price feeds](https://blog.chain.link/levels-of-data-aggregation-in-chainlink-price-feeds/).
+> Additionally, each Chainlink oracle can (and should) utilize a different external data source or API endpoint if at all possible. This provides decentralization at the external data source layer. For more on this topic, we recommend referring to Chainlink's article on [the 3 levels of aggregation for price feeds](https://blog.chain.link/levels-of-data-aggregation-in-chainlink-price-feeds/).
 
 The components of the decentralized data model include:
 
@@ -159,7 +157,7 @@ The bulk of the integration effort takes place on the Chainlink oracle's end, bu
 
 ## Price Feeds vs. Direct Requests (Any API)
 
-While this article focuses primarily on price feeds, it may be helpful to offer a comparison with a different type of Chainlink requests: [direct requests](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide) (also known as 'Any API').
+While this article focuses primarily on price feeds, it may be helpful to offer a comparison with a different type of Chainlink request: [direct requests](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide) (also known as 'Any API').
 
 **Price Feeds (i.e., Flux Aggregator)**:
 
@@ -248,7 +246,7 @@ Tokenizing real-world assets, from currencies to stocks, bonds, real estate, and
 For the successful tokenization of assets, the availability of accurate, onchain market price data via Chainlink price feeds is crucial. Take, for instance, the PAXG Chainlink price feed for tokenized gold, which allows for the creation of secure markets around physical gold. Moreover, Paxos leverages Chainlink Proof of Reserve to assure onchain that its tokenized gold offerings are fully backed by offchain gold reserves, fostering high-integrity markets for these assets.
 
 <p align="center">
-  <img src="/img/flux-agg-article/Chainlink_Price_Feeds.webp" alt="Chainlink Price Feeds Oracle Network" />
+  <img src="/img/flux-agg-article/Decentralized_Orace_Network_Price_Feed.webp" alt="Chainlink Price Feeds Oracle Network" />
 </p>
 
 > For additional use cases of Chainlink price feeds, we highly recommend checking out Chainlink's article on the [77+ smart contract use cases enabled by Chainlink](https://blog.chain.link/smart-contract-use-cases/).
