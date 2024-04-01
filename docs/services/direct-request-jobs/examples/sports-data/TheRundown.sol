@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
@@ -24,7 +24,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
     
         // The Chainlink token address and Oracle address vary by network. 
         // You may find the appropriate values for each network here: https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing
-        setChainlinkToken(ADD_CHAINLINK_TOKEN_ADDRESS_HERE);
+        _setChainlinkToken(ADD_CHAINLINK_TOKEN_ADDRESS_HERE);
         setOracleAddress(ADD_ORACLE_ADDRESS_HERE);
         
         setJobId("ADD_JOB_ID_HERE");
@@ -34,24 +34,24 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
     // Send a request to the Chainlink oracle
     function request() public {
     
-        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
+        Chainlink.Request memory req = _buildOperatorRequest(jobId, this.fulfill.selector);
         
         // DEFINE THE REQUEST PARAMETERS (example)
-        req.add('method', 'GET');
-        req.add('url', 'https://therundown-therundown-v1.p.rapidapi.com/events/9a35b8986a76eaaea364be331cb453ec');
-        req.add('headers', '["X-RapidAPI-Host", "therundown-therundown-v1.p.rapidapi.com", "X-RapidAPI-Key", "{your_api_key}"]');
-        req.add('body', '');
-        req.add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
+        req._add('method', 'GET');
+        req._add('url', 'https://therundown-therundown-v1.p.rapidapi.com/events/9a35b8986a76eaaea364be331cb453ec');
+        req._add('headers', '["X-RapidAPI-Host", "therundown-therundown-v1.p.rapidapi.com", "X-RapidAPI-Key", "{your_api_key}"]');
+        req._add('body', '');
+        req._add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl -k -X GET -H "X-RapidAPI-Host: therundown-therundown-v1.p.rapidapi.com" -H "X-RapidAPI-Key: {your_api_key}" "https://therundown-therundown-v1.p.rapidapi.com/events/9a35b8986a76eaaea364be331cb453ec"
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'score,score_away;score,score_home');
-        req.addInt('multiplier', 1);
+        req._add('path', 'score,score_away;score,score_home');
+        req._addInt('multiplier', 1);
 
         // Send the request to the Chainlink oracle        
-        sendOperatorRequest(req, fee);
+        _sendOperatorRequest(req, fee);
     }
 
     uint256[] public responseArr;
@@ -67,7 +67,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
     // Update oracle address
     function setOracleAddress(address _oracleAddress) public onlyOwner {
         oracleAddress = _oracleAddress;
-        setChainlinkOracle(_oracleAddress);
+        _setChainlinkOracle(_oracleAddress);
     }
     function getOracleAddress() public view onlyOwner returns (address) {
         return oracleAddress;
@@ -93,7 +93,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
     }
 
     function withdrawLink() public onlyOwner {
-        LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
+        LinkTokenInterface link = LinkTokenInterface(_chainlinkTokenAddress());
         require(
             link.transfer(msg.sender, link.balanceOf(address(this))),
             "Unable to transfer"

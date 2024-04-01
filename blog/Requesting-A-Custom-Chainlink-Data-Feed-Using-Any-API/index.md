@@ -124,36 +124,36 @@ Although you may have already commenced the development of your smart contract b
 1. **The Constructor:** Here you'll typically specify the [Chainlink (LINK) token contract address](https://docs.chain.link/resources/link-token-contracts) for your respective chain, the oracle address, the job ID, and the per-request payment amount. Oracle addresses, job IDs, and payment amounts are provided by (or negotiated with) your chosen node operator.
 ```
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
+        _setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
         setOracleAddress(0x12A3d7759F745f4cb8EE8a647038c040cB8862A5);
         setJobId("a8356f48569c434eaa4ac5fcb4db5cc0");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 ```
 
-2. **The Request Function:** The request function (also called the transferAndCall() or sendOperatorRequest() function) defines your request characteristics, and sends the request (and payment) to the Chainlink oracle.
+2. **The Request Function:** The request function (also called the transferAndCall() or _sendOperatorRequest() function) defines your request characteristics, and sends the request (and payment) to the Chainlink oracle.
 
 ```
     function request() public {
     
-        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
+        Chainlink.Request memory req = _buildOperatorRequest(jobId, this.fulfill.selector);
         
         // DEFINE THE REQUEST PARAMETERS (example)
-        req.add('method', 'GET');
-        req.add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
-        req.add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '');
-        req.add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
+        req._add('method', 'GET');
+        req._add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
+        req._add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req._add('body', '');
+        req._add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'ETH,USD');
-        req.addInt('multiplier', 10 ** 18);
+        req._add('path', 'ETH,USD');
+        req._addInt('multiplier', 10 ** 18);
     
         // Send the request to the Chainlink oracle        
-        sendOperatorRequest(req, fee);
+        _sendOperatorRequest(req, fee);
     }
 ```  
 
@@ -186,7 +186,7 @@ Now that your smart contract's been drafted up, it's time to deploy it. We sugge
 
 Now comes the fun part - executing the request logic against the oracle specified in your constructor method.
 
-Your first step is to deploy your smart contract code using the [Remix IDE](https://remix.ethereum.org/). After deploying the contract, the next step is to trigger the transferAndCall() function (sometimes called the request() or sendOperatorRequest() function, highlighted in purple below) within your consumer contract.
+Your first step is to deploy your smart contract code using the [Remix IDE](https://remix.ethereum.org/). After deploying the contract, the next step is to trigger the transferAndCall() function (sometimes called the request() or _sendOperatorRequest() function, highlighted in purple below) within your consumer contract.
 
 ![Remix Figure 1](./Remix_Diagram_1.webp)
 

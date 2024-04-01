@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
@@ -21,7 +21,7 @@ contract LinkWellInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedO
     uint256 private fee;
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0x7273ebbB21F8D8AcF2bC12E71a08937712E9E40c);
+        _setChainlinkToken(0x7273ebbB21F8D8AcF2bC12E71a08937712E9E40c);
         setOracleAddress(<oracle address>);
         setJobId("356a0aced8f7425abd2ec17df9014359");
         setFeeInHundredthsOfLink(0);     // 0 LINK
@@ -30,24 +30,24 @@ contract LinkWellInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedO
     // Send a request to the Chainlink oracle
     function request() public {
     
-        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
+        Chainlink.Request memory req = _buildOperatorRequest(jobId, this.fulfill.selector);
 		     
         // DEFINE THE REQUEST PARAMETERS (example)
-        req.add('method', 'POST');
-        req.add('url', 'https://httpbin.org/post');
-        req.add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
-        req.add('body', '{"data":[[12.43,-54.47,98.34],[89.99,-34.21,-85.65],[-412.43,983.89,473.31]]}');
-        req.add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
+        req._add('method', 'POST');
+        req._add('url', 'https://httpbin.org/post');
+        req._add('headers', '["accept", "application/json", "set-cookie", "sid=14A52"]');
+        req._add('body', '{"data":[[12.43,-54.47,98.34],[89.99,-34.21,-85.65],[-412.43,983.89,473.31]]}');
+        req._add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl 'https://httpbin.org/post' --request 'POST' --header 'content-type: application/json' --header 'set-cookie: sid=14A52' --data '{"data":[[12.43,-54.47,98.34],[89.99,-34.21,-85.65],[-412.43,983.89,473.31]]}'
         
         // PROCESS THE RESULT (example)
-        req.add('path', 'json,data,0,1;json,data,1,0;json,data,2,1'); 
-        req.addInt('multiplier', 10 ** 18);
+        req._add('path', 'json,data,0,1;json,data,1,0;json,data,2,1'); 
+        req._addInt('multiplier', 10 ** 18);
         
         // Send the request to the Chainlink oracle
-        sendOperatorRequest(req, fee);
+        _sendOperatorRequest(req, fee);
     }
 
     int256[] public responseArr;
@@ -63,7 +63,7 @@ contract LinkWellInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedO
     // Update oracle address
     function setOracleAddress(address _oracleAddress) public onlyOwner {
         oracleAddress = _oracleAddress;
-        setChainlinkOracle(_oracleAddress);
+        _setChainlinkOracle(_oracleAddress);
     }
     function getOracleAddress() public view onlyOwner returns (address) {
         return oracleAddress;
@@ -89,7 +89,7 @@ contract LinkWellInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedO
     }
 
     function withdrawLink() public onlyOwner {
-        LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
+        LinkTokenInterface link = LinkTokenInterface(_chainlinkTokenAddress());
         require(
             link.transfer(msg.sender, link.balanceOf(address(this))),
             "Unable to transfer"

@@ -6,7 +6,7 @@
  * DO NOT USE THIS CODE IN PRODUCTION.
  */
 
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
@@ -21,23 +21,23 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
 
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0xb0897686c545045aFc77CF20eC7A532E3120E0F1);
-        setChainlinkOracle(<oracle address>);
+        _setChainlinkToken(0xb0897686c545045aFc77CF20eC7A532E3120E0F1);
+        _setChainlinkOracle(<oracle address>);
         jobId = "b3390c03bfc24b42a0b0ab8051471bbb";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
     }    
 
     function postBytes() public {
-        Chainlink.Request memory req = buildOperatorRequest(
+        Chainlink.Request memory req = _buildOperatorRequest(
             jobId,
             this.fulfillBytes.selector
         );      
         // THE URL TO WHICH TO SEND THIS REQUEST
-        req.add("post", "API_URL"); // Example: https://myUrl.com      
+        req._add("post", "API_URL"); // Example: https://myUrl.com      
         // REQUEST BODY | cannot be an empty string ("{}" is OK)
-		req.add("requestData", "{}"); // Example: '{"fsyms": "LINK", "tsyms": "USD"}'
-        req.add("path", "JSON_PATH"); // Example: "RAW,LINK,USD,LASTMARKET"
-        sendOperatorRequest(req, fee);
+		req._add("requestData", "{}"); // Example: '{"fsyms": "LINK", "tsyms": "USD"}'
+        req._add("path", "JSON_PATH"); // Example: "RAW,LINK,USD,LASTMARKET"
+        _sendOperatorRequest(req, fee);
     }
 
     event RequestFulfilled(bytes32 indexed requestId);
@@ -52,7 +52,7 @@ contract postBytes is ChainlinkClient, ConfirmedOwner {
     }
 
     function withdrawLink() public onlyOwner {
-        LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
+        LinkTokenInterface link = LinkTokenInterface(_chainlinkTokenAddress());
         require(
             link.transfer(msg.sender, link.balanceOf(address(this))),
             "Unable to transfer"

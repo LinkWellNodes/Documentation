@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
@@ -24,7 +24,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     
         // The Chainlink token address and Oracle address vary by network. 
         // You may find the appropriate values for each network here: https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing
-        setChainlinkToken(ADD_CHAINLINK_TOKEN_ADDRESS_HERE);
+        _setChainlinkToken(ADD_CHAINLINK_TOKEN_ADDRESS_HERE);
         setOracleAddress(ADD_ORACLE_ADDRESS_HERE);
         
         setJobId("ADD_JOB_ID_HERE");
@@ -34,26 +34,26 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     // Send a request to the Chainlink oracle
     function request() public {
     
-        Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfill.selector);
+        Chainlink.Request memory req = _buildOperatorRequest(jobId, this.fulfill.selector);
         
         // DEFINE THE REQUEST PARAMETERS (example)
-        req.add('method', 'GET');
+        req._add('method', 'GET');
         # Location key may be determined via the AccuWeather Location API here: https://developer.accuweather.com/accuweather-locations-api/apis
         # Example locationKey for latitude 38.569723 and longitude -103.229807 is 332243
-        req.add('url', 'http://dataservice.accuweather.com/currentconditions/v1/{location_key}?apikey={your_key}');
-        req.add('headers', '');
-        req.add('body', '');
-        req.add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
+        req._add('url', 'http://dataservice.accuweather.com/currentconditions/v1/{location_key}?apikey={your_key}');
+        req._add('headers', '');
+        req._add('body', '');
+        req._add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
         // curl -k 'https://api.accuweather.com/currentconditions/v1/335315.json?apikey={your key}' --request 'GET' --header 'content-type: application/json'
         
         // PROCESS THE RESULT (example)
-        req.add('path', '0,Temperature,Imperial,Value');
-        req.addInt('multiplier', 10 ** 18);
+        req._add('path', '0,Temperature,Imperial,Value');
+        req._addInt('multiplier', 10 ** 18);
 
         // Send the request to the Chainlink oracle        
-        sendOperatorRequest(req, fee);
+        _sendOperatorRequest(req, fee);
     }
 
     uint256 public response;
@@ -69,7 +69,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     // Update oracle address
     function setOracleAddress(address _oracleAddress) public onlyOwner {
         oracleAddress = _oracleAddress;
-        setChainlinkOracle(_oracleAddress);
+        _setChainlinkOracle(_oracleAddress);
     }
     function getOracleAddress() public view onlyOwner returns (address) {
         return oracleAddress;
@@ -95,7 +95,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     }
 
     function withdrawLink() public onlyOwner {
-        LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
+        LinkTokenInterface link = LinkTokenInterface(_chainlinkTokenAddress());
         require(
             link.transfer(msg.sender, link.balanceOf(address(this))),
             "Unable to transfer"

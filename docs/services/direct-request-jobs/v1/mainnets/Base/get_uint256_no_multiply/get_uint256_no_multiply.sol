@@ -6,7 +6,7 @@
  * DO NOT USE THIS CODE IN PRODUCTION.
  */
 
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
@@ -20,23 +20,23 @@ contract getUint256 is ChainlinkClient, ConfirmedOwner {
     event requestUint256Fulfilled(bytes32 indexed requestId, uint256 volume);
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0x88038752750D7717a19F2A681eF75e65Fb714f1E);
-        setChainlinkOracle(<oracle address>);
+        _setChainlinkToken(0x88038752750D7717a19F2A681eF75e65Fb714f1E);
+        _setChainlinkOracle(<oracle address>);
         jobId = "65cfa14a158540e1a8a94f9a33163839";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
     }    
 
     function requestUint256Data() public returns (bytes32 requestId) {
-        Chainlink.Request memory req = buildOperatorRequest(
+        Chainlink.Request memory req = _buildOperatorRequest(
             jobId,
             this.fulfillUint256.selector
         );
-        req.add(
+        req._add(
             "get",
             "API_URL" // Example: https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD
         );
-        req.add("path", "JSON_PATH"); // Example: RAW,ETH,USD,VOLUME24HOUR
-        return sendOperatorRequest(req, fee);
+        req._add("path", "JSON_PATH"); // Example: RAW,ETH,USD,VOLUME24HOUR
+        return _sendOperatorRequest(req, fee);
     }
 
     function fulfillUint256(
@@ -51,7 +51,7 @@ contract getUint256 is ChainlinkClient, ConfirmedOwner {
      * Allow withdraw of Link tokens from the contract
      */
     function withdrawLink() public onlyOwner {
-        LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
+        LinkTokenInterface link = LinkTokenInterface(_chainlinkTokenAddress());
         require(
             link.transfer(msg.sender, link.balanceOf(address(this))),
             "Unable to transfer"

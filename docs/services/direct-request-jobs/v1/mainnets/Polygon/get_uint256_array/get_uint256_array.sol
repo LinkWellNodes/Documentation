@@ -6,7 +6,7 @@
  * DO NOT USE THIS CODE IN PRODUCTION.
  */
 
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
@@ -19,8 +19,8 @@ contract getUint256Array is ChainlinkClient, ConfirmedOwner {
   uint256 private fee;
     
   constructor() ConfirmedOwner(msg.sender) {
-    setChainlinkToken(0xb0897686c545045aFc77CF20eC7A532E3120E0F1);
-    setChainlinkOracle(<oracle address>);
+    _setChainlinkToken(0xb0897686c545045aFc77CF20eC7A532E3120E0F1);
+    _setChainlinkOracle(<oracle address>);
     jobId = "9a2ba54374f34184bdc6390db3171994";
     fee = ((15 * LINK_DIVISIBILITY) / 100); // 0.15 LINK (varies by network and job)
   }    
@@ -29,10 +29,10 @@ contract getUint256Array is ChainlinkClient, ConfirmedOwner {
     public
     onlyOwner
   {
-    Chainlink.Request memory req = buildOperatorRequest(jobId, this.fulfillUint256Array.selector);
-    req.add("get", "API_URL"); // Example: https://api.binance.us/api/v3/depth?symbol=ETHUSD
-    req.add("path", "JSON_PATH"); // Example: bids,0
-    sendOperatorRequest(req, fee);
+    Chainlink.Request memory req = _buildOperatorRequest(jobId, this.fulfillUint256Array.selector);
+    req._add("get", "API_URL"); // Example: https://api.binance.us/api/v3/depth?symbol=ETHUSD
+    req._add("path", "JSON_PATH"); // Example: bids,0
+    _sendOperatorRequest(req, fee);
   }
 
   event RequestFulfilledArray(bytes32 indexed requestId, uint256[] _uint256Array);

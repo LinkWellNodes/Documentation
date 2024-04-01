@@ -72,7 +72,7 @@ For **mainnet** chains, please wait several hours after filling out our [Getting
 
 **Execute your request**:
 
-1. From your IDE (ie, Remix) trigger your contract's `request()` function (also called the `transferAndCall()` or `sendOperatorRequest()` function).
+1. From your IDE (ie, Remix) trigger your contract's `request()` function (also called the `transferAndCall()` or `_sendOperatorRequest()` function).
 1. Once triggered, your contract will emit an `OracleRequest` event, which will get picked up by one of our off-chain oracle nodes. On **mainnets**, the appropriate amount of LINK token will simultaneously be sent to the oracle contract as a form of payment.
 1. After detecting the `OracleRequest` event, one of our oracle nodes will use the emitted data to perform the designated job. This typically involves an HTTP request to an API endpoint for data retrieval.
 1. Once the data has been retrieved, parsed, and converted into a blockchain compatible format, our oracle node executes a blockchain transaction against the oracle contract, which in turn writes the data back to your consumer contract via its `fulfill()` function.

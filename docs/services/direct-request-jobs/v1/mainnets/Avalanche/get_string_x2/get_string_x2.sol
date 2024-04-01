@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
@@ -27,29 +27,29 @@ contract getStringx2 is ChainlinkClient, ConfirmedOwner {
     event requestStringFulfilled(bytes32 indexed requestId, string str1, string str2);
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0x5947BB275c521040051D82396192181b413227A3);
-        setChainlinkOracle(<oracle address>);
+        _setChainlinkToken(0x5947BB275c521040051D82396192181b413227A3);
+        _setChainlinkOracle(<oracle address>);
         jobId = "be46cb8070c14cb7ad058b29f127ec6b";
         fee = ((15 * LINK_DIVISIBILITY) / 100); // 0.15 LINK (varies by network and job)
     }
 
     function requestStringData() public returns (bytes32 requestId) {
-        Chainlink.Request memory req = buildOperatorRequest(
+        Chainlink.Request memory req = _buildOperatorRequest(
             jobId,
             this.fulfillString.selector
         );       
-        req.add(
+        req._add(
             "url1", 
             "API_URL" // Example: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=1
         );
-        req.add("path1", "JSON_PATH"); // Example: 0,id
-        req.add(
+        req._add("path1", "JSON_PATH"); // Example: 0,id
+        req._add(
             "url2", 
             "API_URL" // Example: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=2
         );
-        req.add("path2", "JSON_PATH"); // Example: 1,id        
+        req._add("path2", "JSON_PATH"); // Example: 1,id        
         // Sends the request
-        return sendOperatorRequest(req, fee);
+        return _sendOperatorRequest(req, fee);
     }
 
     function fulfillString(
@@ -63,7 +63,7 @@ contract getStringx2 is ChainlinkClient, ConfirmedOwner {
     }
 
     function withdrawLink() public onlyOwner {
-        LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
+        LinkTokenInterface link = LinkTokenInterface(_chainlinkTokenAddress());
         require(
             link.transfer(msg.sender, link.balanceOf(address(this))),
             "Unable to transfer"

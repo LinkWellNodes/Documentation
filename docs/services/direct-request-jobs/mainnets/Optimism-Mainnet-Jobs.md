@@ -833,7 +833,7 @@ curl "https://httpbin.org/post" \
  --request 'POST' \
  --header 'content-type: application/json' \
  --header 'set-cookie: sid=14A52' \
- req.add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
+ req._add('body', '{"data":[[false,false,true],[false,true,true],[true,false,true]]}');
 ```
 
 #### 2. **Analyze the response**:

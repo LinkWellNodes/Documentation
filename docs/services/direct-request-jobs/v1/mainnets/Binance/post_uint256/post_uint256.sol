@@ -6,7 +6,7 @@
  * DO NOT USE THIS CODE IN PRODUCTION.
  */
 
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
@@ -21,27 +21,27 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
 
     
     constructor() ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0x404460C6A5EdE2D891e8297795264fDe62ADBB75);
-        setChainlinkOracle(<oracle address>);
+        _setChainlinkToken(0x404460C6A5EdE2D891e8297795264fDe62ADBB75);
+        _setChainlinkOracle(<oracle address>);
         jobId = "b090204b16644030844a6e91932a7626";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 LINK (varies by network and job)
     }    
 
     function postUint256() public {
-        Chainlink.Request memory req = buildOperatorRequest(
+        Chainlink.Request memory req = _buildOperatorRequest(
             jobId,
             this.fulfillUint256.selector
         );       
         // The URL which to send this request
-        req.add("post", "API_URL"); // Example: "https://min-api.cryptocompare.com/data/price"       
+        req._add("post", "API_URL"); // Example: "https://min-api.cryptocompare.com/data/price"       
         // Request body | cannot be an empty string ("{}" is OK)
-		req.add("requestData", '{ "FIELD1": "VALUE1", "FIELD2": "VALUE2" }'); // Example: {"fsym": "ETH", "tsyms": "USD"}
+		req._add("requestData", '{ "FIELD1": "VALUE1", "FIELD2": "VALUE2" }'); // Example: {"fsym": "ETH", "tsyms": "USD"}
         // JSON PATH
-        req.add("path", "JSON_PATH"); // Example: "USD"
+        req._add("path", "JSON_PATH"); // Example: "USD"
         // The Uint256 Multiplier
         int256 timesAmount = 100;
-        req.addInt("times", timesAmount);
-        sendOperatorRequest(req, fee);
+        req._addInt("times", timesAmount);
+        _sendOperatorRequest(req, fee);
     }
 
     function fulfillUint256(
@@ -53,7 +53,7 @@ contract postUint256 is ChainlinkClient, ConfirmedOwner {
     }
 
     function withdrawLink() public onlyOwner {
-        LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
+        LinkTokenInterface link = LinkTokenInterface(_chainlinkTokenAddress());
         require(
             link.transfer(msg.sender, link.balanceOf(address(this))),
             "Unable to transfer"
