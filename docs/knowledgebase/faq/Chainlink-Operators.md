@@ -24,6 +24,16 @@ The following is a list of frequently-asked questions and answers collected from
 
 ## General Topics
 
+### Where can I find a Chainlink oracle?
+
+While **market.link** was previously the go-to directory for public Chainlink oracle and job listings, this website has since been deprecated, and will soon be migrated to Dune Analytics. In the meantime, we aren't currently aware of any centralized directory for Chainlink oracles.
+
+:::info
+LinkWell Nodes offers custom Chainlink jobs / data feeds on over **12 testnets** and **14 mainnets**. To get started making your first request, feel free to visit our [Chainlink request documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
+
+There are many other Chainlink node operators who choose to host their own websites listing their Chainlink service offerings. To find them, a decent approach might be to perform a Google search for 'Chainlink node operator' to see what job offerings they may have!
+
 ### Can anyone run a Chainlink node?
 
 Anyone can run a Chainlink node, as the code is open-source and easily deployable on almost any infrastructure. 

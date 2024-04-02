@@ -7,7 +7,7 @@ description: Write internet data to your smart contract on Ethereum, Polygon, Ar
 
 The following documentation allows you to retrieve any custom, real-world data from any internet-based API (using Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality), and write it to your testnet blockchain smart contract or Web3 dApp. 
 
-Please use the links below to learn how to initiate an oracle request from your smart contract. If you run into any trouble, we are here to help! Head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest service.
+Please use the links below to learn how to build your first Chainlink request. If you run into any trouble, we recommend joining our [Discord server](https://discord.gg/Xs6SjqVPUA) for help.
 
 :::info
 The fee for all of our testnet data feeds is **0 LINK** (free).

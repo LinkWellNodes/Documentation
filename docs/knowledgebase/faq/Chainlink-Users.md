@@ -24,6 +24,16 @@ The following is a list of frequently-asked questions and answers collected from
 
 ## General Topics
 
+### Where can I find a Chainlink oracle?
+
+While **market.link** was previously the go-to directory for public Chainlink oracle and job listings, this website has since been deprecated, and will soon be migrated to Dune Analytics. In the meantime, we aren't currently aware of any centralized directory for Chainlink oracles.
+
+:::info
+LinkWell Nodes offers custom Chainlink jobs / data feeds on over **12 testnets** and **14 mainnets**. To get started making your first request, feel free to visit our [Chainlink request documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
+
+There are many other Chainlink node operators who choose to host their own websites listing their Chainlink service offerings. To find them, a decent approach might be to perform a Google search for 'Chainlink node operator' to see what job offerings they may have!
+ 
 ### What chains does Chainlink support?
 
 The chains that Chainlink supports can be viewed in the Chainlink documentation [here](https://docs.chain.link/resources/link-token-contracts). Please note that this list of chains is subject to change over time as Chainlink adds or removes support for a given chain.
@@ -37,14 +47,6 @@ Please see the following answer in our Node Operator FAQ page [here](/knowledgeb
 Contract addresses for official Chainlink price feeds across the various blockchain networks supported by Chainlink can be found [here](https://docs.chain.link/data-feeds/price-feeds/addresses).
 
 If you can't find a price feed that works for you, we'd be happy to support your request. Please feel free to visit our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) to get started! You can also shop around for other node operators via the `#operator-requests` channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink).
-
-### Where can I find all node and job listings?
-
-While [market.link](https://market.link) was previously the go-to directory for public Chainlink node and job listings, this website has since been deprecated, and will eventually be migrated to Dune Analytics. In the meantime, we aren't currently aware of any centralized directory for Chainlink nodes / job offerings. 
-
-That being said, many node operators choose to host their own websites and documentation regarding their Chainlink job offerings. If you're in need of a node operator, a decent approach might be to perform a Google search for 'Chainlink node operator' to see what job offerings you might find!
-
-To view a comprehensive list of Chainlink jobs offered by LinkWell Nodes, visit our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 
 ### Where can I find an Oracle Address and Job ID for my smart contract?
 
