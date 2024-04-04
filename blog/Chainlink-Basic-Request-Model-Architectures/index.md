@@ -1,6 +1,6 @@
 ---
-title: "Chainlink’s Basic Request Model: Chainlink Oracle Architectures Explained"
-description: "Exploring Chainlink's Basic Request Model: How Web3 developers can utilize oracle networks for retrieving real-world data into their applications."
+title: "Chainlink Any API: Building a Custom Oracle Network"
+description: "Exploring Chainlink’s Basic Request Model: How Web3 developers can design Chainlink oracle networks for reliable real-world data in their apps."
 date: "2024-02-17"
 keywords: [chainlink, smart contracts, decentralized oracles, web3, blockchain, node operator]
 authors: [Ken]
