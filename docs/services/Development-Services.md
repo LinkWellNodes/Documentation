@@ -59,7 +59,7 @@ For customers looking for an enterprise-grade support experience:
 For customers seeking occasional answers to their implementation questions:
 
 * We offer one-off [support calls](#advisory-calls) at our standard advisory rate of **100 USD** per half-hour session.
-* We offer chat-based support through our [Discord server](https://discord.gg/Xs6SjqVPUA), at a rate of **100 USD** per day (payment in cryptocurrency preferred), within working hours. We will set up a private Discord channel with you for all of your support needs.
+* We offer chat-based support through our [Discord server](https://discord.gg/Xs6SjqVPUA), at a rate of **150 USD** per day (payment in cryptocurrency preferred), within working hours. We will set up a private Discord channel with you for all of your support needs.
 
 :::info
 **Ready to get started?** 
@@ -87,7 +87,7 @@ For our customers looking to use our oracle infrastructure on one of our testnet
 
 ### Miscellaneous smart contracts
 
-* For support with miscellaneous smart contracts, a development fee of **150 USD / hour** applies (payment in cryptocurrency preferred). Please feel free to [contact us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes") with the relevant details of your request.
+* For support with miscellaneous smart contracts (ie, non-Chainlink related), a development fee of **150 USD / hour** applies (payment in cryptocurrency preferred).
 
 :::info
 **Ready to get started?** 
