@@ -59,7 +59,7 @@ For customers looking for an enterprise-grade support experience:
 For customers seeking occasional answers to their implementation questions:
 
 * We offer one-off [support calls](#advisory-calls) at our standard advisory rate of **100 USD** per half-hour session.
-* We offer chat-based support through our [Discord server](https://discord.gg/Xs6SjqVPUA), at a rate of **150 USD** per day (payment in cryptocurrency preferred), within working hours. We will set up a private Discord channel with you for all of your support needs.
+* We offer chat-based support through our [Discord server](https://discord.gg/Xs6SjqVPUA), at a rate of **150 USD** per day (payment in cryptocurrency preferred), within working hours (EST timezone is typical for us). We will set up a dedicated private Discord channel with you to discuss all of your support needs.
 
 :::info
 **Ready to get started?** 
@@ -76,18 +76,18 @@ Need help building your smart contract? LinkWell Nodes offers custom smart contr
 For our customers looking to make paid requests to our oracle infrastructure on one of our mainnet blockchain(s):
 
 * We offer **free** basic smart contract development services for integrating your Web3 application with our Chainlink oracle infrastructure.
-* For advanced customization, a development fee of **150 USD / hour** applies (payment in cryptocurrency preferred).
+* For more advanced customization, a development fee of **150 USD / hour** applies (minimum 1 hour, payment in cryptocurrency preferred).
 
 ### Testnet-only customers
 
 For our customers looking to use our oracle infrastructure on one of our testnet blockchain(s) only:
 
 * We offer [smart contract templates](/services/direct-request-jobs/testnets) for integrating your Web3 application with our Chainlink oracle infrastructure.
-* For support, a development fee of **150 USD / hour** applies (payment in cryptocurrency preferred).
+* For smart contract support, a development fee of **150 USD / hour** applies (minimum 1 hour, payment in cryptocurrency preferred).
 
 ### Miscellaneous smart contracts
 
-* For support with miscellaneous smart contracts (ie, non-Chainlink related), a development fee of **150 USD / hour** applies (payment in cryptocurrency preferred).
+* For support with miscellaneous smart contracts (ie, non-Chainlink related), a development fee of **150 USD / hour** applies (minimum 1 hour, payment in cryptocurrency preferred).
 
 :::info
 **Ready to get started?** 
@@ -105,14 +105,14 @@ For our customers looking to make paid requests to our oracle infrastructure on 
 
 * We'll host your external adapter for **free** on our highly redundant infrastructure - all you'll pay is the typical per-transaction cost for using our oracle services.
 * We'll develop your basic external adapter for **free** within 1-2 business days. 
-* For advanced customization, a development fee of **150 USD / hour** applies (payment in cryptocurrency preferred).
+* For more advanced customization, a development fee of **150 USD / hour** applies (minimum 1 hour, payment in cryptocurrency preferred).
 
 #### Testnet-only customers
 
 For our customers looking to use our oracle infrastructure on one of our testnet blockchain(s) only:
 
-* An external adapter development fee of **150 USD / hour** applies (payment in cryptocurrency preferred).
-* Once you have paid us for development, we will host your external adapter on our highly redundant infrastructure for **free**.
+* An external adapter development fee of **150 USD / hour** applies (minimum 1 hour, payment in cryptocurrency preferred).
+* Customers who have paid our development fee will be able to host their external adapter on our highly redundant infrastructure for **free**.
 
 :::info
 **Ready to get started?** 
