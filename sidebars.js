@@ -212,7 +212,7 @@ module.exports = {
     {
   	  type: 'doc',
   	  id: 'services/Development-Services',
-  	  label: 'Development Services',
+  	  label: 'Development & Support',
     },
     {
         type: 'html',
