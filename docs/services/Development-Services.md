@@ -45,10 +45,10 @@ For our customers looking to use our oracle infrastructure on one of our testnet
 
 For customers looking for an enterprise-grade support experience:
 
-* 24/7 on-call support
+* Dedicated on-call support channel with an 8-hour response SLA (or your money back)
 * 24/7 monitoring of your data feed for issues 
-* Unlimited external adapter development support
-* Unlimited smart contract implementation support
+* External adapter development support
+* Smart contract implementation support
 * One 30-minute meeting per month
 * Our monthly rate for this plan is **250 USD** (payment in cryptocurrency preferred)
 
@@ -59,7 +59,7 @@ For customers looking for an enterprise-grade support experience:
 For customers seeking occasional answers to their implementation questions:
 
 * We offer one-off [support calls](#advisory-calls) at our standard advisory rate of **100 USD** per half-hour session.
-* We offer chat-based support through our [Discord server](https://discord.gg/Xs6SjqVPUA), at a rate of **150 USD** per day (payment in cryptocurrency preferred), within working hours (EST timezone is typical for us). We will set up a dedicated private Discord channel with you to discuss all of your support needs.
+* We also offer chat-based support through our [Discord server](https://discord.gg/Xs6SjqVPUA), at a rate of **150 USD** per 24-hour period (payment in cryptocurrency preferred), centered around our working hours (EST timezone is typical for us). We will set up a dedicated private Discord channel with you to discuss all of your support needs. If your questions are outside our area of expertise, we'll give your money back.
 
 :::info
 **Ready to get started?** 
