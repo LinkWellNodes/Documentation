@@ -140,8 +140,8 @@ module.exports = {
               },
               {
   	            type: 'doc',
-  	            id: 'services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
-  	            label: 'Polygon Mumbai',
+  	            id: 'services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs',
+  	            label: 'Polygon Amoy',
               },
               {
   	            type: 'doc',
@@ -155,8 +155,8 @@ module.exports = {
               },
               {
   	            type: 'doc',
-  	            id: 'services/direct-request-jobs/testnets/zkSync-Goerli-Testnet-Jobs',
-  	            label: 'zkSync Goerli',
+  	            id: 'services/direct-request-jobs/testnets/zkSync-Sepolia-Testnet-Jobs',
+  	            label: 'zkSync Sepolia',
               }
           ]
         },

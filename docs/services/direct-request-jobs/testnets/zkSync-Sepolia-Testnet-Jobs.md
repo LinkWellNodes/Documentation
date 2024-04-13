@@ -1,17 +1,17 @@
 ---
-title: Chainlink Oracle Smart Contract Examples (Testnets)
-description: Connect your smart contract to our testnet Chainlink oracles running on ETH Sepolia, Polygon (MATIC) Amoy, Arbitrum, Avalanche Fuji, Base, Binance, Fantom, Optimism, and more.  
+title: zkSync Sepolia Testnet Oracle Addresses
+description: Connect your smart contract to the internet using our customizable Chainlink oracle data feeds running on the zkSync Sepolia testnet network.  
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Ethereum Sepolia Testnet Data Feeds
+# zkSync Sepolia Testnet Data Feeds
 
-Sepolia is a proof-of-stake testnet, and is the recommended default testnet for application development on Ethereum. Testnet ETH is used to pay for transactions on Sepolia. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link). Testnet ETH is available from several public [faucets](https://faucetlink.to/sepolia).
+zkSync Sepolia is the testnet for zkSync Era. Testnet ETH is used to pay for transactions on zkSync Sepolia testnet. Use the recommended [zkSync Bridges](https://zksync.io/explore#bridges) to transfer testnet ETH from Ethereum Sepolia to the zkSync Sepolia Testnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/).
 
-The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Ethereum Sepolia network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
+The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the zkSync Sepolia network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 ### Select the type of data that you need:
 
@@ -28,9 +28,13 @@ This job writes a single **uint256** object to your contract, which can store an
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
+| [<oracle address>](https://sepolia.explorer.zksync.io/<oracle address>) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -51,7 +55,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**.
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/uint256/uint256.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/uint256/uint256.sol).
 :::
 
 #### 1. Add the constructor:
@@ -59,20 +63,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/uint256/uint256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/uint256/uint256.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/uint256/uint256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/uint256/uint256.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/uint256/uint256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/uint256/uint256.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -88,7 +92,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
-This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 :::
 
 ### Still need more help?
@@ -156,9 +160,13 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
+| [<oracle address>](https://sepolia.explorer.zksync.io/<oracle address>) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -179,7 +187,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**.
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/uint256-array/uint256-array.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/uint256-array/uint256-array.sol).
 :::
 
 #### 1. Add the constructor:
@@ -187,20 +195,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/uint256-array/uint256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/uint256-array/uint256-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/uint256-array/uint256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/uint256-array/uint256-array.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/uint256-array/uint256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/uint256-array/uint256-array.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -216,7 +224,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
-This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 :::
 
 ### Still need more help?
@@ -296,9 +304,13 @@ This job writes a single **int256** object to your contract, which can store any
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
+| [<oracle address>](https://sepolia.explorer.zksync.io/<oracle address>) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -319,7 +331,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**.
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/int256/int256.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/int256/int256.sol).
 :::
 
 #### 1. Add the constructor:
@@ -327,20 +339,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/int256/int256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/int256/int256.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/int256/int256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/int256/int256.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/int256/int256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/int256/int256.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -356,7 +368,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
-This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 :::
 
 ### Still need more help?
@@ -437,9 +449,13 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
+| [<oracle address>](https://sepolia.explorer.zksync.io/<oracle address>) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -460,7 +476,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**.
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/int256-array/int256-array.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/int256-array/int256-array.sol).
 :::
 
 #### 1. Add the constructor:
@@ -468,20 +484,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/int256-array/int256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/int256-array/int256-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/int256-array/int256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/int256-array/int256-array.sol#L31-L51
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/int256-array/int256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/int256-array/int256-array.sol#L53-L61
 ```
 
 ### Need to send sensitive information?
@@ -497,7 +513,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
-This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 :::
 
 ### Still need more help?
@@ -577,9 +593,13 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
+| [<oracle address>](https://sepolia.explorer.zksync.io/<oracle address>) | 43309009a154495cb2ed794233e6ff56 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -599,7 +619,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**.
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/bool/bool.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/bool/bool.sol).
 :::
 
 #### 1. Add the constructor:
@@ -607,20 +627,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/bool/bool.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/bool/bool.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/bool/bool.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/bool/bool.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/bool/bool.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/bool/bool.sol#L52-L60
 ```
 
 ### Need to send sensitive information?
@@ -636,7 +656,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
-This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 :::
 
 ### Still need more help?
@@ -705,9 +725,13 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
+| [<oracle address>](https://sepolia.explorer.zksync.io/<oracle address>) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -727,7 +751,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**.
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/bool-array/bool-array.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/bool-array/bool-array.sol).
 :::
 
 #### 1. Add the constructor:
@@ -735,20 +759,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/bool-array/bool-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/bool-array/bool-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/bool-array/bool-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/bool-array/bool-array.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/bool-array/bool-array.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/bool-array/bool-array.sol#L52-L60
 ```
 
 ### Need to send sensitive information?
@@ -764,7 +788,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
-This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
 :::
 
 ### Still need more help?
@@ -836,9 +860,13 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
+| [<oracle address>](https://sepolia.explorer.zksync.io/<oracle address>) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -858,7 +886,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**.
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/string-bytes/string-bytes.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/string-bytes/string-bytes.sol).
 :::
 
 #### 1. Add the constructor:
@@ -866,20 +894,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/string-bytes/string-bytes.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/string-bytes/string-bytes.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/string-bytes/string-bytes.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/string-bytes/string-bytes.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/string-bytes/string-bytes.sol#L52-L65
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/string-bytes/string-bytes.sol#L52-L65
 ```
 
 ### Need to send sensitive information?
@@ -895,7 +923,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
-This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
 ::: 
 
 ### Still need more help?
@@ -972,9 +1000,13 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B](https://sepolia.etherscan.io/address/0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
+| [<oracle address>](https://sepolia.explorer.zksync.io/<oracle address>) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -994,7 +1026,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**.
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/string-bytes-array/string-bytes-array.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/string-bytes-array/string-bytes-array.sol).
 :::
 
 #### 1. Add the constructor:
@@ -1002,20 +1034,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/string-bytes-array/string-bytes-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/string-bytes-array/string-bytes-array.sol#L23-L28
 ```
 
 #### 2. Add your request function (example):
 The 'request' function defines the request parameters and sends the request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/string-bytes-array/string-bytes-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/string-bytes-array/string-bytes-array.sol#L30-L50
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Ethereum-Sepolia/string-bytes-array/string-bytes-array.sol#L52-L69
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/zkSync-Sepolia/string-bytes-array/string-bytes-array.sol#L52-L69
 ```
 
 ### Need to send sensitive information?
@@ -1031,7 +1063,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
 
 :::caution 
-This job has a configured gas limit of **500,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
 :::
 
 ### Still need more help?

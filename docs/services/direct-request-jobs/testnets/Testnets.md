@@ -21,9 +21,9 @@ The fee for all of our testnet data feeds is **0 LINK** (free).
 * ## [Ethereum Sepolia Testnet](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs)
 * ## [Fantom Testnet](/services/direct-request-jobs/testnets/Fantom-Testnet-Jobs)
 * ## [Optimism Sepolia Testnet](/services/direct-request-jobs/testnets/Optimism-Sepolia-Testnet-Jobs)
-* ## [Polygon Mumbai Testnet](/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs)
+* ## [Polygon Amoy Testnet](/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs)
 * ## [Scroll Sepolia Testnet](/services/direct-request-jobs/testnets/Scroll-Sepolia-Testnet-Jobs)
-* ## [zkSync Goerli Testnet](/services/direct-request-jobs/testnets/zkSync-Goerli-Testnet-Jobs)
+* ## [zkSync Sepolia Testnet](/services/direct-request-jobs/testnets/zkSync-Sepolia-Testnet-Jobs)
 * ## [Polygon zkEVM Testnet](/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet-Jobs)
 
 ### Troubleshooting

@@ -226,7 +226,7 @@ If you can't access the GUI of your Chainlink node:
 
 Typically, when a Chainlink job is stuck at the final submit task, the issue is that you forgot to fund the Chainlink node address with the gas token for the chain you are running on. Please note that the Chainlink node address is different and separate from the oracle/operator contract that the node interacts with. The Chainlink node address can be found in the Chainlink GUI, or listed on the CLI via Chainlink's command-line interface. 
 
-As an example, if you are deploying a Chainlink node on Polygon's Mumbai testnet, you would need to send the testnet MATIC token to your Chainlink node's wallet address. This is a requirement for completing jobs, as the Chainlink node requires the respective chain's native gas token for submitting response transactions on-chain.
+As an example, if you are deploying a Chainlink node on Polygon's Amoy testnet, you would need to send the testnet MATIC token to your Chainlink node's wallet address. This is a requirement for completing jobs, as the Chainlink node requires the respective chain's native gas token for submitting response transactions on-chain.
 
 ### Why is my oracle transaction failing due to an 'out of gas' error?
 
