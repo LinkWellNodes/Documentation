@@ -28,9 +28,13 @@ This job writes a single **uint256** object to your contract, which can store an
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
+| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -154,11 +158,15 @@ This job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the inte
 This job writes a single **uint256[]** object to your contract, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
 :::
 
-### Request metadata
+ ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
+| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -296,9 +304,13 @@ This job writes a single **int256** object to your contract, which can store any
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
+| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -437,9 +449,13 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
+| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -577,9 +593,13 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
+| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 43309009a154495cb2ed794233e6ff56 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -705,9 +725,13 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
+| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -836,9 +860,13 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
+| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
@@ -972,9 +1000,13 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
+| [<amoy oracle address>](https://Amoy.polygonscan.com/address/<amoy oracle address>) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK | -->
+
+| Oracle Address and Job ID | Request Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
 ### Request parameters
 
