@@ -268,6 +268,10 @@ const config = {
               from: '/services/jobs/Direct-Request-Guide',
               to: '/knowledgebase/Direct-Request-Guide',
           },
+          {
+              from: '/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
+              to: '/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs',
+          },
         ],
         // Redirect entire paths
         createRedirects(existingPath) {
