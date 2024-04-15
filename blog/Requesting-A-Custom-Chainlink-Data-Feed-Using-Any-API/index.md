@@ -125,7 +125,7 @@ Although you may have already commenced the development of your smart contract b
 ```
     constructor() ConfirmedOwner(msg.sender) {
         _setChainlinkToken(0x0Fd9e8d3aF1aaee056EB9e802c3A762a667b1904);
-        setOracleAddress(<amoy oracle address>);
+        setOracleAddress(0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46);
         setJobId("a8356f48569c434eaa4ac5fcb4db5cc0");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }

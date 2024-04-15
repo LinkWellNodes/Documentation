@@ -22,7 +22,7 @@ contract LinkWellBoolConsumerContractExample is ChainlinkClient, ConfirmedOwner 
     
     constructor() ConfirmedOwner(msg.sender) {
         _setChainlinkToken(0x0Fd9e8d3aF1aaee056EB9e802c3A762a667b1904);
-        setOracleAddress(<amoy oracle address>);
+        setOracleAddress(0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46);
         setJobId("43309009a154495cb2ed794233e6ff56");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }

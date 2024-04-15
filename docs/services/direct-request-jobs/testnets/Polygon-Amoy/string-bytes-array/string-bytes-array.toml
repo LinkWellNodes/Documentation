@@ -4,7 +4,7 @@ name = "LW_MAT_EA_string-bytes-array"
 externalJobID = "07f761e2-6a28-4cb8-b7ed-67188dece6d4"
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "<amoy oracle address>"
+contractAddress = "0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46"
 evmChainID = "80002"
 minIncomingConfirmations = 5
 minContractPaymentLinkJuels = "0"
@@ -62,7 +62,7 @@ observationSource = """
 
     submit_tx   [
                 type="ethtx"
-                to="<amoy oracle address>"
+                to="0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46"
                 data="$(encode_tx)"
                 gasLimit="1000000"
                 ]
