@@ -30,7 +30,7 @@ This job writes a single **uint256** object to your contract, which can store an
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://Amoy.polygonscan.com/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://www.oklink.com/amoy/address/0xd36c6b1777c7f3db1b3201bdd87081a9045b7b46) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
 
 <!-- | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -166,7 +166,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://Amoy.polygonscan.com/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://www.oklink.com/amoy/address/0xd36c6b1777c7f3db1b3201bdd87081a9045b7b46) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
 
 
 ### Request parameters
@@ -307,7 +307,7 @@ This job writes a single **int256** object to your contract, which can store any
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://Amoy.polygonscan.com/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://www.oklink.com/amoy/address/0xd36c6b1777c7f3db1b3201bdd87081a9045b7b46) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
 
 <!-- | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -452,7 +452,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://Amoy.polygonscan.com/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://www.oklink.com/amoy/address/0xd36c6b1777c7f3db1b3201bdd87081a9045b7b46) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
 
 <!-- | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -596,7 +596,7 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://Amoy.polygonscan.com/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://www.oklink.com/amoy/address/0xd36c6b1777c7f3db1b3201bdd87081a9045b7b46) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
 
 <!-- | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -728,7 +728,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://Amoy.polygonscan.com/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://www.oklink.com/amoy/address/0xd36c6b1777c7f3db1b3201bdd87081a9045b7b46) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
 
 <!-- | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -863,7 +863,7 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://Amoy.polygonscan.com/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://www.oklink.com/amoy/address/0xd36c6b1777c7f3db1b3201bdd87081a9045b7b46) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
 
 <!-- | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
@@ -1003,7 +1003,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 | Oracle Address                             | Job ID                           | Request Fee              |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://Amoy.polygonscan.com/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://www.oklink.com/amoy/address/0xd36c6b1777c7f3db1b3201bdd87081a9045b7b46) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
 
 <!-- | Oracle Address and Job ID | Request Fee |
 |-------------------|----------|
