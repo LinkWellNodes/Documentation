@@ -12,6 +12,8 @@ tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, decentr
 
 ![Chainlink Blog- How Price Feeds Secure DeFi](./Header.webp "Chainlink Blog- How Price Feeds Secure DeFi")
 
+<!--truncate-->
+
 Smart contracts that opt out of Chainlink services such as price feeds resemble computers without internet access - highly restricted in capability.
 
 Many Web3 developers are completely unaware that they can build and integrate any Chainlink price feed into their Web3 application that they need. Chainlink provides a diverse selection of [official data feeds](https://data.chain.link/feeds), encompassing various data types like asset prices, reserve balances, NFT floor prices, and more. While these feeds cover a broad spectrum, Web3 developers sometimes require data that goes beyond Chainlink's existing data feed offerings. To cater to these specialized needs, Chainlink allows for the creation of custom price feeds.
@@ -27,8 +29,6 @@ In this article we will:
 1. Show you how to find a Chainlink oracle to support your price feed.
 
 1. Explore use cases for Chainlink price feeds.
-
-<!-- truncate -->
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/e75kwGzvtnI" frameborder="0" allowfullscreen></iframe></center>
 

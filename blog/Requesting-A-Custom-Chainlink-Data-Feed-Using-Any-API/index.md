@@ -9,11 +9,11 @@ tags: [chainlink, oracle, smart contract, web3, blockchain]
 
 ![Chainlink Any API Data Feed](./Header.webp "Chainlink Any API Data Feed")<center><small>*Credit: https://blog.chain.link/apis-smart-contracts-and-how-to-connect-them/*</small></center>
 
+<!--truncate-->
+
 Smart contracts that integrate Chainlink data feeds are far more capable than those that don't.
 
 Since its launch in 2017, Chainlink - the industry standard Web3 services platform - has curated an extensive array of [official data feeds](https://docs.chain.link/data-feeds), among a myriad of other powerful services, providing developers with a seamless integration of real-world information into their applications. However, the dynamic nature of Web3 applications often demands access to data beyond what official Chainlink feeds offer. This is where custom Chainlink [Any API](https://docs.chain.link/any-api/introduction) data feeds step in, catering to the unique requirements of diverse smart contract applications. The process for requesting a custom Any API Chainlink data feed, however, hasn't always been clearly defined.
-
-<!--truncate-->
 
 That's why we've gone through great lengths to make the process as seamless as possible for Web3 developers looking to integrate Chainlink's Any API capabilities.
 

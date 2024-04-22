@@ -28,16 +28,33 @@ h2 {
 	font-weight:400;
 	line-height:44px;
 }
+/* Blog directory headers */
+h2 > a[itemprop="url"] {
+	line-height:64px;
+}
 /* Blog titles and subtitles */
 article[itemprop="blogPost"] h1, 
 article[itemprop="blogPost"] h2 {
 	margin-top:0px !important;
+}
+article[itemprop="blogPost"] > footer > div > a {
+	font-size:24px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+article[itemprop="blogPost"] > footer > div > a::after {
+	content: " \2794" !important;
+	font-weight: 400;
 }
 /* MOBILE STYLES */
 @media screen and (max-width: 576px) {
   /* Blog titles and subtitles */
   h1, h2 {
     margin-top:24px !important;
+  }
+  /* Blog directory headers */
+  h2 > a[itemprop="url"] {
+    line-height:44px;
   }
   article[itemprop="blogPost"] h1,
   article[itemprop="blogPost"] h2 {

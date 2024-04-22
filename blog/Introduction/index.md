@@ -8,11 +8,11 @@ tags: [Chainlink, Splunk, AWS, oracles, web3]
 # LinkWell Nodes
 LinkWell Nodes is a U.S.-based Chainlink oracle. Our mission is to support Web3 developers in building a world powered by cryptographic truth.
 
-![LWN Logo](./LWN-Banner.jpg)
-
-It's hard to believe how far Chainlink has come in the span of just five years. From their first white paper in 2017 in which Chainlink proposed a solution to the oracle problem, a problem once thought unsolvable, but refers to the inherent inability of blockchains to access external data, to their recent announcement on their collaboration with SWIFT and 12+ financial institutions, Chainlink has slowly but surely been fulfilling their destiny of becoming a global standard.
+![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
 <!--truncate-->
+
+It's hard to believe how far Chainlink has come in the span of just five years. From their first white paper in 2017 in which Chainlink proposed a solution to the oracle problem, a problem once thought unsolvable, but refers to the inherent inability of blockchains to access external data, to their recent announcement on their collaboration with SWIFT and 12+ financial institutions, Chainlink has slowly but surely been fulfilling their destiny of becoming a global standard.
 
 From the start, Chainlink has kept their nose to the grindstone, caring little for media attention or community hype for the first several years, and instead focusing their efforts on researching, developing and building. Last year's SmartCon felt like an inflection point for Chainlink after former Google CEO Eric Schmidt's Fireside chat with Chainlink CEO Sergey Nazarov in which Eric pressured Sergey to just come out and announce Chainlink's true plan - for Chainlink to have a presence in virtually every aspect of Web3.
 

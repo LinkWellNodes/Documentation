@@ -9,13 +9,13 @@ tags: [chainlink, oracle, data, functions, any api, web3, blockchain]
 
 ![Chainlink Any API - Direct Request vs. Functions](./Header.webp "Chainlink Any API - Direct Request vs. Functions")
 
+<!--truncate-->
+
 **Direct Requests vs. Functions: How to decide?**
 
 Navigating the ever-evolving landscape of Chainlink and its integrations within the Web3 ecosystem can at times be daunting.
 
 Since its inception, Chainlink has evolved at a rapid rate. One of the original services provided by Chainlink's decentralized oracle network was [Direct Request jobs](https://docs.chain.link/any-api/introduction) (also known as "Any API") — Chainlink's first iteration of a solution to help bridge the gap between on-chain and off-chain data. While it worked effectively, there were inherent shortcomings that eventually prompted the release of [Chainlink Functions](https://docs.chain.link/chainlink-functions), marking an improvement in security, reliability, and self-service capabilities.
-
-<!-- truncate -->
 
 Yet, after the release of Functions, a lingering question remains:
 
