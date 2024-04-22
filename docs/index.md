@@ -6,27 +6,25 @@ slug: /
 
 # LinkWell Nodes Documentation
 
-**LinkWell Nodes is a U.S.-based Chainlink oracle. We provide APIs for writing any real-world data to your blockchain smart contract.**
+<lw-subtitle><lw-emphasis>LinkWell Nodes is a U.S.-based Chainlink oracle. </lw-emphasis>We provide APIs for writing any real-world data to your blockchain smart contract.</lw-subtitle>
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
 ## Customizable Chainlink Data Feeds
 
-Our highly redundant on-demand data feeds allow you to write custom data reliably from anywhere on the internet to your blockchain smart contracts. 
-
-Our documentation includes pricing info, as well as code examples showing how to implement our feeds into your smart contract or Web3 dApp:
+Our on-demand data feeds allow you to write custom data reliably from anywhere on the internet to your blockchain smart contracts. View pricing info, code examples, and more:
 
 - [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
 
 ## Development and Support Services
 
-Whether you need help writing your smart contract, or just need some sage advice regarding the architecture of your Web3 application, we've got you covered:
+For assistance writing your smart contract, or advice regarding the architecture of your Web3 application, we've got you covered:
 
 - [Development and Support Services](/services/Development-Services)
 
 ## Frequently Asked Questions (FAQ)
 
-Our FAQ provides answers to questions we've commonly seen throughout our extensive experience answering community-sourced questions in Chainlink's official Discord server:
+Browse answers to common questions we've seen throughout our experience supporting Chainlink's official Discord server:
 
 - [Chainlink User FAQ](/knowledgebase/faq/Chainlink-Users)
 - [Chainlink Oracle Operator FAQ](/knowledgebase/faq/Chainlink-Operators)

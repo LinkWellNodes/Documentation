@@ -26,14 +26,14 @@ LinkWell Nodes strives to be transparent about the level and quality of service 
 
 ## Data security
 
-* All data at rest is protected with **256-bit** encryption (or better).
+* All data at rest is protected with **256-bit** encryption (or better), and is replicated across multiple datacenters.
 * All data that leaves our internal network is **end-to-end encrypted**, including all in-transit data.
 * All infrastructure access points are secured by **2-factor authentication** (or better).
-* All infrastructure access and traffic is monitored **24/7** for security.
+* All infrastructure access and traffic is monitored and logged **24/7** for security.
 
 ## Data accuracy
 
-* LinkWell Nodes cannot guarantee of accuracy of the data returned by any singular API provider, as we function simply as the messenger. To minimize the risk of any data outages or inaccuracies, we recommend leveraging multiple data providers within your data feed, and performing an aggregation on the result. We are happy to provide assistance with this sort of implementation.
+* LinkWell Nodes cannot guarantee - and is not responsible for - the accuracy of any 3rd-party data provider. As such, we strongly recommend leveraging multiple data providers within your data feed, and performing an aggregation on the result. We are happy to provide assistance with this sort of implementation.
 
 ## Questions?
 
