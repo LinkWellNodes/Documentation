@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklinkwell_nodes_documentation=self.webpackChunklinkwell_nodes_documentation||[]).push([[5329],{5536:e=>{e.exports=JSON.parse('{"label":"price feed","permalink":"/blog/tags/price-feed","allTagsPath":"/blog/tags","count":2}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklinkwell_nodes_documentation=self.webpackChunklinkwell_nodes_documentation||[]).push([[8553],{7803:l=>{l.exports=JSON.parse('{"label":"chainlink oracle","permalink":"/blog/tags/chainlink-oracle","allTagsPath":"/blog/tags","count":2}')}}]);
