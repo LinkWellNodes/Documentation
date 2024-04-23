@@ -4,7 +4,7 @@ description: "Where to find a Chainlink node operator, oracle address, and job I
 date: "2024-04-22"
 image: https://docs.linkwellnodes.io/img/node-opp-oracle-article/
 keywords: [chainlink oracle, smart contracts, price feed, web3, blockchain, node operator]
-authors: [Ken]
+authors: [Ken, Derek]
 tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, node operator]
 ---
 
@@ -18,9 +18,6 @@ tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, node op
 Developers building Web3 applications are faced with a series of challenging hurdles — selecting the appropriate blockchain, maximizing their security, and integrating with off-chain data using oracle platforms like Chainlink.
 
 > **Looking for a Chainlink oracle address or job id?** View our [Chainlink data feeds documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data.
-
-[**Chainlink Oracle Addresses and Job IDs | LinkWell Nodes**
-*Chainlink oracle addresses and Job IDs to connect your smart contract to any API on the internet. Retrieve RWA prices…*docs.linkwellnodes.io](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)
 
 At LinkWell Nodes, we understand that staying updated on Chainlink’s services can be a challenge in its own right, let alone the task of finding and collaborating with a Chainlink node operator. In this article, we aim to use our extensive experience running Chainlink oracles to clarify these issues.
 
@@ -96,16 +93,14 @@ While there is no centralized directory of Chainlink node operators, there are s
 1. **Node Operator Websites:** Visiting the websites of various Chainlink oracles can offer a comprehensive view of their services offerings and expertise. A quick Google search for “**Chainlink oracle job ids**” may yield several results.
 
 > LinkWell Nodes offers bespoke blockchain oracle services on all major EVM mainnet and testnet blockchains.
+>
 > To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing).
 
-[**Chainlink Oracle Addresses and Job IDs | LinkWell Nodes**
-*Chainlink oracle addresses and Job IDs to connect your smart contract to any API on the internet. Retrieve RWA prices…*docs.linkwellnodes.io](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)
+2. **Chainlink Discord server:** Engaging with the Chainlink community in Chainlink’s official [Discord server](https://discord.com/invite/chainlink) is another great option for finding a Chainlink node operator who can serve your Web3 data needs.
 
-2.**Chainlink Discord server:** Engaging with the Chainlink community in Chainlink’s official [Discord server](https://discord.com/invite/chainlink) is another great option for finding a Chainlink node operator who can serve your Web3 data needs.
+3. **Social Media:** Many Chainlink oracles are active on social media channels such as [X](https://twitter.com/LinkWell_Nodes), [LinkedIn](https://www.linkedin.com/company/80269483/), and [Discord](https://discord.com/invite/Xs6SjqVPUA).
 
-3.**Social Media:** Many Chainlink oracles are active on social media channels such as [X](https://twitter.com/LinkWell_Nodes), [LinkedIn](https://www.linkedin.com/company/80269483/), and [Discord](https://discord.com/invite/Xs6SjqVPUA).
-
-4.**Analytics Platforms:** Various independent websites such as LinkPool’s Dune Analytics or Dextrac’s Prism application offer detailed information on the performance of the Chainlink Network, each decentralized oracle network, various node operators, and more.
+4. **Analytics Platforms:** Various independent websites such as LinkPool’s Dune Analytics or Dextrac’s Prism application offer detailed information on the performance of the Chainlink Network, each decentralized oracle network, various node operators, and more.
 
 ## 5. What to Look For in a Chainlink Oracle
 
@@ -132,6 +127,7 @@ Some additional factors to consider are:
 Working with a knowledgeable and competent Chainlink node operator can greatly streamline the process of requesting and building a custom data feed or Any API request pipeline, allowing you or your team to allocate resources more efficiently to your Web3 application. Furthermore, Chainlink node operators should ideally possess the expertise to assist in crafting your smart contract code, conducting code reviews, and suggesting gas optimization strategies within your smart contract. This not only saves time, but can also preserve valuable funds with each data request to the Chainlink oracle.
 
 > At LinkWell Nodes, we pride ourselves in delivering a top-tier, transparent, full-service customer experience.
+>
 > **Have a question about your Web3 project?** Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance.
 
 ## **6. Bonus: Chainlink’s Vision For a Decentralized Compute Marketplace**
@@ -156,7 +152,9 @@ Understanding your project’s specific needs, exploring various sources for pot
 The right operator will not only ensure the seamless integration of external data within your smart contract, but also save you time (and money), thereby contributing to the overall success of your Web3 project.
 
 > LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.
+>
 > Looking for a custom data feed? Head on over to our [documentation](https://docs.linkwellnodes.io/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
+>
 > Disclaimer: all views and opinions expressed in this article are strictly our own.
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
