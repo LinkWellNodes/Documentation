@@ -7,7 +7,7 @@ authors: [Ken]
 tags: [chainlink, oracle, smart contract, web3, blockchain]
 ---
 
-![Chainlink Any API Data Feed](./Header.webp "Chainlink Any API Data Feed")<center><small>*Credit: https://blog.chain.link/apis-smart-contracts-and-how-to-connect-them/*</small></center>
+![Chainlink Any API Data Feed](./Header.webp "Chainlink Any API Data Feed")<center><small>Credit: https://blog.chain.link/apis-smart-contracts-and-how-to-connect-them</small></center>
 
 <!--truncate-->
 
