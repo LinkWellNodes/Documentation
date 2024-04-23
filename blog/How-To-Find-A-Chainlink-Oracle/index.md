@@ -17,7 +17,7 @@ tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, node op
 
 Developers building Web3 applications are faced with a series of challenging hurdles — selecting the appropriate blockchain, maximizing their security, and integrating with off-chain data using oracle platforms like Chainlink.
 
-> **Looking for a Chainlink oracle address or job id?** View our [Chainlink data feeds documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data.
+> _**Looking for a Chainlink oracle address or job id?** View our [Chainlink data feeds documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data._
 
 At LinkWell Nodes, we understand that staying updated on Chainlink’s services can be a challenge in its own right, let alone the task of finding and collaborating with a Chainlink node operator. In this article, we aim to use our extensive experience running Chainlink oracles to clarify these issues.
 
@@ -78,7 +78,7 @@ There are many reasons why interacting directly with a Chainlink node operator (
   <img src="/img/chainlink-oracle/Custom_Chainlink_Flux_Aggregator.webp" alt="Building custom Chainlink oracle price feeds with Flux Aggregator" />
 </p>
 
-> Chainlink node operators can easily assist in this endeavor, enabling Web3 developers to design and build their own decentralized oracle networks. These networks can be customized with specific update thresholds to aggregate data for virtually any use case.
+> _Chainlink node operators can easily assist in this endeavor, enabling Web3 developers to design and build their own decentralized oracle networks. These networks can be customized with specific update thresholds to aggregate data for virtually any use case._
 
 **4. Full-Service Support:** Working directly with a node operator means a vastly-improved customer experience — especially for teams with limited technical expertise with blockchain oracles. A node operator can provide a [wide range of services](https://docs.linkwellnodes.io/services/Development-Services), including customer support, assistance integrating your smart contract, external adapter development, and monitoring / alerting you to potential issues.
 
@@ -92,9 +92,9 @@ While there is no centralized directory of Chainlink node operators, there are s
 
 1. **Node Operator Websites:** Visiting the websites of various Chainlink oracles can offer a comprehensive view of their services offerings and expertise. A quick Google search for “**Chainlink oracle job ids**” may yield several results.
 
-> LinkWell Nodes offers bespoke blockchain oracle services on all major EVM mainnet and testnet blockchains.
+> _LinkWell Nodes offers bespoke blockchain oracle services on all major EVM mainnet and testnet blockchains._
 >
-> To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing).
+> _To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)._
 
 2. **Chainlink Discord server:** Engaging with the Chainlink community in Chainlink’s official [Discord server](https://discord.com/invite/chainlink) is another great option for finding a Chainlink node operator who can serve your Web3 data needs.
 
@@ -126,9 +126,9 @@ Some additional factors to consider are:
 
 Working with a knowledgeable and competent Chainlink node operator can greatly streamline the process of requesting and building a custom data feed or Any API request pipeline, allowing you or your team to allocate resources more efficiently to your Web3 application. Furthermore, Chainlink node operators should ideally possess the expertise to assist in crafting your smart contract code, conducting code reviews, and suggesting gas optimization strategies within your smart contract. This not only saves time, but can also preserve valuable funds with each data request to the Chainlink oracle.
 
-> At LinkWell Nodes, we pride ourselves in delivering a top-tier, transparent, full-service customer experience.
+> _At LinkWell Nodes, we pride ourselves in delivering a top-tier, transparent, full-service customer experience._
 >
-> **Have a question about your Web3 project?** Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance.
+> _**Have a question about your Web3 project?** Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance._
 
 ## **6. Bonus: Chainlink’s Vision For a Decentralized Compute Marketplace**
 
@@ -151,10 +151,10 @@ Understanding your project’s specific needs, exploring various sources for pot
 
 The right operator will not only ensure the seamless integration of external data within your smart contract, but also save you time (and money), thereby contributing to the overall success of your Web3 project.
 
-> LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.
+> _LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink._
 >
-> Looking for a custom data feed? Head on over to our [documentation](https://docs.linkwellnodes.io/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
+> _Looking for a custom data feed? Head on over to our [documentation](https://docs.linkwellnodes.io/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!_
 >
-> Disclaimer: all views and opinions expressed in this article are strictly our own.
+> _Disclaimer: all views and opinions expressed in this article are strictly our own._
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
