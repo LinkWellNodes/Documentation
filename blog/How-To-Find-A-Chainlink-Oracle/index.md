@@ -10,7 +10,7 @@ tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, node op
 
 ## Where to find a Chainlink node operator, oracle address, and job ID for incorporating real-world data into your Web3 application.
 
-![What is a Chainlink Node Operator](/img/link-electric.webp "What is a Chainlink Node Operator")<center><small>Credit: https://dailyhodl.com</small></center>
+![What is a Chainlink Node Operator](/img/link-electric.webp "What is a Chainlink Node Operator")<center><small>Credit: [https://dailyhodl.com](https://dailyhodl.com/2022/01/06/chainlink-link-approaching-decision-time-according-to-crypto-analyst-benjamin-cowen-heres-why)</small></center>
 
 <!-- truncate -->
 
