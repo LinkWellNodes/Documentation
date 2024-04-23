@@ -36,7 +36,7 @@ There are many other Chainlink node operators who choose to host their own websi
 
 ### Can anyone run a Chainlink node?
 
-Anyone can run a Chainlink node, as the code is open-source and easily deployable on almost any infrastructure. 
+Anyone can run a Chainlink oracle node, as the code is open-source and easily deployable on almost any infrastructure. 
 
 If you are looking to make money running a Chainlink node, we recommend reading our [write-up](#is-running-a-chainlink-node-profitable) on this topic.
 
@@ -118,7 +118,7 @@ Learn more about the benefits and limitations of Chainlink Functions [here](/kno
 
 ### Is running a Chainlink node profitable?
 
-In order to earn LINK for serving data, you'll need to seek out customer(s) who are willing to pay for your services. In this way, running a Chainlink node is similar to running a traditional business, and requires a certain level of marketing, promotion, and lead generation efforts. This differs markedly from other blockchain node infrastructure - such as an Ethereum validator node - where you can earn passive income without any business development initiatives. 
+In order to earn LINK for serving data, you'll need to seek out customer(s) who are willing to pay for your services. In this way, running a Chainlink node is similar to running a traditional business, and requires a high level of marketing, promotion, and lead generation efforts. This differs markedly from other blockchain node infrastructure - such as an Ethereum validator node - where you can earn passive income without any business development initiatives. 
 
 You'll also need to factor in the costs of running a reliable mainnet infrastructure, which you can [learn more about here](#how-much-does-it-cost-to-run-a-chainlink-node).
 

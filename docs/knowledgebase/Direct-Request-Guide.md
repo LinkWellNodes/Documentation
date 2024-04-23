@@ -1,28 +1,28 @@
 ---
 title: Chainlink Direct Requests (Any API)
-description: Chainlink Direct Requests explained (A.K.A. Basic Requests or Any API), and a comparison to Chainlink Functions. What is a Chainlink oracle, and how does it work? 
+description: Chainlink's Any API explained, and a comparison to Chainlink Functions. What is a Chainlink oracle, and how does it work? 
 ---
 
-# Chainlink Direct Requests (Any API)
+<lw-subtitle>An in-depth guide to <lw-emphasis>Chainlink's Direct Request model</lw-emphasis>, including key terminology, and how to get started requesting data from us.</lw-subtitle> 
 
 ![Chainlink Direct Requests (Any API)](/img/chainlink-blue-header_1400x802.webp "Chainlink Direct Requests (Any API)")
 
 ## Overview
 
-Chainlink Direct Requests (also called [Basic Requests](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted), which power Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality) are a type of oracle request that allows your blockchain smart contract to request data directly from a given Chainlink oracle team. 
+Chainlink Direct Requests (also called [Basic Requests](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted), or [Any API](https://docs.chain.link/any-api/introduction)) are a type of oracle request that allows your blockchain smart contract to request data directly from a given Chainlink oracle team. 
 
 As compared to [Chainlink Functions](https://docs.chain.link/chainlink-functions), Direct Requests are convenient for the end-user in the following 3 ways:
 
 1. They support the greatest range of **data types**, **data sizes**, and **blockchain networks**.
-1. They require the **least amount of technical effort** to implement. The oracle team simply provides you with a `request` and `receive` function to place into your smart contract, leaving you free to focus on the development of the rest of your smart contract application.
 1. They are often the **cheapest option** for the end-user (allowing for negotiation with the specific node operator based on volume and request size). 
+1. They require the **least amount of technical effort** to implement. The oracle team simply provides you with a `request` and `receive` function to place into your smart contract, leaving you free to focus on the development of the rest of your smart contract application.
 
 As Direct Requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team with a proven track record.
 
 :::info
 **LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct-to-consumer data feeds in exchange for a fee. We offer free external adapter design services, as well as free development services for any efforts required to get your smart contract application up and running.
 <br/>
-You can read more about our direct request ('Any API') data feeds <a href='/services/direct-request-jobs/Jobs-and-Pricing'>here</a>, as well as our service-level guarantees <a href='/services/direct-request-jobs/Service-Level-Agreement'>here</a>.
+You can find our <b>direct request job IDs and oracle addresses</b> within our <a href='/services/direct-request-jobs/Jobs-and-Pricing'>Chainlink data feed documentation</a>, as well as our <a href='/services/direct-request-jobs/Service-Level-Agreement'>Service-Level Guarantee (SLA)</a>.
 :::
 
 ## Request Model

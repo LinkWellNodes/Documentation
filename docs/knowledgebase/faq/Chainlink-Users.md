@@ -26,21 +26,21 @@ The following is a list of frequently-asked questions and answers collected from
 
 ### Where can I find a Chainlink oracle?
 
-While **market.link** was previously the go-to directory for public Chainlink oracle and job listings, this website has since been deprecated, and will soon be migrated to Dune Analytics. In the meantime, we aren't currently aware of any centralized directory for Chainlink oracles.
+While **market.link** was previously the go-to directory for public Chainlink oracle and job listings, this website has since been deprecated, and will soon be migrated to Dune Analytics. In the meantime, there is no centralized directory for Chainlink oracles.
 
 :::info
 LinkWell Nodes offers custom Chainlink jobs / data feeds on over **12 testnets** and **14 mainnets**. To get started making your first request, feel free to visit our [Chainlink request documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 :::
 
-There are many other Chainlink node operators who choose to host their own websites listing their Chainlink service offerings. To find them, a decent approach might be to perform a Google search for 'Chainlink node operator' to see what job offerings they may have!
+For those interested in reading more about how to find a Chainlink oracle, we recommend reading our [blog post](/blog/How-To-Find-A-Chainlink-Oracle) on it.
  
 ### What chains does Chainlink support?
 
-The chains that Chainlink supports can be viewed in the Chainlink documentation [here](https://docs.chain.link/resources/link-token-contracts). Please note that this list of chains is subject to change over time as Chainlink adds or removes support for a given chain.
+The blockchain networks that Chainlink supports can be determined by viewing Chainlink's [LINK token contracts](https://docs.chain.link/resources/link-token-contracts). Please note that this list is subject to change over time as Chainlink adds or removes support for a given chain.
 
 ### Should I run my own Chainlink node?
 
-Please see the following answer in our Node Operator FAQ page [here](/knowledgebase/faq/Chainlink-Operators#should-i-run-my-own-chainlink-node).
+Please see the following answer in our Node Operator FAQ [here](/knowledgebase/faq/Chainlink-Operators#should-i-run-my-own-chainlink-node).
 
 ### How do I find a specific price feed?
 
