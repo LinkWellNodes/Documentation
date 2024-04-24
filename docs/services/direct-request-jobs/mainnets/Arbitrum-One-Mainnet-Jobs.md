@@ -39,7 +39,6 @@ This job writes a single **uint256** object to your contract, which can store an
 *&nbsp;**Fee notes**:
 - We offer discounts to our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
 - We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
-- Exact pricing will be determined after sending several testnet requests.
 
 ### Request parameters
 
@@ -176,7 +175,6 @@ This job writes a single **uint256[]** object to your contract, which can store 
 *&nbsp;**Fee notes**:
 - We offer discounts to our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
-- Exact pricing will be determined after sending several testnet requests.
 
 ### Request parameters
 
@@ -325,7 +323,6 @@ This job writes a single **int256** object to your contract, which can store any
 *&nbsp;**Fee notes**:
 - We offer discounts to our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
-- Exact pricing will be determined after sending several testnet requests.
 
 ### Request parameters
 
@@ -475,7 +472,6 @@ This job writes a single **int256[]** object to your contract, which can store a
 *&nbsp;**Fee notes**:
 - We offer discounts to our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
-- Exact pricing will be determined after sending several testnet requests.
 
 ### Request parameters
 
@@ -624,7 +620,6 @@ This job writes a single **bool** object to your contract, which can store a `tr
 *&nbsp;**Fee notes**:
 - We offer discounts to our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
-- Exact pricing will be determined after sending several testnet requests.
 
 ### Request parameters
 
@@ -761,7 +756,6 @@ This job writes a single **bool[]** object to your contract, which can store an 
 *&nbsp;**Fee notes**:
 - We offer discounts to our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
-- Exact pricing will be determined after sending several testnet requests.
 
 ### Request parameters
 
@@ -901,7 +895,6 @@ This job writes a single **bytes** object to your contract, which can readily be
 *&nbsp;**Fee notes**:
 - We offer discounts to our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
-- Exact pricing will be determined after sending several testnet requests.
 
 ### Request parameters
 
@@ -1046,7 +1039,6 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 *&nbsp;**Fee notes**:
 - We offer discounts to our high-volume customers. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
 - We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
-- Exact pricing will be determined after sending several testnet requests.
 
 ### Request parameters
 
