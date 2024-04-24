@@ -5,9 +5,13 @@ description: Our Chainlink custom data feeds connect your smart contract to any 
 
 # Chainlink Data Feeds
 
-Our Chainlink data feeds utilize Chainlink's **direct request** model, allowing you to write customized real-world data from anywhere on the internet ('Any API') to your blockchain smart contract or Web3 dApp. Our highly-redundant oracle infrastructure ensures that your data is delivered safely, securely, and reliably every time. 
+<lw-subtitle>Write ad-hoc <lw-emphasis>custom data</lw-emphasis> to your blockchain smart contract within seconds using our highly-redundant Chainlink oracle infrastructure.</lw-subtitle>
 
-Please use the links below to learn how to build your first Chainlink request. If you run into any trouble, we recommend joining our [Discord server](https://discord.gg/Xs6SjqVPUA) for help.
+![Custom Chainlink data feeds by LinkWell Nodes](/img/lw-banner_1080x485_Docs-DataFeeds.webp "Custom Chainlink data feeds by LinkWell Nodes")
+
+Our Chainlink data feeds utilize Chainlink's **direct request** model, allowing you to write real-world data from anywhere on the internet (ie, any API) to your blockchain smart contract or Web3 dApp. Simply trigger your smart contract's request function, and our highly-redundant oracle infrastructure will ensure that your data is delivered safely, securely, and reliably every time. 
+
+Please use the links below to build your first Chainlink request.
 
 ### View our data feeds:
 
@@ -16,11 +20,11 @@ Please use the links below to learn how to build your first Chainlink request. I
 
 ### How it works:
 
-The process for integrating a custom data feed into your smart contract or Web3 dApp is simple:
+Writing internet-based data to your smart contract or Web3 dApp involves 3 basic steps:
 
-1. Use our documentation (links above) to build your contract.
+1. Use the code samples provided within our documentation to build your smart contract.
 2. If deploying to mainnet, please fill out our [request form](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet oracle address.
-3. Execute your contract's `request` function! Our oracle will write your data to your smart contract within seconds.
+3. Execute your contract's `request` function. Our oracle will make a secure request to your designated API, parse the result, and write the corresponding data to the `fulfill` function of your smart contract within seconds.
 
 :::info
 We offer free smart contract development and testing services for our **mainnet customers**. If interested, please reach out to us via our [request form](https://linkwellnodes.io/Getting-Started.html), or [book a meeting](https://calendly.com/linkwell-nodes) with us to get started. 
@@ -35,11 +39,11 @@ We offer free smart contract development and testing services for our **mainnet 
 
 ## Learn More
 
-To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/knowledgebase/Direct-Request-Guide). You can also read more about it in Chainlink's official [Any API](https://docs.chain.link/any-api/introduction) documentation.
+To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/knowledgebase/Direct-Request-Guide).
 
 
 ## Need more help?
 
-* Check our [Custom Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+* Check our [Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 * Check our [Chainlink User FAQ](/knowledgebase/faq/Chainlink-Users "FAQ - Chainlink Data Consumers") for common questions asked by our customers.
 * Join our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance with your request. We are happy to support custom data requests!

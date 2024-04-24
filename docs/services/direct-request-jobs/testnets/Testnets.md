@@ -5,12 +5,12 @@ description: Write internet data to your smart contract on Ethereum, Polygon, Ar
 
 # Testnet Data Feeds
 
-The following documentation allows you to retrieve any custom, real-world data from any internet-based API (using Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality), and write it to your testnet blockchain smart contract or Web3 dApp. 
+The following documentation illustrates how to use our redundant Chainlink oracle infrastructure to retrieve custom, real-world data from any internet-based API, and write it to your testnet blockchain smart contract or Web3 dApp. 
 
-Please use the links below to learn how to build your first Chainlink request. If you run into any trouble, we recommend joining our [Discord server](https://discord.gg/Xs6SjqVPUA) for help.
+Please use the links below to build your first Chainlink request.
 
 :::info
-The fee for all of our testnet data feeds is **0 LINK** (free).
+The fee for all of our testnet data feeds is **0 LINK**.
 :::
 
 * ## [Arbitrum Sepolia Testnet](/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs)
@@ -28,7 +28,7 @@ The fee for all of our testnet data feeds is **0 LINK** (free).
 
 ### Troubleshooting
 
-Having technical difficulties with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having technical difficulties with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 ### Need more help?
 

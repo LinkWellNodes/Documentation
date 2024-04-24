@@ -58,7 +58,7 @@ If you're looking to get started using LinkWell Nodes as your oracle data provid
 Have a question? Please feel free to join our [Discord](https://discord.com/invite/Xs6SjqVPUA) server for immediate assistance!
 :::
 
-## Custom Data Feeds
+## Chainlink Direct Requests
 
 ### What is a Direct Request job?
 

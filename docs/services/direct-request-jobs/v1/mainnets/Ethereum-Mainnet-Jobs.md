@@ -15,10 +15,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | f4821ba2e8ae4ddba52ea6860887df96 | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -73,10 +73,10 @@ HTTP GET to any public API which parses the response and returns an unsigned int
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | 65cfa14a158540e1a8a94f9a33163839 | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -130,10 +130,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | 339ac1ad0a864ea7b94811de8a362a64 | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -188,10 +188,10 @@ HTTP GET to any public API which parses the response and returns a boolean (**bo
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | 2e0a430bcd2b482d8462fdcc5224fba1 | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -245,10 +245,10 @@ HTTP GET to any public API which parses the response and returns arbitrary-lengt
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | 5b48fe6ac244436bb5ad689ab64ef28b | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -302,10 +302,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | 1cc553d092584937bfe9be9a3dd4c1f6 | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -359,10 +359,10 @@ HTTP GET to any public API which parses the response and returns a sequence of c
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | be46cb8070c14cb7ad058b29f127ec6b | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -421,10 +421,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | fe82fb4d00794483a1cf5ed23bd5e1b7 | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -484,10 +484,10 @@ HTTP GET to any public API which parses the response, multiplies the result by a
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | 9a2ba54374f34184bdc6390db3171994 | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -541,10 +541,10 @@ HTTP GET to any public API which parses the response and returns an arbitrary-le
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | 332c0b46e57f49cd8c7d74cdbe5106ab | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -596,10 +596,10 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | b3390c03bfc24b42a0b0ab8051471bbb | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 
@@ -652,10 +652,10 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 
 ### Job details
 
-<!-- | Oracle Address                                    | JobID                            | Request Fee              | -->
+<!-- | Oracle Address                                    | JobID                            | Fee Per Request       | -->
 <!-- |--------------------------------------------|----------------------------------|-----------------------| -->
 <!-- | [<oracle address>](https://etherscan.io/address/<oracle address>) | b090204b16644030844a6e91932a7626 | 1.5 LINK                | -->
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 1.5 LINK |
 

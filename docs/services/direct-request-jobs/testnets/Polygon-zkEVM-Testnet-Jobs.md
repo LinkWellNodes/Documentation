@@ -28,11 +28,11 @@ This job writes a single **uint256** object to your contract, which can store an
 
 ### Request metadata
 
-<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Fee Per Request       |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://testnet-zkevm.polygonscan.com/address/<oracle address>) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK | -->
 
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -89,7 +89,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -160,11 +160,11 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 ### Request metadata
 
-<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Fee Per Request       |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://testnet-zkevm.polygonscan.com/address/<oracle address>) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK | -->
 
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -222,7 +222,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -305,11 +305,11 @@ This job writes a single **int256** object to your contract, which can store any
 
 ### Request metadata
 
-<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Fee Per Request       |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://testnet-zkevm.polygonscan.com/address/<oracle address>) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK | -->
 
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -367,7 +367,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -451,11 +451,11 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 ### Request metadata
 
-<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Fee Per Request       |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://testnet-zkevm.polygonscan.com/address/<oracle address>) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK | -->
 
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -513,7 +513,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -596,11 +596,11 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 ### Request metadata
 
-<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Fee Per Request       |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://testnet-zkevm.polygonscan.com/address/<oracle address>) | 43309009a154495cb2ed794233e6ff56 | 0 LINK | -->
 
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -657,7 +657,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -729,11 +729,11 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 ### Request metadata
 
-<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Fee Per Request       |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://testnet-zkevm.polygonscan.com/address/<oracle address>) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK | -->
 
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -790,7 +790,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
@@ -865,11 +865,11 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 ### Request metadata
 
-<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Fee Per Request       |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://testnet-zkevm.polygonscan.com/address/<oracle address>) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK | -->
 
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -926,7 +926,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
@@ -1006,11 +1006,11 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 ### Request metadata
 
-<!-- | Oracle Address                             | Job ID                           | Request Fee              |
+<!-- | Oracle Address                             | Job ID                           | Fee Per Request       |
 |--------------------------------------------|----------------------------------|-----------------------|
 | [<oracle address>](https://testnet-zkevm.polygonscan.com/address/<oracle address>) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK | -->
 
-| Oracle Address and Job ID | Request Fee |
+| Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -1067,7 +1067,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 
 ### Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   

@@ -8,7 +8,7 @@ slug: /
 
 <lw-subtitle><lw-emphasis>LinkWell Nodes is a U.S.-based Chainlink oracle. </lw-emphasis>We provide APIs for writing any real-world data to your blockchain smart contract.</lw-subtitle>
 
-![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
+![LinkWell Nodes - U.S.-based Chainlink oracle](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink oracle")
 
 ## Customizable Chainlink Data Feeds
 

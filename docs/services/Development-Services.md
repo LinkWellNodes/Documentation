@@ -42,13 +42,13 @@ Our specialities include:
 
 ## Customer Support
 
-Need help connecting to our Chainlink oracle services? LinkWell Nodes is happy to lend a helping hand in getting you up and running.
+Need help connecting to our Chainlink oracle services? LinkWell Nodes is happy to provide everything you need to get you up and running.
 
 ### Mainnet customers
 
 For our customers looking to make paid requests to our oracle infrastructure on mainnet blockchain(s):
 
-* We provide **free** basic assistance with your smart contract implementation.
+* We provide **free** basic assistance with your implementation.
 * For enterprise-grade support, please check out our [premium support](#premium-support) options. 
 
 ### Testnet-only customers

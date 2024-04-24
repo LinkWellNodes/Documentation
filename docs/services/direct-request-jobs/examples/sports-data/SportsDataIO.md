@@ -134,7 +134,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Troubleshooting
 
-Having trouble with your request? Check our [Custom Data Feeds FAQ](/knowledgebase/faq/Chainlink-Users#custom-data-feeds).
+Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
 This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, use the appropriate block explorer to navigate to the '**Oracle Address**' you entered into your consumer contract for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
