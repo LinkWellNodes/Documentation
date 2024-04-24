@@ -5,11 +5,9 @@ description: Our Chainlink custom data feeds connect your smart contract to any 
 
 # Chainlink Data Feeds
 
-<!--
 <lw-subtitle>Write ad-hoc <lw-emphasis>custom data</lw-emphasis> to your blockchain smart contract within seconds using our highly-redundant Chainlink oracle infrastructure.</lw-subtitle>
 
-![Custom Chainlink data feeds by LinkWell Nodes](/img/lw-banner_1080x485_Docs-DataFeeds.webp "Custom Chainlink data feeds by LinkWell Nodes")
--->
+![Custom Chainlink data feeds by LinkWell Nodes](/img/lw-banner_1080x485_Docs-DataFeeds-white.webp "Custom Chainlink data feeds by LinkWell Nodes")
 
 Our Chainlink data feeds utilize Chainlink's **direct request** model, allowing you to write customized real-world data from anywhere on the internet (ie, any API) into your blockchain smart contract or Web3 dApp. Simply trigger your smart contract's request function, and our highly-redundant oracle infrastructure will ensure that your data is delivered safely, securely, and reliably every time. 
 
