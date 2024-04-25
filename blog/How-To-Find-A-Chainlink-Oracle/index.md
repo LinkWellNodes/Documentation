@@ -40,7 +40,7 @@ Blockchain consensus mechanisms limit smart contracts from directly interacting 
 
 Hybrid smart contracts solve this by using oracles as middleware - enabling external data publishing & retrieval, as well as scalable off-chain computations. Oracles act as a two-way bridge, enhancing connectivity while providing security against single points of failure (SPOFs).
 
-**Chainlink** - the industry standard Web3 services platform - is the most widely used decentralized oracle network, securing over $21 billion in value (as of the time of this writing) across a diverse assortment of blockchains and use cases. It operates as an ecosystem of independent decentralized oracle networks, guaranteeing robust and versatile oracle services.
+**Chainlink** - the industry standard Web3 services platform - is the most widely used decentralized oracle network, securing over $10 trillion in value (as of the time of this writing) across a diverse assortment of blockchains and use cases. It operates as an ecosystem of independent decentralized oracle networks, guaranteeing robust and versatile oracle services.
 
 ## 2. What is a Chainlink Oracle (Node Operator)?
 
