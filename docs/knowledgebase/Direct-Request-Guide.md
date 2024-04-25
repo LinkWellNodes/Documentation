@@ -25,9 +25,9 @@ As Direct Requests place much of the burden of implementation on the oracle team
 You can find our <b>direct request job IDs and oracle addresses</b> within our <a href='/services/direct-request-jobs/Jobs-and-Pricing'>Chainlink data feed documentation</a>, as well as our <a href='/services/direct-request-jobs/Service-Level-Agreement'>Service-Level Guarantee (SLA)</a>.
 :::
 
-## Request Model
+## Direct Request Model
 
-Before diving deeper into the direct request architecture, it's important to understand the [basic request model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted) for Chainlink oracle requests. 
+Before diving deeper into the direct request architecture, it's important to understand the [direct (basic) request model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted) for Chainlink oracle requests. 
 
 **High-level request workflow**:
 

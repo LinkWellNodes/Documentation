@@ -13,18 +13,18 @@ Please use the links below to build your first Chainlink request.
 The fee for all of our testnet data feeds is **0 LINK**.
 :::
 
-* ## [Arbitrum Sepolia Testnet](/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs)
-* ## [Avalanche Fuji Testnet](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs)
-* ## [Base Sepolia Testnet](/services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs)
-* ## [Binance Testnet](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs)
-* ## [Celo Alfajores Testnet](/services/direct-request-jobs/testnets/Celo-Alfajores-Testnet-Jobs)
-* ## [Ethereum Sepolia Testnet](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs)
-* ## [Fantom Testnet](/services/direct-request-jobs/testnets/Fantom-Testnet-Jobs)
-* ## [Optimism Sepolia Testnet](/services/direct-request-jobs/testnets/Optimism-Sepolia-Testnet-Jobs)
-* ## [Polygon Amoy Testnet](/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs)
-* ## [Scroll Sepolia Testnet](/services/direct-request-jobs/testnets/Scroll-Sepolia-Testnet-Jobs)
-* ## [zkSync Sepolia Testnet](/services/direct-request-jobs/testnets/zkSync-Sepolia-Testnet-Jobs)
-* ## [Polygon zkEVM Testnet](/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet-Jobs)
+* ### [Arbitrum Sepolia Testnet](/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs)
+* ### [Avalanche Fuji Testnet](/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs)
+* ### [Base Sepolia Testnet](/services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs)
+* ### [Binance Testnet](/services/direct-request-jobs/testnets/Binance-Testnet-Jobs)
+* ### [Celo Alfajores Testnet](/services/direct-request-jobs/testnets/Celo-Alfajores-Testnet-Jobs)
+* ### [Ethereum Sepolia Testnet](/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs)
+* ### [Fantom Testnet](/services/direct-request-jobs/testnets/Fantom-Testnet-Jobs)
+* ### [Optimism Sepolia Testnet](/services/direct-request-jobs/testnets/Optimism-Sepolia-Testnet-Jobs)
+* ### [Polygon Amoy Testnet](/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs)
+* ### [Scroll Sepolia Testnet](/services/direct-request-jobs/testnets/Scroll-Sepolia-Testnet-Jobs)
+* ### [zkSync Sepolia Testnet](/services/direct-request-jobs/testnets/zkSync-Sepolia-Testnet-Jobs)
+* ### [Polygon zkEVM Testnet](/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet-Jobs)
 
 ### Troubleshooting
 

@@ -19,11 +19,11 @@ Our oracles can still support your request. Fill out our [request survey](https:
 
 **On this page**:
 
-* ## [Coin Price Data](#coin-price-data-examples)
-* ## [IPFS Data](#ipfs-data-examples)
-* ## [Sports Data](#sports-data-examples)
-* ## [Stock Price Data](#stock-price-data-examples)
-* ## [Weather Data](#weather-data-examples)
+* ### [Coin Price Data](#coin-price-data-examples)
+* ### [IPFS Data](#ipfs-data-examples)
+* ### [Sports Data](#sports-data-examples)
+* ### [Stock Price Data](#stock-price-data-examples)
+* ### [Weather Data](#weather-data-examples)
 
 ---
 

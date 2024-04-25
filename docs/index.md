@@ -14,26 +14,30 @@ slug: /
 
 Our on-demand data feeds allow you to write custom data reliably from anywhere on the internet to your blockchain smart contracts. View pricing info, code examples, and more:
 
-- [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
+<!--
+<button onClick={()=>window.location.href='/services/direct-request-jobs/Jobs-and-Pricing'} type="button" className="blueButton">Chainlink Data Feeds</button>
+-->
+
+- ## [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
 
 ## Development and Support Services
 
 For assistance writing your smart contract, or advice regarding the architecture of your Web3 application, we've got you covered:
 
-- [Development and Support Services](/services/Development-Services)
+- ## [Development and Support Services](/services/Development-Services)
 
 ## Frequently Asked Questions (FAQ)
 
 Browse answers to common questions we've seen throughout our experience supporting Chainlink's official Discord server:
 
-- [Chainlink User FAQ](/knowledgebase/faq/Chainlink-Users)
-- [Chainlink Oracle Operator FAQ](/knowledgebase/faq/Chainlink-Operators)
+- ## [Chainlink User FAQ](/knowledgebase/faq/Chainlink-Users)
+- ## [Chainlink Oracle Operator FAQ](/knowledgebase/faq/Chainlink-Operators)
 
 ## Blog
 
 Check out our blog, where where we cover topics ranging from Chainlink service offerings to designing, monitoring, and maintaining your own Chainlink node infrastructure!
 
-- [Blog](/blog) 
+- ## [Blog](/blog) 
 
 ## About Us
 
