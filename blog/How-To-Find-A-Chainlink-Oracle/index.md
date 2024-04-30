@@ -50,7 +50,7 @@ At the heart of this system is the **Chainlink oracle** - a runtime developed in
 
 While individual Chainlink oracles can directly handle requests (ie, using the [Any API / basic request model](https://docs.linkwellnodes.io/blog/Chainlink-Basic-Request-Model-Architectures)), they may also form decentralized oracle networks (DONs). These networks aggregate responses from multiple oracles and data sources, ultimately providing a highly secure, accurate, and reliable data feed.
 
-![Decentralized Oracle Network Price Feed Example](/img/chainlink-oracle/Chainlink_Oracle_Network.webp "Decentralized Oracle Network Price Feed Example")<center><small>Credit: https://chain.link/data-feed</small></center>
+![Decentralized Oracle Network Price Feed Example](/img/chainlink-oracle/Chainlink_Oracle_Network.webp "Decentralized Oracle Network Price Feed Example")<center><small>Credit: https://chain.link/data-feeds</small></center>
 
 ## 3. Why do I need a Chainlink oracle?
 

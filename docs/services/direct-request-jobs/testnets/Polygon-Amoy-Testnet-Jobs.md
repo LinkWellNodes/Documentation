@@ -9,7 +9,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Polygon Amoy Testnet Data Feeds
 
-Polygon Amoy is a testnet that approximates the Polygon (MATIC) Mainnet, and uses Ethereum's Sepolia testnet as its Layer 1 protocol. Testnet MATIC is used to pay for transactions on Polygon Amoy. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/amoy). Testnet MATIC is available at the [Polygon faucet](https://faucet.polygon.technology/).
+Polygon Amoy is a testnet that approximates the Polygon (MATIC) Mainnet, and uses Ethereum's Sepolia testnet as its Layer 1 protocol. Testnet MATIC is used to pay for transactions on Polygon Amoy. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/polygon-amoy). Testnet MATIC is available at the [Polygon faucet](https://faucet.polygon.technology/).
 
 The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Polygon Amoy network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
