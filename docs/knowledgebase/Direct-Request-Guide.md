@@ -3,9 +3,23 @@ title: Chainlink Direct Requests (Any API)
 description: Chainlink's Any API explained, and a comparison to Chainlink Functions. What is a Chainlink oracle, and how does it work? 
 ---
 
+import TOCInline from '@theme/TOCInline';
+
 <lw-subtitle>An in-depth guide to <lw-emphasis>Chainlink's Direct Request model</lw-emphasis>, including key terminology, and how to get started requesting data from us.</lw-subtitle> 
 
 ![Chainlink Direct Requests (Any API)](/img/chainlink-blue-header_1400x802.webp "Chainlink Direct Requests (Any API)")
+
+---
+
+**On this page**:
+
+<TOCInline
+  toc={toc.filter((node) => node.level >= 1)}
+  minHeadingLevel={2}
+  maxHeadingLevel={3}
+/>
+
+---
 
 ## Overview
 
@@ -25,9 +39,9 @@ As Direct Requests place much of the burden of implementation on the oracle team
 You can find our <b>direct request job IDs and oracle addresses</b> within our <a href='/services/direct-request-jobs/Jobs-and-Pricing'>Chainlink data feed documentation</a>, as well as our <a href='/services/direct-request-jobs/Service-Level-Agreement'>Service-Level Guarantee (SLA)</a>.
 :::
 
-## Direct Request Model
+## Direct Requests architecture
 
-Before diving deeper into the direct request architecture, it's important to understand the [direct (basic) request model](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted) for Chainlink oracle requests. 
+Before diving deeper into the direct request architecture, it's important to understand the [direct request (basic request)](https://docs.chain.link/architecture-overview/architecture-request-model?parent=gettingStarted) model for Chainlink oracle requests. 
 
 **High-level request workflow**:
 
@@ -39,14 +53,14 @@ Before diving deeper into the direct request architecture, it's important to und
   <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Chainlink Basic Request Model" />
 </p>
 
-## Key Terms
+### Key terms
 
 * **Consumer contract**: A smart contract deployed by you (the data requester / consumer) that orchestrates the sending / receiving of off-chain data to a Chainlink oracle. It contains logic to describe the data request, send the request, and receive the resulting data. Full examples of consumer contracts can be found in our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 * **Oracle contract** (also known as an **operator contract**): A smart contract deployed by the Chainlink node operator that orchestrates the sending / receiving of off-chain data between the consumer contract and the oracle node. All communication between the consumer contract and the oracle node passes through this contract.
 * **Oracle** (also known as a **Chainlink node**): An off-chain server that receives on-chain requests from the consumer contract (via the oracle contract), retrieves the requested data, and then delivers the result on-chain to the consumer contract, by execution of a blockchain transaction within the oracle contract.
 
 
-## Process Diagram
+### Process diagram
 The following diagram demonstrates the direct request workflow.
 
 **Key points**:
@@ -56,7 +70,7 @@ The following diagram demonstrates the direct request workflow.
 
 ![dr-workflow](/img/CL_DR_Model.webp) 
 
-## Requesting Data from LinkWell Nodes
+## Requesting data from LinkWell Nodes
 
 The following information details how to initiate an oracle request from within your smart contract, using the LinkWell Nodes oracle infrastructure. 
 

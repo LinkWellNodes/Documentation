@@ -1,5 +1,5 @@
 ---
-title: "How to Find a Chainlink Oracle: A Guide for Web3 Developers"
+title: "Finding a Chainlink Oracle: A Guide for Web3 Developers"
 description: "Where to find a Chainlink oracle, oracle address, job ID, or node operator for incorporating real-world data into your Web3 application."
 date: "2024-04-22"
 image: /img/node-opp-oracle-article/

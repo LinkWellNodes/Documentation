@@ -155,9 +155,9 @@ The Aggregator round system is a mechanism used by Chainlink to update data feed
 
 4. **Data Update:** The aggregated result is then updated on-chain, becoming the latest data point for the feed. This data then becomes available for smart contracts and other on-chain entities to use, ensuring they have access to accurate and timely information.
 
-## Steps For Developing a Custom Price Feed With FluxAggregator
+## Steps for developing a custom Price Feed with FluxAggregator
 
-While we won't dive into the exact deployment process for the FluxAggregator protocol in this article (stay tuned for a future release on this), we will provide the high-level steps.
+While we won't dive into the exact deployment process for the FluxAggregator protocol in this article (stay tuned for a future guide on this), we will provide the high-level steps.
 
 The steps for integrating a custom Chainlink price feed are:
 
@@ -209,7 +209,7 @@ While this article focuses primarily on price feeds, it may be helpful to offer 
 
 * Typically not as decentralized or trust-minimized as a price feed, although developers have the option to [utilize multiple Chainlink oracles in a DON](https://medium.com/linkwell-nodes/chainlinks-basic-direct-request-model-chainlink-oracle-architectures-explained-996e6e9d2bb4), if desired.
 
-## Where Can I Find a Chainlink Oracle?
+## Where can I find a Chainlink oracle?
 
 As of the time of writing, there lacks a centralized marketplace for Chainlink oracles.
 
@@ -219,7 +219,7 @@ Check out our article on [How to Find a Chainlink Oracle](/blog/How-To-Find-A-Ch
 
 Spending time to find the right Chainlink oracle will save you time (and money) down the road. Working with a knowledgeable and competent Chainlink node operator can greatly streamline the process of requesting and building a custom data feed, allowing you or your team to allocate resources more efficiently to your Web3 application.
 
-## Price Feed Example Use Cases
+## Price Feed example use cases
 
 ### Money Markets
 
