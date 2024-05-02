@@ -35,9 +35,9 @@ While this model can indeed be viewed as the "basic" building block of Chainlink
 
 In this article, we'll unravel the intricacies of Chainlink's basic request model, shedding light on the various architectures / design patterns that Web3 developers can implement to incorporate reliable, real-world data into their decentralized applications.
 
-> ***Who are we?***
-> LinkWell Nodes is a U.S.-based Chainlink oracle specializing in secure, decentralized, data feeds and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.
-> Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
+> _**Looking for a Chainlink oracle, oracle address, or job id?**_ 
+> 
+> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data.
 
 ## What is Chainlink's Basic Request (Direct Request) Model?
 

@@ -35,13 +35,9 @@ Since its launch in 2017, Chainlink - the industry standard Web3 services platfo
 
 That's why we've gone through great lengths to make the process as seamless as possible for Web3 developers looking to integrate Chainlink's Any API capabilities.
 
-> ** *Why Chainlink?* **
->
-> *Blockchain consensus mechanisms limit smart contracts from directly interacting with the internet, creating the blockchain [oracle problem](https://chain.link/education-hub/oracle-problem). This hurdle represents one of the greatest limitations to representing everyday contracts on the blockchain.*
->
-> *Hybrid smart contracts solve this by using oracles as middleware - enabling external data publishing & retrieval, and scalable off-chain computations. Oracles act as a two-way bridge, enhancing connectivity while providing security against single points of failure.*
->
-> *Chainlink - the industry standard Web3 services platform - is the most widely used decentralized oracle network, securing significant value across a diverse assortment of blockchains and use cases. It operates as an ecosystem with independent decentralized oracle networks, guaranteeing robust and versatile oracle services.*
+> _**Looking for a Chainlink oracle, oracle address, or job id?**_ 
+> 
+> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data.
 
 ## Prerequisites to making a Chainlink request
 

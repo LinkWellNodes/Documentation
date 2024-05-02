@@ -5,7 +5,7 @@ description: Our Chainlink custom data feeds connect your smart contract to any 
 
 # Chainlink Data Feeds
 
-<lw-subtitle><lw-emphasis>Write real-world data to your blockchain smart contract</lw-emphasis> within seconds using our highly-redundant Chainlink oracle infrastructure, from any API on the internet.</lw-subtitle>
+<lw-subtitle><lw-emphasis>Write real-world data to your blockchain smart contract</lw-emphasis> within seconds using our highly-redundant Chainlink oracle infrastructure and any API on the internet.</lw-subtitle>
 
 [![Custom Chainlink data feeds by LinkWell Nodes](/img/lw-banner_1080x676_Docs-DataFeeds-white.webp "Custom Chainlink data feeds by LinkWell Nodes")](/services/direct-request-jobs/mainnets/)
 
