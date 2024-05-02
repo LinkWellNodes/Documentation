@@ -1,17 +1,33 @@
 ---
-title: Chainlink Any API - Direct Request vs. Functions
-description: "Exploring the pros and cons of Chainlink's Direct Requests vs. Functions - A guide for Web3 developers for off-chain data retrieval and computation."
+title: "Chainlink Any API: Direct Request vs. Functions"
+description: "Exploring the pros and cons of Chainlink's Direct Requests vs. Functions - a guide for Web3 developers for off-chain data retrieval and computation."
 date: "2024-01-17"
 keywords: [chainlink, oracle, data, functions, any api, web3, blockchain]
 authors: [Ken]
 tags: [chainlink, oracle, data, functions, any api, web3, blockchain]
 ---
 
+import TOCInline from '@theme/TOCInline';
+
+<lw-blog-subtitle>Exploring the pros and cons of Chainlink's Direct Requests model - a guide to off-chain data retrieval and computation for Web3 developers.</lw-blog-subtitle>
+
 ![Chainlink Any API - Direct Request vs. Functions](./Header.webp "Chainlink Any API - Direct Request vs. Functions")
 
 <!--truncate-->
 
-**Direct Requests vs. Functions: How to decide?**
+---
+
+**On this page**:
+
+<TOCInline
+  toc={toc.filter((node) => node.level >= 1)}
+  minHeadingLevel={2}
+  maxHeadingLevel={2}
+/>
+
+---
+
+## Direct Requests vs. Functions: How to decide?
 
 Navigating the ever-evolving landscape of Chainlink and its integrations within the Web3 ecosystem can at times be daunting.
 
@@ -19,19 +35,19 @@ Since its inception, Chainlink has evolved at a rapid rate. One of the original 
 
 Yet, after the release of Functions, a lingering question remains:
 
-**Are Direct Requests still viable?**
+### Are Direct Requests still viable?
 
 We would argue that they are. 
 
 Make no mistake: Chainlink Functions is a monumental enhancement for off-chain computation and data retrieval, and we believe that Web3 teams should consider using Functions if and when applicable.
 
-> *Disclaimer: All views below are strictly our own, and not the views or opinions of Chainlink Labs. As a community-based Chainlink node operations team with extensive [Chainlink Direct Request service offerings](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing), we acknowledge our potential bias in writing on this topic. In that vein, we promise to be as objective as possible in assessing the relevance of both approaches.*
+> *Disclaimer: All views below are strictly our own, and not the views or opinions of Chainlink Labs. As a community-based Chainlink node operations team with extensive [Chainlink Direct Request service offerings](/services/direct-request-jobs/Jobs-and-Pricing), we acknowledge our potential bias in writing on this topic. In that vein, we promise to be as objective as possible in assessing the relevance of both approaches.*
 
 While Chainlink Functions reigns supreme in many ways to the traditional Direct Request model, there are pros and cons to each approach. Having a nuanced understanding acknowledges the fact that Direct Requests can still be a relevant option for off-chain data data retrieval and computation, depending on your use case.
 
 Our objective here is to illuminate this choice for Web3 developers, who might be faced with the challenge of selecting one over the other.
 
-**Let's begin by examining Chainlink Direct Requests (Any API):**
+## **Chainlink Direct Requests (Any API)**: Pros and Cons
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ay4rXZhAefs?si=Rat05_PI4LfNU1dJ" title="Requesting data from a Chainlink oracle using Any API (Direct) Requests" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -39,7 +55,7 @@ Direct Requests are the first iteration of Chainlink's service offerings that al
 
 More specifically, Direct Requests allow for a smart contract developer to make ad-hoc requests to an existing Chainlink node (oracle), which in turn responds by writing the requested value(s) back to the requestor's smart contract. In short, Direct Requests allow smart contracts to request data from the internet in a secure way.
 
-While our [documentation](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide) elaborates much more extensively on the mechanics of Direct Request jobs, here's a high-level overview:
+While our [documentation](/knowledgebase/Direct-Request-Guide) elaborates much more extensively on the mechanics of Direct Request jobs, here's a high-level overview:
 
 1. A smart contract (i.e., ChainlinkClient) — also known as a 'consumer contract' — makes a request to an on-chain oracle contract, typically owned and operated by a Chainlink node operator.
 2. The relevant Chainlink node receives the request, interacts with the relevant API endpoint via HTTP, and writes the requested data back to the consumer contract.
@@ -54,22 +70,22 @@ Until recently, Direct Requests were the only viable solution for Web3 developer
 
 And yet — inherent shortcomings within the Direct Request model have precipitated the emergence of Chainlink Functions.
 
-**Shortcomings of the Direct Request model:**
+### Drawbacks of the Direct Request model
 
 1. **Searching for a Suitable Chainlink Node Operator**- To make a direct request, Web3 developers must first find a suitable node operator via [Chainlink's official Discord server](https://discord.com/invite/chainlink) (#operator-requests channel).
 2. **Reliability Concerns** — Within distributed and decentralized systems, single points of failure (SPOFs) are not ideal. Selecting a single Chainlink node operator — especially one not well-versed in an elastic, redundant infrastructure design- can lead to availability and reliability concerns.
 3. **Centralization Risks** — Entrusting data to a single Chainlink node operator poses trust issues, wherein a nefarious node operator could potentially manipulate data before writing it on-chain.
 4. **External Adapters** — Direct Requests must offload any advanced logic (ie, complicated parsing or post-processing of data) to an external adapter (EA) — a small, server-side runtime that hosts such functionality. Some oracles (such as us!) offer this service for free, whereas others require you to write or provide your own external adapter.
 
-As a result of these drawbacks, some Web3 developers have resorted to running their own Chainlink node in order to mitigate security and trust concerns. Yet, running a production-grade Chainlink infrastructure demands [substantial effort](https://docs.linkwellnodes.io/knowledgebase/faq/Chainlink-Operators#profitability), diverting valuable resources (both financial and otherwise) that could otherwise be spent on application development.
+As a result of these drawbacks, some Web3 developers have resorted to running their own Chainlink node in order to mitigate security and trust concerns. Yet, running a production-grade Chainlink infrastructure demands [substantial effort](/knowledgebase/faq/Chainlink-Operators#profitability), diverting valuable resources (both financial and otherwise) that could otherwise be spent on application development.
 
-> *&nbsp;**A short plug**: At LinkWell Nodes, we offer a robust suite of Direct Request service offerings that mitigates many of the above shortcomings. By following our [Direct Request API documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing), you'll be able to develop a self-service Any API solution, and be up and running in minutes.*
+> *&nbsp;**A short plug**: At LinkWell Nodes, we offer a robust suite of Direct Request service offerings that mitigates many of the above shortcomings. By following our [Direct Request API documentation](/services/direct-request-jobs/Jobs-and-Pricing), you'll be able to develop a self-service Any API solution, and be up and running in minutes.*
 > 
-> *We also offer a comprehensive list of free service offerings to all customers, including free external adapter development, hosting, [data security guarantee](https://docs.linkwellnodes.io/services/direct-request-jobs/Service-Level-Agreement), and 24/7 monitoring of your direct request infrastructure.*
+> *We also offer a comprehensive list of free service offerings to all customers, including free external adapter development, hosting, [data security guarantee](/services/direct-request-jobs/Service-Level-Agreement), and 24/7 monitoring of your direct request infrastructure.*
 
 ---
 
-**Enter Chainlink Functions.**
+## **Chainlink Functions**: Pros and Cons
 
 As a result of the historic challenges with Direct Requests, [Chainlink Functions](https://docs.chain.link/chainlink-functions) emerged as a decentralized, self-service alternative in March 2023. Chainlink Functions executes all request logic on a DON (Decentralized Oracle Network), instead of via a single Chainlink Oracle — thereby minimizing concerns around centralization and reliability.
 
@@ -86,9 +102,9 @@ From [Chainlink's blog](https://blog.chain.link/introducing-chainlink-functions/
 
 The accessibility brought by Functions fundamentally transforms the landscape for Web3 developers, opening boundless opportunities for smart contracts to interact with the real world in a trust-minimized manner.
 
-**Drawbacks of Chainlink Functions:**
+### Drawbacks of Chainlink Functions
 
-Despite the obvious benefits and allure of Chainlink Functions, certain [limitations](https://docs.linkwellnodes.io/knowledgebase/faq/Chainlink-Users#limitations-of-chainlink-functions) do need consideration:
+Despite the obvious benefits and allure of Chainlink Functions, certain [limitations](/knowledgebase/faq/Chainlink-Users#limitations-of-chainlink-functions) do need consideration:
 
 1. **Limited Beta:** Functions is currently in limited Beta. Chainlink's documentation currently states that "developers must follow best practices and not use the Beta for any mission-critical application or secure any value". Furthermore, Functions is only live on four mainnets at the time of this writing — Ethereum, Polygon, Arbitrum, and Avalanche (you can check the most up-to-date list of networks here).
 2. **Service Limits:** Functions imposes several service limitations (ie, gas cost, execution time, and idempotence of your business logic) which you can view within [Chainlink's documentation](https://docs.chain.link/chainlink-functions/resources/service-limits).
@@ -96,9 +112,9 @@ Despite the obvious benefits and allure of Chainlink Functions, certain [limitat
 
 While Chainlink Functions will almost certainly continue to evolve, the current state of the above limitations may give some users pause for production Web3 applications.
 
-In the mean time, if you are a Web3 developer or project with time-sensitive requirements for off-chain data and/or computation for your mainnet applications, but are concerned about the above limitations, you ultimately have three options: 1) Wait for Functions to evolve and mature more to support your use case, 2) Implement Functions as-is, or 3) Utilize the Direct Request model (ie, reach out to an existing node operator, such as [ourselves](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)).
+In the mean time, if you are a Web3 developer or project with time-sensitive requirements for off-chain data and/or computation for your mainnet applications, but are concerned about the above limitations, you ultimately have three options: 1) Wait for Functions to evolve and mature more to support your use case, 2) Implement Functions as-is, or 3) Utilize the Direct Request model (ie, reach out to an existing node operator, such as [ourselves](/services/direct-request-jobs/Jobs-and-Pricing)).
 
-**Pros of Chainlink Direct Requests:**
+### Pros of Chainlink Direct Requests
 
 Given some of the above limitations of Functions, the advantages of Chainlink's Direct Request model for some use cases becomes a bit more clear:
 
@@ -110,7 +126,7 @@ Given some of the above limitations of Functions, the advantages of Chainlink's 
 
 ---
 
-**Conclusion**
+## Conclusion
 
 The debate between Chainlink's Direct Requests and the innovative Chainlink Functions capabilities reflects the dynamic evolution within Web3, and more specifically, Chainlink's journey to becoming the industry-standard Web3 oracle platform.
 
@@ -124,6 +140,6 @@ If you have any questions, please don't hesitate to reach out!
 >
 > *We provide custom data feed capabilities and self-service oracle solutions across all major mainnet and testnet blockchains supported by Chainlink.*
 >
-> *Looking for a custom data feed? Head on over to our [documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)*, *or hop into our [Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!*
+> *Looking for a custom data feed? Head on over to our [documentation](/services/direct-request-jobs/Jobs-and-Pricing)*, *or hop into our [Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!*
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")

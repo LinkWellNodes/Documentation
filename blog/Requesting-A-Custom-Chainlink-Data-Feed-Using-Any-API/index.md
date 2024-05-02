@@ -1,15 +1,33 @@
 ---
 title: "How To Request a Custom Any API Chainlink Data Feed: A 7 Step Guide For Web3 Developers"
-description: "In this article, we explore the 7 steps that Web3 developers can follow for integrating real world data from Chainlink oracles into their smart contracts."
+description: "In this article, we explore the 7 steps that Web3 developers can follow for integrating real-world data from Chainlink oracles into their smart contracts."
 date: "2024-02-01"
 keywords: [chainlink, oracle, data feed, smart contract, web3, blockchain]
 authors: [Ken]
 tags: [chainlink, oracle, smart contract, web3, blockchain]
 ---
 
+import TOCInline from '@theme/TOCInline';
+
+<lw-blog-subtitle>7 steps for integrating real-world data from Chainlink oracles into your Web3 smart contract.</lw-blog-subtitle>
+
 ![Chainlink Any API Data Feed](./Header.webp "Chainlink Any API Data Feed")<center><small>Credit: https://blog.chain.link/apis-smart-contracts-and-how-to-connect-them</small></center>
 
 <!--truncate-->
+
+---
+
+**On this page**:
+
+<TOCInline
+  toc={toc.filter((node) => node.level >= 1)}
+  minHeadingLevel={2}
+  maxHeadingLevel={2}
+/>
+
+---
+
+## Introduction
 
 Smart contracts that integrate Chainlink data feeds are far more capable than those that don't.
 
@@ -25,9 +43,9 @@ That's why we've gone through great lengths to make the process as seamless as p
 >
 > *Chainlink - the industry standard Web3 services platform - is the most widely used decentralized oracle network, securing significant value across a diverse assortment of blockchains and use cases. It operates as an ecosystem with independent decentralized oracle networks, guaranteeing robust and versatile oracle services.*
 
-**Prerequisites For Making An Any API Request**
+## Prerequisites to making a Chainlink request
 
-There are three Web3 technologies that you'll need to have in place before making your first request:
+There are three Web3 technologies that you'll need to have in place before making your first Chainlink request:
 
 1. **A Web3 Wallet:** Web3 wallets are required for not only storing your tokens, but also for deploying your smart contracts and signing messages. Examples include Ledger, Trezor, MetaMask, Coinbase Wallet, or Trust Wallet.
 
@@ -49,16 +67,18 @@ If you don't already have a well-defined use case, here are a few custom data fe
 
 * **IoT Data:** Supply chain tracking, accounting transparency, health wearables, consumption and pollution, parametric insurance that tracks rainfall, GPS sensors, and more.
 
-**Chainlink oracles can return data from anywhere on the internet.** For more ideas, we recommend looking into Chainlink's blog on the [77 different use cases enabled by Chainlink](https://blog.chain.link/smart-contract-use-cases/). Additional custom data feed examples that walk you through building a custom data feed can be found within our [website's documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Any-API-Guide).
-> *If you are interested in the actual mechanics of how requests to Chainlink nodes operate under the hood, feel free to check out our [direct request guide](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide).*
+**Chainlink oracles can return data from anywhere on the internet.** For more ideas, we recommend looking into Chainlink's blog on the [77 different use cases enabled by Chainlink](https://blog.chain.link/smart-contract-use-cases/). Additional custom data feed examples that walk you through building a custom data feed can be found within our [website's documentation](/services/direct-request-jobs/Any-API-Guide).
+> *If you are interested in the actual mechanics of how requests to Chainlink nodes operate under the hood, feel free to check out our [direct request guide](/knowledgebase/Direct-Request-Guide).*
 
 Without further ado, here are the 7 steps for requesting a custom Chainlink data feed.
 
-### **Step 1:** Finding a Suitable Chainlink Node Operator
+## **Step 1**: Finding a suitable Chainlink node operator
 
-This is arguably the most crucial step of all. Similar to the way a highly-skilled CPA can enhance tax strategization, potentially leading to substantial annual savings, the importance of proficient Chainlink node operators cannot be overstated.
+:::tip
+Check out our article on [How to Find a Chainlink Oracle](/blog/How-To-Find-A-Chainlink-Oracle) for detailed information on how to find a Chainlink oracle.
+:::
 
-Working with a knowledgeable and competent Chainlink node operator can greatly streamline the process of requesting and building a custom data feed, allowing you or your team to allocate resources more efficiently to your Web3 application. Furthermore, these node operators should possess the expertise to assist in crafting your smart contract code, conducting code reviews, and suggesting gas optimization strategies within your smart contract. This not only saves time, but can also preserve valuable funds with each data request to the Chainlink oracle.
+Working with a knowledgeable and competent Chainlink node operator can greatly streamline the process of requesting and building a custom data feed, allowing you or your team to allocate resources more efficiently to your Web3 application. Furthermore, a node operator should possess the expertise to assist in crafting your smart contract code, conducting code reviews, and suggesting gas optimization strategies within your smart contract. This not only saves time, but can also preserve valuable funds with each data request to the Chainlink oracle.
 
 Here's what you should look for when it comes to a Chainlink node operator:
 
@@ -81,15 +101,9 @@ Here's what you should look for when it comes to a Chainlink node operator:
 1. A clear service-level agreement (SLA) for their data feed performance.
 
 > *At LinkWell Nodes, we do our best to align with these characteristics and qualities.*
-> *Our services include [custom data feed capabilities and self-service oracle solutions](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing) across 14 mainnet and 13 testnet blockchains. Beyond that, our suite of [development services](https://docs.linkwellnodes.io/services/Development-Services) is designed to cater to the diverse needs of your Web3 project. We also offer robust documentation on our website in order to help facilitate this process.*
+> *Our services include [custom data feed capabilities and self-service oracle solutions](/services/direct-request-jobs/Jobs-and-Pricing) across 14 mainnet and 13 testnet blockchains, as well as a wide array of [development services](/services/Development-Services) designed to cater to the diverse needs of your Web3 project.*
 
-**Where Can I Find a Chainlink Oracle?**
-
-As of the time of writing, there lacks a centralized marketplace for Chainlink oracles. Historically, a Chainlink node marketplace existed at market.link. However, market.link has been deprecated, and the primary avenue for finding an oracle is by sending a chat within the **#operator-requests** channel of the [Chainlink Official Discord server](https://discord.com/invite/chainlink). Additionally, a simple Google search can yield information about the various Chainlink node operators and the services they publicly offer.
-
-Ultimately, the responsibility lies with you to diligently vet and select a Chainlink node operator who aligns with the characteristics specified above.
-
-### **Step 2: Communicating Your Data Requests**
+## **Step 2**: Communicating your data requirements
 
 After selecting a Chainlink node operator, you'll want to succinctly convey to them the requirements of your Web3 project. It is beneficial to provide the following information to facilitate effective collaboration:
 
@@ -112,14 +126,14 @@ After selecting a Chainlink node operator, you'll want to succinctly convey to t
 ```
     curl https://myApi.com/BTC/USD --request POST --header "X-Auth-Key: my-api-key-123" --data '{"interval": 1, "count": 10}'
 ```
-> *At LinkWell Nodes, to simplify the process of requesting a new data feed, we ask that you fill out our specialized [data feed request form](https://linkwellnodes.io/Getting-Started.html). Once we receive your submission, we'll make every effort to respond promptly and provide your custom data feed ASAP (typically within the day).*
+> *To simplify the process of requesting a new data feed, we ask that you fill out our specialized [data feed request form](https://linkwellnodes.io/Getting-Started.html). Once we receive your submission, we'll make every effort to respond promptly and provide your custom data feed ASAP (typically within the day).*
 
-### Step 3: Building and Deploying Your Smart Contract
+## **Step 3**: Developing and deploying your testnet smart contract
 
 Although you may have already commenced the development of your smart contract before reaching out to a Chainlink node operator, you may need to modify it to suit your chosen oracle's requirements.
 > *At LinkWell Nodes, we provide [comprehensive code samples](https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Arbitrum-One/uint256/uint256.sol#L48-L56) to help you get started on your contract development. These examples serve as a valuable resource in kick-starting your smart contract development, or incorporating our data feeds into your existing smart contract.*
 
-**Key methods within your smart contract include:**
+### Key methods within your smart contract
 
 1. **The Constructor:** Here you'll typically specify the [Chainlink (LINK) token contract address](https://docs.chain.link/resources/link-token-contracts) for your respective chain, the oracle address, the job ID, and the per-request payment amount. Oracle addresses, job IDs, and payment amounts are provided by (or negotiated with) your chosen node operator.
 ```
@@ -158,7 +172,7 @@ Although you may have already commenced the development of your smart contract b
 ```  
 
 > *LinkWell Nodes implements a unique and innovative approach that allows for greater control over building your request, but requires a few additional parameters be set (as in the above example).
-> **Please refer to our [documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing) when building your request - especially in regards to these required request parameters.** *
+> **Please refer to our [documentation](/services/direct-request-jobs/Jobs-and-Pricing) when building your request - especially in regards to these required request parameters.** *
 
 3. **The Fulfill Function:** Once the data has been retrieved, parsed, and converted into a blockchain-compatible format, our oracle node executes a blockchain transaction against the oracle contract, which in turn writes the data back to your consumer contract via execution of your fulfill() function.
 
@@ -174,54 +188,55 @@ Although you may have already commenced the development of your smart contract b
     }
 ```
 
-**Now, deploy it!**
+### Now, deploy it!
 
-Now that your smart contract's been drafted up, it's time to deploy it. We suggest deploying your smart contract onto a testnet initially, so that you can validate your request logic in a low-risk environment before deploying onto a mainnet. If you need guidance during this process, you can refer to a brief [YouTube tutorial on Remix](https://www.youtube.com/watch?v=vH8T3In6ZkE) by EatTheBlocks. We are happy to assist as well!
+Now that your smart contract's been drafted up, it's time to deploy it to the testnet of your choice, so that you can validate your request logic in a low-risk environment before deploying onto a mainnet. If you need guidance during this process, you can refer to a brief [YouTube tutorial on Remix](https://www.youtube.com/watch?v=vH8T3In6ZkE) by EatTheBlocks. We are happy to assist as well!
 > *LinkWell Nodes offers free Chainlink oracle requests on all blockchain testnets, as part of our dedication to supporting the Chainlink community and assisting new Web3 developers.
-> We encourage Web3 developers to [take advantage](https://docs.linkwellnodes.io/services/direct-request-jobs/testnets) of this opportunity to submit their requests without any cost.*
+> We encourage Web3 developers to [take advantage](/services/direct-request-jobs/testnets) of this opportunity to submit their requests without any cost.*
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/vH8T3In6ZkE" frameborder="0" allowfullscreen></iframe></center>
 
-### Step 4: Testing the Chainlink Oracle Request In Your Smart Contract
+## **Step 4**: Testing your smart contract
 
 Now comes the fun part - executing the request logic against the oracle specified in your constructor method.
 
-Your first step is to deploy your smart contract code using the [Remix IDE](https://remix.ethereum.org/). After deploying the contract, the next step is to trigger the transferAndCall() function (sometimes called the request() or _sendOperatorRequest() function, highlighted in purple below) within your consumer contract.
+Your first step is to deploy your smart contract code using the [Remix IDE](https://remix.ethereum.org/). After deploying the contract, the next step is to trigger the `transferAndCall()` function (sometimes called the `request()` or `_sendOperatorRequest()` function, highlighted in purple below) within your consumer contract.
 
 ![Remix Figure 1](./Remix_Diagram_1.webp)
 
-Once your data has successfully been retrieved and parsed, our oracle node executes a blockchain transaction against the oracle contract, which in turn writes the data back to your consumer contract via its fulfill() function. Receiving your response may take up to 60 seconds - depending on your chosen blockchain's block time.
+Once your data has successfully been retrieved and parsed, our oracle node executes a blockchain transaction against the oracle contract, which in turn writes the data back to your consumer contract via its `fulfill()` function. Receiving your response may take up to 60 seconds - depending on your chosen blockchain's block time.
 
 Clicking the response button highlighted in purple below should return the data from your request.
-> *If your contract hasn't received a response after waiting 2 minutes, you may have an issue with your request, response, or API endpoint. Please check out our [FAQ](https://docs.linkwellnodes.io/knowledgebase/faq/Chainlink-Users#im-not-getting-a-response-back-to-my-consumer-contract) on this subject for more troubleshooting information. We also welcome Web3 developers to join our [Discord channel](https://discord.com/invite/Xs6SjqVPUA), where we are happy to work through any problems that may arise.*
+> *If your contract hasn't received a response after waiting 2 minutes, you may have an issue with your request, response, or API endpoint. Please check out our relevant [FAQ topic](/knowledgebase/faq/Chainlink-Users#im-not-getting-a-response-back-to-my-consumer-contract) for more troubleshooting information.* 
 
 ![Remix Diagram 2](./Remix_Diagram_2.webp)
 
 Once the data has been returned, you are free to utilize that data within your smart contract for whatever purpose you need.
 
-### Step 5: Optimizing Your Smart Contract's Request and Fulfill Functions (Optional)
+## **Step 5**: (optional) Optimizing your smart contract's request and fulfill functions
 
 This step is marked as optional, as it is geared towards advanced users and/or use cases.
 
-Reducing the gas costs incurred by the Chainlink node operator in writing your result to your smart contract generally lowers the LINK they'll need to charge you per request. Therefore, it is typically advisable to optimize your fulfill() function's gas usage, in order to increase the overall cost-effectiveness of your Chainlink requests.
+Reducing the gas costs incurred by the Chainlink node operator in writing your result to your smart contract generally lowers the LINK they'll need to charge you per request. Therefore, it is typically advisable to optimize your `fulfill()` function's gas usage, in order to increase the overall cost-effectiveness of your Chainlink requests.
 
-> **Side note**: *If your transaction is failing due to an 'out of gas' error, you have several options: A) Provide a smaller response, B) Divide your request into multiple oracle transactions, or C) Reach out to the relevant oracle team to request an increased gas allowance for your specific use case (which may lead to higher job pricing).*
+> **Pro tip**: If your transaction is failing due to an 'out of gas' error, you have several options: A) Provide a smaller response, B) Divide your request into multiple oracle transactions, or C) Reach out to the relevant oracle team to request an increased gas allowance for your specific use case (which may lead to higher per-request pricing).
 
-As previously mentioned, optimizing your smart contract's request and fulfill functions is a service we offer as part of our [development services](https://docs.linkwellnodes.io/services/Development-Services).
+As previously mentioned, optimizing your smart contract's `request()` and `fulfill()` functions is a service we offer as part of our [development services](/services/Development-Services).
 
 One other key point - gas prices can be unpredictable, especially when deploying your application on the Ethereum network. In the event of a significant surge in gas prices, the costs incurred by the node operator will spike as well. This forces many node operators to price their data feeds at higher rate to balance out the losses incurred by these market spikes. Consulting with your node operator beforehand on their pricing model may lead to informative conversations here. Whenever possible, we strongly recommend deploying your Web3 application on a layer 2 network such as Arbitrum or Optimism.
 
-### Step 6: Deploying Your Smart Contract On Mainnet and Validating the Request and Fulfill Functions
+## **Step 6**: Deploying your smart contract to mainnet
 
-In this step, we'll discuss the deployment of your smart contract to a mainnet vs a testnet blockchain network.
+In this step, we'll discuss the deployment of your smart contract to a mainnet blockchain.
 
 One notable difference when transitioning from a testnet oracle request to a mainnet oracle request is that your mainnet requests that you send require a nominal fee in the form of the LINK token (usually around 0.1 LINK, depending on the blockchain network and data type). For this reason, it is necessary to fund your smart contract with LINK in order to accommodate the anticipated request volume for your Web3 application.
 
-After deploying and funding your mainnet contract, we suggest executing your request function at least once to ensure your functionality is working as expected.
-> *At LinkWell Nodes, we strive for transparency and efficiency around our pricing model. For a more comprehensive understanding of the factors that influence our data feed pricing, you can explore our pricing article [here](https://docs.linkwellnodes.io/services/direct-request-jobs/Pricing).
-> **Our commitment is to offer the most competitive pricing in the market.** Deploying your contract initially onto a testnet and making a few requests to our oracles can help us significantly in gauging the lowest-possible pricing for your custom data feed.*
+After deploying and funding your mainnet contract, we suggest executing your `request()` function at least once to ensure your functionality is working as expected.
+> At LinkWell Nodes, we strive for transparency and efficiency around our pricing model. For a comprehensive understanding of the factors that influence our data feed pricing, you can explore our [pricing page](/services/direct-request-jobs/Pricing).
+>
+> **Our commitment is to offer the most competitive pricing in the market.** Deploying your contract initially onto a testnet and making a few requests to our oracles can help us significantly in gauging the lowest-possible pricing for your custom data feed.
 
-### **Step 7: Go Live With Your Web3 Application**
+## **Step 7**: Go live with your Web3 application
 
 Congratulations on reaching this point!
 
@@ -234,9 +249,10 @@ Here are some final recommendations for your Chainlink integration:
 1. **Communication:** Practice keeping an open line of communication with your chosen Chainlink node operator to ensure a rapid response in the event of any issues, downtime, or changes you might like them to make.
 
 1. **Monitoring:** Ensure that your selected Chainlink node operator consistently monitors the request pipeline of your custom data feed. To this end, ask them what their alerting policy is for their mainnet data feeds (if any). This vigilance helps to keep your Web3 application safe in the event of any integration issues, such as your API endpoint failing to respond to your oracle's requests.
-> *At LinkWell Nodes, it is our mission to provide transparency, security, and ownership over all of your data delivery needs. To that end, we provide a clear [Service-Level Agreement (SLA)](https://docs.linkwellnodes.io/services/direct-request-jobs/Service-Level-Agreement) for all of our mainnet data feeds.*
 
-**Conclusion**
+	> *At LinkWell Nodes, it is our mission to provide transparency, security, and ownership over all of your data delivery needs. Check out our [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement) for more information here.*
+
+## Conclusion
 
 With the proper knowledge and understanding in place, navigating the process of requesting, building, and integrating a Chainlink data feed should not only be seamless - it should be fun and exciting as well! We sincerely hope that this guide serves as a solid foundation for Web3 teams looking to integrate Chainlink's powerful Web3 services and capabilities into their smart contracts.
 
@@ -248,6 +264,6 @@ With the proper knowledge and understanding in place, navigating the process of 
 >
 > *We provide custom data feed capabilities and self-service oracle solutions across all major mainnet and testnet blockchains supported by Chainlink.*
 >
-> *Looking for a custom data feed? Head on over to our [documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing)*, *or hop into our [Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!*
+> *Looking for a custom data feed? Head on over to our [documentation](/services/direct-request-jobs/Jobs-and-Pricing)*, *or hop into our [Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!*
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")

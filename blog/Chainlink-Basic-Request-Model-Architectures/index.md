@@ -1,19 +1,33 @@
 ---
-title: "Chainlink Any API: Building a Custom Oracle Network"
-description: "Exploring Chainlink's Basic Request Model: How Web3 developers can design Chainlink oracle networks for reliable real-world data in their apps."
+title: "Chainlink Direct Request Architectures Explained"
+description: "Exploring Chainlink's Basic Request Model Architectures: Designing Chainlink oracle networks for reliable real-world data feeds."
 date: "2024-02-17"
 keywords: [chainlink, smart contracts, decentralized oracles, web3, blockchain, node operator]
 authors: [Ken]
 tags: [chainlink, smart contracts, decentralized oracles, web3, blockchain, node operator]
 ---
 
-## Chainlink's Basic (Direct) Request Model: Chainlink Oracle Architectures Explained
+import TOCInline from '@theme/TOCInline';
+
+<lw-blog-subtitle>An in-depth guide into Chainlink's Basic Request (Direct Request) model, and its various deployment architectures</lw-blog-subtitle>
 
 ![Chainlink Basic Request Model Architecture Header](./Header.webp "Chainlink Basic Request Model Architectures")
 
 <!--truncate-->
 
-## **Introduction**
+---
+
+**On this page**:
+
+<TOCInline
+  toc={toc.filter((node) => node.level >= 1)}
+  minHeadingLevel={2}
+  maxHeadingLevel={3}
+/>
+
+---
+
+## Introduction
 
 Chainlink's basic request model - previously known as the "direct request model" - is a bit of a misnomer.
 
@@ -23,13 +37,13 @@ In this article, we'll unravel the intricacies of Chainlink's basic request mode
 
 > ***Who are we?***
 > LinkWell Nodes is a U.S.-based Chainlink oracle specializing in secure, decentralized, data feeds and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.
-> Looking for a custom data feed? Head on over to our [documentation](https://docs.linkwellnodes.io/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
+> Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
 
-### **Chainlink's Basic Request Model (A.K.A. Direct Request Model)**
+## What is Chainlink's Basic Request (Direct Request) Model?
 
 This article will provide an in-depth analysis of the components that make up the basic request model. Subsequently, we will delve into the architectures that developers have at their disposal for their Web3 applications.
 
-> For a high-level overview of the basic request model (direct request model), you can also visit our [website's documentation](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide), our previous article on [building custom Chainlink data feeds using Any API](https://docs.linkwellnodes.io/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API), or our exploration of [Chainlink Functions Versus Direct Request Jobs](https://docs.linkwellnodes.io/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions).
+> For a high-level overview of the basic request model (direct request model), you can also visit our [website's documentation](/knowledgebase/Direct-Request-Guide), our previous article on [building custom Chainlink data feeds using Any API](/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API), or our exploration of [Chainlink Functions Versus Direct Request Jobs](/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions).
 
 <p align="center">
   <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Single Chainlink Oracle" />
@@ -49,13 +63,13 @@ The components of the basic request model implementation include the following:
 
 * **API (i.e., the internet):** An API endpoint is the specific URL or data service (i.e., CoinMarketCap) to which the offchain oracle (or external adapter) makes its request for data. In the context of Chainlink, an API is the source of the data that you'd like written to your smart contract.
 
-## **Basic Request Model Oracle Architectures**
+## Basic Request Model Oracle Architectures
 
 The following architectures depict the sequential progression of a Web3 developer manually triggering the request function within their consumer contract. It commences with the most straightforward oracle architecture - a direct request to a single Chainlink oracle owned and operated by a single Chainlink node operator, and advances to the most advanced architecture - a direct request to multiple Chainlink oracles owned and operated by multiple independent Chainlink node operators.
 > To simplify the forthcoming architectural diagrams, we have opted to exclude the potential integration of other Chainlink services, including VRF, Automation, CCIP, official Chainlink data feeds, and others. Nevertheless, we advise incorporating Chainlink Automation, at the very least, to streamline the request pipeline based on specific external triggers.
 > **Moreover, depending on the requirements of your Web3 project, we strongly suggest integrating any and all Chainlink services necessary for the project's success!**
 
-### **Architecture 1: Direct Request to a Single Chainlink Oracle**
+### **Architecture 1**: Direct Request to a Single Chainlink Oracle
 
 <p align="center">
   <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle" />
@@ -63,7 +77,7 @@ The following architectures depict the sequential progression of a Web3 develope
 
 **Architecture 1** is the simplest version of the basic request model. The sequence begins with a Web3 developer triggering a request (through the on-chain consumer contract) to a single Chainlink oracle owned by a single Chainlink node operator. The Chainlink oracle fetches the requested data and submits the obtained result back on-chain.
 > **Important note**: Reputable node operators will run multiple Chainlink nodes in a redundant cluster, having one "primary" oracle responding to requests, and at least one "backup" oracle operating in passive mode, ready to take over in case of a failure in the primary oracle.
-> At LinkWell Nodes, we operate all of our [mainnet oracles](https://docs.linkwellnodes.io/services/direct-request-jobs/mainnets) in redundant, fault-tolerant, location-independent clusters, ensuring that your workload will complete on time, every time.
+> At LinkWell Nodes, we operate all of our [mainnet oracles](/services/direct-request-jobs/mainnets) in redundant, fault-tolerant, location-independent clusters, ensuring that your workload will complete on time, every time.
 
 **Pros:**
 
@@ -83,7 +97,7 @@ The following architectures depict the sequential progression of a Web3 develope
 
 * Chainlink Functions doesn't support your use case or network.
 
-### **Architecture 2: Direct Request to Multiple Chainlink Oracles**
+### **Architecture 2**: Direct Request to Multiple Chainlink Oracles
 
 <p align="center">
   <img src="/img/CL_DR_Model_Multi_LW_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple LinkWell Chainlink Oracles" />
@@ -116,7 +130,7 @@ The following architectures depict the sequential progression of a Web3 develope
 
 * Chainlink Functions doesn't support your use case or network.
 
-### **Architecture 3: Direct Request to a Multiple Chainlink Oracles Across Independent Chainlink Node Operators**
+### **Architecture 3**: Direct Request to a Multiple Chainlink Oracles Across Independent Chainlink Node Operators
 
 <p align="center">
   <img src="/img/CL_DR_Model_Four_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple Independent Chainlink Oracles" />
@@ -148,7 +162,7 @@ The following architectures depict the sequential progression of a Web3 develope
 
 * Chainlink Functions doesn't support your use case or network.
 
-### **Bonus Architecture: Direct Request Without a LINK Fee**
+### **Bonus Architecture**: Direct Request Without a LINK Fee
 
 <p align="center">
   <img src="/img/Chainlink_DR_Model_Single_Chainlink_Oracle_No_LINK_Fee.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle No LINK Fee" />
@@ -164,9 +178,9 @@ Additionally, this opens the door to innovative payment models as demonstrated b
 
 * Monthly flat fees for unlimited/exclusive use of the Chainlink oracle, where on-chain oracle data submission costs are reimbursed to the node operator by the consumer.
 
-### **Final Considerations**
+### Key Takeaways
 
-We'd like to leave four final takeaways for your consideration when deciding to implement Chainlink's basic request model:
+We'd like to leave four final takeaways for your consideration when deciding which architecture to implement using Chainlink's basic request model:
 
 * **Trust-Minimization and Decentralization:** When choosing your architecture, it's necessary to put some thought into what aspects of your design require decentralization - datacenter decentralization, oracle team decentralization, and data source decentralization, are all key components that one must consider.
 
@@ -176,7 +190,7 @@ We'd like to leave four final takeaways for your consideration when deciding to 
 
 * **Functions:** While Chainlink's basic request model has successfully served hundreds if not thousands of Web3 projects since Chainlink's launch, [Chainlink Functions](https://docs.chain.link/chainlink-functions) represents a viable alternative. While Functions is still in mainnet BETA and may not be recommended for production workloads, Web3 developers may want to review Functions before opting for the basic request model.
 
-## **Conclusion**
+## Conclusion
 
 Chainlink's basic request model (also called "direct requests") represents a capable and flexible method of retrieving off-chain (i.e., internet) data and writing it to your contract.
 
@@ -192,6 +206,6 @@ We trust that this article sheds helps to shed some light on the various Chainli
 ---
 
 > LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.
-> Looking for a custom data feed? Head on over to our [documentation](https://docs.linkwellnodes.io/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
+> Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")

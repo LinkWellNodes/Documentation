@@ -4,15 +4,11 @@ description: We are a U.S.-based Chainlink Oracle specializing in secure deliver
 
 # About Us
 
-**LinkWell Nodes is a U.S.-based Chainlink oracle committed to redefining custom data feed creation for Web3 developers. By offering a process that is secure, flexible, and seamless, we aim to accelerate the deployment of innovative Web3 applications with unparalleled speed and simplicity. Our ultimate mission? To support Chainlink in building a world powered by cryptographic truth.**
+<lw-subtitle><lw-emphasis>LinkWell Nodes is a U.S.-based Web3 infrastructure company</lw-emphasis> delivering Chainlink oracle services and secure blockchain node deployments. With over 25 years of combined experience in the cybersecurity, cloud infrastructure, financial services, and Web3 industries, LinkWell Nodes is dedicated to building a world powered by trustless, cryptographic truth.</lw-subtitle>
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
-## Introduction
-
-LinkWell Nodes is a U.S.-based Chainlink oracle specializing in customized delivery of real-world data on-chain. With over 30 years of combined experience in the cybersecurity, enterprise software, financial services and Web3 industries, LinkWell Nodes is dedicated to building a secure, reliable Chainlink ecosystem, as well as supporting Web3's ultimate vision of building a world powered by trustless, cryptographic truth.
-
-## Who We Are
+## Biographies
 
 ### Ken
 Ken is a Maryland-based U.S. Navy veteran, cybersecurity professional, and software engineer with specialized knowledge and expertise in multiple cutting edge technology vectors including cloud infrastructure, enterprise monitoring, and Web3. He holds a masters degree in cybersecurity technology and several Splunk, AWS, and cybersecurity certifications. 
@@ -29,9 +25,10 @@ Derek is confident that his extended experience in building world-class producti
 Derek is based primarily in Boston, Massachusetts, but spends half the year in San Diego, California, enjoying the sunny weather and outdoor sports. 
 
 
-## Our Story
-LinkWell Node's story began shortly after the 2022 Chainlink Oracle Olympics - a global competition of 30 professional teams vying for the right to become the next official Chainlink node operator. As individual participants during the competition, Ken and Derek ended up tying for third place - passing every challenge that Chainlink threw at them, but just barely missing out on the bonus points which cinched the victory for the winning team. After the competition, Derek and Ken decided to join forces, each noticing the strengths, capabilities, and professionalism in the other. Shortly after, LinkWell Nodes was formed.
+## Company Background
 
-Derek and Ken went to the drawing board, designing and engineering a scalable, redundant, and re-usable Chainlink node deployment model from the ground up. After a year of aggressive engineering efforts in the infrastructure, monitoring, and cypersecurity space, phase 1 of their infrastructure solution was fully-deployed and ready for production. Fully-aware that this was but the first of many future missions, LinkWell nodes charged head-first into the public sphere to help Chainlink fulfill its quest - as any true Link Marines would.
+LinkWell Nodes was incepted shortly after the 2022 Chainlink Oracle Olympics - a global competition of 30 professional teams vying for the right to become the next official Chainlink node operator. As individual participants during the competition, Ken and Derek ended up tying for third place - passing every challenge that Chainlink threw at them, but just barely missing out on the bonus points which cinched the victory for the winning team. After the competition, Derek and Ken decided to join forces, each noticing the strengths, capabilities, and professionalism in the other. Shortly after, LinkWell Nodes was formed.
 
-After spinning up 14 mainnet chains, 13 testnet chains, over 130 direct request jobs - with robust documentation to boot - LinkWell Nodes's current mission is to deliver secure, reliable, and timely data on-chain for their Web3 clientele, all while continuing to innovate on the back-end and support the community on the front-end. LinkWell Nodes has its eyes set on eventually becoming an official Chainlink node operator, but more importantly, covets the position of being recognized as the most reliable, communicative, and passionate Node Operator team present in the Chainlink (and broader Web3) ecosystem.
+Derek and Ken went to the drawing board, designing and engineering a scalable, redundant, and re-usable Chainlink node deployment model from the ground up. After a year of aggressive engineering efforts in the infrastructure, monitoring, and cypersecurity space, their infrastructure solution was fully-deployed and ready for production.
+
+Having now established robust custom data feeds on 14 mainnet and 13 testnet blockchains, LinkWell Nodes is committed to delivering secure, reliable, and timely on-chain data services to their Web3 customers, alongside continuous backend innovation and proactive community support. LinkWell Nodes has its eyes set on eventually becoming an official Chainlink node operator, but more importantly, covets the position of being recognized as the most reliable, communicative, and passionate blockchain node operators present within the Chainlink (and broader Web3) ecosystem.
