@@ -210,100 +210,104 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-    	// Redirect specific pages
-        redirects: [
-          // {
-          //   from: '/old/page',
-          //   to: '/new/page',
-          // }
-          {
-              from: '/knowledgebase/Chainlink-Consumers-FAQ',
-              to: '/knowledgebase/faq/Chainlink-Users',
+          // Redirect entire paths
+          createRedirects(existingPath) {
+          	// NOTE: order matters, as the below block will return at the first match
+              // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
+              // if (existingPath.includes('/newPath')) {	 // correct path
+              //     // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+              //     return [
+              //       existingPath.replace('/newPath', '/old/path'),	   // new (correct) path, old path
+              //     ];
+              // }
+              if (existingPath.includes('/v1/mainnets')) {
+                  return [
+                    existingPath.replace('/v1/mainnets', '/mainnets-v1'),
+                  ];
+              }
+              if (existingPath.includes('/v1/testnets')) {
+                  return [
+                    existingPath.replace('/v1/testnets', '/testnets-v1'),
+                  ];
+              }
+              if (existingPath.includes('/services/direct-request-jobs')) {
+                return [
+                  existingPath.replace('/services/direct-request-jobs', '/services/jobs'),
+                ];
+              }
+              return undefined; // Return a falsey value: no redirect created
           },
-          {
-              from: '/knowledgebase/Chainlink-Operators-FAQ',
-              to: '/knowledgebase/faq/Chainlink-Operators',
-          },
-          {
-              from: '/knowledgebase/Any-API-Guide',
-              to: '/services/direct-request-jobs/Any-API-Guide',
-          },
-          {
-        	  from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
-        	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
-          },
-          {
-        	  from: '/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
-        	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
-          },
-          {
-        	  from: '/services/direct-request-jobs/testnets/Avalance-Fuji-Testnet-Jobs',
-        	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
-          },
-          {
-        	  from: '/services/jobs/testnets/Avalance-Fuji-Testnet-Jobs',
-        	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
-          },
-          {
-              from: '/services/direct-request-jobs/External-Adapters',
-              to: '/services/Development-Services',
-          },
-          {
-              from: '/services/jobs/testnets/Testnets',
-              to: '/services/direct-request-jobs/testnets',
-          },
-          {
-              from: '/blog/introduction',
-              to: '/blog/Introduction',
-          },
-          {
-              from: '/blog/welcome',
-              to: '/blog/Welcome',
-          },
-          {
-              from: '/blog/Chainlink_Direct_Request_Vs_Functions',
-              to: '/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions',
-          },
-          {
-              from: '/blog/requesting_a_custom_chainlink_data_feed',
-              to: '/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API',
-          },
-          {
-              from: '/services/jobs/Direct-Request-Guide',
-              to: '/knowledgebase/Direct-Request-Guide',
-          },
-          {
-              from: '/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
-              to: '/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs',
-          },
-        ],
-        // Redirect entire paths
-        createRedirects(existingPath) {
-        	// NOTE: order matters, as the below block will return at the first match
-            // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
-            // if (existingPath.includes('/newPath')) {	 // correct path
-            //     // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-            //     return [
-            //       existingPath.replace('/newPath', '/old/path'),	   // new (correct) path, old path
-            //     ];
+      	  // Redirect specific pages
+          redirects: [
+            // {
+            //   from: '/old/page',
+            //   to: '/new/page',
             // }
-            if (existingPath.includes('/v1/mainnets')) {
-                return [
-                  existingPath.replace('/v1/mainnets', '/mainnets-v1'),
-                ];
-            }
-            if (existingPath.includes('/v1/testnets')) {
-                return [
-                  existingPath.replace('/v1/testnets', '/testnets-v1'),
-                ];
-            }
-            if (existingPath.includes('/services/direct-request-jobs')) {
-              return [
-                existingPath.replace('/services/direct-request-jobs', '/services/jobs'),
-              ];
-            }
-            return undefined; // Return a falsey value: no redirect created
-          },
+            {
+                from: '/knowledgebase/Chainlink-Consumers-FAQ',
+                to: '/knowledgebase/faq/Chainlink-Users',
+            },
+            {
+                from: '/knowledgebase/Chainlink-Operators-FAQ',
+                to: '/knowledgebase/faq/Chainlink-Operators',
+            },
+            {
+                from: '/knowledgebase/Any-API-Guide',
+                to: '/services/direct-request-jobs/Any-API-Guide',
+            },
+            {
+          	  from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
+          	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+            },
+            {
+          	  from: '/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
+          	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+            },
+            {
+          	  from: '/services/direct-request-jobs/testnets/Avalance-Fuji-Testnet-Jobs',
+          	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
+            },
+            {
+          	  from: '/services/jobs/testnets/Avalance-Fuji-Testnet-Jobs',
+          	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
+            },
+            {
+          	  from: '/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs',
+          	  to: '/services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs',
+            },
+            {
+          	  from: '/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
+          	  to: '/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs',
+            },
+            {
+                from: '/services/direct-request-jobs/External-Adapters',
+                to: '/services/Development-Services',
+            },
+            {
+                from: '/services/jobs/testnets/Testnets',
+                to: '/services/direct-request-jobs/testnets',
+            },
+            {
+                from: '/blog/introduction',
+                to: '/blog/Introduction',
+            },
+            {
+                from: '/blog/welcome',
+                to: '/blog/Welcome',
+            },
+            {
+                from: '/blog/Chainlink_Direct_Request_Vs_Functions',
+                to: '/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions',
+            },
+            {
+                from: '/blog/requesting_a_custom_chainlink_data_feed',
+                to: '/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API',
+            },
+            {
+                from: '/services/jobs/Direct-Request-Guide',
+                to: '/knowledgebase/Direct-Request-Guide',
+            },
+          ],
       },
     ],
   ],
