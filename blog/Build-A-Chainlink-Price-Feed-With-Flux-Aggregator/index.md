@@ -10,7 +10,7 @@ tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, decentr
 
 import TOCInline from '@theme/TOCInline';
 
-<lw-blog-subtitle>A how-to guide for building a decentralized Chainlink oracle price feed that can be integrated into your Web3 application.</lw-blog-subtitle>
+<lw-subtitle>A how-to guide for building a decentralized Chainlink oracle price feed that can be integrated into your Web3 application.</lw-subtitle>
 
 ![Chainlink Blog- How Price Feeds Secure DeFi](./Header.webp "Chainlink Blog- How Price Feeds Secure DeFi")
 

@@ -9,7 +9,7 @@ tags: [chainlink, oracle, data, functions, any api, web3, blockchain]
 
 import TOCInline from '@theme/TOCInline';
 
-<lw-blog-subtitle>Exploring the pros and cons of Chainlink's Direct Requests model - a guide to off-chain data retrieval and computation for Web3 developers.</lw-blog-subtitle>
+<lw-subtitle>Exploring the pros and cons of Chainlink's Direct Requests model - a guide to off-chain data retrieval and computation for Web3 developers.</lw-subtitle>
 
 ![Chainlink Any API - Direct Request vs. Functions](./Header.webp "Chainlink Any API - Direct Request vs. Functions")
 

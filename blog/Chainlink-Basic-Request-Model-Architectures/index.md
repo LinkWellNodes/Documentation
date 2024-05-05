@@ -9,7 +9,7 @@ tags: [chainlink, smart contracts, decentralized oracles, web3, blockchain, node
 
 import TOCInline from '@theme/TOCInline';
 
-<lw-blog-subtitle>An in-depth guide into Chainlink's Basic Request (Direct Request) model, and its various deployment architectures</lw-blog-subtitle>
+<lw-subtitle>An in-depth guide into Chainlink's Basic Request (Direct Request) model, and its various deployment architectures</lw-subtitle>
 
 ![Chainlink Basic Request Model Architecture Header](./Header.webp "Chainlink Basic Request Model Architectures")
 

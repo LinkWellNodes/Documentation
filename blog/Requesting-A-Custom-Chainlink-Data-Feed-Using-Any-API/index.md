@@ -9,7 +9,7 @@ tags: [chainlink, oracle, smart contract, web3, blockchain]
 
 import TOCInline from '@theme/TOCInline';
 
-<lw-blog-subtitle>7 steps for integrating real-world data from Chainlink oracles into your Web3 smart contract.</lw-blog-subtitle>
+<lw-subtitle>7 steps for integrating real-world data from Chainlink oracles into your Web3 smart contract.</lw-subtitle>
 
 ![Chainlink Any API Data Feed](./Header.webp "Chainlink Any API Data Feed")<center><small>Credit: https://blog.chain.link/apis-smart-contracts-and-how-to-connect-them</small></center>
 
