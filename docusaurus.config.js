@@ -212,7 +212,7 @@ const config = {
       {
           // Redirect entire paths
           createRedirects(existingPath) {
-          	// NOTE: order matters, as the below block will return at the first match
+          	  // NOTE: order matters, as the below block will return at the first match
               // Redirect from /old/path/X to /newPath/X (it seems backward, but this is correct)
               // if (existingPath.includes('/newPath')) {	 // correct path
               //     // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
@@ -256,28 +256,32 @@ const config = {
                 to: '/services/direct-request-jobs/Any-API-Guide',
             },
             {
-          	  from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
-          	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+          	    from: '/services/direct-request-jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
+          	    to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
             },
             {
-          	  from: '/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
-          	  to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
+          	    from: '/services/jobs/testnets/Arbitrum-Goerli-Testnet-Jobs',
+          	    to: '/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
             },
             {
-          	  from: '/services/direct-request-jobs/testnets/Avalance-Fuji-Testnet-Jobs',
-          	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
+          	    from: '/services/direct-request-jobs/testnets/Avalance-Fuji-Testnet-Jobs',
+          	    to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
             },
             {
-          	  from: '/services/jobs/testnets/Avalance-Fuji-Testnet-Jobs',
-          	  to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
+          	    from: '/services/jobs/testnets/Avalance-Fuji-Testnet-Jobs',
+          	    to: '/services/direct-request-jobs/testnets/Avalanche-Fuji-Testnet-Jobs',
             },
             {
-          	  from: '/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs',
-          	  to: '/services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs',
+          	    from: '/services/direct-request-jobs/testnets/Base-Goerli-Testnet-Jobs',
+            	to: '/services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs',
             },
             {
-          	  from: '/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
-          	  to: '/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs',
+          	    from: '/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
+          	    to: '/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs',
+            },
+            {
+          	    from: '/services/jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
+          	    to: '/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs',
             },
             {
                 from: '/services/direct-request-jobs/External-Adapters',
