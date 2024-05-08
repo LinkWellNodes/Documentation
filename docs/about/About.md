@@ -4,7 +4,7 @@ description: We are a U.S.-based Chainlink Oracle specializing in secure deliver
 
 # About Us
 
-<lw-subtitle><lw-emphasis>LinkWell Nodes is a U.S.-based Web3 infrastructure company</lw-emphasis> delivering Chainlink oracle services and secure blockchain node deployments. With over 25 years of combined experience in the cybersecurity, cloud infrastructure, financial services, and Web3 industries, LinkWell Nodes is dedicated to building a world powered by trustless, cryptographic truth.</lw-subtitle>
+<h2 class='lw-subtitle'><lw-emphasis>LinkWell Nodes is a U.S.-based Web3 infrastructure company</lw-emphasis> delivering Chainlink oracle services and secure blockchain node deployments. With over 25 years of combined experience in the cybersecurity, cloud infrastructure, financial services, and Web3 industries, LinkWell Nodes is dedicated to building a world powered by trustless, cryptographic truth.</h2>
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 

@@ -28,6 +28,16 @@ h2 {
 	font-weight:400;
 	line-height:44px;
 }
+h2:after
+{
+	margin: 24px 0;
+    content:' ';
+    display:block;
+    border: none;
+    background-color: var(--table-bg-color-dark);
+    color: #ccc;
+    height: 1px;
+}
 /* Blog directory headers */
 h2 > a[itemprop="url"] {
 	line-height:64px;
@@ -61,16 +71,6 @@ article[itemprop="blogPost"] > footer > div > a::after {
   	line-height:48px;
   }
 }
-h2:after
-{
-	margin: 24px 0;
-    content:' ';
-    display:block;
-    border: none;
-    background-color: var(--table-bg-color-dark);
-    color: #ccc;
-    height: 1px;
-}
 h3 {
 	margin: 48px 0 20px 0 !important;
 	font-family: 'Open Sans',sans-serif;
@@ -86,9 +86,14 @@ h4 {
 	font-size:16px;
 	font-weight:600;
 }
-lw-subtitle {
+.lw-subtitle {
 	font-weight: 400;
 	font-size:18px;
+	margin: 0 !important;
+	line-height:34px !important;
+}
+.lw-subtitle:after {
+    height: 0px !important;
 }
 lw-emphasis {
 	font-weight: 600;

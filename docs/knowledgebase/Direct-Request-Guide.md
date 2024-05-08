@@ -5,7 +5,7 @@ description: Chainlink's Any API explained, and a comparison to Chainlink Functi
 
 import TOCInline from '@theme/TOCInline';
 
-<lw-subtitle>An in-depth guide to <lw-emphasis>Chainlink's Direct Request model</lw-emphasis>, including key terminology, and how to get started requesting data from us.</lw-subtitle> 
+<h2 class='lw-subtitle'>An in-depth guide to <lw-emphasis>Chainlink's Direct Request model</lw-emphasis>, including key terminology, and how to get started requesting data from us.</h2> 
 
 ![Chainlink Direct Requests (Any API)](/img/chainlink-blue-header_1400x802.webp "Chainlink Direct Requests (Any API)")
 
@@ -29,12 +29,12 @@ As compared to [Chainlink Functions](https://docs.chain.link/chainlink-functions
 
 1. They support the greatest range of **data types**, **data sizes**, and **blockchain networks**.
 1. They are often the **cheapest option** for the end-user (allowing for negotiation with the specific node operator based on volume and request size). 
-1. They require the **least amount of technical effort** to implement. The oracle team simply provides you with a `request` and `receive` function to place into your smart contract, leaving you free to focus on the development of the rest of your smart contract application.
+1. They require the **least amount of technical effort** to implement. The oracle team simply provides you with a `request()` and `fulfill()` function to place into your smart contract, leaving you free to focus on the development of the rest of your smart contract application.
 
-As Direct Requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team with a proven track record.
+As Direct Requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team that you trust.
 
 :::info
-**LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct-to-consumer data feeds in exchange for a fee. We offer free external adapter design services, as well as free development services for any efforts required to get your smart contract application up and running.
+**LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct-to-consumer data feeds in exchange for a per-request fee. We offer free development services for any efforts required to get your data feed integration up and running.
 <br/>
 You can find our <b>direct request job IDs and oracle addresses</b> within our <a href='/services/direct-request-jobs/Jobs-and-Pricing'>Chainlink data feed documentation</a>, as well as our <a href='/services/direct-request-jobs/Service-Level-Agreement'>Service-Level Guarantee (SLA)</a>.
 :::
@@ -45,17 +45,20 @@ Before diving deeper into the direct request architecture, it's important to und
 
 **High-level request workflow**:
 
-1. Your consumer contract (ie, `ChainlinkClient`) makes a request to our oracle contract.
-1. Our Chainlink nodes receive the request, make an HTTP request to the appropriate API endpoint, and write the result back to your consumer contract.
+1. Your consumer contract (ie, `ChainlinkClient`) makes a request to our oracle contract, via the `request()` function.
+1. Our Chainlink nodes receive the request, make an HTTP request to the appropriate API endpoint, and write the result back to your consumer contract, via execution of your `fulfill()` function.
 1. Your Web3 application reads the data from your consumer contract.
 
 <p align="center">
   <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Chainlink Basic Request Model" />
+  <center><small>Chainlink Direct Request workflow</small></center>
 </p>
 
 ### Key terms
 
 * **Consumer contract**: A smart contract deployed by you (the data requester / consumer) that orchestrates the sending / receiving of off-chain data to a Chainlink oracle. It contains logic to describe the data request, send the request, and receive the resulting data. Full examples of consumer contracts can be found in our [Direct Request Job Documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+* **Request function**: The function (method) within your consumer contract that initiates the request to the Chainlink oracle. The required data request parameters (ie, URL, headers, etc.) are usually defined here. Once this function is executed, the Chainlink oracle picks up the emitted event, and begins its work retrieving the requested data.
+* **Fulfill function**: The function (method) within your consumer contract that receives the data requested from the Chainlink oracle. This function is triggered by the oracle itself, via the oracle contract - usually within 3-5 blocks of the `request()` function being triggered, depending on the blockchain. 
 * **Oracle contract** (also known as an **operator contract**): A smart contract deployed by the Chainlink node operator that orchestrates the sending / receiving of off-chain data between the consumer contract and the oracle node. All communication between the consumer contract and the oracle node passes through this contract.
 * **Oracle** (also known as a **Chainlink node**): An off-chain server that receives on-chain requests from the consumer contract (via the oracle contract), retrieves the requested data, and then delivers the result on-chain to the consumer contract, by execution of a blockchain transaction within the oracle contract.
 
@@ -68,11 +71,14 @@ The following diagram demonstrates the direct request workflow.
 1. The diagram begins with a call to your consumer contract's request function, via an EVM-compatible IDE such as [Remix](https://remix-project.org/#:~:text=JUMP%20INTO%20WEB3,teaching%20and%20experimenting%20with%20Ethereum.), combined with a Web3 wallet provider such as [MetaMask](https://metamask.io). 
 1. The left-hand workflow (**testnets**) is virtually the same as the right-hand workflow (**mainnets**) with the exception of needing to fund your consumer contract with LINK tokens before making a request.  
 
-![dr-workflow](/img/CL_DR_Model.webp) 
+<p align="center">
+  <img src="/img/CL_DR_Model.webp" alt="Chainlink Direct Request workflow (in-depth diagram)" />
+  <center><small>Chainlink Direct Request workflow (in-depth diagram)</small></center>
+</p>
 
 ## Requesting data from LinkWell Nodes
 
-The following information details how to initiate an oracle request from within your smart contract, using the LinkWell Nodes oracle infrastructure. 
+The following section illustrates how to trigger an oracle request from within your smart contract, using the LinkWell Nodes oracle infrastructure. 
 
 **Prepare your request**:
 
@@ -97,9 +103,9 @@ For **mainnet** chains, please wait several hours after filling out our [Getting
 1. Your data should now be available within your consumer contract for consumption by your Web3 application!
 
 :::info
-The end-to-end workflow from triggering your `request()` function to receiving your oracle response within the `fulfill()` function should take **~4-6** blocks. This typically occurs in less than a minute of waiting time, but depends highly on your chosen network's block time and congestion, as well as your chosen oracle team's security configuration.
+The end-to-end workflow from triggering your `request()` function to receiving your oracle response within the `fulfill()` function should take **~3-5** blocks. This typically occurs in less than a minute of waiting time, but depends highly on your chosen network's block time and congestion, as well as your chosen oracle team's security configuration.
 <br/>
-At LinkWell Nodes, we are able to offer a faster oracle response time (3 blocks minimum) on mainnets for a small increase in fee. Please reach out to us via our <a href='https://linkwellnodes.io/Getting-Started.html' target='_blank'>Getting Started</a> form, and include the specific details of your requirements.
+At LinkWell Nodes, we are able to offer a faster oracle response time (2 blocks minimum) on mainnets for a small increase in fee. Please reach out to us via our <a href='https://linkwellnodes.io/Getting-Started.html' target='_blank'>Getting Started</a> form, and include the specific details of your requirements.
 ::: 
 
 ## Need more help?

@@ -10,7 +10,7 @@ tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, node op
 
 import TOCInline from '@theme/TOCInline';
 
-<lw-subtitle>Where to find a Chainlink node operator, oracle address, and job ID for writing real-world data to your Web3 application.</lw-subtitle>
+<h2 class='lw-subtitle'>Where to find a Chainlink node operator, oracle address, and job ID for writing real-world data to your Web3 application.</h2>
 
 ![What is a Chainlink Node Operator](/img/link-electric.webp "What is a Chainlink Node Operator")<center><small>Credit: [https://dailyhodl.com](https://dailyhodl.com/2022/01/06/chainlink-link-approaching-decision-time-according-to-crypto-analyst-benjamin-cowen-heres-why)</small></center>
 

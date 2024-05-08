@@ -3,9 +3,25 @@ title: Retrieving weather data using Chainlink
 description: Code examples for writing AccuWeather (weather) data to your smart contract using a Chainlink oracle request (custom data feed). 
 ---
 
+import TOCInline from '@theme/TOCInline';
+
 # Retrieving AccuWeather data using Chainlink
 
+<h2 class='lw-subtitle'>An in-depth guide on how to request data from the AccuWeather API using a basic Chainlink oracle request.</h2>
+
 ![Retrieving AccuWeather data using Chainlink](./accuweather-header.webp "Retrieving AccuWeather data using Chainlink")
+
+---
+
+**On this page**:
+
+<TOCInline
+  toc={toc.filter((node) => node.level >= 1)}
+  minHeadingLevel={2}
+  maxHeadingLevel={3}
+/>
+
+---
 
 ## Introduction
 
@@ -105,13 +121,13 @@ In the following request, we will enter the `locationKey` determined in the abov
 :::
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/weather-data/AccuWeather.sol#L34-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/weather-data/AccuWeather.sol#L34-L57
 ```
 
 #### 3c. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/weather-data/AccuWeather.sol#L57-L65
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/examples/weather-data/AccuWeather.sol#L59-L67
 ```
 
 ### Need to protect your API key?

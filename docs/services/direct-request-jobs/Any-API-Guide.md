@@ -12,7 +12,7 @@ The below examples will walk you through the process of using our Chainlink orac
 :::info 
 **Don't see your API listed below?** 
 
-Our oracles can still support your request. Fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to receive a free custom smart contract that works for your use case, or refer to our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) for how-to instructions on programming your request! 
+Our oracles can still support your request. Refer to our [data feed documentation](/services/direct-request-jobs/Jobs-and-Pricing) for instructions on how to send your request to any API, or fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to receive a free custom smart contract that works for your use case! 
 :::
 
 ---

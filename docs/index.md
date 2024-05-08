@@ -6,7 +6,7 @@ slug: /
 
 # LinkWell Nodes Documentation
 
-<lw-subtitle><lw-emphasis>LinkWell Nodes is a U.S.-based Web3 infrastructure company</lw-emphasis> specializing in Chainlink oracle services and secure blockchain node deployments. We provide APIs for writing any real-world data to your blockchain smart contract.</lw-subtitle>
+<h2 class='lw-subtitle'><lw-emphasis>LinkWell Nodes is a U.S.-based Web3 infrastructure company</lw-emphasis> specializing in Chainlink oracle services and secure blockchain node deployments. We provide APIs for writing any real-world data to your blockchain smart contract.</h2>
 
 ![LinkWell Nodes - U.S.-based Chainlink oracle](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink oracle")
 
