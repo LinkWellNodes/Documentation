@@ -2,7 +2,7 @@
 title: "LinkWell Nodes joins the Allora Network as a Validator"
 description: "Learn more about the partnership between LinkWell Nodes and the Allora Network."
 date: "2024-05-09"
-image: /img/lwn-joins-allora/
+image: https://docs.linkwellnodes.io/img/lwn-joins-allora/allora__linkwell_nodes.png
 keywords: [web3, blockchain, node operator, validator, allora network, ai]
 authors: [Ken, Derek]
 tags: [web3, blockchain, node operator, validator, allora network, ai]
