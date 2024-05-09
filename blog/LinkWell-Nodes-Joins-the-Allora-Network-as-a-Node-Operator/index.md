@@ -1,5 +1,5 @@
 ---
-title: "LinkWell Nodes joins the Allora Network as a Node Operator"
+title: "LinkWell Nodes joins the Allora Network as a Validator"
 description: "Learn more about the partnership between LinkWell Nodes and the Allora Network."
 date: "2024-05-09"
 image: /img/lwn-joins-allora/
@@ -18,7 +18,7 @@ import TOCInline from '@theme/TOCInline';
 
 ## Announcement
 
-LinkWell Nodes has joined the group of node operators that help secure the Allora Network. As a U.S.-based Web3 infrastructure company, LinkWell Nodes specializes in delivering Chainlink oracle data feeds and secure blockchain node deployments. Holding true to its core tenet of being a Web3 global citizen, LinkWell Nodes powers 95% of its infrastructure using renewable energy, and will reach 100% by next year. LinkWell Nodes operates server infrastructure across several physically-distinct cloud data centers, with its primary center-of-operations located in the northwestern United States. Using infrastructure-as-code (IaC), LinkWell Nodes is able to ensure robust scalability, disaster recovery, and 24/7 monitoring across all of its highly-available blockchain infrastructure.
+LinkWell Nodes has joined the group of validators that help secure the Allora Network. As a U.S.-based Web3 infrastructure company, LinkWell Nodes specializes in delivering Chainlink oracle data feeds and secure blockchain node deployments. Holding true to its core tenet of being a Web3 global citizen, LinkWell Nodes powers 95% of its infrastructure using renewable energy, and will reach 100% by next year. LinkWell Nodes operates server infrastructure across several physically-distinct cloud data centers, with its primary center-of-operations located in the northwestern United States. Using infrastructure-as-code (IaC), LinkWell Nodes is able to ensure robust scalability, disaster recovery, and 24/7 monitoring across all of its highly-available blockchain infrastructure.
 
 With an extensive track record operating custom Chainlink data feeds on 14 blockchains (at the time of this writing), LinkWell Nodes is uniquely positioned to help the Allora Network establish a strong foundation by deploying itself as a node operator in the early days of the network.
 
