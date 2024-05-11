@@ -64,7 +64,7 @@ const config = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
+          ignorePatterns: ['/blog/tags/**','/blog/archive','/services/direct-request-jobs/v1/**'],
           filename: 'sitemap.xml',
         },
       }),

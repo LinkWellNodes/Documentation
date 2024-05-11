@@ -56,7 +56,7 @@ observationSource = """
     gas_guardian [
                 type="bridge" 
                 name="gas-guardian" 
-                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"data\\":$(encode_gas_guardian_data),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
+                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"data\\":$(encode_gas_guardian_data),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress),\\"responseobj\\":$(parse)}" 
                 headers="[\\"disable\\", \\"false\\", \\"gas-limit\\", \\"1000000\\", \\"max-loss-usd\\", \\"0\\", \\"max-loss-pct\\", \\"0\\"]"
                 ]
 
