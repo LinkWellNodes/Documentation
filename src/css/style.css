@@ -38,7 +38,7 @@ h2:after
     color: #ccc;
     height: 1px;
 }
-/* Blog directory headers */
+/* Blog feed titles */
 h2 > a[itemprop="url"] {
 	line-height:64px;
 }
@@ -56,13 +56,18 @@ article[itemprop="blogPost"] > footer > div > a::after {
 	content: " \2794" !important;
 	font-weight: 400;
 }
+/* Blog left-hand sidebar */
+aside > nav > ul > li {
+	margin-top:14px !important;
+	line-height: 30px;
+}
 /* MOBILE STYLES */
 @media screen and (max-width: 576px) {
   /* Blog titles and subtitles */
   h1, h2, lw-subtitle {
     margin-top:24px !important;
   }
-  /* Blog directory headers */
+  /* Blog feed titles */
   h2 > a[itemprop="url"] {
     line-height:44px;
   }
@@ -251,7 +256,6 @@ a.breadcrumbs__link {
 a.breadcrumbs__link:hover {
 	background-color: var(--table-bg-color-dark) !important;
 }
-
 /* Code boxes and excerpts */
 code {
 	background-color: var(--table-bg-color-dark);
