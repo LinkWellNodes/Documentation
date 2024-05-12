@@ -21,7 +21,7 @@ LinkWell Nodes offers a variety of support services to assist you with all of yo
 
 ---
 
-## Advisory Calls
+## Advisory calls
 
 Looking for a team of Web3 experts to advise you on your **Chainlink**, **infrastructure**, **monitoring**, or **smart contract** issues? 
 
@@ -40,7 +40,7 @@ Our specialities include:
 - Chainlink Direct Request (Any API) issues
 - External adapter design
 
-## Customer Support
+## Customer support
 
 Need help connecting to our Chainlink oracle services? LinkWell Nodes is happy to provide everything you need to get you up and running.
 
@@ -86,7 +86,7 @@ For customers seeking one-off answers to their implementation questions:
 Contact us on our [Discord server](https://discord.gg/Xs6SjqVPUA) to begin your support request.
 :::
 
-## Smart Contract Development
+## Smart contract development
 
 Need help building out your smart contract? LinkWell Nodes offers custom smart contract development services on anything from Chainlink implementations to gas optimizations.
 
@@ -114,7 +114,7 @@ For our customers looking to use our oracle infrastructure on testnet blockchain
 Contact us on our [Discord server](https://discord.gg/Xs6SjqVPUA) to begin your smart contract development request.
 :::
 
-## External Adapter (EA) Development
+## External Adapter (EA) development
 
 ### External adapter hosting and development
 
