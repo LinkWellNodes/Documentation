@@ -35,7 +35,7 @@ We offer free smart contract development services for our **mainnet customers**.
 - [Development Services](/services/Development-Services)
 - [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement)
 
-## Learn More
+## Learn more
 
 To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/knowledgebase/Direct-Request-Guide).
 

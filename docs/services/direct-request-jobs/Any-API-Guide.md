@@ -19,48 +19,48 @@ Our oracles can still support your request. Refer to our [data feed documentatio
 
 **On this page**:
 
-* ### [Coin Price Data](#coin-price-data-examples)
-* ### [IPFS Data](#ipfs-data-examples)
-* ### [Sports Data](#sports-data-examples)
-* ### [Stock Price Data](#stock-price-data-examples)
-* ### [Weather Data](#weather-data-examples)
+* ### [Coin price data](#coin-price-data-examples)
+* ### [IPFS data](#ipfs-data-examples)
+* ### [Sports data](#sports-data-examples)
+* ### [Stock price data](#stock-price-data-examples)
+* ### [Weather data](#weather-data-examples)
 
 ---
 
 ## View our examples:
 
-### Coin Price Data Examples
+### Coin price data examples
 
 Write live coin prices from internet-based crypto price aggregators to your blockchain smart contract:
 
 * [CryptoCompare](/services/direct-request-jobs/examples/coin-price-data/CryptoCompare)
 
-### IPFS Data Examples
+### IPFS data examples
 
 Send/receive data to and from the [Interplanetary File System](https://ipfs.tech/) using your smart contract application:
 
 * [IPFS (InterPlanetary File System)](/services/direct-request-jobs/examples/ipfs-data/IPFS)
 
-### Sports Data Examples
+### Sports data examples
 
 Retrieve live sports updates, scores, and betting odds for your decentralized sports betting application:
 
 * [TheRundown](/services/direct-request-jobs/examples/sports-data/TheRundown)
 * [SportsDataIO](/services/direct-request-jobs/examples/sports-data/SportsDataIO)
 
-### Stock Price Data Examples
+### Stock price data examples
 
 Download price updates for traditional stock market instruments, enabling tokenized financial assets within the DeFi ecosystem:
 
 * [Alpha Vantage](/services/direct-request-jobs/examples/stock-price-data/Alpha-Vantage)
 
-### Weather Data Examples
+### Weather data examples
 
 Write temperature, forecast, and other weather data to your smart contract, enabling a variety of Web3 use cases (ie, DeFi insurance protocols):
 
 * [AccuWeather](/services/direct-request-jobs/examples/weather-data/AccuWeather)
 
-## Learn More
+## Learn more
 
 To learn more about how Chainlink's direct request model works, visit the [Direct Request (Any API) Guide](/knowledgebase/Direct-Request-Guide) in our knowledgebase.
 
