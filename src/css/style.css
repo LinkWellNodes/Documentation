@@ -61,6 +61,10 @@ aside > nav > ul > li {
 	margin-top:14px !important;
 	line-height: 30px;
 }
+aside > nav > ul > li:hover {
+	text-decoration: underline;
+}
+
 /* MOBILE STYLES */
 @media screen and (max-width: 576px) {
   /* Blog titles and subtitles */
@@ -205,10 +209,6 @@ hr {
 li::marker {
 	font-weight:600;
 }
-ul.table-of-contents > li {
-	margin-bottom: 14px;
-	margin-left: 12px;
-}
 li > h2 {
 	margin: 0 !important;
 	font-size: 18px !important;
@@ -336,6 +336,9 @@ nav[aria-label="Docs sidebar"] {
 	padding: 8px 0 60px 8px;
 	background-color: #EEF9FD;
 }
+nav[aria-label="Docs sidebar"] a {
+	margin-top: 2px;
+}
 .sidebarGroupRuler {
 	background-color: var(--table-bg-color-dark);
 	margin-top: 14px;
@@ -422,8 +425,11 @@ thead > tr {
 .table-of-contents {
 	font-size:14px;
 }
-.table-of-contents li {
-	margin: 0.7rem 0.5rem;
+.table-of-contents > li {
+	margin: 14px 0 14px 12px;
+}
+.table-of-contents a:hover {
+	text-decoration: underline;
 }
 .table-of-contents__link--active {
 	font-weight: 600;
