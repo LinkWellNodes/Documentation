@@ -62,7 +62,7 @@ Allora is a self-improving decentralized AI network.
 
 Allora enables applications to leverage smarter, more secure AI through a self-improving network of ML models. By combining innovations in crowdsourced intelligence, reinforcement learning, and regret minimization, Allora unlocks a vast new design space of applications at the intersection of crypto and AI.
 
-To learn more about the Allora Network, visit the [Allora website](https://www.allora.network/), [Twitter](https://twitter.com/AlloraNetwork), [Medium](https://medium.com/allora-network), [Discord](https://discord.com/invite/allora), and [Developer docs](https://docs.allora.network/docs/welcome-to-the-allora-docs).
+To learn more about the Allora Network, visit the [Allora website](https://www.allora.network/), [Twitter](https://twitter.com/AlloraNetwork), [Medium](https://medium.com/allora-network), and [Discord](https://discord.com/invite/allora).
 
 > _LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink._
 >
