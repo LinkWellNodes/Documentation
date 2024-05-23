@@ -66,9 +66,9 @@ To deploy smart contracts on-chain, you'll first need a wallet and ETH. ETH is t
   <img src="/img/deploy_sc_base/mm_extension.webp" alt="Download Metamask to Your Browser From Chrome Web Store />
 </p>
 
-1. Once installed, open the MetaMask extension in your browser and proceed through the setup process. A key point to note here is the 12-word seed phrase - a unique recovery key that allows you to restore access to your wallet and funds. Write this down on paper and store it safely.
+2. Once installed, open the MetaMask extension in your browser and proceed through the setup process. A key point to note here is the 12-word seed phrase - a unique recovery key that allows you to restore access to your wallet and funds. Write this down on paper and store it safely.
 
-1. You'll need to add the Base Sepolia testnet network to MetaMask. A detailed guide on how to do this can be found [here](https://docs.base.org/docs/using-base/#metamask). To add Base Sepolia as a custom network to MetaMask:
+3. You'll need to add the Base Sepolia testnet network to MetaMask. A detailed guide on how to do this can be found [here](https://docs.base.org/docs/using-base/#metamask). To add Base Sepolia as a custom network to MetaMask:
 
 * Open the network selection dropdown menu by clicking the dropdown button at the top of the extension (default is Ethereum Mainnet).
 * Click the Add network button.
@@ -84,7 +84,7 @@ To deploy smart contracts on-chain, you'll first need a wallet and ETH. ETH is t
 
 > _To add other networks to MetaMask, simply navigate to [Chainlist](Chainlst.org), connect your wallet, search for your desired network, and click **Add to Metamask**._
 
-1. Fund your MetaMask wallet with testnet ETH. Testnet ETH is available from one of the [BASE Network Faucets](https://docs.base.org/docs/tools/network-faucets/).
+4. Fund your MetaMask wallet with testnet ETH. Testnet ETH is available from one of the [BASE Network Faucets](https://docs.base.org/docs/tools/network-faucets/).
 
 <p align="center">
   <img src="/img/deploy_sc_base/superchain_faucet.webp" alt="Connect to a Facuet to Receive Testnet ETH" />
@@ -100,15 +100,15 @@ In the following steps, you'll write, compile, and deploy a smart contract that 
 
 > _Please pay special note to the constructor function. It specifies important information about the request destination, payment for your request, and is preconfigured to point to [LinkWell Nodes Base Sepolia testnet oracle](https://docs.linkwellnodes.io/services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs?dataType=Uint256)._
 
-1. Use the default compiler settings for this contract. Click the **Compile uint256.sol** button to convert the Solidity code into bytecode that the Ethereum Virtual Machine can understand.
+2. Use the default compiler settings for this contract. Click the **Compile uint256.sol** button to convert the Solidity code into bytecode that the Ethereum Virtual Machine can understand.
 
 <p align="center">
   <img src="/img/deploy_sc_base/remix_solidity_compiler.webp" alt="Open the Sample Github Code and Click Compile" />
 </p>
 
-1. Now it's time to deploy the contract. Navigate to the **Deploy and run transactions** button on the left.
+3. Now it's time to deploy the contract. Navigate to the **Deploy and run transactions** button on the left.
 
-1. The next step is to configure the Remix environment to connect to your MetaMask wallet, which is currently connected to the Base Sepolia testnet.
+4. The next step is to configure the Remix environment to connect to your MetaMask wallet, which is currently connected to the Base Sepolia testnet.
 
 <p align="center">
   <img src="/img/deploy_sc_base/remix_connect_to_metamask.webp" alt="Connect Remix to Your Metamask Wallet" />
@@ -116,13 +116,13 @@ In the following steps, you'll write, compile, and deploy a smart contract that 
 
 Under **Environment**, click **Injected Provider - Metamask**. This will open up a MetaMask window that provides a few prompts to connect to Remix.
 
-1. Next, you'll click the orange deploy button. This deploys the smart contract to the Base Sepolia testnet.
+5. Next, you'll click the orange deploy button. This deploys the smart contract to the Base Sepolia testnet.
 
 <p align="center">
   <img src="/img/deploy_sc_base/remix_smart_contract_deploy.webp" alt="Deploy the Smart Contract to Base Sepolia" />
 </p>
 
-1. Deploying the contract opens a MetaMask prompt which requests that you confirm the transaction. Once confirmed after a short period, your contract will be officially deployed!
+6. Deploying the contract opens a MetaMask prompt which requests that you confirm the transaction. Once confirmed after a short period, your contract will be officially deployed!
 
 <p align="center">
   <img src="/img/deploy_sc_base/mm_confirm_txn_contract_deploy.webp" alt="IMG DESCRIPTION" />
@@ -130,7 +130,7 @@ Under **Environment**, click **Injected Provider - Metamask**. This will open up
 
 > _When you deploy a contract to an EVM-compatible chain, your Solidity code is compiled into bytecode and sent in a transaction to the network. Nodes verify the transaction, consuming gas (paid in ETH), and the contract is assigned a unique address on the blockchain. This process makes the contract publicly accessible and secure within the decentralized network._
 
-1. Just like your MetaMask wallet, your new contract will have its own unique address as well. You can view the contract within the [Base Sepolia block explorer](https://sepolia.basescan.org/) by pasting the contract address in the search bar.
+7. Just like your MetaMask wallet, your new contract will have its own unique address as well. You can view the contract within the [Base Sepolia block explorer](https://sepolia.basescan.org/) by pasting the contract address in the search bar.
 
 ## Execute an on-demand request in your smart contract to a Chainlink oracle
 
@@ -144,7 +144,7 @@ In Remix, open up the contract that you just deployed, and you should see a numb
   <img src="/img/deploy_sc_base/contract_view_functions.webp" alt="IMG DESCRIPTION" />
 </p>
 
-1. Next, click the orange **request** button. This initiates an on-demand request to the specified Chainlink oracle, and will open up another MetaMask prompt that will require you to confirm the transaction. At a high level, the Chainlink oracle will reach out to the CryptoCompare endpoint and return a **uint256** object (the price of ETH in USD).
+2. Next, click the orange **request** button. This initiates an on-demand request to the specified Chainlink oracle, and will open up another MetaMask prompt that will require you to confirm the transaction. At a high level, the Chainlink oracle will reach out to the CryptoCompare endpoint and return a **uint256** object (the price of ETH in USD).
 
 <p align="center">
   <img src="/img/deploy_sc_base/oracle_request_function.webp" alt="IMG DESCRIPTION" />
@@ -152,7 +152,7 @@ In Remix, open up the contract that you just deployed, and you should see a numb
 
 > _If interested in diving deeper into the step by step process of making an on-demand request to a Chainlink oracle, please refer to our [developer documentation direct requests](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide)._
 
-1. Pending the request was successfully completed and after a short period, the response variable should now be updated with the latest price of Ethereum, denominated in USD.
+3. Pending the request was successfully completed and after a short period, the response variable should now be updated with the latest price of Ethereum, denominated in USD.
 
 <p align="center">
   <img src="/img/deploy_sc_base/response_variable_udpated.webp" alt="IMG DESCRIPTION" />
