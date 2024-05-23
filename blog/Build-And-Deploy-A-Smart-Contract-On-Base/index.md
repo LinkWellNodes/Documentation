@@ -50,7 +50,7 @@ Before diving in, we'll give a quick primer on the four different Web3 technolog
 
 * **Solidity**: [Solidity](https://docs.soliditylang.org/en/v0.8.25/) is Ethereum's primary programming language for developing smart contracts. It will be helpful to have at least a basic understanding of Solidity before getting started.
 
-* **Chainlink**: Chainlink oracles are services that typically operate within decentralized oracle networks (DON), connecting smart contracts to real-world data and external systems. They act as bridges, allowing blockchain applications to access cross-chain connectivity, off-chain compute, and external information such as weather data, stock prices, and sports scores, which are not natively available on the blockchain.
+* **Chainlink**: [Chainlink oracles](https://chain.link/education/blockchain-oracles) are services that typically operate within decentralized oracle networks (DON), connecting smart contracts to real-world data and external systems. They act as bridges, allowing blockchain applications to access cross-chain connectivity, off-chain compute, and external information such as weather data, stock prices, and sports scores, which are not natively available on the blockchain.
 
 > _Chainlink oracles can return data from anywhere on the internet. For more ideas, we recommend looking into Chainlink's blog on the [77 different use cases enabled by Chainlink](https://blog.chain.link/smart-contract-use-cases/). Additional examples that walk you through making an on-demand request can be found within our [website's documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Any-API-Guide)._
 
@@ -68,12 +68,12 @@ To deploy smart contracts on-chain, you'll first need a wallet and ETH. ETH is t
 
 2. Once installed, open the MetaMask extension in your browser and proceed through the setup process. A key point to note here is the 12-word seed phrase - a unique recovery key that allows you to restore access to your wallet and funds. Write this down on paper and store it safely.
 
-3. You'll need to add the Base Sepolia testnet network to MetaMask. A detailed guide on how to do this can be found [here](https://docs.base.org/docs/using-base/#metamask). To add Base Sepolia as a custom network to MetaMask:
+3. You'll need to add the Base Sepolia testnet network to MetaMask. To add Base Sepolia as a custom network to MetaMask:
 
 * Open the network selection dropdown menu by clicking the dropdown button at the top of the extension (default is Ethereum Mainnet).
-* Click the Add network button.
-* Click Add a network manually.
-* In the Add a network manually dialog that appears, enter the following information for the Base Sepolia testnet:
+* Click the **Add network** button.
+* Click **Add a network manually**.
+* In the **Add a network manually** dialog that appears, enter the following information for the Base Sepolia testnet:
 
 <p align="center">
   <img src="/img/deploy_sc_base/mm_base_sepolia_network.webp" alt="Configure Metamask to Connect to Base Sepolia" />
@@ -145,7 +145,7 @@ Under **Environment**, click **Injected Provider - Metamask**. This will open up
   <img src="/img/deploy_sc_base/remix_smart_contract_deploy.webp" alt="Deploy the Smart Contract to Base Sepolia" />
 </p>
 
-6. Deploying the contract opens a MetaMask prompt which requests that you confirm the transaction. Once confirmed after a short period, your contract will be officially deployed!
+6. Deploying the contract opens a MetaMask prompt which requests that you confirm the transaction. Once confirmed and after a short period, your contract will be officially deployed to the blockchain!
 
 <p align="center">
   <img src="/img/deploy_sc_base/mm_confirm_txn_contract_deploy.webp" alt="IMG DESCRIPTION" />
@@ -181,7 +181,7 @@ In Remix, open up the contract that you just deployed, and you should see a numb
   <img src="/img/deploy_sc_base/response_variable_udpated.webp" alt="View the Updated Response Variable" />
 </p>
 
-Take note that the CryptoCompare url specified in the request function provides a JSON response of **3833.23**. Due to the fact that decimals do not work in Solidity, the **3833.23** value is multiplied by 10 ** 18 in order to remove the decimals before writing the value on chain.
+Take note that the CryptoCompare url specified in the request function provides a JSON response of the ETH value with decimals (ie **3833.23**.).  Due to the fact that decimals do not work in Solidity, the **3833.23** value is multiplied by 10 ** 18 in order to remove the decimals before writing the value on chain.
 
 Now that the latest Ethereum price is stored in a variable in your contract, you can execute additional logic based on this updated value, such as:
 
