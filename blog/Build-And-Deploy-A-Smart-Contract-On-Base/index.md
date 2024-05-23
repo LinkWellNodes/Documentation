@@ -82,7 +82,7 @@ To deploy smart contracts on-chain, you'll first need a wallet and ETH. ETH is t
 * Tap the Save button to save Base Sepolia as a network.
 * You can now switch to the Base Sepolia network in Metamask.
 
-> _To add other networks to MetaMask, simply navigate to [Chainlist](Chainlist.org), connect your wallet, search for your desired network, and click **Add to Metamask**._
+> _To add other networks to MetaMask, simply navigate to [Chainlist](https://Chainlist.org), connect your wallet, search for your desired network, and click **Add to Metamask**._
 
 4. Fund your MetaMask wallet with testnet ETH. Testnet ETH is available from one of the [BASE Network Faucets](https://docs.base.org/docs/tools/network-faucets/).
 
