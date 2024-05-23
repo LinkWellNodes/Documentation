@@ -30,27 +30,27 @@ import TOCInline from '@theme/TOCInline';
 
 ## Introduction
 
-In this tutorial, we'll guide you through the step-by-step process of building and deploying a smart contract on the Base Sepolia testnet and connecting it to Chainlink to incorporate real-world data.
+In this tutorial, we'll guide you through the step-by-step process of building and deploying a smart contract on the Base Sepolia testnet and make an on-demand request to a Chainlink oracle for near real-time price data.
 
-Without access to real-world data, many dApps simply wouldn't exist. Fortunately, Chainlink, the leading Web3 services platform for cross-chain connectivity, compute, and data, provides numerous services for retrieving price or other external data from anywhere on the internet.
+Without access to real-world data, many dApps simply wouldn't exist. Fortunately, [Chainlink](https://chain.link/), the leading Web3 services platform for cross-chain connectivity, compute, and data, provides numerous services for retrieving price or other external data from anywhere on the internet.
 
-Coinbase's Base Sepolia network is a Layer 2 testnet blockchain on Ethereum, offering scalability, security, and low transaction costs through Optimistic Rollup technology. Integrated with Coinbase's ecosystem, it provides easy access to a large user base and seamless tool integration, making it ideal for building decentralized applications.
+[Coinbase's Base Sepolia network](https://sepolia.basescan.org/) is a Layer 2 testnet blockchain on Ethereum, offering scalability, security, and low transaction costs through Optimistic Rollup technology. Integrated with Coinbase's ecosystem, it provides easy access to a large user base and seamless tool integration, making it ideal for building decentralized applications.
 
-This tutorial will demonstrate how to deploy a contract on the Base Sepolia testnet and make an on-demand request to a Chainlink oracle for near real-time price data. Feel free to follow along as we walk you through the process.
+Feel free to follow along as we walk you through the process.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/watch?v=pWGLtjG-F5c" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pWGLtjG-F5c" frameborder="0" allowfullscreen></iframe></center>
 
 ## Prerequisites
 
 Before diving in, we'll give a quick primer on the four different Web3 technologies that you'll be interacting with in this tutorial:
 
-* **A Web3 Wallet**: Web3 wallets are required for not only storing your tokens, but also for deploying your smart contracts and signing messages. Examples include  MetaMask and Coinbase Wallet.
+* **A Web3 Wallet**: Web3 wallets are required for not only storing your tokens, but also for deploying your smart contracts and signing messages. Examples include [MetaMask](https://metamask.io/) and [Coinbase Wallet](https://www.coinbase.com/wallet).
 
 * **An IDE**: EVM-compatible Integrated development environments (IDE) like [Remix](https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null) are required for deploying and testing your smart contract. Advanced users may prefer a development framework such as  [Foundry](https://docs.chain.link/quickstarts/foundry-chainlink-toolkit), particularly for more complex deployments.
 
 * **Solidity**: [Solidity](https://docs.soliditylang.org/en/v0.8.25/) is Ethereum's primary programming language for developing smart contracts. It will be helpful to have at least a basic understanding of Solidity before getting started.
 
-* **Chainlink**: Chainlink oracles are services that connect smart contracts to real-world data and external systems. They act as bridges, allowing blockchain applications to access information such as weather data, stock prices, and sports scores, which are not natively available on the blockchain.
+* **Chainlink**: Chainlink oracles are services that typically operate within decentralized oracle networks (DON), connecting smart contracts to real-world data and external systems. They act as bridges, allowing blockchain applications to access cross-chain connectivity, off-chain compute, and external information such as weather data, stock prices, and sports scores, which are not natively available on the blockchain.
 
 > _Chainlink oracles can return data from anywhere on the internet. For more ideas, we recommend looking into Chainlink's blog on the [77 different use cases enabled by Chainlink](https://blog.chain.link/smart-contract-use-cases/). Additional examples that walk you through making an on-demand request can be found within our [website's documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/Any-API-Guide)._
 
@@ -58,7 +58,7 @@ Before diving in, we'll give a quick primer on the four different Web3 technolog
 
 To deploy smart contracts on-chain, you'll first need a wallet and ETH. ETH is the token used to pay for the network's work in adding the contract to the blockchain and storing its data. Your wallet holds the ETH needed for these transactions. Install MetaMask, set it up for the Base Sepolia testnet, and add free testnet ETH to your wallet.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/watch?v=-HTubEJ61zU" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/-HTubEJ61zU" frameborder="0" allowfullscreen></iframe></center>
 
 1. [Download and install MetaMask](https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask) within your browser.
 
@@ -94,7 +94,30 @@ To deploy smart contracts on-chain, you'll first need a wallet and ETH. ETH is t
 
 In the following steps, you'll write, compile, and deploy a smart contract that fetches price data (of type **uint256**) from the CryptoCompare data provider. The sample code shows how to create a basic smart contract that makes on-demand requests to a Chainlink oracle for the price of ETH in USD from CryptoCompare.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/watch?v=5dcRMHUhA20" frameborder="0" allowfullscreen></iframe></center>
+``` solidity
+    // Send a request to the Chainlink oracle
+    function request() public {
+    
+        Chainlink.Request memory req = _buildOperatorRequest(jobId, this.fulfill.selector);
+        
+        // DEFINE THE REQUEST PARAMETERS (example)
+        req._add('method', 'GET');
+        req._add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=ETH&tsyms=USD');
+        req._add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req._add('body', '');
+        req._add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
+        
+        // The following curl command simulates the above request parameters: 
+        // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
+        
+        // PROCESS THE RESULT (example)
+        req._add('path', 'ETH,USD');
+        req._addInt('multiplier', 10 ** 18);
+
+        // Send the request to the Chainlink oracle        
+        _sendOperatorRequest(req, fee);
+    }
+```
 
 1. The first step is to navigate to [Remix](https://remix.ethereum.org/) and deploy the sample contract. For ease of use, you can navigate to [this link](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256/uint256.sol&lang=en&optimize=false&runs=200&evmVersion=null). This will open the contents of the sample contract code and allow you to edit it if you desire.
 
@@ -132,7 +155,7 @@ Under **Environment**, click **Injected Provider - Metamask**. This will open up
 
 7. Just like your MetaMask wallet, your new contract will have its own unique address as well. You can view the contract within the [Base Sepolia block explorer](https://sepolia.basescan.org/) by pasting the contract address in the search bar.
 
-## Execute an on-demand request in your smart contract to a Chainlink oracle
+## Executing an on-demand request in your smart contract to a Chainlink oracle
 
 You've deployed your first smart contract. Congrats!
 
