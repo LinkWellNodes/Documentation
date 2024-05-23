@@ -63,7 +63,7 @@ To deploy smart contracts on-chain, you'll first need a wallet and ETH. ETH is t
 1. [Download and install MetaMask](https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask) within your browser.
 
 <p align="center">
-  <img src="/img/deploy_sc_base/mm_extension.webp" alt="Download Metamask to Your Browser From Chrome Web Store />
+  <img src="/img/deploy_sc_base/mm_extension.webp" alt="Download Metamask to Your Browser From Chrome Web Store" />
 </p>
 
 2. Once installed, open the MetaMask extension in your browser and proceed through the setup process. A key point to note here is the 12-word seed phrase - a unique recovery key that allows you to restore access to your wallet and funds. Write this down on paper and store it safely.
@@ -141,13 +141,13 @@ In Remix, open up the contract that you just deployed, and you should see a numb
 1. Feel free to review the **getJobId** and **getOracleAddress** functions, which should display the oracle address and job ID that you specified in the constructor. Additionally, click the **response** button, which should initially show **0**, since you haven't made an on-demand oracle request yet.
 
 <p align="center">
-  <img src="/img/deploy_sc_base/contract_view_functions.webp" alt="IMG DESCRIPTION" />
+  <img src="/img/deploy_sc_base/contract_view_functions.webp" alt="Explore the Smart Contracts View Functions" />
 </p>
 
 2. Next, click the orange **request** button. This initiates an on-demand request to the specified Chainlink oracle, and will open up another MetaMask prompt that will require you to confirm the transaction. At a high level, the Chainlink oracle will reach out to the CryptoCompare endpoint and return a **uint256** object (the price of ETH in USD).
 
 <p align="center">
-  <img src="/img/deploy_sc_base/oracle_request_function.webp" alt="IMG DESCRIPTION" />
+  <img src="/img/deploy_sc_base/oracle_request_function.webp" alt="Execute the Request Function" />
 </p>
 
 > _If interested in diving deeper into the step by step process of making an on-demand request to a Chainlink oracle, please refer to our [developer documentation direct requests](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide)._
@@ -155,7 +155,7 @@ In Remix, open up the contract that you just deployed, and you should see a numb
 3. Pending the request was successfully completed and after a short period, the response variable should now be updated with the latest price of Ethereum, denominated in USD.
 
 <p align="center">
-  <img src="/img/deploy_sc_base/response_variable_udpated.webp" alt="IMG DESCRIPTION" />
+  <img src="/img/deploy_sc_base/response_variable_udpated.webp" alt="View the Updated Response Variable" />
 </p>
 
 Take note that the CryptoCompare url specified in the request function provides a JSON response of **3833.23**. Due to the fact that decimals do not work in Solidity, the **3833.23** value is multiplied by 10 ** 18 in order to remove the decimals before writing the value on chain.
