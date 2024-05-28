@@ -12,7 +12,7 @@ import TOCInline from '@theme/TOCInline';
 
 <h2 class='lw-subtitle'>How to write, compile, and deploy your first smart contract on Base Sepolia that connects to a Chainlink oracle for real-world data.</h2>
 
-![IMG TEXT](/img/ethgrid.webp "PLACEHOLDER")<center><small>Credit: simplilearn.com</small></center>
+![How to Deploy a Chainlink Smart Contract with MetaMask](/img/ethgrid.webp "How to Deploy a Chainlink Smart Contract with MetaMask")<center><small>Credit: [simplilearn.com](https://www.simplilearn.com/tutorials/blockchain-tutorial/what-is-smart-contract)</small></center>
 
 <!--truncate-->
 
