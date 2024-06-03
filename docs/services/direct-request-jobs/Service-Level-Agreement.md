@@ -26,10 +26,11 @@ LinkWell Nodes strives to be transparent about the level and quality of service 
 
 ## Data security
 
-* All data at rest is protected with **256-bit** encryption (or better), and is replicated across multiple datacenters.
+* All data at rest is protected with **256-bit** encryption (or better).
 * All data that leaves our internal network is **end-to-end encrypted**, including all in-transit data.
 * All infrastructure access points are secured by **2-factor authentication** (or better).
 * All infrastructure access and traffic is monitored and logged **24/7** for security.
+* All physical access points to our datacenters are protected by security personnel, physical barriers, and advanced intrusion detection technology. All physical access is controlled, logged, and monitored. 
 
 ## Data accuracy
 
