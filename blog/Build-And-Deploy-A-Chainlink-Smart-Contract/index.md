@@ -10,7 +10,7 @@ tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain]
 
 import TOCInline from '@theme/TOCInline';
 
-<h2 class='lw-subtitle'>How to write, compile, and deploy a smart contract that uses Chainlink to connect your Web3 application to the internet.</h2>
+<h2 class='lw-subtitle'>How to write, compile, and deploy a smart contract that uses Chainlink to retrieve data from the internet.</h2>
 
 ![How to Deploy a Chainlink Smart Contract with MetaMask](/img/ethgrid.webp "How to Deploy a Chainlink Smart Contract with MetaMask")<center><small>Credit: [simplilearn.com](https://www.simplilearn.com/tutorials/blockchain-tutorial/what-is-smart-contract)</small></center>
 
