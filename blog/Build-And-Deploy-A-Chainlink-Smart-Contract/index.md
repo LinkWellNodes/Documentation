@@ -63,9 +63,7 @@ You can skip this section if you already have a Web3 wallet installed and have t
 
 1. [Download and install MetaMask](https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask) within your browser.
 
-<p align="center">
-  <img src="/img/deploy_sc_base/mm_extension.webp" alt="Download Metamask to Your Browser From Chrome Web Store" />
-</p>
+    ![Download MetaMask for your Browser](/img/deploy_sc_base/mm_extension.webp "Download MetaMask for your Browser")
 
 2. Add your required blockchain network to MetaMask:
 
@@ -79,15 +77,11 @@ You can skip this section if you already have a Web3 wallet installed and have t
     
     *NOTE: You can also enter your network info manually within MetaMask if you have it handy, by going to **Settings** -> **Networks** -> **Add a network**:*
 
-<p align="center">
-  <img src="/img/deploy_sc_base/mm_base_sepolia_network.webp" alt="Configure Metamask to Connect to Base Sepolia" />
-</p>
+    ![Configure MetaMask to Connect to Base Sepolia](/img/deploy_sc_base/mm_base_sepolia_network.webp "Configure MetaMask to Connect to Base Sepolia")
 
 3. Fund your MetaMask wallet with gas tokens. If deploying to a testnet, you can acquire gas tokens for your desired network using the [Chainlink Faucet](https://faucets.chain.link/).
 
-<p align="center">
-  <img src="/img/deploy_sc_base/chainlink_faucet.webp" alt="Connect to a Faucet to Receive Testnet Gas Tokens" />
-</p>
+    ![Connect to a Faucet to Receive Testnet Gas Tokens](/img/deploy_sc_base/chainlink_faucet.webp "Connect to a Faucet to Receive Testnet Gas Tokens")
 
 ## **Step 2**: Write, compile, and deploy your Chainlink smart contract
 
@@ -117,9 +111,9 @@ Our Chainlink oracle jobs support all data types, from any API provider. Feel fr
 
 4. The next step is to configure the Remix environment to connect to your MetaMask wallet. You'll need to ensure that MetaMask is currently connected to the blockchain network of your choice.
 
-    ![Connect Remix to Your Metamask Wallet](/img/deploy_sc_base/remix_connect_to_metamask.webp "Connect Remix to Your Metamask Wallet")
+    ![Connect Remix to Your MetaMask Wallet](/img/deploy_sc_base/remix_connect_to_metamask.webp "Connect Remix to Your MetaMask Wallet")
 
-    Under **Environment**, click **Injected Provider - Metamask**. This will open up a MetaMask window that provides a few prompts to connect to Remix.
+    Under **Environment**, click **Injected Provider - MetaMask**. This will open up a MetaMask window that provides a few prompts to connect to Remix.
 
 5. Next, you'll click the orange deploy button. This deploys the smart contract to the Base Sepolia testnet.
 
