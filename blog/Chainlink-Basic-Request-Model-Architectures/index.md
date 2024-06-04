@@ -35,9 +35,10 @@ While this model can indeed be viewed as the "basic" building block of Chainlink
 
 In this article, we'll unravel the intricacies of Chainlink's basic request model, shedding light on the various architectures / design patterns that Web3 developers can implement to incorporate reliable, real-world data into their decentralized applications.
 
-> _**Looking for a Chainlink oracle, oracle address, or job id?**_ 
-> 
-> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
+:::tip
+### Looking for a Chainlink oracle, oracle address, or job id?
+View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
+:::
 
 ## What is Chainlink's Basic Request (Direct Request) Model?
 
@@ -46,7 +47,7 @@ This article will provide an in-depth analysis of the components that make up th
 > For a high-level overview of the basic request model (direct request model), you can also visit our [website's documentation](/knowledgebase/Direct-Request-Guide), our previous article on [building custom Chainlink data feeds using Any API](/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API), or our exploration of [Chainlink Functions Versus Direct Request Jobs](/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions).
 
 <p align="center">
-  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Single Chainlink Oracle" />
+  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Single Chainlink Oracle" title="Basic Request (Direct Request) Model Workflow Single Chainlink Oracle" />
 </p>
 
 The components of the basic request model implementation include the following:
@@ -72,7 +73,7 @@ The following architectures depict the sequential progression of a Web3 develope
 ### **Architecture 1**: Direct Request to a Single Chainlink Oracle
 
 <p align="center">
-  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle" />
+  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle" title="Basic Request (Direct Request) Model Single Chainlink Oracle" />
 </p>
 
 **Architecture 1** is the simplest version of the basic request model. The sequence begins with a Web3 developer triggering a request (through the on-chain consumer contract) to a single Chainlink oracle owned by a single Chainlink node operator. The Chainlink oracle fetches the requested data and submits the obtained result back on-chain.
@@ -100,7 +101,7 @@ The following architectures depict the sequential progression of a Web3 develope
 ### **Architecture 2**: Direct Request to Multiple Chainlink Oracles
 
 <p align="center">
-  <img src="/img/CL_DR_Model_Multi_LW_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple LinkWell Chainlink Oracles" />
+  <img src="/img/CL_DR_Model_Multi_LW_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple LinkWell Chainlink Oracles" title="Basic Request (Direct Request) Model Workflow Multiple LinkWell Chainlink Oracles" />
 </p>
 
 **Architecture 2** closely resembles **Architecture 1**, with the primary difference lying in the inclusion of multiple Chainlink oracles (linked to separate oracle/operator contracts) handling the request. These oracles are owned and overseen by the same Chainlink node operator.
@@ -133,7 +134,7 @@ The following architectures depict the sequential progression of a Web3 develope
 ### **Architecture 3**: Direct Request to a Multiple Chainlink Oracles Across Independent Chainlink Node Operators
 
 <p align="center">
-  <img src="/img/CL_DR_Model_Four_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple Independent Chainlink Oracles" />
+  <img src="/img/CL_DR_Model_Four_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Multiple Independent Chainlink Oracles" title="Basic Request (Direct Request) Model Workflow Multiple Independent Chainlink Oracles" />
 </p>
 
 **Architecture 3** is distinct from **Architecture 2** in that it incorporates multiple independent Chainlink oracle teams. Diverging from previous designs, this architecture embraces the essence of decentralization, emulating a decentralized oracle network (DON) as seen with Chainlink's official protocols.
@@ -165,7 +166,7 @@ The following architectures depict the sequential progression of a Web3 develope
 ### **Bonus Architecture**: Direct Request Without a LINK Fee
 
 <p align="center">
-  <img src="/img/Chainlink_DR_Model_Single_Chainlink_Oracle_No_LINK_Fee.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle No LINK Fee" />
+  <img src="/img/Chainlink_DR_Model_Single_Chainlink_Oracle_No_LINK_Fee.webp" alt="Basic Request (Direct Request) Model Single Chainlink Oracle No LINK Fee" title="Basic Request (Direct Request) Model Single Chainlink Oracle No LINK Fee" />
 </p>
 
 As a notable feature of the basic request model, we are introducing a bonus architecture where Chainlink node operators have the option to eliminate the LINK fee for each request and opt for alternative forms of payment, such as fiat or other L1/L2 tokens. **This methodology can be implemented within any of the above architectures in this article.**
@@ -199,13 +200,17 @@ Within the basic request model, several different architectures and design patte
 We trust that this article sheds helps to shed some light on the various Chainlink oracle architectures available within the basic request model, and offers valuable insights to Web3 developers looking to integrate real-world data into their blockchain smart contracts.
 
 > **Why Chainlink?**
+>
 > Smart contracts are limited from directly interacting with the internet, creating what's known as the blockchain [oracle problem](https://chain.link/education-hub/oracle-problem). This hurdle represents one of the greatest limitations in building Web3 smart contracts.
 > Hybrid smart contracts solve this by using oracles as middleware - enabling external data publishing & retrieval, and scalable off-chain computations. Oracles act as a two-way bridge, enhancing connectivity while providing security against single points of failure.
 > Chainlink - the industry standard Web3 oracle platform - is the most widely used decentralized oracle network, securing over $75B in value across a diverse assortment of blockchains. It operates as an ecosystem of independent decentralized oracle networks (DONs), guaranteeing robust and versatile oracle services.
 
 ---
 
-> LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.
-> Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
+> _LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink._
+>
+> _Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!_
+>
+> _Disclaimer: all views and opinions expressed in this article are strictly our own._
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")

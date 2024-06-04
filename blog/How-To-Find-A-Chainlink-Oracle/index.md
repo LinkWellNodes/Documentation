@@ -20,9 +20,10 @@ import TOCInline from '@theme/TOCInline';
 
 Developers building Web3 applications are faced with a series of challenging hurdles - selecting the appropriate blockchain, maximizing security, and integrating off-chain data into their smart contracts using oracle platforms like Chainlink.
 
-> _**Looking for a Chainlink oracle, oracle address, or job id?**_ 
-> 
-> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
+:::tip
+### Looking for a Chainlink oracle, oracle address, or job id?
+View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
+:::
 
 At LinkWell Nodes, we understand the inherent challenge in staying up-to-date on Chainlink's service offerings, as well as the considerable difficulty in finding and collaborating with the appropriate Chainlink node operator. In this article, we aim to use our extensive experience running Chainlink oracles to help clarify these unknowns.
 
@@ -61,7 +62,7 @@ There are many reasons why interacting directly with a Chainlink node operator (
 **1. Direct API Calls:** Web3 developers can incorporate request logic within their smart contracts that execute API calls via a Chainlink oracle, allowing them to access data from any external data source on the internet. This process necessitates an [oracle address and a job id](/services/direct-request-jobs/Jobs-and-Pricing), both of which are provided by a Chainlink node operator (see [our documentation](/services/direct-request-jobs/Jobs-and-Pricing) for these).
 
 <p align="center">
-  <img src="/img/chainlink-oracle/Chainlink_Basic_Request_Model.webp" alt="Using Chainlink's basic request model for Any API Integrations" />
+  <img src="/img/chainlink-oracle/Chainlink_Basic_Request_Model.webp" alt="Using Chainlink's basic request model for Any API Integrations" title="Using Chainlink's basic request model for Any API Integrations" />
 </p>
 
 **2. Lower Costs:** Working directly with a single Chainlink node operator can often be cheaper for your project than working with many. Speaking directly with your Chainlink node operator allows you to arrive at a price point that works for you. Some operators (such as ourselves) also provide discounts for high request volume, paying in advance, and alternative payment methods for certain Web3 startups.
@@ -69,7 +70,7 @@ There are many reasons why interacting directly with a Chainlink node operator (
 **3. Unique Data/Price Feeds:** Chainlink provides a diverse selection of [official data feeds](https://data.chain.link/feeds), encompassing various data types like asset prices, reserve balances, NFT floor prices, and more. While these data feeds cover a broad spectrum, Web3 developers often require data that goes beyond Chainlink's existing official data feed offerings. To cater to these specialized needs, Chainlink node operators can create [custom price feeds](/blog/Build-A-Chainlink-Price-Feed-With-Flux-Aggregator) that can aggregate custom data such as low-cap asset prices, RWA (real-world asset) prices, stock prices, weather information, sports betting data, and proof-of-reserve information.
 
 <p align="center">
-  <img src="/img/chainlink-oracle/Custom_Chainlink_Flux_Aggregator.webp" alt="Building custom Chainlink oracle price feeds with Flux Aggregator" />
+  <img src="/img/chainlink-oracle/Custom_Chainlink_Flux_Aggregator.webp" alt="Building custom Chainlink oracle price feeds with Flux Aggregator" title="Building custom Chainlink oracle price feeds with Flux Aggregator" />
 </p>
 
 > _Chainlink node operators can easily assist in developing your custom data feed, enabling Web3 developers to design and build their own decentralized oracle networks (DONs). These networks can be customized with specific update thresholds to aggregate data for virtually any use case._

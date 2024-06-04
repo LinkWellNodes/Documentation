@@ -35,9 +35,10 @@ Since its launch in 2017, Chainlink - the industry standard Web3 services platfo
 
 That's why we've gone through great lengths to make the process as seamless as possible for Web3 developers looking to integrate Chainlink's Any API capabilities.
 
-> _**Looking for a Chainlink oracle, oracle address, or job id?**_ 
-> 
-> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
+:::tip
+### Looking for a Chainlink oracle, oracle address, or job id?
+View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
+:::
 
 ## Prerequisites to making a Chainlink request
 
@@ -103,26 +104,29 @@ Here's what you should look for when it comes to a Chainlink node operator:
 
 After selecting a Chainlink node operator, you'll want to succinctly convey to them the requirements of your Web3 project. It is beneficial to provide the following information to facilitate effective collaboration:
 
-1. **Blockchain Network:** The blockchain network you plan on deploying your application on.
+1. **Blockchain network:** The blockchain network you plan on deploying your application on.
 
-1. **Data Type:** The type of data you are requesting (i.e., uint256, string[], bool, etc.).
+1. **Data type:** The type of data you are requesting (i.e., uint256, string[], bool, etc.).
 
-1. **Frequency:** The expected frequency of the request to the oracle (i.e. once a day, once a minute, etc.).
+1. **Desired frequency:** The expected frequency of the request to the oracle (i.e. once a day, once a minute, etc.).
 
-1. **External Adapter:** External adapters exist to perform a variety of custom logic against diverse range of off-chain resources. These resources encompass premium data providers, authenticated web APIs, IoT sensors, bank payments, enterprise back-ends, other blockchain networks, and various other sources.
+1. **External adapter requirements:** External adapters exist to perform a variety of custom logic against diverse range of off-chain resources. These resources encompass premium data providers, authenticated web APIs, IoT sensors, bank payments, enterprise back-ends, other blockchain networks, and various other sources.
 
 1. **Urgency:** How soon do you need your new data feed up & running?
 
 1. **Decentralization requirements:** Would you find it acceptable to have one Chainlink node operations team managing your data feed using multiple redundant Chainlink nodes, or do you specifically require the involvement of multiple node operator teams?
 
-1. **Other Chainlink Services:** Do you require additional Chainlink services such as [Automation](https://docs.chain.link/chainlink-automation) or [VRF](https://docs.chain.link/vrf) to be implemented within your smart contract?
+1. **Other Chainlink services:** Do you require additional Chainlink services such as [Automation](https://docs.chain.link/chainlink-automation) or [VRF](https://docs.chain.link/vrf) to be implemented within your smart contract?
 
 1. **API endpoint:** What HTTP URL do you need to request data from? Does it require an API key, a request body, or any headers? Sending a sample CURL command to the node operator should be sufficient here. Example below:
 
-```
-    curl https://myApi.com/BTC/USD --request POST --header "X-Auth-Key: my-api-key-123" --data '{"interval": 1, "count": 10}'
-```
-> *To simplify the process of requesting a new data feed, we ask that you fill out our specialized [data feed request form](https://linkwellnodes.io/Getting-Started.html). Once we receive your submission, we'll make every effort to respond promptly and provide your custom data feed ASAP (typically within the day).*
+	```
+	curl https://myApi.com/BTC/USD --request POST --header "X-Auth-Key: my-api-key-123" --data '{"interval": 1, "count": 10}'
+	```
+
+:::tip
+To simplify the process of requesting data, we ask that you fill out our specialized [request form](https://linkwellnodes.io/Getting-Started.html). Once we receive your submission, we'll make every effort to respond promptly and provide your custom data feed ASAP (typically within the day).
+:::
 
 ## **Step 3**: Developing and deploying your testnet smart contract
 
@@ -131,19 +135,19 @@ Although you may have already commenced the development of your smart contract b
 
 ### Key methods within your smart contract
 
-1. **The Constructor:** Here you'll typically specify the [Chainlink (LINK) token contract address](https://docs.chain.link/resources/link-token-contracts) for your respective chain, the oracle address, the job ID, and the per-request payment amount. Oracle addresses, job IDs, and payment amounts are provided by (or negotiated with) your chosen node operator.
-```
+1. **The constructor:** Here you'll typically specify the [Chainlink (LINK) token contract address](https://docs.chain.link/resources/link-token-contracts) for your respective chain, the oracle address, the job ID, and the per-request payment amount. Oracle addresses, job IDs, and payment amounts are provided by (or negotiated with) your chosen node operator.
+	```
     constructor() ConfirmedOwner(msg.sender) {
         _setChainlinkToken(0x0Fd9e8d3aF1aaee056EB9e802c3A762a667b1904);
         setOracleAddress(0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46);
         setJobId("a8356f48569c434eaa4ac5fcb4db5cc0");
         setFeeInHundredthsOfLink(0);     // 0 LINK
     }
-```
+	```
 
-2. **The Request Function:** The request function (also called the transferAndCall() or _sendOperatorRequest() function) defines your request characteristics, and sends the request (and payment) to the Chainlink oracle.
+2. **The request function:** The request function (also called the transferAndCall() or _sendOperatorRequest() function) defines your request characteristics, and sends the request (and payment) to the Chainlink oracle.
 
-```
+	```
     function request() public {
     
         Chainlink.Request memory req = _buildOperatorRequest(jobId, this.fulfill.selector);
@@ -165,14 +169,15 @@ Although you may have already commenced the development of your smart contract b
         // Send the request to the Chainlink oracle        
         _sendOperatorRequest(req, fee);
     }
-```  
+	```  
 
-> *LinkWell Nodes implements a unique and innovative approach that allows for greater control over building your request, but requires a few additional parameters be set (as in the above example).
-> **Please refer to our [documentation](/services/direct-request-jobs/Jobs-and-Pricing) when building your request - especially in regards to these required request parameters.** *
+	> *LinkWell Nodes implements a unique and innovative approach that allows for greater control over building your request, but requires a few additional parameters be set (as in the above example).*
+	>
+	> ***Please refer to our [oracle documentation](/services/direct-request-jobs/Jobs-and-Pricing) when building your request - especially in regards to these required request parameters.***
 
-3. **The Fulfill Function:** Once the data has been retrieved, parsed, and converted into a blockchain-compatible format, our oracle node executes a blockchain transaction against the oracle contract, which in turn writes the data back to your consumer contract via execution of your fulfill() function.
+3. **The fulfill function:** Once the data has been retrieved, parsed, and converted into a blockchain-compatible format, our oracle node executes a blockchain transaction against the oracle contract, which in turn writes the data back to your consumer contract via execution of your fulfill() function.
 
-```
+	```
     uint256 public response;
     
     // Receive the result from the Chainlink oracle    
@@ -182,7 +187,7 @@ Although you may have already commenced the development of your smart contract b
         // emit RequestFulfilled(requestId);    // (optional) emits this event in the on-chain transaction logs, allowing Web3 applications to listen for this transaction
         response = data;     // example value: 1875870000000000000000 (1875.87 before "multiplier" is applied)
     }
-```
+	```
 
 ### Now, deploy it!
 
@@ -256,10 +261,10 @@ With the proper knowledge and understanding in place, navigating the process of 
 
 ---
 
-> *LinkWell Nodes is a U.S.-based Chainlink oracle.*
+> _LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink._
 >
-> *We provide custom data feed capabilities and self-service oracle solutions across all major mainnet and testnet blockchains supported by Chainlink.*
+> _Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!_
 >
-> *Looking for a custom data feed? Head on over to our [documentation](/services/direct-request-jobs/Jobs-and-Pricing)*, *or hop into our [Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!*
+> _Disclaimer: all views and opinions expressed in this article are strictly our own._
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")

@@ -47,9 +47,11 @@ Here are some things you'll need in order to follow this tutorial:
 
 * **A Chainlink oracle**: Chainlink oracles are cloud-based runtimes that connect smart contracts to the physical world. They are typically operated by reputable companies with a well-defined [SLA (Service-Level Agreement)](/services/direct-request-jobs/Service-Level-Agreement), and are highly secure, redundant, and resilient to attack. Chainlink oracles act as bridges, allowing blockchain applications to access off-chain compute, internet APIs (ie, weather, stock prices, and sports betting data, flight information, etc.), or even other blockchains.
 
-> _**Looking for a Chainlink oracle?** LinkWell Nodes offers Chainlink oracle services on all major EVM-based mainnet and testnet blockchains._
->
-> _To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing)._
+:::tip
+### Looking for a Chainlink oracle? 
+
+LinkWell Nodes offers Chainlink oracle services on all major EVM-based mainnet and testnet blockchains. To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
 
 ## **Step 1**: Set up and fund MetaMask
 
@@ -63,7 +65,7 @@ You can skip this section if you already have a Web3 wallet installed and have t
 
 1. [Download and install MetaMask](https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask) within your browser.
 
-    ![Download MetaMask for your Browser](/img/deploy_sc_base/mm_extension.webp "Download MetaMask for your Browser")
+    ![Download MetaMask for your Browser](./mm_extension.webp "Download MetaMask for your Browser")
 
 2. Add your required blockchain network to MetaMask:
 
@@ -77,11 +79,11 @@ You can skip this section if you already have a Web3 wallet installed and have t
     
     *NOTE: You can also enter your network info manually within MetaMask if you have it handy, by going to **Settings** -> **Networks** -> **Add a network**:*
 
-    ![Configure MetaMask to Connect to Base Sepolia](/img/deploy_sc_base/mm_base_sepolia_network.webp "Configure MetaMask to Connect to Base Sepolia")
+    ![Configure MetaMask to Connect to Base Sepolia](./mm_base_sepolia_network.webp "Configure MetaMask to Connect to Base Sepolia")
 
 3. Fund your MetaMask wallet with gas tokens. If deploying to a testnet, you can acquire gas tokens for your desired network using the [Chainlink Faucet](https://faucets.chain.link/).
 
-    ![Connect to a Faucet to Receive Testnet Gas Tokens](/img/deploy_sc_base/chainlink_faucet.webp "Connect to a Faucet to Receive Testnet Gas Tokens")
+    ![Connect to a Faucet to Receive Testnet Gas Tokens](./chainlink_faucet.webp "Connect to a Faucet to Receive Testnet Gas Tokens")
 
 ## **Step 2**: Write, compile, and deploy your Chainlink smart contract
 
@@ -105,23 +107,23 @@ Our Chainlink oracle jobs support all data types, from any API provider. Feel fr
 
 2. Use the default compiler settings for this contract. Click the **Compile uint256.sol** button to convert the Solidity code into bytecode that the [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/) can understand.
 
-    ![Open the Sample Github Code and Click Compile](/img/deploy_sc_base/remix_solidity_compiler.webp "Open the Sample Github Code and Click Compile")
+    ![Open the Sample Github Code and Click Compile](./remix_solidity_compiler.webp "Open the Sample Github Code and Click Compile")
 
 3. Now it's time to deploy the contract. Navigate to the **Deploy and run transactions** button on the left-hand sidepanel.
 
 4. The next step is to configure the Remix environment to connect to your MetaMask wallet. You'll need to ensure that MetaMask is currently connected to the blockchain network of your choice.
 
-    ![Connect Remix to Your MetaMask Wallet](/img/deploy_sc_base/remix_connect_to_metamask.webp "Connect Remix to Your MetaMask Wallet")
+    ![Connect Remix to Your MetaMask Wallet](./remix_connect_to_metamask.webp "Connect Remix to Your MetaMask Wallet")
 
     Under **Environment**, click **Injected Provider - MetaMask**. This will open up a MetaMask window that provides a few prompts to connect to Remix.
 
 5. Next, you'll click the orange deploy button. This deploys the smart contract to the Base Sepolia testnet.
 
-    ![Deploy the Smart Contract to your Target Blockchain Network](/img/deploy_sc_base/remix_smart_contract_deploy.webp "Deploy the Smart Contract to your Target Blockchain Network")
+    ![Deploy the Smart Contract to your Target Blockchain Network](./remix_smart_contract_deploy.webp "Deploy the Smart Contract to your Target Blockchain Network")
 
 6. Deploying the contract opens a MetaMask prompt, which requests that you confirm the transaction. After a short period waiting period (typically a few blocks), your contract will be officially deployed to the blockchain!
 
-    ![Confirm the Smart Contract Deployment Transaction in your Web3 Wallet](/img/deploy_sc_base/mm_confirm_txn_contract_deploy.webp "Confirm the Smart Contract Deployment Transaction in your Web3 Wallet")
+    ![Confirm the Smart Contract Deployment Transaction in your Web3 Wallet](./mm_confirm_txn_contract_deploy.webp "Confirm the Smart Contract Deployment Transaction in your Web3 Wallet")
 
 **Your contract is now deployed!** 
 
@@ -137,7 +139,7 @@ Now let's request data from the Chainlink oracle!
     
     * The **orange** buttons represent functions that modify the blockchain state, such as those that change variables or send transactions. These functions require gas fees to execute.
 
-    ![Explore the Smart Contract's Functions](/img/deploy_sc_base/contract_view_functions.webp "Explore the Smart Contract's Functions")
+    ![Explore the Smart Contract's Functions](./contract_view_functions.webp "Explore the Smart Contract's Functions")
 
 1. Click the `response` button, which should initially show `0`, since you haven't made an on-demand oracle request yet.
 
@@ -153,11 +155,11 @@ Now let's request data from the Chainlink oracle!
 
 1. **Make the oracle request**: Click the orange `request` button. This initiates an on-demand request to the specified Chainlink oracle, and will open up another MetaMask prompt that will require you to confirm the blockchain 'oracle request' transaction. Click 'Approve' in MetaMask to submit the transaction, and send the required payment (if any) to your oracle.
 
-    ![Execute the Request Function](/img/deploy_sc_base/oracle_request_function.webp "Execute the Request Function")
+    ![Execute the Request Function](./oracle_request_function.webp "Execute the Request Function")
 
 1. Within **3-5 blocks** (depending on your chosen blockchain), the Chainlink oracle will update the `response` variable in your contract with the latest price of Ethereum, denominated in USD. Click the `response` button again to view your result.
 
-    ![View the Updated Response Variable](/img/deploy_sc_base/response_variable_udpated.webp "View the Updated Response Variable")
+    ![View the Updated Response Variable](./response_variable_udpated.webp "View the Updated Response Variable")
 
     :::info
     Take note that the CryptoCompare URL specified in the request function provides a JSON response of the ETH value with decimals (ie **3833.23**.).  Due to the fact that decimals do not work in Solidity, the **3833.23** value is multiplied by a large amount (governed by the `req._addInt('multiplier', 10 ** 18);` line in your contract), in order to remove the decimals before writing the value on chain.

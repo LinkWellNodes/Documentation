@@ -50,7 +50,7 @@ Before diving deeper into the direct request architecture, it's important to und
 1. Your Web3 application reads the data from your consumer contract.
 
 <p align="center">
-  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Chainlink Basic Request Model" />
+  <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Chainlink Basic Request Model" title="Chainlink Basic Request Model" />
   <center><small>Chainlink Direct Request workflow</small></center>
 </p>
 
@@ -72,7 +72,7 @@ The following diagram demonstrates the direct request workflow.
 1. The left-hand workflow (**testnets**) is virtually the same as the right-hand workflow (**mainnets**) with the exception of needing to fund your consumer contract with LINK tokens before making a request.  
 
 <p align="center">
-  <img src="/img/CL_DR_Model.webp" alt="Chainlink Direct Request workflow (in-depth diagram)" />
+  <img src="/img/CL_DR_Model.webp" alt="Chainlink Direct Request workflow (in-depth diagram)" title="Chainlink Direct Request workflow (in-depth diagram)" />
   <center><small>Chainlink Direct Request workflow (in-depth diagram)</small></center>
 </p>
 

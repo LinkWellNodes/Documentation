@@ -46,7 +46,14 @@ In this article we will:
 
 1. Explore use cases for Chainlink price feeds.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/e75kwGzvtnI" frameborder="0" allowfullscreen></iframe></center>
+:::tip
+### Looking for a Chainlink oracle? 
+
+LinkWell Nodes offers Chainlink oracle services on all major EVM-based mainnet and testnet blockchains. To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
+
+*Related video*: Chainlink Price Feeds
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/e75kwGzvtnI" title="Chainlink Price Feeds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 ## Chainlink's Decentralized Data Model
 
@@ -75,7 +82,7 @@ The decentralized data model introduces a number of features:
 ### Components of the Decentralized Data Model
 
 <p align="center">
-  <img src="/img/flux-agg-article/Flux_Aggregator_Architecture_Diagram.webp" alt="Chainlink Flux Aggregator Architecture Diagram" />
+  <img src="/img/flux-agg-article/Flux_Aggregator_Architecture_Diagram.webp" alt="Chainlink Flux Aggregator Architecture Diagram" title="Chainlink Flux Aggregator Architecture Diagram" />
 </p>
 
 > In the architecture depicted above, three independent Chainlink oracle teams are showcased solely for illustrative purposes. In practice, any number and combination of independent Chainlink oracles can be employed. The flexibility in this arrangement is mainly motivated by considerations such as trust-minimization, reliability, and security budgets.
@@ -126,7 +133,7 @@ For additional information on the AggregatorV3Interface API, please reference [C
 Chainlink oracles run the Flux Monitor job specification, as demonstrated in the following example:
 
 <p align="center">
-  <img src="/img/flux-agg-article/Flux_Monitor_Job_Spec.webp" alt="Chainlink oracle Flux Monitor job spec" />
+  <img src="/img/flux-agg-article/Flux_Monitor_Job_Spec.webp" alt="Chainlink oracle Flux Monitor job spec" title="Chainlink oracle Flux Monitor job spec" />
 </p>
 
 
@@ -143,17 +150,17 @@ Chainlink's list of external adapters can be found [here](https://github.com/sma
 
 The Aggregator round system is a mechanism used by Chainlink to update data feeds in a decentralized and secure manner. Here's an overview of how it functions:
 
-1. **Round Initiation:** A round represents a cycle in which data is aggregated and updated. Rounds can be initiated based on two main conditions: the Deviation Threshold and the Heartbeat Threshold.
+1. **Round initiation:** A round represents a cycle in which data is aggregated and updated. Rounds can be initiated based on two main conditions: the Deviation Threshold and the Heartbeat Threshold.
 
-* **Deviation Threshold:** This condition checks if the difference between the latest on-chain data and the new off-chain data collected by the oracles exceeds a pre-defined threshold. If the data deviates more than this threshold, it triggers a new round to update the on-chain data to reflect the more accurate, recent off-chain data.
+	* *Deviation Threshold:* This condition checks if the difference between the latest on-chain data and the new off-chain data collected by the oracles exceeds a pre-defined threshold. If the data deviates more than this threshold, it triggers a new round to update the on-chain data to reflect the more accurate, recent off-chain data.
+	
+	* *Heartbeat Threshold:* This condition triggers a new round after a specified time has passed since the last update, regardless of data deviation. This ensures that the data feed is updated regularly, maintaining its relevance and accuracy over time.
 
-* **Heartbeat Threshold:** This condition triggers a new round after a specified time has passed since the last update, regardless of data deviation. This ensures that the data feed is updated regularly, maintaining its relevance and accuracy over time.
+2. **Data collection:** Once a new round is initiated, participating oracles collect data from their off-chain sources. These sources can vary based on the data feed, ranging from financial market prices to real-world asset data.
 
-2. **Data Collection:** Once a new round is initiated, participating oracles collect data from their off-chain sources. These sources can vary based on the data feed, ranging from financial market prices to real-world asset data.
+3. **Data aggregation:** After collecting the data, each oracle reports its findings back to the FluxAggregator contract. The contract then aggregates this data using a predefined method, such as taking the median or average, to determine the most accurate representation of the data collected from all participating oracles.
 
-3. **Data Aggregation:** After collecting the data, each oracle reports its findings back to the FluxAggregator contract. The contract then aggregates this data using a predefined method, such as taking the median or average, to determine the most accurate representation of the data collected from all participating oracles.
-
-4. **Data Update:** The aggregated result is then updated on-chain, becoming the latest data point for the feed. This data then becomes available for smart contracts and other on-chain entities to use, ensuring they have access to accurate and timely information.
+4. **Data update:** The aggregated result is then updated on-chain, becoming the latest data point for the feed. This data then becomes available for smart contracts and other on-chain entities to use, ensuring they have access to accurate and timely information.
 
 ## Steps for developing a custom Price Feed with FluxAggregator
 
@@ -192,7 +199,7 @@ While this article focuses primarily on price feeds, it may be helpful to offer 
 **Direct Requests (Any API):**
 
 <p align="center">
-  <img src="/img/flux-agg-article/Chainlink_Direct_Request_Architecture.webp" alt="Basic Request Model (Any API) Architecture" />
+  <img src="/img/flux-agg-article/Chainlink_Direct_Request_Architecture.webp" alt="Basic Request Model (Any API) Architecture" title="Basic Request Model (Any API) Architecture" />
 </p>
 
 **Pros**:
@@ -228,7 +235,7 @@ Blockchain money markets are a key part of the decentralized finance (DeFi) ecos
 The operational efficiency and financial stability of these platforms hinge on the accurate and real-time valuation of assets, necessitating the integration of reliable price feeds. This is where sophisticated solutions like Chainlink price feeds come into play. They provide up-to-the-minute market data for a wide array of cryptocurrencies, thereby enabling protocols such as Aave and Compound to precisely assess the value of collateral and debt within their systems. This critical functionality allows these protocols to execute timely liquidations for undercollateralized positions, ensuring the financial integrity and solvency of the platform.
 
 <p align="center">
-  <img src="/img/flux-agg-article/Chainlink_Aave_Price_Feed.webp" alt="Chainlink Aave Price Feed Example Use Case" />
+  <img src="/img/flux-agg-article/Chainlink_Aave_Price_Feed.webp" alt="Chainlink Aave Price Feed Example Use Case" title="Chainlink Aave Price Feed Example Use Case" />
 </p>
 
 In essence, blockchain-based money markets not only facilitate a dynamic environment for the DeFi community to lend and borrow assets efficiently but also underscore the importance of accurate price feeds in maintaining the economic stability and trustworthiness of these platforms. Through the strategic use of Chainlink price feeds, these protocols are able to uphold their commitment to safeguarding user assets while promoting healthy liquidity and fair market practices.
@@ -240,7 +247,7 @@ Tokenizing real-world assets, from currencies to stocks, bonds, real estate, and
 For the successful tokenization of assets, the availability of accurate, onchain market price data via Chainlink price feeds is crucial. Take, for instance, the PAXG Chainlink price feed for tokenized gold, which allows for the creation of secure markets around physical gold. Moreover, Paxos leverages Chainlink Proof of Reserve to assure onchain that its tokenized gold offerings are fully backed by offchain gold reserves, fostering high-integrity markets for these assets.
 
 <p align="center">
-  <img src="/img/flux-agg-article/Decentralized_Oracle_Network_Price_Feed.webp" alt="Chainlink Price Feeds Oracle Network" />
+  <img src="/img/flux-agg-article/Decentralized_Oracle_Network_Price_Feed.webp" alt="Chainlink Price Feeds Oracle Network" title="Chainlink Price Feeds Oracle Network" />
 </p>
 
 > For additional use cases of Chainlink price feeds, we highly recommend checking out Chainlink's article on the [77+ smart contract use cases enabled by Chainlink](https://blog.chain.link/smart-contract-use-cases/).
@@ -253,8 +260,10 @@ In comparison to the [Direct Request](/knowledgebase/Direct-Request-Guide) (Any 
 
 The rigorous emphasis on blockchain data integrity and security has elevated Chainlink price feeds to the forefront as the most widely-adopted oracle solution within the DeFi sector. Moreover, Chainlink price feeds are tailored to expand in tandem with DeFi's evolution, supporting its ascent to become the underlying technology for major global financial markets, encompassing billions to trillions of dollars in value.
 
-> LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.
-> Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!
-> Disclaimer: all views and opinions expressed in this article are strictly our own.
+> _LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink._
+>
+> _Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!_
+>
+> _Disclaimer: all views and opinions expressed in this article are strictly our own._
 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
