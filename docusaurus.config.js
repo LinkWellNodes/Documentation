@@ -311,6 +311,11 @@ const config = {
                 from: '/services/jobs/Direct-Request-Guide',
                 to: '/knowledgebase/Direct-Request-Guide',
             },
+            {
+                from: '/blog/Build-And-Deploy-A-Smart-Contract-On-Base',
+                to: '/blog/Build-And-Deploy-A-Chainlink-Smart-Contract',
+            },
+            
           ],
       },
     ],

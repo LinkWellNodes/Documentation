@@ -30,11 +30,12 @@ import TOCInline from '@theme/TOCInline';
 
 ## Introduction
 
-In this tutorial, we'll show you how to build and deploy a smart contract that retrieves real-time price data using the Chainlink direct request model. For illustration purposes, we'll deploy our contract to the **Base Sepolia testnet** network. 
+In this guide, we'll show you how to build and deploy a smart contract that retrieves real-time price info (or any other data) using the Chainlink direct request model. For illustration purposes, we'll deploy our contract to the **Base Sepolia testnet** network, but any of our [supported networks](/services/direct-request-jobs/Jobs-and-Pricing) can be used with this tutorial. 
 
-> *Without access to real-world data, many dApps simply wouldn't exist. Fortunately, [Chainlink](https://chain.link/), the leading Web3 services platform for cross-chain connectivity, compute, and data, provides numerous services for retrieving price or other external data from anywhere on the internet.*
+> *Without access to real-world data, many dApps simply wouldn't exist. Fortunately, [Chainlink](https://chain.link/) - the leading Web3 services platform - provides numerous options for retrieving data from the internet, off-chain compute, and even other blockchains.*
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pWGLtjG-F5c" frameborder="0" allowfullscreen></iframe></center>
+*Related video*: What is a smart contract?
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pWGLtjG-F5c" title="What is a smart contract?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 ## Prerequisites
 
@@ -42,11 +43,11 @@ Here are some things you'll need in order to follow this tutorial:
 
 * **A Web3 Wallet**: Web3 wallets are required for not only storing your tokens, but also for deploying your smart contracts and signing blockchain transactions. Examples include [MetaMask](https://metamask.io/) and [Coinbase Wallet](https://www.coinbase.com/wallet).
 
-* **An IDE**: An Integrated Development Environments (IDE) that is EVM-compatible is required for deploying and testing your smart contract. A popular example here is [Remix](https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null), but advanced users may prefer a development framework such as [Foundry](https://docs.chain.link/quickstarts/foundry-chainlink-toolkit), particularly for more complex projects.
+* **An EVM-compatible IDE**: An Integrated Development Environments (IDE) that works with EVM-based blockchains is required for deploying and testing your smart contract. One such popular tool is [Remix](https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null), but advanced users may prefer a development framework such as [Foundry](https://docs.chain.link/quickstarts/foundry-chainlink-toolkit), particularly for more complex projects.
 
 * **A Chainlink oracle**: Chainlink oracles are cloud-based runtimes that connect smart contracts to the physical world. They are typically operated by reputable companies with a well-defined [SLA (Service-Level Agreement)](/services/direct-request-jobs/Service-Level-Agreement), and are highly secure, redundant, and resilient to attack. Chainlink oracles act as bridges, allowing blockchain applications to access off-chain compute, internet APIs (ie, weather, stock prices, and sports betting data, flight information, etc.), or even other blockchains.
 
-> _**Looking for a Chainlink oracle?** LinkWell Nodes offers Chainlink oracle services on all major EVM mainnet and testnet blockchains._
+> _**Looking for a Chainlink oracle?** LinkWell Nodes offers Chainlink oracle services on all major EVM-based mainnet and testnet blockchains._
 >
 > _To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing)._
 
@@ -56,7 +57,9 @@ To deploy smart contracts on-chain, you'll first need a wallet and some of the r
 
 You can skip this section if you already have a Web3 wallet installed and have the appropriate gas token.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/-HTubEJ61zU" frameborder="0" allowfullscreen></iframe></center>
+*Related video*: What is MetaMask?
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/-HTubEJ61zU" title="What is MetaMask?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
 
 1. [Download and install MetaMask](https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask) within your browser.
 
@@ -80,7 +83,7 @@ You can skip this section if you already have a Web3 wallet installed and have t
   <img src="/img/deploy_sc_base/mm_base_sepolia_network.webp" alt="Configure Metamask to Connect to Base Sepolia" />
 </p>
 
-3. Fund your MetaMask wallet with gas tokens. If using testnet, you can acquire gas tokens for your desired network using the [Chainlink Faucet](https://faucets.chain.link/).
+3. Fund your MetaMask wallet with gas tokens. If deploying to a testnet, you can acquire gas tokens for your desired network using the [Chainlink Faucet](https://faucets.chain.link/).
 
 <p align="center">
   <img src="/img/deploy_sc_base/chainlink_faucet.webp" alt="Connect to a Faucet to Receive Testnet Gas Tokens" />
@@ -110,9 +113,9 @@ Our Chainlink oracle jobs support all data types, from any API provider. Feel fr
 
     ![Open the Sample Github Code and Click Compile](/img/deploy_sc_base/remix_solidity_compiler.webp "Open the Sample Github Code and Click Compile")
 
-3. Now it's time to deploy the contract. Navigate to the **Deploy and run transactions** button on the left.
+3. Now it's time to deploy the contract. Navigate to the **Deploy and run transactions** button on the left-hand sidepanel.
 
-4. The next step is to configure the Remix environment to connect to your MetaMask wallet, which is currently connected to the blockchain network of your choice.
+4. The next step is to configure the Remix environment to connect to your MetaMask wallet. You'll need to ensure that MetaMask is currently connected to the blockchain network of your choice.
 
     ![Connect Remix to Your Metamask Wallet](/img/deploy_sc_base/remix_connect_to_metamask.webp "Connect Remix to Your Metamask Wallet")
 
@@ -122,7 +125,7 @@ Our Chainlink oracle jobs support all data types, from any API provider. Feel fr
 
     ![Deploy the Smart Contract to your Target Blockchain Network](/img/deploy_sc_base/remix_smart_contract_deploy.webp "Deploy the Smart Contract to your Target Blockchain Network")
 
-6. Deploying the contract opens a MetaMask prompt which requests that you confirm the transaction. Once confirmed and after a short period, your contract will be officially deployed to the blockchain!
+6. Deploying the contract opens a MetaMask prompt, which requests that you confirm the transaction. After a short period waiting period (typically a few blocks), your contract will be officially deployed to the blockchain!
 
     ![Confirm the Smart Contract Deployment Transaction in your Web3 Wallet](/img/deploy_sc_base/mm_confirm_txn_contract_deploy.webp "Confirm the Smart Contract Deployment Transaction in your Web3 Wallet")
 
@@ -144,7 +147,7 @@ Now let's request data from the Chainlink oracle!
 
 1. Click the `response` button, which should initially show `0`, since you haven't made an on-demand oracle request yet.
 
-1. **Fund your contract**: If making your request on a **mainnet** blockchain, you'll need to send LINK tokens to your deployed contract address. A small payment in LINK will be sent with each oracle request, in order to compensate the Chainlink oracle for the gas required to write your response on-chain. The amount of this payment is governed by the `setFeeInHundredthsOfLink(0);` line in your constructor function.
+1. **Fund your contract**: If making your request on a **mainnet** blockchain, you'll need to send some LINK tokens to your deployed contract address. This allows a small payment in LINK to be sent with each oracle request, in order to compensate the Chainlink oracle for the gas required to write your response on-chain. The amount of this payment is governed by the `setFeeInHundredthsOfLink(0);` line in your constructor function, but must match the amount specified by your Chainlink oracle, or the request will fail.
 
     :::info
     You can skip this step on testnets, as our request fee is set to 0 LINK.
@@ -184,7 +187,7 @@ Interested in diving deeper into the process of making a direct (on-demand) Chai
 
 ## Conclusion
 
-Deploying your smart contract and connecting it to a Chainlink oracle for on-demand data updates is a powerful way to integrate real-world information into your decentralized application. By following this tutorial, you've learned how to set up a Web3 wallet along with your development environment, write and compile a smart contract, and leverage one of many Chainlink oracle services that LinkWell Nodes provides. 
+Deploying your Chainlink-connected smart contract on any network is easy, and is a powerful way to integrate real-world information into your decentralized application. By following this tutorial, you've learned how to set up a Web3 wallet along with your development environment, write and compile a smart contract, and make a direct request to LinkWell Nodes's oracle services. 
 
 We hope that this tutorial has provided you with a strong foundation for creating dynamic and responsive Web3 applications, ultimately enabling you to harness the full potential of blockchain technology.
 
