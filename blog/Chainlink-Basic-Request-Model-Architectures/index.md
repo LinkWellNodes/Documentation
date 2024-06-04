@@ -37,7 +37,7 @@ In this article, we'll unravel the intricacies of Chainlink's basic request mode
 
 > _**Looking for a Chainlink oracle, oracle address, or job id?**_ 
 > 
-> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data.
+> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
 
 ## What is Chainlink's Basic Request (Direct Request) Model?
 

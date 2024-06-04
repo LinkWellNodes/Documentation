@@ -22,7 +22,7 @@ Developers building Web3 applications are faced with a series of challenging hur
 
 > _**Looking for a Chainlink oracle, oracle address, or job id?**_ 
 > 
-> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data.
+> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
 
 At LinkWell Nodes, we understand the inherent challenge in staying up-to-date on Chainlink's service offerings, as well as the considerable difficulty in finding and collaborating with the appropriate Chainlink node operator. In this article, we aim to use our extensive experience running Chainlink oracles to help clarify these unknowns.
 

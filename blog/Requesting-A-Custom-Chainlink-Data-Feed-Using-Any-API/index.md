@@ -37,7 +37,7 @@ That's why we've gone through great lengths to make the process as seamless as p
 
 > _**Looking for a Chainlink oracle, oracle address, or job id?**_ 
 > 
-> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data.
+> View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
 
 ## Prerequisites to making a Chainlink request
 
