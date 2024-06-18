@@ -276,6 +276,10 @@ const config = {
             	to: '/services/direct-request-jobs/testnets/Base-Sepolia-Testnet-Jobs',
             },
             {
+          	    from: '/services/jobs/testnets/Ethereum-Goerli-Testnet-Jobs',
+          	    to: '/services/direct-request-jobs/testnets/Ethereum-Sepolia-Testnet-Jobs',
+            },
+            {
           	    from: '/services/direct-request-jobs/testnets/Polygon-Mumbai-Testnet-Jobs',
           	    to: '/services/direct-request-jobs/testnets/Polygon-Amoy-Testnet-Jobs',
             },
@@ -286,6 +290,14 @@ const config = {
             {
                 from: '/services/direct-request-jobs/External-Adapters',
                 to: '/services/Development-Services',
+            },
+            {
+                from: '/services/direct-request-jobs/mainnets/Mainnets',
+                to: '/services/direct-request-jobs/mainnets',
+            },
+            {
+                from: '/services/direct-request-jobs/testnets/Testnets',
+                to: '/services/direct-request-jobs/testnets',
             },
             {
                 from: '/services/jobs/testnets/Testnets',
