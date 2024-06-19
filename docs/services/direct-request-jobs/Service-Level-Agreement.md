@@ -2,7 +2,7 @@ import TOCInline from '@theme/TOCInline';
 
 # Service-Level Agreement (SLA)
 
-LinkWell Nodes strives to be transparent about the level and quality of service we aim to provide to our customers. Below you'll find information on the uptime, reliability, and security we practice within our [data feeds](/services/direct-request-jobs/Jobs-and-Pricing) product. 
+LinkWell Nodes strives to be transparent about the level and quality of service we provide to our customers. Below you'll find information on the uptime, reliability, and security we practice within our Chainlink data feeds. 
 
 ---
 
@@ -30,12 +30,12 @@ LinkWell Nodes strives to be transparent about the level and quality of service 
 * All data that leaves our internal network is **end-to-end encrypted**, including all in-transit data.
 * All infrastructure access points are secured by **2-factor authentication** (or better).
 * All infrastructure access and traffic is monitored and logged **24/7** for security.
-* All physical access points to our datacenters are protected by security personnel, physical barriers, and advanced intrusion detection technology. All physical access is controlled, logged, and monitored. 
+* All physical access points to our datacenters are protected by security personnel and advanced intrusion detection technology. All physical access is permissioned, logged, and monitored. 
 
 ## Data accuracy
 
-* LinkWell Nodes cannot guarantee - and is not responsible for - the accuracy of any 3rd-party data provider. As such, we strongly recommend leveraging multiple data providers within your data feed, and performing an aggregation on the result. We are happy to provide assistance with this sort of implementation.
+* LinkWell Nodes cannot guarantee - and is not responsible for - the accuracy of any 3rd-party data provider. As such, we strongly recommend leveraging multiple data sources within your data feed, and performing an aggregation on the result. We are happy to provide assistance with this sort of implementation.
 
 ## Questions?
 
-Please don't hesitate to [reach out](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes") - we're always happy to have a private conversation about your requirements.
+Please don't hesitate to [reach out](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes") - we're always happy to have a confidential conversation about your requirements.
