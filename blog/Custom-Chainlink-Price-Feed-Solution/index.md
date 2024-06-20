@@ -49,9 +49,7 @@ Chainlink Price Feeds, as listed via their [data feeds page](https://data.chain.
 
 This multi-source approach ensures comprehensive market coverage and protects against single points of failure and data manipulation. Once collected, the data is aggregated to form a consensus price, which is then securely transmitted on-chain to an aggregation contract.
 
-<p align="center">
-  <img src="/img/custom-price-feed/chainlink-price-feed.webp" alt="Official Chainlink price feed decentralized oracle network" />
-</p>
+![Chainlink Price Feed DON](/img/custom-price-feed/chainlink-price-feed.webp "Official Chainlink Price Feed Decentralized Oracle Network")<center><small>Credit: [blog.chain.link](https://blog.chain.link/chainlink-price-feeds-secure-defi/)</small></center>
 
 The cost of using Chainlink Price Feeds is typically covered by the smart contract developers or the project/teams that utilize these feeds within their applications. These users pay for, or sponsor, the network fees associated with retrieving data from the oracles. The payment is generally made in the form of LINK tokens, which are used to compensate the node operators for their services in retrieving, aggregating, and delivering the data.
 
@@ -61,7 +59,7 @@ This is where our custom price feed solution comes into play, which we will intr
 
 ## LinkWell Nodes' Custom Price Feed Solution
 
-As innovators in the Chainlink oracle space who have collaborated with numerous Web3 teams in recent years, we recognized a demand for a price feed solution that helps fill in the gaps of Chainlink’s official price feeds.
+As innovators in the Chainlink oracle space with extensive experience working alongside various Web3 teams, we identified a growing need for a price feed solution that could be seamlessly integrated to supply accurate pricing data for any asset.
 
 Our custom price feed solution operates in a similar manner to Chainlink's official price feeds - data is aggregated from various data providers and "pushed" on-chain when certain conditions are met, such as a heartbeat timer or a deviation threshold is crossed. Additionally, our solution can accomodate any number of data sources required, providing decentralization at the data source layer.
 
@@ -86,11 +84,9 @@ The sole requirement to integrate our price feed solution into your contract is 
     }
 ```
 
-Once configured, our price feeds can be adjusted as needed to modify the deviation threshold or heartbeat timer - the two primary methods for facilitating on-chain updates.
+Once configured, our price feeds can be adjusted at any time to modify the deviation threshold or heartbeat timer - the two primary methods for facilitating on-chain updates.
 
-> _Although single oracle providers aren't favored compared to trust-minimized decentralized oracle networks (DONs), our Chainlink oracles are distributed across various geographically distinct data centers, ensuring high uptime and reliability. Moreover, we can establish multiple independent oracle networks to support your custom price feed as needed._
->
-> _In terms of trust minimization, we hope that our well-established reputation within the Chainlink community serves as a testament to our credibility. Additionally, we offer robust security assurances and a [Service Level Agreement](https://docs.linkwellnodes.io/services/direct-request-jobs/Service-Level-Agreement) (SLA) to address any concerns you may have. We are also pleased to provide on-chain performance metrics of our oracles upon request._
+> _In need of a trust-minimized solution? We provide a custom price feed capability that can support a DON architecture using multiple independent Chainlink oracles. If you'd like to speak directly with Chainlink Labs regarding your data feed requirements, feel free to contact them [here](https://chain.link/contact?ref_id=datafeeds) for further assistance._
 
 ## Benefits of Our Custom Chainlink Price Feed Solution
 
@@ -98,27 +94,27 @@ Our custom price feed solution offers a number of benefits to include:
 
 1. **Any Price Pair**: Our Chainlink price feed solution can accommodate any price feed your Web3 application requires, provided our infrastructure can access the data over the internet. Additionally, our solution is versatile, supporting not only price updates but any integer-based value as well, such as for proof of reserve.
 
-2. **Affordabile**: A key advantage of our custom price feed updates is the reduced gas costs for submitting updates on-chain, which enables us to pass these savings onto our users. Additionally, we operate Chainlink oracles on testnets where we offer to trial or test the solution at no cost to you.
+2. **Secure and Reliable**: Our Chainlink oracles are distributed across various geographically distinct data centers, ensuring high uptime and reliability. Additionally, we offer robust security assurances and a [Service Level Agreement](https://docs.linkwellnodes.io/services/direct-request-jobs/Service-Level-Agreement) (SLA) for ensuring the reliability and security of your data.
 
-3. **Flexible Payments**: On top of affordability, we also provide various payment methods - an upfront payment subscription model that can accept payment across multiple currencies, or the traditional model of paying for each request in the form of the LINK token.
+3. **Affordable**: A key advantage of our custom price feed updates is the reduced gas costs for submitting updates on-chain, which enables us to pass these savings onto our users. Additionally, we operate Chainlink oracles on testnets where we offer to trial or test the solution at no cost to you.
 
-4. **Rapid Deployment**: From the moment you reach out to us, we can have this solution up and running within a day. This can be particularly valuable for teams in need of an immediate price feed solution.
+4. **Flexible Payments**: On top of affordability, we also provide various payment methods - an upfront payment subscription model that can accept payment across multiple currencies, or the traditional model of paying for each request in the form of the LINK token.
 
-5. **Full-Service Support**: We are happy to support the price feed integration process every step of the way. Additionally, we carefully monitor our infrastructure along with the custom price feed for any issues or anomalous activity.
+5. **Rapid Deployment**: From the moment you reach out to us, we can have this solution up and running within a day. This can be particularly valuable for teams in need of an immediate price feed solution.
+
+6. **Full-Service Support**: We are happy to support the price feed integration process every step of the way. Additionally, we carefully monitor our infrastructure along with the custom price feed for any issues or anomalous activity.
 
 ## How to Get Started
 
 We've gone through great lengths to make the integration process as seamless as possible - all you have to do is reach out! We can be contacted via [Discord](https://discord.com/invite/Xs6SjqVPUA), [Twitter](https://x.com/LinkWell_Nodes), [Email](mailto:hello@linkwellnodes.io?subject=Website%20inquiry), or simply fill out our [request survey form](https://linkwellnodes.io/Getting-Started.html) to get started.
 
-Should you choose to contact us, all we require to get started is the network you wish to deploy on, your data requirements (ie price pair, data sources, etc.), and update frequencies needed for your Web3 application's use case.
-
-> _In need of a new Chainlink price feed with higher levels of decentralization and trust-minimization? Chainlink can be contacted [here](https://chain.link/contact?ref_id=datafeeds)._
+Should you choose to contact us, all we request that you send us is the network you wish to deploy on, your data requirements (ie price pair, data sources, etc.), update frequencies needed for your Web3 application's use case, and the timeline in which you require the price feed.
 
 ## Conclusion
 
 In an ideal scenario, Chainlink's price feeds, powered by their trust-minimized decentralized oracle networks, would support every conceivable price pair or use case needed by Web3 applications.
 
-Although this could become a reality in the future - a future we eagerly anticipate - we hope that our custom price feed solution can help fill the gap by offering tailored data services that adapt to specific needs not yet covered by Chainlink's existing offerings. 
+Although this could become a reality in the future - a future we eagerly anticipate - we hope that our custom price feed solution can help fill in the gaps by offering tailored data services that adapt to specific needs not yet covered by Chainlink's existing offerings. 
 As passionate developers and members of the Chainlink community ourselves, nothing brings us more satisfaction than bringing a Web3 application to life with the data it needs to not only thrive and succeed.
 
 Happy building!
