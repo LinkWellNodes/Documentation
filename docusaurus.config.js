@@ -204,7 +204,25 @@ const config = {
         darkTheme: darkCodeTheme,      
         additionalLanguages: ['solidity'],        
       },
+  },
+    
+  headTags: [
+    // Declare some json-ld structured data
+	// https://developers.google.com/search/docs/appearance/site-names#json-ld_1
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'LinkWell Nodes',
+        url: 'https://docs.linkwellnodes.io',
+        logo: 'https://docs.linkwellnodes.io/img/linkwell-logo_150x150.webp',
+      }),
     },
+  ],
     
   plugins: [
     [
