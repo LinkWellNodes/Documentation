@@ -16,6 +16,12 @@ import TOCInline from '@theme/TOCInline';
 
 <!-- truncate -->
 
+:::tip
+### Looking to stake your ALLO tokens? 
+
+Visit our [staking page](/services/staking/Allora) to earn ALLO (Allora token) by staking your ALLO within our state-of-the-art validator infrastructure.
+:::
+
 ## Announcement
 
 LinkWell Nodes has joined the group of validators that help secure the Allora Network. As a U.S.-based Web3 infrastructure company, LinkWell Nodes specializes in delivering Chainlink oracle data feeds and secure blockchain node deployments. Holding true to its core tenet of being a Web3 global citizen, LinkWell Nodes powers 95% of its infrastructure using renewable energy, and will reach 100% by next year. LinkWell Nodes operates server infrastructure across several physically-distinct cloud data centers, with its primary center-of-operations located in the northwestern United States. Using infrastructure-as-code (IaC), LinkWell Nodes is able to ensure robust scalability, disaster recovery, and 24/7 monitoring across all of its highly-available blockchain infrastructure.
@@ -63,6 +69,12 @@ Allora is a self-improving decentralized AI network.
 Allora enables applications to leverage smarter, more secure AI through a self-improving network of ML models. By combining innovations in crowdsourced intelligence, reinforcement learning, and regret minimization, Allora unlocks a vast new design space of applications at the intersection of crypto and AI.
 
 To learn more about the Allora Network, visit the [Allora website](https://www.allora.network/), [Twitter](https://twitter.com/AlloraNetwork), [Medium](https://medium.com/allora-network), and [Discord](https://discord.com/invite/allora).
+
+:::tip
+### Ready to stake your ALLO (Allora) token? 
+
+Head on over to our [staking page](/services/staking/Allora) to earn ALLO staking your tokens within our state-of-the-art validator.
+:::
 
 > _LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink._
 >

@@ -4,13 +4,13 @@ description: Stake ALLO (Allora) token securely using our state-of-the-art valid
 image: https://docs.linkwellnodes.io/img/lwn-joins-allora/allora__linkwell_nodes.png
 ---
 
-<h2 class='lw-subtitle'>Stake your ALLO tokens on LinkWell Nodes's <b>state-of-the-art</b>, <b>low-commission</b> validator infrastructure.</h2>
+<h2 class='lw-subtitle'>Stake your ALLO tokens on LinkWell Nodes's <b>state-of-the-art</b>, <b>minimum-commission</b> validator infrastructure.</h2>
 
 ![LinkWell Nodes Allora Network Partnership](/img/lwn-joins-allora/allora__linkwell_nodes.webp "LinkWell Nodes Allora Network Partnership")
 
 # Stake your ALLO (Allora token) with LinkWell Nodes
 
-LinkWell Nodes has [partnered with the Allora Network](/blog/LinkWell-Nodes-Joins-the-Allora-Network-as-a-Node-Operator) to offer **high-uptime**, **low-commission**, **SOC-2 compliant** staking services for the crypto community. Stake your Allora token (ALLO) with LinkWell Nodes using our state-of-the-art validator infrastructure.
+LinkWell Nodes has [partnered with the Allora Network](/blog/LinkWell-Nodes-Joins-the-Allora-Network-as-a-Node-Operator) to offer **high-uptime**, **minimum-commission**, **SOC-2 compliant** staking services for the crypto community. Earn ALLO (Allora token) by staking your ALLO within LinkWell Nodes's state-of-the-art validator infrastructure.
 
 *2024-07-06 update:* The Allora Network is not yet live on mainnet. We will update this page once mainnet staking services become available. 
 
