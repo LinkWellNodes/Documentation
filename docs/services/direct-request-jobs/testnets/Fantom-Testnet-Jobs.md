@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Fantom Testnet Data Feeds
+# Fantom Testnet Chainlink Oracle Jobs
 
 The Fantom network is an open-source, scalable, EVM-compatible, and secure smart-contract platform. Testnet FTM is used to pay for transactions on Fantom Mainnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/fantom-testnet). Testnet FTM is available at [faucet.fantom.network](https://faucet.fantom.network/).
 

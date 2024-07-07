@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Ethereum Sepolia Testnet Data Feeds
+# Ethereum Sepolia Testnet Chainlink Oracle Jobs
 
 Sepolia is a proof-of-stake testnet, and is the recommended default testnet for application development on Ethereum. Testnet ETH is used to pay for transactions on Sepolia. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link). Testnet ETH is available from several public [faucets](https://faucetlink.to/sepolia).
 

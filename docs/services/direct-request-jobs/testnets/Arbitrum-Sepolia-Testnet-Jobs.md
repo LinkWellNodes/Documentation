@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Arbitrum Sepolia Testnet Data Feeds
+# Arbitrum Sepolia Testnet Chainlink Oracle Jobs
 
 Arbitrum Sepolia is the testnet of Layer 2 rollup chain Arbitrum One, and uses Ethereum's Sepolia testnet network as its Layer 1 protocol. Testnet ETH is used to pay for transactions on Arbitrum Sepolia. Use the [Arbitrum Bridge](https://bridge.arbitrum.io/) to transfer testnet ETH from Ethereum Sepolia to Arbitrum Sepolia. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/arbitrum-sepolia). Testnet ETH is available from several public [faucets](https://faucetlink.to/sepolia).
 

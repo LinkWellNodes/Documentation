@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Optimism Sepolia Testnet Data Feeds
+# Optimism Sepolia Testnet Chainlink Oracle Jobs
 
 Optimism Sepolia is the testnet of Layer 2 rollup chain Optimism mainnet, and uses Ethereum's Sepolia testnet network as its Layer 1 protocol. Testnet ETH is used to pay for transactions on Optimism. Use the [Optimism Bridge](https://app.optimism.io/bridge/deposit) to transfer testnet ETH and LINK from Ethereum Sepolia to Optimistim Sepolia. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link).
 

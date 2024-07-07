@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Polygon zkEVM Testnet Data Feeds
+# Polygon zkEVM Testnet Chainlink Oracle Jobs
 
 Polygon zkEVM testnet is the testnet for Polygon zkEVM, an EVM equivalent ZK rollup scaling solution. Testnet ETH is used to pay for transactions on Polygon zkEVM testnet. Use the [Polygon zkEVM Bridge](https://wallet.polygon.technology/?redirectOnConnect=%2FzkEVM-Bridge%2Fbridge) to transfer ETH and LINK to Polygon zkEVM testnet.
 

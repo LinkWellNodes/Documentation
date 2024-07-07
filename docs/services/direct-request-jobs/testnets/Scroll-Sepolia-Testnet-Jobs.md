@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Scroll Sepolia Testnet Data Feeds
+# Scroll Sepolia Testnet Chainlink Oracle Jobs
 
 Scroll Sepolia testnet is the beta testnet on Sepolia. It runs alongside Scroll Mainnet and serve as a testing ground for smart contracts, dapp deployments, and upgrades.  Testnet ETH is used to pay for transactions on Scroll testnet. Use the [Scroll Sepolia Testnet Bridge](https://sepolia.scroll.io/bridge) to transfer testnet ETH from Ethereum Sepolia testnet to Scroll Sepolia testnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/scroll-sepolia-testnet).
 

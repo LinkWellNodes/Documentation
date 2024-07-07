@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Binance Mainnet Data Feeds
+# Binance Chainlink Oracle Jobs
 
 Binance Smart Chain (BSC) is a blockchain network developed by the cryptocurrency exchange Binance, featuring fast transaction processing and lower fees. It enables the creation and execution of smart contracts, making it a popular choice for decentralized applications (dApps) and DeFi projects.
 

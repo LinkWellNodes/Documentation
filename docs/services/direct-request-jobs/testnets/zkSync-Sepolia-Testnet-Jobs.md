@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# zkSync Sepolia Testnet Data Feeds
+# zkSync Sepolia Testnet Chainlink Oracle Jobs
 
 zkSync Sepolia is the testnet for zkSync Era. Testnet ETH is used to pay for transactions on zkSync Sepolia testnet. Use the recommended [zkSync Bridges](https://zksync.io/explore#bridges) to transfer testnet ETH from Ethereum Sepolia to the zkSync Sepolia Testnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/).
 

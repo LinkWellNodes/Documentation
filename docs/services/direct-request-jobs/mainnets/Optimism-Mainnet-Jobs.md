@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Optimism Mainnet Data Feeds
+# Optimism Chainlink Oracle Jobs
 
 Optimism is a layer 2 scaling solution for Ethereum, focused on increasing throughput and reducing fees by leveraging optimistic rollups. It aims to enhance the scalability of Ethereum-based decentralized applications (dApps) while maintaining compatibility with the Ethereum ecosystem.
 

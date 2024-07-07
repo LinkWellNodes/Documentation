@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Celo Alfajores Testnet Data Feeds
+# Celo Alfajores Testnet Chainlink Oracle Jobs
 
 The Alfajores Testnet is a test network for developers building on the Celo platform. Testnet CELO is used to pay for transactions on Celo Alfajores, and is available the [Alfajores Token Faucet](https://faucet.celo.org/alfajores). Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/celo-alfajores-testnet). Testnet CELO is available from the [Alfajores Token Faucet](https://faucet.celo.org/alfajores).
 

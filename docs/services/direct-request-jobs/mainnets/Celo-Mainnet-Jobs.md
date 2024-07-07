@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Celo Mainnet Data Feeds
+# Celo Chainlink Oracle Jobs
 
 Celo is a blockchain platform focused on enabling financial inclusion through mobile-first decentralized finance (DeFi) solutions. It aims to provide accessible and affordable financial services to billions of people worldwide, leveraging mobile technology and a proof-of-stake consensus mechanism for efficiency and scalability.
 

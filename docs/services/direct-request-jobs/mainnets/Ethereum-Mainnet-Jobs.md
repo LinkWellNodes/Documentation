@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Ethereum Mainnet Data Feeds
+# Ethereum Chainlink Oracle Jobs
 
 Ethereum is a decentralized blockchain platform that enables the creation of smart contracts and decentralized applications (dApps). It's widely known for its native cryptocurrency, Ether (ETH), and its ability to facilitate a wide range of decentralized financial services, NFTs, and decentralized autonomous organizations (DAOs).
 

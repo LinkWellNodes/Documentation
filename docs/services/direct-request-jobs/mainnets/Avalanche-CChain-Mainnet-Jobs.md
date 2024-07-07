@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Avalanche Mainnet Data Feeds
+# Avalanche Chainlink Oracle Jobs
 
 Avalanche is a high-performance blockchain platform known for its fast transaction speeds and scalability, facilitated by the Avalanche consensus protocol. It supports a wide range of decentralized applications (dApps) and is particularly popular for its efficiency in handling DeFi and NFT projects.
 

@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Linea Mainnet Data Feeds
+# Linea Chainlink Oracle Jobs
 
 Linea is a is a L2 scaling solution that uses a zero-knowledge proof as its validity proof to post data back to Ethereum L1. ETH is used to pay for transactions on Linea Mainnet. Use the [Linea Bridge](https://bridge.linea.build/) to transfer ETH from Ethereum to Linea.
 

@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Avalanche Fuji Testnet Data Feeds
+# Avalanche Fuji Testnet Chainlink Oracle Jobs
 
 Avalanche Fuji is the testnet for Avalanche Mainnet (AVAX), which is a smart contract-capable blockchain platform focused on transaction speed, low costs, and eco-friendliness. Testnet AVAX is used to pay for transactions on Avalanche Fuji. Testnet LINK and AVAX are available at [faucets.chain.link](https://faucets.chain.link/fuji). Testnet AVAX is also available at [faucet.avax.network](https://core.app/tools/testnet-faucet/?subnet=c&token=c).
 

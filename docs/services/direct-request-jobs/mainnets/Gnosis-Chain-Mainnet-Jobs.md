@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Gnosis Chain Mainnet Data Feeds
+# Gnosis Chainlink Oracle Jobs
 
 The Gnosis Chain is a fully equivalent EVM zk-rollup designed to scale the Ethereum network. xDAI is used to pay for transactions on Gnosis Mainnet. Use the [xDai Bridge](https://bridge.gnosischain.com/) to send DAI from Ethereum Mainnet to Gnosis and convert it to xDAI. Use [OmniBridge](https://omni.gnosischain.com/bridge) to send LINK from Ethereum Mainnet to Gnosis Chain.
 

@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Binance Testnet Data Feeds
+# Binance Testnet Chainlink Oracle Jobs
 
 Binance Smart Chain's testnet is a test environment for BNB Smart Chain mainnet network, run by the BNB Chain development community. Testnet BNB is used to pay for transactions on the BNB Chain testnet. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/bnb-chain-testnet). Testnet BNB is available at [testnet.bnbchain.org/faucet-smart](https://www.bnbchain.org/en/testnet-faucet).
 

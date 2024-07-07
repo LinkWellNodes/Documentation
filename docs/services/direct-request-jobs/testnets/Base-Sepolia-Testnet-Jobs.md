@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Base Sepolia Testnet Data Feeds
+# Base Sepolia Testnet Chainlink Oracle Jobs
 
 Base Sepolia is the testnet of Layer 2 rollup chain Base mainnet, and uses Ethereum's Sepolia testnet network as its Layer 1 protocol. Testnet ETH is used to pay for transactions on BASE. Testnet LINK is available at [faucets.chain.link](https://faucets.chain.link/base-sepolia). Testnet ETH is available from one of the [BASE Network Faucets](https://docs.base.org/tools/network-faucets/).
 

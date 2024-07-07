@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 
-# Fantom Mainnet Data Feeds
+# Fantom Chainlink Oracle Jobs
 
 Fantom is a high-performance, scalable blockchain platform designed to enable fast and secure decentralized applications (dApps) and smart contracts. It utilizes a directed acyclic graph (DAG) consensus mechanism, known as Lachesis, to achieve rapid transaction processing and low fees, making it suitable for various use cases, including DeFi, supply chain management, and decentralized identity.
 
