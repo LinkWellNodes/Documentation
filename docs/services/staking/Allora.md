@@ -1,5 +1,5 @@
 ---
-title: Allora Network (ALLO) Staking
+title: Stake Allora Network (ALLO) tokens
 description: Stake ALLO (Allora) token securely using our state-of-the-art validator infrastructure.
 image: https://docs.linkwellnodes.io/img/lwn-joins-allora/allora__linkwell_nodes.png
 ---
