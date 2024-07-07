@@ -4,7 +4,7 @@ description: Stake ALLO (Allora) token securely using our state-of-the-art valid
 image: https://docs.linkwellnodes.io/img/lwn-joins-allora/allora__linkwell_nodes.png
 ---
 
-<h2 class='lw-subtitle'>Stake your ALLO tokens on LinkWell Nodes's <b>state-of-the-art</b>, <b>minimum-commission</b> validator infrastructure.</h2>
+<h2 class='lw-subtitle'>Stake your ALLO tokens on LinkWell Nodes's <b>bank-grade</b>, <b>minimum-commission</b> validator infrastructure.</h2>
 
 ![LinkWell Nodes Allora Network Partnership](/img/lwn-joins-allora/allora__linkwell_nodes.webp "LinkWell Nodes Allora Network Partnership")
 
@@ -26,9 +26,9 @@ We're happy to help! For the fastest service, please join our [Discord server](h
 
 ## Our state-of-the-art infrastructure
 
-LinkWell Nodes is a registered U.S. blockchain infrastructure company. 
+LinkWell Nodes is a registered U.S. company. 
 
-With over **30 years** of combined professional experience in the financial services, cybersecurity, and Web3 industries, we took no shortcuts in delivering a battle-hardened, fault-tolerant, enterprise-grade validator infrastructure with bank-grade security. 
+With over **30 years** of combined professional experience in the financial services, cybersecurity, and Web3 industries, we took no shortcuts in delivering a battle-hardened, fault-tolerant, enterprise-grade validator infrastructure. 
 
 ---
 
@@ -36,10 +36,10 @@ Our infrastructure:
 
 * Runs on **95% renewable energy**.
 * Meets or exceeds the same **SOC 2** and **ISO 27001** data protection standards used by your bank.
-* Ensures at-rest **256-bit encryption** for all data.
-* Is monitored **24/7** for access and traffic.
+* Monitors all access, traffic, and operations **24/7**.
+* Uses **256-bit encryption** for all data at-rest.
 * Is deployed redundantly across multiple **physically-distinct** datacenters.
-* Enforces **2-plus** factor authentication for all entry points.
+* Enforces **minimum 2-factor authentication** for all entry points.
 * Is protected by **dedicated security personnel** and **advanced intrusion protection** technology.
 
 
