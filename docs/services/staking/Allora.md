@@ -2,6 +2,7 @@
 title: Stake Allora Network (ALLO) tokens
 description: Stake ALLO (Allora) token securely using our state-of-the-art validator infrastructure.
 image: https://docs.linkwellnodes.io/img/lwn-joins-allora/allora__linkwell_nodes.png
+keywords: [allora network, staking, stake, stake allo, allora network staking, allo, allo staking, free, cheap, secure, low fee, low commission]
 ---
 
 <h2 class='lw-subtitle'>Stake your ALLO tokens on LinkWell Nodes's <b>bank-grade</b>, <b>minimum-commission</b> validator infrastructure.</h2>
