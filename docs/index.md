@@ -15,7 +15,7 @@ slug: /
 Our on-demand data feeds allow you to write custom data reliably from anywhere on the internet to your blockchain smart contracts. View pricing info, code examples, and more:
 
 <!--
-<button onClick={()=>window.location.href='/services/direct-request-jobs/Jobs-and-Pricing'} type="button" className="blueButton">Chainlink Data Feeds</button>
+<a href="/services/direct-request-jobs/Jobs-and-Pricing" class="blueButton" target="_blank">Chainlink Data Feeds</a>
 -->
 
 - ## [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)

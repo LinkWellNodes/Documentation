@@ -210,6 +210,18 @@ module.exports = {
       ],
     },
     {
+        type: 'category',
+        label: 'Staking',
+        collapsible: false,
+        items: [
+            {
+                type: 'doc',
+                id: 'services/staking/Allora',
+                label: 'Allora Network (ALLO)',
+            },
+        ],
+      },
+    {
   	  type: 'doc',
   	  id: 'services/Development-Services',
   	  label: 'Development & Support',

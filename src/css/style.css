@@ -164,33 +164,62 @@ iframe {
 hr {
 	margin: 42px 0 42px 0;
 }
-.blueButton {
-  margin: 24px 0 0 0;
-  padding: 14px 16px;
+a.blueButton {
+  margin-top:8px;
+  padding: 8px 16px;
   align-items: center;
   appearance: button;
-  background-color: var(--ifm-color-primary);
-  border-radius: 10px;
-  border-style: none;
-  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  background-color: #006AE8;
+  border: 3px solid #006AE8;
+  border-radius: 16px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
   font-size: 16px;
   text-align: center;
   text-transform: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-decoration: none;
 }
-.blueButton:active {
+a.blueButton:active {
   background-color: #006AE8;
+  text-decoration: none;
 }
-.blueButton:hover {
-  background-color: #4566D6;
+a.blueButton:hover {
+  color: #006AE8;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+a.bigBlueButton {
+  margin-top:14px;
+  margin-bottom:14px;
+  padding: 15px 40px;
+  align-items: center;
+  appearance: button;
+  background-color: #006AE8;
+  border: 3px solid #006AE8;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 23px;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+a.bigBlueButton:active {
+  background-color: #006AE8;
+  text-decoration: none;
+}
+a.bigBlueButton:hover {
+  color: #006AE8;
+  background-color: #ffffff;
+  text-decoration: none;
 }
 
 /* PREV / NEXT PAGE FOOTERS */
