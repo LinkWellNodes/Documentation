@@ -156,13 +156,13 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Random numbers (nVRF)</summary>
+<details><summary>A random number (nVRF)</summary>
 
 ## Retrieve a random `uint256` number (nVRF)
 
 This **on-demand** job initiates an oracle request for a random number within the specified range, and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
 
-**TIP**: Need to receive multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to receive multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
 
 :::info 
 This job writes a single **uint256** object to your contract, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
@@ -240,9 +240,13 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 
 <TabItem value="Uint256[]"> 
 
-## Uint256[] Retrieval
+<h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-This on-demand job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
+<details><summary>Data from the internet (HTTP request)</summary>
+
+## Retrieve a `uint256[]` from the internet
+
+This **on-demand** job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
 
 :::info 
 This job writes a single **uint256[]** object to your contract, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
@@ -376,13 +380,101 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 ```
 [98340000000000000000,89990000000000000000,412430000000000000000]
 ```
+
+</details>
+
+<details><summary>Random numbers (nVRF)</summary>
+
+## Retrieve a `uint256[]` of random numbers (nVRF)
+
+This **on-demand** job initiates an oracle request for an array of random numbers within the specified range, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
+
+**TIP**: Need to receive a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-nvrf) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-nvrf) jobs instead.
+
+:::info 
+This job writes a single **uint256[]** object to your contract, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`).
+::: 
+
+### Request metadata
+
+You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
+
+| Oracle Address                             | Job ID                           | Fee Per Request       |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://sepolia.arbiscan.io/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 1b9b1967e5084cb59c2f04bcfc5307cb | 0 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set within your contract's `request()` function:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **minVal** | `int256` | 0 | The lower bound of the desired random number range (inclusive). |
+| **maxVal** | `int256` | 500 | The upper bound of the desired random number range (inclusive). |
+| **quantity** | `int256` | 5 | The number of random numbers to retrieve (ie, the `uint256[]` object length). |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle, email address, or other contact info here. This is important for allowing prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, you must pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/nvrf_uint256-array.sol).
+:::
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/nvrf_uint256-array.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/nvrf_uint256-array.sol#L31-L43
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/uint256-array/nvrf_uint256-array.sol#L45-L53
+```
+
+### Need more help?
+
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
+
+</details>
+
+<details><summary>Something else</summary>
+
+## Have a custom requirement?
+
+**We've got you covered:**
+
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
+1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+
+:::info  
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
+:::
+
+</details>
+
 </TabItem>
 
 <TabItem value="Int256"> 
 
-## Int256 Retrieval
+<h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-This on-demand job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
+<details><summary>Data from the internet (HTTP request)</summary>
+
+## Retrieve a `int256` from the internet
+
+This **on-demand** job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a numeric value at the given path, multiplies this value by the given multiplier, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
 
 :::info  
 This job writes a single **int256** object to your contract, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
@@ -517,13 +609,99 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 -85650000000000000000
 ```
 
+</details>
+
+<details><summary>A random number (nVRF)</summary>
+
+## Retrieve a random `int256` number (nVRF)
+
+This **on-demand** job initiates an oracle request for a random number within the specified range, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
+
+**TIP**: Need to receive multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
+
+:::info 
+This job writes a single **int256** object to your contract, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+:::
+
+### Request metadata
+
+You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
+
+| Oracle Address                             | Job ID                           | Fee Per Request       |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://sepolia.arbiscan.io/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 0e58feb938b044b2a342639c10d9eef4 | 0 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set within your contract's `request()` function:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **minVal** | `int256` | -500 | The lower bound of the desired random number range (inclusive). |
+| **maxVal** | `int256` | 500 | The upper bound of the desired random number range (inclusive). |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle, email address, or other contact info here. This is important for allowing prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, you must pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/nvrf_int256.sol).
+:::
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/nvrf_int256.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/nvrf_int256.sol#L31-L42
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256/nvrf_int256.sol#L44-L52
+```
+
+### Need more help?
+
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
+
+</details>
+
+<details><summary>Something else</summary>
+
+## Have a custom requirement?
+
+**We've got you covered:**
+
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
+1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+
+:::info  
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
+:::
+
+</details>
+
 </TabItem>
 
 <TabItem value="Int256[]">
 
-## Int256[] Retrieval
+<h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-This on-demand job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
+<details><summary>Data from the internet (HTTP request)</summary>
+
+## Retrieve a `int256[]` from the internet
+
+This **on-demand** job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of numeric value at the given path, multiplies each element in the array by the given multiplier, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
 
 :::info  
 This job writes a single **int256[]** object to your contract, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
@@ -657,13 +835,101 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 ```
 [-54470000000000000000,89990000000000000000,983890000000000000000]
 ```
+
+</details>
+
+<details><summary>Random numbers (nVRF)</summary>
+
+## Retrieve a `int256[]` of random numbers (nVRF)
+
+This **on-demand** job initiates an oracle request for an array of random numbers within the specified range, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
+
+**TIP**: Need to receive a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-nvrf) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-nvrf) jobs instead.
+
+:::info  
+This job writes a single **int256[]** object to your contract, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
+:::
+
+### Request metadata
+
+You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
+
+| Oracle Address                             | Job ID                           | Fee Per Request       |
+|--------------------------------------------|----------------------------------|-----------------------|
+| [0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46](https://sepolia.arbiscan.io/address/0xd36c6B1777c7f3Db1B3201bDD87081A9045B7b46) | 6e8063b1ced54163aadddc5237c6d04e | 0 LINK |
+
+### Request parameters
+
+This job requires the following parameters to be set within your contract's `request()` function:
+
+| Parameter | Type | Value example | Description |
+|-------------|-------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **minVal** | `int256` | -500 | The lower bound of the desired random number range (inclusive). |
+| **maxVal** | `int256` | 500 | The upper bound of the desired random number range (inclusive). |
+| **quantity** | `int256` | 5 | The number of random numbers to retrieve (ie, the `int256[]` object length). |
+| **contact** | `string` | 'derek_linkwellnodes.io' | Enter your Discord handle, email address, or other contact info here. This is important for allowing prompt communication from us regarding outages or other technical issues that we may notice with your request. If you prefer to stay anonymous, you must pass an empty string (''). |
+
+### Try it for yourself
+
+Add the following sample code to your **consumer contract**. 
+
+:::tip
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/nvrf_int256-array.sol).
+:::
+
+#### 1. Add the constructor:
+
+The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/nvrf_int256-array.sol#L23-L28
+```
+
+#### 2. Add your request function (example):
+The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/nvrf_int256-array.sol#L31-L43
+```
+
+#### 3. Retrieve the response (example):
+
+```sol reference
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Arbitrum-Sepolia/int256-array/nvrf_int256-array.sol#L45-L53
+```
+
+### Need more help?
+
+Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you require additional assistance with this request.
+
+</details>
+
+<details><summary>Something else</summary>
+
+## Have a custom requirement?
+
+**We've got you covered:**
+
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
+1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+
+:::info  
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
+:::
+
+</details>
+
 </TabItem>
 
 <TabItem value="Bool">
 
-## Boolean Retrieval
+<h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-This on-demand job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a boolean value at the given path, and returns the resulting object (**bool**) to your smart contract.
+<details><summary>Data from the internet (HTTP request)</summary>
+
+## Retrieve a `bool` from the internet
+
+This **on-demand** job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a boolean value at the given path, and returns the resulting object (**bool**) to your smart contract.
 
 :::info  
 This job writes a single **bool** object to your contract, which can store a `true` or `false` value. 
@@ -785,13 +1051,35 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 ```
 true
 ```
+
+</details>
+
+<details><summary>Something else</summary>
+
+## Have a custom requirement?
+
+**We've got you covered:**
+
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
+1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+
+:::info  
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
+:::
+
+</details>
+
 </TabItem>
 
 <TabItem value="Bool[]">
 
-## Boolean[] Retrieval
+<h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-This on-demand job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of boolean values at the given path, and returns the resulting array of booleans (**bool[]**) to your smart contract.
+<details><summary>Data from the internet (HTTP request)</summary>
+
+## Retrieve a `bool[]` from the internet
+
+This **on-demand** job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for an array of boolean values at the given path, and returns the resulting array of booleans (**bool[]**) to your smart contract.
 
 :::info  
 This job writes a single **bool[]** object to your contract, which can store an array of `true` or `false` values. 
@@ -916,13 +1204,35 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 ```
 [true,false,false]
 ```
+
+</details>
+
+<details><summary>Something else</summary>
+
+## Have a custom requirement?
+
+**We've got you covered:**
+
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
+1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+
+:::info  
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
+:::
+
+</details>
+
 </TabItem>
 
 <TabItem value="String (Bytes)">
 
-## String (Bytes) Retrieval
+<h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-This on-demand job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting dynamic bytes array (**bytes**) - which can also be represented as a **string** - to your consumer contract.
+<details><summary>Data from the internet (HTTP request)</summary>
+
+## Retrieve a `string` (`bytes`) from the internet
+
+This **on-demand** job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting dynamic bytes array (**bytes**) - which can also be represented as a **string** - to your consumer contract.
 
 :::info 
 This job writes a single **bytes** object to your contract, which can readily be converted into a **string** value. 
@@ -1052,13 +1362,34 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 Note that the double-quotes will not be present when retrieving the above response as a `string` object within your smart contract.
 :::
 
+</details>
+
+<details><summary>Something else</summary>
+
+## Have a custom requirement?
+
+**We've got you covered:**
+
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
+1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+
+:::info  
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
+:::
+
+</details>
+
 </TabItem>
 
 <TabItem value="String[] (Bytes[])">
 
-## String[] (Bytes[]) Retrieval
+<h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-This on-demand job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting array of dynamic bytes arrays (**bytes[]**) - which can also be represented as a **string[]** - to your consumer contract.
+<details><summary>Data from the internet (HTTP request)</summary>
+
+## Retrieve a `string[]` (`bytes[]`) from the internet
+
+This **on-demand** job initiates an HTTP `GET`, `POST`, `PUT`, or `DELETE` request to the internet, optionally parses a JSON-based response body for a value at the given path, and returns the resulting array of dynamic bytes arrays (**bytes[]**) - which can also be represented as a **string[]** - to your consumer contract.
 
 :::info  
 This job writes a single **bytes[]** object to your contract, which can readily be converted into a **string[]** value.
@@ -1187,6 +1518,23 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 :::info  
 Note that the double-quotes will not be present when retrieving any of the above array elements as a `string` within your smart contract. 
 :::
+
+</details>
+
+<details><summary>Something else</summary>
+
+## Have a custom requirement?
+
+**We've got you covered:**
+
+1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
+1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+
+:::info  
+Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
+:::
+
+</details>
 
 </TabItem>
 
