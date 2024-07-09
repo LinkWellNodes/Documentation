@@ -20,6 +20,9 @@ h1 {
 	font-weight:600;
 	line-height:60px;
 }
+.tabs-container h1 {
+	margin: 40px 0 40px 0 !important;
+}
 h2 {
 	margin: 48px 0 24px 0 !important;
 	font-family: 'Open Sans',sans-serif;
@@ -113,6 +116,26 @@ h4 {
 lw-emphasis {
 	font-weight: 600;
 }
+.datafeed-title {
+	margin: 40px 0 14px 0 !important;
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+	font-size:38px;
+	font-weight:600;
+	line-height:60px;
+}
+.datafeed-title:after {
+    height: 0px !important;
+}
+.datafeed-subtitle {
+	margin:30px 0 0 0 !important;;
+	font-weight: 400;
+	font-size:18px;
+	line-height:34px !important;
+}
+.datafeed-subtitle:after {
+    height: 0px !important;
+}
 .hash-link::before {
 	content: "\1F517" !important;
 	font-weight: 400;
@@ -163,6 +186,22 @@ iframe {
 }
 hr {
 	margin: 42px 0 42px 0;
+}
+details.alert--info {
+  background-color: #FFF !important;
+  padding: 24px !important;
+  margin: 20px 0 20px 0 !important;
+}
+details > div {
+  transition: none !important;
+}
+details > summary {
+  font-size: 18px;
+  font-weight:600;
+}
+details > summary::before {
+  margin-top:5px;
+  font-weight: 400;
 }
 a.blueButton {
   margin-top:8px;
@@ -318,7 +357,7 @@ code {
     background-color: #EEF9FD;
     --ifm-alert-border-color: #0B87DA;
 }
-.alert--info p {
+.alert--info > div > p {
 	margin: 0 !important;
 }
 .alert--info a {
@@ -476,6 +515,7 @@ thead > tr {
 }
 
 :root {
+  --doc-sidebar-width: 260px !important;
   --table-bg-color-light: #F2F2F2;
   --table-bg-color-dark: #E3E3E3;
   --ifm-color-primary: #375BD2;
