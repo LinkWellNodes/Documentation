@@ -1,0 +1,77 @@
+type = "directrequest"
+schemaVersion = 1
+name = "LW_ACFT_EA_int256-arr_nvrf"
+externalJobID = "6e8063b1-ced5-4163-aadd-dc5237c6d04e"
+forwardingAllowed = false
+maxTaskDuration = "0s"
+contractAddress = "0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406"
+evmChainID = "43113"
+minIncomingConfirmations = 1
+minContractPaymentLinkJuels = "0"
+observationSource = """
+
+    decode_log  [
+                type="ethabidecodelog"
+                abi="OracleRequest(bytes32 indexed specId, address requester, bytes32 requestId, uint256 payment, address callbackAddr, bytes4 callbackFunctionId, uint256 cancelExpiration, uint256 dataVersion, bytes data)"
+                data="$(jobRun.logData)"
+                topics="$(jobRun.logTopics)"
+                ]
+
+    decode_cbor [
+                type="cborparse"
+                data="$(decode_log.data)"
+                ]
+
+    send_to_bridge [
+                type="bridge" 
+                name="common-http-forwarder" 
+                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"requesttype\\":\\"NVRF\\",\\"minval\\":$(decode_cbor.minVal),\\"maxval\\":$(decode_cbor.maxVal),\\"numbytes\\":\\"\\",\\"numvals\\":$(decode_cbor.quantity),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
+                headers="[\\"secret-val-01\\", \\"\\", \\"secret-val-02\\", \\"\\", \\"secret-val-03\\", \\"\\", \\"secret-val-04\\", \\"\\", \\"secret-val-05\\", \\"\\"]"
+                ]
+
+    parse       [
+                type="jsonparse"
+                path=""
+                data="$(send_to_bridge)"
+                ]
+
+    encode_data [
+                type="ethabiencode" 
+                abi="(bytes32 requestId, int256[] value)" 
+                data="{ \\"requestId\\": $(decode_log.requestId), \\"value\\": $(parse) }"
+                ]
+
+    encode_tx   [
+                type="ethabiencode"
+                abi="fulfillOracleRequest2(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes calldata data)"
+                data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
+                ]
+
+    encode_gas_guardian_data   [
+                type="ethabiencode"
+                abi="fulfill(bytes32 requestId, int256[] value)" 
+                data="{\\"requestId\\": $(decode_log.requestId), \\"value\\": $(parse)}"
+                ]
+
+    gas_guardian [
+                type="bridge" 
+                name="gas-guardian" 
+                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"data\\":$(encode_gas_guardian_data),\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress),\\"responseobj\\":$(parse)}" 
+                headers="[\\"disable\\", \\"false\\", \\"gas-limit\\", \\"1000000\\", \\"max-loss-usd\\", \\"0\\", \\"max-loss-pct\\", \\"0\\"]"
+                ]
+
+    submit_tx   [
+                type="ethtx"
+                to="0xd0EbC86a4f67654B654Feb0e615d7f5C139a6406"
+                data="$(encode_tx)"
+                gasLimit="1000000"
+                ]
+
+    decode_log -> decode_cbor -> send_to_bridge -> parse
+
+    parse -> encode_data -> encode_tx
+    parse -> encode_gas_guardian_data -> gas_guardian
+
+    encode_tx -> submit_tx
+    gas_guardian -> submit_tx
+"""
