@@ -155,12 +155,12 @@ Although you may have already commenced the development of your smart contract b
         // DEFINE THE REQUEST PARAMETERS (example)
         req._add('method', 'GET');
         req._add('url', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR');
-        req._add('headers', '["content-type", "application/json", "set-cookie", "sid=14A52"]');
+        req._add('headers', '["content-type", "application/json"]');
         req._add('body', '');
         req._add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // The following curl command simulates the above request parameters: 
-        // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json' --header 'set-cookie: sid=14A52'
+        // curl 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR' --request 'GET' --header 'content-type: application/json'
         
         // PROCESS THE RESULT (example)
         req._add('path', 'ETH,USD');

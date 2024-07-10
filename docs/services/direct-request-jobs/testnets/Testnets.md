@@ -10,7 +10,7 @@ The following documentation illustrates how to use our redundant Chainlink oracl
 Please use the links below to build your first Chainlink request.
 
 :::info
-The fee for all of our testnet data feeds is **0 LINK**.
+The fee for all of our testnet data feeds is **0 LINK** (free).
 :::
 
 * ### [Arbitrum Sepolia Testnet](/services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs)
