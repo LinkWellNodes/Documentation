@@ -14,8 +14,8 @@ Optimism Sepolia is the testnet of Layer 2 rollup chain Optimism mainnet, and us
 The below documentation illustrates how to integrate a custom Chainlink data feed for your smart contract or dApp running on the Optimism Sepolia network. All testnet data feeds are **free to use**, and do not require you to fund your contracts with the LINK token. If you run into any trouble, head on over to our [Discord server](https://discord.gg/Xs6SjqVPUA) for the fastest assistance, or feel free to contact us [here](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes").
 
 :::tip
-### Looking instead for scheduled updates? 
-We can update any of your contract's data at a set frequency, and/or deviation-based trigger condition (ie, **price feeds**). [**Fill out our request survey**](https://linkwellnodes.io/Getting-Started.html) to get this set up - we'll typically deliver your new feed to you within 24 hours! 
+### Looking for a custom price feed? 
+We can update any of your contract's data at a set frequency, and/or deviation-based trigger condition. [**Fill out our request survey**](https://linkwellnodes.io/Getting-Started.html) to get this set up - we'll typically deliver your new feed to you within **24 hours** or less! 
 :::
 
 ### Select the data type that you need:

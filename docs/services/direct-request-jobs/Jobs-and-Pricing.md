@@ -18,11 +18,11 @@ description: Our Chainlink custom data feeds connect your smart contract to any 
 
 * Data from anywhere on the internet (prices, RWAs, sports bets, weather, etc.)
 * Random numbers (`uint256`, `uint256[]`, `int256`, and `int256[]` object types)
-* Off-chain computation. [Let us know](https://linkwellnodes.io/Getting-Started.html) what you're looking for!
+* Off-chain computation (please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html))
 
 :::tip
 ### Looking for a custom price feed? 
-We can update any of your contract's data at a set frequency, and/or deviation-based trigger condition. [**Fill out our request survey**](https://linkwellnodes.io/Getting-Started.html) to get this set up - we'll typically deliver your new feed to you within **24 hours**! 
+We can update any of your contract's data at a set frequency, and/or deviation-based trigger condition. [**Fill out our request survey**](https://linkwellnodes.io/Getting-Started.html) to get this set up - we'll typically deliver your new feed to you within **24 hours** or less! 
 :::
 
 
