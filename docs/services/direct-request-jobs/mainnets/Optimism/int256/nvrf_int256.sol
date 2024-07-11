@@ -19,7 +19,7 @@ contract LinkWellNVRFInt256ConsumerContractExample is ChainlinkClient, Confirmed
         _setChainlinkToken(0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6);
         setOracleAddress(<oracle address>);
         setJobId("0e58feb938b044b2a342639c10d9eef4");
-        setFeeInHundredthsOfLink(10);     // 0.1 LINK
+        setFeeInHundredthsOfLink(5);     // 0.05 LINK
     }
 
     // Send a request to the Chainlink oracle

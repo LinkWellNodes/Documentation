@@ -22,11 +22,11 @@ description: Our Chainlink custom data feeds connect your smart contract to any 
 
 :::tip
 ### Looking for a custom price feed? 
-We can update any of your contract's data at a set frequency, and/or deviation-based trigger condition. [**Fill out our request survey**](https://linkwellnodes.io/Getting-Started.html) to get this set up - we'll typically deliver your new feed to you within **24 hours** or less! 
+We can update any of your contract's data at a set frequency, and/or deviation-based trigger condition. [**Fill out our request survey**](https://linkwellnodes.io/Getting-Started.html) to get this set up - we'll typically deliver your new feed to you in **24 hours or less!**
 :::
 
 
-### Battle-tested oracle infrastructure
+### Enterprise-grade oracle infrastructure
 
 All of our Chainlink oracles are backed by a redundant, SOC 2-compliant infrastructure, which is distributed across multiple physically-distinct datacenters. Simply trigger your smart contract's `request()` function, and our oracle infrastructure will ensure that your data is delivered safely, securely, and on-time. 
 

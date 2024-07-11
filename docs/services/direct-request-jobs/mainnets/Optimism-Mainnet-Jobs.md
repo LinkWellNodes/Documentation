@@ -15,7 +15,7 @@ The below documentation illustrates how to integrate a custom Chainlink data fee
 
 :::tip
 ### Looking for a custom price feed? 
-We can update any of your contract's data at a set frequency, and/or deviation-based trigger condition. [**Fill out our request survey**](https://linkwellnodes.io/Getting-Started.html) to get this set up - we'll typically deliver your new feed to you within **24 hours** or less! 
+We can update any of your contract's data at a set frequency, and/or deviation-based trigger condition. [**Fill out our request survey**](https://linkwellnodes.io/Getting-Started.html) to get this set up - we'll typically deliver your new feed to you in **24 hours or less!**
 :::
 
 ### Select the data type that you need:
@@ -165,7 +165,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 This **on-demand** job initiates an oracle request for a random number within the specified range, and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
 
-**TIP**: Need to receive multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
 
 :::info 
 This job writes a single **uint256** object to your contract, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
@@ -176,7 +176,7 @@ You'll set the following attributes within your contract's constructor function 
 
 | Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.05 LINK * |
 
 *&nbsp;**Fee notes**:
 - We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
@@ -234,7 +234,7 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info  
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
@@ -399,7 +399,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 This **on-demand** job initiates an oracle request for an array of random numbers within the specified range, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
 
-**TIP**: Need to receive a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-nvrf) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-nvrf) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-nvrf) jobs instead.
 
 :::info 
 This job writes a single **uint256[]** object to your contract, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`).
@@ -410,7 +410,7 @@ You'll set the following attributes within your contract's constructor function 
 
 | Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.07 LINK * |
 
 *&nbsp;**Fee notes**:
 - We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
@@ -469,7 +469,7 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info  
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
@@ -634,7 +634,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 This **on-demand** job initiates an oracle request for a random number within the specified range, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
 
-**TIP**: Need to receive multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
 
 :::info 
 This job writes a single **int256** object to your contract, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
@@ -645,7 +645,7 @@ You'll set the following attributes within your contract's constructor function 
 
 | Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.05 LINK * |
 
 *&nbsp;**Fee notes**:
 - We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
@@ -703,7 +703,7 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info  
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
@@ -868,7 +868,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 This **on-demand** job initiates an oracle request for an array of random numbers within the specified range, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
 
-**TIP**: Need to receive a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-nvrf) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-nvrf) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-nvrf) jobs instead.
 
 :::info  
 This job writes a single **int256[]** object to your contract, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
@@ -879,7 +879,7 @@ You'll set the following attributes within your contract's constructor function 
 
 | Oracle Address and Job ID | Fee Per Request |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.07 LINK * |
 
 *&nbsp;**Fee notes**:
 - We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
@@ -938,7 +938,7 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info  
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
@@ -1092,7 +1092,7 @@ true
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
@@ -1249,7 +1249,7 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
@@ -1410,7 +1410,7 @@ Note that the double-quotes will not be present when retrieving the above respon
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
@@ -1571,7 +1571,7 @@ Note that the double-quotes will not be present when retrieving any of the above
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
@@ -1588,7 +1588,7 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 **We've got you covered:**
 
 1. Fill out our [Request Survey](https://linkwellnodes.io/Getting-Started.html) with the relevant details about your request. 
-1. We'll assess your request and provide you with a custom job ID that works for you **within 24 hours**.
+1. We'll assess your request and provide you with a custom job ID that works for you **in 24 hours or less!**
 
 :::info  
 Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for your request!
