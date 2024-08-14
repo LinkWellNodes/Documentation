@@ -8,7 +8,7 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
  */
 
-contract LinkWellNVRFInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellVRNInt256ArrConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
 	address private oracleAddress;

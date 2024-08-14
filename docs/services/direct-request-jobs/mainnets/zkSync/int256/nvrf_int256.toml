@@ -1,6 +1,6 @@
 type = "directrequest"
 schemaVersion = 1
-name = "LW_ZEM_EA_int256_nvrf"
+name = "LW_ZEM_EA_int256_vrn"
 externalJobID = "0e58feb9-38b0-44b2-a342-639c10d9eef4"
 forwardingAllowed = false
 maxTaskDuration = "0s"
@@ -25,7 +25,7 @@ observationSource = """
     send_to_bridge [
                 type="bridge" 
                 name="common-http-forwarder" 
-                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"requesttype\\":\\"NVRF\\",\\"minval\\":$(decode_cbor.minVal),\\"maxval\\":$(decode_cbor.maxVal),\\"numbytes\\":\\"\\",\\"numvals\\":\\"1\\",\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
+                requestData="{\\"contact-id\\":$(decode_cbor.contact),\\"requesttype\\":\\"VRN\\",\\"minval\\":$(decode_cbor.minVal),\\"maxval\\":$(decode_cbor.maxVal),\\"numbytes\\":\\"\\",\\"numvals\\":\\"1\\",\\"jobname\\":$(jobSpec.name),\\"txnhash\\":$(jobRun.logTxHash),\\"externaljobid\\":$(jobSpec.externalJobID),\\"oracleaddress\\":$(jobRun.logAddress)}" 
                 headers="[\\"secret-val-01\\", \\"\\", \\"secret-val-02\\", \\"\\", \\"secret-val-03\\", \\"\\", \\"secret-val-04\\", \\"\\", \\"secret-val-05\\", \\"\\"]"
                 ]
 

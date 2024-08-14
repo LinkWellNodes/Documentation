@@ -159,13 +159,13 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>A random number (nVRF)</summary>
+<details><summary>A random number (VRF / RNG)</summary>
 
-## Retrieve a random `uint256` number (nVRF)
+## Retrieve a random `uint256` number (VRF / RNG)
 
 This **on-demand** job initiates an oracle request for a random number within the specified range, and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
 
-**TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-vrn) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-vrn) jobs instead.
 
 :::info 
 This job writes a single **uint256** object to your contract, which can store any integer from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`). 
@@ -197,7 +197,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**. 
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/nvrf_uint256.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/vrn_uint256.sol).
 :::
 
 #### 1. Add the constructor:
@@ -205,20 +205,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/nvrf_uint256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/vrn_uint256.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/nvrf_uint256.sol#L26-L37
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/vrn_uint256.sol#L26-L37
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/nvrf_uint256.sol#L39-L47
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/vrn_uint256.sol#L39-L47
 ```
 
 ### Need more help?
@@ -393,13 +393,13 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Random numbers (nVRF)</summary>
+<details><summary>Random numbers (VRF / RNG)</summary>
 
-## Retrieve a `uint256[]` of random numbers (nVRF)
+## Retrieve a `uint256[]` of random numbers (VRF / RNG)
 
 This **on-demand** job initiates an oracle request for an array of random numbers within the specified range, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
 
-**TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-nvrf) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-vrn) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-vrn) jobs instead.
 
 :::info 
 This job writes a single **uint256[]** object to your contract, which can store an array of unsigned integers, each of whose values range from `0` to `115792089237316195423570985008687907853269984665640564039457584007913129639935` (`(2 ^ 256) - 1`).
@@ -432,7 +432,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**. 
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/nvrf_uint256-array.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/vrn_uint256-array.sol).
 :::
 
 #### 1. Add the constructor:
@@ -440,20 +440,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/nvrf_uint256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/vrn_uint256-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/nvrf_uint256-array.sol#L26-L38
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/vrn_uint256-array.sol#L26-L38
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/nvrf_uint256-array.sol#L40-L48
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/vrn_uint256-array.sol#L40-L48
 ```
 
 ### Need more help?
@@ -628,13 +628,13 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>A random number (nVRF)</summary>
+<details><summary>A random number (VRF / RNG)</summary>
 
-## Retrieve a random `int256` number (nVRF)
+## Retrieve a random `int256` number (VRF / RNG)
 
 This **on-demand** job initiates an oracle request for a random number within the specified range, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
 
-**TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-nvrf) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-vrn) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-vrn) jobs instead.
 
 :::info 
 This job writes a single **int256** object to your contract, which can store any integer from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
@@ -666,7 +666,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**. 
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/nvrf_int256.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/vrn_int256.sol).
 :::
 
 #### 1. Add the constructor:
@@ -674,20 +674,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/nvrf_int256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/vrn_int256.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/nvrf_int256.sol#L26-L37
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/vrn_int256.sol#L26-L37
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/nvrf_int256.sol#L39-L47
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/vrn_int256.sol#L39-L47
 ```
 
 ### Need more help?
@@ -862,13 +862,13 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Random numbers (nVRF)</summary>
+<details><summary>Random numbers (VRF / RNG)</summary>
 
-## Retrieve a `int256[]` of random numbers (nVRF)
+## Retrieve a `int256[]` of random numbers (VRF / RNG)
 
 This **on-demand** job initiates an oracle request for an array of random numbers within the specified range, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
 
-**TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-nvrf) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-nvrf) jobs instead.
+**TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-vrn) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-vrn) jobs instead.
 
 :::info  
 This job writes a single **int256[]** object to your contract, which can store an array of signed integers, each of whose values range from `-2 ^ 255` to ` (2 ^ 255) - 1`. 
@@ -901,7 +901,7 @@ This job requires the following parameters to be set within your contract's `req
 Add the following sample code to your **consumer contract**. 
 
 :::tip
-For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/nvrf_int256-array.sol).
+For easy editing, you can also open our sample contract [directly in Remix](https://remix.ethereum.org/#activate=github&url=https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/vrn_int256-array.sol).
 :::
 
 #### 1. Add the constructor:
@@ -909,20 +909,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/nvrf_int256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/vrn_int256-array.sol#L18-L23
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/nvrf_int256-array.sol#L26-L38
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/vrn_int256-array.sol#L26-L38
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/nvrf_int256-array.sol#L40-L48
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/vrn_int256-array.sol#L40-L48
 ```
 
 ### Need more help?

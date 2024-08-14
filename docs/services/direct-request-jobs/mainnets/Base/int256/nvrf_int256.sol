@@ -8,7 +8,7 @@ import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
  * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
  */
 
-contract LinkWellNVRFInt256ConsumerContractExample is ChainlinkClient, ConfirmedOwner {
+contract LinkWellVRNInt256ConsumerContractExample is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
 	address private oracleAddress;
@@ -16,7 +16,7 @@ contract LinkWellNVRFInt256ConsumerContractExample is ChainlinkClient, Confirmed
     uint256 private fee;
     
     constructor() ConfirmedOwner(msg.sender) {
-        _setChainlinkToken(0x88038752750D7717a19F2A681eF75e65Fb714f1E);
+        _setChainlinkToken(0x88Fb150BDc53A65fe94Dea0c9BA0a6dAf8C6e196);
         setOracleAddress(<oracle address>);
         setJobId("0e58feb938b044b2a342639c10d9eef4");
         setFeeInHundredthsOfLink(5);     // 0.05 LINK
