@@ -127,7 +127,7 @@ Once you've mastered the core elements of running a reliable Chainlink node infr
 
 ### How much does it cost to run a Chainlink node?
 
-The infrastructure costs required to run a secure, reliable, mainnet Chainlink infrastructure can be daunting to many - and will typically be on the order of **$1,000 USD / month** per mainnet chain.
+The infrastructure costs required to run a secure, reliable, mainnet Chainlink infrastructure can be daunting to many - and will typically be on the order of **$1,500 USD / month** per mainnet chain (or even more, in the case of a professional oracle services team with a rigorous <a href='/services/direct-request-jobs/Service-Level-Agreement'>SLA</a>).
 
 The expenses paid by a Chainlink node operator typically include: 
 
