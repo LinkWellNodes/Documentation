@@ -62,7 +62,6 @@ contract LinkWellVRNUint256ConsumerContractExample is ChainlinkClient, Confirmed
         requestMap[requestId] = VRNRequest(minVal, maxVal, "", 0, true);
     }
 
-    uint256 public latestRandomNumber;
     bytes32 public latestFulfilledRequestId;
 
     // Receive the result from the Chainlink oracle
@@ -71,25 +70,22 @@ contract LinkWellVRNUint256ConsumerContractExample is ChainlinkClient, Confirmed
 
         // Process the oracle response
         // emit RequestFulfilled(requestId, _randomNumber, hash);
-        latestRandomNumber = _randomNumber;
         latestFulfilledRequestId = requestId;
 
         // DO NOT REMOVE (needed if you wish to verify randomness later on)
-        storeResultForVerification(requestId, _randomNumber, hash);
-    }
-    
-    // Store the result of an oracle response, so that we can verify it later on using the verifyResult() methods
-    function storeResultForVerification(bytes32 requestId, uint256 _randomNumber, bytes32 hash) internal {
         // Retrieve the existing request metadata from the requestMap
         VRNRequest storage req = requestMap[requestId];
-
         // Perform sanity-checks
-        require(req.requested == true, "Invalid requestId");
+        require(req.requested, "Invalid requestId");
         require(req.hash == "", "Request already fulfilled");
-
         // Update the request metadata
         req.randomNumber = _randomNumber;
         req.hash = hash;
+    }
+
+    // Get the most recently-fulfilled random number(s)
+    function getLatestRandomNumber() public view returns (uint256) {
+        return getRandomNumber(latestFulfilledRequestId);
     }
 
     // Retrieve fulfilled random number(s)
@@ -161,7 +157,7 @@ contract LinkWellVRNUint256ConsumerContractExample is ChainlinkClient, Confirmed
 
         // Perform sanity-checks
         require(seed != 0 && seed != 0x0000000000000000000000000000000000000000000000000000000000000000, "The provided seed doesn't exist. Possible reasons are: 1) The seed for this requestId isn't yet publicly-available, as the epoch for this seed hasn't yet ended (please wait until the next epoch and try again to retrieve the seed), 2) You attempted to verify without entering a seed. Try running requestSeed() or .");
-        require(req.requested == true, "Invalid requestId");
+        require(req.requested, "Invalid requestId");
         require(req.hash != "", "Request not yet fulfilled");
 
         // Ensure that the hash provided while fulfilling this request matches the seed used to generate this request's random number(s)

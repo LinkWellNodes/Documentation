@@ -65,7 +65,6 @@ contract LinkWellVRNInt256ArrConsumerContractExample is ChainlinkClient, Confirm
         requestMap[requestId] = VRNRequest(minVal, maxVal, "", new int256[](0), true);
     }
 
-    int256[] public latestRandomNumbers;
     bytes32 public latestFulfilledRequestId;
 
     // Receive the result from the Chainlink oracle
@@ -74,29 +73,26 @@ contract LinkWellVRNInt256ArrConsumerContractExample is ChainlinkClient, Confirm
 
         // Process the oracle response
         // emit RequestFulfilled(requestId, _randomNumber, hash);
-        latestRandomNumbers = _randomNumbers;
         latestFulfilledRequestId = requestId;
 
         // DO NOT REMOVE (needed if you wish to verify randomness later on)
-        storeResultForVerification(requestId, _randomNumbers, hash);
-    }
-    
-    // Store the result of an oracle response, so that we can verify it later on using the verifyResult() methods
-    function storeResultForVerification(bytes32 requestId, int256[] memory _randomNumbers, bytes32 hash) internal {
         // Retrieve the existing request metadata from the requestMap
         VRNRequest storage req = requestMap[requestId];
-
         // Perform sanity-checks
-        require(req.requested == true, "Invalid requestId");
+        require(req.requested, "Invalid requestId");
         require(req.hash == "", "Request already fulfilled");
-
         // Update the request metadata
         req.randomNumbers = _randomNumbers;
         req.hash = hash;
     }
 
+    // Get the most recently-fulfilled random number(s)
+    function getLatestRandomNumbers() public view returns (int256[] memory) {
+        return getRandomNumbers(latestFulfilledRequestId);
+    }
+
     // Retrieve fulfilled random number(s)
-    function getRandomNumbers(bytes32 requestId) internal view returns (int256[] memory) {
+    function getRandomNumbers(bytes32 requestId) public view returns (int256[] memory) {
         VRNRequest memory req = requestMap[requestId];
         require(req.requested == true, "No requests for this requestId were ever made");
         require(req.hash != "", "Request for this requestId was not yet fulfilled");
@@ -164,7 +160,7 @@ contract LinkWellVRNInt256ArrConsumerContractExample is ChainlinkClient, Confirm
 
         // Perform sanity-checks
         require(seed != 0 && seed != 0x0000000000000000000000000000000000000000000000000000000000000000, "The provided seed doesn't exist. Possible reasons are: 1) The seed for this requestId isn't yet publicly-available, as the epoch for this seed hasn't yet ended (please wait until the next epoch and try again to retrieve the seed), 2) You attempted to verify without entering a seed. Try running requestSeed() or .");
-        require(req.requested == true, "Invalid requestId");
+        require(req.requested, "Invalid requestId");
         require(req.hash != "", "Request not yet fulfilled");
 
         // Ensure that the hash provided while fulfilling this request matches the seed used to generate this request's random number(s)
