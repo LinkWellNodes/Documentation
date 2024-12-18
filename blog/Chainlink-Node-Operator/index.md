@@ -92,6 +92,8 @@ Unlike typical blockchain environments, the Chainlink network does not employ a 
 
 ## Who Should Become a Chainlink Node Operator
 
+Becoming a Chainlink node operator is as straightforward as deploying a Chainlink node. However, from our experience, many Web3 teams opt to run their own Chainlink nodes to reduce the operational costs associated with using an official Chainlink service or a third-party Chainlink node operator like us, especially for accessing off-chain data. That said, only a select few teams are recognized as official Chainlink node operators. In our view, to be considered a true Chainlink node operator, you must implement an enterprise-grade deployment that includes robust security measures, comprehensive monitoring, high availability, and the ability to provide reliable Chainlink services.
+
 At the time of writing, there are 94 node operator teams supporting Chainlink’s services, according to [Chainlink Ecosystem](https://www.chainlinkecosystem.com/category/node-operator). DexTrac’s [Prism Analytics](https://prism.dextrac.com/chainlink/operators) tool, however, lists 53 official Chainlink node operators. While we don’t know what the exact number is at this time, we suspect that the true number of node operators may fall within the range of 53-94 teams. 
 
 Additionally, while we can’t speak for Chainlink Labs regarding their future needs or criteria for Chainlink node operators as they work toward becoming a global Web3 standard, we can offer a list of pros and cons based on our experiences and observations:
@@ -156,15 +158,15 @@ Additionally, professional Chainlink node operators need several other component
 
 If interested in diving in further on the topic of Chainlink node operators, we’ve aggregated a list of resources below:
 
-**[LinkWell Nodes Chainlink Node Operator FAQ]**(https://docs.linkwellnodes.io/knowledgebase/faq/Chainlink-Operators)
+**[LinkWell Nodes Chainlink Node Operator FAQ](https://docs.linkwellnodes.io/knowledgebase/faq/Chainlink-Operators)**
 
-[**Chainlink Ecosystem]**(https://www.chainlinkecosystem.com/category/node-operator)
+**[Chainlink Ecosystem](https://www.chainlinkecosystem.com/category/node-operator)**
 
-[**DexTrac’s Prism Tool]**(https://prism.dextrac.com/chainlink/operators)
+**[DexTrac’s Prism Tool](https://prism.dextrac.com/chainlink/operators)**
 
-[**LinkPool’s Dune Analytics Dashboards]**(https://dune.com/linkpool)
+**[LinkPool’s Dune Analytics Dashboards](https://dune.com/linkpool)**
 
-[**Chainlink Docs]**(https://docs.chain.link/chainlink-nodes)
+**[Chainlink Docs](https://docs.chain.link/chainlink-nodes)**
 
 ## Conclusion
 
