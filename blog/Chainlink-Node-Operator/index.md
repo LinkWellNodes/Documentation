@@ -130,13 +130,13 @@ By leveraging custom profitability tools alongside an enterprise-grade monitorin
   <img src="/img/chainlink-node-operator/linkwell-txn-analytics.webp" alt="LinkWell Nodes Transaction Analytics Dashboard Via Splunk" />
 </p>
 
-These charts provide several key metrics from actual paying clients that we’ve supported within the last year, representing a small slice in time of our actual transaction analytics. The main dashboard panel to focus on here are the “USD Profit By Transaction” panels, which indicate our profitability per transaction (amount paid minus gas costs). 
+This chart provide several key metrics from actual paying clients that we’ve supported within the last year, representing a small slice in time of our actual transaction analytics. The main dashboard panel to focus on here are the “USD Profit By Transaction” panel, which indicates our profitability per transaction (amount paid minus gas costs).
 
 For these customers, we averaged $1-$2 in profit per transaction. It’s important to note, however, that our profit numbers varied drastically depending on the blockchain network we were supporting as well as the gas costs during the time of transaction. The profitability numbers also don’t take into account our other expenses, including manpower, infrastructure, and more. Moving forward, we plan to release additional analytics and insights on Chainlink node operator profitability.
 
 ## Requirements for Running a Chainlink Oracle
 
-To deploy and operate a Chainlink oracle, the following [minimum requirements]([https://docs.chain.link/chainlink-nodes/resources/requirements](https://www.notion.so/%5B%3Chttps://docs.chain.link/chainlink-nodes/resources/requirements%3E%5D(%3Chttps://docs.chain.link/chainlink-nodes/resources/requirements?utm_source=chatgpt.com%3E))) must be met:
+To deploy and operate a Chainlink oracle, the following [minimum requirements](https://docs.chain.link/chainlink-nodes/resources/requirements) must be met:
 
 - **Hardware**: At least 2 CPU cores and 4 GB of RAM for basic operations; more resources are recommended for handling a higher volume of jobs.
 - **Operating System**: Linux or MacOS; for Windows users, the Windows Subsystem for Linux (WSL) is necessary (not recommended for mainnet deployments).
