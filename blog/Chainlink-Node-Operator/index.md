@@ -58,7 +58,7 @@ Regardless of the category, Chainlink node operators all play a similar role - p
 
 ## What Chainlink Node Operators Do
 
-Within the **Community Nodes** category, there are two subgroups: **official node operators** and **community node operators**. Official Chainlink node operators have been security-reviewed and approved by Chainlink Labs to support their suite of Web3 services (such as Chainlink’s official [price feeds](https://data.chain.link/feeds).
+Within the **Community Nodes** category, there are two subgroups: **official node operators** and **community node operators**. Official Chainlink node operators have been security-reviewed and approved by Chainlink Labs to support their suite of Web3 services (such as Chainlink’s official [price feeds](https://data.chain.link/feeds)).
 
 ![Chainlink Web3 Services](/img/chainlink-node-operator/chainlink-web3-services.webp "Chainlink Web3 Services")<center><small>Credit: [Chainlink](https://blog.chain.link/platform-for-verifiable-web)</small></center>
 
@@ -80,7 +80,7 @@ Additionally, some teams choose to extend their expertise to support other proje
 
 ## How Chainlink Nodes Form Decentralized Oracle Networks (DONs)
 
-While individual Chainlink oracles can directly handle requests (ie, using the [Any API / basic request model](https://docs.linkwellnodes.io/blog/Chainlink-Basic-Request-Model-Architectures), Chainlink oracles achieve their full potential when working together in a decentralized oracle network. These networks provide off-chain computation and data aggregation from multiple oracles, eliminating single points of failure and ensuring secure and reliable data delivery to the blockchain.
+While individual Chainlink oracles can directly handle requests (ie, using the [Any API / basic request model](https://docs.linkwellnodes.io/blog/)Chainlink-Basic-Request-Model-Architectures), Chainlink oracles achieve their full potential when working together in a decentralized oracle network. These networks provide off-chain computation and data aggregation from multiple oracles, eliminating single points of failure and ensuring secure and reliable data delivery to the blockchain.
 
 ![Chainlink Decentralized Oracle Network](/img/chainlink-node-operator/chainlink-don.webp "Chainlink Decentralized Oracle Network")<center><small>Credit: [Chainlink](https://blog.chain.link/how-chainlink-is-helping-blockchain-cross-the-chasm/)</small></center>
 
@@ -92,7 +92,7 @@ Unlike typical blockchain environments, the Chainlink network does not employ a 
 
 ## Who Should Become a Chainlink Node Operator
 
-Becoming a Chainlink node operator is as straightforward as deploying a Chainlink node. However, from our experience, many Web3 teams opt to run their own Chainlink nodes to reduce the operational costs associated with using an official Chainlink service or a third-party Chainlink node operator like us, especially for accessing off-chain data. That said, only a select few teams are recognized as official Chainlink node operators. In our view, to be considered a true Chainlink node operator, you must implement an enterprise-grade deployment that includes robust security measures, comprehensive monitoring, high availability, and the ability to provide reliable Chainlink services.
+Becoming a Chainlink node operator is as straightforward as deploying a Chainlink node. From our experience, many Web3 teams opt to run their own Chainlink nodes to reduce the operational costs associated with using an official Chainlink service or a third-party Chainlink node operator like us, particularly in the case for accessing off-chain data. That being said, only a select few teams are recognized as official Chainlink node operators. In our view, to be considered a true Chainlink node operator, you must implement an enterprise-grade deployment that includes robust security measures, comprehensive monitoring, high availability, and the ability to provide reliable Chainlink services.
 
 At the time of writing, there are 94 node operator teams supporting Chainlink’s services, according to [Chainlink Ecosystem](https://www.chainlinkecosystem.com/category/node-operator). DexTrac’s [Prism Analytics](https://prism.dextrac.com/chainlink/operators) tool, however, lists 53 official Chainlink node operators. While we don’t know what the exact number is at this time, we suspect that the true number of node operators may fall within the range of 53-94 teams. 
 
@@ -122,7 +122,7 @@ According to [LinkPool’s Chainlink Revenue](https://dune.com/linkpool/chainlin
   <img src="/img/chainlink-node-operator/linkpool-nop-revenue.webp" alt="Chainlink Node Operator Revenue Via LinkPool's Dune Analytics" />
 </p>
 
-Additionally, an independent analyst, Eric Wallach, conducted fairly robust analysis of Chainlink node operator incomes, expenses, and overall profitability.  [His analysis](https://x.com/ejwallach/status/1635367652196769792) suggested that official Chainlink node operators, at the time of writing, earned roughly $628k in net income per year. He also provides detailed spreadsheets of his analysis which can be found [here](https://docs.google.com/spreadsheets/d/1QnlvA2eQVGQAsN45FJ9a2DzgSQCyj0cD-22FF6kyaXk/edit?gid=1878917412#gid=1878917412). 
+Additionally, an independent analyst, Eric Wallach, conducted fairly robust analysis of Chainlink node operator incomes, expenses, and overall profitability.  [His analysis](https://x.com/ejwallach/status/1635367652196769792) suggested that official Chainlink node operators, at the time of writing, earned roughly $628k (on average) in net income per year. He also provides detailed spreadsheets of his analysis which can be found [here](https://docs.google.com/spreadsheets/d/1QnlvA2eQVGQAsN45FJ9a2DzgSQCyj0cD-22FF6kyaXk/edit?gid=1878917412#gid=1878917412).
 
 As a community Chainlink node operator, our revenue profile looks significantly different since we are unable to offer the full suite of official Chainlink services. Instead, we focus on securing paid customers who require custom oracle solutions.
 
