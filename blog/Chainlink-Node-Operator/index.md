@@ -40,7 +40,7 @@ This limitation, known as the [oracle problem](https://chain.link/education-hub/
 
 In this article, our goal is to provide a detailed view of Chainlink node operators, who they are, what they do, and more.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed?v=jD9903qyt6w" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/jD9903qyt6w" frameborder="0" allowfullscreen></iframe></center>
 
 ## Who are Chainlink Node Operators?
 
