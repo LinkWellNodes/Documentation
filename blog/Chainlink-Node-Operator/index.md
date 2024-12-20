@@ -80,7 +80,7 @@ Additionally, some teams choose to extend their expertise to support other proje
 
 ## How Chainlink Nodes Form Decentralized Oracle Networks (DONs)
 
-While individual Chainlink oracles can directly handle requests (ie, using the [Any API / basic request model](https://docs.linkwellnodes.io/blog/)Chainlink-Basic-Request-Model-Architectures), Chainlink oracles achieve their full potential when working together in a decentralized oracle network. These networks provide off-chain computation and data aggregation from multiple oracles, eliminating single points of failure and ensuring secure and reliable data delivery to the blockchain.
+While individual Chainlink oracles can directly handle requests (ie, using the [Any API / basic request model](https://docs.linkwellnodes.io/blog/Chainlink-Basic-Request-Model-Architectures)), Chainlink oracles achieve their full potential when working together in a decentralized oracle network. These networks provide off-chain computation and data aggregation from multiple oracles, eliminating single points of failure and ensuring secure and reliable data delivery to the blockchain.
 
 ![Chainlink Decentralized Oracle Network](/img/chainlink-node-operator/chainlink-don.webp "Chainlink Decentralized Oracle Network")<center><small>Credit: [Chainlink](https://blog.chain.link/how-chainlink-is-helping-blockchain-cross-the-chasm/)</small></center>
 
@@ -124,7 +124,7 @@ According to [LinkPool’s Chainlink Revenue](https://dune.com/linkpool/chainlin
 
 Additionally, an independent analyst, Eric Wallach, conducted fairly robust analysis of Chainlink node operator incomes, expenses, and overall profitability.  [His analysis](https://x.com/ejwallach/status/1635367652196769792) suggested that official Chainlink node operators, at the time of writing, earned roughly $628k (on average) in net income per year. He also provides detailed spreadsheets of his analysis which can be found [here](https://docs.google.com/spreadsheets/d/1QnlvA2eQVGQAsN45FJ9a2DzgSQCyj0cD-22FF6kyaXk/edit?gid=1878917412#gid=1878917412).
 
-As a community Chainlink node operator, our revenue profile looks significantly different since we are unable to offer the full suite of official Chainlink services. Instead, we focus on securing paid customers who require custom oracle solutions.
+As a community Chainlink node operator, our revenue model differs from official Chainlink services. We specialize in providing custom oracle solutions to paying clients. Deploying a Chainlink node on a mainnet incurs monthly expenses ranging from $500 to $1,500, influenced by factors such as high-availability setups versus single oracles, and the choice between operating full RPC nodes or utilizing third-party RPC connections. We offer our custom Chainlink oracle services at a base rate of $500 per month, with fees increasing based on the specific requirements of each oracle integration.
 
 By leveraging custom profitability tools alongside an enterprise-grade monitoring solution (Splunk) to aggregate all Chainlink logs, we gain detailed insights into our income and expenses, down to the individual transaction level.
 
@@ -134,7 +134,7 @@ By leveraging custom profitability tools alongside an enterprise-grade monitorin
 
 This chart provide several key metrics from actual paying clients that we’ve supported within the last year, representing a small slice in time of our actual transaction analytics. The main dashboard panel to focus on here are the “USD Profit By Transaction” panel, which indicates our profitability per transaction (amount paid minus gas costs).
 
-For these customers, we averaged $1-$2 in profit per transaction. It’s important to note, however, that our profit numbers varied drastically depending on the blockchain network we were supporting as well as the gas costs during the time of transaction. The profitability numbers also don’t take into account our other expenses, including manpower, infrastructure, and more. Moving forward, we plan to release additional analytics and insights on Chainlink node operator profitability.
+For these customers in particular, we averaged $1-$2 in profit per transaction. It’s important to note, however, that our profit numbers varied drastically depending on the blockchain network we were supporting as well as the gas costs during the time of transaction. The profitability numbers also don’t take into account our other expenses, including manpower, infrastructure, and more. Moving forward, we plan to release additional analytics and insights on Chainlink node operator profitability.
 
 ## Requirements for Running a Chainlink Oracle
 
@@ -154,6 +154,12 @@ Additionally, professional Chainlink node operators need several other component
 - **Jobs:** Chainlink oracles require [jobs](https://docs.chain.link/chainlink-nodes/oracle-jobs/jobs). These jobs, provided in the TOML specification, define the parameters (within the Chainlink node interface) of the Chainlink service that they intend to support.
 - **Automation Tools:** Tools such as Kubernetes, Ansible, Cloudformation, or Terraform are helpful for provisioning, deployment, configuration, and/or orchestration of Chainlink node infrastructure.
 
+## Conclusion
+
+Chainlink node operators play a critical role in the blockchain ecosystem by providing secure, reliable, and decentralized access to off-chain data and computation, enabling the seamless operation of smart contracts. Their efforts bridge the on-chain and off-chain worlds, supporting the functionality and scalability of decentralized Web3 applications.
+
+Becoming a successful Chainlink node operator demands a combination of technical proficiency, business strategy, and a dedication to furthering Chainlink’s vision. While the initial setup may pose challenges, it presents a rewarding opportunity for individuals passionate about driving Web3 innovation and supporting decentralized technologies. As Chainlink continues to expand, node operators will remain integral to its growth and the broader development of the internet of contracts.
+
 ## Chainlink Node Operator Resources
 
 If interested in diving in further on the topic of Chainlink node operators, we’ve aggregated a list of resources below:
@@ -167,12 +173,6 @@ If interested in diving in further on the topic of Chainlink node operators, we�
 **[LinkPool’s Dune Analytics Dashboards](https://dune.com/linkpool)**
 
 **[Chainlink Docs](https://docs.chain.link/chainlink-nodes)**
-
-## Conclusion
-
-Chainlink node operators play a critical role in the blockchain ecosystem by providing secure, reliable, and decentralized access to off-chain data and computation, enabling the seamless operation of smart contracts. Their efforts bridge the on-chain and off-chain worlds, supporting the functionality and scalability of decentralized Web3 applications.
-
-Becoming a successful Chainlink node operator demands a combination of technical proficiency, business strategy, and a dedication to furthering Chainlink’s vision. While the initial setup may pose challenges, it presents a rewarding opportunity for individuals passionate about driving Web3 innovation and supporting decentralized technologies. As Chainlink continues to expand, node operators will remain integral to its growth and the broader development of the internet of contracts.
 
 > LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.
 > 
