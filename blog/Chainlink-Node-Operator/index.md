@@ -3,7 +3,7 @@
 title: "Chainlink Node Operators: The Backbone of the Chainlink Network"
 description: "Exploring the Role of Chainlink Node Operators in Powering Decentralized Oracle Networks that Underpin Chainlink’s Official Suite of Web3 Services"
 date: "2024-12-15"
-image: https://docs.linkwellnodes.io/img/.../img.png
+image: "/img/chainlink-node-operator/chainlink-node-operators.jpg"
 keywords: [chainlink oracle, chainlink node operator, smart contracts, web3, blockchain]
 authors: [Ken]
 tags: [chainlink node operator]
@@ -12,7 +12,7 @@ tags: [chainlink node operator]
 
 import TOCInline from '@theme/TOCInline';
 
-<h2 class='lw-subtitle'>Exploring the Role of Chainlink Node Operators in Powering Decentralized Oracle Networks that Underpin Chainlink’s Official Suite of Web3 Services</h2>
+<h2 class='lw-subtitle'>Exploring the role of Chainlink node operators in powering decentralized oracle networks that underpin Chainlink’s official suite of Web3 services</h2>
 
 <p align="center">
   <img src="/img/chainlink-node-operator/chainlink-node-operator.webp" alt="Chainlink Node Operator" />
@@ -83,8 +83,6 @@ Additionally, some teams choose to extend their expertise to support other proje
 While individual Chainlink oracles can directly handle requests (ie, using the [Any API / basic request model](https://docs.linkwellnodes.io/blog/Chainlink-Basic-Request-Model-Architectures)), Chainlink oracles achieve their full potential when working together in a decentralized oracle network. These networks provide off-chain computation and data aggregation from multiple oracles, eliminating single points of failure and ensuring secure and reliable data delivery to the blockchain.
 
 ![Chainlink Decentralized Oracle Network](/img/chainlink-node-operator/chainlink-don.webp "Chainlink Decentralized Oracle Network")<center><small>Credit: [Chainlink](https://blog.chain.link/how-chainlink-is-helping-blockchain-cross-the-chasm/)</small></center>
-
-Figure 2. Decentralized Oracle Network (source: Chainlink)
 
 At the heart of every decentralized oracle network is the **Chainlink oracle** - a runtime developed in Go by [Chainlink Labs](https://chainlinklabs.com/). The Chainlink network is an expandable ensemble of independent oracles. While anyone can run their own singular Chainlink oracle, decentralized oracle networks can impose their own rules regarding access and data aggregation.
 
