@@ -2,24 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.linkwellnodes.io/blog</id>
     <title>LinkWell Nodes Blog</title>
-    <updated>2024-12-19T00:00:00.000Z</updated>
+    <updated>2024-12-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.linkwellnodes.io/blog"/>
     <subtitle>LinkWell Nodes Blog</subtitle>
     <icon>https://docs.linkwellnodes.io/favicon.ico</icon>
-    <entry>
-        <title type="html"><![CDATA[Chainlink Node Security and Monitoring: Best Practices and Insights]]></title>
-        <id>https://docs.linkwellnodes.io/blog/Chainlink-Node-Security-And-Monitoring</id>
-        <link href="https://docs.linkwellnodes.io/blog/Chainlink-Node-Security-And-Monitoring"/>
-        <updated>2024-12-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[An In-Depth Guide to Securing Chainlink Node Infrastructure Against Cyber Threats and Achieving Full Operational Visibility]]></summary>
-        <content type="html"><![CDATA[<h2 class="lw-subtitle">An In-Depth Guide to Securing Chainlink Node Infrastructure Against Cyber Threats and Achieving Full Operational Visibility</h2><center><small>Credit: [Chainlink](https://chain.link/)</small></center><p align="center"><img loading="lazy" src="/img/chainlink-node-security-monitoring/.webp" alt="Chainlink Node Operator" class="img_ev3q"></p><hr><p><strong>On this page</strong>:</p><div class="tableOfContentsInline_prmo"></div><hr><blockquote><p><em>LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink.</em></p><p><em>Looking for a custom data feed? Head on over to our <a href="/">documentation</a>, or hop into the <a href="https://discord.com/invite/Xs6SjqVPUA" target="_blank" rel="noopener noreferrer">LinkWell Nodes Discord server</a> and ask for help!</em></p><p><em>Disclaimer: all views and opinions expressed in this article are strictly our own.</em></p></blockquote><p><img loading="lazy" alt="LinkWell Nodes - U.S.-based Chainlink node operator" src="/assets/images/lw-banner_1080x606-c6d84e1ae6e43af8c26ee04d238969be.webp" title="LinkWell Nodes - U.S.-based Chainlink node operator" width="1080" height="606" class="img_ev3q"></p>]]></content>
-        <author>
-            <name>Ken Reiners</name>
-            <uri>https://www.linkedin.com/in/ken-reiners-755806167/</uri>
-        </author>
-        <category label="chainlink node operator" term="chainlink node operator"/>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Chainlink Node Operators: The Backbone of the Chainlink Network]]></title>
         <id>https://docs.linkwellnodes.io/blog/Chainlink-Node-Operator</id>
