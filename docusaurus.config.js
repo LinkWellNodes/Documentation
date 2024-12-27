@@ -98,7 +98,8 @@ const config = {
             label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},                  
-          {to: '/about', label: 'About Us', position: 'left'},  
+          {to: '/about', label: 'About Us', position: 'left'},
+          {to: '/pricing', label: 'Pricing', position: 'left'},  
           // {
         	//   href: 'https://discord.gg/Xs6SjqVPUA',
         	//   label: 'Discord',
