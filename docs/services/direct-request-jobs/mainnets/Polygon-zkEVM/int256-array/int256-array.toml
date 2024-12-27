@@ -7,7 +7,7 @@ maxTaskDuration = "0s"
 contractAddress = "<oracle address>"
 evmChainID = "1101"
 minIncomingConfirmations = 5
-minContractPaymentLinkJuels = "120000000000000000"
+minContractPaymentLinkJuels = "0"
 observationSource = """
 
     decode_log  [

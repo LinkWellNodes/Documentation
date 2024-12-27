@@ -37,7 +37,7 @@ This job writes a single **uint256** object to your contract, which can store an
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -170,7 +170,7 @@ This job writes a single **uint256** object to your contract, which can store an
 
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -252,7 +252,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -398,7 +398,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -481,7 +481,7 @@ This job writes a single **int256** object to your contract, which can store any
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -627,7 +627,7 @@ This job writes a single **int256** object to your contract, which can store any
 
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -709,7 +709,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -855,7 +855,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -938,7 +938,7 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -1089,7 +1089,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -1243,7 +1243,7 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 
@@ -1401,7 +1401,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
 | Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
 

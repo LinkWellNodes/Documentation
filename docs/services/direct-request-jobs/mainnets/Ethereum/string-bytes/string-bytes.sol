@@ -19,7 +19,7 @@ contract LinkWellStringBytesConsumerContractExample is ChainlinkClient, Confirme
         _setChainlinkToken(0x514910771AF9Ca656af840dff83E8264EcF986CA);
         setOracleAddress(<oracle address>);
         setJobId("8ced832954544a3c98543c94a51d6a8d");
-        setFeeInHundredthsOfLink(150);     // 1.5 LINK
+        setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 
     // Send a request to the Chainlink oracle

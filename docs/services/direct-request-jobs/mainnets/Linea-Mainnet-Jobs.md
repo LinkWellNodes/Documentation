@@ -37,13 +37,10 @@ This job writes a single **uint256** object to your contract, which can store an
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -173,13 +170,10 @@ This job writes a single **uint256** object to your contract, which can store an
 ### Request metadata
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.05 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -259,13 +253,10 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.12 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -408,13 +399,10 @@ This job writes a single **uint256[]** object to your contract, which can store 
 ### Request metadata
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.07 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -495,13 +483,10 @@ This job writes a single **int256** object to your contract, which can store any
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -644,13 +629,10 @@ This job writes a single **int256** object to your contract, which can store any
 ### Request metadata
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.05 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -730,13 +712,10 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.12 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -879,13 +858,10 @@ This job writes a single **int256[]** object to your contract, which can store a
 ### Request metadata
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.07 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started. 
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -966,13 +942,10 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -1121,13 +1094,10 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.12 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -1279,13 +1249,10 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.1 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
@@ -1441,13 +1408,10 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 ### Request metadata
 
-| Oracle Address and Job ID | Fee Per Request |
+| Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | 0.12 LINK * |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
 
-*&nbsp;**Fee notes**:
-- We offer discounts for high volume. Please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html) to get started.
-- We support payment in alternative currencies (ie, `ETH` or fiat). Please indicate this in our [request survey](https://linkwellnodes.io/Getting-Started.html) if interested, as this can be arranged in the form an up-front payment for a set number of oracle requests.
 
 ### Request parameters
 
