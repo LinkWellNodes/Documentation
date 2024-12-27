@@ -236,6 +236,11 @@ module.exports = {
       id: 'knowledgebase/Direct-Request-Guide',
       label: 'Direct Requests Explained',
     },
+	{
+	  type: 'doc',
+	  id: 'knowledgebase/Verifiable-Random-Numbers-Guide',
+	  label: 'Verifiable Random Numbers (VRN)',
+	},
     {
       type: 'category',
       label: 'Chainlink FAQ',
