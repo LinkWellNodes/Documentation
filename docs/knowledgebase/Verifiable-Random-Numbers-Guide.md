@@ -80,7 +80,14 @@ The oracle will respond by calling your contract's `fulfill()` function with:
 You have two options for verifying your random number(s).
 
 :::tip
-You must wait for respective seed's epoch to end (once every 6 hours) before you can verify your random number(s).
+You must wait for respective seed's epoch to end (every 6 hours) before you can verify your random number(s). Epochs end at the following times each day:
+<br/>
+<ul>
+<li><b>00:00:00 UTC</b></li>
+<li><b>06:00:00 UTC</b></li>
+<li><b>12:00:00 UTC</b></li>
+<li><b>18:00:00 UTC</b></li>
+</ul>
 :::
 
 #### Option 1 (off-chain): Using our website
@@ -129,10 +136,10 @@ randomNumber = uint256(keccak256(abi.encodePacked(
 
 Our VRN service employs multiple security measures:
 
-- Seeds are generated using secure cryptographic hashing algorithms
-- Seeds are encrypted and stored on our secure, [SOC-2 compliant infrastructure](/services/direct-request-jobs/Service-Level-Agreement#data-security) until their reveal time
-- Seeds are rotated every 6 hours to prevent manipulation
-- All random number generation follows a deterministic and verifiable process
+- Seeds are generated using **cryptographically-secure** hashing algorithms
+- Seeds are encrypted and stored on our secure, **[SOC-2 compliant infrastructure](/services/direct-request-jobs/Service-Level-Agreement#data-security)** until their designated reveal time
+- Seeds are rotated every **6 hours** to prevent manipulation
+- All random number generation follows a **deterministic** and **verifiable** process
 - All operations are verifiable on-chain
 
 ## Need more help?
