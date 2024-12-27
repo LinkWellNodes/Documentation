@@ -199,33 +199,28 @@ module.exports = {
           },
           {
               type: 'doc',
-              id: 'services/direct-request-jobs/Pricing',
-              label: 'Pricing Info',
-          },
-          {
-              type: 'doc',
               id: 'services/direct-request-jobs/Service-Level-Agreement',
               label: 'Service-Level Agreement',
           },
       ],
     },
     {
-        type: 'category',
-        label: 'Staking',
-        collapsible: false,
-        items: [
-            {
-                type: 'doc',
-                id: 'services/staking/Allora',
-                label: 'Allora Network (ALLO)',
-            },
-        ],
-      },
-    {
   	  type: 'doc',
   	  id: 'services/Development-Services',
   	  label: 'Development & Support',
     },
+	{
+	    type: 'category',
+	    label: 'Staking',
+	    collapsible: false,
+	    items: [
+	        {
+	            type: 'doc',
+	            id: 'services/staking/Allora',
+	            label: 'Allora Network (ALLO)',
+	        },
+	    ],
+	},
     {
         type: 'html',
         value: '<div class="sidebarGroupTitle">Knowledgebase</div><hr class="sidebarGroupRuler">',
@@ -234,7 +229,7 @@ module.exports = {
     {
       type: 'doc',
       id: 'knowledgebase/Direct-Request-Guide',
-      label: 'Direct Requests Explained',
+      label: 'Direct Requests Model',
     },
 	{
 	  type: 'doc',

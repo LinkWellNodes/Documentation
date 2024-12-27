@@ -34,7 +34,7 @@ As compared to [Chainlink Functions](https://docs.chain.link/chainlink-functions
 As Direct Requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team that you trust.
 
 :::info
-**LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct-to-consumer data feeds in exchange for a per-request fee. We offer free development services for any efforts required to get your data feed integration up and running.
+**LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct-to-consumer data feeds in exchange for a fee. We offer free development services for any efforts required to get your data feed integration up and running.
 <br/>
 You can find our <b>direct request job IDs and oracle addresses</b> within our <a href='/services/direct-request-jobs/Jobs-and-Pricing'>Chainlink data feed documentation</a>, as well as our <a href='/services/direct-request-jobs/Service-Level-Agreement'>Service-Level Agreement (SLA)</a>.
 :::

@@ -97,9 +97,9 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+          {to: '/pricing', label: 'Pricing', position: 'left'},  
           {to: '/blog', label: 'Blog', position: 'left'},                  
           {to: '/about', label: 'About Us', position: 'left'},
-          {to: '/pricing', label: 'Pricing', position: 'left'},  
           // {
         	//   href: 'https://discord.gg/Xs6SjqVPUA',
         	//   label: 'Discord',
@@ -346,7 +346,10 @@ const config = {
                 from: '/blog/Build-And-Deploy-A-Smart-Contract-On-Base',
                 to: '/blog/Build-And-Deploy-A-Chainlink-Smart-Contract',
             },
-            
+			{
+			    from: '/services/direct-request-jobs/Pricing',
+			    to: '/pricing',
+			},
           ],
       },
     ],
