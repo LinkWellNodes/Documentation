@@ -5,6 +5,10 @@ description: "A guide to using LinkWell Nodes' Verifiable Random Numbers (VRN) s
 
 import TOCInline from '@theme/TOCInline';
 
+<h2 class='lw-subtitle'>An in-depth guide to LinkWell Nodes' <lw-emphasis>Verifiable Random Numbers (VRN)</lw-emphasis> service - a cryptographically secure and verifiable on-chain random number generator (RNG).</h2>
+
+![Custom Chainlink data feeds by LinkWell Nodes](/img/rng-dice.webp "Verifiable Random Numbers (VRN / VRF / RNG) by LinkWell Nodes")
+
 ---
 
 **On this page**:
@@ -131,7 +135,6 @@ Our VRN service employs multiple security measures:
 - All random number generation follows a deterministic and verifiable process
 - All operations are verifiable on-chain
 
-## Need help?
+## Need more help?
 
-- Join our [Discord](https://discord.gg/Xs6SjqVPUA) for technical support
-- Contact us through our [website](https://linkwellnodes.io/#contact-us) 
+Join our [Discord](https://discord.com/invite/Xs6SjqVPUA) server for immediate assistance!
