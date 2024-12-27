@@ -156,11 +156,11 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>A random number (VRF / RNG)</summary>
+<details><summary>A random number (VRN / RNG)</summary>
 
-## Retrieve a random `uint256` number (VRF / RNG)
+## Retrieve a random `uint256` number (VRN / RNG)
 
-This **on-demand** job initiates an oracle request for a random number within the specified range, and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
+This **on-demand** job initiates an oracle request for a verifiable random number within the specified range, and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
 
 **TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-vrn) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-vrn) jobs instead.
 
@@ -383,11 +383,11 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Random numbers (VRF / RNG)</summary>
+<details><summary>Random numbers (VRN / RNG)</summary>
 
-## Retrieve a `uint256[]` of random numbers (VRF / RNG)
+## Retrieve a `uint256[]` of random numbers (VRN / RNG)
 
-This **on-demand** job initiates an oracle request for an array of random numbers within the specified range, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
+This **on-demand** job initiates an oracle request for an array of verifiable random numbers within the specified range, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
 
 **TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-vrn) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-vrn) jobs instead.
 
@@ -611,11 +611,11 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>A random number (VRF / RNG)</summary>
+<details><summary>A random number (VRN / RNG)</summary>
 
-## Retrieve a random `int256` number (VRF / RNG)
+## Retrieve a random `int256` number (VRN / RNG)
 
-This **on-demand** job initiates an oracle request for a random number within the specified range, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
+This **on-demand** job initiates an oracle request for a verifiable random number within the specified range, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
 
 **TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-vrn) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-vrn) jobs instead.
 
@@ -838,11 +838,11 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Random numbers (VRF / RNG)</summary>
+<details><summary>Random numbers (VRN / RNG)</summary>
 
-## Retrieve a `int256[]` of random numbers (VRF / RNG)
+## Retrieve a `int256[]` of random numbers (VRN / RNG)
 
-This **on-demand** job initiates an oracle request for an array of random numbers within the specified range, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
+This **on-demand** job initiates an oracle request for an array of verifiable random numbers within the specified range, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
 
 **TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-vrn) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-vrn) jobs instead.
 
