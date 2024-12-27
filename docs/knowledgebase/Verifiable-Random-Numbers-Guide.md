@@ -5,7 +5,7 @@ description: "A guide to using LinkWell Nodes' Verifiable Random Numbers (VRN) s
 
 import TOCInline from '@theme/TOCInline';
 
-<h2 class='lw-subtitle'>An in-depth guide to LinkWell Nodes' <lw-emphasis>Verifiable Random Numbers (VRN)</lw-emphasis> service - a cryptographically secure and verifiable on-chain random number generator (RNG).</h2>
+<h2 class='lw-subtitle'>A guide to generating <lw-emphasis>Verifiable Random Numbers (VRNs)</lw-emphasis> in your smart contract using LinkWell Nodes's cryptographically secure and verifiable random number generation (RNG) service.</h2>
 
 ![Custom Chainlink data feeds by LinkWell Nodes](/img/rng-dice.webp "Verifiable Random Numbers (VRN / VRF / RNG) by LinkWell Nodes")
 
@@ -23,14 +23,14 @@ import TOCInline from '@theme/TOCInline';
 
 ## Overview
 
-LinkWell Nodes's **Verifiable Random Numbers (VRN)** service is a cryptographically-secure random number generator (RNG) that provides both randomness and verifiability on-chain. 
+LinkWell Nodes's **Verifiable Random Numbers (VRN)** service is a cryptographically-secure random number generator (RNG) that sends random numbers to your on-chain smart contract. 
 
 Unlike traditional random number generators, VRN allows you to independently verify that the numbers provided were generated fairly, using a pre-committed secret seed.
 
 :::info
 ### Is LinkWell's VRN the same as Chainlink's VRF?
 
-No. VRN is a different service that provides a similar level of security and verifiability, but with the added benefit of being free on all testnets, and a very minimal cost on all mainnets.
+No. VRN is a different service that provides a similar level of security and verifiability, but added ease of implementation, free testnet usage, and minimal-cost mainnet usage.
 :::
 
 ## Features
@@ -73,7 +73,7 @@ Call the `request()` function within your deployed contract, with your desired r
 The oracle will respond by calling your contract's `fulfill()` function with:
 - A request ID (`requestId`)
 - Random number(s) within your specified range (`_randomNumber` or `_randomNumbers`)
-- The one-way hash of the secret seed used to generate your number(s) (`hash)
+- The one-way hash of the secret seed used to generate your number(s) (`hash`)
 
 ### **Step 3**: Verify the random number(s)
 
