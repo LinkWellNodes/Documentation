@@ -155,9 +155,9 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>A random number (VRN / RNG)</summary>
+<details><summary>A verifiable random number (VRN / RNG)</summary>
 
-## Retrieve a random `uint256` number (VRN / RNG)
+## Retrieve a random `uint256` number
 
 This **on-demand** job initiates an oracle request for a verifiable random number within the specified range, and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
 
@@ -198,20 +198,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256/vrn_uint256.sol#L17-L21
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256/vrn_uint256.sol#L33-L37
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256/vrn_uint256.sol#L26-L37
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256/vrn_uint256.sol#L44-L61
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256/vrn_uint256.sol#L39-L47
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256/vrn_uint256.sol#L63-L95
 ```
 
 ### Need more help?
@@ -383,9 +383,9 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Random numbers (VRN / RNG)</summary>
+<details><summary>Verifiable random numbers (VRN / RNG)</summary>
 
-## Retrieve a `uint256[]` of random numbers (VRN / RNG)
+## Retrieve a `uint256[]` of random numbers
 
 This **on-demand** job initiates an oracle request for an array of verifiable random numbers within the specified range, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
 
@@ -427,20 +427,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256-array/vrn_uint256-array.sol#L17-L21
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256-array/vrn_uint256-array.sol#L33-L37
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256-array/vrn_uint256-array.sol#L26-L38
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256-array/vrn_uint256-array.sol#L45-L64
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256-array/vrn_uint256-array.sol#L40-L48
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/uint256-array/vrn_uint256-array.sol#L66-L98
 ```
 
 ### Need more help?
@@ -612,9 +612,9 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>A random number (VRN / RNG)</summary>
+<details><summary>A verifiable random number (VRN / RNG)</summary>
 
-## Retrieve a random `int256` number (VRN / RNG)
+## Retrieve a random `int256` number
 
 This **on-demand** job initiates an oracle request for a verifiable random number within the specified range, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
 
@@ -655,20 +655,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256/vrn_int256.sol#L17-L21
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256/vrn_int256.sol#L33-L37
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256/vrn_int256.sol#L26-L37
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256/vrn_int256.sol#L44-L61
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256/vrn_int256.sol#L39-L47
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256/vrn_int256.sol#L63-L95
 ```
 
 ### Need more help?
@@ -840,9 +840,9 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Random numbers (VRN / RNG)</summary>
+<details><summary>Verifiable random numbers (VRN / RNG)</summary>
 
-## Retrieve a `int256[]` of random numbers (VRN / RNG)
+## Retrieve a `int256[]` of random numbers
 
 This **on-demand** job initiates an oracle request for an array of verifiable random numbers within the specified range, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
 
@@ -884,20 +884,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256-array/vrn_int256-array.sol#L17-L21
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256-array/vrn_int256-array.sol#L33-L37
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256-array/vrn_int256-array.sol#L26-L38
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256-array/vrn_int256-array.sol#L45-L64
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256-array/vrn_int256-array.sol#L40-L48
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Scroll/int256-array/vrn_int256-array.sol#L66-L98
 ```
 
 ### Need more help?
