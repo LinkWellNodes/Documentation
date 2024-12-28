@@ -18,13 +18,11 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
 
 	address private oracleAddress;
     bytes32 private jobId;
-    uint256 private fee;
     
     constructor() ConfirmedOwner(msg.sender) {
         _setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
         setOracleAddress(0x0FaCf846af22BCE1C7f88D1d55A038F27747eD2B);
         setJobId("a8356f48569c434eaa4ac5fcb4db5cc0");
-        setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 
     // Send a request to the Chainlink oracle
@@ -47,7 +45,7 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
         req._addInt('multiplier', 10 ** 18);
 
         // Send the request to the Chainlink oracle        
-        _sendOperatorRequest(req, fee);
+        _sendOperatorRequest(req, 0);
     }
 
     uint256 public response;
@@ -75,17 +73,6 @@ contract LinkWellUint256ConsumerContractExample is ChainlinkClient, ConfirmedOwn
     }
     function getJobId() public view onlyOwner returns (string memory) {
         return string(abi.encodePacked(jobId));
-    }
-    
-    // Update fees
-    function setFeeInJuels(uint256 _feeInJuels) public onlyOwner {
-        fee = _feeInJuels;
-    }
-    function setFeeInHundredthsOfLink(uint256 _feeInHundredthsOfLink) public onlyOwner {
-        setFeeInJuels((_feeInHundredthsOfLink * LINK_DIVISIBILITY) / 100);
-    }
-    function getFeeInHundredthsOfLink() public view onlyOwner returns (uint256) {
-        return (fee * 100) / LINK_DIVISIBILITY;
     }
 
     function withdrawLink() public onlyOwner {

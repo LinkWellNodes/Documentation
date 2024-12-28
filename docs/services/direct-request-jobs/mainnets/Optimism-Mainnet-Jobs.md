@@ -67,23 +67,23 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/uint256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/uint256.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/uint256.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/uint256.sol#L24-L44
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/uint256.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/uint256.sol#L46-L54
 ```
 
 ### Need to send sensitive information?
@@ -99,7 +99,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -196,10 +196,10 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/vrn_uint256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256/vrn_uint256.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
@@ -283,23 +283,23 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/uint256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/uint256-array.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/uint256-array.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/uint256-array.sol#L24-L44
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/uint256-array.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/uint256-array.sol#L46-L54
 ```
 
 ### Need to send sensitive information?
@@ -315,7 +315,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -425,10 +425,10 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/vrn_uint256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/uint256-array/vrn_uint256-array.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
@@ -512,23 +512,23 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/int256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/int256.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/int256.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/int256.sol#L24-L44
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/int256.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/int256.sol#L46-L54
 ```
 
 ### Need to send sensitive information?
@@ -544,7 +544,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -653,10 +653,10 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/vrn_int256.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256/vrn_int256.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
@@ -740,23 +740,23 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/int256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/int256-array.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/int256-array.sol#L26-L46
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/int256-array.sol#L24-L44
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/int256-array.sol#L48-L56
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/int256-array.sol#L46-L54
 ```
 
 ### Need to send sensitive information?
@@ -772,7 +772,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -882,10 +882,10 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/vrn_int256-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/int256-array/vrn_int256-array.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
@@ -968,23 +968,23 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool/bool.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool/bool.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool/bool.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool/bool.sol#L24-L43
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool/bool.sol#L47-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool/bool.sol#L45-L53
 ```
 
 ### Need to send sensitive information?
@@ -1000,7 +1000,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -1119,23 +1119,23 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool-array/bool-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool-array/bool-array.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool-array/bool-array.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool-array/bool-array.sol#L24-L43
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool-array/bool-array.sol#L47-L55
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/bool-array/bool-array.sol#L45-L53
 ```
 
 ### Need to send sensitive information?
@@ -1151,7 +1151,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -1273,23 +1273,23 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes/string-bytes.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes/string-bytes.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes/string-bytes.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes/string-bytes.sol#L24-L43
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes/string-bytes.sol#L47-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes/string-bytes.sol#L45-L58
 ```
 
 ### Need to send sensitive information?
@@ -1305,7 +1305,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing).  
 ::: 
 
 ### Still need more help?
@@ -1431,23 +1431,23 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes-array/string-bytes-array.sol#L18-L23
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes-array/string-bytes-array.sol#L17-L21
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes-array/string-bytes-array.sol#L26-L45
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes-array/string-bytes-array.sol#L24-L43
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes-array/string-bytes-array.sol#L47-L64
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/mainnets/Optimism/string-bytes-array/string-bytes-array.sol#L45-L58
 ```
 
 ### Need to send sensitive information?
@@ -1463,7 +1463,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing).   
 :::
 
 ### Still need more help?

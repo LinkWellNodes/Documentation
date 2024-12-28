@@ -18,7 +18,6 @@ contract LinkWellVRNInt256ConsumerContractExample is ChainlinkClient, ConfirmedO
 
     address private oracleAddress;
     bytes32 private jobId;
-    uint256 private fee;
 
     struct VRNRequest {
         int256 minVal;
@@ -35,7 +34,6 @@ contract LinkWellVRNInt256ConsumerContractExample is ChainlinkClient, ConfirmedO
         _setChainlinkToken(0x23A1aFD896c8c8876AF46aDc38521f4432658d1e);
         setOracleAddress(<oracle address>);
         setJobId("0e58feb938b044b2a342639c10d9eef4");
-        setFeeInHundredthsOfLink(0);     // 0 LINK
     }
 
     /**
@@ -56,7 +54,7 @@ contract LinkWellVRNInt256ConsumerContractExample is ChainlinkClient, ConfirmedO
         req._add('contact', '');     // PLEASE ENTER YOUR CONTACT INFO. this allows us to notify you in the event of any emergencies related to your request (ie, bugs, downtime, etc.). example values: 'derek_linkwellnodes.io' (Discord handle) OR 'derek@linkwellnodes.io' OR '+1-617-545-4721'
         
         // Send the request to the Chainlink oracle
-        bytes32 requestId = _sendOperatorRequest(req, fee);
+        bytes32 requestId = _sendOperatorRequest(req, 0);
 
         // Cache this request for usage later when verifying the result
         requestMap[requestId] = VRNRequest(minVal, maxVal, "", 0, true);
@@ -221,17 +219,6 @@ contract LinkWellVRNInt256ConsumerContractExample is ChainlinkClient, ConfirmedO
     }
     function getJobId() public view onlyOwner returns (string memory) {
         return string(abi.encodePacked(jobId));
-    }
-    
-    // Update fees
-    function setFeeInJuels(uint256 _feeInJuels) public onlyOwner {
-        fee = _feeInJuels;
-    }
-    function setFeeInHundredthsOfLink(uint256 _feeInHundredthsOfLink) public onlyOwner {
-        setFeeInJuels((_feeInHundredthsOfLink * LINK_DIVISIBILITY) / 100);
-    }
-    function getFeeInHundredthsOfLink() public view onlyOwner returns (uint256) {
-        return (fee * 100) / LINK_DIVISIBILITY;
     }
 
     function withdrawLink() public onlyOwner {

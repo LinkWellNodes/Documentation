@@ -65,7 +65,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/uint256/uint256.sol#L23-L28
@@ -97,7 +97,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -194,7 +194,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/uint256/vrn_uint256.sol#L23-L28
@@ -281,7 +281,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/uint256-array/uint256-array.sol#L23-L28
@@ -313,7 +313,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -423,7 +423,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/uint256-array/vrn_uint256-array.sol#L23-L28
@@ -510,7 +510,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/int256/int256.sol#L23-L28
@@ -542,7 +542,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -651,7 +651,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/int256/vrn_int256.sol#L23-L28
@@ -738,7 +738,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/int256-array/int256-array.sol#L23-L28
@@ -770,7 +770,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -880,7 +880,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/int256-array/vrn_int256-array.sol#L23-L28
@@ -966,7 +966,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/bool/bool.sol#L23-L28
@@ -998,7 +998,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -1117,7 +1117,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/bool-array/bool-array.sol#L23-L28
@@ -1149,7 +1149,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing). 
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing). 
 :::
 
 ### Still need more help?
@@ -1271,7 +1271,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/string-bytes/string-bytes.sol#L23-L28
@@ -1303,7 +1303,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).  
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing).  
 ::: 
 
 ### Still need more help?
@@ -1429,7 +1429,7 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 
 #### 1. Add the constructor:
 
-The constructor specifies important information about the request destination and payment for your request. **Important**: This information varies by chain, oracle, and job: 
+The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Polygon-zkEVM-Testnet/string-bytes-array/string-bytes-array.sol#L23-L28
@@ -1461,7 +1461,7 @@ If you need to send sensitive information along with your HTTP request (ie, an A
 Having trouble with your request? Check our [Chainlink Direct Requests FAQ](/knowledgebase/faq/Chainlink-Users#chainlink-direct-requests).
 
 :::caution 
-This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher job pricing).   
+This job has a configured gas limit of **1,000,000** for writing your result on-chain. If your transaction isn't returning any value after more than 60 seconds of waiting, click the above '**Oracle Address**' for this job to see if any recent transaction(s) have failed due to an '**out of gas**' error. If so, you'll need to either A) Return a smaller response, B) Split your request into multiple oracle transactions, or C) Contact us to request a higher gas allowance for your specific use case (may result in higher data feed pricing).   
 :::
 
 ### Still need more help?
