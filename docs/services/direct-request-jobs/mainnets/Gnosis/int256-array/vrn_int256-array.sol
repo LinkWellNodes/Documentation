@@ -89,7 +89,7 @@ contract LinkWellVRNInt256ArrConsumerContractExample is ChainlinkClient, Confirm
         return getRandomNumbers(latestFulfilledRequestId);
     }
 
-    // Retrieve fulfilled random number(s)
+    // Retrieve the fulfilled random number(s) for a given requestId
     function getRandomNumbers(bytes32 requestId) public view returns (int256[] memory) {
         VRNRequest memory req = requestMap[requestId];
         require(req.requested == true, "No requests for this requestId were ever made");

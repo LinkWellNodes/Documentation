@@ -158,7 +158,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Retrieve a random `uint256` number
 
-This **on-demand** job initiates an oracle request for a verifiable random number within the specified range, and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
+This **on-demand** job initiates an oracle request for a verifiable random number within the specified range using our [Verifiable Random Numbers (VRN) service](/knowledgebase/Verifiable-Random-Numbers-Guide), and returns the resulting 256-bit unsigned integer (**uint256**) to your smart contract.
 
 **TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-vrn) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-vrn) jobs instead.
 
@@ -212,6 +212,57 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/uint256/vrn_uint256.sol#L63-L95
 ```
+
+#### 4. Verify the result
+
+You have two options for verifying your random number(s):
+
+:::tip
+You must wait for respective seed's epoch to end (every 6 hours) before you can verify your random number(s). Epochs end at the following times each day:
+<br/>
+<ul>
+<li><b>00:00:00 UTC</b></li>
+<li><b>06:00:00 UTC</b></li>
+<li><b>12:00:00 UTC</b></li>
+<li><b>18:00:00 UTC</b></li>
+</ul>
+
+For more info on verifying numbers through our VRN Service, please visit our [VRN Guide](/knowledgebase/Verifiable-Random-Numbers-Guide).
+:::
+
+**Option 1 (off-chain)**: Using our website
+
+1. Call the `getHash(requestId)` function, passing in the requestId in question
+
+2. Visit our seed verification page, entering your chain ID and hash as URL parameters:
+   ```
+   https://linkwellnodes.io/VRN-Seed.html?chain=ENTER_CHAIN_ID_HERE&hash=ENTER_HASH_HERE
+   ```
+   - `chain`: The chain ID for your respective blockchain network can be found at [chainlist.org](https://chainlist.org/)
+   - `hash`: The hash obtained from the `getHash(requestId)` call within your contract
+
+3. If the seed is available, it will be shown on the page
+
+4. Call `verifyResult(requestId, seed)` with the requestId and the retrieved seed
+   - A return value of `true` confirms that the randomness was verified on-chain
+
+**Option 2 (on-chain)**: Using an oracle request
+
+1. Ensure your contract has sufficient LINK token balance
+
+2. Call `requestSeedFromOracle(requestId)` with your requestId
+   - This will send LINK to our oracle as payment for this transaction
+   - The required amount of LINK has been pre-specified within this function, and cannot be changed
+
+3. Wait several blocks for our oracle to call `fulfillSeedFromOracle()`
+   - If the seed is available, this will write the seed to your contract's storage
+
+4. Call `verifyResult(requestId)`
+   - A return value of `true` confirms that the randomness was verified on-chain
+
+:::tip
+For more info on how our **VRN Service** works, including how to programmatically verify your random number output, please visit our [Verifiable Random Numbers (VRN) guide](/knowledgebase/Verifiable-Random-Numbers-Guide).
+:::
 
 ### Need more help?
 
@@ -385,7 +436,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Retrieve a `uint256[]` of random numbers
 
-This **on-demand** job initiates an oracle request for an array of verifiable random numbers within the specified range, and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
+This **on-demand** job initiates an oracle request for an array of verifiable random numbers within the specified range using our [Verifiable Random Numbers (VRN) service](/knowledgebase/Verifiable-Random-Numbers-Guide), and returns the resulting array of 256-bit unsigned integers (**uint256[]**) to your smart contract.
 
 **TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-vrn) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-vrn) jobs instead.
 
@@ -440,6 +491,57 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/uint256-array/vrn_uint256-array.sol#L66-L98
 ```
+
+#### 4. Verify the result
+
+You have two options for verifying your random number(s):
+
+:::tip
+You must wait for respective seed's epoch to end (every 6 hours) before you can verify your random number(s). Epochs end at the following times each day:
+<br/>
+<ul>
+<li><b>00:00:00 UTC</b></li>
+<li><b>06:00:00 UTC</b></li>
+<li><b>12:00:00 UTC</b></li>
+<li><b>18:00:00 UTC</b></li>
+</ul>
+
+For more info on verifying numbers through our VRN Service, please visit our [VRN Guide](/knowledgebase/Verifiable-Random-Numbers-Guide).
+:::
+
+**Option 1 (off-chain)**: Using our website
+
+1. Call the `getHash(requestId)` function, passing in the requestId in question
+
+2. Visit our seed verification page, entering your chain ID and hash as URL parameters:
+   ```
+   https://linkwellnodes.io/VRN-Seed.html?chain=ENTER_CHAIN_ID_HERE&hash=ENTER_HASH_HERE
+   ```
+   - `chain`: The chain ID for your respective blockchain network can be found at [chainlist.org](https://chainlist.org/)
+   - `hash`: The hash obtained from the `getHash(requestId)` call within your contract
+
+3. If the seed is available, it will be shown on the page
+
+4. Call `verifyResult(requestId, seed)` with the requestId and the retrieved seed
+   - A return value of `true` confirms that the randomness was verified on-chain
+
+**Option 2 (on-chain)**: Using an oracle request
+
+1. Ensure your contract has sufficient LINK token balance
+
+2. Call `requestSeedFromOracle(requestId)` with your requestId
+   - This will send LINK to our oracle as payment for this transaction
+   - The required amount of LINK has been pre-specified within this function, and cannot be changed
+
+3. Wait several blocks for our oracle to call `fulfillSeedFromOracle()`
+   - If the seed is available, this will write the seed to your contract's storage
+
+4. Call `verifyResult(requestId)`
+   - A return value of `true` confirms that the randomness was verified on-chain
+
+:::tip
+For more info on how our **VRN Service** works, including how to programmatically verify your random number output, please visit our [Verifiable Random Numbers (VRN) guide](/knowledgebase/Verifiable-Random-Numbers-Guide).
+:::
 
 ### Need more help?
 
@@ -613,7 +715,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Retrieve a random `int256` number
 
-This **on-demand** job initiates an oracle request for a verifiable random number within the specified range, and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
+This **on-demand** job initiates an oracle request for a verifiable random number within the specified range using our [Verifiable Random Numbers (VRN) service](/knowledgebase/Verifiable-Random-Numbers-Guide), and returns the resulting 256-bit signed integer (**int256**) to your smart contract.
 
 **TIP**: Need to retrieve multiple random numbers at once? Check out our [**uint256[]**](?dataType=Uint256%5B%5D#retrieve-a-random-uint256-number-vrn) or [**int256[]**](?dataType=Int256%5B%5D#retrieve-a-random-uint256-number-vrn) jobs instead.
 
@@ -667,6 +769,57 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/int256/vrn_int256.sol#L63-L95
 ```
+
+#### 4. Verify the result
+
+You have two options for verifying your random number(s):
+
+:::tip
+You must wait for respective seed's epoch to end (every 6 hours) before you can verify your random number(s). Epochs end at the following times each day:
+<br/>
+<ul>
+<li><b>00:00:00 UTC</b></li>
+<li><b>06:00:00 UTC</b></li>
+<li><b>12:00:00 UTC</b></li>
+<li><b>18:00:00 UTC</b></li>
+</ul>
+
+For more info on verifying numbers through our VRN Service, please visit our [VRN Guide](/knowledgebase/Verifiable-Random-Numbers-Guide).
+:::
+
+**Option 1 (off-chain)**: Using our website
+
+1. Call the `getHash(requestId)` function, passing in the requestId in question
+
+2. Visit our seed verification page, entering your chain ID and hash as URL parameters:
+   ```
+   https://linkwellnodes.io/VRN-Seed.html?chain=ENTER_CHAIN_ID_HERE&hash=ENTER_HASH_HERE
+   ```
+   - `chain`: The chain ID for your respective blockchain network can be found at [chainlist.org](https://chainlist.org/)
+   - `hash`: The hash obtained from the `getHash(requestId)` call within your contract
+
+3. If the seed is available, it will be shown on the page
+
+4. Call `verifyResult(requestId, seed)` with the requestId and the retrieved seed
+   - A return value of `true` confirms that the randomness was verified on-chain
+
+**Option 2 (on-chain)**: Using an oracle request
+
+1. Ensure your contract has sufficient LINK token balance
+
+2. Call `requestSeedFromOracle(requestId)` with your requestId
+   - This will send LINK to our oracle as payment for this transaction
+   - The required amount of LINK has been pre-specified within this function, and cannot be changed
+
+3. Wait several blocks for our oracle to call `fulfillSeedFromOracle()`
+   - If the seed is available, this will write the seed to your contract's storage
+
+4. Call `verifyResult(requestId)`
+   - A return value of `true` confirms that the randomness was verified on-chain
+
+:::tip
+For more info on how our **VRN Service** works, including how to programmatically verify your random number output, please visit our [Verifiable Random Numbers (VRN) guide](/knowledgebase/Verifiable-Random-Numbers-Guide).
+:::
 
 ### Need more help?
 
@@ -840,7 +993,7 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 ## Retrieve a `int256[]` of random numbers
 
-This **on-demand** job initiates an oracle request for an array of verifiable random numbers within the specified range, and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
+This **on-demand** job initiates an oracle request for an array of verifiable random numbers within the specified range using our [Verifiable Random Numbers (VRN) service](/knowledgebase/Verifiable-Random-Numbers-Guide), and returns the resulting array of 256-bit signed integers (**int256[]**) to your smart contract.
 
 **TIP**: Need to retrieve a single random number instead? Check out our [**uint256**](?dataType=Uint256#retrieve-a-random-uint256-number-vrn) or [**int256**](?dataType=Int256#retrieve-a-random-uint256-number-vrn) jobs instead.
 
@@ -895,6 +1048,57 @@ https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-re
 ```sol reference
 https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Binance-Testnet/int256-array/vrn_int256-array.sol#L66-L98
 ```
+
+#### 4. Verify the result
+
+You have two options for verifying your random number(s):
+
+:::tip
+You must wait for respective seed's epoch to end (every 6 hours) before you can verify your random number(s). Epochs end at the following times each day:
+<br/>
+<ul>
+<li><b>00:00:00 UTC</b></li>
+<li><b>06:00:00 UTC</b></li>
+<li><b>12:00:00 UTC</b></li>
+<li><b>18:00:00 UTC</b></li>
+</ul>
+
+For more info on verifying numbers through our VRN Service, please visit our [VRN Guide](/knowledgebase/Verifiable-Random-Numbers-Guide).
+:::
+
+**Option 1 (off-chain)**: Using our website
+
+1. Call the `getHash(requestId)` function, passing in the requestId in question
+
+2. Visit our seed verification page, entering your chain ID and hash as URL parameters:
+   ```
+   https://linkwellnodes.io/VRN-Seed.html?chain=ENTER_CHAIN_ID_HERE&hash=ENTER_HASH_HERE
+   ```
+   - `chain`: The chain ID for your respective blockchain network can be found at [chainlist.org](https://chainlist.org/)
+   - `hash`: The hash obtained from the `getHash(requestId)` call within your contract
+
+3. If the seed is available, it will be shown on the page
+
+4. Call `verifyResult(requestId, seed)` with the requestId and the retrieved seed
+   - A return value of `true` confirms that the randomness was verified on-chain
+
+**Option 2 (on-chain)**: Using an oracle request
+
+1. Ensure your contract has sufficient LINK token balance
+
+2. Call `requestSeedFromOracle(requestId)` with your requestId
+   - This will send LINK to our oracle as payment for this transaction
+   - The required amount of LINK has been pre-specified within this function, and cannot be changed
+
+3. Wait several blocks for our oracle to call `fulfillSeedFromOracle()`
+   - If the seed is available, this will write the seed to your contract's storage
+
+4. Call `verifyResult(requestId)`
+   - A return value of `true` confirms that the randomness was verified on-chain
+
+:::tip
+For more info on how our **VRN Service** works, including how to programmatically verify your random number output, please visit our [Verifiable Random Numbers (VRN) guide](/knowledgebase/Verifiable-Random-Numbers-Guide).
+:::
 
 ### Need more help?
 
