@@ -15,7 +15,7 @@ import TOCInline from '@theme/TOCInline';
 <h2 class='lw-subtitle'>An In-Depth Guide to Securing Chainlink Node Infrastructure Against Cyber Threats and Achieving Full Operational Visibility</h2>
 
 <p align="center">
-  <img src="./Cybersecurity.webp" alt="Cybersecurity" />
+  <img src="/img/chainlink-node-security-monitoring/Cybersecurity.webp" alt="Cybersecurity" />
 </p>
 
 <!--truncate-->
