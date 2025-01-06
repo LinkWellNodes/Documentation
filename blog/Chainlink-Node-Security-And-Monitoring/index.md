@@ -222,7 +222,7 @@ Regular testing and validation of alerts ensures accuracy and coverage against e
 
 ### **Secure networking configurations**
 
-Securing network traffic to and from your Chainlink node infrastructure is a critical component of a robust [Defense-in-Depth (DiD)]([https://en.wikipedia.org/wiki/Defense_in_depth_(computing)](https://en.wikipedia.org/wiki/Defense_in_depth_(computing))) strategy. A well-segmented and access-controlled network environment minimizes the overall surface area available for attackers to exploit.
+Securing network traffic to and from your Chainlink node infrastructure is a critical component of a robust [Defense-in-Depth (DiD)](https://en.wikipedia.org/wiki/Defense_in_depth_(computing)) strategy. A well-segmented and access-controlled network environment minimizes the overall surface area available for attackers to exploit.
 
 - **Network segmentation with VPN and VLANs:** Segment your network using Virtual LANs (VLANs) to isolate Chainlink node operations from unrelated services or systems. This limits lateral movement in the event of a breach. Additionally, enforce secure, encrypted access for all administrative and developer interactions using a VPN, such as WireGuard or OpenVPN, to ensure data in transit is not exposed to potential attackers.
 - **Tight access controls:** Employ Access Control Lists (ACLs) on your network routers, firewalls, and cloud environments to restrict incoming and outgoing traffic to trusted IP ranges and essential ports. By restricting these services to internal IP ranges, you significantly reduce their exposure to external threats.
