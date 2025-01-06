@@ -15,7 +15,7 @@ import TOCInline from '@theme/TOCInline';
 <h2 class='lw-subtitle'>An In-Depth Guide to Securing Chainlink Node Infrastructure Against Cyber Threats and Achieving Full Operational Visibility</h2>
 
 <p align="center">
-  <img src="./Cybersecurity.webp" alt="Chainlink Node Operator" />
+  <img src="./Cybersecurity.webp" alt="Cybersecurity" />
 </p>
 
 <!--truncate-->
@@ -38,7 +38,7 @@ In today's digital landscape, security breaches and exploits have become disturb
 
 This reality makes it crucial for Web3 infrastructure providers and node operators to implement robust security and monitoring measures, adopting defense-in-depth strategies that encompass both Web3 and Web2 domains. This article explores best practices and actionable insights for securing and monitoring not only your Chainlink oracle infrastructure but also the Web2 systems and platforms that support them.
 
-## **The importance of securing your Chainlink oracle Infrastructure**
+## The importance of securing your Chainlink oracle Infrastructure
 
 Adversaries are constantly evolving and remain highly motivated to steal, compromise, exploit, or destroy digital assets and infrastructure.
 
@@ -77,7 +77,7 @@ The diagram below illustrates a simplified Chainlink oracle architecture:
 
 In reality, a production Chainlink node operator's architecture may be significantly more complicated (involving bastion hosts, monitoring hosts, cross-region VPC links, etc.). As we progress through this article, we will delve into advanced security measures and best practices that build upon this foundational architecture.
 
-## **Basic s**ecurity requirements
+## Basic security requirements
 
 **Networking rules**
 
@@ -262,7 +262,7 @@ As systems grow more intricate, they often incorporate numerous interconnected c
 
 Web3 infrastructure providers face a pivotal decision: adopt basic architectures with minimal security measures, or invest in advanced architectures that prioritize comprehensive security. 
 
-**At LinkWell Nodes, we firmly commit to providing the latter for our diverse array of clients; ensuring robust protection and reliability in our own Chainlink node infrastructure is one of the core commitments present in our [**Service-Level Agreement (SLA)](https://docs.linkwellnodes.io/services/direct-request-jobs/Service-Level-Agreement)**.**
+**At LinkWell Nodes, we firmly commit to providing the latter for our diverse array of clients; ensuring robust protection and reliability in our own Chainlink node infrastructure is one of the core commitments present in our [**Service-Level Agreement (SLA)**](https://docs.linkwellnodes.io/services/direct-request-jobs/Service-Level-Agreement).
 
 ## Mitigation strategies
 
