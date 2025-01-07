@@ -1,7 +1,7 @@
 ---
 
 title: "Chainlink Node Operations: Security and Monitoring Best Practices and Insights"
-description: "An In-Depth Guide to Securing Chainlink Node Infrastructure Against Cyber Threats and Achieving Full Operational Visibility"
+description: "An in-depth guide to securing Chainlink node infrastructure against cyber threats and achieving full operational visibility"
 date: "2024-12-19"
 image: ./Chainlink-Architecture-Final.webp
 keywords: [chainlink oracle, chainlink node operator, splunk, web3, cybersecurity]
@@ -12,7 +12,7 @@ tags: [chainlink node operator, cybersecurity, splunk]
 
 import TOCInline from '@theme/TOCInline';
 
-<h2 class='lw-subtitle'>An In-Depth Guide to Securing Chainlink Node Infrastructure Against Cyber Threats and Achieving Full Operational Visibility</h2>
+<h2 class='lw-subtitle'>An in-depth guide to securing Chainlink node infrastructure against cyber threats and achieving full operational visibility</h2>
 
 <p align="center">
   <img src="/img/chainlink-node-security-monitoring/Cybersecurity.webp" alt="Cybersecurity" />
@@ -31,6 +31,8 @@ import TOCInline from '@theme/TOCInline';
 />
 
 ---
+
+## Introduction
 
 In today's digital landscape, security breaches and exploits have become disturbingly common, impacting both Web2 and Web3 ecosystems alike.
 
@@ -73,7 +75,7 @@ Chainlink node operators are responsible for managing a wide range of resources,
 
 The diagram below illustrates a simplified Chainlink oracle architecture:
 
-![Chainlink-Basic-Architecture.webp](./Chainlink-Basic-Architecture.webp)
+![Simplified Chainlink oracle architecture diagram](./Chainlink-Basic-Architecture.webp "Simplified Chainlink oracle architecture diagram")<center><small>Simplified Chainlink oracle architecture diagram</small></center>
 
 In reality, a production Chainlink node operator's architecture may be significantly more complicated (involving bastion hosts, monitoring hosts, cross-region VPC links, etc.). As we progress through this article, we will delve into advanced security measures and best practices that build upon this foundational architecture.
 
@@ -89,7 +91,7 @@ Within the [Chainlink node documentation](https://docs.chain.link/chainlink-node
 - Ensure all servers (ie, Chainlink nodes, databases, RPC clients, external adapters, etc.) are placed in an internal subnet range, and that all traffic between these servers is routed internally, and not over the public internet.
 - Deploy a DMZ (demilitarized zone) with strong outbound network restrictions in order to prevent internal network resources being exposed when Chainlink nodes arbitrarily send HTTP GET or POST requests.
 
-![Chainlink-Initial-Security.webp](./Chainlink-Initial-Security.webp)
+![Chainlink oracle architecture diagram with basic network security rules](./Chainlink-Initial-Security.webp "Chainlink oracle architecture diagram with basic network security rules")<center><small>Chainlink oracle architecture diagram (with basic network security rules)</small></center>
 
 Additionally, the Chainlink documentation provides a few other sections on securing Chainlink infrastructure:
 
@@ -107,7 +109,7 @@ For the most part, this will be a manual effort; you will need to bring your own
 
 If you've opted to deploy your services via Docker, you can also choose to monitor your Docker containers' outputs by integrating it with major logging providers. For example, use Docker's documentation to configure logging drivers for Amazon CloudWatch or Google Cloud Logging:
 
-![Chainlink-Architecture-Basic-Logging.webp](./Chainlink-Architecture-Basic-Logging.webp)
+![Chainlink oracle architecture diagram with basic logging](./Chainlink-Architecture-Basic-Logging.webp "Chainlink oracle architecture diagram with basic logging")<center><small>Chainlink oracle architecture diagram (with basic centralized logging support)</small></center>
 
 Establishing a common logging and monitoring standard is a critical step on the journey of secure Chainlink node operations. 
 
@@ -133,7 +135,7 @@ To modify or delete users, use the `admin users chrole` or `admin users delete` 
 
 RBAC ensures specific actions require the appropriate role before execution. [Chainlink's documentation](https://docs.chain.link/chainlink-nodes/v1/roles-and-access) further outlines the required roles for various actions.
 
-![Chainlink-Basic-Security.webp](./Chainlink-Basic-Security.webp)
+![Chainlink oracle architecture diagram with basic security](./Chainlink-Basic-Security.webp "Chainlink oracle architecture diagram with basic security")<center><small>Chainlink oracle architecture diagram (with basic security components)</small></center>
 
 Putting it all together, we arrive at the above network architecture diagram. While the above measures provide a solid foundation for basic Chainlink node infrastructure security, they leave much to be desired in terms of fully securing your Chainlink oracle. 
 
@@ -141,7 +143,7 @@ Putting it all together, we arrive at the above network architecture diagram. Wh
 
 Chainlink Labs, like any other professional organization, expects its official node operators to implement security practices that go well beyond the above fundamentals, aligning with the rigorous standards typically employed by enterprise-grade organizations. 
 
-### **Enterprise-grade logging, monitoring, and alerting**
+### Enterprise-grade logging, monitoring, and alerting
 
 At its core, any system or tool in your infrastructure that generates logs should feed into a centralized logging platform. This ensures logs are securely stored and enables effective correlation analysis to identify and respond to potential threats. Ideally, this logging platform would include the below capabilities.
 
@@ -152,13 +154,13 @@ At its core, any system or tool in your infrastructure that generates logs shoul
 
 While there are many security platforms on the market that can deliver all of the above requirements, we recommend [Splunk](https://www.splunk.com/) (one of the leading tools for observability and enterprise-grade security monitoring, according to the [2024 Gartner Magic Quadrant](https://www.splunk.com/en_us/blog/security/splunk-named-a-leader-in-the-gartner-magic-quadrant-for-siem.html)) to teams serious about securing their production deployments. Splunk offers a comprehensive suite of capabilities that are invaluable for detecting and analyzing suspicious or malicious activity. 
 
-![splunk_security_suite.jpg](./splunk_security_suite.jpg)
+![Splunk security portfolio](./splunk_security_suite.webp "Splunk security portfolio")<center><small>Credit: [Splunk](https://www.splunk.com/en_us/products/cyber-security.html)</small></center>
 
 At LinkWell Nodes, we rely on Splunk to achieve comprehensive observability and security monitoring across our entire operation, including our Chainlink infrastructure. By centralizing data from Docker containers, host and network logs, infrastructure configuration changes, API activity, audit logs and more, we gain a holistic view of our environment. This unified approach enables us to build a robust suite of dashboards, analytics, and alerts, delivering real-time insights and actionable intelligence to maintain security and operational excellence.
 
 Whether you choose to use Splunk or a different enterprise-grade monitoring solution, implementing effective monitoring practices is essential. 
 
-### **Suggested monitoring and alerting criteria**
+### Suggested monitoring and alerting criteria
 
 Below are 10 critical security monitoring and alerting recommendations tailored to help Chainlink node operators identify and respond to suspicious or malicious activity:
 
@@ -218,9 +220,9 @@ The above alerts are intended as a starting point for your security monitoring c
 
 Regular testing and validation of alerts ensures accuracy and coverage against emerging threats, and helps keep your monitoring system adaptive and reliable. Additionally, establishing thresholds and contextual baselines that reduce false positives and improves the relevance of your alerts is another recommended practice.
 
-![Chainlink-Architecture-Advanced-Monitoring.webp](./Chainlink-Architecture-Advanced-Monitoring.webp)
+![Chainlink oracle architecture diagram with advanced monitoring](./Chainlink-Architecture-Advanced-Monitoring.webp "Chainlink oracle architecture diagram with advanced monitoring")<center><small>Chainlink oracle architecture diagram (with advanced monitoring components)</small></center>
 
-### **Secure networking configurations**
+### Secure networking configurations
 
 Securing network traffic to and from your Chainlink node infrastructure is a critical component of a robust [Defense-in-Depth (DiD)](https://en.wikipedia.org/wiki/Defense_in_depth_(computing)) strategy. A well-segmented and access-controlled network environment minimizes the overall surface area available for attackers to exploit.
 
@@ -228,7 +230,7 @@ Securing network traffic to and from your Chainlink node infrastructure is a cri
 - **Tight access controls:** Employ Access Control Lists (ACLs) on your network routers, firewalls, and cloud environments to restrict incoming and outgoing traffic to trusted IP ranges and essential ports. By restricting these services to internal IP ranges, you significantly reduce their exposure to external threats.
 - **Least-privilege access:** Adopt a principle of least-privilege for all accounts, services, and network interactions. Regularly review access permissions to ensure they align with current operational requirements, and promptly remove access from inactive accounts or unused resources. Proactive audits can prevent [privilege creep](https://www.techtarget.com/searchsecurity/definition/privilege-creep) and minimize the risk of misconfigurations.
 
-### **Firewalls and intrusion detection/prevention**
+### Firewalls and intrusion detection/prevention
 
 Defensive measures at the network perimeter play a crucial role in identifying and preventing unauthorized access attempts or malicious activity targeting your infrastructure:
 
@@ -236,7 +238,7 @@ Defensive measures at the network perimeter play a crucial role in identifying a
 - **Intrusion detection and prevention:** Use tools like [Suricata](https://suricata.io/) or [Snort](https://www.snort.org/) to continuously monitor network traffic for anomalies, such as unusual spikes in activity or connections to suspicious IP addresses. Combine these with Intrusion Prevention Systems (IPS) to automatically block known attack signatures and respond to threats in real-time.
 - **Zero-trust principles:** Implement a [Zero Trust Architecture](https://en.wikipedia.org/wiki/Zero_trust_architecture) to eliminate implicit trust in your network. Require all users and services to continuously verify their identity and permissions, even within your network perimeter. Pair this with Multi-Factor Authentication (MFA) and secure token management for all sensitive systems to add an additional layer of protection.
 
-### **Software and dependency updates**
+### Software and dependency updates
 
 Keeping your software and dependencies up-to-date is an often-overlooked (yet critical) element of a secure infrastructure:
 
@@ -244,7 +246,7 @@ Keeping your software and dependencies up-to-date is an often-overlooked (yet cr
 - **Automating configuration management:** Use tools like [Ansible](https://www.redhat.com/en/ansible-collaborative), [Terraform](https://www.terraform.io/), or other configuration management platforms to automate updates, enforce consistency across environments, and reduce human error in deployment processes.
 - **Dependency auditing and validation:** Regularly scan your infrastructure for outdated or vulnerable third-party libraries using tools like [Snyk](https://snyk.io/) or [Dependabot](https://github.com/dependabot). Ensure custom scripts and integrations are reviewed periodically for deprecated functions or insecure configurations that could introduce unnecessary risk.
 
-### **Identity and Access Management (IAM)**
+### Identity and Access Management (IAM)
 
 Properly managing identities and permissions across your infrastructure helps to ensure that only authorized users and services can interact with sensitive systems:
 
@@ -252,9 +254,9 @@ Properly managing identities and permissions across your infrastructure helps to
 - **Proactive auditing and alerting:** Enable detailed logging for all IAM activities, such as failed login attempts, privilege escalations, and changes to account configurations. Integrate these logs into your centralized monitoring platform to detect suspicious patterns or unauthorized actions in real time.
 - **Reinforcing credentials with Multi-Factor Authentication (MFA) and strong policies:** Require all administrative accounts to use MFA, adding an additional layer of verification beyond a password. Combine this with strong password policies, including regular rotation and complexity requirements, to reduce the likelihood of credential theft.
 
-Finally, we arrive at the operational environment represented below.
+Finally, we arrive at the operational environment represented below:
 
-![Chainlink-Architecture-Final.webp](./Chainlink-Architecture-Final.webp)
+![Chainlink oracle architecture diagram with advanced monitoring and security](./Chainlink-Architecture-Final.webp "Chainlink oracle architecture diagram with advanced monitoring and security")<center><small>Chainlink oracle architecture diagram (with advanced monitoring and security components)</small></center>
 
 One notable downside of such an architecture, however, is the introduction of complexity, as the complexity of a network's architecture and systems design directly correlates with its susceptibility to attack vectors and misconfigurations. 
 
@@ -262,7 +264,9 @@ As systems grow more intricate, they often incorporate numerous interconnected c
 
 Web3 infrastructure providers face a pivotal decision: adopt basic architectures with minimal security measures, or invest in advanced architectures that prioritize comprehensive security. 
 
-**At LinkWell Nodes, we firmly commit to providing the latter for our diverse array of clients; ensuring robust protection and reliability in our own Chainlink node infrastructure is one of the core commitments present in our [**Service-Level Agreement (SLA)**](https://docs.linkwellnodes.io/services/direct-request-jobs/Service-Level-Agreement).
+:::info
+At LinkWell Nodes, we firmly commit to an advanced, comprehensive, security-first approach in offering Chainlink oracle services to our diverse array of clients; ensuring robust protection and reliability in our own Chainlink node infrastructure is one of the core commitments present in our [Service-Level Agreement (SLA)](https://docs.linkwellnodes.io/services/direct-request-jobs/Service-Level-Agreement).
+:::
 
 ## Mitigation strategies
 
@@ -282,7 +286,9 @@ By adopting these mitigation strategies, you can significantly reduce your expos
 
 However, security is not a one-time effort; it requires continuous evaluation, improvement, and adaptation to emerging threats. Consider these strategies a foundation upon which to build a comprehensive and dynamic security posture.
 
-## Take action today
+## Take action today!
+
+It's easy to take the first steps in securing your Chainlink node infrastructure:
 
 1. **Assess your security posture:**
     

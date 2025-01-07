@@ -43,7 +43,7 @@ In this article, we'll explore how Chainlink's price feeds work, how ours differ
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/-pJqlI61ZKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
-## How Chainlink's Official Price Feeds Work
+## How Chainlink's official price feeds work
 
 Chainlink Price Feeds, as listed via their [data feeds page](https://data.chain.link/feeds), are powered by decentralized oracle networks that deliver accurate, up to date asset price data to smart contracts across various blockchain platforms and price pairs. They utilize a network of independent, security-reviewed node operators who gather data from multiple premium data providers. 
 
@@ -57,7 +57,7 @@ While this model provides the most robust security and reliability assurances am
 
 This is where our custom price feed solution comes into play, which we will introduce in the following sections.
 
-## LinkWell Nodes' Custom Price Feed Solution
+## LinkWell Nodes' custom price feeds solution
 
 As innovators in the Chainlink oracle space with extensive experience working alongside various Web3 teams, we identified a growing need for a price feed solution that could be seamlessly integrated to supply accurate pricing data for any asset.
 
@@ -88,7 +88,7 @@ Once configured, our price feeds can be adjusted at any time to modify the devia
 
 > _In need of a trust-minimized solution? We provide a custom price feed capability that can support a DON architecture using multiple independent Chainlink oracles. If you'd like to speak directly with Chainlink Labs regarding your data feed requirements, feel free to contact them [here](https://chain.link/contact?ref_id=datafeeds) for further assistance._
 
-## Benefits of Our Custom Chainlink Price Feed Solution
+## Benefits of our custom Chainlink price feeds
 
 Our custom price feed solution offers a number of benefits to include:
 
@@ -104,7 +104,7 @@ Our custom price feed solution offers a number of benefits to include:
 
 6. **Full-Service Support**: We are happy to support the price feed integration process every step of the way. Additionally, we carefully monitor our infrastructure along with the custom price feed for any issues or anomalous activity.
 
-## How to Get Started
+## How to get started
 
 We've gone through great lengths to make the integration process as seamless as possible - all you have to do is reach out! We can be contacted via [Discord](https://discord.com/invite/Xs6SjqVPUA), [Twitter](https://x.com/LinkWell_Nodes), [Email](mailto:hello@linkwellnodes.io?subject=Website%20inquiry), or simply fill out our [request survey form](https://linkwellnodes.io/Getting-Started.html) to get started.
 
