@@ -38,7 +38,13 @@ In today's digital landscape, security breaches and exploits have become disturb
 
 **With over a decade of experience securing and monitoring enterprise systems and networks, we've learned that the question isn't *if* you'll be targeted, but *when*.**
 
-This reality makes it crucial for Web3 infrastructure providers and node operators to implement robust security and monitoring measures, adopting defense-in-depth strategies that encompass both Web3 and Web2 domains. This article explores best practices and actionable insights for securing and monitoring not only your Chainlink oracle infrastructure but also the Web2 systems and platforms that support them.
+This unfortunate reality makes it crucial for Web3 infrastructure providers (ie, Chainlink node operators) to implement robust security and monitoring measures, adopting defense-in-depth strategies that encompass both Web3 and Web2 domains. This article explores some of these best practices and actionable insights for securing and monitoring not only your Chainlink oracle infrastructure, but the Web2 systems and platforms that support them.
+
+:::tip
+### Looking for a Chainlink oracle? 
+
+LinkWell Nodes abstracts away the hassle by offering professional Chainlink oracle services on all major EVM-based mainnet and testnet blockchains. To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
 
 ## The importance of securing your Chainlink oracle Infrastructure
 
