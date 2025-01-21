@@ -1,5 +1,5 @@
 ---
-title: "Verifiable Random Numbers: A Custom Chainlink Oracle Solution For Web3 applications"
+title: "Verifiable Random Numbers: A True Randomness Solution For Web3 Applications"
 description: "Unlocking true randomness for DeFi, Gaming, and Other Web3 applications with a custom Chainlink oracle service from LinkWell Nodes."
 date: "2025-1-21"
 image: ./VRN.webp
@@ -10,7 +10,7 @@ tags: [chainlink oracle, smart contracts, randomness, web3, blockchain]
 
 import TOCInline from '@theme/TOCInline';
 
-<h2 class='lw-subtitle'>SUBTITLE</h2>
+<h2 class='lw-subtitle'>Unlocking true randomness for DeFi, Gaming, and Other Web3 applications with a custom Chainlink oracle service from LinkWell Nodes.</h2>
 
 <p align="center">
   <img src="./VRN.webp" alt="Custom Chainlink Oracle Verifiable Random Number Generation By LinkWell Nodes" />
@@ -45,8 +45,6 @@ In this article, we'll delve into why verifiable randomness matters, how our VRN
 
 Visit our [data feed documentation](https://docs.linkwellnodes.io/services/direct-request-jobs/mainnets), and select your desired network (ie, "Arbitrum mainnet") and data type (ie, "Verifiable random numbers (VRN / RNG)").
 :::
-
-### YT LINK FORMAT
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/eRzLNfn4LGc" frameborder="0" allowfullscreen></iframe></center>
 
@@ -144,6 +142,7 @@ Deploy your application with confidence, knowing you've integrated a secure and 
 
 :::info
 If you are deploying to mainnet, please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html), and provide any additional details that you would like about your project.
+:::
 
 ## Conclusion
 
