@@ -13,7 +13,7 @@ import TOCInline from '@theme/TOCInline';
 <h2 class='lw-subtitle'>Unlocking true randomness for DeFi, Gaming, and Other Web3 applications with a custom Chainlink oracle service from LinkWell Nodes.</h2>
 
 <p align="center">
-  <img src="./VRN.webp" alt="Custom Chainlink Oracle Verifiable Random Number Generation By LinkWell Nodes" />
+  <img src="/img/vrn/VRN.webp" alt="Custom Chainlink Oracle Verifiable Random Number Generation By LinkWell Nodes" />
 </p>
 
 <!--truncate-->
