@@ -61,7 +61,7 @@ No. VRN is a different service that provides a similar level of security and ver
 
 **LinkWell Nodes' VRN** (Verifiable Random Numbers) service is a comparable alternative to **Chainlink Labs' VRF** (Verifiable Random Function) service. Below is a feature comparison table to help you decide which option is right for your business.
 
-### Feature comparison table
+### Full feature comparison table
 
 | Feature                          | LinkWell Nodes VRN                        | Chainlink Labs VRF                          |
 |----------------------------------|--------------------------------------------|----------------------------------------|
