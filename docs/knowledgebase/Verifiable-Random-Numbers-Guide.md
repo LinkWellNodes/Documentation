@@ -30,7 +30,7 @@ Unlike traditional random number generators, VRN allows you to independently ver
 :::info
 ### Is LinkWell's VRN the same as Chainlink's VRF?
 
-No. VRN is a different service that provides a similar level of security and verifiability, but added ease of implementation, free testnet usage, and minimal-cost mainnet usage.
+No. VRN is a different service that provides a similar level of security and verifiability, but added ease of implementation, free testnet usage, and minimal-cost mainnet usage. For more information, visit our [feature comparison table](#linkwell-nodes-vrn-vs-chainlink-labs-vrf).
 :::
 
 ## Features
@@ -38,7 +38,8 @@ No. VRN is a different service that provides a similar level of security and ver
 - **Cryptographically Secure**: Seeds are generated randomly using a secure cryptographic hashing algorithm
 - **Verifiable**: All random numbers can be independently verified using the seed
 - **Tamper-Proof**: Seeds are revealed only after a delay, preventing manipulation
-- **Range-Bound**: Request random numbers within any specified range
+- **Custom Ranges**: Specify your desired min and max random number value, saving costly gas otherwise required to normalize the result upon receiving it
+- **Multiple Values**: Request just one random number, or multiple random numbers at once, saving time and gas otherwise required to make multiple requests
 - **Gas Efficient**: Computation happens off-chain, minimizing gas costs
 
 ## Key concepts
@@ -55,6 +56,30 @@ No. VRN is a different service that provides a similar level of security and ver
 
 3. **Verification**
    - Once the seed becomes publicly available, your random number(s) can be verified independently [on-chain](#option-2-on-chain-using-an-oracle-request) or [off-chain](#option-1-off-chain-using-our-website)
+   
+## LinkWell Nodes VRN vs. Chainlink Labs VRF
+
+**LinkWell Nodes' VRN** (Verifiable Random Numbers) service is a comparable alternative to **Chainlink Labs' VRF** (Verifiable Random Function) service. Below is a feature comparison table to help you decide which option is right for your business.
+
+### Feature comparison table
+
+| Feature                          | LinkWell Nodes VRN                        | Chainlink Labs VRF                          |
+|----------------------------------|--------------------------------------------|----------------------------------------|
+| **Randomness generation**        | Yes | Yes |
+| **Configurable range (min/max)** | Yes | No |
+| **Verifiability**                | Yes | Yes |
+| **Ease of integration**          | [Easy](#implementation-guide) | [Medium](https://docs.chain.link/vrf/v2-5/subscription/create-manage) |
+| **Supported networks**           | [14](/services/direct-request-jobs/mainnets) | [7](https://docs.chain.link/vrf/v2-5/supported-networks) |
+| **Cost**                         | Typically lower | Typically higher |
+| **Pay in LINK**                  | Yes | Yes |
+| **Pay in native gas token**      | Yes | Yes |
+| **Pay in stablecoins**           | Yes | No |
+| **Pay in fiat**                  | Yes | No |
+| **Response time (blocks)**       | 2-3 (chain-dependent) | 2-3 (chain-dependent) |
+| **Infrastructure**               | Private, SOC-2 compliant infrastructure | Decentralized oracle network (DON) |
+| **Free monitoring**              | Yes (mainnet requests) | No |
+| **Free dedicated support**       | Yes (mainnet requests) | No |
+
 
 ## Implementation guide
 
@@ -77,7 +102,7 @@ The oracle will respond by calling your contract's `fulfill()` function with:
 
 ### **Step 3**: Verify the random number(s)
 
-You have two options for verifying your random number(s).
+You have two options for verifying your random number(s):
 
 :::tip
 You must wait for respective seed's epoch to end (every 6 hours) before you can verify your random number(s). Epochs end at the following times each day:
