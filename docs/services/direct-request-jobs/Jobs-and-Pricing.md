@@ -38,7 +38,7 @@ We offer free smart contract development services for our **mainnet customers**.
 
 ## Related topics
 
-- [Pricing Info](/services/direct-request-jobs/pricing)
+- [Pricing Info](/pricing)
 - [Real-World Examples](/services/direct-request-jobs/Any-API-Guide)
 - [Development Services](/services/Development-Services)
 - [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement)
