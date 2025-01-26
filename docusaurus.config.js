@@ -353,6 +353,10 @@ const config = {
 			    from: '/services/direct-request-jobs/Pricing',
 			    to: '/pricing',
 			},
+			{
+			    from: '/Pricing',
+			    to: '/pricing',
+			},
           ],
       },
     ],

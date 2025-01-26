@@ -233,7 +233,7 @@ In this step, we'll discuss the deployment of your smart contract to a mainnet b
 One notable difference when transitioning from a testnet oracle request to a mainnet oracle request is that your mainnet requests that you send require a nominal fee in the form of the LINK token (usually around 0.1 LINK, depending on the blockchain network and data type). For this reason, it is necessary to fund your smart contract with LINK in order to accommodate the anticipated request volume for your Web3 application.
 
 After deploying and funding your mainnet contract, we suggest executing your `request()` function at least once to ensure your functionality is working as expected.
-> At LinkWell Nodes, we strive for transparency and efficiency around our pricing model. For a comprehensive understanding of the factors that influence our data feed pricing, you can explore our [pricing page](/services/direct-request-jobs/Pricing).
+> At LinkWell Nodes, we strive for transparency and efficiency around our pricing model. For a comprehensive understanding of the factors that influence our data feed pricing, you can explore our [pricing page](/pricing).
 >
 > **Our commitment is to offer the most competitive pricing in the market.** Deploying your contract initially onto a testnet and making a few requests to our oracles can help us significantly in gauging the lowest-possible pricing for your custom data feed.
 

@@ -41,7 +41,7 @@ This job writes a single **uint256** object to your contract, which can store an
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -176,7 +176,7 @@ You'll set the following attributes within your contract's constructor function 
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -314,7 +314,7 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -462,7 +462,7 @@ You'll set the following attributes within your contract's constructor function 
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -601,7 +601,7 @@ This job writes a single **int256** object to your contract, which can store any
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -749,7 +749,7 @@ You'll set the following attributes within your contract's constructor function 
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -887,7 +887,7 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -1035,7 +1035,7 @@ You'll set the following attributes within your contract's constructor function 
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -1174,7 +1174,7 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -1330,7 +1330,7 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -1489,7 +1489,7 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
@@ -1652,7 +1652,7 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 | Oracle Address and Job ID | Fee |
 |-------------------|----------|
-| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/Pricing) page |
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive our mainnet **Addresses** and **Job IDs** | Please see our [pricing](/pricing) page |
 
 
 ### Request parameters
