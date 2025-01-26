@@ -218,7 +218,7 @@ Selecting your Chainlink monitoring solution is a matter of preference, as there
 
 If you can't access the GUI of your Chainlink node:
 
-* Ensure your Chainlink node runtime is up and running ("docker inspect <container_name>" if running on Docker. if not, look for a Docker exit code, and search Google for the corresponding meaning).
+* Ensure your Chainlink node runtime is up and running (`docker inspect <CONTAINER_NAME>` if running on Docker. if not, look for a Docker exit code, and search Google for the corresponding meaning).
 * Search for any ERROR- or CRIT-level logs in your Chainlink container via the following command: `docker logs -f <CONTAINER_NAME>` (if running on Docker)
 * If hosting your node on AWS, ensure the related security group can accept connections from your IP address on your Chainlink node's corresponding GUI port
 * If hosting your node on AWS and fronting your Chainlink node with an ALB, ensure that the Chainlink node's security group can accept connections from the ALB on your Chainlink node's corresponding GUI port

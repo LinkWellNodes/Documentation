@@ -25,7 +25,9 @@ We can update any of your contract's data at a set frequency, and/or deviation-b
 
 <h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-<details><summary>Data from the internet (HTTP request)</summary>
+<details>
+
+<summary>Data from the internet (HTTP request)</summary>
 
 ## Retrieve a `uint256` from the internet
 
@@ -155,7 +157,9 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>A verifiable random number (VRN / RNG)</summary>
+<details>
+
+<summary>A verifiable random number (VRN / RNG)</summary>
 
 ## Retrieve a random `uint256` number
 
@@ -271,7 +275,9 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 
 </details>
 
-<details><summary>Something else</summary>
+<details>
+
+<summary>Something else</summary>
 
 ## Have a custom requirement?
 
@@ -292,7 +298,9 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 
 <h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-<details><summary>Data from the internet (HTTP request)</summary>
+<details>
+
+<summary>Data from the internet (HTTP request)</summary>
 
 ## Retrieve a `uint256[]` from the internet
 
@@ -434,7 +442,9 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Verifiable random numbers (VRN / RNG)</summary>
+<details>
+
+<summary>Verifiable random numbers (VRN / RNG)</summary>
 
 ## Retrieve a `uint256[]` of random numbers
 
@@ -551,7 +561,9 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 
 </details>
 
-<details><summary>Something else</summary>
+<details>
+
+<summary>Something else</summary>
 
 ## Have a custom requirement?
 
@@ -572,7 +584,9 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 
 <h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-<details><summary>Data from the internet (HTTP request)</summary>
+<details>
+
+<summary>Data from the internet (HTTP request)</summary>
 
 ## Retrieve a `int256` from the internet
 
@@ -714,7 +728,9 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>A verifiable random number (VRN / RNG)</summary>
+<details>
+
+<summary>A verifiable random number (VRN / RNG)</summary>
 
 ## Retrieve a random `int256` number
 
@@ -830,7 +846,9 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 
 </details>
 
-<details><summary>Something else</summary>
+<details>
+
+<summary>Something else</summary>
 
 ## Have a custom requirement?
 
@@ -851,7 +869,9 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 
 <h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-<details><summary>Data from the internet (HTTP request)</summary>
+<details>
+
+<summary>Data from the internet (HTTP request)</summary>
 
 ## Retrieve a `int256[]` from the internet
 
@@ -993,7 +1013,9 @@ After filtering the sample response by the provided JSON path, our Chainlink nod
 
 </details>
 
-<details><summary>Verifiable random numbers (VRN / RNG)</summary>
+<details>
+
+<summary>Verifiable random numbers (VRN / RNG)</summary>
 
 ## Retrieve a `int256[]` of random numbers
 
@@ -1110,7 +1132,9 @@ Please reach out to us in [Discord](https://discord.gg/Xs6SjqVPUA) if you requir
 
 </details>
 
-<details><summary>Something else</summary>
+<details>
+
+<summary>Something else</summary>
 
 ## Have a custom requirement?
 
@@ -1131,7 +1155,9 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 
 <h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-<details><summary>Data from the internet (HTTP request)</summary>
+<details>
+
+<summary>Data from the internet (HTTP request)</summary>
 
 ## Retrieve a `bool` from the internet
 
@@ -1261,7 +1287,9 @@ true
 
 </details>
 
-<details><summary>Something else</summary>
+<details>
+
+<summary>Something else</summary>
 
 ## Have a custom requirement?
 
@@ -1282,7 +1310,9 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 
 <h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-<details><summary>Data from the internet (HTTP request)</summary>
+<details>
+
+<summary>Data from the internet (HTTP request)</summary>
 
 ## Retrieve a `bool[]` from the internet
 
@@ -1415,7 +1445,9 @@ After receiving the above sample response, our Chainlink node will attempt to fi
 
 </details>
 
-<details><summary>Something else</summary>
+<details>
+
+<summary>Something else</summary>
 
 ## Have a custom requirement?
 
@@ -1436,7 +1468,9 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 
 <h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-<details><summary>Data from the internet (HTTP request)</summary>
+<details>
+
+<summary>Data from the internet (HTTP request)</summary>
 
 ## Retrieve a `string` (`bytes`) from the internet
 
@@ -1573,7 +1607,9 @@ Note that the double-quotes will not be present when retrieving the above respon
 
 </details>
 
-<details><summary>Something else</summary>
+<details>
+
+<summary>Something else</summary>
 
 ## Have a custom requirement?
 
@@ -1594,7 +1630,9 @@ Join our [Discord](https://discord.gg/Xs6SjqVPUA) to get the fastest service for
 
 <h2 class='datafeed-subtitle'>What do you want to retrieve?</h2>
 
-<details><summary>Data from the internet (HTTP request)</summary>
+<details>
+
+<summary>Data from the internet (HTTP request)</summary>
 
 ## Retrieve a `string[]` (`bytes[]`) from the internet
 
@@ -1731,7 +1769,9 @@ Note that the double-quotes will not be present when retrieving any of the above
 
 </details>
 
-<details><summary>Something else</summary>
+<details>
+
+<summary>Something else</summary>
 
 ## Have a custom requirement?
 
