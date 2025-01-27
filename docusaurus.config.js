@@ -68,7 +68,7 @@ const config = {
           filename: 'sitemap.xml',
         },
 		gtag: {
-		  trackingID: 'G-72W2DJ8L00',
+		  trackingID: 'G-GTD9K3LP12',
 		},
       }),
     ],
