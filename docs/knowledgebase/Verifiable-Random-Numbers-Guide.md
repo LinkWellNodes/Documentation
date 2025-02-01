@@ -68,7 +68,7 @@ No. VRN is a different service that provides a similar level of security and ver
 | **Randomness generation**        | Yes | Yes |
 | **Configurable range (min/max)** | Yes | No |
 | **Verifiability**                | Yes | Yes |
-| **Ease of integration**          | [Easy](#implementation-guide) | [Medium](https://docs.chain.link/vrf/v2-5/subscription/create-manage) |
+| **Ease of integration**          | [Medium](#implementation-guide) | [Medium](https://docs.chain.link/vrf/v2-5/subscription/create-manage) |
 | **Supported networks**           | [14](/services/direct-request-jobs/mainnets) | [7](https://docs.chain.link/vrf/v2-5/supported-networks) |
 | **Cost**                         | Typically lower | Typically higher |
 | **Pay in LINK**                  | Yes | Yes |

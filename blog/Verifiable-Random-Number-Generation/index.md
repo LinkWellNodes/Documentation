@@ -128,21 +128,23 @@ Our Chainlink oracle VRN solution provides robust, adaptable randomness capabili
 
 ## How to Get Started with VRN 
 
-**Step 1**: Review Our Documentation
+- **Step 1**: Review our Documentation
 
-Access our detailed guides and API references at our documentation page. Learn how to integrate VRN seamlessly with your Chainlink oracle setup. 
+	Access our [API reference guides](/services/direct-request-jobs/Jobs-and-Pricing) within our documentation pages:
 
-**Step 2**: Implement and Test
+    **Example**: `Testnets` -> `Base Sepolia` -> `uint256` -> `A random number (VRN / RNG)` 
 
-Use our tutorials to implement VRN. We offer testing environments to ensure everything works perfectly before you go live. Our support team is here to help at every step.
+- **Step 2**: Implement and Test
 
-**Step 3**: Deploy Your Application
+	Use our API guides to implement your VRN contract. Use a testnet blockchain to ensure everything works perfectly before you go live. Our support team is here to help at every step.
 
-Deploy your application with confidence, knowing you've integrated a secure and verifiable source of randomness through our Chainlink oracle service.
+- **Step 3**: Deploy Your Application
 
-:::info
-If you are deploying to mainnet, please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html), and provide any additional details that you would like about your project.
-:::
+	Once testing is complete, deploy your Web3 application and contract to a mainnet chain. 
+	
+	:::info
+	If you are deploying to mainnet, please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html), and provide any additional details that you would like about your project.
+	:::
 
 ## Conclusion
 
