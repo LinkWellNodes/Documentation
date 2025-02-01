@@ -103,13 +103,22 @@
 </ol>
 <p>Our Chainlink oracle VRN solution provides robust, adaptable randomness capabilities for Web3 projects, ensuring you have reliable, secure, and customizable randomness that aligns with your project’s specific needs.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="how-to-get-started-with-vrn">How to Get Started with VRN<a href="https://docs.linkwellnodes.io/blog/Verifiable-Random-Number-Generation#how-to-get-started-with-vrn" class="hash-link" aria-label="Direct link to How to Get Started with VRN" title="Direct link to How to Get Started with VRN">​</a></h2>
-<p><strong>Step 1</strong>: Review Our Documentation</p>
-<p>Access our detailed guides and API references at our documentation page. Learn how to integrate VRN seamlessly with your Chainlink oracle setup.</p>
+<ul>
+<li>
+<p><strong>Step 1</strong>: Review our Documentation</p>
+<p>Access our <a href="https://docs.linkwellnodes.io/services/direct-request-jobs/Jobs-and-Pricing">API reference guides</a> within our documentation pages:</p>
+<p><strong>Example</strong>: <code>Testnets</code> -&gt; <code>Base Sepolia</code> -&gt; <code>uint256</code> -&gt; <code>A random number (VRN / RNG)</code></p>
+</li>
+<li>
 <p><strong>Step 2</strong>: Implement and Test</p>
-<p>Use our tutorials to implement VRN. We offer testing environments to ensure everything works perfectly before you go live. Our support team is here to help at every step.</p>
+<p>Use our API guides to implement your VRN contract. Use a testnet blockchain to ensure everything works perfectly before you go live. Our support team is here to help at every step.</p>
+</li>
+<li>
 <p><strong>Step 3</strong>: Deploy Your Application</p>
-<p>Deploy your application with confidence, knowing you've integrated a secure and verifiable source of randomness through our Chainlink oracle service.</p>
+<p>Once testing is complete, deploy your Web3 application and contract to a mainnet chain.</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>If you are deploying to mainnet, please fill out our <a href="https://linkwellnodes.io/Getting-Started.html" target="_blank" rel="noopener noreferrer">request survey</a>, and provide any additional details that you would like about your project.</p></div></div>
+</li>
+</ul>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="conclusion">Conclusion<a href="https://docs.linkwellnodes.io/blog/Verifiable-Random-Number-Generation#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
 <p>Integrating true randomness into blockchain applications has long been a complex challenge due to the deterministic nature of computers and the transparency of blockchain networks. With LinkWell Nodes' VRN service, we're helping to bridge this gap by providing a solution that enhances the capabilities of our Chainlink oracle services.</p>
 <p>By offering a verifiable, secure, and efficient source of randomness, VRN empowers developers to build more fair, secure, and trustworthy decentralized applications. Whether you're developing a game, running a lottery, minting NFTs, or enhancing security protocols, VRN can add significant value to your project.</p>
