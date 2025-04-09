@@ -10,7 +10,7 @@ tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, decentr
 
 import TOCInline from '@theme/TOCInline';
 
-<h2 class='lw-subtitle'>4 Custom Chainlink Oracle Services to Enhance Your Web3 App</h2>
+<h2 class='lw-subtitle'>Discover unique Chainlink oracle solutions that offer flexibility and rapid integration</h2>
 
 <p align="center">
   <img src="/img/Chainlink-Oracle-Services-By-LinkWell-Nodes/CL_Cron_Price_Feed.webp" alt="Chainlink oracle price feed" />
@@ -58,7 +58,9 @@ Let's dive in and discover how these alternative oracle solutions can enhance yo
 
 [On-Demand Requests](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide) (previously known as direct requests, or “Any API”) allow your dApp to request off-chain data directly from our Chainlink oracles. With support for any external API, you can integrate a wide range of real-world data sources into your application via a simple smart contract call that results in an HTTP request from our servers.
 
-![Chainlink Oracle Direct Request Diagram](./Chainlink_Oracle_DR.webp "Chainlink oracle basic request model")<center><small>Chainlink oracle basic request model</small></center>
+<p align="center">
+  <img src="./Chainlink_Oracle_DR.webp" alt="Chainlink oracle basic request model" />
+</p>
 
 Use on-demand requests to:
 
@@ -95,7 +97,9 @@ With VRN, you can:
 
 [Flux Monitor DONs](https://docs.chain.link/chainlink-nodes/oracle-jobs/all-jobs#flux-monitor-jobs) use the [decentralized data model](https://docs.chain.link/architecture-overview/architecture-decentralized-model) to provide secure, reliable, and trust-minimized price feeds for Web3 applications, particularly within the DeFi space. By leveraging the Flux Aggregator protocol, our DONs ensure accurate and tamper-resistant price data, enabling your dApp to operate with high integrity.
 
-![Chainlink Oracle Flux Monitor DON](./Flux_Aggregator_Dark.webp "Chainlink oracle flux monitor DON")<center><small>Chainlink oracle decentralized data model</small></center>
+<p align="center">
+  <img src="./Flux_Aggregator_Dark.webp" alt="Chainlink oracle Flux Monitor DON" />
+</p>
 
 Integrate Flux Monitor DONs to:
 
@@ -113,7 +117,9 @@ Integrate Flux Monitor DONs to:
 
 Our custom [Chainlink oracle price feed solution](https://docs.linkwellnodes.io/blog/Custom-Chainlink-Price-Feed-Solution) offers regular price updates at predefined intervals and/or deviation-based thresholds, providing a cost-effective solution for Web3 dApps that require near real-time price data. These price feeds are highly customizable, and are designed to strike a balance between data freshness and on-chain transaction costs, making them a gas-efficient (and thus cost-efficient) solution for smart contract applications that need pricing data delivered on a constant basis.
 
-![Chainlink Oracle Price Feed Diagram](./CL_Cron_Price_Feed.webp "Chainlink oracle price feed")<center><small>Chainlink oracle price feed</small></center>
+<p align="center">
+  <img src="/img/Chainlink-Oracle-Services-By-LinkWell-Nodes/CL_Cron_Price_Feed.webp" alt="Chainlink oracle price feed" />
+</p>
 
 Use LinkWell Nodes’s Price Feeds to:
 
