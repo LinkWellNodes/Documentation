@@ -36,7 +36,9 @@ Chainlink's official Web3 services, powered by Decentralized Oracle Networks (DO
 
 But did you know there are alternative Chainlink oracle solutions that can offer unique benefits for your Web3 app? 
 
-Info: Chainlink's native services (ie, Chainlink Functions) are supported by trust-minimized DONs, and are the best choice if you’re aiming to maximize decentralization. Developers whose applications need to prioritize trust-minimization above all else should consider using these first.
+:::info
+ Chainlink's native services (ie, Chainlink Functions) are supported by trust-minimized DONs, and are the best choice if you’re aiming to maximize decentralization. Developers whose applications need to prioritize trust-minimization above all else should consider using these first.
+:::
 
 At LinkWell Nodes, we offer several bespoke Chainlink oracle services that optimize for:
 
@@ -54,12 +56,12 @@ In this article, we'll explore:
 
 Let's dive in and discover how these alternative oracle solutions can enhance your Web3 app!
 
-## On-Demand Requests (”Any API”) to Our Chainlink Oracles
+1. ## On-Demand Requests (”Any API”) to Our Chainlink Oracles
 
 [On-Demand Requests](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide) (previously known as direct requests, or “Any API”) allow your dApp to request off-chain data directly from our Chainlink oracles. With support for any external API, you can integrate a wide range of real-world data sources into your application via a simple smart contract call that results in an HTTP request from our servers.
 
 <p align="center">
-  <img src="./Chainlink_Oracle_DR.webp" alt="Chainlink oracle basic request model" />
+  <img src="/img/Chainlink-Oracle-Services-By-LinkWell-Nodes/Chainlink_Oracle_DR.webp" alt="Chainlink oracle basic request model" />
 </p>
 
 Use on-demand requests to:
@@ -98,7 +100,7 @@ With VRN, you can:
 [Flux Monitor DONs](https://docs.chain.link/chainlink-nodes/oracle-jobs/all-jobs#flux-monitor-jobs) use the [decentralized data model](https://docs.chain.link/architecture-overview/architecture-decentralized-model) to provide secure, reliable, and trust-minimized price feeds for Web3 applications, particularly within the DeFi space. By leveraging the Flux Aggregator protocol, our DONs ensure accurate and tamper-resistant price data, enabling your dApp to operate with high integrity.
 
 <p align="center">
-  <img src="./Flux_Aggregator_Dark.webp" alt="Chainlink oracle Flux Monitor DON" />
+  <img src="/img/Chainlink-Oracle-Services-By-LinkWell-Nodes/Flux_Aggregator_Dark.webp" alt="Chainlink oracle Flux Monitor DON" />
 </p>
 
 Integrate Flux Monitor DONs to:
