@@ -13,7 +13,7 @@
         <link href="https://docs.linkwellnodes.io/blog/Chainlink-Oracle-Services-By-LinkWell-Nodes"/>
         <updated>2025-04-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Discover unique Chainlink oracle solutions that offer flexibility and rapid integration]]></summary>
-        <content type="html"><![CDATA[<h2 class="lw-subtitle">4 Custom Chainlink Oracle Services to Enhance Your Web3 App</h2>
+        <content type="html"><![CDATA[<h2 class="lw-subtitle">Discover unique Chainlink oracle solutions that offer flexibility and rapid integration</h2>
 <p align="center"><img src="https://docs.linkwellnodes.io/img/Chainlink-Oracle-Services-By-LinkWell-Nodes/CL_Cron_Price_Feed.webp" alt="Chainlink oracle price feed"></p>
 <hr>
 <p><strong>On this page</strong>:</p>
@@ -39,7 +39,7 @@
 <p>Let's dive in and discover how these alternative oracle solutions can enhance your Web3 app!</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="on-demand-requests-any-api-to-our-chainlink-oracles">On-Demand Requests (”Any API”) to Our Chainlink Oracles<a href="https://docs.linkwellnodes.io/blog/Chainlink-Oracle-Services-By-LinkWell-Nodes#on-demand-requests-any-api-to-our-chainlink-oracles" class="hash-link" aria-label="Direct link to On-Demand Requests (”Any API”) to Our Chainlink Oracles" title="Direct link to On-Demand Requests (”Any API”) to Our Chainlink Oracles">​</a></h2>
 <p><a href="https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide" target="_blank" rel="noopener noreferrer">On-Demand Requests</a> (previously known as direct requests, or “Any API”) allow your dApp to request off-chain data directly from our Chainlink oracles. With support for any external API, you can integrate a wide range of real-world data sources into your application via a simple smart contract call that results in an HTTP request from our servers.</p>
-<p><img decoding="async" loading="lazy" alt="Chainlink Oracle Direct Request Diagram" src="https://docs.linkwellnodes.io/assets/images/Chainlink_Oracle_DR-93eb971e86aec0fcf6baa5b42ead64a5.webp" title="Chainlink oracle basic request model" width="431" height="500" class="img_ev3q"></p><center><small>Chainlink oracle basic request model</small></center><p></p>
+<p align="center"><img src="https://docs.linkwellnodes.io/blog/Chainlink_Oracle_DR.webp" alt="Chainlink oracle basic request model"></p>
 <p>Use on-demand requests to:</p>
 <ol>
 <li>Incorporate weather data, financial market prices, sports scores, and more into your smart contracts.</li>
@@ -69,7 +69,7 @@
 </ul>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="3-flux-monitor-dons">3. Flux Monitor DONs<a href="https://docs.linkwellnodes.io/blog/Chainlink-Oracle-Services-By-LinkWell-Nodes#3-flux-monitor-dons" class="hash-link" aria-label="Direct link to 3. Flux Monitor DONs" title="Direct link to 3. Flux Monitor DONs">​</a></h2>
 <p><a href="https://docs.chain.link/chainlink-nodes/oracle-jobs/all-jobs#flux-monitor-jobs" target="_blank" rel="noopener noreferrer">Flux Monitor DONs</a> use the <a href="https://docs.chain.link/architecture-overview/architecture-decentralized-model" target="_blank" rel="noopener noreferrer">decentralized data model</a> to provide secure, reliable, and trust-minimized price feeds for Web3 applications, particularly within the DeFi space. By leveraging the Flux Aggregator protocol, our DONs ensure accurate and tamper-resistant price data, enabling your dApp to operate with high integrity.</p>
-<p><img decoding="async" loading="lazy" alt="Chainlink Oracle Flux Monitor DON" src="https://docs.linkwellnodes.io/assets/images/Flux_Aggregator_Dark-c6e92b8ae4743f77145df1d6ef3b6421.webp" title="Chainlink oracle flux monitor DON" width="526" height="340" class="img_ev3q"></p><center><small>Chainlink oracle decentralized data model</small></center><p></p>
+<p align="center"><img src="https://docs.linkwellnodes.io/blog/Flux_Aggregator_Dark.webp" alt="Chainlink oracle Flux Monitor DON"></p>
 <p>Integrate Flux Monitor DONs to:</p>
 <ol>
 <li>Obtain trust-minimized price feeds, written to an on-chain aggregation contract, for various assets or price pairs.</li>
@@ -83,7 +83,7 @@
 </ul>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="4-chainlink-price-feeds-cost-effective-price-updates">4. Chainlink Price Feeds: Cost-Effective Price Updates<a href="https://docs.linkwellnodes.io/blog/Chainlink-Oracle-Services-By-LinkWell-Nodes#4-chainlink-price-feeds-cost-effective-price-updates" class="hash-link" aria-label="Direct link to 4. Chainlink Price Feeds: Cost-Effective Price Updates" title="Direct link to 4. Chainlink Price Feeds: Cost-Effective Price Updates">​</a></h2>
 <p>Our custom <a href="https://docs.linkwellnodes.io/blog/Custom-Chainlink-Price-Feed-Solution" target="_blank" rel="noopener noreferrer">Chainlink oracle price feed solution</a> offers regular price updates at predefined intervals and/or deviation-based thresholds, providing a cost-effective solution for Web3 dApps that require near real-time price data. These price feeds are highly customizable, and are designed to strike a balance between data freshness and on-chain transaction costs, making them a gas-efficient (and thus cost-efficient) solution for smart contract applications that need pricing data delivered on a constant basis.</p>
-<p><img decoding="async" loading="lazy" alt="Chainlink Oracle Price Feed Diagram" src="https://docs.linkwellnodes.io/assets/images/CL_Cron_Price_Feed-c39e138c8bab26465dd594e0c29bf4d9.webp" title="Chainlink oracle price feed" width="561" height="211" class="img_ev3q"></p><center><small>Chainlink oracle price feed</small></center><p></p>
+<p align="center"><img src="https://docs.linkwellnodes.io/img/Chainlink-Oracle-Services-By-LinkWell-Nodes/CL_Cron_Price_Feed.webp" alt="Chainlink oracle price feed"></p>
 <p>Use LinkWell Nodes’s Price Feeds to:</p>
 <ol>
 <li>Obtain on-chain price feed data, written directly to your smart contract across various assets or price pairs.</li>
