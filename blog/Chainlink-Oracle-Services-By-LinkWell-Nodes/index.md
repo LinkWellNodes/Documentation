@@ -56,7 +56,7 @@ In this article, we'll explore:
 
 Let's dive in and discover how these alternative oracle solutions can enhance your Web3 app!
 
-1. ## On-Demand Requests (”Any API”) to Our Chainlink Oracles
+## 1. On-Demand Requests (”Any API”) to Our Chainlink Oracles
 
 [On-Demand Requests](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide) (previously known as direct requests, or “Any API”) allow your dApp to request off-chain data directly from our Chainlink oracles. With support for any external API, you can integrate a wide range of real-world data sources into your application via a simple smart contract call that results in an HTTP request from our servers.
 
