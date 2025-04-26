@@ -2,7 +2,7 @@
 title: "Introducing A Custom Chainlink Price Feed Solution For Web3 Apps"
 description: "Introducing LinkWell Nodes' secure, reliable, and affordable custom Chainlink oracle price feed solution for on-chain smart contract updates."
 date: "2024-05-30"
-image: https://docs.linkwellnodes.io/img/.../img.png
+image: /img/custom-price-feed/linkwell-custom-price-feed.webp
 keywords: [chainlink oracle, smart contracts, price feed, web3, blockchain]
 authors: [Ken]
 tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain]

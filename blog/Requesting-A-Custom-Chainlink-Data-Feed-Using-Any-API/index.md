@@ -65,7 +65,7 @@ If you don't already have a well-defined use case, here are a few custom data fe
 * **IoT Data:** Supply chain tracking, accounting transparency, health wearables, consumption and pollution, parametric insurance that tracks rainfall, GPS sensors, and more.
 
 **Chainlink oracles can return data from anywhere on the internet.** For more ideas, we recommend looking into Chainlink's blog on the [77 different use cases enabled by Chainlink](https://blog.chain.link/smart-contract-use-cases/). Additional custom data feed examples that walk you through building a custom data feed can be found within our [website's documentation](/services/direct-request-jobs/Any-API-Guide).
-> *If you are interested in the in-depth mechanics of how direct requests to Chainlink nodes work, feel free to check out our [direct request guide](/knowledgebase/Direct-Request-Guide).*
+> *If you are interested in the in-depth mechanics of how direct requests to Chainlink nodes work, feel free to check out our [direct request guide](/blog/Chainlink-Direct-Requests-Guide).*
 
 Without further ado, here are the 7 steps for requesting a custom Chainlink data feed.
 

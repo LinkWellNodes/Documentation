@@ -2,7 +2,7 @@
 title: "How to Build and Deploy a Chainlink Smart Contract"
 description: "How to connect your smart contract to the internet using a Chainlink oracle."
 date: "2024-05-22"
-image: https://docs.linkwellnodes.io/img/.../img.png
+image: /img/ethgrid.webp
 keywords: [chainlink oracle, smart contracts, price feed, direct requests, any api, web3, blockchain]
 authors: [Ken]
 tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain]
@@ -50,7 +50,7 @@ Here are some things you'll need in order to follow this tutorial:
 :::tip
 ### Looking for a Chainlink oracle? 
 
-LinkWell Nodes offers Chainlink oracle services on all major EVM-based mainnet and testnet blockchains. To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+LinkWell Nodes offers professional Chainlink oracle services on all major EVM-based mainnet and testnet blockchains. To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 :::
 
 ## **Step 1**: Set up and fund MetaMask
@@ -178,7 +178,7 @@ Now that the latest Ethereum price is stored in a variable in your contract, you
 
 > _Making an on-demand request to a Chainink oracle is one of several options that we support for updating variables within your smart contract. We also offer automatic updates at **set frequencies**, **% deviations in value**, or other trigger conditions. If interested in learning more about our various Chainlink services, head on over to our [documentation](/) to find out more._
 
-Interested in diving deeper into the process of making a direct (on-demand) Chainlink oracle request? Please refer to our [developer documentation](https://docs.linkwellnodes.io/knowledgebase/Direct-Request-Guide) for details.
+Interested in diving deeper into the process of making a direct (on-demand) Chainlink oracle request? Please refer to our [developer documentation](https://docs.linkwellnodes.io/blog/Chainlink-Direct-Requests-Guide) for details.
 
 
 ## Conclusion

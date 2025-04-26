@@ -2,7 +2,7 @@
 title: "Verifiable Random Numbers: A True Randomness Solution For Web3 Applications"
 description: "Unlocking true randomness for DeFi, Gaming, and Other Web3 applications with a custom Chainlink oracle service from LinkWell Nodes."
 date: "2025-1-21"
-image: ./VRN.webp
+image: /img/vrn/VRN.webp
 keywords: [chainlink oracle, smart contracts, randomness, web3, blockchain]
 authors: [Ken]
 tags: [chainlink oracle, smart contracts, randomness, web3, blockchain]

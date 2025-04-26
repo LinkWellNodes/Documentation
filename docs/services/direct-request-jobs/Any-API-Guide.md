@@ -3,8 +3,8 @@ title: Chainlink Oracle Request Examples
 description: Code samples for making oracle requests for sports / betting data (TheRundown), IPFS, weather (AccuWeather), stock prices, real-world assets (RWA), and more. 
 ---
 
-# Oracle Request Examples 
-Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality (powered by their [basic request model](/knowledgebase/Direct-Request-Guide) - previously known as their [direct request model](/knowledgebase/Direct-Request-Guide)) is a versatile feature that allows smart contracts to request data from off-chain sources. At LinkWell Nodes, we strive to make it as easy as possible for Web3 and dApp developers to leverage and utilize Chainlink to make such requests. 
+# Real-World Examples of Chainlink Oracle Requests
+Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality (powered by their [basic request model](/blog/Chainlink-Direct-Requests-Guide) - previously known as their [direct request model](/blog/Chainlink-Direct-Requests-Guide)) is a versatile feature that allows smart contracts to request data from off-chain sources. At LinkWell Nodes, we strive to make it as easy as possible for Web3 and dApp developers to leverage and utilize Chainlink to make such requests. 
 
 The below examples will walk you through the process of using our Chainlink oracles to request data from various example API providers.
 
@@ -62,7 +62,7 @@ Write temperature, forecast, and other weather data to your smart contract, enab
 
 ## Learn more
 
-To learn more about how Chainlink's direct request model works, visit the [Direct Request (Any API) Guide](/knowledgebase/Direct-Request-Guide) in our knowledgebase.
+To learn more about how Chainlink's direct request model works, visit the [Direct Request (Any API) Guide](/blog/Chainlink-Direct-Requests-Guide) in our knowledgebase.
 
 ## Troubleshooting
 

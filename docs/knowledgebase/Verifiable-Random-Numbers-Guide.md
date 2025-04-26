@@ -5,7 +5,7 @@ description: "A guide to using LinkWell Nodes' Verifiable Random Numbers (VRN) s
 
 import TOCInline from '@theme/TOCInline';
 
-<h2 class='lw-subtitle'>A guide to generating <lw-emphasis>Verifiable Random Numbers (VRNs)</lw-emphasis> in your smart contract using LinkWell Nodes's cryptographically secure and verifiable random number generation (RNG) service.</h2>
+<h2 class='lw-subtitle'>LinkWell Nodes can deliver <lw-emphasis>Verifiable Random Numbers (VRNs)</lw-emphasis> to your smart contract using our cryptographically secure and verifiable random number generation (RNG) service.</h2>
 
 ![Custom Chainlink data feeds by LinkWell Nodes](/img/rng-dice.webp "Verifiable Random Numbers (VRN / VRF / RNG) by LinkWell Nodes")
 
@@ -26,6 +26,12 @@ import TOCInline from '@theme/TOCInline';
 LinkWell Nodes's **Verifiable Random Numbers (VRN)** service is a cryptographically-secure random number generator (RNG) that sends random numbers to your on-chain smart contract. 
 
 Unlike traditional random number generators, VRN allows you to independently verify that the numbers provided were generated fairly, using a pre-committed secret seed.
+
+:::tip
+### Looking to integrate VRN?
+
+Skip ahead to our [implementation guide](#implementation-guide).
+:::
 
 :::info
 ### Is LinkWell's VRN the same as Chainlink's VRF?
@@ -87,9 +93,18 @@ No. VRN is a different service that provides a similar level of security and ver
 
 Deploy your own VRN consumer contract to start requesting verifiable random numbers:
 
-- Visit our [Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing) page and navigate to your desired **blockchain network** and **data type** to find the appropriate VRN consumer contract.
+1. Visit our [Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing) page and navigate to your desired **blockchain network**. 
+2. Under "Select the data type that you need", select the **data type** (ie, `uint256[]`).
+3. Click "Verifiable random numbers (VRN / RNG)", and scroll down to find the appropriate VRN consumer contract.
 
-    **Example**: `Testnets` -> `Base Sepolia` -> `uint256` -> `A random number (VRN / RNG)`
+    **Example**: `Testnets` -> `Base Sepolia` -> `uint256[]` -> `Verifiable random numbers (VRN / RNG)`
+
+<p align="center">
+  <img src="/img/vrn/vrn-wizard-01.webp" alt="How to find your VRN consumer contract" title="How to find your VRN consumer contract" />
+  <center><small>How to find your VRN consumer contract</small></center>
+</p>
+
+4. Deploy the consumer contract by pasting it into the smart contract IDE of your choice (ie, Remix).
 
 ### **Step 2**: Request a random number
 

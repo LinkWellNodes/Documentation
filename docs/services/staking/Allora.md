@@ -13,7 +13,7 @@ keywords: [allora network, staking, stake, stake allo, allora network staking, a
 
 LinkWell Nodes has [partnered with the Allora Network](/blog/LinkWell-Nodes-Joins-the-Allora-Network-as-a-Node-Operator) to offer **high-uptime**, **minimum-commission**, **SOC-2 compliant** staking services for the crypto community. Earn ALLO (Allora token) by staking your ALLO within LinkWell Nodes's state-of-the-art validator infrastructure.
 
-*2024-07-06 update:* The Allora Network is not yet live on mainnet. We will update this page once mainnet staking services become available. 
+*Update:* Our Allora validators are not yet live on mainnet. We will update this page once mainnet staking services become available. 
 
 <!--
 <a href="https://explorer.allora.network/allora-mainnet/staking/allovaloper1e25858u0ntlrql32wf5jhskr5m33l7rcc6u2j4" class="bigBlueButton" target="_blank">Stake Now with LinkWell Nodes</a>

@@ -227,8 +227,9 @@ a.blueButton:active {
   text-decoration: none;
 }
 a.blueButton:hover {
-  color: #006AE8;
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #006AE8;
+  opacity: .88;
   text-decoration: none;
 }
 a.bigBlueButton {

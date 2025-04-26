@@ -10,7 +10,7 @@ The following documentation illustrates how to use our redundant Chainlink oracl
 Please use the links below to build your first Chainlink request.
 
 :::info
-Pricing for mainnet data requests varies by data type and chain. You can find specific pricing info for each request type within the corresponding documentation pages below.
+Pricing for mainnet data requests varies by data type and chain. You can find specific pricing info for each request type within the individual network pages below.
 :::
 
 * ### [Arbitrum Mainnet](/services/direct-request-jobs/mainnets/Arbitrum-One-Mainnet-Jobs)

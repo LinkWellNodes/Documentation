@@ -45,7 +45,7 @@ We offer free smart contract development services for our **mainnet customers**.
 
 ## Learn more
 
-To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/knowledgebase/Direct-Request-Guide).
+To learn more about how Chainlink's direct request model works, visit our [Direct Request Guide](/blog/Chainlink-Direct-Requests-Guide).
 
 
 ## Need more help?

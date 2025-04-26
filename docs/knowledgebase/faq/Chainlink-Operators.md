@@ -81,7 +81,7 @@ For information about which features community node operators can support, pleas
 
 | Feature | Community Node Operators | Official Node Operators |
 |---------|-----------------|----------------|
-| [Direct Requests](/knowledgebase/Direct-Request-Guide) | X | X |
+| [Direct Requests](/blog/Chainlink-Direct-Requests-Guide) | X | X |
 | [Flux Monitor](https://docs.chain.link/chainlink-nodes/oracle-jobs/all-jobs#flux-monitor-jobs) | X | X |
 | [Off-Chain Reporting (OCR)](https://docs.chain.link/architecture-overview/off-chain-reporting) | | X |
 | [Verifiable Random Function (VRF)](https://docs.chain.link/vrf) | | X |
@@ -111,7 +111,7 @@ For the time being, community node operators can choose to provide their data vi
 
 ### How does Functions affect community node operators?
 
-Functions may eventually disrupt the [Direct Request model](/knowledgebase/Direct-Request-Guide) that devs use to get data from community node operators, as the functionality that Functions provides is superior in many ways. However, at this time Functions are only available on a small [subnet of networks](https://docs.chain.link/chainlink-functions/supported-networks). 
+Functions may eventually disrupt the [Direct Request model](/blog/Chainlink-Direct-Requests-Guide) that devs use to get data from community node operators, as the functionality that Functions provides is superior in many ways. However, at this time Functions are only available on a small [subnet of networks](https://docs.chain.link/chainlink-functions/supported-networks). 
 
 Learn more about the benefits and limitations of Chainlink Functions [here](/knowledgebase/faq/Chainlink-Users#should-i-use-chainlink-functions). 
 

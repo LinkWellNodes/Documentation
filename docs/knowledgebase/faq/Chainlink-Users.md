@@ -28,8 +28,9 @@ The following is a list of frequently-asked questions and answers collected from
 
 While **market.link** was previously the go-to directory for public Chainlink oracle and job listings, this website has since been deprecated, and will soon be migrated to Dune Analytics. In the meantime, there is no centralized directory for Chainlink oracles.
 
-:::info
-LinkWell Nodes offers custom Chainlink jobs / data feeds on over **12 testnets** and **14 mainnets**. To get started making your first request, feel free to visit our [Chainlink request documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::tip
+### Looking for a Chainlink oracle, oracle address, or job id?
+View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing), which has everything you need to get started requesting data from our reliable, distributed oracle infrastructure.
 :::
 
 For those interested in reading more about how to find a Chainlink oracle, we recommend reading our [blog post](/blog/How-To-Find-A-Chainlink-Oracle) on it.
@@ -64,7 +65,7 @@ Have a question? Please feel free to join our [Discord](https://discord.com/invi
 
 Direct Requests - also known as Basic Requests, are the technology underpinning Chainlink's [Any API](https://docs.chain.link/any-api/introduction) functionality.
 
-Please see our [Direct Request knowledgebase article](/knowledgebase/Direct-Request-Guide) for more information on how direct requests work, and how to get started initiating a request yourself. 
+Please see our [Direct Request knowledgebase article](/blog/Chainlink-Direct-Requests-Guide) for more information on how direct requests work, and how to get started initiating a request yourself. 
 
 ### My request transaction won't send
 

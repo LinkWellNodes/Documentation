@@ -4,7 +4,7 @@ id: index
 slug: /
 ---
 
-# LinkWell Nodes Documentation
+# Services Overview
 
 <h2 class='lw-subtitle'><lw-emphasis>LinkWell Nodes is a U.S.-based Web3 infrastructure company</lw-emphasis> specializing in Chainlink oracle services and secure blockchain node deployments. We provide APIs for writing any real-world data to your blockchain smart contract.</h2>
 
@@ -12,19 +12,23 @@ slug: /
 
 ## Customizable Chainlink Data Feeds
 
-Our on-demand data feeds allow you to write custom data reliably from anywhere on the internet to your blockchain smart contracts. View pricing info, code examples, and more:
+Our on-demand data feeds allow you to write data securely and reliably to your blockchain smart contracts.
 
-<!--
-<a href="/services/direct-request-jobs/Jobs-and-Pricing" class="blueButton" target="_blank">Chainlink Data Feeds</a>
--->
+### Using our data feeds, you can retrieve:
 
-- ## [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing)
+* Data from anywhere on the internet (prices, RWAs, sports bets, weather, etc.)
+* Random numbers (`uint256`, `uint256[]`, `int256`, and `int256[]` object types)
+* Off-chain computation (please fill out our [request survey](https://linkwellnodes.io/Getting-Started.html))
+
+<a href="/services/direct-request-jobs/Jobs-and-Pricing" class="blueButton">Start Developing</a>
+
+<!-- - ## [Chainlink Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing) -->
 
 ## Development and Support Services
 
 For assistance writing your smart contract, or advice regarding the architecture of your Web3 application, we've got you covered:
 
-- ## [Development and Support Services](/services/Development-Services)
+<a href="/services/Development-Services" class="blueButton">Get Support</a>
 
 ## Frequently Asked Questions (FAQ)
 

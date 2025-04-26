@@ -57,6 +57,9 @@ const config = {
           showReadingTime: true,
           blogTitle: 'Blog',
           blogDescription: 'A blog about anything related to Chainlink, Web3, and oracle smart contract solutions. LinkWell Nodes is a U.S.-based Chainlink oracle specializing in secure, timely delivery of real-world data onto the blockchain.',
+          postsPerPage: 'ALL',
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: require.resolve('./src/css/style.css'),
@@ -98,10 +101,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Documentation',
+            label: 'Services',
           },
           {to: '/pricing', label: 'Pricing', position: 'left'},  
-          {to: '/blog', label: 'Blog', position: 'left'},                  
+          {to: '/blog', label: 'Blog', position: 'left'},             
+          {to: '/knowledgebase/FAQ', label: 'FAQ', position: 'left'},
           {to: '/about', label: 'About Us', position: 'left'},
           // {
         	//   href: 'https://discord.gg/Xs6SjqVPUA',
@@ -343,11 +347,19 @@ const config = {
             },
             {
                 from: '/services/jobs/Direct-Request-Guide',
-                to: '/knowledgebase/Direct-Request-Guide',
+                to: '/blog/Chainlink-Direct-Requests-Guide',
             },
             {
                 from: '/blog/Build-And-Deploy-A-Smart-Contract-On-Base',
                 to: '/blog/Build-And-Deploy-A-Chainlink-Smart-Contract',
+            },
+            {
+                from: '/services/direct-request-jobs/testnets/zkSync-Goerli-Testnet-Jobs',
+                to: '/services/direct-request-jobs/testnets/zkSync-Sepolia-Testnet-Jobs',
+            },
+            {
+              from: '/blog/Chainlink-Direct-Requests-Guide',
+              to: '/blog/Chainlink-Direct-Requests-Guide',
             },
 			{
 			    from: '/services/direct-request-jobs/Pricing',

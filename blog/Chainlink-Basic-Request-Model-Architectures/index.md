@@ -44,7 +44,7 @@ View our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs
 
 This article will provide an in-depth analysis of the components that make up the basic request model. Subsequently, we will delve into the architectures that developers have at their disposal for their Web3 applications.
 
-> For a high-level overview of the basic request model (direct request model), you can also visit our [website's documentation](/knowledgebase/Direct-Request-Guide), our previous article on [building custom Chainlink data feeds using Any API](/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API), or our exploration of [Chainlink Functions Versus Direct Request Jobs](/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions).
+> For a high-level overview of the basic request model (direct request model), you can also visit our [website's documentation](/blog/Chainlink-Direct-Requests-Guide), our previous article on [building custom Chainlink data feeds using Any API](/blog/Requesting-A-Custom-Chainlink-Data-Feed-Using-Any-API), or our exploration of [Chainlink Functions Versus Direct Request Jobs](/blog/Chainlink-Any-API-Direct-Requests-Vs-Functions).
 
 <p align="center">
   <img src="/img/CL_DR_Model_Single_Chainlink_Oracle.webp" alt="Basic Request (Direct Request) Model Workflow Single Chainlink Oracle" title="Basic Request (Direct Request) Model Workflow Single Chainlink Oracle" />

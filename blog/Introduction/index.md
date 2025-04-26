@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Who is LinkWell Nodes?
 date: "2023-09-02"
 authors: [Ken, Derek]
 tags: [Chainlink, Splunk, AWS, oracles, web3]
@@ -11,6 +11,8 @@ LinkWell Nodes is a U.S.-based Chainlink oracle. Our mission is to support Web3 
 ![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x485_Docs-Home.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
 
 <!--truncate-->
+
+## Introduction
 
 It's hard to believe how far Chainlink has come in the span of just five years. From their first white paper in 2017 in which Chainlink proposed a solution to the oracle problem, a problem once thought unsolvable, but refers to the inherent inability of blockchains to access external data, to their recent announcement on their collaboration with SWIFT and 12+ financial institutions, Chainlink has slowly but surely been fulfilling their destiny of becoming a global standard.
 

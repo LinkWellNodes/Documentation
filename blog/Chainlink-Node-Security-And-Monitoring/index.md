@@ -3,7 +3,7 @@
 title: "Chainlink Node Operations: Security and Monitoring Best Practices and Insights"
 description: "An in-depth guide to securing Chainlink node infrastructure against cyber threats and achieving full operational visibility"
 date: "2024-12-19"
-image: ./Chainlink-Architecture-Final.webp
+image: /img/chainlink-node-security-monitoring/Cybersecurity.webp
 keywords: [chainlink oracle, chainlink node operator, splunk, web3, cybersecurity]
 authors: [Ken]
 tags: [chainlink node operator, cybersecurity, splunk]

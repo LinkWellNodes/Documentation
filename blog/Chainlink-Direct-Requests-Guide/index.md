@@ -1,6 +1,10 @@
 ---
-title: Chainlink Direct Requests (Any API)
+title: Chainlink Direct Requests (Any API) Guide
 description: Chainlink's Any API explained, and a comparison to Chainlink Functions. What is a Chainlink oracle, and how does it work? 
+date: "2025-04-26"
+keywords: [chainlink, smart contracts, decentralized oracles, direct requests, anyapi, any api, direct request model, web3, blockchain, node operator]
+authors: [Ken]
+tags: [chainlink, smart contracts, decentralized oracles, web3, blockchain, node operator]
 ---
 
 import TOCInline from '@theme/TOCInline';

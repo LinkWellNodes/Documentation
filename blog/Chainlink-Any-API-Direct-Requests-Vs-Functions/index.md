@@ -58,7 +58,7 @@ Direct Requests are the first iteration of Chainlink's service offerings that al
 
 More specifically, Direct Requests allow for a smart contract developer to make ad-hoc requests to an existing Chainlink node (oracle), which in turn responds by writing the requested value(s) back to the requestor's smart contract. In short, Direct Requests allow smart contracts to request data from the internet in a secure way.
 
-While our [documentation](/knowledgebase/Direct-Request-Guide) elaborates much more extensively on the mechanics of Direct Request jobs, here's a high-level overview:
+While our [documentation](/blog/Chainlink-Direct-Requests-Guide) elaborates much more extensively on the mechanics of Direct Request jobs, here's a high-level overview:
 
 1. A smart contract (i.e., ChainlinkClient) — also known as a 'consumer contract' — makes a request to an on-chain oracle contract, typically owned and operated by a Chainlink node operator.
 2. The relevant Chainlink node receives the request, interacts with the relevant API endpoint via HTTP, and writes the requested data back to the consumer contract.

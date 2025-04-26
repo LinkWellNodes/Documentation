@@ -3,7 +3,7 @@
 title: "Chainlink Node Operators: The Backbone of the Chainlink Network"
 description: "Exploring the Role of Chainlink Node Operators in Powering Decentralized Oracle Networks that Underpin Chainlink's Official Suite of Web3 Services"
 date: "2024-12-15"
-image: "/img/chainlink-node-operator/chainlink-node-operators.jpg"
+image: "/img/chainlink-node-operator/chainlink-node-operator.webp"
 keywords: [chainlink oracle, chainlink node operator, smart contracts, web3, blockchain]
 authors: [Ken]
 tags: [chainlink node operator]
@@ -39,6 +39,12 @@ Due to the inherent security properties of blockchains, smart contracts (on-chai
 This limitation, known as the [oracle problem](https://chain.link/education-hub/oracle-problem), requires the use of oracles as middleware to facilitate the secure, bidirectional transfer of data between on-chain and off-chain environments. Chainlink node operators form the backbone of the Chainlink Network, powering decentralized oracle networks that enable secure and reliable access to external data. They manage the critical infrastructure that ensures smart contracts across blockchains can seamlessly interact with real-world data, enabling them to function effectively.
 
 In this article, our goal is to provide a detailed view of Chainlink node operators, who they are, what they do, and more.
+
+:::tip
+### Looking for a Chainlink oracle? 
+
+LinkWell Nodes offers professional Chainlink oracle services on all major EVM-based mainnet and testnet blockchains. To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+:::
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/jD9903qyt6w" frameborder="0" allowfullscreen></iframe></center>
 

@@ -2,7 +2,7 @@
 title: "Chainlink Price Feeds: Building a Custom Flux Monitor DON"
 description: "How to build and integrate a custom Chainlink oracle price feed using FluxAggregator for aggregating real-world data on-chain for your Web3 application."
 date: "2024-03-16"
-image: https://docs.linkwellnodes.io/img/flux-agg-article/Flux_Aggregator_Architecture_Diagram.png
+image: /img/flux-agg-article/Flux_Aggregator_Architecture_Diagram.png
 keywords: [chainlink oracle, smart contracts, price feed, web3, blockchain, decentralized]
 authors: [Ken]
 tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, decentralized]
@@ -49,7 +49,7 @@ In this article we will:
 :::tip
 ### Looking for a Chainlink oracle? 
 
-LinkWell Nodes offers Chainlink oracle services on all major EVM-based mainnet and testnet blockchains. To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing).
+LinkWell Nodes offers professional Chainlink oracle services on all major EVM-based mainnet and testnet blockchains. To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing).
 :::
 
 *Related video*: Chainlink Price Feeds
@@ -180,7 +180,7 @@ The bulk of the integration effort takes place on the Chainlink oracle's end, bu
 
 ## Price Feeds vs. Direct Requests (Any API)
 
-While this article focuses primarily on price feeds, it may be helpful to offer a comparison with a different type of Chainlink request: [direct requests](/knowledgebase/Direct-Request-Guide) (also known as 'Any API').
+While this article focuses primarily on price feeds, it may be helpful to offer a comparison with a different type of Chainlink request: [direct requests](/blog/Chainlink-Direct-Requests-Guide) (also known as 'Any API').
 
 **Price Feeds (i.e., Flux Aggregator)**:
 
@@ -256,7 +256,7 @@ For the successful tokenization of assets, the availability of accurate, onchain
 
 Chainlink price feeds provide a way of ensuring your on-chain data is always fresh, by automatically updating your smart contract whenever a certain threshold criteria is met. They also provide a mechanism for further decentralizing your data feed, by allowing your data to be aggregated from multiple Chainlink oracles at a time.
 
-In comparison to the [Direct Request](/knowledgebase/Direct-Request-Guide) (Any API) model, Chainlink price feeds are more expensive, as they are typically updated more frequently on-chain, and involve greater work and coordination to set up, although this may be worth it for some security-intensive and enterprise-grade applications.
+In comparison to the [Direct Request](/blog/Chainlink-Direct-Requests-Guide) (Any API) model, Chainlink price feeds are more expensive, as they are typically updated more frequently on-chain, and involve greater work and coordination to set up, although this may be worth it for some security-intensive and enterprise-grade applications.
 
 The rigorous emphasis on blockchain data integrity and security has elevated Chainlink price feeds to the forefront as the most widely-adopted oracle solution within the DeFi sector. Moreover, Chainlink price feeds are tailored to expand in tandem with DeFi's evolution, supporting its ascent to become the underlying technology for major global financial markets, encompassing billions to trillions of dollars in value.
 

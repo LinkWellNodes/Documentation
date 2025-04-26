@@ -10,10 +10,10 @@ Our goal is to provide **transparency** and **simplicity** around the way our pr
 
 For our Chainlink oracle integrations ([data feeds](/services/direct-request-jobs/Jobs-and-Pricing)), please see our pricing chart below:
 
-| Chain                 | Base Fee                                            | Gas Fee                        |
-|-----------------------|-----------------------------------------------------|--------------------------------|
-| EVM Compatible        | <strike>$1,500</strike> **$1,000** / month                                      | Variable (see below)           |
-| Non-EVM Compatible    | [Contact Us](https://linkwellnodes.io/#contact-us)  | Variable (see below)           |
+| Chain                 | Base Fee                                            | Gas Fee                        | Sign Up                        |
+|-----------------------|-----------------------------------------------------|--------------------------------|--------------------------------|
+| EVM Compatible        | <strike>$1,500</strike> **$995** / month            | Variable (see below)           | [Get Started](https://linkwellnodes.io/Getting-Started.html)
+| Non-EVM Compatible    | [Contact Us](https://linkwellnodes.io/#contact-us)  | Variable (see below)           | [Get Started](https://linkwellnodes.io/Getting-Started.html)
 
 ### Fee descriptions
 
@@ -29,8 +29,8 @@ We accept payment in your preferred currency (ie, **ETH**, **USDC**, **fiat**, e
 
 Your team decides to deploy their smart contract on Polygon (an EVM-compatible chain):
 
-- **First month**: Your team pays the $1,000 base fee for the first month, and decides to contribute $500 initially towards your gas fees. Your smart contract makes 10,000 requests during the first month, costing an average of $0.01 in gas per request. Your total effective cost for the first month is thus **$1,100** `($1,000 + (10,000 * $0.01))`. This brings your gas fee balance down to **$400** `($500 - $100)`. 
-- **Second month**: During the second month, your user volume increases, and you make 25,000 requests, still costing an average of $0.01 in gas per request. Your total effective cost for the second month is thus **$1,250** `($1,000 + (25,000 * $0.01))`. This brings your gas balance down to **$150** `($400 - $250)`. At this point, we'd recommend that you make another contribution toward your gas fee balance, so that your feed doesn't go down unexpectedly in the third month, impacting your users.
+- **First month**: Your team pays the $995 base fee for the first month, and decides to contribute $500 initially towards your gas fees. Your smart contract makes 10,000 requests during the first month, costing an average of $0.01 in gas per request. Your total effective cost for the first month is thus **$1,095** `($995 + (10,000 * $0.01))`. This brings your gas fee balance down to **$400** `($500 - $100)`. 
+- **Second month**: During the second month, your user volume increases, and you make 25,000 requests, still costing an average of $0.01 in gas per request. Your total effective cost for the second month is thus **$1,245** `($995 + (25,000 * $0.01))`. This brings your gas balance down to **$150** `($400 - $250)`. At this point, we'd recommend that you make another contribution toward your gas fee balance, so that your feed doesn't go down unexpectedly in the third month, impacting your users.
 
 ---
 

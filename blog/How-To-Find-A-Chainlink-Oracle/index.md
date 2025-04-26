@@ -2,7 +2,7 @@
 title: "Finding a Chainlink Oracle: A Guide for Web3 Developers"
 description: "Where to find a Chainlink oracle, oracle address, job ID, or node operator for incorporating real-world data into your Web3 application."
 date: "2024-04-22"
-image: /img/node-opp-oracle-article/
+image: /img/link-electric.webp
 keywords: [chainlink oracle, smart contracts, price feed, web3, blockchain, node operator]
 authors: [Ken, Derek]
 tags: [chainlink oracle, smart contracts,  price feed, web3, blockchain, node operator]
@@ -87,7 +87,7 @@ While there is no centralized directory of Chainlink node operators, there are s
 
 1. **Node Operator Websites:** Visiting the websites of various Chainlink oracles can offer a comprehensive view of their services offerings and expertise. A quick Google search for "Chainlink oracle job ids" may yield several results.
 
-	> _LinkWell Nodes offers Chainlink oracle services on all major EVM mainnet and testnet blockchains._
+	> _LinkWell Nodes offers professional Chainlink oracle services on all major EVM mainnet and testnet blockchains._
 	>
 	> _To view a directory of our oracle addresses and job IDs, please feel free to view our [Chainlink data feeds documentation](/services/direct-request-jobs/Jobs-and-Pricing)._
 
