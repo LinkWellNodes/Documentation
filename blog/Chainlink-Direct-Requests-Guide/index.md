@@ -13,6 +13,8 @@ import TOCInline from '@theme/TOCInline';
 
 ![Chainlink Direct Requests (Any API)](/img/chainlink-blue-header_1400x802.webp "Chainlink Direct Requests (Any API)")
 
+<!--truncate-->
+
 ---
 
 **On this page**:

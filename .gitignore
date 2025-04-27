@@ -20,6 +20,7 @@ Thumbs.db
 *.ignore
 /launches/
 /output/
+/build/
 *.snag
 *.tar
 *.7z

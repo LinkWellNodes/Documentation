@@ -42,7 +42,7 @@ h2:after
     height: 1px;
 }
 /* Blog feed titles */
-h2 > a[itemprop="url"] {
+main > article > header > h2 > a {
 	line-height:64px;
 }
 .alert > div > h3 {
@@ -64,14 +64,6 @@ article[itemprop="blogPost"] > footer > div > a {
 article[itemprop="blogPost"] > footer > div > a::after {
 	content: " \2794" !important;
 	font-weight: 400;
-}
-/* Blog left-hand sidebar */
-aside > nav > ul > li {
-	margin-top:14px !important;
-	line-height: 30px;
-}
-aside > nav > ul > li:hover {
-	text-decoration: underline;
 }
 
 /* MOBILE STYLES */
