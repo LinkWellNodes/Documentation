@@ -5,7 +5,7 @@ description: "A guide to using LinkWell Nodes' Verifiable Random Numbers (VRN) s
 
 import TOCInline from '@theme/TOCInline';
 
-<h2 class='lw-subtitle'>LinkWell Nodes can deliver <lw-emphasis>Verifiable Random Numbers (VRNs)</lw-emphasis> to your smart contract using our cryptographically secure and verifiable random number generation (RNG) service.</h2>
+<h2 class='lw-subtitle'>LinkWell Nodes can deliver <lw-emphasis>Verifiable Random Numbers (VRNs)</lw-emphasis> to the smart contract of your choice using our cryptographically secure and provably random number generation (RNG) service.</h2>
 
 ![Custom Chainlink data feeds by LinkWell Nodes](/img/rng-dice.webp "Verifiable Random Numbers (VRN / VRF / RNG) by LinkWell Nodes")
 
@@ -23,7 +23,7 @@ import TOCInline from '@theme/TOCInline';
 
 ## Overview
 
-LinkWell Nodes's **Verifiable Random Numbers (VRN)** service is a cryptographically-secure random number generator (RNG) that sends random numbers to your on-chain smart contract. 
+LinkWell Nodes' **Verifiable Random Numbers (VRN)** service is a cryptographically secure random number generator (RNG) that sends random numbers to your on-chain smart contract. 
 
 Unlike traditional random number generators, VRN allows you to independently verify that the numbers provided were generated fairly, using a pre-committed secret seed.
 
@@ -41,17 +41,17 @@ No. VRN is a different service that provides a similar level of security and ver
 
 ## Features
 
-- **Cryptographically Secure**: Seeds are generated randomly using a secure cryptographic hashing algorithm
-- **Verifiable**: All random numbers can be independently verified using the seed
-- **Tamper-Proof**: Seeds are revealed only after a delay, preventing manipulation
-- **Custom Ranges**: Specify your desired min and max random number value, saving costly gas otherwise required to normalize the result upon receiving it
-- **Multiple Values**: Request just one random number, or multiple random numbers at once, saving time and gas otherwise required to make multiple requests
-- **Gas Efficient**: Computation happens off-chain, minimizing gas costs
+- **Cryptographically Secure**: Seeds are generated randomly using a secure cryptographic hashing algorithm.
+- **Verifiable**: All random numbers can be independently verified using the seed.
+- **Tamper-Proof**: Seeds are revealed only after a delay, preventing manipulation.
+- **Custom Ranges**: Specify your desired min and max random number value, saving costly gas otherwise required to normalize the result upon receiving it.
+- **Multiple Values**: Request just one random number, or multiple random numbers at once, saving time and gas otherwise required to make multiple requests.
+- **Gas Efficient**: Computation happens off-chain, minimizing gas costs.
 
 ## Key concepts
 
-1. **Seed Generation**
-   - Our infrastructure generates a new cryptographically-secure random seed every **6 hours** (also known as an '**epoch**')
+1. **Seed Generation**:
+   - Our infrastructure generates a new cryptographically secure random seed every **6 hours** (also known as an '**epoch**')
    - Each seed is hashed and stored securely on our SOC-2 compliant infrastructure
    - Seeds only become publicly available once their respective epoch has ended, to prevent manipulation
 
@@ -65,7 +65,7 @@ No. VRN is a different service that provides a similar level of security and ver
    
 ## LinkWell Nodes VRN vs. Chainlink Labs VRF
 
-**LinkWell Nodes' VRN** (Verifiable Random Numbers) service is a comparable alternative to **Chainlink Labs' VRF** (Verifiable Random Function) service. Below is a feature comparison table to help you decide which option is right for your business.
+**LinkWell Nodes' VRN** (Verifiable Random Numbers) service is a comparable alternative to **Chainlink Labs' VRF** (Verifiable Random Function) service. The following feature comparison table will help you decide which option is right for your business:
 
 ### Full feature comparison table
 
@@ -120,7 +120,7 @@ The oracle will respond by calling your contract's `fulfill()` function with:
 You have two options for verifying your random number(s):
 
 :::tip
-You must wait for respective seed's epoch to end (every 6 hours) before you can verify your random number(s). Epochs end at the following times each day:
+You must wait for the respective seed's epoch to end (every 6 hours) before you can verify your random number(s). Epochs end at the following times each day:
 <br/>
 <ul>
 <li><b>00:00:00 UTC</b></li>

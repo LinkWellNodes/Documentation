@@ -37,7 +37,7 @@ For those interested in reading more about how to find a Chainlink oracle, we re
  
 ### What chains does Chainlink support?
 
-The blockchain networks that Chainlink supports can be determined by viewing Chainlink's [LINK token contracts](https://docs.chain.link/resources/link-token-contracts). Please note that this list is subject to change over time as Chainlink adds or removes support for a given chain.
+The blockchain networks that Chainlink supports can be determined by viewing Chainlink's [LINK token contracts](https://docs.chain.link/resources/link-token-contracts). This list may change over time as Chainlink adds or removes support for networks.
 
 ### Should I run my own Chainlink node?
 
@@ -69,9 +69,9 @@ Please see our [Direct Request knowledgebase article](/blog/Chainlink-Direct-Req
 
 ### My request transaction won't send
 
-Please ensure that you have enough gas token present in the wallet that is initiating the request. For mainnet requests, please additionally ensure that you have the appropriate amount of LINK tokens present within your consumer contract before making the request. 
+Please ensure that you have enough gas token in the wallet initiating the request. For mainnet requests, also ensure that you have the appropriate amount of LINK tokens in your consumer contract before making the request.
 
-If you are using one of our jobs, see the `setFeeInHundredthsOfLink()` function call present within the constructor of your consumer contract for the minimum amount of LINK token that needs to be present within your consumer contract in order to initiate a `request()` call.
+If you are using one of our jobs, check the `setFeeInHundredthsOfLink()` function call in your consumer contract's constructor for the minimum required LINK token balance.
  
 ### I'm not getting a response back to my consumer contract
 
@@ -172,7 +172,7 @@ At LinkWell Nodes, we are certainly happy to help you set up a job that aggregat
 
 Any time you make a request for data to a singular node, that node could possibly manipulate the data (ie, if they were a malicious actor). However, it's likely that any kind of profitable data manipulation by a singular node operator would quickly be identified, and the reputation of the node operator destroyed. 
 
-At LinkWell Nodes, our reputation - and our customers' happiness - is the key to our business model, and to our continued success. Leveraging our team's vast experience in the financial services, government, and Web3 industries, we ensure that our infrastructure is **SOC-2 compliant**, and meets or exceeds the same security standards used by your bank. In addition, we monitor all aspects of our infrastructure using world-class, enterprise-grade monitoring tools. 
+At LinkWell Nodes, our reputation - and our customers' satisfaction - is key to our business model and continued success. Leveraging our team's extensive experience in financial services, government, and Web3 industries, we ensure that our infrastructure is **SOC-2 compliant** and meets or exceeds the security standards used by banks. Additionally, we monitor all aspects of our infrastructure using world-class, enterprise-grade monitoring tools.
 
 Please reference our [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement) for more information about our uptime and security guarantees.
 

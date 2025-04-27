@@ -161,7 +161,7 @@ const config = {
             title: 'Documentation',
             items: [
               {
-                label: 'Our Data Feeds',
+                label: 'Oracle Data Feeds',
                 to: '/services/direct-request-jobs/Jobs-and-Pricing',
               },
               {
@@ -198,10 +198,6 @@ const config = {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/company/linkwell-nodes',
               },              
-              {
-                label: 'GitHub',
-                href: 'https://github.com/LinkWellNodes/Documentation',
-              },
             ],
           },
         ],

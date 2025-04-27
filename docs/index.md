@@ -28,7 +28,7 @@ Our on-demand data feeds allow you to write data securely and reliably to your b
 
 For assistance writing your smart contract, or advice regarding the architecture of your Web3 application, we've got you covered:
 
-<a href="/services/Development-Services" class="blueButton">Get Support</a>
+<a href="/services/Development-Services" class="blueButton">View our Offerings</a>
 
 ## Frequently Asked Questions (FAQ)
 
@@ -39,7 +39,7 @@ Browse answers to common questions we've seen throughout our experience supporti
 
 ## Blog
 
-Check out our blog, where where we cover topics ranging from Chainlink service offerings to designing, monitoring, and maintaining your own Chainlink node infrastructure!
+Check out our blog, where we cover topics ranging from Chainlink service offerings to designing, monitoring, and maintaining your own Chainlink node infrastructure!
 
 - ## [Blog](/blog) 
 

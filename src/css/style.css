@@ -400,43 +400,79 @@ div[class^='codeBlockTitle'] {
 /* SIDEBAR */
 /* Sidebar box */
 nav[aria-label="Docs sidebar"] {
-	padding: 8px 0 60px 8px;
-	background-color: #EEF9FD;
+  padding: 12px 8px 40px 12px;
+  background-color: #F5FAFD;
+  border-right: 1px solid #E5E7EB;
 }
+
 nav[aria-label="Docs sidebar"] a {
-	margin-top: 2px;
+  margin: 2px 0;
+  border-radius: 4px;
 }
-.sidebarGroupRuler {
-	background-color: var(--table-bg-color-dark);
-	margin-top: 14px;
-	margin-bottom: 0px;
-}
-/* Sidebar items default */
-.menu__link {
-	font-family: 'Open Sans',sans-serif;
-	color: #4D4D4D;
-	font-weight: 400;
-	font-size: 15px;
-}
+
 /* Sidebar category title */
 .sidebarGroupTitle {
-	margin-top: 16px;
-	font-family: 'Open Sans',sans-serif;
-	color: #000;
-	font-size: 12px;
-	font-weight: 600;
-	text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  padding-left: 0;
+  font-family: 'Open Sans',sans-serif;
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
-/* Sidebar item parent nodes */
+
+/* Sidebar items default */
+.menu__link {
+  font-family: 'Open Sans',sans-serif;
+  color: #4D4D4D;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 6px 12px;
+  line-height: 1.4;
+}
+
+.menu__link:hover,
+.menu__link--active,
+.menu__list-item > .menu__link--active,
+.menu__list-item-collapsible--active {
+  background-color: #E8F4FC;
+}
+
+/* Active states */
+.menu__link--active,
 .menu__list-item-collapsible--active > a {
-	color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
 }
-/* Sidebar items leaf nodes */
-.menu__list-item-collapsible--active > a {
-	color: var(--ifm-color-primary);
+
+/* Parent dropdown items */
+.menu__list-item-collapsible:hover {
+  background-color: #E8F4FC;
 }
-.menu__list-item > a.menu__link--active {
-	color: var(--ifm-color-primary);
+
+/* Sidebar group divider */
+.sidebarGroupRuler {
+  background-color: #E5E7EB;
+  margin: 12px 0px;
+  height: 1px;
+}
+
+/* Nested menu items */
+.menu__list-item .menu__list {
+  padding-left: 8px;
+  margin: 2px 0;
+}
+
+.menu__list-item .menu__list .menu__link {
+  border-left: 1px solid #E5E7EB;
+  border-radius: 0 4px 4px 0;
+  margin-left: 4px;
+}
+
+.menu__list-item .menu__list .menu__link--active {
+  border-left: 2px solid var(--ifm-color-primary);
+  background-color: #E8F4FC;
 }
 
 /** TABS / TABLES */
@@ -532,4 +568,9 @@ thead > tr {
   --ifm-color-primary-lighter: #a3d8fe;
   --ifm-color-primary-lightest: #d8eefe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Top-level navigation menu improvements */
+.navbar__item {
+  padding: 0 1rem;
 }

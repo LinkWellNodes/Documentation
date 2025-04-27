@@ -31,7 +31,7 @@ Looking for a team of Web3 experts to advise you on your **Chainlink**, **infras
 
 Our team has over **30 years** of combined professional experience in the cybersecurity, enterprise software, financial services, and Web3 industries, and are confident we can assist you with your Web3 needs.
 
-Our specialities include:
+Our specialties include:
 
 - AWS infrastructure design
 - Monitoring infrastructure (AWS CloudWatch and Splunk)
@@ -48,15 +48,15 @@ Need help connecting to our Chainlink oracle services? LinkWell Nodes is happy t
 
 For our customers looking to make paid requests to our oracle infrastructure on mainnet blockchain(s):
 
-* We provide **free** basic assistance with your implementation.
-* For enterprise-grade support, please check out our [premium support](#premium-support) options. 
+* We provide **free** basic assistance with your implementation
+* For enterprise-grade support, please check out our [premium support](#premium-support) options
 
-### Testnet-only customers
+### Testnet customers
 
 For our customers looking to use our oracle infrastructure on testnet blockchain(s) only:
 
-* For personalized support, please check out our [premium support](#premium-support) options. 
-* We provide answers to many basic questions within our [Chainlink FAQ](/knowledgebase/FAQ).
+* For personalized support, please check out our [premium support](#premium-support) options
+* We provide answers to many basic questions within our [Chainlink FAQ](/knowledgebase/FAQ)
 
 ### Premium Support
 
@@ -78,7 +78,7 @@ For customers looking for an enterprise-grade support experience:
 For customers seeking one-off answers to their implementation questions:
 
 * We offer one-off [support calls](#advisory-calls) at our standard advisory rate of **100 USD** per half-hour session.
-* We also offer chat-based support through our [Discord server](https://discord.gg/Xs6SjqVPUA), at a rate of **150 USD** per 24-hour period (payment in cryptocurrency preferred), centered around our working hours (EST timezone is typical for us). We will set up a private dedicated Discord channel with you to discuss all of your support needs. If your questions are outside our area of expertise, you'll get your money back.
+* We also offer chat-based support through our [Discord server](https://discord.gg/Xs6SjqVPUA), at a rate of **150 USD** per 24-hour period (payment in cryptocurrency preferred), centered around our working hours (EST timezone). We will set up a private dedicated Discord channel with you to discuss all of your support needs. If your questions are outside our area of expertise, you'll get your money back.
 
 :::info
 **Ready to get started?** 
@@ -97,7 +97,7 @@ For our customers looking to make paid requests to our oracle infrastructure on 
 * We offer **free** basic smart contract development services for integrating your Web3 application with our Chainlink oracle infrastructure.
 * For more advanced customization, a development fee of **150 USD / hour** applies (minimum 1 hour, payment in cryptocurrency preferred).
 
-### Testnet-only customers
+### Testnet customers
 
 For our customers looking to use our oracle infrastructure on testnet blockchain(s) only:
 
@@ -126,7 +126,7 @@ For our customers looking to make paid requests to our oracle infrastructure on 
 * We'll develop your basic external adapter for **free** within 1-2 business days. 
 * For more advanced customization, a development fee of **150 USD / hour** applies (minimum 1 hour, payment in cryptocurrency preferred).
 
-#### Testnet-only customers
+#### Testnet customers
 
 For our customers looking to use our oracle infrastructure on testnet blockchain(s) only:
 

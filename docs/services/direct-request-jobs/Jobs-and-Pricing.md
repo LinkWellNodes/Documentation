@@ -28,12 +28,12 @@ We can update any of your contract's data at a set frequency, and/or deviation-b
 
 ### Enterprise-grade oracle infrastructure
 
-All of our Chainlink oracles are backed by a redundant, SOC 2-compliant infrastructure, which is distributed across multiple physically-distinct datacenters. Simply trigger your smart contract's `request()` function, and our oracle infrastructure will ensure that your data is delivered safely, securely, and on-time. 
+Our Chainlink oracle cloud is backed by a redundant, SOC 2-compliant infrastructure, which is distributed across multiple physically-distinct datacenters. Simply trigger your smart contract's `request()` function, and our oracle infrastructure will ensure that your data is delivered safely, securely, and reliably - every time. 
 
 Read more about our data feeds guarantees in our [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement).
 
 :::tip
-We offer free smart contract development services for our **mainnet customers**. If interested, please reach out to us via our [request form](https://linkwellnodes.io/Getting-Started.html), or [book a meeting](https://calendly.com/linkwell-nodes) with us to get started. 
+We offer free bespoke smart contract development services for our **mainnet customers**. If interested, please reach out to us via our [request form](https://linkwellnodes.io/Getting-Started.html), or [book a meeting](https://calendly.com/linkwell-nodes) with us to get started. 
 :::
 
 ## Related topics
