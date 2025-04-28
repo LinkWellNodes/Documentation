@@ -351,6 +351,10 @@ const config = {
               from: '/blog/Chainlink-Direct-Requests-Guide',
               to: '/blog/Chainlink-Direct-Requests-Guide',
             },
+            {
+              from: '/img/node-opp-oracle-article/',
+              to: '/services/direct-request-jobs/Jobs-and-Pricing',
+            },
 			{
 			    from: '/services/direct-request-jobs/Pricing',
 			    to: '/pricing',
