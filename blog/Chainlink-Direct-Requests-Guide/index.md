@@ -108,12 +108,21 @@ For **mainnet** chains, please wait several hours after filling out our [Getting
 1. As soon as the `fulfill()` function is called within your consumer contract, a `RequestFulfilled` event will be emitted. If desired, you can monitor for this event using an RPC connection and Web3 library (ie, web3.js), in order to trigger a response within your Web3 application.
 1. Your data should now be available within your consumer contract for consumption by your Web3 application!
 
-:::info
+:::info 
+### How soon will my data be delivered?
 The end-to-end workflow from triggering your `request()` function to receiving your oracle response within the `fulfill()` function should take **~3-5** blocks. This typically occurs in less than a minute of waiting time, but depends highly on your chosen network's block time and congestion, as well as your chosen oracle team's security configuration.
 <br/>
-At LinkWell Nodes, we are able to offer a faster oracle response time (2 blocks minimum) on mainnets for a small increase in fee. Please reach out to us via our <a href='https://linkwellnodes.io/Getting-Started.html' target='_blank'>Getting Started</a> form, and include the specific details of your requirements.
+At LinkWell Nodes, we are able to offer a faster oracle response time (2 blocks minimum) on mainnets for a small increase in fee. Please reach out to us via our <a href='https://linkwellnodes.io/Getting-Started.html' target='_blank'>data feed request form</a>, and include the specific details of your requirements.
 ::: 
 
 ## Need more help?
 
 Join our [Discord](https://discord.com/invite/Xs6SjqVPUA) server for immediate assistance!
+
+> _LinkWell Nodes is a U.S.-based Chainlink community oracle, providing custom data feed capabilities and self-service oracle solutions across virtually all major mainnet and testnet blockchains supported by Chainlink._
+>
+> _Looking for a custom data feed? Head on over to our [documentation](/), or hop into the [LinkWell Nodes Discord server](https://discord.com/invite/Xs6SjqVPUA) and ask for help!_
+>
+> _Disclaimer: all views and opinions expressed in this article are strictly our own._
+
+![LinkWell Nodes - U.S.-based Chainlink node operator](/img/lw-banner_1080x606.webp "LinkWell Nodes - U.S.-based Chainlink node operator")
