@@ -93,7 +93,7 @@ No. VRN is a different service that provides a similar level of security and ver
 
 Deploy your own VRN consumer contract to start requesting verifiable random numbers:
 
-1. Visit our [Data Feeds](/services/direct-request-jobs/Jobs-and-Pricing) page and navigate to your desired **blockchain network**. 
+1. Visit our [mainnet](/services/direct-request-jobs/mainnets) or [testnet](/services/direct-request-jobs/testnets) job documentation pages and navigate to your desired **blockchain network**. 
 2. Under "Select the data type that you need", select the **data type** (ie, `uint256[]`).
 3. Click "Verifiable random numbers (VRN / RNG)", and scroll down to find the appropriate VRN consumer contract.
 

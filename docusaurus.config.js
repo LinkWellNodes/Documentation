@@ -129,12 +129,6 @@ const config = {
             className: 'header-x-link',
             'aria-label': 'Twitter',
           },                            
-          {
-            href: 'https://github.com/LinkWellNodes/Documentation',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
-          },          
         ],
       },
       footer: {

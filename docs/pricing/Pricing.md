@@ -6,80 +6,98 @@ import TOCInline from '@theme/TOCInline';
 
 # Data Feed Pricing
 
-Our goal is to provide **transparency** and **simplicity** around the way our pricing works.
+## Quick Summary
+- Base fee: <strike>$1,250</strike> **$495** / month
+- Gas fee: Variable (minimum $250 upfront, refundable)
+- Payment accepted in most major currencies: `ETH`, `USDC`, `USDT`, `POL`, `BNB`, `LINK`, `BTC`, or fiat
+- Discounts available: 5% for 6-month prepay, 10% for 12-month prepay
 
-For our Chainlink oracle integrations ([data feeds](/services/direct-request-jobs/Jobs-and-Pricing)), please see our pricing chart below:
+## Pricing Table
 
 | Chain                 | Base Fee                                            | Gas Fee                        | Sign Up                        |
 |-----------------------|-----------------------------------------------------|--------------------------------|--------------------------------|
-| EVM Compatible        | <strike>$1,500</strike> **$995** / month            | Variable (see below)           | [Get Started](https://linkwellnodes.io/Getting-Started.html)
+| EVM Compatible        | <strike>$1,250</strike> **$495** / month            | Variable (see below)           | [Get Started](https://linkwellnodes.io/Getting-Started.html)
 | Non-EVM Compatible    | [Contact Us](https://linkwellnodes.io/#contact-us)  | Variable (see below)           | [Get Started](https://linkwellnodes.io/Getting-Started.html)
 
-### Fee descriptions
+## Understanding Your Costs
 
-- **Base Fee**: The base price of our services (includes deployment, monitoring, maintenance, and support). Please see our [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement) for more details about the quality of our service. We provide discounts of **5%** and **10%** to the Base Fee those paying 6 or 12 months in advance (non-refundable).
-- **Gas Fee**: The cost of gas required to write all of your oracle updates on-chain (ie, the `fulfill()` function) in a given month. This cost varies by chain, smart contract design, and gas token price. This fee is paid up-front (**minimum $250**), is refundable, and establishes a balance from which each of your requests will be deducted. If your balance reaches zero, your data feed will stop functioning. We will make every attempt to notify you before this happens, and will provide you with a private URL where you may check your remaining balance at any time.
-- Your total monthly payment will be the **Base Fee** + your **Gas Fee**. 
+### 1. Base Fee ($495/month)
+- Includes deployment, monitoring, maintenance, and support
+- See our [Service-Level Agreement (SLA)](/services/direct-request-jobs/Service-Level-Agreement) for service details
+- Prepayment discounts available:
+
+  - 6 months: 5% off (non-refundable)
+  - 12 months: 10% off (non-refundable)
+
+### 2. Gas Fee (Variable)
+- Minimum upfront payment: $250 (refundable)
+- Covers on-chain transaction costs for data updates
+- Pay-as-you-go model: deducted from your balance
+- Monitor your balance via private URL
+- Service pauses if balance reaches zero (with advance notification)
 
 :::info
-We accept payment in your preferred currency (ie, **ETH**, **USDC**, **fiat**, etc.). 
+### Understanding our fees
+Operating a secure, reliable oracle infrastructure is extremely cost-prohibitive; oracle operators such as ourselves are able to reduce this cost by recycling the same infrastructure for many customers.
+<br/>
+You can read more about the [costs of being a node operator](/knowledgebase/faq/Chainlink-Operators#how-much-does-it-cost-to-run-a-chainlink-node) in our FAQ.
 :::
 
-### Real-world pricing example
+## Cost Example: Polygon Network Deployment
 
-Your team decides to deploy their smart contract on Polygon (an EVM-compatible chain):
+### First Month
+- Base fee: $495
+- Initial gas deposit: $500
+- Usage: 10,000 requests @ $0.01/request
+- Gas spent: $100 (10,000 × $0.01)
+- Total cost: **$595** ($495 + $100)
+- Remaining gas balance: $400
 
-- **First month**: Your team pays the $995 base fee for the first month, and decides to contribute $500 initially towards your gas fees. Your smart contract makes 10,000 requests during the first month, costing an average of $0.01 in gas per request. Your total effective cost for the first month is thus **$1,095** `($995 + (10,000 * $0.01))`. This brings your gas fee balance down to **$400** `($500 - $100)`. 
-- **Second month**: During the second month, your user volume increases, and you make 25,000 requests, still costing an average of $0.01 in gas per request. Your total effective cost for the second month is thus **$1,245** `($995 + (25,000 * $0.01))`. This brings your gas balance down to **$150** `($400 - $250)`. At this point, we'd recommend that you make another contribution toward your gas fee balance, so that your feed doesn't go down unexpectedly in the third month, impacting your users.
+### Second Month
+- Base fee: $495
+- Usage: 25,000 requests @ $0.01/request
+- Gas spent: $250 (25,000 × $0.01)
+- Total cost: **$745** ($495 + $250)
+- Remaining gas balance: $150
 
----
+## What Affects Gas Costs?
 
-**On this page**:
+### 1. Network Choice
+Example comparison for writing a `uint256`:
 
-<TOCInline
-  toc={toc.filter((node) => node.level >= 2)}
-  minHeadingLevel={2}
-  maxHeadingLevel={2}
-/>
+- **Polygon**: 
 
----
+  - Gas consumed: 63,000
+  - Token price: $1
+  - Gas price: 150 Gwei
+  - *Gas cost estimate*: ~**$0.01** per request
 
-## What factors influence our pricing?
+- **Ethereum**:
 
-At LinkWell nodes, we pride ourselves in keeping our fees as low as possible for our clients, while also ensuring a redundant, reliable, and highly-secure oracle infrastructure.
+  - Gas consumed: 63,000
+  - Token price: $2,000
+  - Gas price: 30 Gwei
+  - *Gas cost estimate*: ~**$3.80** per request
 
-Our pricing is based on the following factors:
+### 2. Data Type Costs
+- Simple types (`uint256`): ~60,000 gas units
+- Complex types (`bytes[]`): 500,000+ gas units
+- Larger data = higher gas costs
 
-1. [Infrastructure costs](#1-infrastructure-costs)
-1. [Gas costs on the specified network](#2-gas-costs-on-the-specified-network)
-1. [The data type and quantity returned](#3-the-data-type-and-quantity-returned)
-1. [Your request volume](#4-your-request-volume)
+### 3. Request Volume
+- Higher request volume = higher total gas costs
+- Consider batching requests when possible
 
-### 1. Infrastructure and maintenance costs
+## Ready to Get Started?
+Ready to integrate our Chainlink oracle services? 
 
-In maintaining a triple+ redundant, highly-secure, zero-downtime environment for our customers, we incur heavy infrastructure and personnel costs. The base fee goes toward offsetting these costs.
+Fill out our [request form](https://linkwellnodes.io/Getting-Started.html) to get started. We'll review your requirements and get back to you within 24 hours!
 
-### 2. Gas costs on the specified network
+## Need Help?
 
-Writing your requested data on-chain requires a [fulfillment transaction](https://docs.chain.link/architecture-overview/architecture-request-model?parent=anyApi#fulfillment), which requires us (the oracle) to spend gas. Depending on the network you have chosen for your data, these gas costs can vary significantly. To minimize your costs and ensure a more consistent pricing model, **we recommend against using the Ethereum mainnet** network for your requests.
+We're flexible and can accommodate your custom requirements and budget restraints. Please contact us through one of the following means:
 
-Gas pricing example:
-
-* **Polygon network**: A node operator writes a `uint256` object to a consumer contract deployed on MATIC mainnet, which costs **63,000 gas units** to fulfill. Assuming a MATIC token price of **1 USD**, and a network gas price of **150 Gwei**, this will cost the node operator **0.01 USD** in gas fees.
-* **Ethereum network**: A node operator writes a `uint256` object to a consumer contract deployed on Ethereum mainnet, which costs **63,000 gas units** to fulfill. Assuming an ETH token price of **2,000 USD**, and a network gas price of **30 Gwei**, this will cost the node operator **3.80 USD** in gas fees.
-
-The above example is for illustrative purposes only; in the real world, gas price, gas token price, and Chainlink token prices all fluctuate dramatically, and factor heavily into our pricing model.  
-
-### 3. The data type and quantity returned
-
-While a `uint256` object may cost us on the order of **60,000 gas units** to fulfill on-chain, writing a `bytes[]` object may cost us **500,000 gas units** or more, depending on the content and length of the elements returned.
-
-### 4. Your request volume
-
-The more requests to our Chainlink oracle, the higher the oracle gas fees, which is a factor in the total monthly fee.
-
-You can read more about the associated [costs of being a node operator](/knowledgebase/faq/Chainlink-Operators#how-much-does-it-cost-to-run-a-chainlink-node) on our FAQ page.
-
-## Have a question about our pricing?
-
-Please don't hesitate to [contact us](https://linkwellnodes.io/#contact-us "Contact LinkWell Nodes") about your budget constraints. We're always happy to discuss!
+1. Fill out our [request form](https://linkwellnodes.io/Getting-Started.html)
+1. Join our [Discord server](https://discord.gg/Xs6SjqVPUA)
+1. Book a consultation through [Calendly](https://calendly.com/linkwell-nodes)
+1. Contact us through our [website](https://linkwellnodes.io/#contact-us)

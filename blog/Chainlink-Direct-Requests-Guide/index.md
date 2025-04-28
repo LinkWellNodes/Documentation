@@ -40,9 +40,9 @@ As compared to [Chainlink Functions](https://docs.chain.link/chainlink-functions
 As Direct Requests place much of the burden of implementation on the oracle team that you've chosen, it's important to choose an oracle team that you trust.
 
 :::info
-**LinkWell Nodes** is a full-service Chainlink oracle solution that provides secure, reliable, direct-to-consumer data feeds in exchange for a fee. We offer free development services for any efforts required to get your data feed integration up and running.
-<br/>
-You can find our <b>direct request job IDs and oracle addresses</b> within our <a href='/services/direct-request-jobs/Jobs-and-Pricing'>Chainlink data feed documentation</a>, as well as our <a href='/services/direct-request-jobs/Service-Level-Agreement'>Service-Level Agreement (SLA)</a>.
+### Looking to Request Data?
+
+Get started writing on-demand data to your blockchain smart contract by viewing our <a href='/services/direct-request-jobs/mainnets'>direct request job IDs, oracle addresses, and smart contract examples</a>.
 :::
 
 ## Direct Requests architecture
@@ -84,7 +84,7 @@ The following diagram demonstrates the direct request workflow.
 
 ## Requesting data from LinkWell Nodes
 
-The following section illustrates how to trigger an oracle request from within your smart contract, using the LinkWell Nodes oracle infrastructure. 
+The following section illustrates how to trigger an oracle request from within your smart contract (ie, a **direct request**), using the LinkWell Nodes oracle infrastructure. 
 
 **Prepare your request**:
 
