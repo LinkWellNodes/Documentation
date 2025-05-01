@@ -19,6 +19,7 @@ module.exports = {
 		type: 'category',
 		label: 'Mainnets',
 		link: {type: 'doc', id: 'services/direct-request-jobs/mainnets/Mainnets'},
+		collapsible: true,
 		items: [
 	{
 		type: 'doc',
@@ -93,10 +94,11 @@ module.exports = {
 ]
 },
 {
-type: 'category',
-label: 'Testnets',
-link: {type: 'doc', id: 'services/direct-request-jobs/testnets/Testnets'},
-items: [
+	type: 'category',
+	label: 'Testnets',
+	link: {type: 'doc', id: 'services/direct-request-jobs/testnets/Testnets'},
+	collapsible: true,
+	items: [
 	{
 		type: 'doc',
 		id: 'services/direct-request-jobs/testnets/Arbitrum-Sepolia-Testnet-Jobs',
@@ -163,6 +165,7 @@ items: [
 	type: 'category',
 	label: 'Real-World Examples',
 	link: {type: 'doc', id: 'services/direct-request-jobs/Any-API-Guide'},
+	collapsible: true,
 	items: [
 		{
 			type: 'doc',
