@@ -70,20 +70,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256/uint256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256/uint256.sol#L22-L26
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256/uint256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256/uint256.sol#L29-L49
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256/uint256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256/uint256.sol#L51-L59
 ```
 
 ### Need to send sensitive information?
@@ -342,20 +342,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256-array/uint256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256-array/uint256-array.sol#L22-L26
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256-array/uint256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256-array/uint256-array.sol#L29-L49
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256-array/uint256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/uint256-array/uint256-array.sol#L51-L59
 ```
 
 ### Need to send sensitive information?
@@ -627,20 +627,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256/int256.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256/int256.sol#L22-L26
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256/int256.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256/int256.sol#L29-L49
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256/int256.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256/int256.sol#L51-L59
 ```
 
 ### Need to send sensitive information?
@@ -911,20 +911,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256-array/int256-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256-array/int256-array.sol#L22-L26
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256-array/int256-array.sol#L31-L51
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256-array/int256-array.sol#L29-L49
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256-array/int256-array.sol#L53-L61
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/int256-array/int256-array.sol#L51-L59
 ```
 
 ### Need to send sensitive information?
@@ -1195,20 +1195,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool/bool.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool/bool.sol#L22-L26
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool/bool.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool/bool.sol#L29-L48
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool/bool.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool/bool.sol#L50-L58
 ```
 
 ### Need to send sensitive information?
@@ -1349,20 +1349,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool-array/bool-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool-array/bool-array.sol#L22-L26
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool-array/bool-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool-array/bool-array.sol#L29-L48
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool-array/bool-array.sol#L52-L60
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/bool-array/bool-array.sol#L50-L58
 ```
 
 ### Need to send sensitive information?
@@ -1506,20 +1506,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes/string-bytes.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes/string-bytes.sol#L22-L26
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes/string-bytes.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes/string-bytes.sol#L29-L48
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes/string-bytes.sol#L52-L65
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes/string-bytes.sol#L50-L63
 ```
 
 ### Need to send sensitive information?
@@ -1667,20 +1667,20 @@ For easy editing, you can also open our sample contract [directly in Remix](http
 The constructor specifies important information about the request destination. **Important**: This information varies by chain, oracle, and job: 
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes-array/string-bytes-array.sol#L23-L28
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes-array/string-bytes-array.sol#L22-L26
 ```
 
 #### 2. Add your request function (example):
 The `request()` function defines the request parameters and sends a request to the Chainlink oracle. For detailed information on each required parameter, reference the above '**Request parameters**' section:
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes-array/string-bytes-array.sol#L30-L50
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes-array/string-bytes-array.sol#L29-L48
 ```
 
 #### 3. Retrieve the response (example):
 
 ```sol reference
-https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes-array/string-bytes-array.sol#L52-L69
+https://github.com/LinkWellNodes/Documentation/blob/main/docs/services/direct-request-jobs/testnets/Base-Sepolia/string-bytes-array/string-bytes-array.sol#L50-L63
 ```
 
 ### Need to send sensitive information?
