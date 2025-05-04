@@ -339,6 +339,10 @@ const config = {
                 from: '/services/jobs/Direct-Request-Guide',
                 to: '/blog/Chainlink-Direct-Requests-Guide',
             },
+			{
+			    from: '/knowledgebase/Direct-Request-Guide',
+			    to: '/blog/Chainlink-Direct-Requests-Guide',
+			},
             {
                 from: '/blog/Build-And-Deploy-A-Smart-Contract-On-Base',
                 to: '/blog/Build-And-Deploy-A-Chainlink-Smart-Contract',
@@ -346,10 +350,6 @@ const config = {
             {
                 from: '/services/direct-request-jobs/testnets/zkSync-Goerli-Testnet-Jobs',
                 to: '/services/direct-request-jobs/testnets/zkSync-Sepolia-Testnet-Jobs',
-            },
-            {
-              from: '/blog/Chainlink-Direct-Requests-Guide',
-              to: '/blog/Chainlink-Direct-Requests-Guide',
             },
             {
               from: '/img/node-opp-oracle-article/',
