@@ -21,7 +21,7 @@ contract LinkWellUint256ArrConsumerContractExample is ChainlinkClient, Confirmed
     
     constructor() ConfirmedOwner(msg.sender) {
         _setChainlinkToken(0xE4aB69C077896252FAFBD49EFD26B5D171A32410);
-        setOracleAddress(0x14bc7F6Da6cA3E072793c185e01a76E62341CC61);
+        setOracleAddress(<oracle address>);
         setJobId("e20c7567b2bb4e3690c615d03457b5d3");
     }
 
