@@ -39,9 +39,12 @@ This job writes a single **uint256** object to your contract, which can store an
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | a8356f48569c434eaa4ac5fcb4db5cc0 | 0 LINK | -->
 
 ### Request parameters
 
@@ -174,9 +177,12 @@ This job writes a single **uint256** object to your contract, which can store an
 
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 92b7c5a0307545d9ad032f00523605a0 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 92b7c5a0307545d9ad032f00523605a0 | 0 LINK | -->
 
 ### Request parameters
 
@@ -311,9 +317,12 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | e20c7567b2bb4e3690c615d03457b5d3 | 0 LINK | -->
 
 ### Request parameters
 
@@ -458,9 +467,12 @@ This job writes a single **uint256[]** object to your contract, which can store 
 
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 1b9b1967e5084cb59c2f04bcfc5307cb | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 1b9b1967e5084cb59c2f04bcfc5307cb | 0 LINK | -->
 
 ### Request parameters
 
@@ -596,9 +608,12 @@ This job writes a single **int256** object to your contract, which can store any
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 7f221811c63d49dd98031f957bf9bce0 | 0 LINK | -->
 
 ### Request parameters
 
@@ -743,9 +758,12 @@ This job writes a single **int256** object to your contract, which can store any
 
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 0e58feb938b044b2a342639c10d9eef4 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 0e58feb938b044b2a342639c10d9eef4 | 0 LINK | -->
 
 ### Request parameters
 
@@ -880,9 +898,12 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 356a0aced8f7425abd2ec17df9014359 | 0 LINK | -->
 
 ### Request parameters
 
@@ -1027,9 +1048,12 @@ This job writes a single **int256[]** object to your contract, which can store a
 
 You'll set the following attributes within your contract's constructor function ([see below](?dataType=Uint256#try-it-for-yourself)):
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 6e8063b1ced54163aadddc5237c6d04e | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 6e8063b1ced54163aadddc5237c6d04e | 0 LINK | -->
 
 ### Request parameters
 
@@ -1165,9 +1189,12 @@ This job writes a single **bool** object to your contract, which can store a `tr
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 43309009a154495cb2ed794233e6ff56 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 43309009a154495cb2ed794233e6ff56 | 0 LINK | -->
 
 ### Request parameters
 
@@ -1319,9 +1346,12 @@ This job writes a single **bool[]** object to your contract, which can store an 
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 433ba6a76b374e2580dd43685a9de8c6 | 0 LINK | -->
 
 ### Request parameters
 
@@ -1476,9 +1506,12 @@ This job writes a single **bytes** object to your contract, which can readily be
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 8ced832954544a3c98543c94a51d6a8d | 0 LINK | -->
 
 ### Request parameters
 
@@ -1637,9 +1670,12 @@ This job writes a single **bytes[]** object to your contract, which can readily 
 
 ### Request metadata
 
-| Oracle Address                             | Job ID                           | Fee       |
+| Oracle Address and Job ID | Fee |
+|-------------------|----------|
+| Please complete our [**request survey**](https://linkwellnodes.io/Getting-Started.html) to receive the **Address** and **Job ID** | 0 LINK |
+<!-- | Oracle Address                             | Job ID                           | Fee       |
 |--------------------------------------------|----------------------------------|-----------------------|
-| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK |
+| [0x14bc7F6Da6cA3E072793c185e01a76E62341CC61](https://sepolia.basescan.org/address/0x14bc7F6Da6cA3E072793c185e01a76E62341CC61) | 07f761e26a284cb8b7ed67188dece6d4 | 0 LINK | -->
 
 ### Request parameters
 
